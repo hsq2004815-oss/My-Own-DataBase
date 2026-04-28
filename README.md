@@ -77,18 +77,20 @@ Invoke-RestMethod "http://127.0.0.1:8765/health"
 
 ## 推荐给智能体的入口
 
-普通 UI/前端/设计任务优先调用 brief CLI，不要整库读取：
+普通 UI/前端/设计任务优先调用本机 API 或 brief CLI，不要整库读取，也不要默认去 GitHub 读取仓库：
 
 ```powershell
-python E:\DataBase\scripts\brief.py "做一个玻璃生态 AI dashboard，带动态背景和字体" --ui 8 --workflow 4 --automation 0 --assets 6
+python E:\DataBase\scripts\brief.py "做一个玻璃生态 AI dashboard，带动态背景和字体" --ui 8 --workflow 2 --automation 0 --assets 10
 ```
+
+当用户说“根据我的数据库”“用我的数据库”“按我的数据库规则”“调用我的数据库”“based on my database” 或 “use my database” 时，本机 agent 应先调用 `GET http://127.0.0.1:8765/health`，再调用 `POST http://127.0.0.1:8765/brief`。GitHub 只用于远程备份、人工查看、ChatGPT 检查结构和版本同步。
 
 普通 Web UI、landing page、SaaS 官网、portfolio 和产品页任务会优先检索 `ui_design` 的高级审美总规则层，包括 premium Web UI、Liquid Glass、cinematic video hero、typography/layout、motion reveal 和 landing page section patterns。品牌 `design-*.md` 文件只作为补充参考，不覆盖这些默认规则。
 
 需要浏览器自动化、上传、CDP、截图或验证时再打开 automation：
 
 ```powershell
-python E:\DataBase\scripts\brief.py "Playwright 上传文件并处理 iframe 弹窗" --ui 1 --workflow 4 --automation 6 --assets 0
+python E:\DataBase\scripts\brief.py "Playwright 上传文件并处理 iframe 弹窗" --ui 2 --workflow 4 --automation 8 --assets 0
 ```
 
 也可以直接调 HTTP：
@@ -101,9 +103,9 @@ POST http://127.0.0.1:8765/brief
 {
   "task": "任务描述",
   "ui_limit": 8,
-  "workflow_limit": 4,
+  "workflow_limit": 2,
   "automation_limit": 0,
-  "asset_limit": 6
+  "asset_limit": 10
 }
 ```
 

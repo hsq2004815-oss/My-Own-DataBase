@@ -1,4 +1,8 @@
-"""Call the local DataBase /brief API and print an agent-friendly summary."""
+"""Call the local DataBase /brief API and print an agent-friendly summary.
+
+My-Own-DataBase runtime context should come from the local FastAPI service.
+GitHub is only for backup, inspection, and version synchronization.
+"""
 
 from __future__ import annotations
 
@@ -7,6 +11,7 @@ import json
 import sys
 import textwrap
 import urllib.error
+import urllib.parse
 import urllib.request
 from typing import Any
 
@@ -16,6 +21,11 @@ START_COMMAND = (
     "cd E:\\DataBase\\backend_api\n"
     "python -m uvicorn app.main:app --host 127.0.0.1 --port 8765 --reload"
 )
+
+
+def health_url_for(brief_url: str) -> str:
+    parsed = urllib.parse.urlparse(brief_url)
+    return urllib.parse.urlunparse((parsed.scheme, parsed.netloc, "/health", "", "", ""))
 
 
 if hasattr(sys.stdout, "reconfigure"):
@@ -33,6 +43,11 @@ def post_json(url: str, payload: dict[str, Any]) -> dict[str, Any]:
         method="POST",
     )
     with urllib.request.urlopen(request, timeout=30) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def get_json(url: str) -> dict[str, Any]:
+    with urllib.request.urlopen(url, timeout=10) as response:
         return json.loads(response.read().decode("utf-8"))
 
 
@@ -92,13 +107,15 @@ def print_asset_summary(title: str, assets: list[dict[str, Any]], show_content: 
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Fetch a task brief from the local DataBase API.")
+    parser = argparse.ArgumentParser(
+        description="Fetch a task brief from the local DataBase API; do not use GitHub as the default runtime source."
+    )
     parser.add_argument("task", help="Task description to send to /brief.")
     parser.add_argument("--url", default=DEFAULT_URL, help=f"Brief API URL. Default: {DEFAULT_URL}")
     parser.add_argument("--ui", type=int, default=8, help="UI chunk limit. Default: 8")
-    parser.add_argument("--workflow", type=int, default=4, help="Workflow chunk limit. Default: 4")
+    parser.add_argument("--workflow", type=int, default=2, help="Workflow chunk limit. Default: 2")
     parser.add_argument("--automation", type=int, default=0, help="Automation chunk limit. Default: 0")
-    parser.add_argument("--assets", type=int, default=6, help="UI asset suggestion limit. Default: 6")
+    parser.add_argument("--assets", type=int, default=10, help="UI asset suggestion limit. Default: 10")
     parser.add_argument("--json", action="store_true", help="Print raw JSON response.")
     parser.add_argument("--content", action="store_true", help="Also print compact chunk content excerpts.")
     args = parser.parse_args()
@@ -112,11 +129,14 @@ def main() -> int:
     }
 
     try:
+        get_json(health_url_for(args.url))
         result = post_json(args.url, payload)
     except urllib.error.URLError as exc:
         print(f"Failed to call {args.url}: {exc}", file=sys.stderr)
+        print("The local database API is not running or not reachable.", file=sys.stderr)
         print("\nStart the API first:\n", file=sys.stderr)
         print(START_COMMAND, file=sys.stderr)
+        print("\nDo not fall back to GitHub unless the user explicitly asks.", file=sys.stderr)
         return 2
 
     if args.json:

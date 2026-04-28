@@ -1,15 +1,90 @@
 # Agent Instructions
 
-This repository is a local knowledge base for AI-assisted UI/design, workflow, asset, and automation tasks. Use it as a retrieval system, not as a blob of text to dump into context.
+This repository is a local knowledge base for AI-assisted UI/design, workflow, asset, and automation tasks. Use it through the local API first, not as a blob of text to dump into context.
 
 ## First Rule
 
-Do not read the entire repository for a normal task. Start with the brief CLI or API, then inspect only the returned chunks/assets and the files directly relevant to the task.
+Do not read the entire repository for a normal task. Start with the local API, then inspect only the returned chunks/assets and the files directly relevant to the task.
+
+## Local Database API First Protocol
+
+My-Own-DataBase is primarily accessed through the local FastAPI service.
+
+Default local API:
+
+```text
+http://127.0.0.1:8765
+```
+
+GitHub is not the default runtime source. GitHub is only for remote backup, human inspection, ChatGPT structure review, and version synchronization.
+
+When the user says “根据我的数据库”, “用我的数据库”, “按我的数据库规则”, “调用我的数据库”, “based on my database”, or “use my database”, the agent must automatically call the local database API.
+
+Required sequence:
+
+```http
+GET http://127.0.0.1:8765/health
+POST http://127.0.0.1:8765/brief
+```
+
+For UI / frontend / portfolio / landing page / dashboard / app UI tasks:
+
+```json
+{
+  "task": "<user task>",
+  "ui_limit": 8,
+  "workflow_limit": 2,
+  "automation_limit": 0,
+  "asset_limit": 10
+}
+```
+
+For browser automation / RPA / upload tool tasks:
+
+```json
+{
+  "task": "<user task>",
+  "ui_limit": 2,
+  "workflow_limit": 4,
+  "automation_limit": 8,
+  "asset_limit": 0
+}
+```
+
+For general coding / agent workflow tasks:
+
+```json
+{
+  "task": "<user task>",
+  "ui_limit": 2,
+  "workflow_limit": 6,
+  "automation_limit": 2,
+  "asset_limit": 0
+}
+```
+
+If the local API is not reachable:
+
+- Clearly tell the user the local database API is not running.
+- Suggest starting it with:
+
+```powershell
+cd E:\DataBase\backend_api
+python -m uvicorn app.main:app --host 127.0.0.1 --port 8765 --reload
+```
+
+- Do not silently fall back to GitHub unless the user explicitly asks.
+
+Required behavior:
+
+- Before doing the task, briefly state that local database context was retrieved.
+- After the task, briefly state which database areas influenced the result.
+- Do not scan the whole repository unless API retrieval is unavailable and the user allows file reading.
 
 Default CLI:
 
 ```powershell
-python E:\DataBase\scripts\brief.py "<task>" --ui 8 --workflow 4 --automation 0 --assets 6
+python E:\DataBase\scripts\brief.py "<task>" --ui 8 --workflow 2 --automation 0 --assets 10
 ```
 
 Start the API if the CLI cannot connect:
@@ -69,7 +144,7 @@ If the API is running:
 
 ```powershell
 Invoke-RestMethod "http://127.0.0.1:8765/health"
-python E:\DataBase\scripts\brief.py "做一个高级玻璃生态 AI dashboard，带动态背景和字体" --ui 8 --workflow 4 --automation 0 --assets 6
+python E:\DataBase\scripts\brief.py "做一个高级玻璃生态 AI dashboard，带动态背景和字体" --ui 8 --workflow 2 --automation 0 --assets 10
 ```
 
 ## Final Handoff
