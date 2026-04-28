@@ -1545,5 +1545,35 @@
     "indexed": true,
     "created_at": "2026-04-28",
     "updated_at": "2026-04-28"
+  },
+  {
+    "file_id": "liquid-glass-web-app-ui-kit",
+    "title": "Liquid Glass Web App UI Kit",
+    "domain": "ui_design",
+    "source_id": "local-ai-project-workspace-liquid-glass",
+    "relative_path": "wiki/topics/liquid-glass-web-app-ui-kit.md",
+    "file_type": "markdown",
+    "tags": ["liquid-glass-ui-kit", "glass-workspace", "workspace-ui", "premium-web-app", "ai-project-dashboard"],
+    "status": "active",
+    "processed": true,
+    "chunked": false,
+    "indexed": false,
+    "created_at": "2026-04-28",
+    "updated_at": "2026-04-28"
+  },
+  {
+    "file_id": "implementation-liquid-glass-web-app-ui-kit",
+    "title": "Liquid Glass Web App UI Kit Reference",
+    "domain": "ui_design",
+    "source_id": "local-ai-project-workspace-liquid-glass",
+    "relative_path": "processed/references/implementation-liquid-glass-web-app-ui-kit.json",
+    "file_type": "json",
+    "tags": ["liquid-glass-ui-kit", "glass-workspace", "glass-form-controls", "glass-modal", "glass-toast", "glass-tabs", "glass-input", "dark-neon-card", "light-glass-dashboard", "workspace-ui", "ai-project-dashboard", "premium-web-app", "micro-interaction-states"],
+    "status": "active",
+    "processed": true,
+    "chunked": true,
+    "indexed": true,
+    "created_at": "2026-04-28",
+    "updated_at": "2026-04-28"
   }
 ]

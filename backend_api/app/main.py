@@ -210,6 +210,7 @@ def needs_motion_asset_bootstrap(task: str) -> bool:
 
 
 UI_QUERY_RULES: list[tuple[tuple[str, ...], str]] = [
+    (("workspace", "web app", "app ui", "ui kit", "project workspace", "AI Project Workspace", "工作台", "工作区", "项目空间"), "liquid glass web app ui kit"),
     (("premium", "high-end", "high end", "高级", "高端", "审美", "质感", "cinematic", "电影感"), "premium web ui"),
     (("landing page", "homepage", "首页", "官网", "落地页", "产品页"), "premium landing page"),
     (("video hero", "video-first", "video background", "hero", "floating navbar", "视频背景", "视频 hero", "沉浸式"), "cinematic video hero"),
@@ -270,6 +271,13 @@ QUERY_SYNONYMS: dict[str, str] = {
     "液态玻璃": "liquid glass",
     "毛玻璃": "liquid glass",
     "磨砂玻璃": "liquid glass",
+    "液态玻璃工作台": "liquid glass web app ui kit",
+    "玻璃工作台": "liquid glass web app ui kit",
+    "玻璃工作区": "liquid glass web app ui kit",
+    "ai project workspace": "liquid glass web app ui kit",
+    "workspace ui": "liquid glass web app ui kit",
+    "web app ui kit": "liquid glass web app ui kit",
+    "saas dashboard": "liquid glass web app ui kit",
     "高级": "premium web ui",
     "高端": "premium web ui",
     "高级审美": "premium web ui",

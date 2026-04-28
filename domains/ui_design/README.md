@@ -26,9 +26,12 @@ raw -> processed -> wiki -> output
 
 1. `wiki/topics/premium-web-ui-initial-aesthetic-rules.md`
 2. `wiki/topics/liquid-glass-design-system.md`
-3. `wiki/topics/cinematic-video-hero-rules.md`
-4. `wiki/topics/premium-typography-and-layout-rules.md`
-5. `wiki/topics/motion-interaction-premium-rules.md`
-6. `wiki/topics/landing-page-section-patterns.md`
+3. `wiki/topics/liquid-glass-web-app-ui-kit.md` for Web App / SaaS Workspace / Dashboard component systems
+4. `wiki/topics/cinematic-video-hero-rules.md`
+5. `wiki/topics/premium-typography-and-layout-rules.md`
+6. `wiki/topics/motion-interaction-premium-rules.md`
+7. `wiki/topics/landing-page-section-patterns.md`
 
 `design-*.md` 品牌文件作为参考，不作为默认高级审美核心。如果品牌 topic 信息不足，不要让它覆盖 premium rules。具体业务页面再结合 page_type、component references、素材授权状态和用户 brief。
+
+注意：`liquid-glass-web-app-ui-kit.md` 属于高级 Web App / Dashboard / Workspace 组件系统，不是普通 landing page 规则。任务出现 AI Project Workspace、SaaS dashboard、workspace UI、app UI kit、搜索/标签/卡片/弹窗/校验/toast 等需求时优先使用它。

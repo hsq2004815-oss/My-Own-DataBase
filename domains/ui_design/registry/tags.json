@@ -443,5 +443,70 @@
     "tag": "monochrome-saas",
     "category": "design",
     "description": "Black-white neutral SaaS direction with disciplined typography and minimal color"
+  },
+  {
+    "tag": "glass-workspace",
+    "category": "design",
+    "description": "Liquid Glass workspace and web app shell pattern"
+  },
+  {
+    "tag": "liquid-glass-ui-kit",
+    "category": "design",
+    "description": "Liquid Glass component kit for app UI, dashboard, workspace, controls, and feedback states"
+  },
+  {
+    "tag": "glass-form-controls",
+    "category": "design",
+    "description": "Glass inputs, selects, textareas, toggles, validation, loading, and disabled form states"
+  },
+  {
+    "tag": "glass-modal",
+    "category": "design",
+    "description": "Thick glass dialog/modal component with accessibility and fallback rules"
+  },
+  {
+    "tag": "glass-toast",
+    "category": "design",
+    "description": "Glass toast/status feedback with aria-live and spring-in motion"
+  },
+  {
+    "tag": "glass-tabs",
+    "category": "design",
+    "description": "Glass tab/filter bar for workspace and dashboard views"
+  },
+  {
+    "tag": "glass-input",
+    "category": "design",
+    "description": "Glass search and form input surface"
+  },
+  {
+    "tag": "dark-neon-card",
+    "category": "design",
+    "description": "Dark neon glass card with cyan/magenta/orange glints and deep shadow"
+  },
+  {
+    "tag": "light-glass-dashboard",
+    "category": "design",
+    "description": "Light Liquid Glass dashboard surfaces with translucent fills and bright rim tokens"
+  },
+  {
+    "tag": "workspace-ui",
+    "category": "design",
+    "description": "Persistent app workspace surface with toolbar, tabs, cards, modal, and feedback states"
+  },
+  {
+    "tag": "ai-project-dashboard",
+    "category": "design",
+    "description": "AI project management dashboard/workspace pattern"
+  },
+  {
+    "tag": "premium-web-app",
+    "category": "design",
+    "description": "Premium web application UI rather than marketing landing page"
+  },
+  {
+    "tag": "micro-interaction-states",
+    "category": "design",
+    "description": "Hover, focus, active, loading, validation, disabled, toast, and reveal interaction states"
   }
 ]

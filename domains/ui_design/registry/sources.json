@@ -9,5 +9,16 @@
     "created_at": "2026-04-28",
     "updated_at": "2026-04-28",
     "notes": "High-priority premium Web UI default rules distilled from user-provided prompts. Do not copy external media assets directly."
+  },
+  {
+    "source_id": "local-ai-project-workspace-liquid-glass",
+    "name": "AI Project Workspace Liquid Glass local HTML",
+    "source_type": "case_study",
+    "location": "local-file:D:/ai-ui-test/index.html",
+    "domain": "ui_design",
+    "status": "active",
+    "created_at": "2026-04-28",
+    "updated_at": "2026-04-28",
+    "notes": "User-provided local HTML distilled into Web App / SaaS Workspace / Dashboard Liquid Glass UI Kit rules. Not a landing page source."
   }
 ]

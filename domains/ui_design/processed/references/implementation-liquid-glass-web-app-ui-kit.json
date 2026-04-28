@@ -1,0 +1,147 @@
+{
+  "record_id": "implementation-liquid-glass-web-app-ui-kit",
+  "source": {
+    "name": "AI Project Workspace Liquid Glass local HTML",
+    "url": "local-file:D:/ai-ui-test/index.html",
+    "source_type": "case_study",
+    "license_notes": "User-provided local HTML distilled into reusable design rules for the personal knowledge base. Treat as component-system guidance; do not copy unrelated external assets.",
+    "captured_at": "2026-04-28"
+  },
+  "domain": "ui_design",
+  "page_type": "component_pattern",
+  "platform": [
+    "web"
+  ],
+  "use_cases": [
+    "AI Project Workspace",
+    "premium Web App UI kit",
+    "SaaS dashboard component system",
+    "workspace project card grid",
+    "Liquid Glass form controls",
+    "glass modal and toast feedback",
+    "dashboard validation states",
+    "light glass dashboard",
+    "dark neon card highlight"
+  ],
+  "visual_traits": [
+    "light Liquid Glass surfaces with blur, saturation, translucent white fill, bright rim, inset highlight, and soft outer shadow",
+    "dark neon glass cards with deep fill, low-opacity rim, cyan/magenta/orange glints, deep shadow, and neon ring",
+    "rounded workspace component language using 22px fields, 28px cards, 40px modals, and 999px pills",
+    "functional glass UI kit rather than landing page composition",
+    "ambient dashboard background with subtle grid and enough visual input for backdrop-filter",
+    "stateful glass surfaces with hover rims, focus rings, disabled opacity, validation glow, loading shimmer, and toast feedback"
+  ],
+  "layout_rules": [
+    "Use this for Web App, SaaS Workspace, Dashboard, and AI Project Workspace tasks, not normal landing page sections.",
+    "Start with a contained app shell over a soft ambient background and optional subtle grid.",
+    "Place a functional hero or summary glass panel at the top only when it explains workspace context.",
+    "Place toolbar controls under the hero: glass search input first, then primary and secondary glass pill actions.",
+    "Place a glass tab filter bar before the project or dashboard card grid.",
+    "Use a responsive card grid for projects, AI modules, datasets, tasks, or workspace entities.",
+    "Use create/edit glass modals for structured entry flows instead of navigating away for small creation tasks.",
+    "Treat form validation, loading, disabled, and toast states as required parts of the UI kit."
+  ],
+  "component_patterns": [
+    "glass-card: base surface with fill-light, blur-md, 1px to 1.5px rim, outer shadow, inset highlight, inset-dark shadow, pseudo gloss, and optional chromatic caustics",
+    "glass-thick: stronger hero, modal, or primary card surface with fill-thick, rim-bright, shadow-thick, and stronger inset highlight",
+    "glass-dark: selected or premium project card using dark fill, dark rim, deep shadow, inset gloss, cyan/magenta/orange glints, and hover rim lift",
+    "glass-pill: secondary toolbar or modal action with blur-sm, thick fill, pill radius, inset highlight, and restrained hover lift",
+    "glass-pill-primary: one primary action with translucent accent fill, accent rim, glow, and restrained hover lift",
+    "glass-input: search, select, text input, and textarea using blur-sm, field radius, inset shadow, placeholder contrast, focus ring, error glow, and success glow",
+    "glass-toggle: pill track plus circular knob with checked accent fill, border, and subtle glow",
+    "tab-bar and tab: inline glass filter bar with active fill/rim state and keyboard focus",
+    "glass-icon-button: stable square or circular icon command with aria-label",
+    "glass-modal: thick centered glass dialog with backdrop overlay, modal radius, scroll lock, readable form layout, and Escape close",
+    "glass-toast: compact glass feedback using role=status or aria-live, text, icon, and spring-in motion",
+    "loading shimmer: gradient shimmer overlay for submit buttons and skeleton states"
+  ],
+  "interaction_states": [
+    "background reveal uses opacity 0 to 1, blur 18px to 0, 600ms",
+    "hero reveal uses translateY(34px), blur 12px, 800ms, delay around 100ms",
+    "toolbar reveal uses translateY(22px), blur 8px, 620ms, delay around 190ms",
+    "card reveal uses translateY(28px), scale .975, blur 10px, 660ms, stagger 80ms to 140ms",
+    "toast spring-in uses translateX(24px) to 0, 440ms, cubic-bezier(0.2,1.2,0.2,1)",
+    "loading shimmer uses 1.2s ease-in-out infinite",
+    "remove persistent will-change after animation completes",
+    "hover states raise rim opacity and shadow without noisy flashing",
+    "active states use pressed inset shadow",
+    "disabled states reduce opacity, remove hover transform, reduce shadow, and block pointer events",
+    "error and success validation states use colored rim, soft glow, and text message"
+  ],
+  "accessibility_notes": [
+    "Provide fallback solid or high-opacity translucent fills when backdrop-filter is unsupported.",
+    "Support prefers-reduced-transparency with stronger opaque fills.",
+    "Support prefers-reduced-motion; skip translate and blur and use quick opacity where possible.",
+    "Use focus-visible rings on buttons, inputs, tabs, and icon buttons.",
+    "Toast feedback needs aria-live or role=status.",
+    "Modals need role=dialog and aria-modal=true.",
+    "Escape closes modal.",
+    "Close buttons need aria-label.",
+    "Validation messages need aria-describedby.",
+    "Do not communicate selected, error, success, or disabled states with glow alone."
+  ],
+  "implementation_hints": [
+    "Light glass blur-sm: blur(18px) saturate(160%).",
+    "Light glass blur-md: blur(24px) saturate(180%).",
+    "Light glass blur-lg: blur(28px) saturate(185%).",
+    "Light fill-light: rgba(255,255,255,0.48); fill-thick: rgba(255,255,255,0.62).",
+    "Light rim: rgba(255,255,255,0.55); rim-bright: rgba(255,255,255,0.68).",
+    "Light shadow-outer: 0 14px 36px rgba(31,38,135,0.16); shadow-thick: 0 22px 54px rgba(20,30,60,0.28).",
+    "Light highlight: inset 0 1px 1px rgba(255,255,255,0.80); inset-dark: inset 0 -1px 3px rgba(20,30,60,0.18).",
+    "Dark fill: rgba(8,10,16,0.78); secondary fill: rgba(15,23,42,0.64).",
+    "Dark rim: rgba(255,255,255,0.18); rim-hover: rgba(255,255,255,0.42).",
+    "Dark cyan glint: rgba(34,211,238,0.36); magenta glint: rgba(217,70,239,0.30); orange glint: rgba(251,146,60,0.20).",
+    "Dark deep shadow: 0 24px 60px rgba(2,6,23,0.34), 0 8px 24px rgba(15,23,42,0.22).",
+    "Dark neon ring: 0 0 0 1px rgba(34,211,238,0.38), 0 0 24px rgba(217,70,239,0.24).",
+    "Radius tokens: field 22px, card 28px, modal 40px, pill 999px.",
+    "Use CSS variables for tokens and component primitives so an app can switch between light glass and dark neon card variants.",
+    "Use -webkit-backdrop-filter alongside backdrop-filter."
+  ],
+  "avoid_when": [
+    "ordinary marketing landing page",
+    "video-first cinematic homepage",
+    "dense spreadsheet-like table with hundreds of glass rows",
+    "strict high-contrast enterprise workflow where transparency harms readability",
+    "low-end device target with heavy full-screen blur",
+    "static brochure page without app controls",
+    "copying inspiration-only or review-required assets directly"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "direct_spec",
+    "notes": "Distilled from the user-provided local AI Project Workspace Liquid Glass HTML, including CSS tokens, components, motion timings, accessibility attributes, and JS behavior."
+  },
+  "retrieval": {
+    "ai_summary": "Liquid Glass Web App UI Kit for AI Project Workspace, SaaS dashboard, and premium web app surfaces. Not a landing page rule. Provides exact light glass and dark neon tokens, radius tokens, glass-card/glass-thick/glass-dark/glass-pill/glass-input/glass-toggle/tabs/icon-button/modal/toast/loading/validation/disabled component rules, workspace reveal motion timings, and accessibility fallbacks.",
+    "prompt_tags": [
+      "liquid-glass-ui-kit",
+      "glass-workspace",
+      "glass-form-controls",
+      "glass-modal",
+      "glass-toast",
+      "glass-tabs",
+      "glass-input",
+      "dark-neon-card",
+      "light-glass-dashboard",
+      "workspace-ui",
+      "ai-project-dashboard",
+      "premium-web-app",
+      "micro-interaction-states",
+      "saas-dashboard",
+      "web-app-ui-kit",
+      "project-card-grid",
+      "validation-glow",
+      "loading-shimmer",
+      "prefers-reduced-motion",
+      "prefers-reduced-transparency"
+    ],
+    "negative_prompt_tags": [
+      "landing-page-only",
+      "marketing-hero-only",
+      "copy-inspiration-assets",
+      "dense-table-glass",
+      "no-accessibility-fallback",
+      "persistent-will-change"
+    ]
+  }
+}

@@ -6,6 +6,47 @@ pages, AI product pages, design agency pages, cinematic heroes, portfolio
 surfaces, and selected controls. It remains optional for ordinary admin tables,
 dense forms, and CRUD dashboards.
 
+For advanced Web App, SaaS Workspace, Dashboard, and AI Project Workspace
+tasks, use `liquid-glass-web-app-ui-kit.md` as the component-system layer.
+That topic is not a landing page rule: it defines workspace tokens, project
+cards, toolbar search, tabs, modals, validation, toasts, and disabled/loading
+states.
+
+## Web App UI Kit Tokens
+
+For light glass workspace surfaces, prefer:
+
+- `blur-sm`: `blur(18px) saturate(160%)`
+- `blur-md`: `blur(24px) saturate(180%)`
+- `blur-lg`: `blur(28px) saturate(185%)`
+- `fill-light`: `rgba(255,255,255,0.48)`
+- `fill-thick`: `rgba(255,255,255,0.62)`
+- `rim`: `rgba(255,255,255,0.55)`
+- `rim-bright`: `rgba(255,255,255,0.68)`
+- `shadow-outer`: `0 14px 36px rgba(31,38,135,0.16)`
+- `shadow-thick`: `0 22px 54px rgba(20,30,60,0.28)`
+- `highlight`: `inset 0 1px 1px rgba(255,255,255,0.80)`
+- `inset-dark`: `inset 0 -1px 3px rgba(20,30,60,0.18)`
+
+For dark neon workspace cards, prefer:
+
+- `fill`: `rgba(8,10,16,0.78)`
+- `secondary fill`: `rgba(15,23,42,0.64)`
+- `rim`: `rgba(255,255,255,0.18)`
+- `rim-hover`: `rgba(255,255,255,0.42)`
+- `cyan glint`: `rgba(34,211,238,0.36)`
+- `magenta glint`: `rgba(217,70,239,0.30)`
+- `orange glint`: `rgba(251,146,60,0.20)`
+- `deep shadow`: `0 24px 60px rgba(2,6,23,0.34), 0 8px 24px rgba(15,23,42,0.22)`
+- `neon ring`: `0 0 0 1px rgba(34,211,238,0.38), 0 0 24px rgba(217,70,239,0.24)`
+
+Radius tokens:
+
+- field: `22px`
+- card: `28px`
+- modal: `40px`
+- pill: `999px`
+
 ## Two Levels Of Glass
 
 Subtle liquid glass:
@@ -42,6 +83,9 @@ Prefer a pseudo-element gradient border:
 - Use glass where background media or ambient scenery gives the blur meaningful visual input.
 - Keep text on stable surfaces; do not place small text directly on busy media.
 - Reserve strong glass for hero controls, selected states, modals, and premium CTA surfaces.
+- In Web App / Workspace / Dashboard tasks, reserve strong glass for hero
+  summary panels, toolbar actions, selected cards, modals, and feedback. Do not
+  convert the workspace into a landing-page hero.
 - Do not apply backdrop-filter to hundreds of repeated rows.
 - Avoid edge-to-edge stacked glass layers because seams and optical noise become visible.
 
@@ -57,3 +101,9 @@ Prefer a pseudo-element gradient border:
 Use CSS custom properties for glass opacity, blur, rim opacity, highlight
 strength, and background dim. Keep animated filters limited; animate transform
 and opacity instead of full-screen blur radius.
+
+For workspace components, define primitives such as `glass-card`,
+`glass-thick`, `glass-dark`, `glass-pill`, `glass-pill-primary`,
+`glass-input`, `glass-toggle`, `tab-bar`, `tab`, `glass-icon-button`,
+`glass-modal`, and `glass-toast`. Each primitive must include hover, focus,
+loading, disabled, validation, and fallback states where applicable.

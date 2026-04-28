@@ -22,6 +22,13 @@ Choose one dominant direction based on task context. Do not mix all styles at on
 4. Portfolio editorial dark.
 5. Video-first immersive landing page.
 6. Premium AI product or design agency landing page.
+7. Liquid Glass Web App / SaaS Workspace / Dashboard UI Kit.
+
+Use direction 7 when the task is an app surface rather than a marketing page:
+AI project workspace, SaaS dashboard, internal tool, project management
+workspace, app UI kit, control-heavy dashboard, or a screen with search, tabs,
+cards, modal forms, validation, and toast feedback. In this mode, do not default
+to landing-page hero composition.
 
 ## Color Rules
 
@@ -91,6 +98,22 @@ Avoid generic left-text-right-image by default. Prefer one of these:
    animated visual below hero text.
 
 Hero should feel like a launch page or film title frame, not a generic template.
+
+## Web App / Dashboard Rules
+
+When the task is a Web App, SaaS Workspace, Dashboard, or AI Project Workspace,
+prioritize component-system polish over marketing sections:
+
+- Use a contained app shell, ambient background, and a functional hero or
+  summary glass panel.
+- Put search, filters, and primary actions in a glass toolbar.
+- Use a glass tab bar for project/status filters.
+- Use a responsive card grid for workspace entities.
+- Include create/edit glass modal, validation states, disabled states, loading
+  shimmer, and toast feedback.
+- Use Liquid Glass UI Kit tokens and components from
+  `liquid-glass-web-app-ui-kit.md`.
+- Do not treat this pattern as a normal landing page or SaaS homepage.
 
 ## Navbar Rules
 

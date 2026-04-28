@@ -46,6 +46,9 @@ def query_terms(query: str) -> list[str]:
         "高端": "premium",
         "玻璃": "liquid glass glassmorphism",
         "拟态": "glassmorphism",
+        "工作台": "workspace web app ui kit",
+        "工作区": "workspace web app ui kit",
+        "项目空间": "workspace web app ui kit",
         "视频": "video",
         "背景": "background",
         "字体": "typography",
@@ -74,7 +77,7 @@ def search_like_terms(conn: sqlite3.Connection, query: str, limit: int) -> list[
         clauses.append("(content LIKE ? OR page_type LIKE ? OR section LIKE ? OR source_name LIKE ?)")
         pattern = f"%{term}%"
         params.extend([pattern, pattern, pattern, pattern])
-    params.append(max(limit * 12, limit))
+    params.append(max(limit * 40, 200))
     return conn.execute(
         f"""
         SELECT chunk_id, record_id, source_name, page_type, section, content
@@ -99,6 +102,11 @@ def score_row(row: sqlite3.Row, query: str) -> int:
     if "glass" in terms or "liquid" in terms or "glassmorphism" in terms:
         if "liquid-glass-premium-system" in haystack:
             score += 55
+        if "liquid-glass-web-app-ui-kit" in haystack:
+            score += 50
+    if "workspace" in terms or "dashboard" in terms or "app" in terms or "kit" in terms:
+        if "liquid-glass-web-app-ui-kit" in haystack:
+            score += 70
     if "video" in terms or "hero" in terms:
         if "cinematic-video-hero" in haystack:
             score += 55

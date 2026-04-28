@@ -19,6 +19,27 @@
     "status": "seeded"
   },
   {
+    "source_id": "local-ai-project-workspace-liquid-glass",
+    "name": "AI Project Workspace Liquid Glass local HTML",
+    "url": "local-file:D:/ai-ui-test/index.html",
+    "source_type": "case_study",
+    "priority": 1,
+    "best_for": [
+      "liquid-glass-ui-kit",
+      "glass-workspace",
+      "premium-web-app",
+      "workspace-ui",
+      "SaaS dashboard",
+      "AI project dashboard",
+      "glass form controls",
+      "glass modal",
+      "glass toast",
+      "micro-interaction states"
+    ],
+    "capture_plan": "Use for Web App, SaaS Workspace, Dashboard, and AI Project Workspace component-system rules. Do not treat as landing page guidance.",
+    "status": "seeded"
+  },
+  {
     "source_id": "apple-hig",
     "name": "Apple Human Interface Guidelines",
     "url": "https://developer.apple.com/design/human-interface-guidelines/",
