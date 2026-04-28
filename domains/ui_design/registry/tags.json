@@ -603,5 +603,65 @@
     "tag": "hero-information-cluster",
     "category": "design",
     "description": "Secondary grouped hero content such as social proof, mini cards, stats, tags, or product teasers"
+  },
+  {
+    "tag": "premium-ui-execution",
+    "category": "design",
+    "description": "Execution quality layer for premium UI generation"
+  },
+  {
+    "tag": "ui-execution-standards",
+    "category": "design",
+    "description": "Agent-facing implementation standards for professional UI output"
+  },
+  {
+    "tag": "visual-anchor",
+    "category": "design",
+    "description": "Strong hero or page visual anchor tied to the task domain"
+  },
+  {
+    "tag": "professional-ui-quality",
+    "category": "design",
+    "description": "Professional composition, material, spacing, states, and self-check requirements"
+  },
+  {
+    "tag": "non-generic-layout",
+    "category": "design",
+    "description": "Avoidance of ordinary templates and repeated safe layouts"
+  },
+  {
+    "tag": "technical-visualization",
+    "category": "design",
+    "description": "Project-specific technical visuals such as topology, waveform, graph, queue, or dashboard preview"
+  },
+  {
+    "tag": "project-specific-visuals",
+    "category": "design",
+    "description": "Visual anchors derived from the user's actual project domain"
+  },
+  {
+    "tag": "glass-quality-check",
+    "category": "design",
+    "description": "Liquid Glass quality requirements for blur, saturate, rim, highlight, shadow, hierarchy, and states"
+  },
+  {
+    "tag": "component-density",
+    "category": "design",
+    "description": "Meaningful component systems with controls, states, feedback, and hierarchy"
+  },
+  {
+    "tag": "design-self-check",
+    "category": "design",
+    "description": "Pre-final design checklist for visual anchor, pattern fit, material quality, truthfulness, and asset use"
+  },
+  {
+    "tag": "style-routing",
+    "category": "design",
+    "description": "Task-intent routing across landing, workspace, dashboard, portfolio, dark cinematic, and light workspace directions"
+  },
+  {
+    "tag": "asset-anchor-mapping",
+    "category": "design",
+    "description": "Mapping visual anchor needs to ui_assets searches while respecting usage policy"
   }
 ]

@@ -210,6 +210,7 @@ def needs_motion_asset_bootstrap(task: str) -> bool:
 
 
 UI_QUERY_RULES: list[tuple[tuple[str, ...], str]] = [
+    (("premium", "high-end", "high end", "高级", "高端", "审美", "质感", "visual anchor", "视觉锚点", "非模板", "设计自检", "执行质量"), "premium UI execution visual anchor non generic layout"),
     (("workspace", "web app", "app ui", "ui kit", "project workspace", "AI Project Workspace", "工作台", "工作区", "项目空间"), "liquid glass web app ui kit"),
     (("video hero layout", "video hero", "hero layout", "top-aligned", "bottom-left", "HLS hero", "MP4 background", "视频首屏", "底部左对齐", "顶部压迫式"), "video hero layout patterns"),
     (("two panel hero", "split hero", "双栏", "双栏玻璃", "双栏 液态玻璃"), "two panel liquid glass hero"),
@@ -282,6 +283,15 @@ QUERY_SYNONYMS: dict[str, str] = {
     "workspace ui": "liquid glass web app ui kit",
     "web app ui kit": "liquid glass web app ui kit",
     "saas dashboard": "liquid glass web app ui kit",
+    "视觉锚点": "visual anchor premium UI execution",
+    "非模板": "non generic layout premium UI execution",
+    "非模板化": "non generic layout premium UI execution",
+    "设计自检": "design self check premium UI execution",
+    "执行质量": "premium UI execution quality",
+    "技术可视化": "technical visualization visual anchor",
+    "项目专属视觉": "project specific visuals visual anchor",
+    "玻璃质感检查": "glass quality check",
+    "组件密度": "component density",
     "高级": "premium web ui",
     "高端": "premium web ui",
     "高级审美": "premium web ui",
@@ -1383,6 +1393,7 @@ def build_brief_response(
     guidance = [
         "Use the returned workflow chunks as the execution protocol.",
         "Use the returned UI chunks as design constraints, not decorative suggestions.",
+        "For UI generation, apply the premium UI execution self-check before coding and before final output: choose visual direction, hero pattern, material system, visual anchor, component system, motion strategy, and report record_id/rules used.",
         "Use asset_suggestions according to usage_policy: inspiration_only is visual reference only, review_required needs license review before direct use, direct_use can be used as a project asset.",
         "Report exact queries and chunk_ids in the final handoff.",
         "If chunks or assets are irrelevant or missing, call /ui/search, /workflow/search, /assets/search, or /automation/search with narrower terms.",

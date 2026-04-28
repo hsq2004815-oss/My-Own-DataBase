@@ -61,6 +61,28 @@ Final output must list retrieved `asset_id` / `chunk_id`, `usage_policy`, whethe
 
 If no suitable `direct_use` animation asset is found, say: "未检索到可用 direct_use 动画素材，因此使用 CSS/SVG/Canvas 复刻动效。"
 
+## Premium UI Execution Requirement
+
+For UI / frontend / portfolio / landing page / dashboard / app UI tasks, after retrieving `/brief`, the agent must also perform a design execution self-check.
+
+Before coding, state:
+
+1. selected visual direction
+2. selected hero pattern
+3. selected material system
+4. selected visual anchor
+5. selected component system
+6. record_id / rules used
+
+After coding, state:
+
+1. which rules were applied
+2. whether ui_assets were used or only referenced
+3. whether any metrics are placeholders
+4. whether the result avoids generic template layout
+
+If the generated page lacks a visual anchor or looks like a generic template, revise before final answer.
+
 ## If The API Is Not Running
 
 Start it in a separate terminal:

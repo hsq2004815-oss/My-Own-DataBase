@@ -1,0 +1,150 @@
+{
+  "record_id": "implementation-premium-ui-execution-quality-rules",
+  "source": {
+    "name": "User curated premium UI execution standards",
+    "url": "local-file:D:/Downloads/codex_premium_ui_execution_quality_prompt.txt",
+    "source_type": "case_study",
+    "license_notes": "User-provided execution standards for the local personal knowledge base. Use as an implementation quality layer; do not copy inspiration-only or review-required assets directly.",
+    "captured_at": "2026-04-28"
+  },
+  "domain": "ui_design",
+  "page_type": "component_pattern",
+  "platform": [
+    "web",
+    "desktop",
+    "mobile"
+  ],
+  "use_cases": [
+    "premium UI execution quality gate",
+    "frontend generation self-check",
+    "technical portfolio visual anchor planning",
+    "liquid glass quality validation",
+    "non-generic landing page implementation",
+    "dashboard and workspace component density",
+    "agent handoff record_id reporting"
+  ],
+  "visual_traits": [
+    "clear visual concept before coding",
+    "strong hero visual anchor tied to the user domain",
+    "parameter-level CSS tokens for glass, motion, spacing, and states",
+    "project-specific technical visualization instead of generic cards",
+    "component density with meaningful controls, states, and feedback",
+    "light workspace and dark cinematic routing based on task intent",
+    "truthful portfolio content without invented metrics"
+  ],
+  "layout_rules": [
+    "Before coding, state the selected visual direction, hero pattern, material system, component system, visual anchor, motion strategy, and database record_id used.",
+    "Every premium hero needs a strong visual anchor such as a topology diagram, waveform, task queue, retrieval graph, dashboard cluster, device map, or animated SVG/canvas panel.",
+    "For technical portfolios, map project domains to project-specific visuals: STM32 uses waveform/sensor stream, RK3588 uses topology/process pipeline, ML compensation uses residual curves and before-after charts, automation tools use queues/logs/checkpoints, AI database work uses retrieval graphs and domain routing panels.",
+    "Landing pages need hero, navbar, CTA, tagline pill, information cluster, section cards, and motion reveal.",
+    "Workspace and app pages need command/search, glass tabs or filters, status chips, KPI or project cards, toast/modal, loading shimmer, and hover/focus/active states.",
+    "Avoid repeating safe templates; do not default every premium portfolio to dark developer cards unless the user requested dark/cinematic styling.",
+    "Route landing and SaaS homepage tasks to video hero, cinematic hero, and premium typography rules; route dashboards and workspaces to the Liquid Glass Web App UI Kit; route technical portfolios to project-specific visual anchors and this execution quality layer."
+  ],
+  "component_patterns": [
+    "visual decision checklist before coding",
+    "strong visual anchor requirement",
+    "technical portfolio anchor mappings",
+    "component density checklist",
+    "glass quality checklist",
+    "motion execution token checklist",
+    "style routing checklist",
+    "asset search mapping for visual anchors",
+    "truthfulness checklist for portfolio content",
+    "output self-check before final answer"
+  ],
+  "interaction_states": [
+    "background reveal opacity 0 to 1 with blur 18px to 0 over 600ms",
+    "hero reveal translateY 34px, blur 12px, 800ms, around 100ms delay",
+    "toolbar reveal translateY 22px, blur 8px, 620ms, around 190ms delay",
+    "card reveal translateY 28px, scale 0.975, blur 10px, 660ms, stagger 80ms to 140ms",
+    "toast spring-in translateX 24px to 0 over 440ms",
+    "loading shimmer 1.2s to 1.6s ease-in-out infinite",
+    "hover, focus, active, loading, disabled, error, and success states must be present when components are interactive",
+    "respect prefers-reduced-motion and do not leave persistent will-change"
+  ],
+  "accessibility_notes": [
+    "Do not rely on glow alone for selected, error, success, or disabled states.",
+    "Respect prefers-reduced-motion for reveal and shimmer patterns.",
+    "Keep glass text contrast readable and provide stronger fallback fills where transparency harms readability.",
+    "Use placeholder labels such as TBD or omit unknown portfolio metrics instead of inventing credibility.",
+    "Report whether metrics are placeholders in the final handoff."
+  ],
+  "implementation_hints": [
+    "Use light glass tokens: blur(18px) saturate(160%), blur(24px) saturate(180%), blur(28px) saturate(185%), fill rgba(255,255,255,0.48) to rgba(255,255,255,0.85), bright rim, inset highlight, outer shadow, and radii 22px/28px/40px/999px.",
+    "Use dark neon glass tokens: rgba(8,10,16,0.78), rgba(15,23,42,0.64), white rim 0.18 to 0.42, cyan/magenta/orange glints, deep shadow, inset gloss, and neon ring.",
+    "Use motion tokens: cubic-bezier(0.16,1,0.3,1), cubic-bezier(0.2,1.2,0.2,1), and cubic-bezier(0.2,1.25,0.25,1).",
+    "Search ui_assets for visual anchors when motion, video, dashboard preview, technical diagram, Lottie, hover motion, or background inspiration is needed.",
+    "For inspiration_only or review_required assets, recreate the effect with original CSS, SVG, Canvas, Lottie configuration, or self-authored animation rather than copying files.",
+    "Final output should report record_id/rules used, asset usage policy, direct-use versus inspiration-only status, placeholder metrics, and whether the result avoids generic template layout."
+  ],
+  "avoid_when": [
+    "generic dark developer portfolio",
+    "blue-white SaaS template",
+    "plain black background with gray cards",
+    "fake metrics",
+    "emoji icons in premium technical UI",
+    "empty right-side panels",
+    "low-density hero sections",
+    "generic particles as the only visual anchor",
+    "same-size card grids with no hierarchy",
+    "plain skill chips as the main design feature",
+    "calling bg-white/10 backdrop-blur liquid glass without rim, highlight, hierarchy, and states"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "direct_spec",
+    "notes": "Distilled from the user-provided Premium UI Execution Quality prompt to act as a high-priority execution layer that complements existing premium, Liquid Glass, video hero, motion, and typography rules."
+  },
+  "retrieval": {
+    "ai_summary": "Premium UI execution quality layer for agents. Before coding, choose visual direction, hero pattern, material system, component system, visual anchor, motion strategy, and record_id/rules used. Require strong visual anchors, project-specific technical visualization, parameter-level glass and motion tokens, component density, asset search mapping, truthfulness for portfolio metrics, and a final design self-check to avoid generic templates.",
+    "prompt_tags": [
+      "premium-ui-execution",
+      "premium UI execution",
+      "ui-execution-standards",
+      "visual-anchor",
+      "visual anchor",
+      "non-generic-layout",
+      "non generic layout",
+      "professional-ui-quality",
+      "professional UI quality",
+      "technical-visualization",
+      "technical visualization",
+      "project-specific-visuals",
+      "project specific visuals",
+      "glass-quality-check",
+      "glass quality check",
+      "design-self-check",
+      "design self check",
+      "component-density",
+      "component density",
+      "style-routing",
+      "asset-anchor-mapping",
+      "premium portfolio",
+      "light liquid glass workspace",
+      "truthful portfolio",
+      "高级 UI 执行",
+      "视觉锚点",
+      "非模板化布局",
+      "技术可视化",
+      "项目专属视觉",
+      "玻璃质感检查",
+      "设计自检",
+      "组件密度",
+      "风格路由",
+      "素材锚点映射"
+    ],
+    "negative_prompt_tags": [
+      "generic-template",
+      "generic dark developer portfolio",
+      "blue-white-saas",
+      "fake-metrics",
+      "empty-hero-panel",
+      "same-size-cards",
+      "plain-skill-chips",
+      "weak-glass",
+      "no-visual-anchor",
+      "no-record-id-report"
+    ]
+  }
+}

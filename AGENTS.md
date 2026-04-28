@@ -16,4 +16,6 @@ When a user says "根据我的数据库", "用我的数据库", "按我的数据
 
 GitHub is only for backup, inspection, ChatGPT structure review, and version synchronization. Do not default to GitHub or scan the whole repository for runtime context unless the local API is unavailable and the user explicitly allows file reading.
 
+When the task is UI generation, do not only retrieve rules. Apply the premium UI execution self-check: choose pattern, choose material system, choose visual anchor, choose component system, avoid generic templates, and report record_id used.
+
 For UI/frontend/portfolio/landing page tasks that ask for high-end motion, animation, Lottie, visual effects, or advanced interaction, also call `/assets/search` for the motion asset queries listed in `AGENT.md`. Final output must report retrieved asset/chunk ids, usage policy, direct-use versus inspiration-only status, and the CSS/SVG/Canvas/Lottie/video implementation path.

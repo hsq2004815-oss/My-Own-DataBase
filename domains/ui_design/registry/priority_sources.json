@@ -1,5 +1,29 @@
 [
   {
+    "source_id": "user-curated-premium-ui-execution-quality-rules",
+    "name": "User curated premium UI execution quality rules",
+    "url": "local-file:D:/Downloads/codex_premium_ui_execution_quality_prompt.txt",
+    "source_type": "case_study",
+    "priority": 1,
+    "best_for": [
+      "premium-ui-execution",
+      "professional UI quality",
+      "visual anchor",
+      "non-generic layout",
+      "technical visualization",
+      "project-specific visuals",
+      "glass quality check",
+      "component density",
+      "design self-check",
+      "portfolio",
+      "landing page",
+      "dashboard",
+      "web app UI"
+    ],
+    "capture_plan": "Use as a high-priority execution quality layer alongside concrete pattern rules. It should not override specific hero, Liquid Glass, motion, typography, or workspace patterns.",
+    "status": "seeded"
+  },
+  {
     "source_id": "user-distilled-premium-web-ui-prompts",
     "name": "User distilled premium web UI prompt set",
     "url": "local-generated:2026-04-28/premium-web-ui-prompts",

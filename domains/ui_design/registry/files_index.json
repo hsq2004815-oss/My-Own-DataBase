@@ -1665,5 +1665,35 @@
     "indexed": true,
     "created_at": "2026-04-28",
     "updated_at": "2026-04-28"
+  },
+  {
+    "file_id": "premium-ui-execution-quality-rules",
+    "title": "Premium UI Execution Quality Rules",
+    "domain": "ui_design",
+    "source_id": "user-curated-premium-ui-execution-quality-rules",
+    "relative_path": "wiki/topics/premium-ui-execution-quality-rules.md",
+    "file_type": "markdown",
+    "tags": ["premium-ui-execution", "visual-anchor", "non-generic-layout", "technical-visualization", "glass-quality-check", "component-density", "design-self-check", "asset-anchor-mapping"],
+    "status": "active",
+    "processed": true,
+    "chunked": false,
+    "indexed": false,
+    "created_at": "2026-04-28",
+    "updated_at": "2026-04-28"
+  },
+  {
+    "file_id": "implementation-premium-ui-execution-quality-rules",
+    "title": "Premium UI Execution Quality Reference",
+    "domain": "ui_design",
+    "source_id": "user-curated-premium-ui-execution-quality-rules",
+    "relative_path": "processed/references/implementation-premium-ui-execution-quality-rules.json",
+    "file_type": "json",
+    "tags": ["premium-ui-execution", "ui-execution-standards", "visual-anchor", "professional-ui-quality", "non-generic-layout", "technical-visualization", "project-specific-visuals", "glass-quality-check", "component-density", "design-self-check", "style-routing", "asset-anchor-mapping"],
+    "status": "active",
+    "processed": true,
+    "chunked": true,
+    "indexed": true,
+    "created_at": "2026-04-28",
+    "updated_at": "2026-04-28"
   }
 ]

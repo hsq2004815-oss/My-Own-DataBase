@@ -44,6 +44,14 @@ def query_terms(query: str) -> list[str]:
     aliases = {
         "高级": "premium",
         "高端": "premium",
+        "视觉锚点": "visual anchor",
+        "非模板": "non generic layout",
+        "非模板化": "non generic layout",
+        "技术可视化": "technical visualization",
+        "项目专属视觉": "project specific visuals",
+        "玻璃质感检查": "glass quality check",
+        "设计自检": "design self check",
+        "组件密度": "component density",
         "玻璃": "liquid glass glassmorphism",
         "拟态": "glassmorphism",
         "工作台": "workspace web app ui kit",
@@ -109,11 +117,25 @@ def score_row(row: sqlite3.Row, query: str) -> int:
         if term in haystack:
             score += 10
     terms = set(query_terms(query))
+    if (
+        "execution" in terms
+        or "anchor" in terms
+        or "generic" in terms
+        or "quality" in terms
+        or "visualization" in terms
+        or "self" in terms
+        or "density" in terms
+        or "check" in terms
+    ):
+        if "implementation-premium-ui-execution-quality-rules" in haystack:
+            score += 150
     if "glass" in terms or "liquid" in terms or "glassmorphism" in terms:
         if "liquid-glass-premium-system" in haystack:
             score += 55
         if "liquid-glass-web-app-ui-kit" in haystack:
             score += 50
+        if "implementation-premium-ui-execution-quality-rules" in haystack:
+            score += 30
     if "workspace" in terms or "dashboard" in terms or "app" in terms or "kit" in terms:
         if "liquid-glass-web-app-ui-kit" in haystack:
             score += 70
@@ -148,6 +170,8 @@ def score_row(row: sqlite3.Row, query: str) -> int:
             score += 25
     if "premium" in haystack:
         score += 8
+    if "premium-ui-execution" in haystack:
+        score += 25
     if "user distilled premium web ui prompt set" in haystack:
         score += 12
     if row["section"] in {"implementation", "layout", "overview"}:

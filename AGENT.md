@@ -39,6 +39,14 @@ For UI / frontend / portfolio / landing page / dashboard / app UI tasks:
 }
 ```
 
+When the task is UI generation, do not only retrieve rules. Apply the premium UI execution self-check:
+- choose pattern
+- choose material system
+- choose visual anchor
+- choose component system
+- avoid generic templates
+- report record_id used
+
 For browser automation / RPA / upload tool tasks:
 
 ```json
