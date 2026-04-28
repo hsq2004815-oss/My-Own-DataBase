@@ -1,0 +1,88 @@
+{
+  "record_id": "chrome-cdp-existing-browser-session",
+  "source": {
+    "name": "Chrome DevTools Remote Debugging",
+    "url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "source_type": "official_docs",
+    "license_notes": "Summarized guidance with source link; do not copy full docs.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "automation",
+  "automation_type": "browser_cdp",
+  "tooling": [
+    "Chrome",
+    "Edge",
+    "CDP",
+    "Playwright"
+  ],
+  "goal": "Connect automation to an existing logged-in Chromium browser through a local remote debugging port.",
+  "when_to_use": [
+    "Need existing login/session",
+    "MFA makes fresh browser login hard",
+    "Need inspectable live browser",
+    "Admin console automation"
+  ],
+  "inputs_required": [
+    "Browser launched with remote debugging",
+    "Local port",
+    "User data directory/profile",
+    "Target URL"
+  ],
+  "steps": [
+    "Start Chrome/Edge with remote debugging bound to localhost and a dedicated user-data-dir/profile.",
+    "Check http://127.0.0.1:{port}/json/version or /json/list.",
+    "Connect Playwright or CDP client to the browser WebSocket endpoint.",
+    "Reuse logged-in state but verify account/profile before acting.",
+    "Close debug browser or port when done."
+  ],
+  "commands_or_apis": [
+    "--remote-debugging-port=9222",
+    "--remote-debugging-address=127.0.0.1",
+    "http://127.0.0.1:9222/json/version",
+    "chromium.connectOverCDP(...)"
+  ],
+  "verification": [
+    "/json/version returns browser info",
+    "Automation sees target page",
+    "Logged-in account is verified",
+    "Final screenshot proves outcome"
+  ],
+  "failure_modes": [
+    "Port not listening",
+    "Wrong profile/user data dir",
+    "Chrome blocks default profile use",
+    "Security exposure",
+    "Account mismatch"
+  ],
+  "safety_notes": [
+    "Bind debugging port to 127.0.0.1 only.",
+    "Do not expose CDP port to network.",
+    "Confirm account before irreversible actions.",
+    "Close debug session after task."
+  ],
+  "handoff_report": [
+    "Port/profile",
+    "Account verified",
+    "Pages/tabs used",
+    "Screenshots",
+    "Any irreversible action skipped or confirmed"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "official",
+    "notes": "Chrome remote debugging exposes CDP endpoints; local security rules added."
+  },
+  "retrieval": {
+    "ai_summary": "Use CDP when an agent must control an already logged-in Chrome/Edge session: launch with localhost remote-debugging port, verify /json/version, connect, confirm account, and close the port after use.",
+    "prompt_tags": [
+      "cdp",
+      "chrome",
+      "edge",
+      "remote-debugging",
+      "existing-session",
+      "logged-in",
+      "connectOverCDP"
+    ],
+    "negative_prompt_tags": []
+  }
+}

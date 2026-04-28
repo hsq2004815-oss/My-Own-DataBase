@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "agent_workflow_reference.schema.json",
+  "title": "Agent Workflow Reference Record",
+  "type": "object",
+  "required": [
+    "record_id",
+    "source",
+    "domain",
+    "workflow_type",
+    "agent_targets",
+    "quality",
+    "retrieval"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "name",
+        "url",
+        "source_type",
+        "license_notes",
+        "captured_at"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "source_type": {
+          "type": "string",
+          "enum": [
+            "local_procedure",
+            "prompt_pattern",
+            "api_contract",
+            "case_study",
+            "tool_guide",
+            "policy"
+          ]
+        },
+        "license_notes": {
+          "type": "string"
+        },
+        "captured_at": {
+          "type": "string"
+        }
+      }
+    },
+    "domain": {
+      "type": "string"
+    },
+    "workflow_type": {
+      "type": "string"
+    },
+    "agent_targets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "goal": {
+      "type": "string"
+    },
+    "when_to_use": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "inputs_required": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "api_calls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "prompt_contract": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "verification": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "failure_modes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "handoff_report": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "quality": {
+      "type": "object",
+      "required": [
+        "signal_strength",
+        "evidence_level",
+        "notes"
+      ],
+      "properties": {
+        "signal_strength": {
+          "type": "string",
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ]
+        },
+        "evidence_level": {
+          "type": "string",
+          "enum": [
+            "tested",
+            "documented",
+            "draft",
+            "observed"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "retrieval": {
+      "type": "object",
+      "required": [
+        "ai_summary",
+        "prompt_tags"
+      ],
+      "properties": {
+        "ai_summary": {
+          "type": "string"
+        },
+        "prompt_tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "negative_prompt_tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

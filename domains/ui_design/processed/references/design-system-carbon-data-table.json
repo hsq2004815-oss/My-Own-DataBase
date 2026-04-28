@@ -1,0 +1,50 @@
+{
+  "record_id": "design-system-carbon-data-table",
+  "source": {
+    "name": "IBM Carbon Design System",
+    "url": "https://carbondesignsystem.com/",
+    "source_type": "official_design_system",
+    "license_notes": "Use as a source link and summarized guidance; do not copy full documentation verbatim.",
+    "captured_at": "2026-04-24"
+  },
+  "domain": "ui_design",
+  "page_type": "data_table",
+  "platform": ["web"],
+  "use_cases": ["enterprise dashboard", "admin panel", "data management", "audit logs"],
+  "visual_traits": ["neutral palette", "high information density", "clear hierarchy", "systematic spacing"],
+  "layout_rules": [
+    "Place table actions and filters close to the table they affect.",
+    "Keep primary actions visually distinct from secondary batch actions.",
+    "Use persistent column labels and predictable row alignment for scannability."
+  ],
+  "component_patterns": [
+    "toolbar",
+    "filter controls",
+    "sortable columns",
+    "row selection",
+    "pagination",
+    "empty state",
+    "loading state"
+  ],
+  "interaction_states": ["hover row", "selected row", "loading", "empty", "error", "disabled action"],
+  "accessibility_notes": [
+    "Keyboard navigation and visible focus states are required for dense data surfaces.",
+    "Status, sorting, and selection should not rely on color alone."
+  ],
+  "implementation_hints": [
+    "Use when the user asks for serious B2B, admin, analytics, or enterprise UI.",
+    "Favor restraint over decorative gradients on data-heavy pages.",
+    "Expose empty/error/loading states in code, not only the happy path."
+  ],
+  "avoid_when": ["luxury landing page", "emotion-driven consumer campaign", "highly editorial brand page"],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "direct_spec",
+    "notes": "Seed record pointing to an official design system; expand with component-specific notes during detailed ingestion."
+  },
+  "retrieval": {
+    "ai_summary": "Use Carbon-style patterns for dense enterprise data tables: neutral palette, strong alignment, toolbar/filter locality, accessible row states, and explicit empty/loading/error handling.",
+    "prompt_tags": ["enterprise", "data-table", "admin", "dashboard", "filters", "pagination", "accessibility"],
+    "negative_prompt_tags": ["flashy", "marketing", "luxury", "experimental"]
+  }
+}

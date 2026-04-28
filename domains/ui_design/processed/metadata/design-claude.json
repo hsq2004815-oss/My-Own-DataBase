@@ -1,0 +1,24 @@
+{
+  "file_id": "design-claude",
+  "title": "Claude Design System",
+  "domain": "ui_design",
+  "source_id": "awesome-design-md",
+  "relative_path": "design-md/claude/README.md",
+  "file_type": "markdown",
+  "tags": [
+    "AI & LLM Platforms",
+    "terracotta",
+    "warm",
+    "layout",
+    "clean",
+    "editorial",
+    "accent"
+  ],
+  "status": "processed",
+  "processed": true,
+  "chunked": true,
+  "indexed": false,
+  "created_at": "2026-04-17T09:34:38.933Z",
+  "updated_at": "2026-04-17T09:34:38.934Z",
+  "notes": "Processed from awesome-design-md collection"
+}

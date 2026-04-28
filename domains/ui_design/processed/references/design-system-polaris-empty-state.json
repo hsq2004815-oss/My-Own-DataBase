@@ -1,0 +1,84 @@
+{
+  "record_id": "design-system-polaris-empty-state",
+  "source": {
+    "name": "Shopify Polaris",
+    "url": "https://polaris-react.shopify.com/components/layout-and-structure/empty-state",
+    "source_type": "official_design_system",
+    "license_notes": "Use source links and summarized guidance only; do not copy full documentation verbatim.",
+    "captured_at": "2026-04-24"
+  },
+  "domain": "ui_design",
+  "page_type": "empty_state",
+  "platform": [
+    "web"
+  ],
+  "use_cases": [
+    "admin first use",
+    "empty table",
+    "empty list",
+    "feature activation",
+    "commerce setup"
+  ],
+  "visual_traits": [
+    "encouraging",
+    "clear",
+    "action-led",
+    "friendly",
+    "guided"
+  ],
+  "layout_rules": [
+    "Use empty state to explain a feature before the user has used it.",
+    "Use one primary CTA and optional secondary learning action.",
+    "Keep copy simple, specific, and action-oriented."
+  ],
+  "component_patterns": [
+    "heading",
+    "explanatory body",
+    "illustration",
+    "primary CTA",
+    "secondary action",
+    "footer context"
+  ],
+  "interaction_states": [
+    "first run",
+    "no items",
+    "needs setup",
+    "learn more"
+  ],
+  "accessibility_notes": [
+    "Treat decorative empty-state illustrations as non-essential to screen reader understanding.",
+    "Button text should predict the result of the action."
+  ],
+  "implementation_hints": [
+    "Use verb+noun CTA labels such as 'Create order' rather than vague labels.",
+    "Avoid blaming the user for lack of content.",
+    "Use for full-page admin emptiness, not every small missing component."
+  ],
+  "avoid_when": [
+    "inline field error",
+    "loading",
+    "confirmation"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "direct_spec",
+    "notes": "Official Polaris empty-state guidance summarized."
+  },
+  "retrieval": {
+    "ai_summary": "Use Polaris empty states for commerce/admin first-run experiences: explain value, guide activation, use one clear primary CTA, and keep copy encouraging and specific.",
+    "prompt_tags": [
+      "empty-state",
+      "commerce",
+      "admin",
+      "first-run",
+      "CTA",
+      "onboarding"
+    ],
+    "negative_prompt_tags": [
+      "blame",
+      "vague",
+      "spinner",
+      "error"
+    ]
+  }
+}

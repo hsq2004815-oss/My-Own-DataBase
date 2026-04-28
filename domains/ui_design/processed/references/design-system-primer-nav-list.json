@@ -1,0 +1,82 @@
+{
+  "record_id": "design-system-primer-nav-list",
+  "source": {
+    "name": "GitHub Primer",
+    "url": "https://primer.style/product/components/nav-list/",
+    "source_type": "official_design_system",
+    "license_notes": "Use source links and summarized guidance only; do not copy full documentation verbatim.",
+    "captured_at": "2026-04-24"
+  },
+  "domain": "ui_design",
+  "page_type": "developer_tool",
+  "platform": [
+    "web"
+  ],
+  "use_cases": [
+    "developer tool sidebar",
+    "repository settings",
+    "admin navigation",
+    "docs product navigation"
+  ],
+  "visual_traits": [
+    "vertical",
+    "contextual",
+    "compact",
+    "hierarchical",
+    "developer-focused"
+  ],
+  "layout_rules": [
+    "Use vertical nav for the current context and mark the active view clearly.",
+    "Group long lists into named sections or use dividers for visual grouping.",
+    "Limit nested navigation depth; reconsider IA if more than a few levels are needed."
+  ],
+  "component_patterns": [
+    "nav list",
+    "nav item",
+    "group",
+    "subnav",
+    "leading visual",
+    "aria-current"
+  ],
+  "interaction_states": [
+    "current page",
+    "expanded",
+    "collapsed",
+    "hover",
+    "focus"
+  ],
+  "accessibility_notes": [
+    "Use aria-current for the active item.",
+    "Do not replace navigation with a tree view when semantic navigation is needed."
+  ],
+  "implementation_hints": [
+    "Use for GitHub-like sidebars in developer tools and admin settings.",
+    "Icons should clarify destinations, not add noise."
+  ],
+  "avoid_when": [
+    "marketing top nav",
+    "deep file explorer tree",
+    "mobile bottom nav"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "direct_spec",
+    "notes": "Official Primer NavList component summarized."
+  },
+  "retrieval": {
+    "ai_summary": "Use Primer NavList for developer/admin sidebars: vertical contextual links, active state via aria-current, grouped sections, limited nesting, and optional leading icons.",
+    "prompt_tags": [
+      "primer",
+      "github",
+      "sidebar",
+      "navigation",
+      "developer-tool",
+      "settings"
+    ],
+    "negative_prompt_tags": [
+      "marketing-nav",
+      "file-tree",
+      "mobile-bottom-nav"
+    ]
+  }
+}

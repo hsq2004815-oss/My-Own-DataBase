@@ -1,0 +1,22 @@
+[
+  {
+    "tag": "api-first",
+    "category": "workflow",
+    "description": "Use local HTTP API before direct filesystem/SQLite access."
+  },
+  {
+    "tag": "knowledge-first",
+    "category": "workflow",
+    "description": "Retrieve relevant chunks before design/implementation."
+  },
+  {
+    "tag": "windows-paths",
+    "category": "workflow",
+    "description": "Handle PowerShell and Bash path differences."
+  },
+  {
+    "tag": "handoff-report",
+    "category": "workflow",
+    "description": "Final report includes sources, queries, files, and verification."
+  }
+]

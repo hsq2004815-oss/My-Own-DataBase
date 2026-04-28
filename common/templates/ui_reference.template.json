@@ -1,0 +1,31 @@
+{
+  "record_id": "",
+  "source": {
+    "name": "",
+    "url": "",
+    "source_type": "official_design_system",
+    "license_notes": "Store short notes and links; do not copy paid or restricted assets verbatim.",
+    "captured_at": ""
+  },
+  "domain": "ui_design",
+  "page_type": "",
+  "platform": ["web"],
+  "use_cases": [],
+  "visual_traits": [],
+  "layout_rules": [],
+  "component_patterns": [],
+  "interaction_states": [],
+  "accessibility_notes": [],
+  "implementation_hints": [],
+  "avoid_when": [],
+  "quality": {
+    "signal_strength": "medium",
+    "evidence_level": "summary_only",
+    "notes": ""
+  },
+  "retrieval": {
+    "ai_summary": "",
+    "prompt_tags": [],
+    "negative_prompt_tags": []
+  }
+}

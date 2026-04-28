@@ -1,0 +1,191 @@
+[
+  {
+    "chunk_id": "playwright-trace-screenshot-debugging-overview",
+    "record_id": "playwright-trace-screenshot-debugging",
+    "automation_type": "verification_debugging",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "overview",
+    "content": "# playwright-trace-screenshot-debugging - Overview\n\nAutomation type: verification_debugging\nTooling: Playwright\nGoal: Capture useful evidence and debug data when browser automation succeeds or fails.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\nWhen to use:\n- Automation task needs proof\n- A step failed\n- Need to inspect console/network\n- CI/local discrepancy\n\nInputs required:\n- Expected result\n- Failure point\n- Browser context/page\n\nAI summary: Automation reports should include screenshots/assertions, current URL/title, console/page errors when relevant, and trace/log references for failures.",
+    "tokens": 77,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "trace",
+        "screenshot",
+        "console",
+        "debugging",
+        "evidence",
+        "verification"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-trace-screenshot-debugging-steps",
+    "record_id": "playwright-trace-screenshot-debugging",
+    "automation_type": "verification_debugging",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "steps",
+    "content": "# playwright-trace-screenshot-debugging - Execution Steps\n\nAutomation type: verification_debugging\nTooling: Playwright\nGoal: Capture useful evidence and debug data when browser automation succeeds or fails.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Take screenshots at major milestones and on failure.\n- Capture console errors and page errors when debugging.\n- Use Playwright trace viewer for deep failures instead of relying only on screenshots.\n- Log current URL, title, visible state, and key selector statuses.\n\nAI summary: Automation reports should include screenshots/assertions, current URL/title, console/page errors when relevant, and trace/log references for failures.",
+    "tokens": 90,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "trace",
+        "screenshot",
+        "console",
+        "debugging",
+        "evidence",
+        "verification"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-trace-screenshot-debugging-commands",
+    "record_id": "playwright-trace-screenshot-debugging",
+    "automation_type": "verification_debugging",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "commands",
+    "content": "# playwright-trace-screenshot-debugging - Commands or APIs\n\nAutomation type: verification_debugging\nTooling: Playwright\nGoal: Capture useful evidence and debug data when browser automation succeeds or fails.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- page.screenshot(...) / locator.screenshot(...)\n- page.on('console', ...)\n- page.on('pageerror', ...)\n- trace viewer\n\nAI summary: Automation reports should include screenshots/assertions, current URL/title, console/page errors when relevant, and trace/log references for failures.",
+    "tokens": 61,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "trace",
+        "screenshot",
+        "console",
+        "debugging",
+        "evidence",
+        "verification"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-trace-screenshot-debugging-verification",
+    "record_id": "playwright-trace-screenshot-debugging",
+    "automation_type": "verification_debugging",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "verification",
+    "content": "# playwright-trace-screenshot-debugging - Verification\n\nAutomation type: verification_debugging\nTooling: Playwright\nGoal: Capture useful evidence and debug data when browser automation succeeds or fails.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Screenshot shows final state\n- Console errors reviewed\n- Trace or log path reported if captured\n\nAI summary: Automation reports should include screenshots/assertions, current URL/title, console/page errors when relevant, and trace/log references for failures.",
+    "tokens": 63,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "trace",
+        "screenshot",
+        "console",
+        "debugging",
+        "evidence",
+        "verification"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-trace-screenshot-debugging-failure_modes",
+    "record_id": "playwright-trace-screenshot-debugging",
+    "automation_type": "verification_debugging",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "failure_modes",
+    "content": "# playwright-trace-screenshot-debugging - Failure Modes\n\nAutomation type: verification_debugging\nTooling: Playwright\nGoal: Capture useful evidence and debug data when browser automation succeeds or fails.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Screenshot taken too early\n- Console errors ignored\n- Trace not enabled\n- Final state not asserted\n\nAI summary: Automation reports should include screenshots/assertions, current URL/title, console/page errors when relevant, and trace/log references for failures.",
+    "tokens": 65,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "trace",
+        "screenshot",
+        "console",
+        "debugging",
+        "evidence",
+        "verification"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-trace-screenshot-debugging-safety",
+    "record_id": "playwright-trace-screenshot-debugging",
+    "automation_type": "verification_debugging",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "safety",
+    "content": "# playwright-trace-screenshot-debugging - Safety Notes\n\nAutomation type: verification_debugging\nTooling: Playwright\nGoal: Capture useful evidence and debug data when browser automation succeeds or fails.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Do not include secrets/tokens in screenshots or logs if avoidable.\n\nAI summary: Automation reports should include screenshots/assertions, current URL/title, console/page errors when relevant, and trace/log references for failures.",
+    "tokens": 58,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "trace",
+        "screenshot",
+        "console",
+        "debugging",
+        "evidence",
+        "verification"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-trace-screenshot-debugging-handoff",
+    "record_id": "playwright-trace-screenshot-debugging",
+    "automation_type": "verification_debugging",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "handoff",
+    "content": "# playwright-trace-screenshot-debugging - Handoff Report\n\nAutomation type: verification_debugging\nTooling: Playwright\nGoal: Capture useful evidence and debug data when browser automation succeeds or fails.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Screenshots\n- Console/page errors\n- Current URL/title\n- Assertions\n- Known gaps\n\nAI summary: Automation reports should include screenshots/assertions, current URL/title, console/page errors when relevant, and trace/log references for failures.",
+    "tokens": 60,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "trace",
+        "screenshot",
+        "console",
+        "debugging",
+        "evidence",
+        "verification"
+      ],
+      "negative_prompt_tags": []
+    }
+  }
+]

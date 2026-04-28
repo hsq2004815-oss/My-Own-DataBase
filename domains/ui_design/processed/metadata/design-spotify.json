@@ -1,0 +1,24 @@
+{
+  "file_id": "design-spotify",
+  "title": "Spotify Design System",
+  "domain": "ui_design",
+  "source_id": "awesome-design-md",
+  "relative_path": "design-md/spotify/README.md",
+  "file_type": "markdown",
+  "tags": [
+    "Media & Consumer Tech",
+    "green",
+    "vibrant",
+    "dark",
+    "type",
+    "bold",
+    "dark-theme"
+  ],
+  "status": "processed",
+  "processed": true,
+  "chunked": true,
+  "indexed": false,
+  "created_at": "2026-04-17T09:34:38.979Z",
+  "updated_at": "2026-04-17T09:34:38.979Z",
+  "notes": "Processed from awesome-design-md collection"
+}

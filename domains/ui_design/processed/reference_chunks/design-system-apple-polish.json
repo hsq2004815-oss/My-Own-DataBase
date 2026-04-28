@@ -1,0 +1,176 @@
+[
+  {
+    "chunk_id": "design-system-apple-polish-overview",
+    "record_id": "design-system-apple-polish",
+    "source_name": "Apple Human Interface Guidelines",
+    "source_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "page_type": "mobile_app_screen",
+    "section": "overview",
+    "content": "# Apple Human Interface Guidelines - Overview\n\nPage type: mobile_app_screen\nUse cases: consumer app, premium product, mobile utility, settings page\nEvidence: direct_spec / high\nSource: https://developer.apple.com/design/human-interface-guidelines/\n\nVisual traits:\n- restraint\n- clarity\n- depth\n- strong typography\n- generous spacing\n\nUse when:\n- consumer app\n- premium product\n- mobile utility\n- settings page\n\nAvoid when:\n- dense enterprise data tables\n- maximalist campaign pages\n- game UI\n\nAI summary: Use Apple HIG-inspired polish for premium native-feeling UI: clarity, hierarchy, restraint, readable typography, generous spacing, and familiar platform controls.",
+    "tokens": 89,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "premium",
+        "native",
+        "ios",
+        "macos",
+        "clarity",
+        "polish",
+        "spacing"
+      ],
+      "negative_prompt_tags": [
+        "dense",
+        "noisy",
+        "dashboard-heavy",
+        "overdecorated"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-apple-polish-layout",
+    "record_id": "design-system-apple-polish",
+    "source_name": "Apple Human Interface Guidelines",
+    "source_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "page_type": "mobile_app_screen",
+    "section": "layout",
+    "content": "# Apple Human Interface Guidelines - Layout Rules\n\nPage type: mobile_app_screen\nUse cases: consumer app, premium product, mobile utility, settings page\nEvidence: direct_spec / high\nSource: https://developer.apple.com/design/human-interface-guidelines/\n\n- Prioritize content hierarchy before decoration.\n- Use spacing, typography, and alignment to create perceived quality.\n- Keep controls familiar to the platform when designing native-feeling screens.\n\nAI summary: Use Apple HIG-inspired polish for premium native-feeling UI: clarity, hierarchy, restraint, readable typography, generous spacing, and familiar platform controls.",
+    "tokens": 75,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "premium",
+        "native",
+        "ios",
+        "macos",
+        "clarity",
+        "polish",
+        "spacing"
+      ],
+      "negative_prompt_tags": [
+        "dense",
+        "noisy",
+        "dashboard-heavy",
+        "overdecorated"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-apple-polish-components",
+    "record_id": "design-system-apple-polish",
+    "source_name": "Apple Human Interface Guidelines",
+    "source_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "page_type": "mobile_app_screen",
+    "section": "components",
+    "content": "# Apple Human Interface Guidelines - Component Patterns\n\nPage type: mobile_app_screen\nUse cases: consumer app, premium product, mobile utility, settings page\nEvidence: direct_spec / high\nSource: https://developer.apple.com/design/human-interface-guidelines/\n\n- navigation\n- lists\n- forms\n- sheets\n- toolbars\n- feedback\n\nAI summary: Use Apple HIG-inspired polish for premium native-feeling UI: clarity, hierarchy, restraint, readable typography, generous spacing, and familiar platform controls.",
+    "tokens": 60,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "premium",
+        "native",
+        "ios",
+        "macos",
+        "clarity",
+        "polish",
+        "spacing"
+      ],
+      "negative_prompt_tags": [
+        "dense",
+        "noisy",
+        "dashboard-heavy",
+        "overdecorated"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-apple-polish-interaction",
+    "record_id": "design-system-apple-polish",
+    "source_name": "Apple Human Interface Guidelines",
+    "source_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "page_type": "mobile_app_screen",
+    "section": "interaction",
+    "content": "# Apple Human Interface Guidelines - Interaction States\n\nPage type: mobile_app_screen\nUse cases: consumer app, premium product, mobile utility, settings page\nEvidence: direct_spec / high\nSource: https://developer.apple.com/design/human-interface-guidelines/\n\n- focus\n- selection\n- disabled\n- modal presentation\n- system feedback\n\nAI summary: Use Apple HIG-inspired polish for premium native-feeling UI: clarity, hierarchy, restraint, readable typography, generous spacing, and familiar platform controls.",
+    "tokens": 60,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "premium",
+        "native",
+        "ios",
+        "macos",
+        "clarity",
+        "polish",
+        "spacing"
+      ],
+      "negative_prompt_tags": [
+        "dense",
+        "noisy",
+        "dashboard-heavy",
+        "overdecorated"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-apple-polish-accessibility",
+    "record_id": "design-system-apple-polish",
+    "source_name": "Apple Human Interface Guidelines",
+    "source_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "page_type": "mobile_app_screen",
+    "section": "accessibility",
+    "content": "# Apple Human Interface Guidelines - Accessibility Notes\n\nPage type: mobile_app_screen\nUse cases: consumer app, premium product, mobile utility, settings page\nEvidence: direct_spec / high\nSource: https://developer.apple.com/design/human-interface-guidelines/\n\n- Respect readable text sizes and contrast.\n- Design controls with clear hit areas and platform-consistent behavior.\n\nAI summary: Use Apple HIG-inspired polish for premium native-feeling UI: clarity, hierarchy, restraint, readable typography, generous spacing, and familiar platform controls.",
+    "tokens": 65,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "premium",
+        "native",
+        "ios",
+        "macos",
+        "clarity",
+        "polish",
+        "spacing"
+      ],
+      "negative_prompt_tags": [
+        "dense",
+        "noisy",
+        "dashboard-heavy",
+        "overdecorated"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-apple-polish-implementation",
+    "record_id": "design-system-apple-polish",
+    "source_name": "Apple Human Interface Guidelines",
+    "source_url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "page_type": "mobile_app_screen",
+    "section": "implementation",
+    "content": "# Apple Human Interface Guidelines - Implementation Hints\n\nPage type: mobile_app_screen\nUse cases: consumer app, premium product, mobile utility, settings page\nEvidence: direct_spec / high\nSource: https://developer.apple.com/design/human-interface-guidelines/\n\n- Use when the user asks for polished, premium, simple, or native-feeling UI.\n- Prefer fewer elements with stronger hierarchy instead of dense decoration.\n\nAI summary: Use Apple HIG-inspired polish for premium native-feeling UI: clarity, hierarchy, restraint, readable typography, generous spacing, and familiar platform controls.",
+    "tokens": 72,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "premium",
+        "native",
+        "ios",
+        "macos",
+        "clarity",
+        "polish",
+        "spacing"
+      ],
+      "negative_prompt_tags": [
+        "dense",
+        "noisy",
+        "dashboard-heavy",
+        "overdecorated"
+      ]
+    }
+  }
+]

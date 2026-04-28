@@ -1,0 +1,87 @@
+{
+  "record_id": "workflow-agent-handoff-report-template",
+  "source": {
+    "name": "Agent handoff report template",
+    "url": "local-generated:2026-04-25/handoff-report",
+    "source_type": "prompt_pattern",
+    "license_notes": "Original local workflow notes.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "agent_workflow",
+  "workflow_type": "handoff_report",
+  "agent_targets": [
+    "Claude Code",
+    "Codex",
+    "Cursor",
+    "local agents"
+  ],
+  "goal": "Make agents report enough evidence that the user can verify the database was actually used.",
+  "when_to_use": [
+    "Any task that claims to use the local database",
+    "Frontend generation",
+    "Database-backed research",
+    "Agent handoff between tools"
+  ],
+  "inputs_required": [
+    "Task brief",
+    "Queries run",
+    "Chunks returned",
+    "Files changed",
+    "Verification output"
+  ],
+  "steps": [
+    "Record exactly which local files or API endpoints were read.",
+    "List each query and the key record/chunk ids used.",
+    "Explain how retrieved knowledge affected concrete design or implementation choices.",
+    "List changed files and run commands.",
+    "State verification performed and known gaps."
+  ],
+  "api_calls": [],
+  "prompt_contract": [
+    "Do not just say 'used the database'; provide query and chunk evidence.",
+    "Keep report concise but auditable.",
+    "Report failures honestly."
+  ],
+  "verification": [
+    "Report contains endpoint/file evidence",
+    "Report contains chunk ids",
+    "Report maps chunks to changes",
+    "Report includes run/test evidence"
+  ],
+  "failure_modes": [
+    "Vague final report",
+    "No query evidence",
+    "Claims database usage but no chunks listed",
+    "No verification gap disclosure"
+  ],
+  "handoff_report": [
+    "Files/API read",
+    "Queries",
+    "Chunk ids",
+    "Design/implementation mapping",
+    "Changed files",
+    "Verification",
+    "Gaps"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "documented",
+    "notes": "Designed to make database-backed agent work auditable."
+  },
+  "retrieval": {
+    "ai_summary": "When an agent uses the local database, final reports must include API/files read, exact queries, chunk ids, how chunks changed the implementation, files changed, verification, and gaps.",
+    "prompt_tags": [
+      "handoff-report",
+      "evidence",
+      "chunk-ids",
+      "verification",
+      "auditable",
+      "database-used"
+    ],
+    "negative_prompt_tags": [
+      "vague",
+      "trust-me",
+      "no-queries"
+    ]
+  }
+}

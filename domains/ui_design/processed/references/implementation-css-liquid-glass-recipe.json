@@ -1,0 +1,93 @@
+{
+  "record_id": "implementation-css-liquid-glass-recipe",
+  "source": {
+    "name": "Codex distilled implementation recipe from user screenshots",
+    "url": "local-generated:2026-04-25/liquid-glass-css-recipe",
+    "source_type": "case_study",
+    "license_notes": "Original implementation notes generated for this personal knowledge base.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "ui_design",
+  "page_type": "component_pattern",
+  "platform": [
+    "web"
+  ],
+  "use_cases": [
+    "React UI",
+    "Tailwind UI",
+    "CSS prototype",
+    "AI generated frontend",
+    "premium web app"
+  ],
+  "visual_traits": [
+    "CSS glass material",
+    "blurred backdrop",
+    "inner highlight",
+    "outer rim",
+    "colored caustics",
+    "soft shadow"
+  ],
+  "layout_rules": [
+    "Use CSS variables for glass opacity, blur radius, rim color, and accent glow so the style can be themed consistently.",
+    "Build one reusable glass primitive, then vary radius, size, and accent color for buttons, inputs, cards, and modals.",
+    "Combine pseudo-elements for top-left gloss and bottom-right chromatic glint."
+  ],
+  "component_patterns": [
+    "glass primitive",
+    "glass button",
+    "glass input",
+    "glass card",
+    "glass modal",
+    "glass toggle"
+  ],
+  "interaction_states": [
+    "hover",
+    "active",
+    "focus-visible",
+    "disabled",
+    "error",
+    "success"
+  ],
+  "accessibility_notes": [
+    "Provide @supports fallback when backdrop-filter is unavailable.",
+    "Respect prefers-reduced-transparency or provide a high-contrast variant.",
+    "Do not animate blur radius aggressively on low-end devices."
+  ],
+  "implementation_hints": [
+    "Core CSS: background: linear-gradient(... rgba white/transparent ...); backdrop-filter: blur(22px) saturate(1.35); border: 1px solid rgba(255,255,255,.55); box-shadow: outer shadow plus inset white highlight plus inset dark lower edge.",
+    "Gloss layer: ::before with white translucent linear/radial gradient positioned top-left, opacity around .55, pointer-events none.",
+    "Caustic layer: ::after with cyan/magenta/orange radial gradients near corners, mix-blend-mode screen, low opacity.",
+    "Text: use strong contrast; avoid pale gray on pale glass.",
+    "Performance: limit backdrop-filter surfaces and avoid applying it to hundreds of table rows."
+  ],
+  "avoid_when": [
+    "massive lists",
+    "hundreds of repeated rows",
+    "print layout",
+    "strict high contrast mode only"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "summary_only",
+    "notes": "Implementation recipe distilled from the provided reference images."
+  },
+  "retrieval": {
+    "ai_summary": "For web implementation of Liquid Glass, create reusable glass primitives using translucent gradients, backdrop-filter blur/saturate, rounded capsules, inner highlights, layered shadows, pseudo-element gloss, and chromatic caustic glints; add fallbacks and contrast safeguards.",
+    "prompt_tags": [
+      "liquid-glass",
+      "css",
+      "backdrop-filter",
+      "glass-button",
+      "glass-card",
+      "pseudo-element",
+      "caustics",
+      "implementation"
+    ],
+    "negative_prompt_tags": [
+      "flat-css",
+      "many-table-rows",
+      "no-fallback",
+      "low-contrast"
+    ]
+  }
+}

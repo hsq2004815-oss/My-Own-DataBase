@@ -1,0 +1,212 @@
+[
+  {
+    "chunk_id": "chrome-cdp-existing-browser-session-overview",
+    "record_id": "chrome-cdp-existing-browser-session",
+    "automation_type": "browser_cdp",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "overview",
+    "content": "# chrome-cdp-existing-browser-session - Overview\n\nAutomation type: browser_cdp\nTooling: Chrome, Edge, CDP, Playwright\nGoal: Connect automation to an existing logged-in Chromium browser through a local remote debugging port.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\nWhen to use:\n- Need existing login/session\n- MFA makes fresh browser login hard\n- Need inspectable live browser\n- Admin console automation\n\nInputs required:\n- Browser launched with remote debugging\n- Local port\n- User data directory/profile\n- Target URL\n\nAI summary: Use CDP when an agent must control an already logged-in Chrome/Edge session: launch with localhost remote-debugging port, verify /json/version, connect, confirm account, and close the port after use.",
+    "tokens": 104,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP",
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "chrome",
+        "edge",
+        "remote-debugging",
+        "existing-session",
+        "logged-in",
+        "connectOverCDP"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-cdp-existing-browser-session-steps",
+    "record_id": "chrome-cdp-existing-browser-session",
+    "automation_type": "browser_cdp",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "steps",
+    "content": "# chrome-cdp-existing-browser-session - Execution Steps\n\nAutomation type: browser_cdp\nTooling: Chrome, Edge, CDP, Playwright\nGoal: Connect automation to an existing logged-in Chromium browser through a local remote debugging port.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- Start Chrome/Edge with remote debugging bound to localhost and a dedicated user-data-dir/profile.\n- Check http://127.0.0.1:{port}/json/version or /json/list.\n- Connect Playwright or CDP client to the browser WebSocket endpoint.\n- Reuse logged-in state but verify account/profile before acting.\n- Close debug browser or port when done.\n\nAI summary: Use CDP when an agent must control an already logged-in Chrome/Edge session: launch with localhost remote-debugging port, verify /json/version, connect, confirm account, and close the port after use.",
+    "tokens": 110,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP",
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "chrome",
+        "edge",
+        "remote-debugging",
+        "existing-session",
+        "logged-in",
+        "connectOverCDP"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-cdp-existing-browser-session-commands",
+    "record_id": "chrome-cdp-existing-browser-session",
+    "automation_type": "browser_cdp",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "commands",
+    "content": "# chrome-cdp-existing-browser-session - Commands or APIs\n\nAutomation type: browser_cdp\nTooling: Chrome, Edge, CDP, Playwright\nGoal: Connect automation to an existing logged-in Chromium browser through a local remote debugging port.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- --remote-debugging-port=9222\n- --remote-debugging-address=127.0.0.1\n- http://127.0.0.1:9222/json/version\n- chromium.connectOverCDP(...)\n\nAI summary: Use CDP when an agent must control an already logged-in Chrome/Edge session: launch with localhost remote-debugging port, verify /json/version, connect, confirm account, and close the port after use.",
+    "tokens": 73,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP",
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "chrome",
+        "edge",
+        "remote-debugging",
+        "existing-session",
+        "logged-in",
+        "connectOverCDP"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-cdp-existing-browser-session-verification",
+    "record_id": "chrome-cdp-existing-browser-session",
+    "automation_type": "browser_cdp",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "verification",
+    "content": "# chrome-cdp-existing-browser-session - Verification\n\nAutomation type: browser_cdp\nTooling: Chrome, Edge, CDP, Playwright\nGoal: Connect automation to an existing logged-in Chromium browser through a local remote debugging port.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- /json/version returns browser info\n- Automation sees target page\n- Logged-in account is verified\n- Final screenshot proves outcome\n\nAI summary: Use CDP when an agent must control an already logged-in Chrome/Edge session: launch with localhost remote-debugging port, verify /json/version, connect, confirm account, and close the port after use.",
+    "tokens": 83,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP",
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "chrome",
+        "edge",
+        "remote-debugging",
+        "existing-session",
+        "logged-in",
+        "connectOverCDP"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-cdp-existing-browser-session-failure_modes",
+    "record_id": "chrome-cdp-existing-browser-session",
+    "automation_type": "browser_cdp",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "failure_modes",
+    "content": "# chrome-cdp-existing-browser-session - Failure Modes\n\nAutomation type: browser_cdp\nTooling: Chrome, Edge, CDP, Playwright\nGoal: Connect automation to an existing logged-in Chromium browser through a local remote debugging port.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- Port not listening\n- Wrong profile/user data dir\n- Chrome blocks default profile use\n- Security exposure\n- Account mismatch\n\nAI summary: Use CDP when an agent must control an already logged-in Chrome/Edge session: launch with localhost remote-debugging port, verify /json/version, connect, confirm account, and close the port after use.",
+    "tokens": 85,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP",
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "chrome",
+        "edge",
+        "remote-debugging",
+        "existing-session",
+        "logged-in",
+        "connectOverCDP"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-cdp-existing-browser-session-safety",
+    "record_id": "chrome-cdp-existing-browser-session",
+    "automation_type": "browser_cdp",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "safety",
+    "content": "# chrome-cdp-existing-browser-session - Safety Notes\n\nAutomation type: browser_cdp\nTooling: Chrome, Edge, CDP, Playwright\nGoal: Connect automation to an existing logged-in Chromium browser through a local remote debugging port.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- Bind debugging port to 127.0.0.1 only.\n- Do not expose CDP port to network.\n- Confirm account before irreversible actions.\n- Close debug session after task.\n\nAI summary: Use CDP when an agent must control an already logged-in Chrome/Edge session: launch with localhost remote-debugging port, verify /json/version, connect, confirm account, and close the port after use.",
+    "tokens": 91,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP",
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "chrome",
+        "edge",
+        "remote-debugging",
+        "existing-session",
+        "logged-in",
+        "connectOverCDP"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-cdp-existing-browser-session-handoff",
+    "record_id": "chrome-cdp-existing-browser-session",
+    "automation_type": "browser_cdp",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "handoff",
+    "content": "# chrome-cdp-existing-browser-session - Handoff Report\n\nAutomation type: browser_cdp\nTooling: Chrome, Edge, CDP, Playwright\nGoal: Connect automation to an existing logged-in Chromium browser through a local remote debugging port.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- Port/profile\n- Account verified\n- Pages/tabs used\n- Screenshots\n- Any irreversible action skipped or confirmed\n\nAI summary: Use CDP when an agent must control an already logged-in Chrome/Edge session: launch with localhost remote-debugging port, verify /json/version, connect, confirm account, and close the port after use.",
+    "tokens": 81,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP",
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "chrome",
+        "edge",
+        "remote-debugging",
+        "existing-session",
+        "logged-in",
+        "connectOverCDP"
+      ],
+      "negative_prompt_tags": []
+    }
+  }
+]

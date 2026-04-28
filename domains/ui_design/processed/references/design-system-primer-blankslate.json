@@ -1,0 +1,82 @@
+{
+  "record_id": "design-system-primer-blankslate",
+  "source": {
+    "name": "GitHub Primer",
+    "url": "https://primer.style/product/components/blankslate/",
+    "source_type": "official_design_system",
+    "license_notes": "Use source links and summarized guidance only; do not copy full documentation verbatim.",
+    "captured_at": "2026-04-24"
+  },
+  "domain": "ui_design",
+  "page_type": "empty_state",
+  "platform": [
+    "web"
+  ],
+  "use_cases": [
+    "developer tool empty state",
+    "repository feature empty",
+    "docs/product first use",
+    "no content"
+  ],
+  "visual_traits": [
+    "developer-focused",
+    "plain",
+    "direct",
+    "actionable",
+    "GitHub-like"
+  ],
+  "layout_rules": [
+    "Explain why content is missing in a concise heading and description.",
+    "Use a primary action to create or start the missing resource.",
+    "Use narrow or spacious variants based on surrounding density."
+  ],
+  "component_patterns": [
+    "visual icon",
+    "heading",
+    "description",
+    "primary action",
+    "secondary action",
+    "narrow variant",
+    "spacious variant"
+  ],
+  "interaction_states": [
+    "no wiki",
+    "no repository content",
+    "first creation",
+    "learn more"
+  ],
+  "accessibility_notes": [
+    "The action should be an actual link or button with clear text.",
+    "The visual icon should support the message, not replace text."
+  ],
+  "implementation_hints": [
+    "Use for developer tools and GitHub-like product surfaces.",
+    "Keep copy utilitarian and avoid excessive illustration."
+  ],
+  "avoid_when": [
+    "commerce onboarding",
+    "luxury landing page",
+    "data-loading skeleton"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "direct_spec",
+    "notes": "Official Primer Blankslate component summarized."
+  },
+  "retrieval": {
+    "ai_summary": "Use Primer Blankslate for developer-product empty states: small visual, concise heading, explanatory description, and a clear creation/start action.",
+    "prompt_tags": [
+      "primer",
+      "github",
+      "developer-tool",
+      "empty-state",
+      "blankslate",
+      "create"
+    ],
+    "negative_prompt_tags": [
+      "commerce",
+      "luxury",
+      "loading"
+    ]
+  }
+}

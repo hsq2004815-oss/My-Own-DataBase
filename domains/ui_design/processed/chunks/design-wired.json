@@ -1,0 +1,72 @@
+[
+  {
+    "chunk_id": "design-wired-chunk-1",
+    "file_id": "design-wired",
+    "content": "# WIRED Design System - Brand Style\n\n**Category**: Media & Consumer Tech\n**Description**: Tech magazine. Paper-white broadsheet density, custom serif, ink-blue links\n**Source**: https://getdesign.md/wired/design-md\n\n**Note**: 源文件包含设计系统描述。\n\n## Design Philosophy\nTech magazine. Paper-white broadsheet density, custom serif, ink-blue links",
+    "tokens": 84,
+    "metadata": {
+      "section": "brand_style",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-wired-chunk-2",
+    "file_id": "design-wired",
+    "content": "# WIRED Design System - Color Palette\n\n**Colors mentioned**: blue, white\n\n**Description**: Tech magazine. Paper-white broadsheet density, custom serif, ink-blue links\n\n**Note**: 源文件可能包含具体色值。",
+    "tokens": 48,
+    "metadata": {
+      "section": "color_palette",
+      "has_colors": true,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-wired-chunk-3",
+    "file_id": "design-wired",
+    "content": "# WIRED Design System - Typography\n\n**Typography mentioned**: serif\n\n**Description**: Tech magazine. Paper-white broadsheet density, custom serif, ink-blue links\n\n**Note**: 源文件可能包含字体细节。",
+    "tokens": 47,
+    "metadata": {
+      "section": "typography",
+      "has_colors": false,
+      "has_typography": true,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-wired-chunk-4",
+    "file_id": "design-wired",
+    "content": "# WIRED Design System - Layout Principles\n\n**Layout mentioned**: density\n\n**Description**: Tech magazine. Paper-white broadsheet density, custom serif, ink-blue links\n\n**Note**: 源文件可能包含布局细节。",
+    "tokens": 48,
+    "metadata": {
+      "section": "layout",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": true,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-wired-chunk-5",
+    "file_id": "design-wired",
+    "content": "# WIRED Design System - Components & Interaction\n\n**Information不足**: 源文件未提供具体组件信息。\n\n**Description**: Tech magazine. Paper-white broadsheet density, custom serif, ink-blue links\n\n**Note**: 源文件未包含组件细节。",
+    "tokens": 50,
+    "metadata": {
+      "section": "components",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  }
+]

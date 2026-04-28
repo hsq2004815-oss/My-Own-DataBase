@@ -1,0 +1,205 @@
+[
+  {
+    "chunk_id": "windows-powershell-quoting-and-paths-overview",
+    "record_id": "windows-powershell-quoting-and-paths",
+    "automation_type": "windows_shell",
+    "source_name": "PowerShell about_Quoting_Rules",
+    "source_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules",
+    "section": "overview",
+    "content": "# windows-powershell-quoting-and-paths - Overview\n\nAutomation type: windows_shell\nTooling: PowerShell, Windows, Python\nGoal: Run Windows local commands with safe quoting, literal paths, and shell-aware path handling.\nEvidence: official / high\nSource: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules\n\nWhen to use:\n- Windows path contains backslashes/spaces/Chinese\n- Bash ate backslashes\n- PowerShell command has quotes\n- Need to run Python scripts\n\nInputs required:\n- Shell type\n- Target path\n- Command arguments\n\nAI summary: On Windows, use PowerShell -NoProfile and -LiteralPath for exact paths; in Bash use forward slashes. Avoid raw backslash Windows paths in Bash and report corrected commands.",
+    "tokens": 93,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "Windows",
+        "Python"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "powershell",
+        "windows-path",
+        "quoting",
+        "literalpath",
+        "bash",
+        "no-profile",
+        "encoding"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-powershell-quoting-and-paths-steps",
+    "record_id": "windows-powershell-quoting-and-paths",
+    "automation_type": "windows_shell",
+    "source_name": "PowerShell about_Quoting_Rules",
+    "source_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules",
+    "section": "steps",
+    "content": "# windows-powershell-quoting-and-paths - Execution Steps\n\nAutomation type: windows_shell\nTooling: PowerShell, Windows, Python\nGoal: Run Windows local commands with safe quoting, literal paths, and shell-aware path handling.\nEvidence: official / high\nSource: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules\n\n- Use PowerShell -NoProfile to avoid startup hook noise when needed.\n- Use -LiteralPath for exact filesystem paths.\n- Use single quotes for literal PowerShell strings; double quotes when variable expansion is needed.\n- In Bash/Git Bash use forward slashes such as E:/DataBase/..., not raw E:\\DataBase\\...\n- Quote paths with spaces and avoid composing destructive commands across shells.\n\nAI summary: On Windows, use PowerShell -NoProfile and -LiteralPath for exact paths; in Bash use forward slashes. Avoid raw backslash Windows paths in Bash and report corrected commands.",
+    "tokens": 118,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "Windows",
+        "Python"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "powershell",
+        "windows-path",
+        "quoting",
+        "literalpath",
+        "bash",
+        "no-profile",
+        "encoding"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-powershell-quoting-and-paths-commands",
+    "record_id": "windows-powershell-quoting-and-paths",
+    "automation_type": "windows_shell",
+    "source_name": "PowerShell about_Quoting_Rules",
+    "source_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules",
+    "section": "commands",
+    "content": "# windows-powershell-quoting-and-paths - Commands or APIs\n\nAutomation type: windows_shell\nTooling: PowerShell, Windows, Python\nGoal: Run Windows local commands with safe quoting, literal paths, and shell-aware path handling.\nEvidence: official / high\nSource: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules\n\n- Get-Content -LiteralPath 'E:\\DataBase\\...'\n- python 'E:\\DataBase\\script.py'\n- E:/DataBase/script.py in Bash\n- pwsh -NoProfile -Command ...\n\nAI summary: On Windows, use PowerShell -NoProfile and -LiteralPath for exact paths; in Bash use forward slashes. Avoid raw backslash Windows paths in Bash and report corrected commands.",
+    "tokens": 77,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "Windows",
+        "Python"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "powershell",
+        "windows-path",
+        "quoting",
+        "literalpath",
+        "bash",
+        "no-profile",
+        "encoding"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-powershell-quoting-and-paths-verification",
+    "record_id": "windows-powershell-quoting-and-paths",
+    "automation_type": "windows_shell",
+    "source_name": "PowerShell about_Quoting_Rules",
+    "source_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules",
+    "section": "verification",
+    "content": "# windows-powershell-quoting-and-paths - Verification\n\nAutomation type: windows_shell\nTooling: PowerShell, Windows, Python\nGoal: Run Windows local commands with safe quoting, literal paths, and shell-aware path handling.\nEvidence: official / high\nSource: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules\n\n- Command reads intended file\n- No duplicated/corrupted path\n- No conda GBK startup noise when -NoProfile is used\n\nAI summary: On Windows, use PowerShell -NoProfile and -LiteralPath for exact paths; in Bash use forward slashes. Avoid raw backslash Windows paths in Bash and report corrected commands.",
+    "tokens": 78,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "Windows",
+        "Python"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "powershell",
+        "windows-path",
+        "quoting",
+        "literalpath",
+        "bash",
+        "no-profile",
+        "encoding"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-powershell-quoting-and-paths-failure_modes",
+    "record_id": "windows-powershell-quoting-and-paths",
+    "automation_type": "windows_shell",
+    "source_name": "PowerShell about_Quoting_Rules",
+    "source_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules",
+    "section": "failure_modes",
+    "content": "# windows-powershell-quoting-and-paths - Failure Modes\n\nAutomation type: windows_shell\nTooling: PowerShell, Windows, Python\nGoal: Run Windows local commands with safe quoting, literal paths, and shell-aware path handling.\nEvidence: official / high\nSource: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules\n\n- Backslashes consumed in Bash\n- Quote nesting breaks command\n- Chinese path encoding noise\n- Wildcard expansion hits wrong files\n\nAI summary: On Windows, use PowerShell -NoProfile and -LiteralPath for exact paths; in Bash use forward slashes. Avoid raw backslash Windows paths in Bash and report corrected commands.",
+    "tokens": 81,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "Windows",
+        "Python"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "powershell",
+        "windows-path",
+        "quoting",
+        "literalpath",
+        "bash",
+        "no-profile",
+        "encoding"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-powershell-quoting-and-paths-safety",
+    "record_id": "windows-powershell-quoting-and-paths",
+    "automation_type": "windows_shell",
+    "source_name": "PowerShell about_Quoting_Rules",
+    "source_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules",
+    "section": "safety",
+    "content": "# windows-powershell-quoting-and-paths - Safety Notes\n\nAutomation type: windows_shell\nTooling: PowerShell, Windows, Python\nGoal: Run Windows local commands with safe quoting, literal paths, and shell-aware path handling.\nEvidence: official / high\nSource: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules\n\n- Use native PowerShell file cmdlets for Windows file operations.\n- Avoid destructive commands unless explicitly authorized.\n\nAI summary: On Windows, use PowerShell -NoProfile and -LiteralPath for exact paths; in Bash use forward slashes. Avoid raw backslash Windows paths in Bash and report corrected commands.",
+    "tokens": 77,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "Windows",
+        "Python"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "powershell",
+        "windows-path",
+        "quoting",
+        "literalpath",
+        "bash",
+        "no-profile",
+        "encoding"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-powershell-quoting-and-paths-handoff",
+    "record_id": "windows-powershell-quoting-and-paths",
+    "automation_type": "windows_shell",
+    "source_name": "PowerShell about_Quoting_Rules",
+    "source_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules",
+    "section": "handoff",
+    "content": "# windows-powershell-quoting-and-paths - Handoff Report\n\nAutomation type: windows_shell\nTooling: PowerShell, Windows, Python\nGoal: Run Windows local commands with safe quoting, literal paths, and shell-aware path handling.\nEvidence: official / high\nSource: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules\n\n- Shell used\n- Corrected path\n- Command output\n- Any quoting workaround\n\nAI summary: On Windows, use PowerShell -NoProfile and -LiteralPath for exact paths; in Bash use forward slashes. Avoid raw backslash Windows paths in Bash and report corrected commands.",
+    "tokens": 73,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "Windows",
+        "Python"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "powershell",
+        "windows-path",
+        "quoting",
+        "literalpath",
+        "bash",
+        "no-profile",
+        "encoding"
+      ],
+      "negative_prompt_tags": []
+    }
+  }
+]

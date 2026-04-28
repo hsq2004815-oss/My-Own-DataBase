@@ -1,0 +1,84 @@
+{
+  "record_id": "design-system-material-dialog",
+  "source": {
+    "name": "Material Design 3",
+    "url": "https://m3.material.io/components/dialogs/overview",
+    "source_type": "official_design_system",
+    "license_notes": "Use source links and summarized guidance only; site may require JavaScript for full content.",
+    "captured_at": "2026-04-24"
+  },
+  "domain": "ui_design",
+  "page_type": "component_pattern",
+  "platform": [
+    "mobile",
+    "web",
+    "tablet"
+  ],
+  "use_cases": [
+    "confirmation",
+    "destructive action",
+    "focused decision",
+    "short form modal"
+  ],
+  "visual_traits": [
+    "modal",
+    "focused",
+    "surface elevation",
+    "decision-oriented"
+  ],
+  "layout_rules": [
+    "Use dialogs for short blocking decisions, not for long workflows.",
+    "Make the title and action labels specific to the decision.",
+    "Keep content brief and avoid nesting complex navigation inside a dialog."
+  ],
+  "component_patterns": [
+    "dialog surface",
+    "title",
+    "supporting text",
+    "actions",
+    "scrim",
+    "focus trap"
+  ],
+  "interaction_states": [
+    "open",
+    "dismiss",
+    "confirm",
+    "cancel",
+    "destructive",
+    "focus trapped"
+  ],
+  "accessibility_notes": [
+    "Trap focus while open and return focus to the trigger on close.",
+    "Use semantic labels and clear keyboard dismissal behavior."
+  ],
+  "implementation_hints": [
+    "Use for confirmations and small decisions in mobile/web apps.",
+    "Do not use a modal when inline editing or a dedicated page would be clearer."
+  ],
+  "avoid_when": [
+    "long multi-step flow",
+    "large data table",
+    "passive notification"
+  ],
+  "quality": {
+    "signal_strength": "medium",
+    "evidence_level": "direct_spec",
+    "notes": "Official Material page URL verified, but web text required JavaScript in this environment."
+  },
+  "retrieval": {
+    "ai_summary": "Use Material dialog patterns for short blocking decisions: focused surface, specific title/action labels, brief content, focus trapping, and clear confirm/cancel behavior.",
+    "prompt_tags": [
+      "material",
+      "dialog",
+      "modal",
+      "confirmation",
+      "focus",
+      "mobile"
+    ],
+    "negative_prompt_tags": [
+      "long-flow",
+      "data-table",
+      "passive-toast"
+    ]
+  }
+}

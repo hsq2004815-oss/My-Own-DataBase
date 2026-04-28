@@ -1,0 +1,72 @@
+[
+  {
+    "chunk_id": "design-linear-chunk-1",
+    "file_id": "design-linear",
+    "content": "# Linear Design System - Brand Style\n\n**Category**: Productivity & SaaS\n**Description**: Project management for engineers. Ultra-minimal, precise, purple accent\n**Source**: https://getdesign.md/linear.app/design-md\n\n**Note**: 源文件包含设计系统描述。\n\n## Design Philosophy\nProject management for engineers. Ultra-minimal, precise, purple accent",
+    "tokens": 83,
+    "metadata": {
+      "section": "brand_style",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-linear-chunk-2",
+    "file_id": "design-linear",
+    "content": "# Linear Design System - Color Palette\n\n**Colors mentioned**: purple\n\n**Description**: Project management for engineers. Ultra-minimal, precise, purple accent\n\n**Note**: 源文件可能包含具体色值。",
+    "tokens": 46,
+    "metadata": {
+      "section": "color_palette",
+      "has_colors": true,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-linear-chunk-3",
+    "file_id": "design-linear",
+    "content": "# Linear Design System - Typography\n\n**Information不足**: 源文件未提供具体排版信息。\n\n**Description**: Project management for engineers. Ultra-minimal, precise, purple accent\n\n**Note**: 源文件未包含排版细节。",
+    "tokens": 46,
+    "metadata": {
+      "section": "typography",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-linear-chunk-4",
+    "file_id": "design-linear",
+    "content": "# Linear Design System - Layout Principles\n\n**Information不足**: 源文件未提供具体布局信息。\n\n**Description**: Project management for engineers. Ultra-minimal, precise, purple accent\n\n**Note**: 源文件未包含布局细节。",
+    "tokens": 48,
+    "metadata": {
+      "section": "layout",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-linear-chunk-5",
+    "file_id": "design-linear",
+    "content": "# Linear Design System - Components & Interaction\n\n**Components mentioned**: accent\n\n**Description**: Project management for engineers. Ultra-minimal, precise, purple accent\n\n**Note**: 源文件可能包含组件细节。",
+    "tokens": 50,
+    "metadata": {
+      "section": "components",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": true,
+      "info_sufficient": true
+    }
+  }
+]

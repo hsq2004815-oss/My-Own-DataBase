@@ -1,0 +1,158 @@
+[
+  {
+    "chunk_id": "design-system-material-navigation-drawer-overview",
+    "record_id": "design-system-material-navigation-drawer",
+    "source_name": "Material Design 3",
+    "source_url": "https://m3.material.io/components/navigation-drawer/overview",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# Material Design 3 - Overview\n\nPage type: component_pattern\nUse cases: app navigation, mobile app shell, tablet productivity app, multi-section product\nEvidence: direct_spec / medium\nSource: https://m3.material.io/components/navigation-drawer/overview\n\nVisual traits:\n- material\n- hierarchical\n- surface-based\n- destination-focused\n\nUse when:\n- app navigation\n- mobile app shell\n- tablet productivity app\n- multi-section product\n\nAvoid when:\n- single-page landing page\n- simple 3-tab mobile app\n- dense data table itself\n\nAI summary: Use Material navigation drawers for multi-section app shells: stable top-level destinations, clear active item, separated utility links, and careful focus/open-close behavior.",
+    "tokens": 92,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "material",
+        "navigation-drawer",
+        "mobile",
+        "app-shell",
+        "sidebar"
+      ],
+      "negative_prompt_tags": [
+        "landing",
+        "single-page",
+        "unrelated-actions"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-material-navigation-drawer-layout",
+    "record_id": "design-system-material-navigation-drawer",
+    "source_name": "Material Design 3",
+    "source_url": "https://m3.material.io/components/navigation-drawer/overview",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# Material Design 3 - Layout Rules\n\nPage type: component_pattern\nUse cases: app navigation, mobile app shell, tablet productivity app, multi-section product\nEvidence: direct_spec / medium\nSource: https://m3.material.io/components/navigation-drawer/overview\n\n- Use navigation drawers for top-level destinations in products with multiple sections.\n- Keep labels short and destinations stable.\n- Separate primary destinations from secondary settings/help items.\n\nAI summary: Use Material navigation drawers for multi-section app shells: stable top-level destinations, clear active item, separated utility links, and careful focus/open-close behavior.",
+    "tokens": 78,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "material",
+        "navigation-drawer",
+        "mobile",
+        "app-shell",
+        "sidebar"
+      ],
+      "negative_prompt_tags": [
+        "landing",
+        "single-page",
+        "unrelated-actions"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-material-navigation-drawer-components",
+    "record_id": "design-system-material-navigation-drawer",
+    "source_name": "Material Design 3",
+    "source_url": "https://m3.material.io/components/navigation-drawer/overview",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# Material Design 3 - Component Patterns\n\nPage type: component_pattern\nUse cases: app navigation, mobile app shell, tablet productivity app, multi-section product\nEvidence: direct_spec / medium\nSource: https://m3.material.io/components/navigation-drawer/overview\n\n- navigation drawer\n- destination item\n- active item\n- divider\n- scrim\n- modal drawer\n- standard drawer\n\nAI summary: Use Material navigation drawers for multi-section app shells: stable top-level destinations, clear active item, separated utility links, and careful focus/open-close behavior.",
+    "tokens": 70,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "material",
+        "navigation-drawer",
+        "mobile",
+        "app-shell",
+        "sidebar"
+      ],
+      "negative_prompt_tags": [
+        "landing",
+        "single-page",
+        "unrelated-actions"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-material-navigation-drawer-interaction",
+    "record_id": "design-system-material-navigation-drawer",
+    "source_name": "Material Design 3",
+    "source_url": "https://m3.material.io/components/navigation-drawer/overview",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# Material Design 3 - Interaction States\n\nPage type: component_pattern\nUse cases: app navigation, mobile app shell, tablet productivity app, multi-section product\nEvidence: direct_spec / medium\nSource: https://m3.material.io/components/navigation-drawer/overview\n\n- open\n- closed\n- active\n- hover\n- focus\n- modal scrim\n\nAI summary: Use Material navigation drawers for multi-section app shells: stable top-level destinations, clear active item, separated utility links, and careful focus/open-close behavior.",
+    "tokens": 64,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "material",
+        "navigation-drawer",
+        "mobile",
+        "app-shell",
+        "sidebar"
+      ],
+      "negative_prompt_tags": [
+        "landing",
+        "single-page",
+        "unrelated-actions"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-material-navigation-drawer-accessibility",
+    "record_id": "design-system-material-navigation-drawer",
+    "source_name": "Material Design 3",
+    "source_url": "https://m3.material.io/components/navigation-drawer/overview",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# Material Design 3 - Accessibility Notes\n\nPage type: component_pattern\nUse cases: app navigation, mobile app shell, tablet productivity app, multi-section product\nEvidence: direct_spec / medium\nSource: https://m3.material.io/components/navigation-drawer/overview\n\n- Active destination must be programmatically and visually clear.\n- Drawer open/close should preserve focus behavior.\n\nAI summary: Use Material navigation drawers for multi-section app shells: stable top-level destinations, clear active item, separated utility links, and careful focus/open-close behavior.",
+    "tokens": 67,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "material",
+        "navigation-drawer",
+        "mobile",
+        "app-shell",
+        "sidebar"
+      ],
+      "negative_prompt_tags": [
+        "landing",
+        "single-page",
+        "unrelated-actions"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-material-navigation-drawer-implementation",
+    "record_id": "design-system-material-navigation-drawer",
+    "source_name": "Material Design 3",
+    "source_url": "https://m3.material.io/components/navigation-drawer/overview",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# Material Design 3 - Implementation Hints\n\nPage type: component_pattern\nUse cases: app navigation, mobile app shell, tablet productivity app, multi-section product\nEvidence: direct_spec / medium\nSource: https://m3.material.io/components/navigation-drawer/overview\n\n- Use for mobile/tablet apps where bottom nav is insufficient.\n- Avoid using drawer as a dumping ground for unrelated actions.\n\nAI summary: Use Material navigation drawers for multi-section app shells: stable top-level destinations, clear active item, separated utility links, and careful focus/open-close behavior.",
+    "tokens": 72,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "material",
+        "navigation-drawer",
+        "mobile",
+        "app-shell",
+        "sidebar"
+      ],
+      "negative_prompt_tags": [
+        "landing",
+        "single-page",
+        "unrelated-actions"
+      ]
+    }
+  }
+]

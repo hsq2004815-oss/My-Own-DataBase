@@ -1,0 +1,105 @@
+{
+  "record_id": "implementation-css-liquid-glass-parameter-ranges",
+  "source": {
+    "name": "Web-verified Liquid Glass CSS parameter ranges",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter",
+    "source_type": "article",
+    "license_notes": "Parameter ranges distilled from MDN CSS docs, Microsoft Fluent/Acrylic guidance, and common glassmorphism implementation examples; store summarized guidance and source links.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "ui_design",
+  "page_type": "component_pattern",
+  "platform": [
+    "web"
+  ],
+  "use_cases": [
+    "CSS implementation",
+    "React UI",
+    "Tailwind UI",
+    "premium web app",
+    "Liquid Glass component system"
+  ],
+  "visual_traits": [
+    "backdrop blur",
+    "saturate filter",
+    "translucent fill",
+    "inner highlight",
+    "rim border",
+    "soft shadow",
+    "chromatic glow"
+  ],
+  "layout_rules": [
+    "Use backdrop-filter only on transparent or partially transparent surfaces; otherwise the blur will not be visible.",
+    "Avoid stacking many glass layers edge-to-edge because seams and optical noise become visible.",
+    "Reserve strong glass for transient surfaces, hero controls, cards, menus, modals, and selected states rather than dense repeated rows.",
+    "Provide fallback solid/translucent colors for unsupported browsers, reduced transparency, battery saver, low-end hardware, and high contrast modes."
+  ],
+  "component_patterns": [
+    "glass primitive",
+    "glass button",
+    "glass card",
+    "glass modal",
+    "glass input",
+    "glass popover"
+  ],
+  "interaction_states": [
+    "hover",
+    "active",
+    "focus-visible",
+    "selected",
+    "disabled",
+    "error",
+    "success"
+  ],
+  "accessibility_notes": [
+    "Text on glass must meet contrast requirements; avoid accent-colored body text over acrylic/glass surfaces.",
+    "Use icons or text in addition to color glow for error, success, and selected states.",
+    "Support reduced transparency and high contrast fallbacks."
+  ],
+  "implementation_hints": [
+    "Light glass fill: rgba(255,255,255,0.18) to rgba(255,255,255,0.42); for thicker white glass use 0.45 to 0.68.",
+    "Dark glass fill: rgba(8,10,16,0.56) to rgba(8,10,16,0.78); keep text white or near-white.",
+    "Backdrop filter baseline: blur(12px) saturate(140%) for subtle glass; blur(18px) saturate(160%) for strong frosted glass; blur(24px) saturate(180%) for hero liquid glass.",
+    "Border/rim: 1px solid rgba(255,255,255,0.35) to rgba(255,255,255,0.68); add a lower dark inset edge rgba(20,30,50,0.10) to 0.22 for thickness.",
+    "Radius: 18px to 28px for fields/cards; 999px for pill buttons; 32px to 44px for large modal cards.",
+    "Outer shadow: 0 10px 30px rgba(31,38,135,0.12) for light components; 0 18px 48px rgba(20,30,60,0.22) for thick floating glass.",
+    "Inner highlight: inset 0 1px 1px rgba(255,255,255,0.70), inset 0 -1px 2px rgba(20,30,60,0.12).",
+    "Gloss pseudo-element: top-left white radial/linear gradient at 0.35 to 0.65 opacity, clipped inside the radius.",
+    "Chromatic caustics: small radial gradients in cyan/magenta/orange at 0.18 to 0.36 opacity near edges or corners; do not cover text areas.",
+    "Performance: avoid applying backdrop-filter to hundreds of cells/rows; use it on containers and key controls only."
+  ],
+  "avoid_when": [
+    "dense data grid",
+    "long text article",
+    "strict high contrast workflow",
+    "low-end device heavy page",
+    "many repeated list rows"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "summary_only",
+    "notes": "Web-verified parameter ranges. MDN defines backdrop-filter syntax and transparency requirement; Microsoft Fluent/Acrylic docs guide appropriate use, fallbacks, and legibility constraints. Numeric ranges are practical CSS implementation ranges synthesized for the user's Liquid Glass references."
+  },
+  "retrieval": {
+    "ai_summary": "Liquid Glass CSS parameter ranges: use transparent fills, backdrop-filter blur(12-24px) saturate(140-180%), 1px white rim, large radii, layered outer/inset shadows, gloss pseudo-elements, chromatic caustics, and accessibility/performance fallbacks.",
+    "prompt_tags": [
+      "liquid-glass",
+      "css-parameters",
+      "backdrop-filter",
+      "blur",
+      "saturate",
+      "rgba",
+      "box-shadow",
+      "radius",
+      "fallback",
+      "accessibility"
+    ],
+    "negative_prompt_tags": [
+      "flat",
+      "no-blur",
+      "hundreds-of-rows",
+      "low-contrast",
+      "no-fallback"
+    ]
+  }
+}

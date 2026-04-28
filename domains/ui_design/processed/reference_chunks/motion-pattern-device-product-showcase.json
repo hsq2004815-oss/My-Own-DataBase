@@ -1,0 +1,164 @@
+[
+  {
+    "chunk_id": "motion-pattern-device-product-showcase-overview",
+    "record_id": "motion-pattern-device-product-showcase",
+    "source_name": "Swishy device and product showcase templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "landing_page",
+    "section": "overview",
+    "content": "# Swishy device and product showcase templates - Overview\n\nPage type: landing_page\nUse cases: app launch page, product demo, mobile app preview, social launch video, hero showcase\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\nVisual traits:\n- device mockup\n- laptop opening\n- phone message preview\n- app video showcase\n- 3D perspective\n- gallery\n\nUse when:\n- app launch page\n- product demo\n- mobile app preview\n- social launch video\n- hero showcase\n\nAvoid when:\n- enterprise admin daily workflow\n- documentation page\n- low bandwidth landing page\n\nAI summary: Use device/product showcase motion for app launch and hero sections: phone/laptop mockup entry, perspective reveal, message pop-ups, and settled readable product screens, with static fallback.",
+    "tokens": 116,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "device-mockup",
+        "product-showcase",
+        "app-launch",
+        "laptop-opening",
+        "phone-preview",
+        "hero-motion"
+      ],
+      "negative_prompt_tags": [
+        "daily-admin",
+        "docs",
+        "motion-sickness"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-device-product-showcase-layout",
+    "record_id": "motion-pattern-device-product-showcase",
+    "source_name": "Swishy device and product showcase templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "landing_page",
+    "section": "layout",
+    "content": "# Swishy device and product showcase templates - Layout Rules\n\nPage type: landing_page\nUse cases: app launch page, product demo, mobile app preview, social launch video, hero showcase\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- Use device motion to demonstrate product context before diving into feature details.\n- Keep perspective motion slow and stable so UI content remains readable.\n- Use mockup entry as a hero moment, then transition into static usable screenshots or cards.\n\nAI summary: Use device/product showcase motion for app launch and hero sections: phone/laptop mockup entry, perspective reveal, message pop-ups, and settled readable product screens, with static fallback.",
+    "tokens": 102,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "device-mockup",
+        "product-showcase",
+        "app-launch",
+        "laptop-opening",
+        "phone-preview",
+        "hero-motion"
+      ],
+      "negative_prompt_tags": [
+        "daily-admin",
+        "docs",
+        "motion-sickness"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-device-product-showcase-components",
+    "record_id": "motion-pattern-device-product-showcase",
+    "source_name": "Swishy device and product showcase templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "landing_page",
+    "section": "components",
+    "content": "# Swishy device and product showcase templates - Component Patterns\n\nPage type: landing_page\nUse cases: app launch page, product demo, mobile app preview, social launch video, hero showcase\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- phone mockup\n- laptop opening\n- app showcase\n- mobile bookshelf\n- photo booth\n- product hero\n\nAI summary: Use device/product showcase motion for app launch and hero sections: phone/laptop mockup entry, perspective reveal, message pop-ups, and settled readable product screens, with static fallback.",
+    "tokens": 79,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "device-mockup",
+        "product-showcase",
+        "app-launch",
+        "laptop-opening",
+        "phone-preview",
+        "hero-motion"
+      ],
+      "negative_prompt_tags": [
+        "daily-admin",
+        "docs",
+        "motion-sickness"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-device-product-showcase-interaction",
+    "record_id": "motion-pattern-device-product-showcase",
+    "source_name": "Swishy device and product showcase templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "landing_page",
+    "section": "interaction",
+    "content": "# Swishy device and product showcase templates - Interaction States\n\nPage type: landing_page\nUse cases: app launch page, product demo, mobile app preview, social launch video, hero showcase\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- mockup enter\n- screen reveal\n- perspective rotate\n- message pop\n- settle\n\nAI summary: Use device/product showcase motion for app launch and hero sections: phone/laptop mockup entry, perspective reveal, message pop-ups, and settled readable product screens, with static fallback.",
+    "tokens": 75,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "device-mockup",
+        "product-showcase",
+        "app-launch",
+        "laptop-opening",
+        "phone-preview",
+        "hero-motion"
+      ],
+      "negative_prompt_tags": [
+        "daily-admin",
+        "docs",
+        "motion-sickness"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-device-product-showcase-accessibility",
+    "record_id": "motion-pattern-device-product-showcase",
+    "source_name": "Swishy device and product showcase templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "landing_page",
+    "section": "accessibility",
+    "content": "# Swishy device and product showcase templates - Accessibility Notes\n\nPage type: landing_page\nUse cases: app launch page, product demo, mobile app preview, social launch video, hero showcase\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- Avoid motion sickness from large 3D rotations.\n- Provide static screenshot alternative.\n- Do not hide core product information inside video-only motion.\n\nAI summary: Use device/product showcase motion for app launch and hero sections: phone/laptop mockup entry, perspective reveal, message pop-ups, and settled readable product screens, with static fallback.",
+    "tokens": 84,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "device-mockup",
+        "product-showcase",
+        "app-launch",
+        "laptop-opening",
+        "phone-preview",
+        "hero-motion"
+      ],
+      "negative_prompt_tags": [
+        "daily-admin",
+        "docs",
+        "motion-sickness"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-device-product-showcase-implementation",
+    "record_id": "motion-pattern-device-product-showcase",
+    "source_name": "Swishy device and product showcase templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "landing_page",
+    "section": "implementation",
+    "content": "# Swishy device and product showcase templates - Implementation Hints\n\nPage type: landing_page\nUse cases: app launch page, product demo, mobile app preview, social launch video, hero showcase\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- Use transform perspective with small rotations, not extreme spins, for product mockups.\n- A 700-1200ms entry can work for hero sections; keep repeated interactions shorter.\n- Liquid Glass UI pairs well with device mockups when glass controls float above the device frame.\n\nAI summary: Use device/product showcase motion for app launch and hero sections: phone/laptop mockup entry, perspective reveal, message pop-ups, and settled readable product screens, with static fallback.",
+    "tokens": 104,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "device-mockup",
+        "product-showcase",
+        "app-launch",
+        "laptop-opening",
+        "phone-preview",
+        "hero-motion"
+      ],
+      "negative_prompt_tags": [
+        "daily-admin",
+        "docs",
+        "motion-sickness"
+      ]
+    }
+  }
+]

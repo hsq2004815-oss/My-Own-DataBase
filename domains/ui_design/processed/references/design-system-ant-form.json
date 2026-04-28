@@ -1,0 +1,81 @@
+{
+  "record_id": "design-system-ant-form",
+  "source": {
+    "name": "Ant Design",
+    "url": "https://ant.design/components/form/",
+    "source_type": "official_design_system",
+    "license_notes": "Use source links and summarized guidance only; do not copy full documentation verbatim.",
+    "captured_at": "2026-04-24"
+  },
+  "domain": "ui_design",
+  "page_type": "form",
+  "platform": [
+    "web"
+  ],
+  "use_cases": [
+    "enterprise form",
+    "advanced search",
+    "settings page",
+    "admin CRUD"
+  ],
+  "visual_traits": [
+    "structured",
+    "label-driven",
+    "validation-ready",
+    "enterprise"
+  ],
+  "layout_rules": [
+    "Choose horizontal, vertical, or inline layout based on density and scanning needs.",
+    "Use label alignment and grid columns consistently across a page.",
+    "For advanced table search, use compact multi-column forms."
+  ],
+  "component_patterns": [
+    "form",
+    "form item",
+    "label",
+    "required mark",
+    "validation feedback",
+    "initial values",
+    "scroll to first error"
+  ],
+  "interaction_states": [
+    "validating",
+    "error",
+    "warning",
+    "disabled",
+    "reset",
+    "submit"
+  ],
+  "accessibility_notes": [
+    "Keep labels and validation messages attached to their fields.",
+    "Use scroll-to-error behavior for long forms."
+  ],
+  "implementation_hints": [
+    "Use for React admin forms where validation and layout control are important.",
+    "Make required vs optional fields explicit at the form level."
+  ],
+  "avoid_when": [
+    "one-field marketing capture",
+    "native mobile settings"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "direct_spec",
+    "notes": "Official Ant Design Form component summarized."
+  },
+  "retrieval": {
+    "ai_summary": "Use Ant Design Form for enterprise React forms: controlled validation, label/grid layout, disabled states, scroll-to-first-error, and compact advanced-search layouts.",
+    "prompt_tags": [
+      "antd",
+      "form",
+      "validation",
+      "enterprise",
+      "advanced-search",
+      "settings"
+    ],
+    "negative_prompt_tags": [
+      "marketing",
+      "native-mobile"
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ui_reference.schema.json",
+  "title": "UI Reference Record",
+  "type": "object",
+  "required": [
+    "record_id",
+    "source",
+    "domain",
+    "page_type",
+    "quality",
+    "retrieval"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "description": "Stable id, for example design-system-apple-navigation."
+    },
+    "source": {
+      "type": "object",
+      "required": ["name", "url", "source_type", "license_notes"],
+      "properties": {
+        "name": {"type": "string"},
+        "url": {"type": "string"},
+        "source_type": {
+          "type": "string",
+          "enum": [
+            "official_design_system",
+            "product_screenshot",
+            "component_library",
+            "pattern_library",
+            "case_study",
+            "article"
+          ]
+        },
+        "license_notes": {"type": "string"},
+        "captured_at": {"type": "string"}
+      }
+    },
+    "domain": {
+      "type": "string",
+      "description": "Knowledge domain, usually ui_design."
+    },
+    "page_type": {
+      "type": "string",
+      "description": "Canonical page or component type from common/taxonomy/ui_page_types.json."
+    },
+    "platform": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["web", "mobile", "desktop", "tablet", "multi-platform"]
+      }
+    },
+    "use_cases": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "visual_traits": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "layout_rules": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "component_patterns": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "interaction_states": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "accessibility_notes": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "implementation_hints": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "avoid_when": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "quality": {
+      "type": "object",
+      "required": ["signal_strength", "evidence_level", "notes"],
+      "properties": {
+        "signal_strength": {
+          "type": "string",
+          "enum": ["high", "medium", "low"]
+        },
+        "evidence_level": {
+          "type": "string",
+          "enum": ["direct_spec", "screenshot_observed", "summary_only", "link_only"]
+        },
+        "notes": {"type": "string"}
+      }
+    },
+    "retrieval": {
+      "type": "object",
+      "required": ["ai_summary", "prompt_tags"],
+      "properties": {
+        "ai_summary": {
+          "type": "string",
+          "description": "Short model-facing summary for retrieval results."
+        },
+        "prompt_tags": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "negative_prompt_tags": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    }
+  }
+}

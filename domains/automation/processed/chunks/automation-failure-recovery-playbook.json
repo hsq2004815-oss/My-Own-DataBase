@@ -1,0 +1,226 @@
+[
+  {
+    "chunk_id": "automation-failure-recovery-playbook-overview",
+    "record_id": "automation-failure-recovery-playbook",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation failure recovery playbook",
+    "source_url": "local-generated:2026-04-25/automation-failure-recovery",
+    "section": "overview",
+    "content": "# automation-failure-recovery-playbook - Overview\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, Windows\nGoal: Recover from common browser and local automation failures with bounded retries and evidence.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-failure-recovery\n\nWhen to use:\n- Selector not found\n- Click intercepted\n- Upload failed\n- Login expired\n- API down\n- Path error\n- Timeout\n\nInputs required:\n- Error output\n- Current screenshot\n- Current URL\n- Last successful step\n\nAI summary: When automation fails, classify the failure, capture evidence, retry with a targeted fallback, stop on auth/dangerous ambiguity, and report recovered state or blocker.",
+    "tokens": 96,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "Windows"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "failure",
+        "recovery",
+        "selector",
+        "overlay",
+        "upload",
+        "auth",
+        "timeout",
+        "path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-failure-recovery-playbook-steps",
+    "record_id": "automation-failure-recovery-playbook",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation failure recovery playbook",
+    "source_url": "local-generated:2026-04-25/automation-failure-recovery",
+    "section": "steps",
+    "content": "# automation-failure-recovery-playbook - Execution Steps\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, Windows\nGoal: Recover from common browser and local automation failures with bounded retries and evidence.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-failure-recovery\n\n- Classify failure as selector, timing, overlay, frame, auth, path, network, or permission.\n- Capture screenshot/log at failure point.\n- Retry with narrower locator or explicit state wait, not blind repetition.\n- Check frame/popup/overlay context.\n- For upload failures, verify path and actual file input.\n- For auth failures, stop and report login requirement.\n- For irreversible action ambiguity, stop and ask for confirmation.\n\nAI summary: When automation fails, classify the failure, capture evidence, retry with a targeted fallback, stop on auth/dangerous ambiguity, and report recovered state or blocker.",
+    "tokens": 122,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "Windows"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "failure",
+        "recovery",
+        "selector",
+        "overlay",
+        "upload",
+        "auth",
+        "timeout",
+        "path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-failure-recovery-playbook-commands",
+    "record_id": "automation-failure-recovery-playbook",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation failure recovery playbook",
+    "source_url": "local-generated:2026-04-25/automation-failure-recovery",
+    "section": "commands",
+    "content": "# automation-failure-recovery-playbook - Commands or APIs\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, Windows\nGoal: Recover from common browser and local automation failures with bounded retries and evidence.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-failure-recovery\n\n- screenshot\n- console logs\n- locator count\n- frameLocator\n- health endpoint\n- path exists check\n\nAI summary: When automation fails, classify the failure, capture evidence, retry with a targeted fallback, stop on auth/dangerous ambiguity, and report recovered state or blocker.",
+    "tokens": 76,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "Windows"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "failure",
+        "recovery",
+        "selector",
+        "overlay",
+        "upload",
+        "auth",
+        "timeout",
+        "path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-failure-recovery-playbook-verification",
+    "record_id": "automation-failure-recovery-playbook",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation failure recovery playbook",
+    "source_url": "local-generated:2026-04-25/automation-failure-recovery",
+    "section": "verification",
+    "content": "# automation-failure-recovery-playbook - Verification\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, Windows\nGoal: Recover from common browser and local automation failures with bounded retries and evidence.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-failure-recovery\n\n- Failure category identified\n- Fallback attempted\n- Either recovered or clear blocker reported\n\nAI summary: When automation fails, classify the failure, capture evidence, retry with a targeted fallback, stop on auth/dangerous ambiguity, and report recovered state or blocker.",
+    "tokens": 71,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "Windows"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "failure",
+        "recovery",
+        "selector",
+        "overlay",
+        "upload",
+        "auth",
+        "timeout",
+        "path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-failure-recovery-playbook-failure_modes",
+    "record_id": "automation-failure-recovery-playbook",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation failure recovery playbook",
+    "source_url": "local-generated:2026-04-25/automation-failure-recovery",
+    "section": "failure_modes",
+    "content": "# automation-failure-recovery-playbook - Failure Modes\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, Windows\nGoal: Recover from common browser and local automation failures with bounded retries and evidence.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-failure-recovery\n\n- Infinite retry loop\n- Silent fallback to wrong element\n- Publishing from wrong account\n- Ignoring auth expiration\n\nAI summary: When automation fails, classify the failure, capture evidence, retry with a targeted fallback, stop on auth/dangerous ambiguity, and report recovered state or blocker.",
+    "tokens": 77,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "Windows"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "failure",
+        "recovery",
+        "selector",
+        "overlay",
+        "upload",
+        "auth",
+        "timeout",
+        "path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-failure-recovery-playbook-safety",
+    "record_id": "automation-failure-recovery-playbook",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation failure recovery playbook",
+    "source_url": "local-generated:2026-04-25/automation-failure-recovery",
+    "section": "safety",
+    "content": "# automation-failure-recovery-playbook - Safety Notes\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, Windows\nGoal: Recover from common browser and local automation failures with bounded retries and evidence.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-failure-recovery\n\n- Bound retries; do not brute-force sensitive flows.\n- Stop on auth/payment/delete/publish ambiguity.\n\nAI summary: When automation fails, classify the failure, capture evidence, retry with a targeted fallback, stop on auth/dangerous ambiguity, and report recovered state or blocker.",
+    "tokens": 71,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "Windows"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "failure",
+        "recovery",
+        "selector",
+        "overlay",
+        "upload",
+        "auth",
+        "timeout",
+        "path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-failure-recovery-playbook-handoff",
+    "record_id": "automation-failure-recovery-playbook",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation failure recovery playbook",
+    "source_url": "local-generated:2026-04-25/automation-failure-recovery",
+    "section": "handoff",
+    "content": "# automation-failure-recovery-playbook - Handoff Report\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, Windows\nGoal: Recover from common browser and local automation failures with bounded retries and evidence.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-failure-recovery\n\n- Failure category\n- Evidence\n- Fallback\n- Recovered result or blocker\n\nAI summary: When automation fails, classify the failure, capture evidence, retry with a targeted fallback, stop on auth/dangerous ambiguity, and report recovered state or blocker.",
+    "tokens": 70,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "Windows"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "failure",
+        "recovery",
+        "selector",
+        "overlay",
+        "upload",
+        "auth",
+        "timeout",
+        "path"
+      ],
+      "negative_prompt_tags": []
+    }
+  }
+]

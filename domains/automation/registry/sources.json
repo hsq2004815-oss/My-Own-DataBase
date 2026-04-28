@@ -1,0 +1,57 @@
+[
+  {
+    "source_id": "playwright-best-practices",
+    "name": "Playwright Best Practices",
+    "source_type": "official_docs",
+    "location": "https://playwright.dev/docs/best-practices",
+    "domain": "automation",
+    "status": "active",
+    "created_at": "2026-04-25",
+    "updated_at": "2026-04-25",
+    "notes": "Locator best practices, auto-waiting, trace viewer guidance."
+  },
+  {
+    "source_id": "playwright-actionability",
+    "name": "Playwright Auto-waiting and Actionability",
+    "source_type": "official_docs",
+    "location": "https://playwright.dev/docs/actionability",
+    "domain": "automation",
+    "status": "active",
+    "created_at": "2026-04-25",
+    "updated_at": "2026-04-25",
+    "notes": "Actionability checks and auto-retrying assertions."
+  },
+  {
+    "source_id": "playwright-input",
+    "name": "Playwright Actions/Input",
+    "source_type": "official_docs",
+    "location": "https://playwright.dev/docs/input",
+    "domain": "automation",
+    "status": "active",
+    "created_at": "2026-04-25",
+    "updated_at": "2026-04-25",
+    "notes": "Input, checks, selects, keyboard, upload."
+  },
+  {
+    "source_id": "chrome-devtools-remote-debugging",
+    "name": "Chrome DevTools Remote Debugging",
+    "source_type": "official_docs",
+    "location": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "domain": "automation",
+    "status": "active",
+    "created_at": "2026-04-25",
+    "updated_at": "2026-04-25",
+    "notes": "Remote debugging and CDP endpoint discovery."
+  },
+  {
+    "source_id": "powershell-quoting-rules",
+    "name": "PowerShell about_Quoting_Rules",
+    "source_type": "official_docs",
+    "location": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules",
+    "domain": "automation",
+    "status": "active",
+    "created_at": "2026-04-25",
+    "updated_at": "2026-04-25",
+    "notes": "Single/double quote behavior and native command quoting."
+  }
+]

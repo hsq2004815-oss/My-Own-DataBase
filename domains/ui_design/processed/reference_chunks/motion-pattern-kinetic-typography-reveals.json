@@ -1,0 +1,170 @@
+[
+  {
+    "chunk_id": "motion-pattern-kinetic-typography-reveals-overview",
+    "record_id": "motion-pattern-kinetic-typography-reveals",
+    "source_name": "Swishy kinetic typography templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "landing_page",
+    "section": "overview",
+    "content": "# Swishy kinetic typography templates - Overview\n\nPage type: landing_page\nUse cases: hero headline, launch page, marketing section, AI product intro, video overlay\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\nVisual traits:\n- kinetic typography\n- typewriter\n- sentence reveal\n- wavy text\n- logo typing\n- RGB shift\n- text morph\n\nUse when:\n- hero headline\n- launch page\n- marketing section\n- AI product intro\n- video overlay\n\nAvoid when:\n- long documentation\n- form labels\n- error messages\n- dense admin table\n\nAI summary: Use kinetic typography reveals for landing-page hero moments: typewriter, word/line stagger, wavy text, logo typing, or RGB-shift title, with a readable final state and reduced-motion fallback.",
+    "tokens": 112,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "kinetic-typography",
+        "typewriter",
+        "sentence-reveal",
+        "wavy-text",
+        "hero",
+        "landing-page",
+        "stagger"
+      ],
+      "negative_prompt_tags": [
+        "form-label",
+        "long-copy",
+        "constant-shake"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-kinetic-typography-reveals-layout",
+    "record_id": "motion-pattern-kinetic-typography-reveals",
+    "source_name": "Swishy kinetic typography templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "landing_page",
+    "section": "layout",
+    "content": "# Swishy kinetic typography templates - Layout Rules\n\nPage type: landing_page\nUse cases: hero headline, launch page, marketing section, AI product intro, video overlay\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- Use kinetic typography on one focal headline, not every text block.\n- Pair motion with strong hierarchy: headline first, supporting copy second, CTA last.\n- Keep final resting state clean and readable after the reveal completes.\n\nAI summary: Use kinetic typography reveals for landing-page hero moments: typewriter, word/line stagger, wavy text, logo typing, or RGB-shift title, with a readable final state and reduced-motion fallback.",
+    "tokens": 95,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "kinetic-typography",
+        "typewriter",
+        "sentence-reveal",
+        "wavy-text",
+        "hero",
+        "landing-page",
+        "stagger"
+      ],
+      "negative_prompt_tags": [
+        "form-label",
+        "long-copy",
+        "constant-shake"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-kinetic-typography-reveals-components",
+    "record_id": "motion-pattern-kinetic-typography-reveals",
+    "source_name": "Swishy kinetic typography templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "landing_page",
+    "section": "components",
+    "content": "# Swishy kinetic typography templates - Component Patterns\n\nPage type: landing_page\nUse cases: hero headline, launch page, marketing section, AI product intro, video overlay\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- typewriter headline\n- sentence reveal\n- wavy text\n- logo typing\n- RGB shift title\n- animated counter\n\nAI summary: Use kinetic typography reveals for landing-page hero moments: typewriter, word/line stagger, wavy text, logo typing, or RGB-shift title, with a readable final state and reduced-motion fallback.",
+    "tokens": 77,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "kinetic-typography",
+        "typewriter",
+        "sentence-reveal",
+        "wavy-text",
+        "hero",
+        "landing-page",
+        "stagger"
+      ],
+      "negative_prompt_tags": [
+        "form-label",
+        "long-copy",
+        "constant-shake"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-kinetic-typography-reveals-interaction",
+    "record_id": "motion-pattern-kinetic-typography-reveals",
+    "source_name": "Swishy kinetic typography templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "landing_page",
+    "section": "interaction",
+    "content": "# Swishy kinetic typography templates - Interaction States\n\nPage type: landing_page\nUse cases: hero headline, launch page, marketing section, AI product intro, video overlay\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- initial hidden\n- typing\n- line reveal\n- settled\n- hover accent\n- loop optional\n\nAI summary: Use kinetic typography reveals for landing-page hero moments: typewriter, word/line stagger, wavy text, logo typing, or RGB-shift title, with a readable final state and reduced-motion fallback.",
+    "tokens": 74,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "kinetic-typography",
+        "typewriter",
+        "sentence-reveal",
+        "wavy-text",
+        "hero",
+        "landing-page",
+        "stagger"
+      ],
+      "negative_prompt_tags": [
+        "form-label",
+        "long-copy",
+        "constant-shake"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-kinetic-typography-reveals-accessibility",
+    "record_id": "motion-pattern-kinetic-typography-reveals",
+    "source_name": "Swishy kinetic typography templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "landing_page",
+    "section": "accessibility",
+    "content": "# Swishy kinetic typography templates - Accessibility Notes\n\nPage type: landing_page\nUse cases: hero headline, launch page, marketing section, AI product intro, video overlay\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- Provide final static text in the DOM.\n- Avoid long typing delays before users can understand the page.\n- Disable continuous wave/shake effects under reduced motion.\n\nAI summary: Use kinetic typography reveals for landing-page hero moments: typewriter, word/line stagger, wavy text, logo typing, or RGB-shift title, with a readable final state and reduced-motion fallback.",
+    "tokens": 85,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "kinetic-typography",
+        "typewriter",
+        "sentence-reveal",
+        "wavy-text",
+        "hero",
+        "landing-page",
+        "stagger"
+      ],
+      "negative_prompt_tags": [
+        "form-label",
+        "long-copy",
+        "constant-shake"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-kinetic-typography-reveals-implementation",
+    "record_id": "motion-pattern-kinetic-typography-reveals",
+    "source_name": "Swishy kinetic typography templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "landing_page",
+    "section": "implementation",
+    "content": "# Swishy kinetic typography templates - Implementation Hints\n\nPage type: landing_page\nUse cases: hero headline, launch page, marketing section, AI product intro, video overlay\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- Good default: opacity+translateY reveal with 40-90ms stagger per word or line.\n- Typewriter should be short and meaningful; avoid simulating entire paragraphs.\n- Use blur-in sparingly for premium feel, then settle to sharp text.\n\nAI summary: Use kinetic typography reveals for landing-page hero moments: typewriter, word/line stagger, wavy text, logo typing, or RGB-shift title, with a readable final state and reduced-motion fallback.",
+    "tokens": 93,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "kinetic-typography",
+        "typewriter",
+        "sentence-reveal",
+        "wavy-text",
+        "hero",
+        "landing-page",
+        "stagger"
+      ],
+      "negative_prompt_tags": [
+        "form-label",
+        "long-copy",
+        "constant-shake"
+      ]
+    }
+  }
+]

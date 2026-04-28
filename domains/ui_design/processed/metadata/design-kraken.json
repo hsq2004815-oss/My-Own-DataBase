@@ -1,0 +1,23 @@
+{
+  "file_id": "design-kraken",
+  "title": "Kraken Design System",
+  "domain": "ui_design",
+  "source_id": "awesome-design-md",
+  "relative_path": "design-md/kraken/README.md",
+  "file_type": "markdown",
+  "tags": [
+    "Fintech & Crypto",
+    "purple",
+    "dark",
+    "dashboard",
+    "accent",
+    "dark-theme"
+  ],
+  "status": "processed",
+  "processed": true,
+  "chunked": true,
+  "indexed": false,
+  "created_at": "2026-04-17T09:34:38.969Z",
+  "updated_at": "2026-04-17T09:34:38.969Z",
+  "notes": "Processed from awesome-design-md collection"
+}

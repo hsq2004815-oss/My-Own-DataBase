@@ -1,0 +1,72 @@
+[
+  {
+    "chunk_id": "design-bugatti-chunk-1",
+    "file_id": "design-bugatti",
+    "content": "# Bugatti Design System - Brand Style\n\n**Category**: Automotive\n**Description**: Luxury hypercar. Cinema-black canvas, monochrome austerity, monumental display type\n**Source**: https://getdesign.md/bugatti/design-md\n\n**Note**: 源文件包含设计系统描述。\n\n## Design Philosophy\nLuxury hypercar. Cinema-black canvas, monochrome austerity, monumental display type",
+    "tokens": 87,
+    "metadata": {
+      "section": "brand_style",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-bugatti-chunk-2",
+    "file_id": "design-bugatti",
+    "content": "# Bugatti Design System - Color Palette\n\n**Colors mentioned**: black, monochrome\n\n**Description**: Luxury hypercar. Cinema-black canvas, monochrome austerity, monumental display type\n\n**Note**: 源文件可能包含具体色值。",
+    "tokens": 52,
+    "metadata": {
+      "section": "color_palette",
+      "has_colors": true,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-bugatti-chunk-3",
+    "file_id": "design-bugatti",
+    "content": "# Bugatti Design System - Typography\n\n**Typography mentioned**: type, display\n\n**Description**: Luxury hypercar. Cinema-black canvas, monochrome austerity, monumental display type\n\n**Note**: 源文件可能包含字体细节。",
+    "tokens": 51,
+    "metadata": {
+      "section": "typography",
+      "has_colors": false,
+      "has_typography": true,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-bugatti-chunk-4",
+    "file_id": "design-bugatti",
+    "content": "# Bugatti Design System - Layout Principles\n\n**Layout mentioned**: canvas\n\n**Description**: Luxury hypercar. Cinema-black canvas, monochrome austerity, monumental display type\n\n**Note**: 源文件可能包含布局细节。",
+    "tokens": 50,
+    "metadata": {
+      "section": "layout",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": true,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-bugatti-chunk-5",
+    "file_id": "design-bugatti",
+    "content": "# Bugatti Design System - Components & Interaction\n\n**Information不足**: 源文件未提供具体组件信息。\n\n**Description**: Luxury hypercar. Cinema-black canvas, monochrome austerity, monumental display type\n\n**Note**: 源文件未包含组件细节。",
+    "tokens": 53,
+    "metadata": {
+      "section": "components",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  }
+]

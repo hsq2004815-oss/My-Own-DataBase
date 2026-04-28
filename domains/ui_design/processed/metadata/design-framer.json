@@ -1,0 +1,22 @@
+{
+  "file_id": "design-framer",
+  "title": "Framer Design System",
+  "domain": "ui_design",
+  "source_id": "awesome-design-md",
+  "relative_path": "design-md/framer/README.md",
+  "file_type": "markdown",
+  "tags": [
+    "Design & Creative Tools",
+    "blue",
+    "black",
+    "bold",
+    "motion"
+  ],
+  "status": "processed",
+  "processed": true,
+  "chunked": true,
+  "indexed": false,
+  "created_at": "2026-04-17T09:34:38.965Z",
+  "updated_at": "2026-04-17T09:34:38.965Z",
+  "notes": "Processed from awesome-design-md collection"
+}

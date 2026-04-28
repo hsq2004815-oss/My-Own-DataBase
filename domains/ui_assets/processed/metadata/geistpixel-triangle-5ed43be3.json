@@ -1,0 +1,39 @@
+{
+  "asset_id": "geistpixel-triangle-5ed43be3",
+  "domain": "ui_assets",
+  "asset_type": "font",
+  "usage_policy": "review_required",
+  "files": {
+    "file_path": "E:\\DataBase\\domains\\ui_assets\\raw\\review_required\\fonts\\GeistPixel-Triangle.otf",
+    "preview_path": "",
+    "original_path": "F:\\materials\\09_fonts_字体\\geist-font\\fonts\\GeistPixel-Triangle.otf",
+    "sha1": "5ed43be382e8e8150e760ea4c7256508b27f52ea",
+    "size_bytes": 382292,
+    "extension": ".otf"
+  },
+  "source": {
+    "name": "local import",
+    "url": "",
+    "captured_at": "2026-04-26T10:40:06.518056+00:00",
+    "notes": "Imported by scripts/ui_assets/ingest_assets.py"
+  },
+  "license": {
+    "label": "review required",
+    "notes": "Review each font license before direct use."
+  },
+  "style_tags": [],
+  "use_cases": [],
+  "avoid_when": [],
+  "implementation_notes": [],
+  "quality": {
+    "curation_status": "new",
+    "notes": "Review usage_policy and license before direct project use."
+  },
+  "retrieval": {
+    "ai_summary": "font asset for font. Review usage policy before use.",
+    "prompt_tags": [
+      "font"
+    ],
+    "negative_prompt_tags": []
+  }
+}

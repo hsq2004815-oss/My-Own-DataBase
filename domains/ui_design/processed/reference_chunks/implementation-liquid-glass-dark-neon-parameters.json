@@ -1,0 +1,182 @@
+[
+  {
+    "chunk_id": "implementation-liquid-glass-dark-neon-parameters-overview",
+    "record_id": "implementation-liquid-glass-dark-neon-parameters",
+    "source_name": "Dark neon Liquid Glass implementation parameters",
+    "source_url": "local-generated:2026-04-25/dark-neon-liquid-glass-parameters",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# Dark neon Liquid Glass implementation parameters - Overview\n\nPage type: component_pattern\nUse cases: premium card, dark mode hero, selected state, Pro plan card, AI control panel, neon status tile\nEvidence: summary_only / high\nSource: local-generated:2026-04-25/dark-neon-liquid-glass-parameters\n\nVisual traits:\n- black translucent glass\n- cyan edge glint\n- magenta rim glow\n- orange caustic\n- white text\n- deep shadow\n- neon active ring\n\nUse when:\n- premium card\n- dark mode hero\n- selected state\n- Pro plan card\n- AI control panel\n- neon status tile\n\nAvoid when:\n- long reading area\n- standard enterprise CRUD\n- legal/medical workflow\n- low contrast mode\n- large repeated list rows\n\nAI summary: Dark neon Liquid Glass parameters: dark fill rgba(8,10,16,0.68-0.78), rim rgba white 0.18-0.32, cyan glint rgba(34,211,238,0.28-0.46), magenta rgba(217,70,239,0.22-0.40), orange rgba(251,146,60,0.16-0.32), deep shadows, inset gloss, active neon rings.",
+    "tokens": 137,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "dark-glass",
+        "neon-parameters",
+        "liquid-glass",
+        "cyan",
+        "magenta",
+        "orange",
+        "premium-card",
+        "dark-mode"
+      ],
+      "negative_prompt_tags": [
+        "flat-dark",
+        "low-contrast",
+        "all-page-dark",
+        "no-text-indicator"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-liquid-glass-dark-neon-parameters-layout",
+    "record_id": "implementation-liquid-glass-dark-neon-parameters",
+    "source_name": "Dark neon Liquid Glass implementation parameters",
+    "source_url": "local-generated:2026-04-25/dark-neon-liquid-glass-parameters",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# Dark neon Liquid Glass implementation parameters - Layout Rules\n\nPage type: component_pattern\nUse cases: premium card, dark mode hero, selected state, Pro plan card, AI control panel, neon status tile\nEvidence: summary_only / high\nSource: local-generated:2026-04-25/dark-neon-liquid-glass-parameters\n\n- Use dark neon glass as an accent or premium area, not the default surface for the whole page.\n- Keep text white or near-white and use muted gray only for secondary copy with sufficient contrast.\n- Place neon glints near edges/corners and icon rings, not directly behind body text.\n- Pair dark neon with lighter surrounding surfaces so it reads as intentional emphasis.\n\nAI summary: Dark neon Liquid Glass parameters: dark fill rgba(8,10,16,0.68-0.78), rim rgba white 0.18-0.32, cyan glint rgba(34,211,238,0.28-0.46), magenta rgba(217,70,239,0.22-0.40), orange rgba(251,146,60,0.16-0.32), deep shadows, inset gloss, active neon rings.",
+    "tokens": 129,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "dark-glass",
+        "neon-parameters",
+        "liquid-glass",
+        "cyan",
+        "magenta",
+        "orange",
+        "premium-card",
+        "dark-mode"
+      ],
+      "negative_prompt_tags": [
+        "flat-dark",
+        "low-contrast",
+        "all-page-dark",
+        "no-text-indicator"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-liquid-glass-dark-neon-parameters-components",
+    "record_id": "implementation-liquid-glass-dark-neon-parameters",
+    "source_name": "Dark neon Liquid Glass implementation parameters",
+    "source_url": "local-generated:2026-04-25/dark-neon-liquid-glass-parameters",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# Dark neon Liquid Glass implementation parameters - Component Patterns\n\nPage type: component_pattern\nUse cases: premium card, dark mode hero, selected state, Pro plan card, AI control panel, neon status tile\nEvidence: summary_only / high\nSource: local-generated:2026-04-25/dark-neon-liquid-glass-parameters\n\n- dark premium card\n- dark pill button\n- neon icon tile\n- dark search field\n- active tab\n- dark toggle\n\nAI summary: Dark neon Liquid Glass parameters: dark fill rgba(8,10,16,0.68-0.78), rim rgba white 0.18-0.32, cyan glint rgba(34,211,238,0.28-0.46), magenta rgba(217,70,239,0.22-0.40), orange rgba(251,146,60,0.16-0.32), deep shadows, inset gloss, active neon rings.",
+    "tokens": 87,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "dark-glass",
+        "neon-parameters",
+        "liquid-glass",
+        "cyan",
+        "magenta",
+        "orange",
+        "premium-card",
+        "dark-mode"
+      ],
+      "negative_prompt_tags": [
+        "flat-dark",
+        "low-contrast",
+        "all-page-dark",
+        "no-text-indicator"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-liquid-glass-dark-neon-parameters-interaction",
+    "record_id": "implementation-liquid-glass-dark-neon-parameters",
+    "source_name": "Dark neon Liquid Glass implementation parameters",
+    "source_url": "local-generated:2026-04-25/dark-neon-liquid-glass-parameters",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# Dark neon Liquid Glass implementation parameters - Interaction States\n\nPage type: component_pattern\nUse cases: premium card, dark mode hero, selected state, Pro plan card, AI control panel, neon status tile\nEvidence: summary_only / high\nSource: local-generated:2026-04-25/dark-neon-liquid-glass-parameters\n\n- hover glow\n- pressed inset\n- selected neon ring\n- disabled muted\n- focus-visible rim\n- active premium\n\nAI summary: Dark neon Liquid Glass parameters: dark fill rgba(8,10,16,0.68-0.78), rim rgba white 0.18-0.32, cyan glint rgba(34,211,238,0.28-0.46), magenta rgba(217,70,239,0.22-0.40), orange rgba(251,146,60,0.16-0.32), deep shadows, inset gloss, active neon rings.",
+    "tokens": 84,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "dark-glass",
+        "neon-parameters",
+        "liquid-glass",
+        "cyan",
+        "magenta",
+        "orange",
+        "premium-card",
+        "dark-mode"
+      ],
+      "negative_prompt_tags": [
+        "flat-dark",
+        "low-contrast",
+        "all-page-dark",
+        "no-text-indicator"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-liquid-glass-dark-neon-parameters-accessibility",
+    "record_id": "implementation-liquid-glass-dark-neon-parameters",
+    "source_name": "Dark neon Liquid Glass implementation parameters",
+    "source_url": "local-generated:2026-04-25/dark-neon-liquid-glass-parameters",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# Dark neon Liquid Glass implementation parameters - Accessibility Notes\n\nPage type: component_pattern\nUse cases: premium card, dark mode hero, selected state, Pro plan card, AI control panel, neon status tile\nEvidence: summary_only / high\nSource: local-generated:2026-04-25/dark-neon-liquid-glass-parameters\n\n- Use text colors around #F8FAFC or #FFFFFF for primary labels on dark glass.\n- Avoid relying on cyan/magenta glow as the only selected/success indicator.\n- Check contrast after backdrop blur because background color can bleed through.\n\nAI summary: Dark neon Liquid Glass parameters: dark fill rgba(8,10,16,0.68-0.78), rim rgba white 0.18-0.32, cyan glint rgba(34,211,238,0.28-0.46), magenta rgba(217,70,239,0.22-0.40), orange rgba(251,146,60,0.16-0.32), deep shadows, inset gloss, active neon rings.",
+    "tokens": 102,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "dark-glass",
+        "neon-parameters",
+        "liquid-glass",
+        "cyan",
+        "magenta",
+        "orange",
+        "premium-card",
+        "dark-mode"
+      ],
+      "negative_prompt_tags": [
+        "flat-dark",
+        "low-contrast",
+        "all-page-dark",
+        "no-text-indicator"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-liquid-glass-dark-neon-parameters-implementation",
+    "record_id": "implementation-liquid-glass-dark-neon-parameters",
+    "source_name": "Dark neon Liquid Glass implementation parameters",
+    "source_url": "local-generated:2026-04-25/dark-neon-liquid-glass-parameters",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# Dark neon Liquid Glass implementation parameters - Implementation Hints\n\nPage type: component_pattern\nUse cases: premium card, dark mode hero, selected state, Pro plan card, AI control panel, neon status tile\nEvidence: summary_only / high\nSource: local-generated:2026-04-25/dark-neon-liquid-glass-parameters\n\n- Base dark glass: rgba(8,10,16,0.68) to rgba(8,10,16,0.78); strong default rgba(8,10,16,0.72).\n- Secondary dark glass: rgba(15,23,42,0.58) to rgba(15,23,42,0.70).\n- Backdrop filter: blur(18px) saturate(160%) for cards; blur(24px) saturate(180%) for hero/premium surfaces.\n- White rim: border 1px solid rgba(255,255,255,0.18) to rgba(255,255,255,0.32); hover can rise to 0.42.\n- Cyan glint: rgba(34,211,238,0.28) to rgba(34,211,238,0.46), usually radial-gradient at top-left or icon edge.\n- Magenta glint: rgba(217,70,239,0.22) to rgba(217,70,239,0.40), usually bottom-right or active ring.\n- Orange glint: rgba(251,146,60,0.16) to rgba(251,146,60,0.32), use sparingly for warm caustic highlights.\n- Deep shadow: 0 24px 60px rgba(2,6,23,0.34) plus 0 8px 24px rgba(15,23,42,0.22).\n- Inset gloss: inset 0 1px 1px rgba(255,255,255,0.22), inset 0 -1px 2px rgba(0,0,0,0.35).\n- Neon active ring: box-shadow 0 0 0 1px rgba(34,211,238,0.38), 0 0 24px rgba(217,70,239,0.24).\n- Pressed state: reduce translateY by 1px, increase inset dark shadow, and slightly reduce outer glow.\n- Disabled state: background rgba(15,23,42,0.38), border rgba(255,255,255,0.12), text rgba(248,250,252,0.45), remove neon glints.\n\nAI summary: Dark neon Liquid Glass parameters: dark fill rgba(8,10,16,0.68-0.78), rim rgba white 0.18-0.32, cyan glint rgba(34,211,238,0.28-0.46), magenta rgba(217,70,239,0.22-0.40), orange rgba(251,146,60,0.16-0.32), deep shadows, inset gloss, active neon rings.",
+    "tokens": 211,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "dark-glass",
+        "neon-parameters",
+        "liquid-glass",
+        "cyan",
+        "magenta",
+        "orange",
+        "premium-card",
+        "dark-mode"
+      ],
+      "negative_prompt_tags": [
+        "flat-dark",
+        "low-contrast",
+        "all-page-dark",
+        "no-text-indicator"
+      ]
+    }
+  }
+]

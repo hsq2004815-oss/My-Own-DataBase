@@ -1,0 +1,39 @@
+{
+  "asset_id": "reference1-2-1c01e931",
+  "domain": "ui_assets",
+  "asset_type": "screenshot_reference",
+  "usage_policy": "inspiration_only",
+  "files": {
+    "file_path": "E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (2).png",
+    "preview_path": "",
+    "original_path": "F:\\materials\\08_screenshots_优秀界面截图\\reference1 (2).png",
+    "sha1": "1c01e931fb5a6bcd0ef1b3bbf94dedc431b3637e",
+    "size_bytes": 769349,
+    "extension": ".png"
+  },
+  "source": {
+    "name": "local import",
+    "url": "",
+    "captured_at": "2026-04-26T10:40:04.016026+00:00",
+    "notes": "Imported by scripts/ui_assets/ingest_assets.py"
+  },
+  "license": {
+    "label": "reference only",
+    "notes": "Screenshot reference only; do not copy brand or commercial UI assets."
+  },
+  "style_tags": [],
+  "use_cases": [],
+  "avoid_when": [],
+  "implementation_notes": [],
+  "quality": {
+    "curation_status": "new",
+    "notes": "Review usage_policy and license before direct project use."
+  },
+  "retrieval": {
+    "ai_summary": "screenshot reference asset for screenshot reference. Review usage policy before use.",
+    "prompt_tags": [
+      "screenshot-reference"
+    ],
+    "negative_prompt_tags": []
+  }
+}

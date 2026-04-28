@@ -1,0 +1,191 @@
+[
+  {
+    "chunk_id": "playwright-locator-best-practices-overview",
+    "record_id": "playwright-locator-best-practices",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "overview",
+    "content": "# playwright-locator-best-practices - Overview\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Use resilient locators and avoid brittle selectors in browser automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\nWhen to use:\n- Automating web UI\n- Selectors are flaky\n- Agent needs to click/fill stable elements\n\nInputs required:\n- Target URL\n- User-visible labels/roles\n- Stable test ids if available\n\nAI summary: Use Playwright resilient locators: role, label, text, placeholder, test id, and scoped locators. Avoid brittle CSS/XPath and arbitrary sleeps.",
+    "tokens": 79,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "locator",
+        "selectors",
+        "role",
+        "text",
+        "test-id",
+        "stable"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-locator-best-practices-steps",
+    "record_id": "playwright-locator-best-practices",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "steps",
+    "content": "# playwright-locator-best-practices - Execution Steps\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Use resilient locators and avoid brittle selectors in browser automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Prefer role, text, label, placeholder, and test id locators over CSS/XPath.\n- Use Playwright Inspector/codegen only as a starting point; review locator semantics.\n- Scope locators to a region when text repeats.\n- Avoid selecting by dynamic class names or layout-dependent nth-child selectors.\n\nAI summary: Use Playwright resilient locators: role, label, text, placeholder, test id, and scoped locators. Avoid brittle CSS/XPath and arbitrary sleeps.",
+    "tokens": 92,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "locator",
+        "selectors",
+        "role",
+        "text",
+        "test-id",
+        "stable"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-locator-best-practices-commands",
+    "record_id": "playwright-locator-best-practices",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "commands",
+    "content": "# playwright-locator-best-practices - Commands or APIs\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Use resilient locators and avoid brittle selectors in browser automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- page.getByRole(...)\n- page.getByLabel(...)\n- page.getByText(...)\n- locator.filter(...)\n\nAI summary: Use Playwright resilient locators: role, label, text, placeholder, test id, and scoped locators. Avoid brittle CSS/XPath and arbitrary sleeps.",
+    "tokens": 57,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "locator",
+        "selectors",
+        "role",
+        "text",
+        "test-id",
+        "stable"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-locator-best-practices-verification",
+    "record_id": "playwright-locator-best-practices",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "verification",
+    "content": "# playwright-locator-best-practices - Verification\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Use resilient locators and avoid brittle selectors in browser automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Element action succeeds without arbitrary sleep\n- Locator remains unique or intentionally scoped\n- Screenshot or assertion confirms result\n\nAI summary: Use Playwright resilient locators: role, label, text, placeholder, test id, and scoped locators. Avoid brittle CSS/XPath and arbitrary sleeps.",
+    "tokens": 67,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "locator",
+        "selectors",
+        "role",
+        "text",
+        "test-id",
+        "stable"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-locator-best-practices-failure_modes",
+    "record_id": "playwright-locator-best-practices",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "failure_modes",
+    "content": "# playwright-locator-best-practices - Failure Modes\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Use resilient locators and avoid brittle selectors in browser automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Multiple matching elements\n- Text changes due to locale\n- Dynamic class/hash changes\n- Hidden duplicate element\n\nAI summary: Use Playwright resilient locators: role, label, text, placeholder, test id, and scoped locators. Avoid brittle CSS/XPath and arbitrary sleeps.",
+    "tokens": 66,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "locator",
+        "selectors",
+        "role",
+        "text",
+        "test-id",
+        "stable"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-locator-best-practices-safety",
+    "record_id": "playwright-locator-best-practices",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "safety",
+    "content": "# playwright-locator-best-practices - Safety Notes\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Use resilient locators and avoid brittle selectors in browser automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Do not automate destructive actions without explicit user instruction.\n- Prefer assertions before submit/publish/delete.\n\nAI summary: Use Playwright resilient locators: role, label, text, placeholder, test id, and scoped locators. Avoid brittle CSS/XPath and arbitrary sleeps.",
+    "tokens": 63,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "locator",
+        "selectors",
+        "role",
+        "text",
+        "test-id",
+        "stable"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-locator-best-practices-handoff",
+    "record_id": "playwright-locator-best-practices",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "handoff",
+    "content": "# playwright-locator-best-practices - Handoff Report\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Use resilient locators and avoid brittle selectors in browser automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Selectors used\n- Why they are stable\n- Screenshots/assertions\n\nAI summary: Use Playwright resilient locators: role, label, text, placeholder, test id, and scoped locators. Avoid brittle CSS/XPath and arbitrary sleeps.",
+    "tokens": 58,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "locator",
+        "selectors",
+        "role",
+        "text",
+        "test-id",
+        "stable"
+      ],
+      "negative_prompt_tags": []
+    }
+  }
+]

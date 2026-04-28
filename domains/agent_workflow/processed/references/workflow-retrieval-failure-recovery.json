@@ -1,0 +1,84 @@
+{
+  "record_id": "workflow-retrieval-failure-recovery",
+  "source": {
+    "name": "Retrieval failure recovery workflow",
+    "url": "local-generated:2026-04-25/retrieval-failure",
+    "source_type": "local_procedure",
+    "license_notes": "Original local workflow notes.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "agent_workflow",
+  "workflow_type": "failure_recovery",
+  "agent_targets": [
+    "Claude Code",
+    "Codex",
+    "Cursor",
+    "local agents"
+  ],
+  "goal": "Recover when local knowledge retrieval fails or returns irrelevant results.",
+  "when_to_use": [
+    "/health fails",
+    "/ui/search returns empty",
+    "Search returns broad unrelated chunks",
+    "Agent cannot access local path",
+    "SQLite index missing"
+  ],
+  "inputs_required": [
+    "Error message",
+    "Query attempted",
+    "API status",
+    "Available scripts"
+  ],
+  "steps": [
+    "If API is down, start backend_api with uvicorn or fall back to search_ui.py.",
+    "If search is empty, simplify query to one core term, then try synonyms.",
+    "If results are broad, add style/page/component constraints or use a more specific query.",
+    "If SQLite DB is missing, run make_chunks.py and build_sqlite_index.py for the relevant domain.",
+    "If direct script path fails on Windows Bash, use forward slashes or call the HTTP API.",
+    "If no knowledge exists, report the gap and optionally create a new reference record after research."
+  ],
+  "api_calls": [
+    "GET /health",
+    "GET /ui/search?q={simplified_query}&limit=5"
+  ],
+  "prompt_contract": [
+    "Do not stop after one failed query.",
+    "Retry narrower/broader queries before claiming no data.",
+    "Distinguish no data from API/path failure."
+  ],
+  "verification": [
+    "Recovery path returns chunks or a clear gap report",
+    "The final report states the failure and fallback used"
+  ],
+  "failure_modes": [
+    "Treating path error as missing data",
+    "Using too many keywords in FTS query",
+    "Ignoring API startup state",
+    "Silently falling back to memory"
+  ],
+  "handoff_report": [
+    "Original failure",
+    "Fallback attempted",
+    "Recovered result or remaining gap"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "observed",
+    "notes": "Based on observed path error and strict multi-word search misses."
+  },
+  "retrieval": {
+    "ai_summary": "If local retrieval fails, check API health, simplify or refine queries, rebuild index if missing, fix Windows/Bash paths, and report fallback evidence instead of silently using memory.",
+    "prompt_tags": [
+      "failure-recovery",
+      "search-empty",
+      "api-down",
+      "path-error",
+      "rebuild-index",
+      "fallback"
+    ],
+    "negative_prompt_tags": [
+      "stop-after-one-failure",
+      "silent-memory-fallback"
+    ]
+  }
+}

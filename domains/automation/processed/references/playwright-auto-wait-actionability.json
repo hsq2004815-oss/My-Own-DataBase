@@ -1,0 +1,76 @@
+{
+  "record_id": "playwright-auto-wait-actionability",
+  "source": {
+    "name": "Playwright Auto-waiting and Actionability",
+    "url": "https://playwright.dev/docs/actionability",
+    "source_type": "official_docs",
+    "license_notes": "Summarized guidance with source link; do not copy full docs.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "automation",
+  "automation_type": "browser_playwright",
+  "tooling": [
+    "Playwright"
+  ],
+  "goal": "Rely on Playwright auto-waiting and actionability checks instead of manual sleep-heavy automation.",
+  "when_to_use": [
+    "Clicks fail intermittently",
+    "Page needs waiting",
+    "Form submit or navigation is flaky"
+  ],
+  "inputs_required": [
+    "Target action",
+    "Expected post-action state",
+    "Timeout budget"
+  ],
+  "steps": [
+    "Use locators directly; Playwright waits for visible/enabled/stable where relevant.",
+    "Prefer auto-retrying expect assertions for final state.",
+    "Wait for specific UI state, URL, response, or locator rather than fixed time.",
+    "Use explicit waits only for known asynchronous boundaries."
+  ],
+  "commands_or_apis": [
+    "await locator.click()",
+    "await expect(locator).toBeVisible()",
+    "await expect(page).toHaveURL(...)"
+  ],
+  "verification": [
+    "No fixed sleep required",
+    "Assertion proves expected state",
+    "Failure message points to missing state"
+  ],
+  "failure_modes": [
+    "Element detached",
+    "Overlay intercepts click",
+    "Animation not settled",
+    "Disabled button"
+  ],
+  "safety_notes": [
+    "Do not bypass actionability with force unless the task explicitly requires it and risk is low."
+  ],
+  "handoff_report": [
+    "Action attempted",
+    "Assertion used",
+    "Any forced actions or waits"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "official",
+    "notes": "Official actionability docs describe auto-waiting and assertions."
+  },
+  "retrieval": {
+    "ai_summary": "Use Playwright auto-waiting/actionability and auto-retrying assertions. Avoid fixed sleeps; wait for specific UI state, URL, response, or locator.",
+    "prompt_tags": [
+      "playwright",
+      "auto-wait",
+      "actionability",
+      "assertion",
+      "flaky",
+      "wait"
+    ],
+    "negative_prompt_tags": [
+      "sleep-only",
+      "force-click-default"
+    ]
+  }
+}

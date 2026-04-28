@@ -1,0 +1,176 @@
+[
+  {
+    "chunk_id": "visual-style-liquid-glass-dark-neon-overview",
+    "record_id": "visual-style-liquid-glass-dark-neon",
+    "source_name": "User-provided dark Liquid Glass screenshot",
+    "source_url": "local-chat-reference:2026-04-25/liquid-glass-dark-neon",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# User-provided dark Liquid Glass screenshot - Overview\n\nPage type: component_pattern\nUse cases: dark mode AI app, music/creative tool, premium dashboard hero, neon control panel\nEvidence: screenshot_observed / high\nSource: local-chat-reference:2026-04-25/liquid-glass-dark-neon\n\nVisual traits:\n- dark glass\n- black translucent surface\n- neon rim light\n- rainbow caustics\n- high gloss reflection\n- deep shadow\n- bright icon rings\n\nUse when:\n- dark mode AI app\n- music/creative tool\n- premium dashboard hero\n- neon control panel\n\nAvoid when:\n- long reading surface\n- plain enterprise CRUD\n- medical/legal workflow\n- high daylight mobile UI\n\nAI summary: Use dark Liquid Glass for premium dark-mode components: black translucent glossy surfaces, neon rim light, white readable text, small rainbow caustics, and selected-state icon rings.",
+    "tokens": 121,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "screenshot_observed",
+      "prompt_tags": [
+        "liquid-glass",
+        "dark-glass",
+        "neon",
+        "black-gloss",
+        "premium",
+        "dark-mode",
+        "rainbow-caustics"
+      ],
+      "negative_prompt_tags": [
+        "plain-crud",
+        "long-reading",
+        "low-contrast",
+        "flat-dark"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-liquid-glass-dark-neon-layout",
+    "record_id": "visual-style-liquid-glass-dark-neon",
+    "source_name": "User-provided dark Liquid Glass screenshot",
+    "source_url": "local-chat-reference:2026-04-25/liquid-glass-dark-neon",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# User-provided dark Liquid Glass screenshot - Layout Rules\n\nPage type: component_pattern\nUse cases: dark mode AI app, music/creative tool, premium dashboard hero, neon control panel\nEvidence: screenshot_observed / high\nSource: local-chat-reference:2026-04-25/liquid-glass-dark-neon\n\n- Use dark glass for selected or premium states, not every surface on the page.\n- Pair black translucent fills with strong white text and neon accent rings.\n- Keep the outer rim bright enough to separate the component from the background.\n- Use neon gradients in small rings, checks, toggles, or active tabs instead of full-screen saturation.\n\nAI summary: Use dark Liquid Glass for premium dark-mode components: black translucent glossy surfaces, neon rim light, white readable text, small rainbow caustics, and selected-state icon rings.",
+    "tokens": 117,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "screenshot_observed",
+      "prompt_tags": [
+        "liquid-glass",
+        "dark-glass",
+        "neon",
+        "black-gloss",
+        "premium",
+        "dark-mode",
+        "rainbow-caustics"
+      ],
+      "negative_prompt_tags": [
+        "plain-crud",
+        "long-reading",
+        "low-contrast",
+        "flat-dark"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-liquid-glass-dark-neon-components",
+    "record_id": "visual-style-liquid-glass-dark-neon",
+    "source_name": "User-provided dark Liquid Glass screenshot",
+    "source_url": "local-chat-reference:2026-04-25/liquid-glass-dark-neon",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# User-provided dark Liquid Glass screenshot - Component Patterns\n\nPage type: component_pattern\nUse cases: dark mode AI app, music/creative tool, premium dashboard hero, neon control panel\nEvidence: screenshot_observed / high\nSource: local-chat-reference:2026-04-25/liquid-glass-dark-neon\n\n- dark primary pill\n- neon icon tile\n- search field\n- toggle\n- active tab\n- premium card\n\nAI summary: Use dark Liquid Glass for premium dark-mode components: black translucent glossy surfaces, neon rim light, white readable text, small rainbow caustics, and selected-state icon rings.",
+    "tokens": 78,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "screenshot_observed",
+      "prompt_tags": [
+        "liquid-glass",
+        "dark-glass",
+        "neon",
+        "black-gloss",
+        "premium",
+        "dark-mode",
+        "rainbow-caustics"
+      ],
+      "negative_prompt_tags": [
+        "plain-crud",
+        "long-reading",
+        "low-contrast",
+        "flat-dark"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-liquid-glass-dark-neon-interaction",
+    "record_id": "visual-style-liquid-glass-dark-neon",
+    "source_name": "User-provided dark Liquid Glass screenshot",
+    "source_url": "local-chat-reference:2026-04-25/liquid-glass-dark-neon",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# User-provided dark Liquid Glass screenshot - Interaction States\n\nPage type: component_pattern\nUse cases: dark mode AI app, music/creative tool, premium dashboard hero, neon control panel\nEvidence: screenshot_observed / high\nSource: local-chat-reference:2026-04-25/liquid-glass-dark-neon\n\n- selected\n- active\n- hover glow\n- pressed glossy inset\n- premium enabled\n\nAI summary: Use dark Liquid Glass for premium dark-mode components: black translucent glossy surfaces, neon rim light, white readable text, small rainbow caustics, and selected-state icon rings.",
+    "tokens": 73,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "screenshot_observed",
+      "prompt_tags": [
+        "liquid-glass",
+        "dark-glass",
+        "neon",
+        "black-gloss",
+        "premium",
+        "dark-mode",
+        "rainbow-caustics"
+      ],
+      "negative_prompt_tags": [
+        "plain-crud",
+        "long-reading",
+        "low-contrast",
+        "flat-dark"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-liquid-glass-dark-neon-accessibility",
+    "record_id": "visual-style-liquid-glass-dark-neon",
+    "source_name": "User-provided dark Liquid Glass screenshot",
+    "source_url": "local-chat-reference:2026-04-25/liquid-glass-dark-neon",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# User-provided dark Liquid Glass screenshot - Accessibility Notes\n\nPage type: component_pattern\nUse cases: dark mode AI app, music/creative tool, premium dashboard hero, neon control panel\nEvidence: screenshot_observed / high\nSource: local-chat-reference:2026-04-25/liquid-glass-dark-neon\n\n- White text on black glass is usually safer than muted gray text.\n- Neon accents should not be the only indicator of success or selection.\n- Check contrast after blur because background colors can reduce readability.\n\nAI summary: Use dark Liquid Glass for premium dark-mode components: black translucent glossy surfaces, neon rim light, white readable text, small rainbow caustics, and selected-state icon rings.",
+    "tokens": 96,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "screenshot_observed",
+      "prompt_tags": [
+        "liquid-glass",
+        "dark-glass",
+        "neon",
+        "black-gloss",
+        "premium",
+        "dark-mode",
+        "rainbow-caustics"
+      ],
+      "negative_prompt_tags": [
+        "plain-crud",
+        "long-reading",
+        "low-contrast",
+        "flat-dark"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-liquid-glass-dark-neon-implementation",
+    "record_id": "visual-style-liquid-glass-dark-neon",
+    "source_name": "User-provided dark Liquid Glass screenshot",
+    "source_url": "local-chat-reference:2026-04-25/liquid-glass-dark-neon",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# User-provided dark Liquid Glass screenshot - Implementation Hints\n\nPage type: component_pattern\nUse cases: dark mode AI app, music/creative tool, premium dashboard hero, neon control panel\nEvidence: screenshot_observed / high\nSource: local-chat-reference:2026-04-25/liquid-glass-dark-neon\n\n- Use rgba(8, 10, 16, 0.72) with backdrop blur for dark glass surfaces.\n- Add cyan/magenta/orange radial gradients as edge glints and small internal rings.\n- Use larger shadow offsets and lower opacity to make dark glass feel heavy and polished.\n\nAI summary: Use dark Liquid Glass for premium dark-mode components: black translucent glossy surfaces, neon rim light, white readable text, small rainbow caustics, and selected-state icon rings.",
+    "tokens": 100,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "screenshot_observed",
+      "prompt_tags": [
+        "liquid-glass",
+        "dark-glass",
+        "neon",
+        "black-gloss",
+        "premium",
+        "dark-mode",
+        "rainbow-caustics"
+      ],
+      "negative_prompt_tags": [
+        "plain-crud",
+        "long-reading",
+        "low-contrast",
+        "flat-dark"
+      ]
+    }
+  }
+]

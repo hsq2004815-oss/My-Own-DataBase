@@ -1,0 +1,176 @@
+[
+  {
+    "chunk_id": "motion-pattern-notification-message-stack-overview",
+    "record_id": "motion-pattern-notification-message-stack",
+    "source_name": "Swishy message and notification templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# Swishy message and notification templates - Overview\n\nPage type: component_pattern\nUse cases: toast, notification stack, chat overlay, message preview, activity feed\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\nVisual traits:\n- spring notification\n- stacked cards\n- iOS-style pop-up\n- message bubble\n- bounce\n- slide-in\n\nUse when:\n- toast\n- notification stack\n- chat overlay\n- message preview\n- activity feed\n\nAvoid when:\n- legal warning\n- destructive confirmation\n- long-form content\n\nAI summary: Use Swishy-style notification motion for toast/message stacks: slide-in, spring settle, staggered cards, quick dismissal, accessible announcement, and reduced-motion fade fallback.",
+    "tokens": 95,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "notification",
+        "toast",
+        "message",
+        "stack",
+        "spring",
+        "slide-in",
+        "ios-popup",
+        "glass-toast"
+      ],
+      "negative_prompt_tags": [
+        "critical-error-auto-dismiss",
+        "blocking-modal",
+        "long-content"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-notification-message-stack-layout",
+    "record_id": "motion-pattern-notification-message-stack",
+    "source_name": "Swishy message and notification templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# Swishy message and notification templates - Layout Rules\n\nPage type: component_pattern\nUse cases: toast, notification stack, chat overlay, message preview, activity feed\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- Notifications should enter from a predictable edge and stack with clear z-order.\n- Use spring/bounce for friendly non-critical messages; use restrained motion for errors or security alerts.\n- Let notifications settle quickly and avoid covering primary controls for too long.\n\nAI summary: Use Swishy-style notification motion for toast/message stacks: slide-in, spring settle, staggered cards, quick dismissal, accessible announcement, and reduced-motion fade fallback.",
+    "tokens": 92,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "notification",
+        "toast",
+        "message",
+        "stack",
+        "spring",
+        "slide-in",
+        "ios-popup",
+        "glass-toast"
+      ],
+      "negative_prompt_tags": [
+        "critical-error-auto-dismiss",
+        "blocking-modal",
+        "long-content"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-notification-message-stack-components",
+    "record_id": "motion-pattern-notification-message-stack",
+    "source_name": "Swishy message and notification templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# Swishy message and notification templates - Component Patterns\n\nPage type: component_pattern\nUse cases: toast, notification stack, chat overlay, message preview, activity feed\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- toast\n- notification card\n- message bubble\n- activity stack\n- chat preview\n- phone notification mockup\n\nAI summary: Use Swishy-style notification motion for toast/message stacks: slide-in, spring settle, staggered cards, quick dismissal, accessible announcement, and reduced-motion fade fallback.",
+    "tokens": 69,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "notification",
+        "toast",
+        "message",
+        "stack",
+        "spring",
+        "slide-in",
+        "ios-popup",
+        "glass-toast"
+      ],
+      "negative_prompt_tags": [
+        "critical-error-auto-dismiss",
+        "blocking-modal",
+        "long-content"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-notification-message-stack-interaction",
+    "record_id": "motion-pattern-notification-message-stack",
+    "source_name": "Swishy message and notification templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# Swishy message and notification templates - Interaction States\n\nPage type: component_pattern\nUse cases: toast, notification stack, chat overlay, message preview, activity feed\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- slide in\n- stack\n- dismiss\n- tap\n- auto-hide\n- new message\n\nAI summary: Use Swishy-style notification motion for toast/message stacks: slide-in, spring settle, staggered cards, quick dismissal, accessible announcement, and reduced-motion fade fallback.",
+    "tokens": 65,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "notification",
+        "toast",
+        "message",
+        "stack",
+        "spring",
+        "slide-in",
+        "ios-popup",
+        "glass-toast"
+      ],
+      "negative_prompt_tags": [
+        "critical-error-auto-dismiss",
+        "blocking-modal",
+        "long-content"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-notification-message-stack-accessibility",
+    "record_id": "motion-pattern-notification-message-stack",
+    "source_name": "Swishy message and notification templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# Swishy message and notification templates - Accessibility Notes\n\nPage type: component_pattern\nUse cases: toast, notification stack, chat overlay, message preview, activity feed\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- Announce important notifications through accessible live regions.\n- Do not auto-dismiss critical errors before they can be read.\n- Respect reduced motion by using fade instead of spring slide.\n\nAI summary: Use Swishy-style notification motion for toast/message stacks: slide-in, spring settle, staggered cards, quick dismissal, accessible announcement, and reduced-motion fade fallback.",
+    "tokens": 81,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "notification",
+        "toast",
+        "message",
+        "stack",
+        "spring",
+        "slide-in",
+        "ios-popup",
+        "glass-toast"
+      ],
+      "negative_prompt_tags": [
+        "critical-error-auto-dismiss",
+        "blocking-modal",
+        "long-content"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-notification-message-stack-implementation",
+    "record_id": "motion-pattern-notification-message-stack",
+    "source_name": "Swishy message and notification templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# Swishy message and notification templates - Implementation Hints\n\nPage type: component_pattern\nUse cases: toast, notification stack, chat overlay, message preview, activity feed\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- Use translateY/translateX plus opacity for entry; add small scale overshoot for friendly motion.\n- Stagger stacked cards by 60-120ms and reduce scale/opacity for cards behind the top item.\n- Pair with Liquid Glass by making notification cards frosted, rounded, and rim-lit.\n\nAI summary: Use Swishy-style notification motion for toast/message stacks: slide-in, spring settle, staggered cards, quick dismissal, accessible announcement, and reduced-motion fade fallback.",
+    "tokens": 93,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "notification",
+        "toast",
+        "message",
+        "stack",
+        "spring",
+        "slide-in",
+        "ios-popup",
+        "glass-toast"
+      ],
+      "negative_prompt_tags": [
+        "critical-error-auto-dismiss",
+        "blocking-modal",
+        "long-content"
+      ]
+    }
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "asset_id": "geistmono-bold-091aa231",
+  "domain": "ui_assets",
+  "asset_type": "font",
+  "usage_policy": "review_required",
+  "files": {
+    "file_path": "E:\\DataBase\\domains\\ui_assets\\raw\\review_required\\fonts\\GeistMono-Bold.woff2",
+    "preview_path": "",
+    "original_path": "F:\\materials\\09_fonts_字体\\geist-font\\fonts\\GeistMono-Bold.woff2",
+    "sha1": "091aa231de56586528496f9763dba65ad8ee5a58",
+    "size_bytes": 52092,
+    "extension": ".woff2"
+  },
+  "source": {
+    "name": "local import",
+    "url": "",
+    "captured_at": "2026-04-26T10:40:06.386444+00:00",
+    "notes": "Imported by scripts/ui_assets/ingest_assets.py"
+  },
+  "license": {
+    "label": "review required",
+    "notes": "Review each font license before direct use."
+  },
+  "style_tags": [],
+  "use_cases": [],
+  "avoid_when": [],
+  "implementation_notes": [],
+  "quality": {
+    "curation_status": "new",
+    "notes": "Review usage_policy and license before direct project use."
+  },
+  "retrieval": {
+    "ai_summary": "font asset for font. Review usage policy before use.",
+    "prompt_tags": [
+      "font"
+    ],
+    "negative_prompt_tags": []
+  }
+}

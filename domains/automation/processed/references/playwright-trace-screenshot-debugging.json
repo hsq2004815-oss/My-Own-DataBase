@@ -1,0 +1,78 @@
+{
+  "record_id": "playwright-trace-screenshot-debugging",
+  "source": {
+    "name": "Playwright Best Practices",
+    "url": "https://playwright.dev/docs/best-practices",
+    "source_type": "official_docs",
+    "license_notes": "Summarized guidance with source link; do not copy full docs.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "automation",
+  "automation_type": "verification_debugging",
+  "tooling": [
+    "Playwright"
+  ],
+  "goal": "Capture useful evidence and debug data when browser automation succeeds or fails.",
+  "when_to_use": [
+    "Automation task needs proof",
+    "A step failed",
+    "Need to inspect console/network",
+    "CI/local discrepancy"
+  ],
+  "inputs_required": [
+    "Expected result",
+    "Failure point",
+    "Browser context/page"
+  ],
+  "steps": [
+    "Take screenshots at major milestones and on failure.",
+    "Capture console errors and page errors when debugging.",
+    "Use Playwright trace viewer for deep failures instead of relying only on screenshots.",
+    "Log current URL, title, visible state, and key selector statuses."
+  ],
+  "commands_or_apis": [
+    "page.screenshot(...) / locator.screenshot(...)",
+    "page.on('console', ...)",
+    "page.on('pageerror', ...)",
+    "trace viewer"
+  ],
+  "verification": [
+    "Screenshot shows final state",
+    "Console errors reviewed",
+    "Trace or log path reported if captured"
+  ],
+  "failure_modes": [
+    "Screenshot taken too early",
+    "Console errors ignored",
+    "Trace not enabled",
+    "Final state not asserted"
+  ],
+  "safety_notes": [
+    "Do not include secrets/tokens in screenshots or logs if avoidable."
+  ],
+  "handoff_report": [
+    "Screenshots",
+    "Console/page errors",
+    "Current URL/title",
+    "Assertions",
+    "Known gaps"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "official",
+    "notes": "Playwright best practices mention trace viewer; evidence protocol added locally."
+  },
+  "retrieval": {
+    "ai_summary": "Automation reports should include screenshots/assertions, current URL/title, console/page errors when relevant, and trace/log references for failures.",
+    "prompt_tags": [
+      "playwright",
+      "trace",
+      "screenshot",
+      "console",
+      "debugging",
+      "evidence",
+      "verification"
+    ],
+    "negative_prompt_tags": []
+  }
+}

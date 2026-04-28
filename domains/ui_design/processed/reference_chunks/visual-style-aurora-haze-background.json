@@ -1,0 +1,194 @@
+[
+  {
+    "chunk_id": "visual-style-aurora-haze-background-overview",
+    "record_id": "visual-style-aurora-haze-background",
+    "source_name": "MDN CSS gradients and Apple Liquid Glass material guidance",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# MDN CSS gradients and Apple Liquid Glass material guidance - Overview\n\nPage type: component_pattern\nUse cases: premium AI dashboard background, Liquid Glass ecological interface, ambient hero background, frosted card backdrop, calm high-end SaaS UI\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient\n\nVisual traits:\n- slow aurora bands behind translucent glass\n- misty atmospheric haze with soft depth falloff\n- green-blue, silver, cyan, and restrained violet light fields\n- large low-frequency gradients instead of decorative blobs\n- subtle scene movement that remains calmer than the UI\n\nUse when:\n- premium AI dashboard background\n- Liquid Glass ecological interface\n- ambient hero background\n- frosted card backdrop\n- calm high-end SaaS UI\n\nAvoid when:\n- fast rainbow gradient cycling\n- high-frequency animated stripes\n- bright aurora directly behind form labels\n- single purple-blue full-page gradient\n- decorative orb backgrounds without scene depth\n- marketing hero composition when the task is an operational dashboard\n\nAI summary: Use aurora haze backgrounds for high-end Liquid Glass interfaces that need a calm ecological scene behind glass. Build broad, slow, layered gradient bands with mist, noise, dimming, and reduced-motion fallback; avoid fast rainbow motion, decorative blobs, and bright scenery behind text.",
+    "tokens": 194,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "aurora-background",
+        "ambient-background",
+        "liquid-glass",
+        "ecological-interface",
+        "gradient-scene",
+        "mist-haze",
+        "premium-dashboard",
+        "reduced-motion"
+      ],
+      "negative_prompt_tags": [
+        "static-gradient",
+        "rainbow-cycle",
+        "decorative-orbs",
+        "bokeh-blobs",
+        "busy-background",
+        "low-contrast"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-aurora-haze-background-layout",
+    "record_id": "visual-style-aurora-haze-background",
+    "source_name": "MDN CSS gradients and Apple Liquid Glass material guidance",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# MDN CSS gradients and Apple Liquid Glass material guidance - Layout Rules\n\nPage type: component_pattern\nUse cases: premium AI dashboard background, Liquid Glass ecological interface, ambient hero background, frosted card backdrop, calm high-end SaaS UI\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient\n\n- Place aurora motion in the far background and keep the UI layer stable.\n- Use broad bands and haze fields; avoid small repeated blobs that look decorative rather than environmental.\n- Keep the brightest aurora away from text-heavy cards and forms.\n- Pair dark glass cards with dimmed aurora fields, not full-saturation neon.\n- Use a subtle noise or grain layer to prevent flat digital gradients.\n\nAI summary: Use aurora haze backgrounds for high-end Liquid Glass interfaces that need a calm ecological scene behind glass. Build broad, slow, layered gradient bands with mist, noise, dimming, and reduced-motion fallback; avoid fast rainbow motion, decorative blobs, and bright scenery behind text.",
+    "tokens": 152,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "aurora-background",
+        "ambient-background",
+        "liquid-glass",
+        "ecological-interface",
+        "gradient-scene",
+        "mist-haze",
+        "premium-dashboard",
+        "reduced-motion"
+      ],
+      "negative_prompt_tags": [
+        "static-gradient",
+        "rainbow-cycle",
+        "decorative-orbs",
+        "bokeh-blobs",
+        "busy-background",
+        "low-contrast"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-aurora-haze-background-components",
+    "record_id": "visual-style-aurora-haze-background",
+    "source_name": "MDN CSS gradients and Apple Liquid Glass material guidance",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# MDN CSS gradients and Apple Liquid Glass material guidance - Component Patterns\n\nPage type: component_pattern\nUse cases: premium AI dashboard background, Liquid Glass ecological interface, ambient hero background, frosted card backdrop, calm high-end SaaS UI\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient\n\n- aurora scene layer\n- mist field\n- glass dashboard card\n- frosted navigation\n- ambient hero panel\n- reduced-motion static aurora frame\n\nAI summary: Use aurora haze backgrounds for high-end Liquid Glass interfaces that need a calm ecological scene behind glass. Build broad, slow, layered gradient bands with mist, noise, dimming, and reduced-motion fallback; avoid fast rainbow motion, decorative blobs, and bright scenery behind text.",
+    "tokens": 108,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "aurora-background",
+        "ambient-background",
+        "liquid-glass",
+        "ecological-interface",
+        "gradient-scene",
+        "mist-haze",
+        "premium-dashboard",
+        "reduced-motion"
+      ],
+      "negative_prompt_tags": [
+        "static-gradient",
+        "rainbow-cycle",
+        "decorative-orbs",
+        "bokeh-blobs",
+        "busy-background",
+        "low-contrast"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-aurora-haze-background-interaction",
+    "record_id": "visual-style-aurora-haze-background",
+    "source_name": "MDN CSS gradients and Apple Liquid Glass material guidance",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# MDN CSS gradients and Apple Liquid Glass material guidance - Interaction States\n\nPage type: component_pattern\nUse cases: premium AI dashboard background, Liquid Glass ecological interface, ambient hero background, frosted card backdrop, calm high-end SaaS UI\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient\n\n- idle slow drift\n- hover edge glint\n- modal open background dim\n- theme hue shift\n- reduced-motion frozen haze\n\nAI summary: Use aurora haze backgrounds for high-end Liquid Glass interfaces that need a calm ecological scene behind glass. Build broad, slow, layered gradient bands with mist, noise, dimming, and reduced-motion fallback; avoid fast rainbow motion, decorative blobs, and bright scenery behind text.",
+    "tokens": 106,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "aurora-background",
+        "ambient-background",
+        "liquid-glass",
+        "ecological-interface",
+        "gradient-scene",
+        "mist-haze",
+        "premium-dashboard",
+        "reduced-motion"
+      ],
+      "negative_prompt_tags": [
+        "static-gradient",
+        "rainbow-cycle",
+        "decorative-orbs",
+        "bokeh-blobs",
+        "busy-background",
+        "low-contrast"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-aurora-haze-background-accessibility",
+    "record_id": "visual-style-aurora-haze-background",
+    "source_name": "MDN CSS gradients and Apple Liquid Glass material guidance",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# MDN CSS gradients and Apple Liquid Glass material guidance - Accessibility Notes\n\nPage type: component_pattern\nUse cases: premium AI dashboard background, Liquid Glass ecological interface, ambient hero background, frosted card backdrop, calm high-end SaaS UI\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient\n\n- Use prefers-reduced-motion to freeze or greatly slow aurora bands.\n- Keep text on tinted glass or solid-enough panels, not directly over bright aurora strokes.\n- Avoid rapid hue cycling or high-contrast sweeping bands near reading areas.\n- Test contrast on the final composite after backdrop blur and saturation.\n\nAI summary: Use aurora haze backgrounds for high-end Liquid Glass interfaces that need a calm ecological scene behind glass. Build broad, slow, layered gradient bands with mist, noise, dimming, and reduced-motion fallback; avoid fast rainbow motion, decorative blobs, and bright scenery behind text.",
+    "tokens": 134,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "aurora-background",
+        "ambient-background",
+        "liquid-glass",
+        "ecological-interface",
+        "gradient-scene",
+        "mist-haze",
+        "premium-dashboard",
+        "reduced-motion"
+      ],
+      "negative_prompt_tags": [
+        "static-gradient",
+        "rainbow-cycle",
+        "decorative-orbs",
+        "bokeh-blobs",
+        "busy-background",
+        "low-contrast"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-aurora-haze-background-implementation",
+    "record_id": "visual-style-aurora-haze-background",
+    "source_name": "MDN CSS gradients and Apple Liquid Glass material guidance",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# MDN CSS gradients and Apple Liquid Glass material guidance - Implementation Hints\n\nPage type: component_pattern\nUse cases: premium AI dashboard background, Liquid Glass ecological interface, ambient hero background, frosted card backdrop, calm high-end SaaS UI\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient\n\n- CSS-only baseline: layer radial-gradient and linear-gradient backgrounds on fixed pseudo-elements, then animate transform and opacity over 30s to 90s loops.\n- Use mask-image or large blurred pseudo-elements to make aurora bands fade into the base field.\n- Animate transform, background-position, or opacity rather than expensive full-screen filter changes.\n- Use CSS variables for aurora hue, haze opacity, scene dim, and motion speed.\n- Add a dark translucent page overlay when cards need stronger text contrast.\n- For mobile, reduce opacity and motion amplitude to preserve battery and legibility.\n\nAI summary: Use aurora haze backgrounds for high-end Liquid Glass interfaces that need a calm ecological scene behind glass. Build broad, slow, layered gradient bands with mist, noise, dimming, and reduced-motion fallback; avoid fast rainbow motion, decorative blobs, and bright scenery behind text.",
+    "tokens": 174,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "aurora-background",
+        "ambient-background",
+        "liquid-glass",
+        "ecological-interface",
+        "gradient-scene",
+        "mist-haze",
+        "premium-dashboard",
+        "reduced-motion"
+      ],
+      "negative_prompt_tags": [
+        "static-gradient",
+        "rainbow-cycle",
+        "decorative-orbs",
+        "bokeh-blobs",
+        "busy-background",
+        "low-contrast"
+      ]
+    }
+  }
+]

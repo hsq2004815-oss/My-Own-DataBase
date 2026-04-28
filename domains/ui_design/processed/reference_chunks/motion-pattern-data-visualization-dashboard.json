@@ -1,0 +1,176 @@
+[
+  {
+    "chunk_id": "motion-pattern-data-visualization-dashboard-overview",
+    "record_id": "motion-pattern-data-visualization-dashboard",
+    "source_name": "Swishy data visualization templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "dashboard",
+    "section": "overview",
+    "content": "# Swishy data visualization templates - Overview\n\nPage type: dashboard\nUse cases: fintech dashboard, metrics card, MRR chart, GitHub stars, security dashboard, progress chart\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\nVisual traits:\n- animated chart\n- count-up\n- trend reveal\n- spring bars\n- glow metrics\n- data storytelling\n\nUse when:\n- fintech dashboard\n- metrics card\n- MRR chart\n- GitHub stars\n- security dashboard\n- progress chart\n\nAvoid when:\n- real-time critical monitoring\n- medical safety dashboard\n- very dense BI grid\n\nAI summary: Use Swishy-style data visualization motion for dashboard storytelling: count-up metrics, bar growth, line/trend draw, progress rings, and staggered chart reveal, then settle to readable static values.",
+    "tokens": 112,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "dashboard",
+        "data-viz",
+        "chart-animation",
+        "count-up",
+        "bar-chart",
+        "metrics",
+        "fintech",
+        "mrr"
+      ],
+      "negative_prompt_tags": [
+        "critical-monitoring",
+        "looping-data",
+        "unlabeled-chart"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-data-visualization-dashboard-layout",
+    "record_id": "motion-pattern-data-visualization-dashboard",
+    "source_name": "Swishy data visualization templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "dashboard",
+    "section": "layout",
+    "content": "# Swishy data visualization templates - Layout Rules\n\nPage type: dashboard\nUse cases: fintech dashboard, metrics card, MRR chart, GitHub stars, security dashboard, progress chart\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- Animate data to explain change, not just decorate it.\n- Reveal axes/labels before or alongside values so the chart remains understandable.\n- Use count-up and bar growth for key metrics; avoid looping chart animations after the initial explanation.\n\nAI summary: Use Swishy-style data visualization motion for dashboard storytelling: count-up metrics, bar growth, line/trend draw, progress rings, and staggered chart reveal, then settle to readable static values.",
+    "tokens": 98,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "dashboard",
+        "data-viz",
+        "chart-animation",
+        "count-up",
+        "bar-chart",
+        "metrics",
+        "fintech",
+        "mrr"
+      ],
+      "negative_prompt_tags": [
+        "critical-monitoring",
+        "looping-data",
+        "unlabeled-chart"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-data-visualization-dashboard-components",
+    "record_id": "motion-pattern-data-visualization-dashboard",
+    "source_name": "Swishy data visualization templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "dashboard",
+    "section": "components",
+    "content": "# Swishy data visualization templates - Component Patterns\n\nPage type: dashboard\nUse cases: fintech dashboard, metrics card, MRR chart, GitHub stars, security dashboard, progress chart\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- bar chart\n- line trend\n- countdown\n- count-up metric\n- progress ring\n- GitHub stars trend\n- financial card\n\nAI summary: Use Swishy-style data visualization motion for dashboard storytelling: count-up metrics, bar growth, line/trend draw, progress rings, and staggered chart reveal, then settle to readable static values.",
+    "tokens": 80,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "dashboard",
+        "data-viz",
+        "chart-animation",
+        "count-up",
+        "bar-chart",
+        "metrics",
+        "fintech",
+        "mrr"
+      ],
+      "negative_prompt_tags": [
+        "critical-monitoring",
+        "looping-data",
+        "unlabeled-chart"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-data-visualization-dashboard-interaction",
+    "record_id": "motion-pattern-data-visualization-dashboard",
+    "source_name": "Swishy data visualization templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "dashboard",
+    "section": "interaction",
+    "content": "# Swishy data visualization templates - Interaction States\n\nPage type: dashboard\nUse cases: fintech dashboard, metrics card, MRR chart, GitHub stars, security dashboard, progress chart\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- load\n- count-up\n- bar grow\n- trend draw\n- hover detail\n- settled\n\nAI summary: Use Swishy-style data visualization motion for dashboard storytelling: count-up metrics, bar growth, line/trend draw, progress rings, and staggered chart reveal, then settle to readable static values.",
+    "tokens": 74,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "dashboard",
+        "data-viz",
+        "chart-animation",
+        "count-up",
+        "bar-chart",
+        "metrics",
+        "fintech",
+        "mrr"
+      ],
+      "negative_prompt_tags": [
+        "critical-monitoring",
+        "looping-data",
+        "unlabeled-chart"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-data-visualization-dashboard-accessibility",
+    "record_id": "motion-pattern-data-visualization-dashboard",
+    "source_name": "Swishy data visualization templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "dashboard",
+    "section": "accessibility",
+    "content": "# Swishy data visualization templates - Accessibility Notes\n\nPage type: dashboard\nUse cases: fintech dashboard, metrics card, MRR chart, GitHub stars, security dashboard, progress chart\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- Do not rely on animation to communicate the only data value.\n- Provide readable labels and static values after animation ends.\n- Respect reduced motion by skipping growth transitions.\n\nAI summary: Use Swishy-style data visualization motion for dashboard storytelling: count-up metrics, bar growth, line/trend draw, progress rings, and staggered chart reveal, then settle to readable static values.",
+    "tokens": 89,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "dashboard",
+        "data-viz",
+        "chart-animation",
+        "count-up",
+        "bar-chart",
+        "metrics",
+        "fintech",
+        "mrr"
+      ],
+      "negative_prompt_tags": [
+        "critical-monitoring",
+        "looping-data",
+        "unlabeled-chart"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-data-visualization-dashboard-implementation",
+    "record_id": "motion-pattern-data-visualization-dashboard",
+    "source_name": "Swishy data visualization templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "dashboard",
+    "section": "implementation",
+    "content": "# Swishy data visualization templates - Implementation Hints\n\nPage type: dashboard\nUse cases: fintech dashboard, metrics card, MRR chart, GitHub stars, security dashboard, progress chart\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- Use 500-900ms chart growth and 40-100ms stagger between bars.\n- For financial dashboards, keep motion confident and precise rather than bouncy.\n- Pair with glass cards by animating inner chart elements while the card surface remains stable.\n\nAI summary: Use Swishy-style data visualization motion for dashboard storytelling: count-up metrics, bar growth, line/trend draw, progress rings, and staggered chart reveal, then settle to readable static values.",
+    "tokens": 97,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "dashboard",
+        "data-viz",
+        "chart-animation",
+        "count-up",
+        "bar-chart",
+        "metrics",
+        "fintech",
+        "mrr"
+      ],
+      "negative_prompt_tags": [
+        "critical-monitoring",
+        "looping-data",
+        "unlabeled-chart"
+      ]
+    }
+  }
+]

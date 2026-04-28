@@ -1,0 +1,76 @@
+{
+  "record_id": "workflow-windows-path-handling-for-agents",
+  "source": {
+    "name": "Windows path handling incident",
+    "url": "local-observed:2026-04-25/bash-windows-path",
+    "source_type": "case_study",
+    "license_notes": "Original local workflow note from observed Claude Code path error.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "agent_workflow",
+  "workflow_type": "tool_path_windows",
+  "agent_targets": [
+    "Claude Code",
+    "Codex",
+    "Bash-based local agents"
+  ],
+  "goal": "Avoid Windows path corruption when agents run commands through Bash or mixed shells.",
+  "when_to_use": [
+    "Agent runs Bash on Windows",
+    "Command includes E:\\DataBase paths",
+    "Python cannot open a file because backslashes disappeared"
+  ],
+  "inputs_required": [
+    "Shell type",
+    "Original command",
+    "Error output",
+    "Target file path"
+  ],
+  "steps": [
+    "Detect whether the tool is Bash, PowerShell, or cmd.",
+    "In Bash/Git Bash, use forward slashes such as E:/DataBase/scripts/ui_design/search_ui.py or /e/DataBase where supported.",
+    "In PowerShell, native Windows paths with backslashes are safe.",
+    "Quote paths with spaces and avoid unescaped backslashes in Bash.",
+    "If path corruption occurs, rerun the command with forward slashes."
+  ],
+  "api_calls": [],
+  "prompt_contract": [
+    "Do not use raw Windows backslash paths in Bash commands.",
+    "Prefer local API calls over direct script paths when the API is running."
+  ],
+  "verification": [
+    "Command resolves the intended file",
+    "No duplicated path fragments such as DataBaseDataBasescripts",
+    "Python script starts or API responds"
+  ],
+  "failure_modes": [
+    "Backslashes are consumed as escape characters",
+    "Drive path is treated as relative",
+    "Working directory duplicates path segments"
+  ],
+  "handoff_report": [
+    "Shell detected",
+    "Corrected command",
+    "Result"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "observed",
+    "notes": "Claude Code failed with E:\\DataBase\\DataBasescriptsui_designsearch_ui.py due to Bash backslash handling."
+  },
+  "retrieval": {
+    "ai_summary": "On Windows, agents using Bash must avoid raw backslash paths. Use E:/DataBase/... or PowerShell. Prefer the local HTTP API to avoid path handling entirely.",
+    "prompt_tags": [
+      "windows-paths",
+      "bash",
+      "powershell",
+      "path-error",
+      "claude-code",
+      "forward-slash"
+    ],
+    "negative_prompt_tags": [
+      "raw-backslash-in-bash",
+      "path-duplication"
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "record_id": "design-system-carbon-form",
+  "source": {
+    "name": "IBM Carbon Design System",
+    "url": "https://v10.carbondesignsystem.com/components/form/usage/",
+    "source_type": "official_design_system",
+    "license_notes": "Use source links and summarized guidance only; do not copy full documentation verbatim.",
+    "captured_at": "2026-04-24"
+  },
+  "domain": "ui_design",
+  "page_type": "form",
+  "platform": [
+    "web"
+  ],
+  "use_cases": [
+    "enterprise form",
+    "settings page",
+    "admin workflow",
+    "data submission"
+  ],
+  "visual_traits": [
+    "structured",
+    "concise",
+    "accessible",
+    "low decoration",
+    "clear field hierarchy"
+  ],
+  "layout_rules": [
+    "Keep forms short and only ask for information that has clear value.",
+    "Group related controls and use consistent spacing between fields.",
+    "Place submit actions after the fields and keep the primary action visually clear."
+  ],
+  "component_patterns": [
+    "text input",
+    "text area",
+    "select",
+    "checkbox",
+    "radio",
+    "button",
+    "helper text",
+    "invalid text"
+  ],
+  "interaction_states": [
+    "focus",
+    "invalid",
+    "disabled",
+    "helper text",
+    "submit"
+  ],
+  "accessibility_notes": [
+    "Use real form controls with labels and error text tied to fields.",
+    "Keep keyboard flow linear and predictable."
+  ],
+  "implementation_hints": [
+    "Use for serious enterprise forms where clarity beats visual flourish.",
+    "Represent validation and error states in code from the first version.",
+    "Avoid collecting optional fields unless they improve the task outcome."
+  ],
+  "avoid_when": [
+    "marketing landing page",
+    "playful consumer onboarding"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "direct_spec",
+    "notes": "Official Carbon form guidance summarized for model retrieval."
+  },
+  "retrieval": {
+    "ai_summary": "Use Carbon form patterns for enterprise data entry: short forms, grouped related fields, explicit labels/helper/error text, clear submit behavior, and accessible keyboard flow.",
+    "prompt_tags": [
+      "form",
+      "enterprise",
+      "settings",
+      "validation",
+      "accessibility",
+      "admin"
+    ],
+    "negative_prompt_tags": [
+      "decorative",
+      "marketing",
+      "playful"
+    ]
+  }
+}

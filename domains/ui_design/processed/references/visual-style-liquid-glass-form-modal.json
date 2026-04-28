@@ -1,0 +1,96 @@
+{
+  "record_id": "visual-style-liquid-glass-form-modal",
+  "source": {
+    "name": "User-provided Liquid Glass form/modal screenshots",
+    "url": "local-chat-reference:2026-04-25/liquid-glass-form-modal",
+    "source_type": "product_screenshot",
+    "license_notes": "User-provided visual reference for personal knowledge base. Store summarized observations, not redistributed original images.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "ui_design",
+  "page_type": "form",
+  "platform": [
+    "web",
+    "mobile"
+  ],
+  "use_cases": [
+    "create project modal",
+    "workspace setup",
+    "invite member",
+    "premium onboarding form"
+  ],
+  "visual_traits": [
+    "frosted modal panel",
+    "soft grid background",
+    "glass input fields",
+    "validation glow",
+    "large rounded submit button",
+    "misty depth"
+  ],
+  "layout_rules": [
+    "Put the main form inside a single translucent frosted panel with a broad radius and subtle rim highlight.",
+    "Use stacked labels and inputs; glass effects already add visual complexity, so form layout should stay simple.",
+    "Show validation with colored glow plus text, for example red rim for missing category and green rim for confirmed selection.",
+    "Use a large bottom-aligned glass CTA with soft blue/purple light for the primary action.",
+    "Keep the background quiet: faint grid, soft gradient, or blurred side panels."
+  ],
+  "component_patterns": [
+    "modal panel",
+    "text input",
+    "select field",
+    "textarea",
+    "toggle",
+    "checkbox",
+    "submit button",
+    "validation message"
+  ],
+  "interaction_states": [
+    "focused field",
+    "invalid field",
+    "valid field",
+    "disabled submit",
+    "toggle on",
+    "checkbox unchecked",
+    "loading submit"
+  ],
+  "accessibility_notes": [
+    "Validation message must be text, not only red glow.",
+    "Glass fields need a visible border and sufficient label contrast.",
+    "Avoid placing important labels over noisy blurred content."
+  ],
+  "implementation_hints": [
+    "Use one glass-card wrapper for the modal and lighter glass inset surfaces for fields.",
+    "For error fields, combine rgba red border, red outer glow, and plain text message.",
+    "For success fields, combine green edge glow with check icon or success text.",
+    "Use backdrop-filter only where supported and provide a translucent fallback background."
+  ],
+  "avoid_when": [
+    "very long form",
+    "government form",
+    "banking KYC",
+    "data-heavy admin edit page"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "screenshot_observed",
+    "notes": "Derived from the user's create-project liquid glass form screenshot."
+  },
+  "retrieval": {
+    "ai_summary": "Use Liquid Glass form/modal patterns for premium setup flows: a frosted modal card, simple stacked fields, glass inputs, colored validation glow, toggles/checkboxes, and a large luminous CTA.",
+    "prompt_tags": [
+      "liquid-glass",
+      "form",
+      "modal",
+      "frosted-panel",
+      "validation",
+      "premium-onboarding",
+      "glass-input"
+    ],
+    "negative_prompt_tags": [
+      "long-form",
+      "government",
+      "banking",
+      "plain-form"
+    ]
+  }
+}

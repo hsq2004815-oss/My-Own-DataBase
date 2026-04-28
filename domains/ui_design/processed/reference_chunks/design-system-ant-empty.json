@@ -1,0 +1,164 @@
+[
+  {
+    "chunk_id": "design-system-ant-empty-overview",
+    "record_id": "design-system-ant-empty",
+    "source_name": "Ant Design",
+    "source_url": "https://ant.design/components/empty/",
+    "page_type": "empty_state",
+    "section": "overview",
+    "content": "# Ant Design - Overview\n\nPage type: empty_state\nUse cases: no data, empty table, empty transfer list, fresh setup\nEvidence: direct_spec / high\nSource: https://ant.design/components/empty/\n\nVisual traits:\n- minimal\n- friendly\n- componentized\n- neutral\n\nUse when:\n- no data\n- empty table\n- empty transfer list\n- fresh setup\n\nAvoid when:\n- full onboarding story\n- server error\n- loading\n\nAI summary: Use Ant Design Empty for concise no-data placeholders in enterprise UI: neutral illustration, clear description, and optional create action for fresh-start states.",
+    "tokens": 85,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "antd",
+        "empty",
+        "no-data",
+        "table",
+        "create",
+        "enterprise"
+      ],
+      "negative_prompt_tags": [
+        "loading",
+        "error",
+        "long-onboarding"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-ant-empty-layout",
+    "record_id": "design-system-ant-empty",
+    "source_name": "Ant Design",
+    "source_url": "https://ant.design/components/empty/",
+    "page_type": "empty_state",
+    "section": "layout",
+    "content": "# Ant Design - Layout Rules\n\nPage type: empty_state\nUse cases: no data, empty table, empty transfer list, fresh setup\nEvidence: direct_spec / high\nSource: https://ant.design/components/empty/\n\n- Use a clear empty placeholder when no data is available.\n- Include a simple create action when the empty state is a fresh-start opportunity.\n- Customize image and description only when it improves clarity.\n\nAI summary: Use Ant Design Empty for concise no-data placeholders in enterprise UI: neutral illustration, clear description, and optional create action for fresh-start states.",
+    "tokens": 85,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "antd",
+        "empty",
+        "no-data",
+        "table",
+        "create",
+        "enterprise"
+      ],
+      "negative_prompt_tags": [
+        "loading",
+        "error",
+        "long-onboarding"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-ant-empty-components",
+    "record_id": "design-system-ant-empty",
+    "source_name": "Ant Design",
+    "source_url": "https://ant.design/components/empty/",
+    "page_type": "empty_state",
+    "section": "components",
+    "content": "# Ant Design - Component Patterns\n\nPage type: empty_state\nUse cases: no data, empty table, empty transfer list, fresh setup\nEvidence: direct_spec / high\nSource: https://ant.design/components/empty/\n\n- empty illustration\n- description\n- footer action\n- simple image variant\n- custom image\n\nAI summary: Use Ant Design Empty for concise no-data placeholders in enterprise UI: neutral illustration, clear description, and optional create action for fresh-start states.",
+    "tokens": 65,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "antd",
+        "empty",
+        "no-data",
+        "table",
+        "create",
+        "enterprise"
+      ],
+      "negative_prompt_tags": [
+        "loading",
+        "error",
+        "long-onboarding"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-ant-empty-interaction",
+    "record_id": "design-system-ant-empty",
+    "source_name": "Ant Design",
+    "source_url": "https://ant.design/components/empty/",
+    "page_type": "empty_state",
+    "section": "interaction",
+    "content": "# Ant Design - Interaction States\n\nPage type: empty_state\nUse cases: no data, empty table, empty transfer list, fresh setup\nEvidence: direct_spec / high\nSource: https://ant.design/components/empty/\n\n- no data\n- create now\n- empty table\n- empty transfer\n\nAI summary: Use Ant Design Empty for concise no-data placeholders in enterprise UI: neutral illustration, clear description, and optional create action for fresh-start states.",
+    "tokens": 62,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "antd",
+        "empty",
+        "no-data",
+        "table",
+        "create",
+        "enterprise"
+      ],
+      "negative_prompt_tags": [
+        "loading",
+        "error",
+        "long-onboarding"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-ant-empty-accessibility",
+    "record_id": "design-system-ant-empty",
+    "source_name": "Ant Design",
+    "source_url": "https://ant.design/components/empty/",
+    "page_type": "empty_state",
+    "section": "accessibility",
+    "content": "# Ant Design - Accessibility Notes\n\nPage type: empty_state\nUse cases: no data, empty table, empty transfer list, fresh setup\nEvidence: direct_spec / high\nSource: https://ant.design/components/empty/\n\n- Do not make the illustration the only explanation.\n- Keep action text explicit and keyboard reachable.\n\nAI summary: Use Ant Design Empty for concise no-data placeholders in enterprise UI: neutral illustration, clear description, and optional create action for fresh-start states.",
+    "tokens": 67,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "antd",
+        "empty",
+        "no-data",
+        "table",
+        "create",
+        "enterprise"
+      ],
+      "negative_prompt_tags": [
+        "loading",
+        "error",
+        "long-onboarding"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-ant-empty-implementation",
+    "record_id": "design-system-ant-empty",
+    "source_name": "Ant Design",
+    "source_url": "https://ant.design/components/empty/",
+    "page_type": "empty_state",
+    "section": "implementation",
+    "content": "# Ant Design - Implementation Hints\n\nPage type: empty_state\nUse cases: no data, empty table, empty transfer list, fresh setup\nEvidence: direct_spec / high\nSource: https://ant.design/components/empty/\n\n- Use for compact enterprise empty states inside tables, lists, or transfer components.\n- Pair with creation CTA when the next step is obvious.\n\nAI summary: Use Ant Design Empty for concise no-data placeholders in enterprise UI: neutral illustration, clear description, and optional create action for fresh-start states.",
+    "tokens": 74,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "antd",
+        "empty",
+        "no-data",
+        "table",
+        "create",
+        "enterprise"
+      ],
+      "negative_prompt_tags": [
+        "loading",
+        "error",
+        "long-onboarding"
+      ]
+    }
+  }
+]

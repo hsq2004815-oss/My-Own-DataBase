@@ -1,0 +1,90 @@
+{
+  "record_id": "workflow-knowledge-first-frontend-generation",
+  "source": {
+    "name": "Knowledge-first frontend generation workflow",
+    "url": "local-generated:2026-04-25/knowledge-first-frontend",
+    "source_type": "local_procedure",
+    "license_notes": "Original local workflow notes.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "agent_workflow",
+  "workflow_type": "knowledge_first_frontend",
+  "agent_targets": [
+    "Claude Code",
+    "Codex",
+    "Cursor",
+    "frontend agents"
+  ],
+  "goal": "Generate frontend pages using retrieved design knowledge rather than generic template instincts.",
+  "when_to_use": [
+    "Creating a new frontend page",
+    "Redesigning an existing page",
+    "Testing UI database usefulness",
+    "Building style-specific prototypes"
+  ],
+  "inputs_required": [
+    "Product/page brief",
+    "Target tech stack",
+    "Desired visual style if any",
+    "Required components and states"
+  ],
+  "steps": [
+    "Read the task and identify page type, visual style, components, motion needs, and constraints.",
+    "Search UI knowledge for page type, style, component patterns, and motion patterns.",
+    "Create a short design brief from retrieved chunks: layout, components, states, motion, accessibility, avoid rules.",
+    "Implement the page in the existing tech stack without adding dependencies unless explicitly allowed.",
+    "Include meaningful states: loading, empty, error, success, selected, hover/focus where relevant.",
+    "Run available build/static checks and visually inspect if tooling exists."
+  ],
+  "api_calls": [
+    "GET /ui/search?q={page_type}&limit=5",
+    "GET /ui/search?q={visual_style}&limit=5",
+    "GET /ui/search?q={component_or_motion}&limit=5"
+  ],
+  "prompt_contract": [
+    "Retrieved chunks are constraints, not decoration suggestions.",
+    "If chunks conflict, prioritize direct_spec over screenshot_observed over summary_only.",
+    "If no relevant chunk exists, say what was missing and proceed with a conservative design."
+  ],
+  "verification": [
+    "Page implements retrieved component/state guidance",
+    "Design is not a generic flat template",
+    "Accessibility/fallback constraints are addressed",
+    "Run/build command succeeds or failure is reported"
+  ],
+  "failure_modes": [
+    "Agent copies the example text but not the design rules",
+    "Agent overuses motion/glass everywhere",
+    "Agent ignores states",
+    "Agent cannot run the project"
+  ],
+  "handoff_report": [
+    "Brief extracted",
+    "Queries and chunks",
+    "Design translation",
+    "Files changed",
+    "Run command",
+    "Verification gaps"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "observed",
+    "notes": "Tested conceptually with Claude-generated Liquid Glass page using local DB search."
+  },
+  "retrieval": {
+    "ai_summary": "For frontend generation, retrieve page/style/component/motion chunks first, synthesize a design brief, implement with existing stack, include states and accessibility, then report how chunks shaped the page.",
+    "prompt_tags": [
+      "frontend-generation",
+      "knowledge-first",
+      "design-brief",
+      "states",
+      "accessibility",
+      "existing-stack"
+    ],
+    "negative_prompt_tags": [
+      "generic-template",
+      "style-only",
+      "no-states"
+    ]
+  }
+}

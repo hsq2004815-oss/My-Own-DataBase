@@ -1,0 +1,170 @@
+[
+  {
+    "chunk_id": "design-system-polaris-empty-state-overview",
+    "record_id": "design-system-polaris-empty-state",
+    "source_name": "Shopify Polaris",
+    "source_url": "https://polaris-react.shopify.com/components/layout-and-structure/empty-state",
+    "page_type": "empty_state",
+    "section": "overview",
+    "content": "# Shopify Polaris - Overview\n\nPage type: empty_state\nUse cases: admin first use, empty table, empty list, feature activation, commerce setup\nEvidence: direct_spec / high\nSource: https://polaris-react.shopify.com/components/layout-and-structure/empty-state\n\nVisual traits:\n- encouraging\n- clear\n- action-led\n- friendly\n- guided\n\nUse when:\n- admin first use\n- empty table\n- empty list\n- feature activation\n- commerce setup\n\nAvoid when:\n- inline field error\n- loading\n- confirmation\n\nAI summary: Use Polaris empty states for commerce/admin first-run experiences: explain value, guide activation, use one clear primary CTA, and keep copy encouraging and specific.",
+    "tokens": 92,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "empty-state",
+        "commerce",
+        "admin",
+        "first-run",
+        "CTA",
+        "onboarding"
+      ],
+      "negative_prompt_tags": [
+        "blame",
+        "vague",
+        "spinner",
+        "error"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-polaris-empty-state-layout",
+    "record_id": "design-system-polaris-empty-state",
+    "source_name": "Shopify Polaris",
+    "source_url": "https://polaris-react.shopify.com/components/layout-and-structure/empty-state",
+    "page_type": "empty_state",
+    "section": "layout",
+    "content": "# Shopify Polaris - Layout Rules\n\nPage type: empty_state\nUse cases: admin first use, empty table, empty list, feature activation, commerce setup\nEvidence: direct_spec / high\nSource: https://polaris-react.shopify.com/components/layout-and-structure/empty-state\n\n- Use empty state to explain a feature before the user has used it.\n- Use one primary CTA and optional secondary learning action.\n- Keep copy simple, specific, and action-oriented.\n\nAI summary: Use Polaris empty states for commerce/admin first-run experiences: explain value, guide activation, use one clear primary CTA, and keep copy encouraging and specific.",
+    "tokens": 84,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "empty-state",
+        "commerce",
+        "admin",
+        "first-run",
+        "CTA",
+        "onboarding"
+      ],
+      "negative_prompt_tags": [
+        "blame",
+        "vague",
+        "spinner",
+        "error"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-polaris-empty-state-components",
+    "record_id": "design-system-polaris-empty-state",
+    "source_name": "Shopify Polaris",
+    "source_url": "https://polaris-react.shopify.com/components/layout-and-structure/empty-state",
+    "page_type": "empty_state",
+    "section": "components",
+    "content": "# Shopify Polaris - Component Patterns\n\nPage type: empty_state\nUse cases: admin first use, empty table, empty list, feature activation, commerce setup\nEvidence: direct_spec / high\nSource: https://polaris-react.shopify.com/components/layout-and-structure/empty-state\n\n- heading\n- explanatory body\n- illustration\n- primary CTA\n- secondary action\n- footer context\n\nAI summary: Use Polaris empty states for commerce/admin first-run experiences: explain value, guide activation, use one clear primary CTA, and keep copy encouraging and specific.",
+    "tokens": 69,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "empty-state",
+        "commerce",
+        "admin",
+        "first-run",
+        "CTA",
+        "onboarding"
+      ],
+      "negative_prompt_tags": [
+        "blame",
+        "vague",
+        "spinner",
+        "error"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-polaris-empty-state-interaction",
+    "record_id": "design-system-polaris-empty-state",
+    "source_name": "Shopify Polaris",
+    "source_url": "https://polaris-react.shopify.com/components/layout-and-structure/empty-state",
+    "page_type": "empty_state",
+    "section": "interaction",
+    "content": "# Shopify Polaris - Interaction States\n\nPage type: empty_state\nUse cases: admin first use, empty table, empty list, feature activation, commerce setup\nEvidence: direct_spec / high\nSource: https://polaris-react.shopify.com/components/layout-and-structure/empty-state\n\n- first run\n- no items\n- needs setup\n- learn more\n\nAI summary: Use Polaris empty states for commerce/admin first-run experiences: explain value, guide activation, use one clear primary CTA, and keep copy encouraging and specific.",
+    "tokens": 65,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "empty-state",
+        "commerce",
+        "admin",
+        "first-run",
+        "CTA",
+        "onboarding"
+      ],
+      "negative_prompt_tags": [
+        "blame",
+        "vague",
+        "spinner",
+        "error"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-polaris-empty-state-accessibility",
+    "record_id": "design-system-polaris-empty-state",
+    "source_name": "Shopify Polaris",
+    "source_url": "https://polaris-react.shopify.com/components/layout-and-structure/empty-state",
+    "page_type": "empty_state",
+    "section": "accessibility",
+    "content": "# Shopify Polaris - Accessibility Notes\n\nPage type: empty_state\nUse cases: admin first use, empty table, empty list, feature activation, commerce setup\nEvidence: direct_spec / high\nSource: https://polaris-react.shopify.com/components/layout-and-structure/empty-state\n\n- Treat decorative empty-state illustrations as non-essential to screen reader understanding.\n- Button text should predict the result of the action.\n\nAI summary: Use Polaris empty states for commerce/admin first-run experiences: explain value, guide activation, use one clear primary CTA, and keep copy encouraging and specific.",
+    "tokens": 74,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "empty-state",
+        "commerce",
+        "admin",
+        "first-run",
+        "CTA",
+        "onboarding"
+      ],
+      "negative_prompt_tags": [
+        "blame",
+        "vague",
+        "spinner",
+        "error"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-polaris-empty-state-implementation",
+    "record_id": "design-system-polaris-empty-state",
+    "source_name": "Shopify Polaris",
+    "source_url": "https://polaris-react.shopify.com/components/layout-and-structure/empty-state",
+    "page_type": "empty_state",
+    "section": "implementation",
+    "content": "# Shopify Polaris - Implementation Hints\n\nPage type: empty_state\nUse cases: admin first use, empty table, empty list, feature activation, commerce setup\nEvidence: direct_spec / high\nSource: https://polaris-react.shopify.com/components/layout-and-structure/empty-state\n\n- Use verb+noun CTA labels such as 'Create order' rather than vague labels.\n- Avoid blaming the user for lack of content.\n- Use for full-page admin emptiness, not every small missing component.\n\nAI summary: Use Polaris empty states for commerce/admin first-run experiences: explain value, guide activation, use one clear primary CTA, and keep copy encouraging and specific.",
+    "tokens": 86,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "empty-state",
+        "commerce",
+        "admin",
+        "first-run",
+        "CTA",
+        "onboarding"
+      ],
+      "negative_prompt_tags": [
+        "blame",
+        "vague",
+        "spinner",
+        "error"
+      ]
+    }
+  }
+]

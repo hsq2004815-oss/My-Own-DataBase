@@ -1,0 +1,188 @@
+[
+  {
+    "chunk_id": "workflow-windows-path-handling-for-agents-overview",
+    "record_id": "workflow-windows-path-handling-for-agents",
+    "workflow_type": "tool_path_windows",
+    "source_name": "Windows path handling incident",
+    "source_url": "local-observed:2026-04-25/bash-windows-path",
+    "section": "overview",
+    "content": "# workflow-windows-path-handling-for-agents - Overview\n\nWorkflow type: tool_path_windows\nAgent targets: Claude Code, Codex, Bash-based local agents\nGoal: Avoid Windows path corruption when agents run commands through Bash or mixed shells.\nEvidence: observed / high\nSource: local-observed:2026-04-25/bash-windows-path\n\nWhen to use:\n- Agent runs Bash on Windows\n- Command includes E:\\DataBase paths\n- Python cannot open a file because backslashes disappeared\n\nInputs required:\n- Shell type\n- Original command\n- Error output\n- Target file path\n\nAI summary: On Windows, agents using Bash must avoid raw backslash paths. Use E:/DataBase/... or PowerShell. Prefer the local HTTP API to avoid path handling entirely.",
+    "tokens": 99,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Bash-based local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "windows-paths",
+        "bash",
+        "powershell",
+        "path-error",
+        "claude-code",
+        "forward-slash"
+      ],
+      "negative_prompt_tags": [
+        "raw-backslash-in-bash",
+        "path-duplication"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-windows-path-handling-for-agents-steps",
+    "record_id": "workflow-windows-path-handling-for-agents",
+    "workflow_type": "tool_path_windows",
+    "source_name": "Windows path handling incident",
+    "source_url": "local-observed:2026-04-25/bash-windows-path",
+    "section": "steps",
+    "content": "# workflow-windows-path-handling-for-agents - Execution Steps\n\nWorkflow type: tool_path_windows\nAgent targets: Claude Code, Codex, Bash-based local agents\nGoal: Avoid Windows path corruption when agents run commands through Bash or mixed shells.\nEvidence: observed / high\nSource: local-observed:2026-04-25/bash-windows-path\n\n- Detect whether the tool is Bash, PowerShell, or cmd.\n- In Bash/Git Bash, use forward slashes such as E:/DataBase/scripts/ui_design/search_ui.py or /e/DataBase where supported.\n- In PowerShell, native Windows paths with backslashes are safe.\n- Quote paths with spaces and avoid unescaped backslashes in Bash.\n- If path corruption occurs, rerun the command with forward slashes.\n\nAI summary: On Windows, agents using Bash must avoid raw backslash paths. Use E:/DataBase/... or PowerShell. Prefer the local HTTP API to avoid path handling entirely.",
+    "tokens": 118,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Bash-based local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "windows-paths",
+        "bash",
+        "powershell",
+        "path-error",
+        "claude-code",
+        "forward-slash"
+      ],
+      "negative_prompt_tags": [
+        "raw-backslash-in-bash",
+        "path-duplication"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-windows-path-handling-for-agents-prompt_contract",
+    "record_id": "workflow-windows-path-handling-for-agents",
+    "workflow_type": "tool_path_windows",
+    "source_name": "Windows path handling incident",
+    "source_url": "local-observed:2026-04-25/bash-windows-path",
+    "section": "prompt_contract",
+    "content": "# workflow-windows-path-handling-for-agents - Prompt Contract\n\nWorkflow type: tool_path_windows\nAgent targets: Claude Code, Codex, Bash-based local agents\nGoal: Avoid Windows path corruption when agents run commands through Bash or mixed shells.\nEvidence: observed / high\nSource: local-observed:2026-04-25/bash-windows-path\n\n- Do not use raw Windows backslash paths in Bash commands.\n- Prefer local API calls over direct script paths when the API is running.\n\nAI summary: On Windows, agents using Bash must avoid raw backslash paths. Use E:/DataBase/... or PowerShell. Prefer the local HTTP API to avoid path handling entirely.",
+    "tokens": 87,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Bash-based local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "windows-paths",
+        "bash",
+        "powershell",
+        "path-error",
+        "claude-code",
+        "forward-slash"
+      ],
+      "negative_prompt_tags": [
+        "raw-backslash-in-bash",
+        "path-duplication"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-windows-path-handling-for-agents-verification",
+    "record_id": "workflow-windows-path-handling-for-agents",
+    "workflow_type": "tool_path_windows",
+    "source_name": "Windows path handling incident",
+    "source_url": "local-observed:2026-04-25/bash-windows-path",
+    "section": "verification",
+    "content": "# workflow-windows-path-handling-for-agents - Verification\n\nWorkflow type: tool_path_windows\nAgent targets: Claude Code, Codex, Bash-based local agents\nGoal: Avoid Windows path corruption when agents run commands through Bash or mixed shells.\nEvidence: observed / high\nSource: local-observed:2026-04-25/bash-windows-path\n\n- Command resolves the intended file\n- No duplicated path fragments such as DataBaseDataBasescripts\n- Python script starts or API responds\n\nAI summary: On Windows, agents using Bash must avoid raw backslash paths. Use E:/DataBase/... or PowerShell. Prefer the local HTTP API to avoid path handling entirely.",
+    "tokens": 82,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Bash-based local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "windows-paths",
+        "bash",
+        "powershell",
+        "path-error",
+        "claude-code",
+        "forward-slash"
+      ],
+      "negative_prompt_tags": [
+        "raw-backslash-in-bash",
+        "path-duplication"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-windows-path-handling-for-agents-failure_modes",
+    "record_id": "workflow-windows-path-handling-for-agents",
+    "workflow_type": "tool_path_windows",
+    "source_name": "Windows path handling incident",
+    "source_url": "local-observed:2026-04-25/bash-windows-path",
+    "section": "failure_modes",
+    "content": "# workflow-windows-path-handling-for-agents - Failure Modes\n\nWorkflow type: tool_path_windows\nAgent targets: Claude Code, Codex, Bash-based local agents\nGoal: Avoid Windows path corruption when agents run commands through Bash or mixed shells.\nEvidence: observed / high\nSource: local-observed:2026-04-25/bash-windows-path\n\n- Backslashes are consumed as escape characters\n- Drive path is treated as relative\n- Working directory duplicates path segments\n\nAI summary: On Windows, agents using Bash must avoid raw backslash paths. Use E:/DataBase/... or PowerShell. Prefer the local HTTP API to avoid path handling entirely.",
+    "tokens": 82,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Bash-based local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "windows-paths",
+        "bash",
+        "powershell",
+        "path-error",
+        "claude-code",
+        "forward-slash"
+      ],
+      "negative_prompt_tags": [
+        "raw-backslash-in-bash",
+        "path-duplication"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-windows-path-handling-for-agents-handoff",
+    "record_id": "workflow-windows-path-handling-for-agents",
+    "workflow_type": "tool_path_windows",
+    "source_name": "Windows path handling incident",
+    "source_url": "local-observed:2026-04-25/bash-windows-path",
+    "section": "handoff",
+    "content": "# workflow-windows-path-handling-for-agents - Handoff Report\n\nWorkflow type: tool_path_windows\nAgent targets: Claude Code, Codex, Bash-based local agents\nGoal: Avoid Windows path corruption when agents run commands through Bash or mixed shells.\nEvidence: observed / high\nSource: local-observed:2026-04-25/bash-windows-path\n\n- Shell detected\n- Corrected command\n- Result\n\nAI summary: On Windows, agents using Bash must avoid raw backslash paths. Use E:/DataBase/... or PowerShell. Prefer the local HTTP API to avoid path handling entirely.",
+    "tokens": 70,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Bash-based local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "windows-paths",
+        "bash",
+        "powershell",
+        "path-error",
+        "claude-code",
+        "forward-slash"
+      ],
+      "negative_prompt_tags": [
+        "raw-backslash-in-bash",
+        "path-duplication"
+      ]
+    }
+  }
+]

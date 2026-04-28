@@ -1,0 +1,92 @@
+{
+  "record_id": "automation-failure-recovery-playbook",
+  "source": {
+    "name": "Automation failure recovery playbook",
+    "url": "local-generated:2026-04-25/automation-failure-recovery",
+    "source_type": "local_procedure",
+    "license_notes": "Original local workflow notes.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "automation",
+  "automation_type": "verification_debugging",
+  "tooling": [
+    "Playwright",
+    "CDP",
+    "PowerShell",
+    "Windows"
+  ],
+  "goal": "Recover from common browser and local automation failures with bounded retries and evidence.",
+  "when_to_use": [
+    "Selector not found",
+    "Click intercepted",
+    "Upload failed",
+    "Login expired",
+    "API down",
+    "Path error",
+    "Timeout"
+  ],
+  "inputs_required": [
+    "Error output",
+    "Current screenshot",
+    "Current URL",
+    "Last successful step"
+  ],
+  "steps": [
+    "Classify failure as selector, timing, overlay, frame, auth, path, network, or permission.",
+    "Capture screenshot/log at failure point.",
+    "Retry with narrower locator or explicit state wait, not blind repetition.",
+    "Check frame/popup/overlay context.",
+    "For upload failures, verify path and actual file input.",
+    "For auth failures, stop and report login requirement.",
+    "For irreversible action ambiguity, stop and ask for confirmation."
+  ],
+  "commands_or_apis": [
+    "screenshot",
+    "console logs",
+    "locator count",
+    "frameLocator",
+    "health endpoint",
+    "path exists check"
+  ],
+  "verification": [
+    "Failure category identified",
+    "Fallback attempted",
+    "Either recovered or clear blocker reported"
+  ],
+  "failure_modes": [
+    "Infinite retry loop",
+    "Silent fallback to wrong element",
+    "Publishing from wrong account",
+    "Ignoring auth expiration"
+  ],
+  "safety_notes": [
+    "Bound retries; do not brute-force sensitive flows.",
+    "Stop on auth/payment/delete/publish ambiguity."
+  ],
+  "handoff_report": [
+    "Failure category",
+    "Evidence",
+    "Fallback",
+    "Recovered result or blocker"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "documented",
+    "notes": "Local playbook based on frequent automation failure modes."
+  },
+  "retrieval": {
+    "ai_summary": "When automation fails, classify the failure, capture evidence, retry with a targeted fallback, stop on auth/dangerous ambiguity, and report recovered state or blocker.",
+    "prompt_tags": [
+      "automation",
+      "failure",
+      "recovery",
+      "selector",
+      "overlay",
+      "upload",
+      "auth",
+      "timeout",
+      "path"
+    ],
+    "negative_prompt_tags": []
+  }
+}

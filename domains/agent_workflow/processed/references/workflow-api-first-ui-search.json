@@ -1,0 +1,87 @@
+{
+  "record_id": "workflow-api-first-ui-search",
+  "source": {
+    "name": "Local Knowledge API usage contract",
+    "url": "http://127.0.0.1:8765/docs",
+    "source_type": "api_contract",
+    "license_notes": "Original local workflow contract.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "agent_workflow",
+  "workflow_type": "api_first_retrieval",
+  "agent_targets": [
+    "Claude Code",
+    "Codex",
+    "Cursor",
+    "local agents"
+  ],
+  "goal": "Make agents retrieve relevant UI/design knowledge through the local HTTP API before designing or coding.",
+  "when_to_use": [
+    "Any frontend or UI design task",
+    "When the user asks to use the local database",
+    "When the task mentions Liquid Glass, animation, dashboard, forms, tables, or visual style"
+  ],
+  "inputs_required": [
+    "User task brief",
+    "Running API at http://127.0.0.1:8765",
+    "Search keywords extracted from the brief"
+  ],
+  "steps": [
+    "Call /health and confirm references/chunks are available.",
+    "Extract 2-5 search queries from the task, including style, page type, components, and motion terms.",
+    "Call /ui/search for each query with limit 5-8.",
+    "Deduplicate chunks by record_id and section.",
+    "Use only relevant chunks as design constraints; ignore unrelated broad matches.",
+    "Proceed to implementation and cite the chunks used in the final report."
+  ],
+  "api_calls": [
+    "GET http://127.0.0.1:8765/health",
+    "GET http://127.0.0.1:8765/ui/search?q={query}&limit=5",
+    "GET http://127.0.0.1:8765/ui/reference/{record_id}"
+  ],
+  "prompt_contract": [
+    "Do not design purely from memory when the local API is available.",
+    "Do not fetch all references by default; use targeted search.",
+    "Report exact queries and key chunks used."
+  ],
+  "verification": [
+    "/health returns status ok",
+    "Search returns at least one relevant chunk",
+    "Final output maps design decisions to retrieved chunks"
+  ],
+  "failure_modes": [
+    "API is not running",
+    "Search query too broad",
+    "Search query too strict",
+    "Returned chunks are irrelevant"
+  ],
+  "handoff_report": [
+    "API status",
+    "Queries run",
+    "Chunks used",
+    "Files changed",
+    "How knowledge was applied",
+    "Verification performed"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "tested",
+    "notes": "API was verified with /health and /ui/search over the UI database."
+  },
+  "retrieval": {
+    "ai_summary": "Use API-first retrieval for frontend tasks: call /health, derive search queries, call /ui/search, dedupe relevant chunks, design from those chunks, and report queries/chunks used.",
+    "prompt_tags": [
+      "api-first",
+      "ui-search",
+      "local-api",
+      "knowledge-first",
+      "frontend",
+      "chunks"
+    ],
+    "negative_prompt_tags": [
+      "read-all",
+      "memory-only",
+      "no-evidence"
+    ]
+  }
+}

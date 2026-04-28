@@ -1,0 +1,372 @@
+[
+  {
+    "tag": "AI & LLM Platforms",
+    "category": "design",
+    "description": "Tag for AI & LLM Platforms"
+  },
+  {
+    "tag": "terracotta",
+    "category": "design",
+    "description": "Tag for terracotta"
+  },
+  {
+    "tag": "warm",
+    "category": "design",
+    "description": "Tag for warm"
+  },
+  {
+    "tag": "layout",
+    "category": "design",
+    "description": "Tag for layout"
+  },
+  {
+    "tag": "clean",
+    "category": "design",
+    "description": "Tag for clean"
+  },
+  {
+    "tag": "editorial",
+    "category": "design",
+    "description": "Tag for editorial"
+  },
+  {
+    "tag": "accent",
+    "category": "design",
+    "description": "Tag for accent"
+  },
+  {
+    "tag": "vibrant",
+    "category": "design",
+    "description": "Tag for vibrant"
+  },
+  {
+    "tag": "dashboard",
+    "category": "design",
+    "description": "Tag for dashboard"
+  },
+  {
+    "tag": "gradient",
+    "category": "design",
+    "description": "Tag for gradient"
+  },
+  {
+    "tag": "dark",
+    "category": "design",
+    "description": "Tag for dark"
+  },
+  {
+    "tag": "cinematic",
+    "category": "design",
+    "description": "Tag for cinematic"
+  },
+  {
+    "tag": "dark-theme",
+    "category": "design",
+    "description": "Tag for dark-theme"
+  },
+  {
+    "tag": "neon",
+    "category": "design",
+    "description": "Tag for neon"
+  },
+  {
+    "tag": "bold",
+    "category": "design",
+    "description": "Tag for bold"
+  },
+  {
+    "tag": "purple",
+    "category": "design",
+    "description": "Tag for purple"
+  },
+  {
+    "tag": "red",
+    "category": "design",
+    "description": "Tag for red"
+  },
+  {
+    "tag": "weight",
+    "category": "design",
+    "description": "Tag for weight"
+  },
+  {
+    "tag": "minimalism",
+    "category": "design",
+    "description": "Tag for minimalism"
+  },
+  {
+    "tag": "minimalist",
+    "category": "design",
+    "description": "Tag for minimalist"
+  },
+  {
+    "tag": "monochrome",
+    "category": "design",
+    "description": "Tag for monochrome"
+  },
+  {
+    "tag": "white",
+    "category": "design",
+    "description": "Tag for white"
+  },
+  {
+    "tag": "canvas",
+    "category": "design",
+    "description": "Tag for canvas"
+  },
+  {
+    "tag": "blue",
+    "category": "design",
+    "description": "Tag for blue"
+  },
+  {
+    "tag": "black",
+    "category": "design",
+    "description": "Tag for black"
+  },
+  {
+    "tag": "emerald",
+    "category": "design",
+    "description": "Tag for emerald"
+  },
+  {
+    "tag": "Developer Tools & IDEs",
+    "category": "design",
+    "description": "Tag for Developer Tools & IDEs"
+  },
+  {
+    "tag": "letter-spacing",
+    "category": "design",
+    "description": "Tag for letter-spacing"
+  },
+  {
+    "tag": "tight",
+    "category": "design",
+    "description": "Tag for tight"
+  },
+  {
+    "tag": "spacing",
+    "category": "design",
+    "description": "Tag for spacing"
+  },
+  {
+    "tag": "font",
+    "category": "design",
+    "description": "Tag for font"
+  },
+  {
+    "tag": "Geist",
+    "category": "design",
+    "description": "Tag for Geist"
+  },
+  {
+    "tag": "modern",
+    "category": "design",
+    "description": "Tag for modern"
+  },
+  {
+    "tag": "Backend, Database & DevOps",
+    "category": "design",
+    "description": "Tag for Backend, Database & DevOps"
+  },
+  {
+    "tag": "yellow",
+    "category": "design",
+    "description": "Tag for yellow"
+  },
+  {
+    "tag": "icon",
+    "category": "design",
+    "description": "Tag for icon"
+  },
+  {
+    "tag": "green",
+    "category": "design",
+    "description": "Tag for green"
+  },
+  {
+    "tag": "pink",
+    "category": "design",
+    "description": "Tag for pink"
+  },
+  {
+    "tag": "Productivity & SaaS",
+    "category": "design",
+    "description": "Tag for Productivity & SaaS"
+  },
+  {
+    "tag": "serif",
+    "category": "design",
+    "description": "Tag for serif"
+  },
+  {
+    "tag": "heading",
+    "category": "design",
+    "description": "Tag for heading"
+  },
+  {
+    "tag": "surface",
+    "category": "design",
+    "description": "Tag for surface"
+  },
+  {
+    "tag": "monospace",
+    "category": "design",
+    "description": "Tag for monospace"
+  },
+  {
+    "tag": "orange",
+    "category": "design",
+    "description": "Tag for orange"
+  },
+  {
+    "tag": "Design & Creative Tools",
+    "category": "design",
+    "description": "Tag for Design & Creative Tools"
+  },
+  {
+    "tag": "structured",
+    "category": "design",
+    "description": "Tag for structured"
+  },
+  {
+    "tag": "motion",
+    "category": "design",
+    "description": "Tag for motion"
+  },
+  {
+    "tag": "infinite",
+    "category": "design",
+    "description": "Tag for infinite"
+  },
+  {
+    "tag": "Fintech & Crypto",
+    "category": "design",
+    "description": "Tag for Fintech & Crypto"
+  },
+  {
+    "tag": "card",
+    "category": "design",
+    "description": "Tag for card"
+  },
+  {
+    "tag": "E-commerce & Retail",
+    "category": "design",
+    "description": "Tag for E-commerce & Retail"
+  },
+  {
+    "tag": "coral",
+    "category": "design",
+    "description": "Tag for coral"
+  },
+  {
+    "tag": "light",
+    "category": "design",
+    "description": "Tag for light"
+  },
+  {
+    "tag": "Futura",
+    "category": "design",
+    "description": "Tag for Futura"
+  },
+  {
+    "tag": "full-bleed",
+    "category": "design",
+    "description": "Tag for full-bleed"
+  },
+  {
+    "tag": "type",
+    "category": "design",
+    "description": "Tag for type"
+  },
+  {
+    "tag": "display",
+    "category": "design",
+    "description": "Tag for display"
+  },
+  {
+    "tag": "Media & Consumer Tech",
+    "category": "design",
+    "description": "Tag for Media & Consumer Tech"
+  },
+  {
+    "tag": "SF Pro",
+    "category": "design",
+    "description": "Tag for SF Pro"
+  },
+  {
+    "tag": "grid",
+    "category": "design",
+    "description": "Tag for grid"
+  },
+  {
+    "tag": "masonry",
+    "category": "design",
+    "description": "Tag for masonry"
+  },
+  {
+    "tag": "cyan",
+    "category": "design",
+    "description": "Tag for cyan"
+  },
+  {
+    "tag": "channel",
+    "category": "design",
+    "description": "Tag for channel"
+  },
+  {
+    "tag": "interaction",
+    "category": "design",
+    "description": "Tag for interaction"
+  },
+  {
+    "tag": "hover",
+    "category": "design",
+    "description": "Tag for hover"
+  },
+  {
+    "tag": "scale",
+    "category": "design",
+    "description": "Tag for scale"
+  },
+  {
+    "tag": "Manuka",
+    "category": "design",
+    "description": "Tag for Manuka"
+  },
+  {
+    "tag": "density",
+    "category": "design",
+    "description": "Tag for density"
+  },
+  {
+    "tag": "Automotive",
+    "category": "design",
+    "description": "Tag for Automotive"
+  },
+  {
+    "tag": "gold",
+    "category": "design",
+    "description": "Tag for gold"
+  },
+  {
+    "tag": "LamboType",
+    "category": "design",
+    "description": "Tag for LamboType"
+  },
+  {
+    "tag": "NouvelR",
+    "category": "design",
+    "description": "Tag for NouvelR"
+  },
+  {
+    "tag": "button",
+    "category": "design",
+    "description": "Tag for button"
+  },
+  {
+    "tag": "Universal Sans",
+    "category": "design",
+    "description": "Tag for Universal Sans"
+  }
+]

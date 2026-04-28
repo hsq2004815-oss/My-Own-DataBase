@@ -1,0 +1,39 @@
+{
+  "asset_id": "intervariable-41941415",
+  "domain": "ui_assets",
+  "asset_type": "font",
+  "usage_policy": "review_required",
+  "files": {
+    "file_path": "E:\\DataBase\\domains\\ui_assets\\raw\\review_required\\fonts\\InterVariable.ttf",
+    "preview_path": "",
+    "original_path": "F:\\materials\\09_fonts_字体\\inter\\docs\\font-files\\InterVariable.ttf",
+    "sha1": "41941415a6de8f3dc776822ccfa02951615d435b",
+    "size_bytes": 879708,
+    "extension": ".ttf"
+  },
+  "source": {
+    "name": "local import",
+    "url": "",
+    "captured_at": "2026-04-26T10:40:06.591076+00:00",
+    "notes": "Imported by scripts/ui_assets/ingest_assets.py"
+  },
+  "license": {
+    "label": "review required",
+    "notes": "Review each font license before direct use."
+  },
+  "style_tags": [],
+  "use_cases": [],
+  "avoid_when": [],
+  "implementation_notes": [],
+  "quality": {
+    "curation_status": "new",
+    "notes": "Review usage_policy and license before direct project use."
+  },
+  "retrieval": {
+    "ai_summary": "font asset for font. Review usage policy before use.",
+    "prompt_tags": [
+      "font"
+    ],
+    "negative_prompt_tags": []
+  }
+}

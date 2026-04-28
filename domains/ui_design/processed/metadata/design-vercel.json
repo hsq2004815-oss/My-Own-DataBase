@@ -1,0 +1,22 @@
+{
+  "file_id": "design-vercel",
+  "title": "Vercel Design System",
+  "domain": "ui_design",
+  "source_id": "awesome-design-md",
+  "relative_path": "design-md/vercel/README.md",
+  "file_type": "markdown",
+  "tags": [
+    "Developer Tools & IDEs",
+    "black",
+    "white",
+    "font",
+    "Geist"
+  ],
+  "status": "processed",
+  "processed": true,
+  "chunked": true,
+  "indexed": false,
+  "created_at": "2026-04-17T09:34:38.948Z",
+  "updated_at": "2026-04-17T09:34:38.948Z",
+  "notes": "Processed from awesome-design-md collection"
+}

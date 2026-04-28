@@ -1,0 +1,176 @@
+[
+  {
+    "chunk_id": "motion-source-swishy-template-library-overview",
+    "record_id": "motion-source-swishy-template-library",
+    "source_name": "Swishy AI Motion Templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# Swishy AI Motion Templates - Overview\n\nPage type: component_pattern\nUse cases: motion design reference, AI generated UI, landing page animation, social preview, product demo\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\nVisual traits:\n- AI motion design\n- template gallery\n- kinetic typography\n- social-ready animation\n- microinteraction prompts\n\nUse when:\n- motion design reference\n- AI generated UI\n- landing page animation\n- social preview\n- product demo\n\nAvoid when:\n- serious data entry\n- high-frequency workflow\n- accessibility-critical flow\n- print/static export\n\nAI summary: Use Swishy as an optional motion-pattern reference for kinetic typography, notifications, website reveals, data viz motion, mockup animations, social cards, and launch/demo sequences. Store motion intent, not copied assets.",
+    "tokens": 115,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "swishy",
+        "motion",
+        "animation",
+        "template-library",
+        "kinetic-typography",
+        "notification",
+        "website-reveal",
+        "data-viz"
+      ],
+      "negative_prompt_tags": [
+        "copy-template",
+        "static-only",
+        "reduced-motion-ignored"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-source-swishy-template-library-layout",
+    "record_id": "motion-source-swishy-template-library",
+    "source_name": "Swishy AI Motion Templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# Swishy AI Motion Templates - Layout Rules\n\nPage type: component_pattern\nUse cases: motion design reference, AI generated UI, landing page animation, social preview, product demo\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- Treat Swishy as a motion-pattern source, not as a static visual design system.\n- Extract reusable animation intent: timing, entrance direction, reveal type, bounce/spring feel, and hierarchy.\n- Keep implementation original and adapted to the product UI rather than copying template output.\n\nAI summary: Use Swishy as an optional motion-pattern reference for kinetic typography, notifications, website reveals, data viz motion, mockup animations, social cards, and launch/demo sequences. Store motion intent, not copied assets.",
+    "tokens": 106,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "swishy",
+        "motion",
+        "animation",
+        "template-library",
+        "kinetic-typography",
+        "notification",
+        "website-reveal",
+        "data-viz"
+      ],
+      "negative_prompt_tags": [
+        "copy-template",
+        "static-only",
+        "reduced-motion-ignored"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-source-swishy-template-library-components",
+    "record_id": "motion-source-swishy-template-library",
+    "source_name": "Swishy AI Motion Templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# Swishy AI Motion Templates - Component Patterns\n\nPage type: component_pattern\nUse cases: motion design reference, AI generated UI, landing page animation, social preview, product demo\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- text animation\n- message animation\n- social media card\n- logo reveal\n- infographic animation\n- launch video\n- notification\n- toggle\n- website reveal\n\nAI summary: Use Swishy as an optional motion-pattern reference for kinetic typography, notifications, website reveals, data viz motion, mockup animations, social cards, and launch/demo sequences. Store motion intent, not copied assets.",
+    "tokens": 89,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "swishy",
+        "motion",
+        "animation",
+        "template-library",
+        "kinetic-typography",
+        "notification",
+        "website-reveal",
+        "data-viz"
+      ],
+      "negative_prompt_tags": [
+        "copy-template",
+        "static-only",
+        "reduced-motion-ignored"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-source-swishy-template-library-interaction",
+    "record_id": "motion-source-swishy-template-library",
+    "source_name": "Swishy AI Motion Templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# Swishy AI Motion Templates - Interaction States\n\nPage type: component_pattern\nUse cases: motion design reference, AI generated UI, landing page animation, social preview, product demo\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- enter\n- exit\n- hover\n- tap\n- notification pop\n- typing\n- reveal\n- morph\n\nAI summary: Use Swishy as an optional motion-pattern reference for kinetic typography, notifications, website reveals, data viz motion, mockup animations, social cards, and launch/demo sequences. Store motion intent, not copied assets.",
+    "tokens": 80,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "swishy",
+        "motion",
+        "animation",
+        "template-library",
+        "kinetic-typography",
+        "notification",
+        "website-reveal",
+        "data-viz"
+      ],
+      "negative_prompt_tags": [
+        "copy-template",
+        "static-only",
+        "reduced-motion-ignored"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-source-swishy-template-library-accessibility",
+    "record_id": "motion-source-swishy-template-library",
+    "source_name": "Swishy AI Motion Templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# Swishy AI Motion Templates - Accessibility Notes\n\nPage type: component_pattern\nUse cases: motion design reference, AI generated UI, landing page animation, social preview, product demo\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- Avoid motion that blocks reading or repeats endlessly without value.\n- Respect reduced-motion preferences for large reveals, parallax, and spring effects.\n- Do not use motion alone to communicate critical status.\n\nAI summary: Use Swishy as an optional motion-pattern reference for kinetic typography, notifications, website reveals, data viz motion, mockup animations, social cards, and launch/demo sequences. Store motion intent, not copied assets.",
+    "tokens": 95,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "swishy",
+        "motion",
+        "animation",
+        "template-library",
+        "kinetic-typography",
+        "notification",
+        "website-reveal",
+        "data-viz"
+      ],
+      "negative_prompt_tags": [
+        "copy-template",
+        "static-only",
+        "reduced-motion-ignored"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-source-swishy-template-library-implementation",
+    "record_id": "motion-source-swishy-template-library",
+    "source_name": "Swishy AI Motion Templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# Swishy AI Motion Templates - Implementation Hints\n\nPage type: component_pattern\nUse cases: motion design reference, AI generated UI, landing page animation, social preview, product demo\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- Use this source when a UI needs polish through motion: hero reveal, notification stack, typewriter text, animated metrics, or product demo sequences.\n- Translate templates into motion specs: duration, delay, easing, stagger, transform, opacity, blur, and spring behavior.\n- For app UI, prefer short 150-450ms microinteractions; reserve longer 800-1600ms sequences for hero or video-style presentation.\n\nAI summary: Use Swishy as an optional motion-pattern reference for kinetic typography, notifications, website reveals, data viz motion, mockup animations, social cards, and launch/demo sequences. Store motion intent, not copied assets.",
+    "tokens": 119,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "swishy",
+        "motion",
+        "animation",
+        "template-library",
+        "kinetic-typography",
+        "notification",
+        "website-reveal",
+        "data-viz"
+      ],
+      "negative_prompt_tags": [
+        "copy-template",
+        "static-only",
+        "reduced-motion-ignored"
+      ]
+    }
+  }
+]

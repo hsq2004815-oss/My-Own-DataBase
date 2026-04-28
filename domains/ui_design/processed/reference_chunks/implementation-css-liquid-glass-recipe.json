@@ -1,0 +1,182 @@
+[
+  {
+    "chunk_id": "implementation-css-liquid-glass-recipe-overview",
+    "record_id": "implementation-css-liquid-glass-recipe",
+    "source_name": "Codex distilled implementation recipe from user screenshots",
+    "source_url": "local-generated:2026-04-25/liquid-glass-css-recipe",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# Codex distilled implementation recipe from user screenshots - Overview\n\nPage type: component_pattern\nUse cases: React UI, Tailwind UI, CSS prototype, AI generated frontend, premium web app\nEvidence: summary_only / high\nSource: local-generated:2026-04-25/liquid-glass-css-recipe\n\nVisual traits:\n- CSS glass material\n- blurred backdrop\n- inner highlight\n- outer rim\n- colored caustics\n- soft shadow\n\nUse when:\n- React UI\n- Tailwind UI\n- CSS prototype\n- AI generated frontend\n- premium web app\n\nAvoid when:\n- massive lists\n- hundreds of repeated rows\n- print layout\n- strict high contrast mode only\n\nAI summary: For web implementation of Liquid Glass, create reusable glass primitives using translucent gradients, backdrop-filter blur/saturate, rounded capsules, inner highlights, layered shadows, pseudo-element gloss, and chromatic caustic glints; add fallbacks and contrast safeguards.",
+    "tokens": 126,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "css",
+        "backdrop-filter",
+        "glass-button",
+        "glass-card",
+        "pseudo-element",
+        "caustics",
+        "implementation"
+      ],
+      "negative_prompt_tags": [
+        "flat-css",
+        "many-table-rows",
+        "no-fallback",
+        "low-contrast"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-css-liquid-glass-recipe-layout",
+    "record_id": "implementation-css-liquid-glass-recipe",
+    "source_name": "Codex distilled implementation recipe from user screenshots",
+    "source_url": "local-generated:2026-04-25/liquid-glass-css-recipe",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# Codex distilled implementation recipe from user screenshots - Layout Rules\n\nPage type: component_pattern\nUse cases: React UI, Tailwind UI, CSS prototype, AI generated frontend, premium web app\nEvidence: summary_only / high\nSource: local-generated:2026-04-25/liquid-glass-css-recipe\n\n- Use CSS variables for glass opacity, blur radius, rim color, and accent glow so the style can be themed consistently.\n- Build one reusable glass primitive, then vary radius, size, and accent color for buttons, inputs, cards, and modals.\n- Combine pseudo-elements for top-left gloss and bottom-right chromatic glint.\n\nAI summary: For web implementation of Liquid Glass, create reusable glass primitives using translucent gradients, backdrop-filter blur/saturate, rounded capsules, inner highlights, layered shadows, pseudo-element gloss, and chromatic caustic glints; add fallbacks and contrast safeguards.",
+    "tokens": 118,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "css",
+        "backdrop-filter",
+        "glass-button",
+        "glass-card",
+        "pseudo-element",
+        "caustics",
+        "implementation"
+      ],
+      "negative_prompt_tags": [
+        "flat-css",
+        "many-table-rows",
+        "no-fallback",
+        "low-contrast"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-css-liquid-glass-recipe-components",
+    "record_id": "implementation-css-liquid-glass-recipe",
+    "source_name": "Codex distilled implementation recipe from user screenshots",
+    "source_url": "local-generated:2026-04-25/liquid-glass-css-recipe",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# Codex distilled implementation recipe from user screenshots - Component Patterns\n\nPage type: component_pattern\nUse cases: React UI, Tailwind UI, CSS prototype, AI generated frontend, premium web app\nEvidence: summary_only / high\nSource: local-generated:2026-04-25/liquid-glass-css-recipe\n\n- glass primitive\n- glass button\n- glass input\n- glass card\n- glass modal\n- glass toggle\n\nAI summary: For web implementation of Liquid Glass, create reusable glass primitives using translucent gradients, backdrop-filter blur/saturate, rounded capsules, inner highlights, layered shadows, pseudo-element gloss, and chromatic caustic glints; add fallbacks and contrast safeguards.",
+    "tokens": 86,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "css",
+        "backdrop-filter",
+        "glass-button",
+        "glass-card",
+        "pseudo-element",
+        "caustics",
+        "implementation"
+      ],
+      "negative_prompt_tags": [
+        "flat-css",
+        "many-table-rows",
+        "no-fallback",
+        "low-contrast"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-css-liquid-glass-recipe-interaction",
+    "record_id": "implementation-css-liquid-glass-recipe",
+    "source_name": "Codex distilled implementation recipe from user screenshots",
+    "source_url": "local-generated:2026-04-25/liquid-glass-css-recipe",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# Codex distilled implementation recipe from user screenshots - Interaction States\n\nPage type: component_pattern\nUse cases: React UI, Tailwind UI, CSS prototype, AI generated frontend, premium web app\nEvidence: summary_only / high\nSource: local-generated:2026-04-25/liquid-glass-css-recipe\n\n- hover\n- active\n- focus-visible\n- disabled\n- error\n- success\n\nAI summary: For web implementation of Liquid Glass, create reusable glass primitives using translucent gradients, backdrop-filter blur/saturate, rounded capsules, inner highlights, layered shadows, pseudo-element gloss, and chromatic caustic glints; add fallbacks and contrast safeguards.",
+    "tokens": 80,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "css",
+        "backdrop-filter",
+        "glass-button",
+        "glass-card",
+        "pseudo-element",
+        "caustics",
+        "implementation"
+      ],
+      "negative_prompt_tags": [
+        "flat-css",
+        "many-table-rows",
+        "no-fallback",
+        "low-contrast"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-css-liquid-glass-recipe-accessibility",
+    "record_id": "implementation-css-liquid-glass-recipe",
+    "source_name": "Codex distilled implementation recipe from user screenshots",
+    "source_url": "local-generated:2026-04-25/liquid-glass-css-recipe",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# Codex distilled implementation recipe from user screenshots - Accessibility Notes\n\nPage type: component_pattern\nUse cases: React UI, Tailwind UI, CSS prototype, AI generated frontend, premium web app\nEvidence: summary_only / high\nSource: local-generated:2026-04-25/liquid-glass-css-recipe\n\n- Provide @supports fallback when backdrop-filter is unavailable.\n- Respect prefers-reduced-transparency or provide a high-contrast variant.\n- Do not animate blur radius aggressively on low-end devices.\n\nAI summary: For web implementation of Liquid Glass, create reusable glass primitives using translucent gradients, backdrop-filter blur/saturate, rounded capsules, inner highlights, layered shadows, pseudo-element gloss, and chromatic caustic glints; add fallbacks and contrast safeguards.",
+    "tokens": 94,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "css",
+        "backdrop-filter",
+        "glass-button",
+        "glass-card",
+        "pseudo-element",
+        "caustics",
+        "implementation"
+      ],
+      "negative_prompt_tags": [
+        "flat-css",
+        "many-table-rows",
+        "no-fallback",
+        "low-contrast"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-css-liquid-glass-recipe-implementation",
+    "record_id": "implementation-css-liquid-glass-recipe",
+    "source_name": "Codex distilled implementation recipe from user screenshots",
+    "source_url": "local-generated:2026-04-25/liquid-glass-css-recipe",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# Codex distilled implementation recipe from user screenshots - Implementation Hints\n\nPage type: component_pattern\nUse cases: React UI, Tailwind UI, CSS prototype, AI generated frontend, premium web app\nEvidence: summary_only / high\nSource: local-generated:2026-04-25/liquid-glass-css-recipe\n\n- Core CSS: background: linear-gradient(... rgba white/transparent ...); backdrop-filter: blur(22px) saturate(1.35); border: 1px solid rgba(255,255,255,.55); box-shadow: outer shadow plus inset white highlight plus inset dark lower edge.\n- Gloss layer: ::before with white translucent linear/radial gradient positioned top-left, opacity around .55, pointer-events none.\n- Caustic layer: ::after with cyan/magenta/orange radial gradients near corners, mix-blend-mode screen, low opacity.\n- Text: use strong contrast; avoid pale gray on pale glass.\n- Performance: limit backdrop-filter surfaces and avoid applying it to hundreds of table rows.\n\nAI summary: For web implementation of Liquid Glass, create reusable glass primitives using translucent gradients, backdrop-filter blur/saturate, rounded capsules, inner highlights, layered shadows, pseudo-element gloss, and chromatic caustic glints; add fallbacks and contrast safeguards.",
+    "tokens": 150,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "css",
+        "backdrop-filter",
+        "glass-button",
+        "glass-card",
+        "pseudo-element",
+        "caustics",
+        "implementation"
+      ],
+      "negative_prompt_tags": [
+        "flat-css",
+        "many-table-rows",
+        "no-fallback",
+        "low-contrast"
+      ]
+    }
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "record_id": "component-library-shadcn-modern-web",
+  "source": {
+    "name": "shadcn/ui",
+    "url": "https://ui.shadcn.com/",
+    "source_type": "component_library",
+    "license_notes": "Use as a source link and short implementation notes; respect project license and avoid unnecessary bulk copying.",
+    "captured_at": "2026-04-24"
+  },
+  "domain": "ui_design",
+  "page_type": "component_pattern",
+  "platform": ["web"],
+  "use_cases": ["modern SaaS", "AI app", "dashboard", "developer tool", "settings page"],
+  "visual_traits": ["clean", "composable", "neutral", "modern", "utility-first"],
+  "layout_rules": [
+    "Compose small accessible primitives into product-specific components.",
+    "Use restrained surfaces, borders, and typography before adding strong color.",
+    "Keep spacing and component rhythm consistent across the page."
+  ],
+  "component_patterns": ["button", "dialog", "dropdown", "command menu", "card", "form", "table", "toast"],
+  "interaction_states": ["hover", "focus", "open", "disabled", "loading", "validation error"],
+  "accessibility_notes": [
+    "Prefer accessible primitives for dialogs, menus, popovers, and forms.",
+    "Preserve keyboard and focus behavior when restyling."
+  ],
+  "implementation_hints": [
+    "Use when generating React/Tailwind interfaces that need modern product polish.",
+    "Good default for AI tools, internal tools, and fast SaaS prototypes.",
+    "Avoid making every page look like the same generic template; add product-specific visual direction."
+  ],
+  "avoid_when": ["highly branded editorial site", "native mobile app", "luxury visual campaign"],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "direct_spec",
+    "notes": "Seed record for modern web component composition."
+  },
+  "retrieval": {
+    "ai_summary": "Use shadcn/ui-style composition for modern React/Tailwind web apps: accessible primitives, clean neutral surfaces, consistent rhythm, and explicit component states.",
+    "prompt_tags": ["react", "tailwind", "modern-saas", "ai-app", "components", "accessible"],
+    "negative_prompt_tags": ["native-ios", "maximalist", "brand-campaign"]
+  }
+}

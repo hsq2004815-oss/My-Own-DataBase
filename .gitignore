@@ -1,0 +1,31 @@
+# Python/runtime caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Runtime logs and temporary brief artifacts
+runtime/logs/
+runtime/briefs/
+*.log
+
+# OS/editor local state
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.obsidian/workspace.json
+
+# Build/export scratch space
+tmp/
+temp/
+.cache/

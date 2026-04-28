@@ -1,0 +1,88 @@
+{
+  "record_id": "design-system-ant-table",
+  "source": {
+    "name": "Ant Design",
+    "url": "https://ant.design/components/table/",
+    "source_type": "official_design_system",
+    "license_notes": "Use source links and summarized guidance only; do not copy full documentation verbatim.",
+    "captured_at": "2026-04-24"
+  },
+  "domain": "ui_design",
+  "page_type": "data_table",
+  "platform": [
+    "web"
+  ],
+  "use_cases": [
+    "Chinese enterprise admin",
+    "management system",
+    "operations dashboard",
+    "CRUD list"
+  ],
+  "visual_traits": [
+    "dense",
+    "practical",
+    "enterprise",
+    "component-driven",
+    "configurable"
+  ],
+  "layout_rules": [
+    "Use tables for structured rows and columns with management actions.",
+    "Expose sorting, filtering, pagination, selection, expansion, and custom empty states when the data task needs them.",
+    "Keep actions predictable and close to the row or toolbar scope they affect."
+  ],
+  "component_patterns": [
+    "table",
+    "pagination",
+    "selection",
+    "sorter",
+    "filters",
+    "expanded row",
+    "fixed column",
+    "summary",
+    "empty state"
+  ],
+  "interaction_states": [
+    "selected",
+    "expanded",
+    "loading",
+    "empty",
+    "sorted",
+    "filtered",
+    "fixed column scroll"
+  ],
+  "accessibility_notes": [
+    "Preserve semantic table structure when customizing cells.",
+    "Do not hide important actions behind hover-only behavior for keyboard users."
+  ],
+  "implementation_hints": [
+    "Use as a strong default for React enterprise admin pages in Chinese product contexts.",
+    "Prefer Ant table when speed and convention matter more than bespoke visual branding."
+  ],
+  "avoid_when": [
+    "brand landing page",
+    "simple mobile-first list",
+    "editorial content"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "direct_spec",
+    "notes": "Official Ant Design Table component summarized."
+  },
+  "retrieval": {
+    "ai_summary": "Use Ant Design Table for dense enterprise CRUD/admin data: pagination, sorting, filtering, selection, expansion, fixed columns, loading and empty states.",
+    "prompt_tags": [
+      "antd",
+      "table",
+      "enterprise",
+      "admin",
+      "crud",
+      "pagination",
+      "filters"
+    ],
+    "negative_prompt_tags": [
+      "marketing",
+      "editorial",
+      "mobile-only"
+    ]
+  }
+}

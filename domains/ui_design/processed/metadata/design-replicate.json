@@ -1,0 +1,21 @@
+{
+  "file_id": "design-replicate",
+  "title": "Replicate Design System",
+  "domain": "ui_design",
+  "source_id": "awesome-design-md",
+  "relative_path": "design-md/replicate/README.md",
+  "file_type": "markdown",
+  "tags": [
+    "AI & LLM Platforms",
+    "white",
+    "clean",
+    "canvas"
+  ],
+  "status": "processed",
+  "processed": true,
+  "chunked": true,
+  "indexed": false,
+  "created_at": "2026-04-17T09:34:38.940Z",
+  "updated_at": "2026-04-17T09:34:38.940Z",
+  "notes": "Processed from awesome-design-md collection"
+}

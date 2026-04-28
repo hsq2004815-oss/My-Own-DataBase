@@ -1,0 +1,100 @@
+{
+  "record_id": "visual-style-water-caustics-liquid-glass-background",
+  "source": {
+    "name": "MDN SVG filter turbulence and displacement references",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feTurbulence",
+    "source_type": "article",
+    "license_notes": "Distilled implementation guidance from public SVG filter and Liquid Glass material principles. Store summarized guidance only.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "ui_design",
+  "page_type": "component_pattern",
+  "platform": [
+    "web",
+    "desktop"
+  ],
+  "use_cases": [
+    "liquid glass interface background",
+    "water caustic lighting",
+    "refractive product UI",
+    "premium modal backdrop",
+    "high-end glass controls"
+  ],
+  "visual_traits": [
+    "slow refractive water-light caustics behind glass",
+    "thin flowing highlight veins that suggest optical distortion",
+    "subtle cyan, silver, and warm reflected light",
+    "liquid depth without turning the page into an aquarium",
+    "background movement that makes glass edges feel optically active"
+  ],
+  "layout_rules": [
+    "Use caustics as low-opacity environmental light, not as the main content texture.",
+    "Keep caustic intensity stronger near large glass surfaces and weaker under text-heavy regions.",
+    "Pair caustic backgrounds with fewer glass layers; too many translucent panels over moving light become noisy.",
+    "Use calm base surfaces behind forms and tables, with caustics limited to margins or empty zones.",
+    "Reserve sharp specular lines for edges, dividers, and primary glass controls."
+  ],
+  "component_patterns": [
+    "caustic light field",
+    "liquid glass card",
+    "refractive modal backdrop",
+    "specular edge highlight",
+    "dimmed form background",
+    "static fallback texture"
+  ],
+  "interaction_states": [
+    "idle slow flow",
+    "hover specular edge",
+    "active press light shift",
+    "modal open caustic dim",
+    "reduced-motion frozen caustic"
+  ],
+  "accessibility_notes": [
+    "Use reduced-motion to pause flowing caustics or replace them with a static texture.",
+    "Do not place validation text, table cells, or long paragraphs over bright caustic lines.",
+    "Keep caustic contrast below the contrast of interactive focus rings.",
+    "Add a tint layer behind glass cards when moving highlights reduce readability."
+  ],
+  "implementation_hints": [
+    "SVG baseline: use feTurbulence as a procedural noise source and feDisplacementMap or masked gradients for slow refractive distortion.",
+    "Canvas baseline: render low-resolution flowing noise or line fields, upscale softly, and keep opacity low.",
+    "CSS fallback: layer radial gradients and thin blurred linear highlights with long transform animations.",
+    "Throttle intensity on mobile and avoid animating large blur/filter values every frame.",
+    "Use requestAnimationFrame for canvas animation and stop or pause when the page is hidden.",
+    "Keep caustic animation loops slow, around 24s to 90s, with no visible reset."
+  ],
+  "avoid_when": [
+    "dense data tables",
+    "long reading pages",
+    "forms with many validation messages",
+    "rapid water ripple effects",
+    "high-contrast wave lines under text",
+    "heavy SVG filters over full-screen layers on low-end devices"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "summary_only",
+    "notes": "Pattern uses SVG turbulence/displacement and Liquid Glass optical-material reasoning to make glass backgrounds feel refractive while preserving legibility."
+  },
+  "retrieval": {
+    "ai_summary": "Use water caustics when Liquid Glass needs a more optical, refractive background than a static gradient. Keep flowing light low-opacity, slow, and away from text; implement with SVG turbulence/displacement, low-res canvas noise, or CSS highlight layers, with reduced-motion and static fallbacks.",
+    "prompt_tags": [
+      "water-caustics",
+      "liquid-glass",
+      "refractive-background",
+      "svg-filter",
+      "feTurbulence",
+      "feDisplacementMap",
+      "glass-modal",
+      "specular-highlight"
+    ],
+    "negative_prompt_tags": [
+      "busy-background",
+      "fast-ripples",
+      "dense-table",
+      "low-contrast",
+      "heavy-filter",
+      "aquarium-theme"
+    ]
+  }
+}

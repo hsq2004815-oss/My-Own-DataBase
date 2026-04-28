@@ -1,0 +1,39 @@
+{
+  "asset_id": "interdisplay-extrabold-5ca5b8f0",
+  "domain": "ui_assets",
+  "asset_type": "font",
+  "usage_policy": "review_required",
+  "files": {
+    "file_path": "E:\\DataBase\\domains\\ui_assets\\raw\\review_required\\fonts\\InterDisplay-ExtraBold.woff2",
+    "preview_path": "",
+    "original_path": "F:\\materials\\09_fonts_字体\\inter\\docs\\font-files\\InterDisplay-ExtraBold.woff2",
+    "sha1": "5ca5b8f023f9176d81514826c03eb6d2672a8cd8",
+    "size_bytes": 113636,
+    "extension": ".woff2"
+  },
+  "source": {
+    "name": "local import",
+    "url": "",
+    "captured_at": "2026-04-26T10:40:06.563066+00:00",
+    "notes": "Imported by scripts/ui_assets/ingest_assets.py"
+  },
+  "license": {
+    "label": "review required",
+    "notes": "Review each font license before direct use."
+  },
+  "style_tags": [],
+  "use_cases": [],
+  "avoid_when": [],
+  "implementation_notes": [],
+  "quality": {
+    "curation_status": "new",
+    "notes": "Review usage_policy and license before direct project use."
+  },
+  "retrieval": {
+    "ai_summary": "font asset for font. Review usage policy before use.",
+    "prompt_tags": [
+      "font"
+    ],
+    "negative_prompt_tags": []
+  }
+}

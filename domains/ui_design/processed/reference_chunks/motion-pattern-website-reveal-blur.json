@@ -1,0 +1,170 @@
+[
+  {
+    "chunk_id": "motion-pattern-website-reveal-blur-overview",
+    "record_id": "motion-pattern-website-reveal-blur",
+    "source_name": "Swishy website reveal templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "landing_page",
+    "section": "overview",
+    "content": "# Swishy website reveal templates - Overview\n\nPage type: landing_page\nUse cases: landing page entry, product reveal, dashboard first load, portfolio hero, SaaS demo\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\nVisual traits:\n- blur-in\n- ease from bottom\n- website reveal\n- soft depth\n- launch animation\n\nUse when:\n- landing page entry\n- product reveal\n- dashboard first load\n- portfolio hero\n- SaaS demo\n\nAvoid when:\n- frequent route changes\n- admin workflow repeated every click\n- low-end mobile heavy page\n\nAI summary: Use website reveal blur for premium page entry: background glow, glass panels, and controls rise from below while blur resolves, with 600-900ms duration and reduced-motion fallback.",
+    "tokens": 111,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "website-reveal",
+        "blur-in",
+        "page-entry",
+        "stagger",
+        "landing-page",
+        "dashboard",
+        "liquid-glass"
+      ],
+      "negative_prompt_tags": [
+        "every-route",
+        "slow-navigation",
+        "no-reduced-motion"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-website-reveal-blur-layout",
+    "record_id": "motion-pattern-website-reveal-blur",
+    "source_name": "Swishy website reveal templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "landing_page",
+    "section": "layout",
+    "content": "# Swishy website reveal templates - Layout Rules\n\nPage type: landing_page\nUse cases: landing page entry, product reveal, dashboard first load, portfolio hero, SaaS demo\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- Reveal the shell first, then primary content, then secondary cards and controls.\n- Use blur and vertical translation for a premium first-load effect, but settle within about one second.\n- Stagger cards and controls so the page feels assembled rather than dumped onto the screen.\n\nAI summary: Use website reveal blur for premium page entry: background glow, glass panels, and controls rise from below while blur resolves, with 600-900ms duration and reduced-motion fallback.",
+    "tokens": 105,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "website-reveal",
+        "blur-in",
+        "page-entry",
+        "stagger",
+        "landing-page",
+        "dashboard",
+        "liquid-glass"
+      ],
+      "negative_prompt_tags": [
+        "every-route",
+        "slow-navigation",
+        "no-reduced-motion"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-website-reveal-blur-components",
+    "record_id": "motion-pattern-website-reveal-blur",
+    "source_name": "Swishy website reveal templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "landing_page",
+    "section": "components",
+    "content": "# Swishy website reveal templates - Component Patterns\n\nPage type: landing_page\nUse cases: landing page entry, product reveal, dashboard first load, portfolio hero, SaaS demo\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- page shell\n- hero card\n- dashboard cards\n- CTA\n- search bar\n- navigation\n\nAI summary: Use website reveal blur for premium page entry: background glow, glass panels, and controls rise from below while blur resolves, with 600-900ms duration and reduced-motion fallback.",
+    "tokens": 75,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "website-reveal",
+        "blur-in",
+        "page-entry",
+        "stagger",
+        "landing-page",
+        "dashboard",
+        "liquid-glass"
+      ],
+      "negative_prompt_tags": [
+        "every-route",
+        "slow-navigation",
+        "no-reduced-motion"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-website-reveal-blur-interaction",
+    "record_id": "motion-pattern-website-reveal-blur",
+    "source_name": "Swishy website reveal templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "landing_page",
+    "section": "interaction",
+    "content": "# Swishy website reveal templates - Interaction States\n\nPage type: landing_page\nUse cases: landing page entry, product reveal, dashboard first load, portfolio hero, SaaS demo\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- initial blur\n- rise\n- settle\n- stagger\n- hover refinement\n\nAI summary: Use website reveal blur for premium page entry: background glow, glass panels, and controls rise from below while blur resolves, with 600-900ms duration and reduced-motion fallback.",
+    "tokens": 71,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "website-reveal",
+        "blur-in",
+        "page-entry",
+        "stagger",
+        "landing-page",
+        "dashboard",
+        "liquid-glass"
+      ],
+      "negative_prompt_tags": [
+        "every-route",
+        "slow-navigation",
+        "no-reduced-motion"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-website-reveal-blur-accessibility",
+    "record_id": "motion-pattern-website-reveal-blur",
+    "source_name": "Swishy website reveal templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "landing_page",
+    "section": "accessibility",
+    "content": "# Swishy website reveal templates - Accessibility Notes\n\nPage type: landing_page\nUse cases: landing page entry, product reveal, dashboard first load, portfolio hero, SaaS demo\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- Keep content available in DOM immediately.\n- Under reduced motion, use a short fade without blur/translation.\n- Avoid making users wait for essential navigation.\n\nAI summary: Use website reveal blur for premium page entry: background glow, glass panels, and controls rise from below while blur resolves, with 600-900ms duration and reduced-motion fallback.",
+    "tokens": 84,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "website-reveal",
+        "blur-in",
+        "page-entry",
+        "stagger",
+        "landing-page",
+        "dashboard",
+        "liquid-glass"
+      ],
+      "negative_prompt_tags": [
+        "every-route",
+        "slow-navigation",
+        "no-reduced-motion"
+      ]
+    }
+  },
+  {
+    "chunk_id": "motion-pattern-website-reveal-blur-implementation",
+    "record_id": "motion-pattern-website-reveal-blur",
+    "source_name": "Swishy website reveal templates",
+    "source_url": "https://www.swishy.ai/",
+    "page_type": "landing_page",
+    "section": "implementation",
+    "content": "# Swishy website reveal templates - Implementation Hints\n\nPage type: landing_page\nUse cases: landing page entry, product reveal, dashboard first load, portfolio hero, SaaS demo\nEvidence: summary_only / medium\nSource: https://www.swishy.ai/\n\n- Use opacity 0 to 1, translateY 24-48px to 0, blur 12px to 0px, duration 600-900ms.\n- Use staggered delays of 80-140ms for card groups.\n- For Liquid Glass pages, reveal background glow first, then glass panels, then inner controls.\n\nAI summary: Use website reveal blur for premium page entry: background glow, glass panels, and controls rise from below while blur resolves, with 600-900ms duration and reduced-motion fallback.",
+    "tokens": 99,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "website-reveal",
+        "blur-in",
+        "page-entry",
+        "stagger",
+        "landing-page",
+        "dashboard",
+        "liquid-glass"
+      ],
+      "negative_prompt_tags": [
+        "every-route",
+        "slow-navigation",
+        "no-reduced-motion"
+      ]
+    }
+  }
+]

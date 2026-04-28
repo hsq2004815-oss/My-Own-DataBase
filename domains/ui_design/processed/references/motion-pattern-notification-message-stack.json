@@ -1,0 +1,90 @@
+{
+  "record_id": "motion-pattern-notification-message-stack",
+  "source": {
+    "name": "Swishy message and notification templates",
+    "url": "https://www.swishy.ai/",
+    "source_type": "pattern_library",
+    "license_notes": "Use summarized motion patterns only; do not copy template output or assets.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "ui_design",
+  "page_type": "component_pattern",
+  "platform": [
+    "web",
+    "mobile"
+  ],
+  "use_cases": [
+    "toast",
+    "notification stack",
+    "chat overlay",
+    "message preview",
+    "activity feed"
+  ],
+  "visual_traits": [
+    "spring notification",
+    "stacked cards",
+    "iOS-style pop-up",
+    "message bubble",
+    "bounce",
+    "slide-in"
+  ],
+  "layout_rules": [
+    "Notifications should enter from a predictable edge and stack with clear z-order.",
+    "Use spring/bounce for friendly non-critical messages; use restrained motion for errors or security alerts.",
+    "Let notifications settle quickly and avoid covering primary controls for too long."
+  ],
+  "component_patterns": [
+    "toast",
+    "notification card",
+    "message bubble",
+    "activity stack",
+    "chat preview",
+    "phone notification mockup"
+  ],
+  "interaction_states": [
+    "slide in",
+    "stack",
+    "dismiss",
+    "tap",
+    "auto-hide",
+    "new message"
+  ],
+  "accessibility_notes": [
+    "Announce important notifications through accessible live regions.",
+    "Do not auto-dismiss critical errors before they can be read.",
+    "Respect reduced motion by using fade instead of spring slide."
+  ],
+  "implementation_hints": [
+    "Use translateY/translateX plus opacity for entry; add small scale overshoot for friendly motion.",
+    "Stagger stacked cards by 60-120ms and reduce scale/opacity for cards behind the top item.",
+    "Pair with Liquid Glass by making notification cards frosted, rounded, and rim-lit."
+  ],
+  "avoid_when": [
+    "legal warning",
+    "destructive confirmation",
+    "long-form content"
+  ],
+  "quality": {
+    "signal_strength": "medium",
+    "evidence_level": "summary_only",
+    "notes": "Swishy lists iOS notification, phone notification pop-up, message animation, and stacked notification templates."
+  },
+  "retrieval": {
+    "ai_summary": "Use Swishy-style notification motion for toast/message stacks: slide-in, spring settle, staggered cards, quick dismissal, accessible announcement, and reduced-motion fade fallback.",
+    "prompt_tags": [
+      "notification",
+      "toast",
+      "message",
+      "stack",
+      "spring",
+      "slide-in",
+      "ios-popup",
+      "glass-toast"
+    ],
+    "negative_prompt_tags": [
+      "critical-error-auto-dismiss",
+      "blocking-modal",
+      "long-content"
+    ]
+  }
+}

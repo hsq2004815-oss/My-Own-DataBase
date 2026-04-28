@@ -1,0 +1,90 @@
+{
+  "record_id": "design-system-polaris-index-table",
+  "source": {
+    "name": "Shopify Polaris",
+    "url": "https://polaris-react.shopify.com/components/tables/index-table",
+    "source_type": "official_design_system",
+    "license_notes": "Use source links and summarized guidance only; do not copy full documentation verbatim.",
+    "captured_at": "2026-04-24"
+  },
+  "domain": "ui_design",
+  "page_type": "data_table",
+  "platform": [
+    "web"
+  ],
+  "use_cases": [
+    "commerce admin",
+    "orders list",
+    "products list",
+    "resource management",
+    "bulk actions"
+  ],
+  "visual_traits": [
+    "merchant-focused",
+    "scannable",
+    "status-rich",
+    "actionable",
+    "admin"
+  ],
+  "layout_rules": [
+    "Use an index table for collections of same-type resources that link to detail pages.",
+    "Support sorting/filtering for long lists and pagination for large collections.",
+    "Right-align numeric cells and expose status with badges or clear text."
+  ],
+  "component_patterns": [
+    "resource row",
+    "selectable row",
+    "bulk action bar",
+    "filters",
+    "sorting",
+    "pagination",
+    "status badge",
+    "loading state",
+    "empty state"
+  ],
+  "interaction_states": [
+    "selected",
+    "disabled row",
+    "loading",
+    "empty",
+    "sorted",
+    "filtered",
+    "bulk selection"
+  ],
+  "accessibility_notes": [
+    "Rows and subheaders need explicit relationships when grouping selectable resources.",
+    "Keyboard multi-selection and row actions should remain operable."
+  ],
+  "implementation_hints": [
+    "Use for admin pages where each row represents a business object.",
+    "Do not make a table passive if the main task is navigation to resource details.",
+    "Separate UI state from sorting/filtering network logic."
+  ],
+  "avoid_when": [
+    "static comparison table",
+    "small card list",
+    "marketing page"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "direct_spec",
+    "notes": "Official Polaris IndexTable guidance summarized."
+  },
+  "retrieval": {
+    "ai_summary": "Use Polaris index-table patterns for commerce/admin resource lists: same-type rows, status badges, row navigation, sorting/filtering, pagination, and bulk actions.",
+    "prompt_tags": [
+      "index-table",
+      "commerce",
+      "admin",
+      "orders",
+      "products",
+      "bulk-actions",
+      "filters"
+    ],
+    "negative_prompt_tags": [
+      "static",
+      "marketing",
+      "editorial"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "record_id": "design-system-polaris-form",
+  "source": {
+    "name": "Shopify Polaris",
+    "url": "https://polaris-react.shopify.com/components/selection-and-input/form",
+    "source_type": "official_design_system",
+    "license_notes": "Use source links and summarized guidance only; do not copy full documentation verbatim.",
+    "captured_at": "2026-04-24"
+  },
+  "domain": "ui_design",
+  "page_type": "form",
+  "platform": [
+    "web"
+  ],
+  "use_cases": [
+    "merchant settings",
+    "commerce admin",
+    "newsletter signup",
+    "configuration form"
+  ],
+  "visual_traits": [
+    "practical",
+    "clear",
+    "business-oriented",
+    "structured"
+  ],
+  "layout_rules": [
+    "Wrap related inputs in a form and use standard form layout spacing.",
+    "Keep one true submit action at the end of the form.",
+    "Use help text when it changes user confidence or prevents mistakes."
+  ],
+  "component_patterns": [
+    "form",
+    "form layout",
+    "checkbox",
+    "text field",
+    "submit button",
+    "help text"
+  ],
+  "interaction_states": [
+    "submit",
+    "implicit enter submit",
+    "validation",
+    "reset",
+    "disabled"
+  ],
+  "accessibility_notes": [
+    "Use the native form element behavior where possible.",
+    "Make keyboard submit behavior intentional; disable implicit submit only when it conflicts with the workflow."
+  ],
+  "implementation_hints": [
+    "Use for commerce/admin settings where predictable form behavior matters.",
+    "Do not scatter submit buttons; keep the main submit action clear and late in the flow."
+  ],
+  "avoid_when": [
+    "multi-step wizard",
+    "freeform canvas",
+    "marketing signup hero only"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "direct_spec",
+    "notes": "Official Polaris Form guidance summarized."
+  },
+  "retrieval": {
+    "ai_summary": "Use Polaris form patterns for merchant/admin settings: native form semantics, standard spacing, clear help text, one submit action, and intentional keyboard submit behavior.",
+    "prompt_tags": [
+      "form",
+      "commerce",
+      "settings",
+      "admin",
+      "submit",
+      "help-text"
+    ],
+    "negative_prompt_tags": [
+      "wizard",
+      "canvas",
+      "multiple-submit"
+    ]
+  }
+}

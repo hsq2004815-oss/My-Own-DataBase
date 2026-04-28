@@ -1,0 +1,23 @@
+{
+  "file_id": "design-meta",
+  "title": "Meta Design System",
+  "domain": "ui_design",
+  "source_id": "awesome-design-md",
+  "relative_path": "design-md/Meta/README.md",
+  "file_type": "markdown",
+  "tags": [
+    "E-commerce & Retail",
+    "blue",
+    "dark",
+    "light",
+    "surface",
+    "dark-theme"
+  ],
+  "status": "processed",
+  "processed": true,
+  "chunked": true,
+  "indexed": false,
+  "created_at": "2026-04-17T09:34:38.972Z",
+  "updated_at": "2026-04-17T09:34:38.972Z",
+  "notes": "Processed from awesome-design-md collection"
+}

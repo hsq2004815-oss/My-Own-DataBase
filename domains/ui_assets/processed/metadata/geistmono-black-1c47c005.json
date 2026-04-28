@@ -1,0 +1,42 @@
+{
+  "asset_id": "geistmono-black-1c47c005",
+  "domain": "ui_assets",
+  "asset_type": "font",
+  "usage_policy": "review_required",
+  "files": {
+    "file_path": "E:\\DataBase\\domains\\ui_assets\\raw\\review_required\\fonts\\GeistMono-Black.otf",
+    "preview_path": "",
+    "original_path": "F:\\materials\\09_fonts_字体\\geist-font\\fonts\\GeistMono-Black.otf",
+    "sha1": "1c47c005e7c826b8d1fe11f2ef8433b55b89acba",
+    "size_bytes": 180780,
+    "extension": ".otf"
+  },
+  "source": {
+    "name": "local import",
+    "url": "",
+    "captured_at": "2026-04-26T10:40:06.372541+00:00",
+    "notes": "Imported by scripts/ui_assets/ingest_assets.py"
+  },
+  "license": {
+    "label": "review required",
+    "notes": "Review each font license before direct use."
+  },
+  "style_tags": [
+    "dark"
+  ],
+  "use_cases": [],
+  "avoid_when": [],
+  "implementation_notes": [],
+  "quality": {
+    "curation_status": "new",
+    "notes": "Review usage_policy and license before direct project use."
+  },
+  "retrieval": {
+    "ai_summary": "font asset for dark. Review usage policy before use.",
+    "prompt_tags": [
+      "dark",
+      "font"
+    ],
+    "negative_prompt_tags": []
+  }
+}

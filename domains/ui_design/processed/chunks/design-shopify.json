@@ -1,0 +1,72 @@
+[
+  {
+    "chunk_id": "design-shopify-chunk-1",
+    "file_id": "design-shopify",
+    "content": "# Shopify Design System - Brand Style\n\n**Category**: E-commerce & Retail\n**Description**: E-commerce platform. Dark-first cinematic, neon green accent, ultra-light display type\n**Source**: https://getdesign.md/shopify/design-md\n\n**Note**: 源文件包含设计系统描述。\n\n## Design Philosophy\nE-commerce platform. Dark-first cinematic, neon green accent, ultra-light display type",
+    "tokens": 90,
+    "metadata": {
+      "section": "brand_style",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-shopify-chunk-2",
+    "file_id": "design-shopify",
+    "content": "# Shopify Design System - Color Palette\n\n**Colors mentioned**: green, neon, dark, light\n\n**Description**: E-commerce platform. Dark-first cinematic, neon green accent, ultra-light display type\n\n**Note**: 源文件可能包含具体色值。",
+    "tokens": 54,
+    "metadata": {
+      "section": "color_palette",
+      "has_colors": true,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-shopify-chunk-3",
+    "file_id": "design-shopify",
+    "content": "# Shopify Design System - Typography\n\n**Typography mentioned**: type, light, display\n\n**Description**: E-commerce platform. Dark-first cinematic, neon green accent, ultra-light display type\n\n**Note**: 源文件可能包含字体细节。",
+    "tokens": 54,
+    "metadata": {
+      "section": "typography",
+      "has_colors": false,
+      "has_typography": true,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-shopify-chunk-4",
+    "file_id": "design-shopify",
+    "content": "# Shopify Design System - Layout Principles\n\n**Layout mentioned**: cinematic\n\n**Description**: E-commerce platform. Dark-first cinematic, neon green accent, ultra-light display type\n\n**Note**: 源文件可能包含布局细节。",
+    "tokens": 52,
+    "metadata": {
+      "section": "layout",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": true,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-shopify-chunk-5",
+    "file_id": "design-shopify",
+    "content": "# Shopify Design System - Components & Interaction\n\n**Components mentioned**: accent\n\n**Description**: E-commerce platform. Dark-first cinematic, neon green accent, ultra-light display type\n\n**Note**: 源文件可能包含组件细节。",
+    "tokens": 54,
+    "metadata": {
+      "section": "components",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": true,
+      "info_sufficient": true
+    }
+  }
+]

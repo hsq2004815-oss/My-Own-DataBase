@@ -1,0 +1,205 @@
+[
+  {
+    "chunk_id": "playwright-auto-wait-actionability-overview",
+    "record_id": "playwright-auto-wait-actionability",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Auto-waiting and Actionability",
+    "source_url": "https://playwright.dev/docs/actionability",
+    "section": "overview",
+    "content": "# playwright-auto-wait-actionability - Overview\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Rely on Playwright auto-waiting and actionability checks instead of manual sleep-heavy automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/actionability\n\nWhen to use:\n- Clicks fail intermittently\n- Page needs waiting\n- Form submit or navigation is flaky\n\nInputs required:\n- Target action\n- Expected post-action state\n- Timeout budget\n\nAI summary: Use Playwright auto-waiting/actionability and auto-retrying assertions. Avoid fixed sleeps; wait for specific UI state, URL, response, or locator.",
+    "tokens": 78,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "auto-wait",
+        "actionability",
+        "assertion",
+        "flaky",
+        "wait"
+      ],
+      "negative_prompt_tags": [
+        "sleep-only",
+        "force-click-default"
+      ]
+    }
+  },
+  {
+    "chunk_id": "playwright-auto-wait-actionability-steps",
+    "record_id": "playwright-auto-wait-actionability",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Auto-waiting and Actionability",
+    "source_url": "https://playwright.dev/docs/actionability",
+    "section": "steps",
+    "content": "# playwright-auto-wait-actionability - Execution Steps\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Rely on Playwright auto-waiting and actionability checks instead of manual sleep-heavy automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/actionability\n\n- Use locators directly; Playwright waits for visible/enabled/stable where relevant.\n- Prefer auto-retrying expect assertions for final state.\n- Wait for specific UI state, URL, response, or locator rather than fixed time.\n- Use explicit waits only for known asynchronous boundaries.\n\nAI summary: Use Playwright auto-waiting/actionability and auto-retrying assertions. Avoid fixed sleeps; wait for specific UI state, URL, response, or locator.",
+    "tokens": 90,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "auto-wait",
+        "actionability",
+        "assertion",
+        "flaky",
+        "wait"
+      ],
+      "negative_prompt_tags": [
+        "sleep-only",
+        "force-click-default"
+      ]
+    }
+  },
+  {
+    "chunk_id": "playwright-auto-wait-actionability-commands",
+    "record_id": "playwright-auto-wait-actionability",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Auto-waiting and Actionability",
+    "source_url": "https://playwright.dev/docs/actionability",
+    "section": "commands",
+    "content": "# playwright-auto-wait-actionability - Commands or APIs\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Rely on Playwright auto-waiting and actionability checks instead of manual sleep-heavy automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/actionability\n\n- await locator.click()\n- await expect(locator).toBeVisible()\n- await expect(page).toHaveURL(...)\n\nAI summary: Use Playwright auto-waiting/actionability and auto-retrying assertions. Avoid fixed sleeps; wait for specific UI state, URL, response, or locator.",
+    "tokens": 59,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "auto-wait",
+        "actionability",
+        "assertion",
+        "flaky",
+        "wait"
+      ],
+      "negative_prompt_tags": [
+        "sleep-only",
+        "force-click-default"
+      ]
+    }
+  },
+  {
+    "chunk_id": "playwright-auto-wait-actionability-verification",
+    "record_id": "playwright-auto-wait-actionability",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Auto-waiting and Actionability",
+    "source_url": "https://playwright.dev/docs/actionability",
+    "section": "verification",
+    "content": "# playwright-auto-wait-actionability - Verification\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Rely on Playwright auto-waiting and actionability checks instead of manual sleep-heavy automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/actionability\n\n- No fixed sleep required\n- Assertion proves expected state\n- Failure message points to missing state\n\nAI summary: Use Playwright auto-waiting/actionability and auto-retrying assertions. Avoid fixed sleeps; wait for specific UI state, URL, response, or locator.",
+    "tokens": 65,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "auto-wait",
+        "actionability",
+        "assertion",
+        "flaky",
+        "wait"
+      ],
+      "negative_prompt_tags": [
+        "sleep-only",
+        "force-click-default"
+      ]
+    }
+  },
+  {
+    "chunk_id": "playwright-auto-wait-actionability-failure_modes",
+    "record_id": "playwright-auto-wait-actionability",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Auto-waiting and Actionability",
+    "source_url": "https://playwright.dev/docs/actionability",
+    "section": "failure_modes",
+    "content": "# playwright-auto-wait-actionability - Failure Modes\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Rely on Playwright auto-waiting and actionability checks instead of manual sleep-heavy automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/actionability\n\n- Element detached\n- Overlay intercepts click\n- Animation not settled\n- Disabled button\n\nAI summary: Use Playwright auto-waiting/actionability and auto-retrying assertions. Avoid fixed sleeps; wait for specific UI state, URL, response, or locator.",
+    "tokens": 63,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "auto-wait",
+        "actionability",
+        "assertion",
+        "flaky",
+        "wait"
+      ],
+      "negative_prompt_tags": [
+        "sleep-only",
+        "force-click-default"
+      ]
+    }
+  },
+  {
+    "chunk_id": "playwright-auto-wait-actionability-safety",
+    "record_id": "playwright-auto-wait-actionability",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Auto-waiting and Actionability",
+    "source_url": "https://playwright.dev/docs/actionability",
+    "section": "safety",
+    "content": "# playwright-auto-wait-actionability - Safety Notes\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Rely on Playwright auto-waiting and actionability checks instead of manual sleep-heavy automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/actionability\n\n- Do not bypass actionability with force unless the task explicitly requires it and risk is low.\n\nAI summary: Use Playwright auto-waiting/actionability and auto-retrying assertions. Avoid fixed sleeps; wait for specific UI state, URL, response, or locator.",
+    "tokens": 66,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "auto-wait",
+        "actionability",
+        "assertion",
+        "flaky",
+        "wait"
+      ],
+      "negative_prompt_tags": [
+        "sleep-only",
+        "force-click-default"
+      ]
+    }
+  },
+  {
+    "chunk_id": "playwright-auto-wait-actionability-handoff",
+    "record_id": "playwright-auto-wait-actionability",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Auto-waiting and Actionability",
+    "source_url": "https://playwright.dev/docs/actionability",
+    "section": "handoff",
+    "content": "# playwright-auto-wait-actionability - Handoff Report\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Rely on Playwright auto-waiting and actionability checks instead of manual sleep-heavy automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/actionability\n\n- Action attempted\n- Assertion used\n- Any forced actions or waits\n\nAI summary: Use Playwright auto-waiting/actionability and auto-retrying assertions. Avoid fixed sleeps; wait for specific UI state, URL, response, or locator.",
+    "tokens": 61,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "auto-wait",
+        "actionability",
+        "assertion",
+        "flaky",
+        "wait"
+      ],
+      "negative_prompt_tags": [
+        "sleep-only",
+        "force-click-default"
+      ]
+    }
+  }
+]

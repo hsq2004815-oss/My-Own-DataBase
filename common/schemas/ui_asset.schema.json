@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ui_asset.schema.json",
+  "title": "UI Asset Record",
+  "type": "object",
+  "required": [
+    "asset_id",
+    "domain",
+    "asset_type",
+    "usage_policy",
+    "files",
+    "source",
+    "license",
+    "retrieval"
+  ],
+  "properties": {
+    "asset_id": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string",
+      "const": "ui_assets"
+    },
+    "asset_type": {
+      "type": "string",
+      "enum": [
+        "background_image",
+        "background_video",
+        "texture",
+        "surface",
+        "control",
+        "icon",
+        "font",
+        "asset_collection",
+        "component_code",
+        "screenshot_reference",
+        "motion_reference",
+        "design_file",
+        "unknown"
+      ]
+    },
+    "usage_policy": {
+      "type": "string",
+      "enum": [
+        "direct_use",
+        "inspiration_only",
+        "internal_reference",
+        "review_required",
+        "unknown"
+      ]
+    },
+    "files": {
+      "type": "object",
+      "required": [
+        "file_path"
+      ],
+      "properties": {
+        "file_path": {
+          "type": "string"
+        },
+        "preview_path": {
+          "type": "string"
+        },
+        "original_path": {
+          "type": "string"
+        },
+        "sha1": {
+          "type": "string"
+        },
+        "size_bytes": {
+          "type": "integer"
+        },
+        "extension": {
+          "type": "string"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "name",
+        "url",
+        "captured_at"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "captured_at": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "license": {
+      "type": "object",
+      "required": [
+        "label",
+        "notes"
+      ],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "style_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "use_cases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "avoid_when": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "implementation_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "quality": {
+      "type": "object",
+      "properties": {
+        "curation_status": {
+          "type": "string",
+          "enum": [
+            "new",
+            "reviewed",
+            "approved",
+            "rejected"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "retrieval": {
+      "type": "object",
+      "required": [
+        "ai_summary",
+        "prompt_tags"
+      ],
+      "properties": {
+        "ai_summary": {
+          "type": "string"
+        },
+        "prompt_tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "negative_prompt_tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "chunk_id": "design-ferrari-chunk-1",
+    "file_id": "design-ferrari",
+    "content": "# Ferrari Inspired Design System - Brand Style\n\n**Category**: Automotive\n**Description**: Luxury automotive. Chiaroscuro black-white editorial, Ferrari Red with extreme sparseness\n**Source**: https://getdesign.md/ferrari/design-md\n\n**Note**: 源文件仅提供跳转链接，详细设计系统内容需访问外部URL。\n\n## Design Philosophy\nLuxury automotive. Chiaroscuro black-white editorial, Ferrari Red with extreme sparseness",
+    "tokens": 96,
+    "metadata": {
+      "section": "brand_style",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-ferrari-chunk-2",
+    "file_id": "design-ferrari",
+    "content": "# Ferrari Inspired Design System - Color Palette\n\n**Colors mentioned**: red, black, white\n\n**Description**: Luxury automotive. Chiaroscuro black-white editorial, Ferrari Red with extreme sparseness\n\n**Note**: 源文件仅提供跳转链接，具体色值需访问外部URL。",
+    "tokens": 59,
+    "metadata": {
+      "section": "color_palette",
+      "has_colors": true,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-ferrari-chunk-3",
+    "file_id": "design-ferrari",
+    "content": "# Ferrari Inspired Design System - Typography\n\n**Information不足**: 源文件未提供具体排版信息。\n\n**Description**: Luxury automotive. Chiaroscuro black-white editorial, Ferrari Red with extreme sparseness\n\n**Note**: 源文件仅提供跳转链接，详细排版需访问外部URL。",
+    "tokens": 56,
+    "metadata": {
+      "section": "typography",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-ferrari-chunk-4",
+    "file_id": "design-ferrari",
+    "content": "# Ferrari Inspired Design System - Layout Principles\n\n**Layout mentioned**: editorial\n\n**Description**: Luxury automotive. Chiaroscuro black-white editorial, Ferrari Red with extreme sparseness\n\n**Note**: 源文件仅提供跳转链接，具体布局规范需访问外部URL。",
+    "tokens": 58,
+    "metadata": {
+      "section": "layout",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": true,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-ferrari-chunk-5",
+    "file_id": "design-ferrari",
+    "content": "# Ferrari Inspired Design System - Components & Interaction\n\n**Information不足**: 源文件未提供具体组件信息。\n\n**Description**: Luxury automotive. Chiaroscuro black-white editorial, Ferrari Red with extreme sparseness\n\n**Note**: 源文件仅提供跳转链接，详细组件需访问外部URL。",
+    "tokens": 60,
+    "metadata": {
+      "section": "components",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  }
+]

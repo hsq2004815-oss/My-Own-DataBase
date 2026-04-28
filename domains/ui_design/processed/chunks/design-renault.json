@@ -1,0 +1,72 @@
+[
+  {
+    "chunk_id": "design-renault-chunk-1",
+    "file_id": "design-renault",
+    "content": "# Renault Inspired Design System - Brand Style\n\n**Category**: Automotive\n**Description**: French automotive. Vivid aurora gradients, NouvelR proprietary typeface, zero-radius buttons\n**Source**: https://getdesign.md/renault/design-md\n\n**Note**: 源文件仅提供跳转链接，详细设计系统内容需访问外部URL。\n\n## Design Philosophy\nFrench automotive. Vivid aurora gradients, NouvelR proprietary typeface, zero-radius buttons",
+    "tokens": 97,
+    "metadata": {
+      "section": "brand_style",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-renault-chunk-2",
+    "file_id": "design-renault",
+    "content": "# Renault Inspired Design System - Color Palette\n\n**Information不足**: 源文件未提供具体配色信息。\n\n**Description**: French automotive. Vivid aurora gradients, NouvelR proprietary typeface, zero-radius buttons\n\n**Note**: 源文件仅提供跳转链接，详细配色需访问外部URL。",
+    "tokens": 58,
+    "metadata": {
+      "section": "color_palette",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-renault-chunk-3",
+    "file_id": "design-renault",
+    "content": "# Renault Inspired Design System - Typography\n\n**Typography mentioned**: type, NouvelR\n\n**Description**: French automotive. Vivid aurora gradients, NouvelR proprietary typeface, zero-radius buttons\n\n**Note**: 源文件仅提供跳转链接，具体字体规格需访问外部URL。",
+    "tokens": 59,
+    "metadata": {
+      "section": "typography",
+      "has_colors": false,
+      "has_typography": true,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-renault-chunk-4",
+    "file_id": "design-renault",
+    "content": "# Renault Inspired Design System - Layout Principles\n\n**Information不足**: 源文件未提供具体布局信息。\n\n**Description**: French automotive. Vivid aurora gradients, NouvelR proprietary typeface, zero-radius buttons\n\n**Note**: 源文件仅提供跳转链接，详细布局需访问外部URL。",
+    "tokens": 59,
+    "metadata": {
+      "section": "layout",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-renault-chunk-5",
+    "file_id": "design-renault",
+    "content": "# Renault Inspired Design System - Components & Interaction\n\n**Components mentioned**: button, gradient\n\n**Description**: French automotive. Vivid aurora gradients, NouvelR proprietary typeface, zero-radius buttons\n\n**Note**: 源文件仅提供跳转链接，具体组件规范需访问外部URL。",
+    "tokens": 63,
+    "metadata": {
+      "section": "components",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": true,
+      "info_sufficient": false
+    }
+  }
+]

@@ -1,0 +1,198 @@
+[
+  {
+    "chunk_id": "playwright-file-upload-patterns-overview",
+    "record_id": "playwright-file-upload-patterns",
+    "automation_type": "file_upload",
+    "source_name": "Playwright Actions/Input",
+    "source_url": "https://playwright.dev/docs/input",
+    "section": "overview",
+    "content": "# playwright-file-upload-patterns - Overview\n\nAutomation type: file_upload\nTooling: Playwright, Windows paths\nGoal: Upload files reliably through file inputs, file chooser events, iframe-aware locators, and upload verification.\nEvidence: official / high\nSource: https://playwright.dev/docs/input\n\nWhen to use:\n- Need to upload image/video/pdf\n- Upload button opens OS file picker\n- Styled dropzone hides input\n- Upload lives inside iframe\n\nInputs required:\n- Absolute file path\n- Expected accepted file types\n- Upload success indicator\n- Frame/dropzone locator\n\nAI summary: For file upload, verify the path, target the real input[type=file] or filechooser, handle iframe context, then wait for filename/progress/success evidence.",
+    "tokens": 97,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "Windows paths"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "file-upload",
+        "setInputFiles",
+        "filechooser",
+        "iframe",
+        "dropzone",
+        "windows-path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-file-upload-patterns-steps",
+    "record_id": "playwright-file-upload-patterns",
+    "automation_type": "file_upload",
+    "source_name": "Playwright Actions/Input",
+    "source_url": "https://playwright.dev/docs/input",
+    "section": "steps",
+    "content": "# playwright-file-upload-patterns - Execution Steps\n\nAutomation type: file_upload\nTooling: Playwright, Windows paths\nGoal: Upload files reliably through file inputs, file chooser events, iframe-aware locators, and upload verification.\nEvidence: official / high\nSource: https://playwright.dev/docs/input\n\n- Verify file exists before upload.\n- Prefer locator.setInputFiles on the actual input[type=file].\n- If a file chooser opens, wait for page.waitForEvent('filechooser') then setFiles.\n- For iframes, locate frame first then target the input inside it.\n- After setting file, wait for filename/progress/success state.\n\nAI summary: For file upload, verify the path, target the real input[type=file] or filechooser, handle iframe context, then wait for filename/progress/success evidence.",
+    "tokens": 99,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "Windows paths"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "file-upload",
+        "setInputFiles",
+        "filechooser",
+        "iframe",
+        "dropzone",
+        "windows-path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-file-upload-patterns-commands",
+    "record_id": "playwright-file-upload-patterns",
+    "automation_type": "file_upload",
+    "source_name": "Playwright Actions/Input",
+    "source_url": "https://playwright.dev/docs/input",
+    "section": "commands",
+    "content": "# playwright-file-upload-patterns - Commands or APIs\n\nAutomation type: file_upload\nTooling: Playwright, Windows paths\nGoal: Upload files reliably through file inputs, file chooser events, iframe-aware locators, and upload verification.\nEvidence: official / high\nSource: https://playwright.dev/docs/input\n\n- locator.setInputFiles(path)\n- page.waitForEvent('filechooser')\n- fileChooser.setFiles(path)\n- frameLocator(...).locator('input[type=file]')\n\nAI summary: For file upload, verify the path, target the real input[type=file] or filechooser, handle iframe context, then wait for filename/progress/success evidence.",
+    "tokens": 64,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "Windows paths"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "file-upload",
+        "setInputFiles",
+        "filechooser",
+        "iframe",
+        "dropzone",
+        "windows-path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-file-upload-patterns-verification",
+    "record_id": "playwright-file-upload-patterns",
+    "automation_type": "file_upload",
+    "source_name": "Playwright Actions/Input",
+    "source_url": "https://playwright.dev/docs/input",
+    "section": "verification",
+    "content": "# playwright-file-upload-patterns - Verification\n\nAutomation type: file_upload\nTooling: Playwright, Windows paths\nGoal: Upload files reliably through file inputs, file chooser events, iframe-aware locators, and upload verification.\nEvidence: official / high\nSource: https://playwright.dev/docs/input\n\n- Uploaded filename appears\n- Progress reaches complete\n- Submit/publish button becomes enabled\n- Screenshot shows uploaded item\n\nAI summary: For file upload, verify the path, target the real input[type=file] or filechooser, handle iframe context, then wait for filename/progress/success evidence.",
+    "tokens": 72,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "Windows paths"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "file-upload",
+        "setInputFiles",
+        "filechooser",
+        "iframe",
+        "dropzone",
+        "windows-path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-file-upload-patterns-failure_modes",
+    "record_id": "playwright-file-upload-patterns",
+    "automation_type": "file_upload",
+    "source_name": "Playwright Actions/Input",
+    "source_url": "https://playwright.dev/docs/input",
+    "section": "failure_modes",
+    "content": "# playwright-file-upload-patterns - Failure Modes\n\nAutomation type: file_upload\nTooling: Playwright, Windows paths\nGoal: Upload files reliably through file inputs, file chooser events, iframe-aware locators, and upload verification.\nEvidence: official / high\nSource: https://playwright.dev/docs/input\n\n- Targeting styled div instead of input\n- Invalid Windows/Bash path\n- Hidden input not connected\n- Iframe context missed\n- File type rejected\n\nAI summary: For file upload, verify the path, target the real input[type=file] or filechooser, handle iframe context, then wait for filename/progress/success evidence.",
+    "tokens": 79,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "Windows paths"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "file-upload",
+        "setInputFiles",
+        "filechooser",
+        "iframe",
+        "dropzone",
+        "windows-path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-file-upload-patterns-safety",
+    "record_id": "playwright-file-upload-patterns",
+    "automation_type": "file_upload",
+    "source_name": "Playwright Actions/Input",
+    "source_url": "https://playwright.dev/docs/input",
+    "section": "safety",
+    "content": "# playwright-file-upload-patterns - Safety Notes\n\nAutomation type: file_upload\nTooling: Playwright, Windows paths\nGoal: Upload files reliably through file inputs, file chooser events, iframe-aware locators, and upload verification.\nEvidence: official / high\nSource: https://playwright.dev/docs/input\n\n- Do not click publish/submit after upload unless requested.\n- Never upload private files without explicit path confirmation.\n\nAI summary: For file upload, verify the path, target the real input[type=file] or filechooser, handle iframe context, then wait for filename/progress/success evidence.",
+    "tokens": 73,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "Windows paths"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "file-upload",
+        "setInputFiles",
+        "filechooser",
+        "iframe",
+        "dropzone",
+        "windows-path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-file-upload-patterns-handoff",
+    "record_id": "playwright-file-upload-patterns",
+    "automation_type": "file_upload",
+    "source_name": "Playwright Actions/Input",
+    "source_url": "https://playwright.dev/docs/input",
+    "section": "handoff",
+    "content": "# playwright-file-upload-patterns - Handoff Report\n\nAutomation type: file_upload\nTooling: Playwright, Windows paths\nGoal: Upload files reliably through file inputs, file chooser events, iframe-aware locators, and upload verification.\nEvidence: official / high\nSource: https://playwright.dev/docs/input\n\n- File path used\n- Upload method\n- Success indicator\n- Screenshot/log evidence\n\nAI summary: For file upload, verify the path, target the real input[type=file] or filechooser, handle iframe context, then wait for filename/progress/success evidence.",
+    "tokens": 68,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "Windows paths"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "file-upload",
+        "setInputFiles",
+        "filechooser",
+        "iframe",
+        "dropzone",
+        "windows-path"
+      ],
+      "negative_prompt_tags": []
+    }
+  }
+]

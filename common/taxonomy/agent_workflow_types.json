@@ -1,0 +1,34 @@
+{
+  "workflow_types": [
+    {
+      "id": "knowledge_first_frontend",
+      "label": "Knowledge-first frontend generation",
+      "description": "Agent retrieves local UI/design knowledge before generating frontend code."
+    },
+    {
+      "id": "api_first_retrieval",
+      "label": "API-first retrieval",
+      "description": "Agent uses local HTTP API instead of filesystem paths or direct SQLite access."
+    },
+    {
+      "id": "tool_path_windows",
+      "label": "Windows tool/path handling",
+      "description": "Rules for PowerShell, Bash path conversion, and local command execution."
+    },
+    {
+      "id": "handoff_report",
+      "label": "Handoff report",
+      "description": "Required final report shape for agents using this knowledge base."
+    },
+    {
+      "id": "failure_recovery",
+      "label": "Failure recovery",
+      "description": "How agents recover from missing API, path errors, empty search, or low-relevance chunks."
+    },
+    {
+      "id": "quality_gate",
+      "label": "Quality gate",
+      "description": "Verification and acceptance criteria before claiming completion."
+    }
+  ]
+}

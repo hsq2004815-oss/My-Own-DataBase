@@ -1,0 +1,200 @@
+[
+  {
+    "chunk_id": "implementation-css-liquid-glass-parameter-ranges-overview",
+    "record_id": "implementation-css-liquid-glass-parameter-ranges",
+    "source_name": "Web-verified Liquid Glass CSS parameter ranges",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# Web-verified Liquid Glass CSS parameter ranges - Overview\n\nPage type: component_pattern\nUse cases: CSS implementation, React UI, Tailwind UI, premium web app, Liquid Glass component system\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter\n\nVisual traits:\n- backdrop blur\n- saturate filter\n- translucent fill\n- inner highlight\n- rim border\n- soft shadow\n- chromatic glow\n\nUse when:\n- CSS implementation\n- React UI\n- Tailwind UI\n- premium web app\n- Liquid Glass component system\n\nAvoid when:\n- dense data grid\n- long text article\n- strict high contrast workflow\n- low-end device heavy page\n- many repeated list rows\n\nAI summary: Liquid Glass CSS parameter ranges: use transparent fills, backdrop-filter blur(12-24px) saturate(140-180%), 1px white rim, large radii, layered outer/inset shadows, gloss pseudo-elements, chromatic caustics, and accessibility/performance fallbacks.",
+    "tokens": 129,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "css-parameters",
+        "backdrop-filter",
+        "blur",
+        "saturate",
+        "rgba",
+        "box-shadow",
+        "radius",
+        "fallback",
+        "accessibility"
+      ],
+      "negative_prompt_tags": [
+        "flat",
+        "no-blur",
+        "hundreds-of-rows",
+        "low-contrast",
+        "no-fallback"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-css-liquid-glass-parameter-ranges-layout",
+    "record_id": "implementation-css-liquid-glass-parameter-ranges",
+    "source_name": "Web-verified Liquid Glass CSS parameter ranges",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# Web-verified Liquid Glass CSS parameter ranges - Layout Rules\n\nPage type: component_pattern\nUse cases: CSS implementation, React UI, Tailwind UI, premium web app, Liquid Glass component system\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter\n\n- Use backdrop-filter only on transparent or partially transparent surfaces; otherwise the blur will not be visible.\n- Avoid stacking many glass layers edge-to-edge because seams and optical noise become visible.\n- Reserve strong glass for transient surfaces, hero controls, cards, menus, modals, and selected states rather than dense repeated rows.\n- Provide fallback solid/translucent colors for unsupported browsers, reduced transparency, battery saver, low-end hardware, and high contrast modes.\n\nAI summary: Liquid Glass CSS parameter ranges: use transparent fills, backdrop-filter blur(12-24px) saturate(140-180%), 1px white rim, large radii, layered outer/inset shadows, gloss pseudo-elements, chromatic caustics, and accessibility/performance fallbacks.",
+    "tokens": 131,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "css-parameters",
+        "backdrop-filter",
+        "blur",
+        "saturate",
+        "rgba",
+        "box-shadow",
+        "radius",
+        "fallback",
+        "accessibility"
+      ],
+      "negative_prompt_tags": [
+        "flat",
+        "no-blur",
+        "hundreds-of-rows",
+        "low-contrast",
+        "no-fallback"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-css-liquid-glass-parameter-ranges-components",
+    "record_id": "implementation-css-liquid-glass-parameter-ranges",
+    "source_name": "Web-verified Liquid Glass CSS parameter ranges",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# Web-verified Liquid Glass CSS parameter ranges - Component Patterns\n\nPage type: component_pattern\nUse cases: CSS implementation, React UI, Tailwind UI, premium web app, Liquid Glass component system\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter\n\n- glass primitive\n- glass button\n- glass card\n- glass modal\n- glass input\n- glass popover\n\nAI summary: Liquid Glass CSS parameter ranges: use transparent fills, backdrop-filter blur(12-24px) saturate(140-180%), 1px white rim, large radii, layered outer/inset shadows, gloss pseudo-elements, chromatic caustics, and accessibility/performance fallbacks.",
+    "tokens": 80,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "css-parameters",
+        "backdrop-filter",
+        "blur",
+        "saturate",
+        "rgba",
+        "box-shadow",
+        "radius",
+        "fallback",
+        "accessibility"
+      ],
+      "negative_prompt_tags": [
+        "flat",
+        "no-blur",
+        "hundreds-of-rows",
+        "low-contrast",
+        "no-fallback"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-css-liquid-glass-parameter-ranges-interaction",
+    "record_id": "implementation-css-liquid-glass-parameter-ranges",
+    "source_name": "Web-verified Liquid Glass CSS parameter ranges",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# Web-verified Liquid Glass CSS parameter ranges - Interaction States\n\nPage type: component_pattern\nUse cases: CSS implementation, React UI, Tailwind UI, premium web app, Liquid Glass component system\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter\n\n- hover\n- active\n- focus-visible\n- selected\n- disabled\n- error\n- success\n\nAI summary: Liquid Glass CSS parameter ranges: use transparent fills, backdrop-filter blur(12-24px) saturate(140-180%), 1px white rim, large radii, layered outer/inset shadows, gloss pseudo-elements, chromatic caustics, and accessibility/performance fallbacks.",
+    "tokens": 76,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "css-parameters",
+        "backdrop-filter",
+        "blur",
+        "saturate",
+        "rgba",
+        "box-shadow",
+        "radius",
+        "fallback",
+        "accessibility"
+      ],
+      "negative_prompt_tags": [
+        "flat",
+        "no-blur",
+        "hundreds-of-rows",
+        "low-contrast",
+        "no-fallback"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-css-liquid-glass-parameter-ranges-accessibility",
+    "record_id": "implementation-css-liquid-glass-parameter-ranges",
+    "source_name": "Web-verified Liquid Glass CSS parameter ranges",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# Web-verified Liquid Glass CSS parameter ranges - Accessibility Notes\n\nPage type: component_pattern\nUse cases: CSS implementation, React UI, Tailwind UI, premium web app, Liquid Glass component system\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter\n\n- Text on glass must meet contrast requirements; avoid accent-colored body text over acrylic/glass surfaces.\n- Use icons or text in addition to color glow for error, success, and selected states.\n- Support reduced transparency and high contrast fallbacks.\n\nAI summary: Liquid Glass CSS parameter ranges: use transparent fills, backdrop-filter blur(12-24px) saturate(140-180%), 1px white rim, large radii, layered outer/inset shadows, gloss pseudo-elements, chromatic caustics, and accessibility/performance fallbacks.",
+    "tokens": 101,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "css-parameters",
+        "backdrop-filter",
+        "blur",
+        "saturate",
+        "rgba",
+        "box-shadow",
+        "radius",
+        "fallback",
+        "accessibility"
+      ],
+      "negative_prompt_tags": [
+        "flat",
+        "no-blur",
+        "hundreds-of-rows",
+        "low-contrast",
+        "no-fallback"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-css-liquid-glass-parameter-ranges-implementation",
+    "record_id": "implementation-css-liquid-glass-parameter-ranges",
+    "source_name": "Web-verified Liquid Glass CSS parameter ranges",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# Web-verified Liquid Glass CSS parameter ranges - Implementation Hints\n\nPage type: component_pattern\nUse cases: CSS implementation, React UI, Tailwind UI, premium web app, Liquid Glass component system\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter\n\n- Light glass fill: rgba(255,255,255,0.18) to rgba(255,255,255,0.42); for thicker white glass use 0.45 to 0.68.\n- Dark glass fill: rgba(8,10,16,0.56) to rgba(8,10,16,0.78); keep text white or near-white.\n- Backdrop filter baseline: blur(12px) saturate(140%) for subtle glass; blur(18px) saturate(160%) for strong frosted glass; blur(24px) saturate(180%) for hero liquid glass.\n- Border/rim: 1px solid rgba(255,255,255,0.35) to rgba(255,255,255,0.68); add a lower dark inset edge rgba(20,30,50,0.10) to 0.22 for thickness.\n- Radius: 18px to 28px for fields/cards; 999px for pill buttons; 32px to 44px for large modal cards.\n- Outer shadow: 0 10px 30px rgba(31,38,135,0.12) for light components; 0 18px 48px rgba(20,30,60,0.22) for thick floating glass.\n- Inner highlight: inset 0 1px 1px rgba(255,255,255,0.70), inset 0 -1px 2px rgba(20,30,60,0.12).\n- Gloss pseudo-element: top-left white radial/linear gradient at 0.35 to 0.65 opacity, clipped inside the radius.\n- Chromatic caustics: small radial gradients in cyan/magenta/orange at 0.18 to 0.36 opacity near edges or corners; do not cover text areas.\n- Performance: avoid applying backdrop-filter to hundreds of cells/rows; use it on containers and key controls only.\n\nAI summary: Liquid Glass CSS parameter ranges: use transparent fills, backdrop-filter blur(12-24px) saturate(140-180%), 1px white rim, large radii, layered outer/inset shadows, gloss pseudo-elements, chromatic caustics, and accessibility/performance fallbacks.",
+    "tokens": 232,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "css-parameters",
+        "backdrop-filter",
+        "blur",
+        "saturate",
+        "rgba",
+        "box-shadow",
+        "radius",
+        "fallback",
+        "accessibility"
+      ],
+      "negative_prompt_tags": [
+        "flat",
+        "no-blur",
+        "hundreds-of-rows",
+        "low-contrast",
+        "no-fallback"
+      ]
+    }
+  }
+]

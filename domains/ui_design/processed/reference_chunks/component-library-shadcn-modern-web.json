@@ -1,0 +1,164 @@
+[
+  {
+    "chunk_id": "component-library-shadcn-modern-web-overview",
+    "record_id": "component-library-shadcn-modern-web",
+    "source_name": "shadcn/ui",
+    "source_url": "https://ui.shadcn.com/",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# shadcn/ui - Overview\n\nPage type: component_pattern\nUse cases: modern SaaS, AI app, dashboard, developer tool, settings page\nEvidence: direct_spec / high\nSource: https://ui.shadcn.com/\n\nVisual traits:\n- clean\n- composable\n- neutral\n- modern\n- utility-first\n\nUse when:\n- modern SaaS\n- AI app\n- dashboard\n- developer tool\n- settings page\n\nAvoid when:\n- highly branded editorial site\n- native mobile app\n- luxury visual campaign\n\nAI summary: Use shadcn/ui-style composition for modern React/Tailwind web apps: accessible primitives, clean neutral surfaces, consistent rhythm, and explicit component states.",
+    "tokens": 88,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "react",
+        "tailwind",
+        "modern-saas",
+        "ai-app",
+        "components",
+        "accessible"
+      ],
+      "negative_prompt_tags": [
+        "native-ios",
+        "maximalist",
+        "brand-campaign"
+      ]
+    }
+  },
+  {
+    "chunk_id": "component-library-shadcn-modern-web-layout",
+    "record_id": "component-library-shadcn-modern-web",
+    "source_name": "shadcn/ui",
+    "source_url": "https://ui.shadcn.com/",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# shadcn/ui - Layout Rules\n\nPage type: component_pattern\nUse cases: modern SaaS, AI app, dashboard, developer tool, settings page\nEvidence: direct_spec / high\nSource: https://ui.shadcn.com/\n\n- Compose small accessible primitives into product-specific components.\n- Use restrained surfaces, borders, and typography before adding strong color.\n- Keep spacing and component rhythm consistent across the page.\n\nAI summary: Use shadcn/ui-style composition for modern React/Tailwind web apps: accessible primitives, clean neutral surfaces, consistent rhythm, and explicit component states.",
+    "tokens": 75,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "react",
+        "tailwind",
+        "modern-saas",
+        "ai-app",
+        "components",
+        "accessible"
+      ],
+      "negative_prompt_tags": [
+        "native-ios",
+        "maximalist",
+        "brand-campaign"
+      ]
+    }
+  },
+  {
+    "chunk_id": "component-library-shadcn-modern-web-components",
+    "record_id": "component-library-shadcn-modern-web",
+    "source_name": "shadcn/ui",
+    "source_url": "https://ui.shadcn.com/",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# shadcn/ui - Component Patterns\n\nPage type: component_pattern\nUse cases: modern SaaS, AI app, dashboard, developer tool, settings page\nEvidence: direct_spec / high\nSource: https://ui.shadcn.com/\n\n- button\n- dialog\n- dropdown\n- command menu\n- card\n- form\n- table\n- toast\n\nAI summary: Use shadcn/ui-style composition for modern React/Tailwind web apps: accessible primitives, clean neutral surfaces, consistent rhythm, and explicit component states.",
+    "tokens": 63,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "react",
+        "tailwind",
+        "modern-saas",
+        "ai-app",
+        "components",
+        "accessible"
+      ],
+      "negative_prompt_tags": [
+        "native-ios",
+        "maximalist",
+        "brand-campaign"
+      ]
+    }
+  },
+  {
+    "chunk_id": "component-library-shadcn-modern-web-interaction",
+    "record_id": "component-library-shadcn-modern-web",
+    "source_name": "shadcn/ui",
+    "source_url": "https://ui.shadcn.com/",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# shadcn/ui - Interaction States\n\nPage type: component_pattern\nUse cases: modern SaaS, AI app, dashboard, developer tool, settings page\nEvidence: direct_spec / high\nSource: https://ui.shadcn.com/\n\n- hover\n- focus\n- open\n- disabled\n- loading\n- validation error\n\nAI summary: Use shadcn/ui-style composition for modern React/Tailwind web apps: accessible primitives, clean neutral surfaces, consistent rhythm, and explicit component states.",
+    "tokens": 59,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "react",
+        "tailwind",
+        "modern-saas",
+        "ai-app",
+        "components",
+        "accessible"
+      ],
+      "negative_prompt_tags": [
+        "native-ios",
+        "maximalist",
+        "brand-campaign"
+      ]
+    }
+  },
+  {
+    "chunk_id": "component-library-shadcn-modern-web-accessibility",
+    "record_id": "component-library-shadcn-modern-web",
+    "source_name": "shadcn/ui",
+    "source_url": "https://ui.shadcn.com/",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# shadcn/ui - Accessibility Notes\n\nPage type: component_pattern\nUse cases: modern SaaS, AI app, dashboard, developer tool, settings page\nEvidence: direct_spec / high\nSource: https://ui.shadcn.com/\n\n- Prefer accessible primitives for dialogs, menus, popovers, and forms.\n- Preserve keyboard and focus behavior when restyling.\n\nAI summary: Use shadcn/ui-style composition for modern React/Tailwind web apps: accessible primitives, clean neutral surfaces, consistent rhythm, and explicit component states.",
+    "tokens": 64,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "react",
+        "tailwind",
+        "modern-saas",
+        "ai-app",
+        "components",
+        "accessible"
+      ],
+      "negative_prompt_tags": [
+        "native-ios",
+        "maximalist",
+        "brand-campaign"
+      ]
+    }
+  },
+  {
+    "chunk_id": "component-library-shadcn-modern-web-implementation",
+    "record_id": "component-library-shadcn-modern-web",
+    "source_name": "shadcn/ui",
+    "source_url": "https://ui.shadcn.com/",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# shadcn/ui - Implementation Hints\n\nPage type: component_pattern\nUse cases: modern SaaS, AI app, dashboard, developer tool, settings page\nEvidence: direct_spec / high\nSource: https://ui.shadcn.com/\n\n- Use when generating React/Tailwind interfaces that need modern product polish.\n- Good default for AI tools, internal tools, and fast SaaS prototypes.\n- Avoid making every page look like the same generic template; add product-specific visual direction.\n\nAI summary: Use shadcn/ui-style composition for modern React/Tailwind web apps: accessible primitives, clean neutral surfaces, consistent rhythm, and explicit component states.",
+    "tokens": 84,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "react",
+        "tailwind",
+        "modern-saas",
+        "ai-app",
+        "components",
+        "accessible"
+      ],
+      "negative_prompt_tags": [
+        "native-ios",
+        "maximalist",
+        "brand-campaign"
+      ]
+    }
+  }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "chunk_id": "workflow-knowledge-first-frontend-generation-overview",
+    "record_id": "workflow-knowledge-first-frontend-generation",
+    "workflow_type": "knowledge_first_frontend",
+    "source_name": "Knowledge-first frontend generation workflow",
+    "source_url": "local-generated:2026-04-25/knowledge-first-frontend",
+    "section": "overview",
+    "content": "# workflow-knowledge-first-frontend-generation - Overview\n\nWorkflow type: knowledge_first_frontend\nAgent targets: Claude Code, Codex, Cursor, frontend agents\nGoal: Generate frontend pages using retrieved design knowledge rather than generic template instincts.\nEvidence: observed / high\nSource: local-generated:2026-04-25/knowledge-first-frontend\n\nWhen to use:\n- Creating a new frontend page\n- Redesigning an existing page\n- Testing UI database usefulness\n- Building style-specific prototypes\n\nInputs required:\n- Product/page brief\n- Target tech stack\n- Desired visual style if any\n- Required components and states\n\nAI summary: For frontend generation, retrieve page/style/component/motion chunks first, synthesize a design brief, implement with existing stack, include states and accessibility, then report how chunks shaped the page.",
+    "tokens": 105,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "frontend agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "frontend-generation",
+        "knowledge-first",
+        "design-brief",
+        "states",
+        "accessibility",
+        "existing-stack"
+      ],
+      "negative_prompt_tags": [
+        "generic-template",
+        "style-only",
+        "no-states"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-knowledge-first-frontend-generation-steps",
+    "record_id": "workflow-knowledge-first-frontend-generation",
+    "workflow_type": "knowledge_first_frontend",
+    "source_name": "Knowledge-first frontend generation workflow",
+    "source_url": "local-generated:2026-04-25/knowledge-first-frontend",
+    "section": "steps",
+    "content": "# workflow-knowledge-first-frontend-generation - Execution Steps\n\nWorkflow type: knowledge_first_frontend\nAgent targets: Claude Code, Codex, Cursor, frontend agents\nGoal: Generate frontend pages using retrieved design knowledge rather than generic template instincts.\nEvidence: observed / high\nSource: local-generated:2026-04-25/knowledge-first-frontend\n\n- Read the task and identify page type, visual style, components, motion needs, and constraints.\n- Search UI knowledge for page type, style, component patterns, and motion patterns.\n- Create a short design brief from retrieved chunks: layout, components, states, motion, accessibility, avoid rules.\n- Implement the page in the existing tech stack without adding dependencies unless explicitly allowed.\n- Include meaningful states: loading, empty, error, success, selected, hover/focus where relevant.\n- Run available build/static checks and visually inspect if tooling exists.\n\nAI summary: For frontend generation, retrieve page/style/component/motion chunks first, synthesize a design brief, implement with existing stack, include states and accessibility, then report how chunks shaped the page.",
+    "tokens": 145,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "frontend agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "frontend-generation",
+        "knowledge-first",
+        "design-brief",
+        "states",
+        "accessibility",
+        "existing-stack"
+      ],
+      "negative_prompt_tags": [
+        "generic-template",
+        "style-only",
+        "no-states"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-knowledge-first-frontend-generation-api",
+    "record_id": "workflow-knowledge-first-frontend-generation",
+    "workflow_type": "knowledge_first_frontend",
+    "source_name": "Knowledge-first frontend generation workflow",
+    "source_url": "local-generated:2026-04-25/knowledge-first-frontend",
+    "section": "api",
+    "content": "# workflow-knowledge-first-frontend-generation - API Calls\n\nWorkflow type: knowledge_first_frontend\nAgent targets: Claude Code, Codex, Cursor, frontend agents\nGoal: Generate frontend pages using retrieved design knowledge rather than generic template instincts.\nEvidence: observed / high\nSource: local-generated:2026-04-25/knowledge-first-frontend\n\n- GET /ui/search?q={page_type}&limit=5\n- GET /ui/search?q={visual_style}&limit=5\n- GET /ui/search?q={component_or_motion}&limit=5\n\nAI summary: For frontend generation, retrieve page/style/component/motion chunks first, synthesize a design brief, implement with existing stack, include states and accessibility, then report how chunks shaped the page.",
+    "tokens": 72,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "frontend agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "frontend-generation",
+        "knowledge-first",
+        "design-brief",
+        "states",
+        "accessibility",
+        "existing-stack"
+      ],
+      "negative_prompt_tags": [
+        "generic-template",
+        "style-only",
+        "no-states"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-knowledge-first-frontend-generation-prompt_contract",
+    "record_id": "workflow-knowledge-first-frontend-generation",
+    "workflow_type": "knowledge_first_frontend",
+    "source_name": "Knowledge-first frontend generation workflow",
+    "source_url": "local-generated:2026-04-25/knowledge-first-frontend",
+    "section": "prompt_contract",
+    "content": "# workflow-knowledge-first-frontend-generation - Prompt Contract\n\nWorkflow type: knowledge_first_frontend\nAgent targets: Claude Code, Codex, Cursor, frontend agents\nGoal: Generate frontend pages using retrieved design knowledge rather than generic template instincts.\nEvidence: observed / high\nSource: local-generated:2026-04-25/knowledge-first-frontend\n\n- Retrieved chunks are constraints, not decoration suggestions.\n- If chunks conflict, prioritize direct_spec over screenshot_observed over summary_only.\n- If no relevant chunk exists, say what was missing and proceed with a conservative design.\n\nAI summary: For frontend generation, retrieve page/style/component/motion chunks first, synthesize a design brief, implement with existing stack, include states and accessibility, then report how chunks shaped the page.",
+    "tokens": 97,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "frontend agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "frontend-generation",
+        "knowledge-first",
+        "design-brief",
+        "states",
+        "accessibility",
+        "existing-stack"
+      ],
+      "negative_prompt_tags": [
+        "generic-template",
+        "style-only",
+        "no-states"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-knowledge-first-frontend-generation-verification",
+    "record_id": "workflow-knowledge-first-frontend-generation",
+    "workflow_type": "knowledge_first_frontend",
+    "source_name": "Knowledge-first frontend generation workflow",
+    "source_url": "local-generated:2026-04-25/knowledge-first-frontend",
+    "section": "verification",
+    "content": "# workflow-knowledge-first-frontend-generation - Verification\n\nWorkflow type: knowledge_first_frontend\nAgent targets: Claude Code, Codex, Cursor, frontend agents\nGoal: Generate frontend pages using retrieved design knowledge rather than generic template instincts.\nEvidence: observed / high\nSource: local-generated:2026-04-25/knowledge-first-frontend\n\n- Page implements retrieved component/state guidance\n- Design is not a generic flat template\n- Accessibility/fallback constraints are addressed\n- Run/build command succeeds or failure is reported\n\nAI summary: For frontend generation, retrieve page/style/component/motion chunks first, synthesize a design brief, implement with existing stack, include states and accessibility, then report how chunks shaped the page.",
+    "tokens": 89,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "frontend agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "frontend-generation",
+        "knowledge-first",
+        "design-brief",
+        "states",
+        "accessibility",
+        "existing-stack"
+      ],
+      "negative_prompt_tags": [
+        "generic-template",
+        "style-only",
+        "no-states"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-knowledge-first-frontend-generation-failure_modes",
+    "record_id": "workflow-knowledge-first-frontend-generation",
+    "workflow_type": "knowledge_first_frontend",
+    "source_name": "Knowledge-first frontend generation workflow",
+    "source_url": "local-generated:2026-04-25/knowledge-first-frontend",
+    "section": "failure_modes",
+    "content": "# workflow-knowledge-first-frontend-generation - Failure Modes\n\nWorkflow type: knowledge_first_frontend\nAgent targets: Claude Code, Codex, Cursor, frontend agents\nGoal: Generate frontend pages using retrieved design knowledge rather than generic template instincts.\nEvidence: observed / high\nSource: local-generated:2026-04-25/knowledge-first-frontend\n\n- Agent copies the example text but not the design rules\n- Agent overuses motion/glass everywhere\n- Agent ignores states\n- Agent cannot run the project\n\nAI summary: For frontend generation, retrieve page/style/component/motion chunks first, synthesize a design brief, implement with existing stack, include states and accessibility, then report how chunks shaped the page.",
+    "tokens": 89,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "frontend agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "frontend-generation",
+        "knowledge-first",
+        "design-brief",
+        "states",
+        "accessibility",
+        "existing-stack"
+      ],
+      "negative_prompt_tags": [
+        "generic-template",
+        "style-only",
+        "no-states"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-knowledge-first-frontend-generation-handoff",
+    "record_id": "workflow-knowledge-first-frontend-generation",
+    "workflow_type": "knowledge_first_frontend",
+    "source_name": "Knowledge-first frontend generation workflow",
+    "source_url": "local-generated:2026-04-25/knowledge-first-frontend",
+    "section": "handoff",
+    "content": "# workflow-knowledge-first-frontend-generation - Handoff Report\n\nWorkflow type: knowledge_first_frontend\nAgent targets: Claude Code, Codex, Cursor, frontend agents\nGoal: Generate frontend pages using retrieved design knowledge rather than generic template instincts.\nEvidence: observed / high\nSource: local-generated:2026-04-25/knowledge-first-frontend\n\n- Brief extracted\n- Queries and chunks\n- Design translation\n- Files changed\n- Run command\n- Verification gaps\n\nAI summary: For frontend generation, retrieve page/style/component/motion chunks first, synthesize a design brief, implement with existing stack, include states and accessibility, then report how chunks shaped the page.",
+    "tokens": 82,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "frontend agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "frontend-generation",
+        "knowledge-first",
+        "design-brief",
+        "states",
+        "accessibility",
+        "existing-stack"
+      ],
+      "negative_prompt_tags": [
+        "generic-template",
+        "style-only",
+        "no-states"
+      ]
+    }
+  }
+]

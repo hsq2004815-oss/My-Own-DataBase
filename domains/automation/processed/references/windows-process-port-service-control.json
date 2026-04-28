@@ -1,0 +1,81 @@
+{
+  "record_id": "windows-process-port-service-control",
+  "source": {
+    "name": "Local Windows service control notes",
+    "url": "local-generated:2026-04-25/windows-service-control",
+    "source_type": "local_procedure",
+    "license_notes": "Original local workflow notes.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "automation",
+  "automation_type": "windows_shell",
+  "tooling": [
+    "PowerShell",
+    "uvicorn",
+    "FastAPI"
+  ],
+  "goal": "Start, verify, and stop local services such as the knowledge API without losing control of the shell.",
+  "when_to_use": [
+    "Need to start local API",
+    "Port may be occupied",
+    "Need to verify service before agent call"
+  ],
+  "inputs_required": [
+    "Working directory",
+    "Port",
+    "Startup command",
+    "Health endpoint"
+  ],
+  "steps": [
+    "Start service in a dedicated terminal or background job.",
+    "Wait briefly and call health endpoint.",
+    "If port is busy, identify listener before killing anything.",
+    "Use a different port for temporary tests.",
+    "Stop test jobs after verification."
+  ],
+  "commands_or_apis": [
+    "python -m uvicorn app.main:app --host 127.0.0.1 --port 8765",
+    "Invoke-RestMethod http://127.0.0.1:8765/health",
+    "Get-NetTCPConnection -LocalPort 8765",
+    "Stop-Job / Stop-Process after confirmation"
+  ],
+  "verification": [
+    "Health endpoint returns ok",
+    "Expected reference/chunk counts present",
+    "No orphan test job remains"
+  ],
+  "failure_modes": [
+    "Port occupied",
+    "Wrong working directory",
+    "Module import failure",
+    "Background job left running"
+  ],
+  "safety_notes": [
+    "Do not kill unrelated processes without inspecting owner/command.",
+    "Use localhost for local APIs."
+  ],
+  "handoff_report": [
+    "Command started",
+    "Port",
+    "Health response",
+    "Shutdown state"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "tested",
+    "notes": "Based on tested local FastAPI startup and health checks."
+  },
+  "retrieval": {
+    "ai_summary": "For local services, start in a controlled terminal/job, verify /health, inspect port conflicts before stopping processes, and report health response and shutdown state.",
+    "prompt_tags": [
+      "windows",
+      "port",
+      "service",
+      "uvicorn",
+      "fastapi",
+      "health",
+      "process"
+    ],
+    "negative_prompt_tags": []
+  }
+}

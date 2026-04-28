@@ -1,0 +1,72 @@
+[
+  {
+    "chunk_id": "design-mistral-ai-chunk-1",
+    "file_id": "design-mistral-ai",
+    "content": "# Mistral AI Inspired Design System - Brand Style\n\n**Category**: AI & LLM Platforms\n**Description**: Open-weight LLM provider. French-engineered minimalism, purple-toned\n**Source**: https://getdesign.md/mistral.ai/design-md\n\n**Note**: 源文件仅提供跳转链接，详细设计系统内容需访问外部URL。\n\n## Design Philosophy\nOpen-weight LLM provider. French-engineered minimalism, purple-toned",
+    "tokens": 89,
+    "metadata": {
+      "section": "brand_style",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-mistral-ai-chunk-2",
+    "file_id": "design-mistral-ai",
+    "content": "# Mistral AI Inspired Design System - Color Palette\n\n**Colors mentioned**: purple, red\n\n**Description**: Open-weight LLM provider. French-engineered minimalism, purple-toned\n\n**Note**: 源文件仅提供跳转链接，具体色值需访问外部URL。",
+    "tokens": 53,
+    "metadata": {
+      "section": "color_palette",
+      "has_colors": true,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-mistral-ai-chunk-3",
+    "file_id": "design-mistral-ai",
+    "content": "# Mistral AI Inspired Design System - Typography\n\n**Typography mentioned**: weight\n\n**Description**: Open-weight LLM provider. French-engineered minimalism, purple-toned\n\n**Note**: 源文件仅提供跳转链接，具体字体规格需访问外部URL。",
+    "tokens": 52,
+    "metadata": {
+      "section": "typography",
+      "has_colors": false,
+      "has_typography": true,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-mistral-ai-chunk-4",
+    "file_id": "design-mistral-ai",
+    "content": "# Mistral AI Inspired Design System - Layout Principles\n\n**Layout mentioned**: minimalism\n\n**Description**: Open-weight LLM provider. French-engineered minimalism, purple-toned\n\n**Note**: 源文件仅提供跳转链接，具体布局规范需访问外部URL。",
+    "tokens": 54,
+    "metadata": {
+      "section": "layout",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": true,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-mistral-ai-chunk-5",
+    "file_id": "design-mistral-ai",
+    "content": "# Mistral AI Inspired Design System - Components & Interaction\n\n**Information不足**: 源文件未提供具体组件信息。\n\n**Description**: Open-weight LLM provider. French-engineered minimalism, purple-toned\n\n**Note**: 源文件仅提供跳转链接，详细组件需访问外部URL。",
+    "tokens": 55,
+    "metadata": {
+      "section": "components",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  }
+]

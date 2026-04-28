@@ -1,0 +1,92 @@
+{
+  "record_id": "motion-pattern-data-visualization-dashboard",
+  "source": {
+    "name": "Swishy data visualization templates",
+    "url": "https://www.swishy.ai/",
+    "source_type": "pattern_library",
+    "license_notes": "Use summarized motion patterns only; do not copy template output or assets.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "ui_design",
+  "page_type": "dashboard",
+  "platform": [
+    "web",
+    "mobile"
+  ],
+  "use_cases": [
+    "fintech dashboard",
+    "metrics card",
+    "MRR chart",
+    "GitHub stars",
+    "security dashboard",
+    "progress chart"
+  ],
+  "visual_traits": [
+    "animated chart",
+    "count-up",
+    "trend reveal",
+    "spring bars",
+    "glow metrics",
+    "data storytelling"
+  ],
+  "layout_rules": [
+    "Animate data to explain change, not just decorate it.",
+    "Reveal axes/labels before or alongside values so the chart remains understandable.",
+    "Use count-up and bar growth for key metrics; avoid looping chart animations after the initial explanation."
+  ],
+  "component_patterns": [
+    "bar chart",
+    "line trend",
+    "countdown",
+    "count-up metric",
+    "progress ring",
+    "GitHub stars trend",
+    "financial card"
+  ],
+  "interaction_states": [
+    "load",
+    "count-up",
+    "bar grow",
+    "trend draw",
+    "hover detail",
+    "settled"
+  ],
+  "accessibility_notes": [
+    "Do not rely on animation to communicate the only data value.",
+    "Provide readable labels and static values after animation ends.",
+    "Respect reduced motion by skipping growth transitions."
+  ],
+  "implementation_hints": [
+    "Use 500-900ms chart growth and 40-100ms stagger between bars.",
+    "For financial dashboards, keep motion confident and precise rather than bouncy.",
+    "Pair with glass cards by animating inner chart elements while the card surface remains stable."
+  ],
+  "avoid_when": [
+    "real-time critical monitoring",
+    "medical safety dashboard",
+    "very dense BI grid"
+  ],
+  "quality": {
+    "signal_strength": "medium",
+    "evidence_level": "summary_only",
+    "notes": "Swishy lists finance, fintech dashboard, GitHub stars, MRR chart, bar chart, chart with percentage, and security data visualization templates."
+  },
+  "retrieval": {
+    "ai_summary": "Use Swishy-style data visualization motion for dashboard storytelling: count-up metrics, bar growth, line/trend draw, progress rings, and staggered chart reveal, then settle to readable static values.",
+    "prompt_tags": [
+      "dashboard",
+      "data-viz",
+      "chart-animation",
+      "count-up",
+      "bar-chart",
+      "metrics",
+      "fintech",
+      "mrr"
+    ],
+    "negative_prompt_tags": [
+      "critical-monitoring",
+      "looping-data",
+      "unlabeled-chart"
+    ]
+  }
+}

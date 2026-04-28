@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "automation_reference.schema.json",
+  "title": "Automation Reference Record",
+  "type": "object",
+  "required": [
+    "record_id",
+    "source",
+    "domain",
+    "automation_type",
+    "tooling",
+    "quality",
+    "retrieval"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "name",
+        "url",
+        "source_type",
+        "license_notes",
+        "captured_at"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "source_type": {
+          "type": "string",
+          "enum": [
+            "official_docs",
+            "local_procedure",
+            "case_study",
+            "tool_guide",
+            "security_note"
+          ]
+        },
+        "license_notes": {
+          "type": "string"
+        },
+        "captured_at": {
+          "type": "string"
+        }
+      }
+    },
+    "domain": {
+      "type": "string"
+    },
+    "automation_type": {
+      "type": "string"
+    },
+    "tooling": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "goal": {
+      "type": "string"
+    },
+    "when_to_use": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "inputs_required": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "commands_or_apis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "verification": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "failure_modes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "safety_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "handoff_report": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "quality": {
+      "type": "object",
+      "required": [
+        "signal_strength",
+        "evidence_level",
+        "notes"
+      ],
+      "properties": {
+        "signal_strength": {
+          "type": "string",
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ]
+        },
+        "evidence_level": {
+          "type": "string",
+          "enum": [
+            "official",
+            "tested",
+            "observed",
+            "draft"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "retrieval": {
+      "type": "object",
+      "required": [
+        "ai_summary",
+        "prompt_tags"
+      ],
+      "properties": {
+        "ai_summary": {
+          "type": "string"
+        },
+        "prompt_tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "negative_prompt_tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

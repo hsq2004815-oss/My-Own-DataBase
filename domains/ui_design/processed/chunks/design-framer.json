@@ -1,0 +1,72 @@
+[
+  {
+    "chunk_id": "design-framer-chunk-1",
+    "file_id": "design-framer",
+    "content": "# Framer Inspired Design System - Brand Style\n\n**Category**: Design & Creative Tools\n**Description**: Website builder. Bold black and blue, motion-first, design-forward\n**Source**: https://getdesign.md/framer/design-md\n\n**Note**: 源文件仅提供跳转链接，详细设计系统内容需访问外部URL。\n\n## Design Philosophy\nWebsite builder. Bold black and blue, motion-first, design-forward",
+    "tokens": 87,
+    "metadata": {
+      "section": "brand_style",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-framer-chunk-2",
+    "file_id": "design-framer",
+    "content": "# Framer Inspired Design System - Color Palette\n\n**Colors mentioned**: blue, black\n\n**Description**: Website builder. Bold black and blue, motion-first, design-forward\n\n**Note**: 源文件仅提供跳转链接，具体色值需访问外部URL。",
+    "tokens": 51,
+    "metadata": {
+      "section": "color_palette",
+      "has_colors": true,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-framer-chunk-3",
+    "file_id": "design-framer",
+    "content": "# Framer Inspired Design System - Typography\n\n**Typography mentioned**: bold\n\n**Description**: Website builder. Bold black and blue, motion-first, design-forward\n\n**Note**: 源文件仅提供跳转链接，具体字体规格需访问外部URL。",
+    "tokens": 50,
+    "metadata": {
+      "section": "typography",
+      "has_colors": false,
+      "has_typography": true,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-framer-chunk-4",
+    "file_id": "design-framer",
+    "content": "# Framer Inspired Design System - Layout Principles\n\n**Information不足**: 源文件未提供具体布局信息。\n\n**Description**: Website builder. Bold black and blue, motion-first, design-forward\n\n**Note**: 源文件仅提供跳转链接，详细布局需访问外部URL。",
+    "tokens": 52,
+    "metadata": {
+      "section": "layout",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-framer-chunk-5",
+    "file_id": "design-framer",
+    "content": "# Framer Inspired Design System - Components & Interaction\n\n**Components mentioned**: motion\n\n**Description**: Website builder. Bold black and blue, motion-first, design-forward\n\n**Note**: 源文件仅提供跳转链接，具体组件规范需访问外部URL。",
+    "tokens": 54,
+    "metadata": {
+      "section": "components",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": true,
+      "info_sufficient": false
+    }
+  }
+]

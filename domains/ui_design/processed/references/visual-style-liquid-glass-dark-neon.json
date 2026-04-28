@@ -1,0 +1,91 @@
+{
+  "record_id": "visual-style-liquid-glass-dark-neon",
+  "source": {
+    "name": "User-provided dark Liquid Glass screenshot",
+    "url": "local-chat-reference:2026-04-25/liquid-glass-dark-neon",
+    "source_type": "product_screenshot",
+    "license_notes": "User-provided visual reference for personal knowledge base. Store summarized observations, not redistributed original images.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "ui_design",
+  "page_type": "component_pattern",
+  "platform": [
+    "web",
+    "mobile"
+  ],
+  "use_cases": [
+    "dark mode AI app",
+    "music/creative tool",
+    "premium dashboard hero",
+    "neon control panel"
+  ],
+  "visual_traits": [
+    "dark glass",
+    "black translucent surface",
+    "neon rim light",
+    "rainbow caustics",
+    "high gloss reflection",
+    "deep shadow",
+    "bright icon rings"
+  ],
+  "layout_rules": [
+    "Use dark glass for selected or premium states, not every surface on the page.",
+    "Pair black translucent fills with strong white text and neon accent rings.",
+    "Keep the outer rim bright enough to separate the component from the background.",
+    "Use neon gradients in small rings, checks, toggles, or active tabs instead of full-screen saturation."
+  ],
+  "component_patterns": [
+    "dark primary pill",
+    "neon icon tile",
+    "search field",
+    "toggle",
+    "active tab",
+    "premium card"
+  ],
+  "interaction_states": [
+    "selected",
+    "active",
+    "hover glow",
+    "pressed glossy inset",
+    "premium enabled"
+  ],
+  "accessibility_notes": [
+    "White text on black glass is usually safer than muted gray text.",
+    "Neon accents should not be the only indicator of success or selection.",
+    "Check contrast after blur because background colors can reduce readability."
+  ],
+  "implementation_hints": [
+    "Use rgba(8, 10, 16, 0.72) with backdrop blur for dark glass surfaces.",
+    "Add cyan/magenta/orange radial gradients as edge glints and small internal rings.",
+    "Use larger shadow offsets and lower opacity to make dark glass feel heavy and polished."
+  ],
+  "avoid_when": [
+    "long reading surface",
+    "plain enterprise CRUD",
+    "medical/legal workflow",
+    "high daylight mobile UI"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "screenshot_observed",
+    "notes": "Derived from the user's dark liquid glass screenshot with black glossy controls and neon highlights."
+  },
+  "retrieval": {
+    "ai_summary": "Use dark Liquid Glass for premium dark-mode components: black translucent glossy surfaces, neon rim light, white readable text, small rainbow caustics, and selected-state icon rings.",
+    "prompt_tags": [
+      "liquid-glass",
+      "dark-glass",
+      "neon",
+      "black-gloss",
+      "premium",
+      "dark-mode",
+      "rainbow-caustics"
+    ],
+    "negative_prompt_tags": [
+      "plain-crud",
+      "long-reading",
+      "low-contrast",
+      "flat-dark"
+    ]
+  }
+}

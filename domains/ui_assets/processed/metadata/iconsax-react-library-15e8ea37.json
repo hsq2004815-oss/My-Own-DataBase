@@ -1,0 +1,51 @@
+{
+  "asset_id": "iconsax-react-library-15e8ea37",
+  "domain": "ui_assets",
+  "asset_type": "asset_collection",
+  "usage_policy": "review_required",
+  "files": {
+    "file_path": "F:\\materials\\01_icons_图标\\iconsax\\iconsax-react",
+    "preview_path": "",
+    "original_path": "F:\\materials\\01_icons_图标\\iconsax\\iconsax-react",
+    "sha1": "15e8ea37",
+    "size_bytes": 5380083,
+    "extension": ""
+  },
+  "source": {
+    "name": "Iconsax React library",
+    "url": "",
+    "captured_at": "2026-04-26T10:40:33.803331+00:00",
+    "notes": "Collection-level registration. Approximate file_count=6034."
+  },
+  "license": {
+    "label": "review required",
+    "notes": "Review license before using this collection in a project."
+  },
+  "style_tags": [
+    "icons",
+    "iconsax",
+    "react",
+    "svg"
+  ],
+  "use_cases": [],
+  "avoid_when": [],
+  "implementation_notes": [
+    "Registered as a collection to avoid per-file metadata noise.",
+    "Inspect the collection documentation and license before direct use."
+  ],
+  "quality": {
+    "curation_status": "new",
+    "notes": "Collection-level metadata; individual files are not indexed yet."
+  },
+  "retrieval": {
+    "ai_summary": "Iconsax React library collection registered for UI asset lookup. Review usage policy and license before use.",
+    "prompt_tags": [
+      "icons",
+      "iconsax",
+      "react",
+      "svg",
+      "asset-collection"
+    ],
+    "negative_prompt_tags": []
+  }
+}

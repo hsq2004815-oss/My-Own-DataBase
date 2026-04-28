@@ -1,0 +1,84 @@
+{
+  "record_id": "design-system-material-navigation-drawer",
+  "source": {
+    "name": "Material Design 3",
+    "url": "https://m3.material.io/components/navigation-drawer/overview",
+    "source_type": "official_design_system",
+    "license_notes": "Use source links and summarized guidance only; site may require JavaScript for full content.",
+    "captured_at": "2026-04-24"
+  },
+  "domain": "ui_design",
+  "page_type": "component_pattern",
+  "platform": [
+    "mobile",
+    "tablet",
+    "web"
+  ],
+  "use_cases": [
+    "app navigation",
+    "mobile app shell",
+    "tablet productivity app",
+    "multi-section product"
+  ],
+  "visual_traits": [
+    "material",
+    "hierarchical",
+    "surface-based",
+    "destination-focused"
+  ],
+  "layout_rules": [
+    "Use navigation drawers for top-level destinations in products with multiple sections.",
+    "Keep labels short and destinations stable.",
+    "Separate primary destinations from secondary settings/help items."
+  ],
+  "component_patterns": [
+    "navigation drawer",
+    "destination item",
+    "active item",
+    "divider",
+    "scrim",
+    "modal drawer",
+    "standard drawer"
+  ],
+  "interaction_states": [
+    "open",
+    "closed",
+    "active",
+    "hover",
+    "focus",
+    "modal scrim"
+  ],
+  "accessibility_notes": [
+    "Active destination must be programmatically and visually clear.",
+    "Drawer open/close should preserve focus behavior."
+  ],
+  "implementation_hints": [
+    "Use for mobile/tablet apps where bottom nav is insufficient.",
+    "Avoid using drawer as a dumping ground for unrelated actions."
+  ],
+  "avoid_when": [
+    "single-page landing page",
+    "simple 3-tab mobile app",
+    "dense data table itself"
+  ],
+  "quality": {
+    "signal_strength": "medium",
+    "evidence_level": "direct_spec",
+    "notes": "Official Material page URL verified, but web text required JavaScript in this environment."
+  },
+  "retrieval": {
+    "ai_summary": "Use Material navigation drawers for multi-section app shells: stable top-level destinations, clear active item, separated utility links, and careful focus/open-close behavior.",
+    "prompt_tags": [
+      "material",
+      "navigation-drawer",
+      "mobile",
+      "app-shell",
+      "sidebar"
+    ],
+    "negative_prompt_tags": [
+      "landing",
+      "single-page",
+      "unrelated-actions"
+    ]
+  }
+}

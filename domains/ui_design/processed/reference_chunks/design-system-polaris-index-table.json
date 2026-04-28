@@ -1,0 +1,170 @@
+[
+  {
+    "chunk_id": "design-system-polaris-index-table-overview",
+    "record_id": "design-system-polaris-index-table",
+    "source_name": "Shopify Polaris",
+    "source_url": "https://polaris-react.shopify.com/components/tables/index-table",
+    "page_type": "data_table",
+    "section": "overview",
+    "content": "# Shopify Polaris - Overview\n\nPage type: data_table\nUse cases: commerce admin, orders list, products list, resource management, bulk actions\nEvidence: direct_spec / high\nSource: https://polaris-react.shopify.com/components/tables/index-table\n\nVisual traits:\n- merchant-focused\n- scannable\n- status-rich\n- actionable\n- admin\n\nUse when:\n- commerce admin\n- orders list\n- products list\n- resource management\n- bulk actions\n\nAvoid when:\n- static comparison table\n- small card list\n- marketing page\n\nAI summary: Use Polaris index-table patterns for commerce/admin resource lists: same-type rows, status badges, row navigation, sorting/filtering, pagination, and bulk actions.",
+    "tokens": 89,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "index-table",
+        "commerce",
+        "admin",
+        "orders",
+        "products",
+        "bulk-actions",
+        "filters"
+      ],
+      "negative_prompt_tags": [
+        "static",
+        "marketing",
+        "editorial"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-polaris-index-table-layout",
+    "record_id": "design-system-polaris-index-table",
+    "source_name": "Shopify Polaris",
+    "source_url": "https://polaris-react.shopify.com/components/tables/index-table",
+    "page_type": "data_table",
+    "section": "layout",
+    "content": "# Shopify Polaris - Layout Rules\n\nPage type: data_table\nUse cases: commerce admin, orders list, products list, resource management, bulk actions\nEvidence: direct_spec / high\nSource: https://polaris-react.shopify.com/components/tables/index-table\n\n- Use an index table for collections of same-type resources that link to detail pages.\n- Support sorting/filtering for long lists and pagination for large collections.\n- Right-align numeric cells and expose status with badges or clear text.\n\nAI summary: Use Polaris index-table patterns for commerce/admin resource lists: same-type rows, status badges, row navigation, sorting/filtering, pagination, and bulk actions.",
+    "tokens": 86,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "index-table",
+        "commerce",
+        "admin",
+        "orders",
+        "products",
+        "bulk-actions",
+        "filters"
+      ],
+      "negative_prompt_tags": [
+        "static",
+        "marketing",
+        "editorial"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-polaris-index-table-components",
+    "record_id": "design-system-polaris-index-table",
+    "source_name": "Shopify Polaris",
+    "source_url": "https://polaris-react.shopify.com/components/tables/index-table",
+    "page_type": "data_table",
+    "section": "components",
+    "content": "# Shopify Polaris - Component Patterns\n\nPage type: data_table\nUse cases: commerce admin, orders list, products list, resource management, bulk actions\nEvidence: direct_spec / high\nSource: https://polaris-react.shopify.com/components/tables/index-table\n\n- resource row\n- selectable row\n- bulk action bar\n- filters\n- sorting\n- pagination\n- status badge\n- loading state\n- empty state\n\nAI summary: Use Polaris index-table patterns for commerce/admin resource lists: same-type rows, status badges, row navigation, sorting/filtering, pagination, and bulk actions.",
+    "tokens": 73,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "index-table",
+        "commerce",
+        "admin",
+        "orders",
+        "products",
+        "bulk-actions",
+        "filters"
+      ],
+      "negative_prompt_tags": [
+        "static",
+        "marketing",
+        "editorial"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-polaris-index-table-interaction",
+    "record_id": "design-system-polaris-index-table",
+    "source_name": "Shopify Polaris",
+    "source_url": "https://polaris-react.shopify.com/components/tables/index-table",
+    "page_type": "data_table",
+    "section": "interaction",
+    "content": "# Shopify Polaris - Interaction States\n\nPage type: data_table\nUse cases: commerce admin, orders list, products list, resource management, bulk actions\nEvidence: direct_spec / high\nSource: https://polaris-react.shopify.com/components/tables/index-table\n\n- selected\n- disabled row\n- loading\n- empty\n- sorted\n- filtered\n- bulk selection\n\nAI summary: Use Polaris index-table patterns for commerce/admin resource lists: same-type rows, status badges, row navigation, sorting/filtering, pagination, and bulk actions.",
+    "tokens": 64,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "index-table",
+        "commerce",
+        "admin",
+        "orders",
+        "products",
+        "bulk-actions",
+        "filters"
+      ],
+      "negative_prompt_tags": [
+        "static",
+        "marketing",
+        "editorial"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-polaris-index-table-accessibility",
+    "record_id": "design-system-polaris-index-table",
+    "source_name": "Shopify Polaris",
+    "source_url": "https://polaris-react.shopify.com/components/tables/index-table",
+    "page_type": "data_table",
+    "section": "accessibility",
+    "content": "# Shopify Polaris - Accessibility Notes\n\nPage type: data_table\nUse cases: commerce admin, orders list, products list, resource management, bulk actions\nEvidence: direct_spec / high\nSource: https://polaris-react.shopify.com/components/tables/index-table\n\n- Rows and subheaders need explicit relationships when grouping selectable resources.\n- Keyboard multi-selection and row actions should remain operable.\n\nAI summary: Use Polaris index-table patterns for commerce/admin resource lists: same-type rows, status badges, row navigation, sorting/filtering, pagination, and bulk actions.",
+    "tokens": 68,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "index-table",
+        "commerce",
+        "admin",
+        "orders",
+        "products",
+        "bulk-actions",
+        "filters"
+      ],
+      "negative_prompt_tags": [
+        "static",
+        "marketing",
+        "editorial"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-polaris-index-table-implementation",
+    "record_id": "design-system-polaris-index-table",
+    "source_name": "Shopify Polaris",
+    "source_url": "https://polaris-react.shopify.com/components/tables/index-table",
+    "page_type": "data_table",
+    "section": "implementation",
+    "content": "# Shopify Polaris - Implementation Hints\n\nPage type: data_table\nUse cases: commerce admin, orders list, products list, resource management, bulk actions\nEvidence: direct_spec / high\nSource: https://polaris-react.shopify.com/components/tables/index-table\n\n- Use for admin pages where each row represents a business object.\n- Do not make a table passive if the main task is navigation to resource details.\n- Separate UI state from sorting/filtering network logic.\n\nAI summary: Use Polaris index-table patterns for commerce/admin resource lists: same-type rows, status badges, row navigation, sorting/filtering, pagination, and bulk actions.",
+    "tokens": 84,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "index-table",
+        "commerce",
+        "admin",
+        "orders",
+        "products",
+        "bulk-actions",
+        "filters"
+      ],
+      "negative_prompt_tags": [
+        "static",
+        "marketing",
+        "editorial"
+      ]
+    }
+  }
+]

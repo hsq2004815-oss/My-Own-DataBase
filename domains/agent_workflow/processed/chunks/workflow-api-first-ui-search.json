@@ -1,0 +1,233 @@
+[
+  {
+    "chunk_id": "workflow-api-first-ui-search-overview",
+    "record_id": "workflow-api-first-ui-search",
+    "workflow_type": "api_first_retrieval",
+    "source_name": "Local Knowledge API usage contract",
+    "source_url": "http://127.0.0.1:8765/docs",
+    "section": "overview",
+    "content": "# workflow-api-first-ui-search - Overview\n\nWorkflow type: api_first_retrieval\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Make agents retrieve relevant UI/design knowledge through the local HTTP API before designing or coding.\nEvidence: tested / high\nSource: http://127.0.0.1:8765/docs\n\nWhen to use:\n- Any frontend or UI design task\n- When the user asks to use the local database\n- When the task mentions Liquid Glass, animation, dashboard, forms, tables, or visual style\n\nInputs required:\n- User task brief\n- Running API at http://127.0.0.1:8765\n- Search keywords extracted from the brief\n\nAI summary: Use API-first retrieval for frontend tasks: call /health, derive search queries, call /ui/search, dedupe relevant chunks, design from those chunks, and report queries/chunks used.",
+    "tokens": 115,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "api-first",
+        "ui-search",
+        "local-api",
+        "knowledge-first",
+        "frontend",
+        "chunks"
+      ],
+      "negative_prompt_tags": [
+        "read-all",
+        "memory-only",
+        "no-evidence"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-api-first-ui-search-steps",
+    "record_id": "workflow-api-first-ui-search",
+    "workflow_type": "api_first_retrieval",
+    "source_name": "Local Knowledge API usage contract",
+    "source_url": "http://127.0.0.1:8765/docs",
+    "section": "steps",
+    "content": "# workflow-api-first-ui-search - Execution Steps\n\nWorkflow type: api_first_retrieval\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Make agents retrieve relevant UI/design knowledge through the local HTTP API before designing or coding.\nEvidence: tested / high\nSource: http://127.0.0.1:8765/docs\n\n- Call /health and confirm references/chunks are available.\n- Extract 2-5 search queries from the task, including style, page type, components, and motion terms.\n- Call /ui/search for each query with limit 5-8.\n- Deduplicate chunks by record_id and section.\n- Use only relevant chunks as design constraints; ignore unrelated broad matches.\n- Proceed to implementation and cite the chunks used in the final report.\n\nAI summary: Use API-first retrieval for frontend tasks: call /health, derive search queries, call /ui/search, dedupe relevant chunks, design from those chunks, and report queries/chunks used.",
+    "tokens": 129,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "api-first",
+        "ui-search",
+        "local-api",
+        "knowledge-first",
+        "frontend",
+        "chunks"
+      ],
+      "negative_prompt_tags": [
+        "read-all",
+        "memory-only",
+        "no-evidence"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-api-first-ui-search-api",
+    "record_id": "workflow-api-first-ui-search",
+    "workflow_type": "api_first_retrieval",
+    "source_name": "Local Knowledge API usage contract",
+    "source_url": "http://127.0.0.1:8765/docs",
+    "section": "api",
+    "content": "# workflow-api-first-ui-search - API Calls\n\nWorkflow type: api_first_retrieval\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Make agents retrieve relevant UI/design knowledge through the local HTTP API before designing or coding.\nEvidence: tested / high\nSource: http://127.0.0.1:8765/docs\n\n- GET http://127.0.0.1:8765/health\n- GET http://127.0.0.1:8765/ui/search?q={query}&limit=5\n- GET http://127.0.0.1:8765/ui/reference/{record_id}\n\nAI summary: Use API-first retrieval for frontend tasks: call /health, derive search queries, call /ui/search, dedupe relevant chunks, design from those chunks, and report queries/chunks used.",
+    "tokens": 73,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "api-first",
+        "ui-search",
+        "local-api",
+        "knowledge-first",
+        "frontend",
+        "chunks"
+      ],
+      "negative_prompt_tags": [
+        "read-all",
+        "memory-only",
+        "no-evidence"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-api-first-ui-search-prompt_contract",
+    "record_id": "workflow-api-first-ui-search",
+    "workflow_type": "api_first_retrieval",
+    "source_name": "Local Knowledge API usage contract",
+    "source_url": "http://127.0.0.1:8765/docs",
+    "section": "prompt_contract",
+    "content": "# workflow-api-first-ui-search - Prompt Contract\n\nWorkflow type: api_first_retrieval\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Make agents retrieve relevant UI/design knowledge through the local HTTP API before designing or coding.\nEvidence: tested / high\nSource: http://127.0.0.1:8765/docs\n\n- Do not design purely from memory when the local API is available.\n- Do not fetch all references by default; use targeted search.\n- Report exact queries and key chunks used.\n\nAI summary: Use API-first retrieval for frontend tasks: call /health, derive search queries, call /ui/search, dedupe relevant chunks, design from those chunks, and report queries/chunks used.",
+    "tokens": 96,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "api-first",
+        "ui-search",
+        "local-api",
+        "knowledge-first",
+        "frontend",
+        "chunks"
+      ],
+      "negative_prompt_tags": [
+        "read-all",
+        "memory-only",
+        "no-evidence"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-api-first-ui-search-verification",
+    "record_id": "workflow-api-first-ui-search",
+    "workflow_type": "api_first_retrieval",
+    "source_name": "Local Knowledge API usage contract",
+    "source_url": "http://127.0.0.1:8765/docs",
+    "section": "verification",
+    "content": "# workflow-api-first-ui-search - Verification\n\nWorkflow type: api_first_retrieval\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Make agents retrieve relevant UI/design knowledge through the local HTTP API before designing or coding.\nEvidence: tested / high\nSource: http://127.0.0.1:8765/docs\n\n- /health returns status ok\n- Search returns at least one relevant chunk\n- Final output maps design decisions to retrieved chunks\n\nAI summary: Use API-first retrieval for frontend tasks: call /health, derive search queries, call /ui/search, dedupe relevant chunks, design from those chunks, and report queries/chunks used.",
+    "tokens": 85,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "api-first",
+        "ui-search",
+        "local-api",
+        "knowledge-first",
+        "frontend",
+        "chunks"
+      ],
+      "negative_prompt_tags": [
+        "read-all",
+        "memory-only",
+        "no-evidence"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-api-first-ui-search-failure_modes",
+    "record_id": "workflow-api-first-ui-search",
+    "workflow_type": "api_first_retrieval",
+    "source_name": "Local Knowledge API usage contract",
+    "source_url": "http://127.0.0.1:8765/docs",
+    "section": "failure_modes",
+    "content": "# workflow-api-first-ui-search - Failure Modes\n\nWorkflow type: api_first_retrieval\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Make agents retrieve relevant UI/design knowledge through the local HTTP API before designing or coding.\nEvidence: tested / high\nSource: http://127.0.0.1:8765/docs\n\n- API is not running\n- Search query too broad\n- Search query too strict\n- Returned chunks are irrelevant\n\nAI summary: Use API-first retrieval for frontend tasks: call /health, derive search queries, call /ui/search, dedupe relevant chunks, design from those chunks, and report queries/chunks used.",
+    "tokens": 84,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "api-first",
+        "ui-search",
+        "local-api",
+        "knowledge-first",
+        "frontend",
+        "chunks"
+      ],
+      "negative_prompt_tags": [
+        "read-all",
+        "memory-only",
+        "no-evidence"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-api-first-ui-search-handoff",
+    "record_id": "workflow-api-first-ui-search",
+    "workflow_type": "api_first_retrieval",
+    "source_name": "Local Knowledge API usage contract",
+    "source_url": "http://127.0.0.1:8765/docs",
+    "section": "handoff",
+    "content": "# workflow-api-first-ui-search - Handoff Report\n\nWorkflow type: api_first_retrieval\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Make agents retrieve relevant UI/design knowledge through the local HTTP API before designing or coding.\nEvidence: tested / high\nSource: http://127.0.0.1:8765/docs\n\n- API status\n- Queries run\n- Chunks used\n- Files changed\n- How knowledge was applied\n- Verification performed\n\nAI summary: Use API-first retrieval for frontend tasks: call /health, derive search queries, call /ui/search, dedupe relevant chunks, design from those chunks, and report queries/chunks used.",
+    "tokens": 84,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "api-first",
+        "ui-search",
+        "local-api",
+        "knowledge-first",
+        "frontend",
+        "chunks"
+      ],
+      "negative_prompt_tags": [
+        "read-all",
+        "memory-only",
+        "no-evidence"
+      ]
+    }
+  }
+]

@@ -1,0 +1,171 @@
+[
+  {
+    "source_id": "apple-hig",
+    "name": "Apple Human Interface Guidelines",
+    "url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "source_type": "official_design_system",
+    "priority": 1,
+    "best_for": [
+      "platform polish",
+      "mobile_app_screen",
+      "visual hierarchy",
+      "interaction"
+    ],
+    "capture_plan": "Summarize principles and component guidance; store links and short notes, not full copied docs.",
+    "status": "planned"
+  },
+  {
+    "source_id": "material-design",
+    "name": "Material Design",
+    "url": "https://m3.material.io/",
+    "source_type": "official_design_system",
+    "priority": 1,
+    "best_for": [
+      "mobile_app_screen",
+      "component_pattern",
+      "motion",
+      "accessibility"
+    ],
+    "capture_plan": "Extract component state rules, layout guidance, and accessibility notes.",
+    "status": "planned"
+  },
+  {
+    "source_id": "microsoft-fluent-2",
+    "name": "Microsoft Fluent 2",
+    "url": "https://fluent2.microsoft.design/",
+    "source_type": "official_design_system",
+    "priority": 1,
+    "best_for": [
+      "enterprise_saas",
+      "desktop",
+      "settings_page",
+      "component_pattern"
+    ],
+    "capture_plan": "Capture component anatomy, behavior rules, and multi-platform guidance.",
+    "status": "planned"
+  },
+  {
+    "source_id": "ibm-carbon",
+    "name": "IBM Carbon Design System",
+    "url": "https://carbondesignsystem.com/",
+    "source_type": "official_design_system",
+    "priority": 1,
+    "best_for": [
+      "dashboard",
+      "data_table",
+      "enterprise_saas",
+      "form"
+    ],
+    "capture_plan": "Prioritize data tables, forms, empty states, content guidance, and accessibility.",
+    "status": "planned"
+  },
+  {
+    "source_id": "atlassian-design",
+    "name": "Atlassian Design System",
+    "url": "https://atlassian.design/",
+    "source_type": "official_design_system",
+    "priority": 1,
+    "best_for": [
+      "developer_tool",
+      "project_management",
+      "dashboard",
+      "collaboration"
+    ],
+    "capture_plan": "Capture patterns for navigation, issue/workflow surfaces, and content hierarchy.",
+    "status": "planned"
+  },
+  {
+    "source_id": "shopify-polaris",
+    "name": "Shopify Polaris",
+    "url": "https://polaris.shopify.com/",
+    "source_type": "official_design_system",
+    "priority": 1,
+    "best_for": [
+      "admin_panel",
+      "settings_page",
+      "form",
+      "data_table",
+      "commerce"
+    ],
+    "capture_plan": "Capture resource lists, forms, merchants workflows, and status/feedback patterns.",
+    "status": "planned"
+  },
+  {
+    "source_id": "github-primer",
+    "name": "GitHub Primer",
+    "url": "https://primer.style/",
+    "source_type": "official_design_system",
+    "priority": 1,
+    "best_for": [
+      "developer_tool",
+      "docs",
+      "code_platform",
+      "data_table"
+    ],
+    "capture_plan": "Capture developer-product components, navigation, markdown/docs, and issue-like patterns.",
+    "status": "planned"
+  },
+  {
+    "source_id": "ant-design",
+    "name": "Ant Design",
+    "url": "https://ant.design/",
+    "source_type": "official_design_system",
+    "priority": 1,
+    "best_for": [
+      "admin_panel",
+      "enterprise_saas",
+      "form",
+      "data_table"
+    ],
+    "capture_plan": "Capture enterprise layout, table/form conventions, feedback states, and design values.",
+    "status": "planned"
+  },
+  {
+    "source_id": "shadcn-ui",
+    "name": "shadcn/ui",
+    "url": "https://ui.shadcn.com/",
+    "source_type": "component_library",
+    "priority": 2,
+    "best_for": [
+      "modern_web_app",
+      "component_pattern",
+      "dashboard",
+      "ai_chat_interface"
+    ],
+    "capture_plan": "Capture component composition patterns and page examples; keep code references short.",
+    "status": "planned"
+  },
+  {
+    "source_id": "mobbin",
+    "name": "Mobbin",
+    "url": "https://mobbin.com/",
+    "source_type": "pattern_library",
+    "priority": 2,
+    "best_for": [
+      "real_product_flows",
+      "mobile_app_screen",
+      "onboarding",
+      "checkout",
+      "settings_page"
+    ],
+    "capture_plan": "Store only owned notes, tags, and screenshot references according to access rights.",
+    "status": "planned"
+  },
+  {
+    "source_id": "swishy-motion-templates",
+    "name": "Swishy AI Motion Templates",
+    "url": "https://www.swishy.ai/",
+    "source_type": "pattern_library",
+    "priority": 2,
+    "best_for": [
+      "motion patterns",
+      "kinetic typography",
+      "notifications",
+      "website reveal",
+      "data visualization",
+      "device mockup showcase"
+    ],
+    "capture_plan": "Store short motion taxonomy, timing/easing guidance, use cases, and accessibility boundaries. Do not copy template code, video output, or proprietary assets.",
+    "status": "seeded"
+  }
+]

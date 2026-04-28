@@ -1,0 +1,81 @@
+{
+  "record_id": "playwright-overlay-modal-iframe-handling",
+  "source": {
+    "name": "Playwright Best Practices",
+    "url": "https://playwright.dev/docs/best-practices",
+    "source_type": "official_docs",
+    "license_notes": "Summarized guidance with source link; do not copy full docs.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "automation",
+  "automation_type": "overlay_modal_iframe",
+  "tooling": [
+    "Playwright"
+  ],
+  "goal": "Handle overlays, modals, dropdowns, popups, and iframes without brittle clicks.",
+  "when_to_use": [
+    "Element is covered",
+    "Dropdown option not clickable",
+    "Modal blocks page",
+    "Target content inside iframe",
+    "Popup opens new page"
+  ],
+  "inputs_required": [
+    "Current screenshot",
+    "Expected target element",
+    "Frame/popup relationship"
+  ],
+  "steps": [
+    "Check for visible dialogs/overlays before clicking underlying controls.",
+    "Close or interact with modal using role/name locators.",
+    "Use frameLocator for iframe content.",
+    "Use page.waitForEvent('popup') when a new tab/window is expected.",
+    "Wait for dropdown listbox/menu option visibility before selecting."
+  ],
+  "commands_or_apis": [
+    "page.getByRole('dialog')",
+    "frameLocator(...)",
+    "page.waitForEvent('popup')",
+    "getByRole('option')",
+    "getByRole('menuitem')"
+  ],
+  "verification": [
+    "Overlay no longer covers target",
+    "Correct frame/popup receives action",
+    "Selected option appears",
+    "Screenshot confirms state"
+  ],
+  "failure_modes": [
+    "Click intercepted",
+    "Wrong frame",
+    "Popup missed",
+    "Dropdown closes before selection",
+    "Overlay animation still running"
+  ],
+  "safety_notes": [
+    "Do not dismiss security/permission/payment dialogs unless user explicitly authorizes it."
+  ],
+  "handoff_report": [
+    "Blocking element found",
+    "Frame/popup handled",
+    "Final visible state"
+  ],
+  "quality": {
+    "signal_strength": "medium",
+    "evidence_level": "official",
+    "notes": "Synthesized from Playwright locator/popup/frame practices and common automation failures."
+  },
+  "retrieval": {
+    "ai_summary": "For overlays/modals/dropdowns/iframes, detect the blocking surface, interact by role, use frameLocator or popup waits, then verify target state by screenshot/assertion.",
+    "prompt_tags": [
+      "playwright",
+      "overlay",
+      "modal",
+      "dropdown",
+      "iframe",
+      "popup",
+      "frameLocator"
+    ],
+    "negative_prompt_tags": []
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "asset_id": "interdisplay-regular-6896525e",
+  "domain": "ui_assets",
+  "asset_type": "font",
+  "usage_policy": "review_required",
+  "files": {
+    "file_path": "E:\\DataBase\\domains\\ui_assets\\raw\\review_required\\fonts\\InterDisplay-Regular.woff2",
+    "preview_path": "",
+    "original_path": "F:\\materials\\09_fonts_字体\\inter\\docs\\font-files\\InterDisplay-Regular.woff2",
+    "sha1": "6896525e24a8d384f489f2c301f83858da1104fb",
+    "size_bytes": 108948,
+    "extension": ".woff2"
+  },
+  "source": {
+    "name": "local import",
+    "url": "",
+    "captured_at": "2026-04-26T10:40:06.579252+00:00",
+    "notes": "Imported by scripts/ui_assets/ingest_assets.py"
+  },
+  "license": {
+    "label": "review required",
+    "notes": "Review each font license before direct use."
+  },
+  "style_tags": [],
+  "use_cases": [],
+  "avoid_when": [],
+  "implementation_notes": [],
+  "quality": {
+    "curation_status": "new",
+    "notes": "Review usage_policy and license before direct project use."
+  },
+  "retrieval": {
+    "ai_summary": "font asset for font. Review usage policy before use.",
+    "prompt_tags": [
+      "font"
+    ],
+    "negative_prompt_tags": []
+  }
+}

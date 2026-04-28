@@ -1,0 +1,32 @@
+{
+  "record_id": "",
+  "source": {
+    "name": "",
+    "url": "",
+    "source_type": "official_docs",
+    "license_notes": "Store summarized guidance and source links; do not copy full documentation verbatim.",
+    "captured_at": ""
+  },
+  "domain": "automation",
+  "automation_type": "",
+  "tooling": [],
+  "goal": "",
+  "when_to_use": [],
+  "inputs_required": [],
+  "steps": [],
+  "commands_or_apis": [],
+  "verification": [],
+  "failure_modes": [],
+  "safety_notes": [],
+  "handoff_report": [],
+  "quality": {
+    "signal_strength": "medium",
+    "evidence_level": "draft",
+    "notes": ""
+  },
+  "retrieval": {
+    "ai_summary": "",
+    "prompt_tags": [],
+    "negative_prompt_tags": []
+  }
+}

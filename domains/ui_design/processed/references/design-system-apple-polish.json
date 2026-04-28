@@ -1,0 +1,41 @@
+{
+  "record_id": "design-system-apple-polish",
+  "source": {
+    "name": "Apple Human Interface Guidelines",
+    "url": "https://developer.apple.com/design/human-interface-guidelines/",
+    "source_type": "official_design_system",
+    "license_notes": "Use as a source link and summarized guidance; do not copy full documentation verbatim.",
+    "captured_at": "2026-04-24"
+  },
+  "domain": "ui_design",
+  "page_type": "mobile_app_screen",
+  "platform": ["mobile", "desktop", "tablet"],
+  "use_cases": ["consumer app", "premium product", "mobile utility", "settings page"],
+  "visual_traits": ["restraint", "clarity", "depth", "strong typography", "generous spacing"],
+  "layout_rules": [
+    "Prioritize content hierarchy before decoration.",
+    "Use spacing, typography, and alignment to create perceived quality.",
+    "Keep controls familiar to the platform when designing native-feeling screens."
+  ],
+  "component_patterns": ["navigation", "lists", "forms", "sheets", "toolbars", "feedback"],
+  "interaction_states": ["focus", "selection", "disabled", "modal presentation", "system feedback"],
+  "accessibility_notes": [
+    "Respect readable text sizes and contrast.",
+    "Design controls with clear hit areas and platform-consistent behavior."
+  ],
+  "implementation_hints": [
+    "Use when the user asks for polished, premium, simple, or native-feeling UI.",
+    "Prefer fewer elements with stronger hierarchy instead of dense decoration."
+  ],
+  "avoid_when": ["dense enterprise data tables", "maximalist campaign pages", "game UI"],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "direct_spec",
+    "notes": "Seed record for Apple-style polish; expand by component or platform later."
+  },
+  "retrieval": {
+    "ai_summary": "Use Apple HIG-inspired polish for premium native-feeling UI: clarity, hierarchy, restraint, readable typography, generous spacing, and familiar platform controls.",
+    "prompt_tags": ["premium", "native", "ios", "macos", "clarity", "polish", "spacing"],
+    "negative_prompt_tags": ["dense", "noisy", "dashboard-heavy", "overdecorated"]
+  }
+}

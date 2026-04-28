@@ -1,0 +1,218 @@
+[
+  {
+    "chunk_id": "visual-style-ambient-dynamic-background-liquid-glass-overview",
+    "record_id": "visual-style-ambient-dynamic-background-liquid-glass",
+    "source_name": "Apple Liquid Glass dynamic material and web CSS accessibility references",
+    "source_url": "https://www.apple.com/li/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# Apple Liquid Glass dynamic material and web CSS accessibility references - Overview\n\nPage type: component_pattern\nUse cases: Liquid Glass interface background, premium AI dashboard, glass ecological interface, ambient dynamic scene, frosted cards and modals, high-end product UI\nEvidence: summary_only / high\nSource: https://www.apple.com/li/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/\n\nVisual traits:\n- slow moving ambient scene behind translucent glass surfaces\n- layered depth with far background, middle atmospheric field, and foreground glass UI\n- low-contrast motion that gives backdrop-filter something to refract without stealing attention\n- environmental light sources that create soft highlights and color spill on glass edges\n- subtle ecological motifs such as aurora haze, water caustics, drifting mist, star dust, city light reflections, or abstract data currents\n- restrained color shifts that avoid one-note purple-blue gradients\n\nUse when:\n- Liquid Glass interface background\n- premium AI dashboard\n- glass ecological interface\n- ambient dynamic scene\n- frosted cards and modals\n- high-end product UI\n\nAvoid when:\n- static flat gradient as the only glass backdrop\n- decorative orb or blob backgrounds that do not imply a coherent scene\n- fast particle fields behind readable text\n- high contrast scenery under forms or tables\n- whole-page saturated purple-blue neon glow\n- applying backdrop-filter to hundreds of repeated rows\n- requiring WebGL for core usability\n\nAI summary: For high-end Liquid Glass web interfaces, use a slow, layered ambient scene behind glass surfaces so blur and refraction have meaningful visual input. Prefer ecological scenery such as aurora haze, water caustics, drifting mist, star dust, city light reflections, or abstract data currents over static gradients or decorative blobs. Keep motion subtle, preserve legibility, and provide reduced-motion fallbacks.",
+    "tokens": 271,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "ambient-background",
+        "dynamic-background",
+        "ecological-interface",
+        "glass-scene",
+        "aurora",
+        "caustics",
+        "drifting-mist",
+        "premium-dashboard",
+        "backdrop-filter",
+        "reduced-motion"
+      ],
+      "negative_prompt_tags": [
+        "static-gradient",
+        "decorative-orbs",
+        "bokeh-blobs",
+        "fast-particles",
+        "low-contrast",
+        "single-hue-neon",
+        "busy-background"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-ambient-dynamic-background-liquid-glass-layout",
+    "record_id": "visual-style-ambient-dynamic-background-liquid-glass",
+    "source_name": "Apple Liquid Glass dynamic material and web CSS accessibility references",
+    "source_url": "https://www.apple.com/li/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# Apple Liquid Glass dynamic material and web CSS accessibility references - Layout Rules\n\nPage type: component_pattern\nUse cases: Liquid Glass interface background, premium AI dashboard, glass ecological interface, ambient dynamic scene, frosted cards and modals, high-end product UI\nEvidence: summary_only / high\nSource: https://www.apple.com/li/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/\n\n- Treat the dynamic background as a scene, not decoration; it should imply depth, weather, light, or data flow behind the interface.\n- Keep primary text and controls on stable glass surfaces; animated background detail should stay outside dense reading zones.\n- Use three layers: a calm base field, one or two slow motion atmospheric layers, and a glass UI layer with clear hierarchy.\n- Let larger cards and modals reveal more of the background than small controls, because large glass surfaces need richer visual input.\n- Reserve strong highlights for edges, selected cards, and primary actions; background motion should remain secondary.\n- Use neutral dark, graphite, green-blue, cyan, silver, or warm light accents instead of saturating the whole page with a single neon hue.\n\nAI summary: For high-end Liquid Glass web interfaces, use a slow, layered ambient scene behind glass surfaces so blur and refraction have meaningful visual input. Prefer ecological scenery such as aurora haze, water caustics, drifting mist, star dust, city light reflections, or abstract data currents over static gradients or decorative blobs. Keep motion subtle, preserve legibility, and provide reduced-motion fallbacks.",
+    "tokens": 230,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "ambient-background",
+        "dynamic-background",
+        "ecological-interface",
+        "glass-scene",
+        "aurora",
+        "caustics",
+        "drifting-mist",
+        "premium-dashboard",
+        "backdrop-filter",
+        "reduced-motion"
+      ],
+      "negative_prompt_tags": [
+        "static-gradient",
+        "decorative-orbs",
+        "bokeh-blobs",
+        "fast-particles",
+        "low-contrast",
+        "single-hue-neon",
+        "busy-background"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-ambient-dynamic-background-liquid-glass-components",
+    "record_id": "visual-style-ambient-dynamic-background-liquid-glass",
+    "source_name": "Apple Liquid Glass dynamic material and web CSS accessibility references",
+    "source_url": "https://www.apple.com/li/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# Apple Liquid Glass dynamic material and web CSS accessibility references - Component Patterns\n\nPage type: component_pattern\nUse cases: Liquid Glass interface background, premium AI dashboard, glass ecological interface, ambient dynamic scene, frosted cards and modals, high-end product UI\nEvidence: summary_only / high\nSource: https://www.apple.com/li/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/\n\n- ambient scene background\n- frosted glass card over moving scenery\n- glass modal over dimmed dynamic field\n- translucent navigation layer\n- soft caustic highlight\n- animated atmospheric canvas\n- reduced-motion background fallback\n\nAI summary: For high-end Liquid Glass web interfaces, use a slow, layered ambient scene behind glass surfaces so blur and refraction have meaningful visual input. Prefer ecological scenery such as aurora haze, water caustics, drifting mist, star dust, city light reflections, or abstract data currents over static gradients or decorative blobs. Keep motion subtle, preserve legibility, and provide reduced-motion fallbacks.",
+    "tokens": 139,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "ambient-background",
+        "dynamic-background",
+        "ecological-interface",
+        "glass-scene",
+        "aurora",
+        "caustics",
+        "drifting-mist",
+        "premium-dashboard",
+        "backdrop-filter",
+        "reduced-motion"
+      ],
+      "negative_prompt_tags": [
+        "static-gradient",
+        "decorative-orbs",
+        "bokeh-blobs",
+        "fast-particles",
+        "low-contrast",
+        "single-hue-neon",
+        "busy-background"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-ambient-dynamic-background-liquid-glass-interaction",
+    "record_id": "visual-style-ambient-dynamic-background-liquid-glass",
+    "source_name": "Apple Liquid Glass dynamic material and web CSS accessibility references",
+    "source_url": "https://www.apple.com/li/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# Apple Liquid Glass dynamic material and web CSS accessibility references - Interaction States\n\nPage type: component_pattern\nUse cases: Liquid Glass interface background, premium AI dashboard, glass ecological interface, ambient dynamic scene, frosted cards and modals, high-end product UI\nEvidence: summary_only / high\nSource: https://www.apple.com/li/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/\n\n- idle slow drift\n- hover edge highlight\n- modal open background dimming\n- focus-visible high contrast rim\n- reduced-motion static scene\n- theme shift between light and dark environments\n\nAI summary: For high-end Liquid Glass web interfaces, use a slow, layered ambient scene behind glass surfaces so blur and refraction have meaningful visual input. Prefer ecological scenery such as aurora haze, water caustics, drifting mist, star dust, city light reflections, or abstract data currents over static gradients or decorative blobs. Keep motion subtle, preserve legibility, and provide reduced-motion fallbacks.",
+    "tokens": 135,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "ambient-background",
+        "dynamic-background",
+        "ecological-interface",
+        "glass-scene",
+        "aurora",
+        "caustics",
+        "drifting-mist",
+        "premium-dashboard",
+        "backdrop-filter",
+        "reduced-motion"
+      ],
+      "negative_prompt_tags": [
+        "static-gradient",
+        "decorative-orbs",
+        "bokeh-blobs",
+        "fast-particles",
+        "low-contrast",
+        "single-hue-neon",
+        "busy-background"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-ambient-dynamic-background-liquid-glass-accessibility",
+    "record_id": "visual-style-ambient-dynamic-background-liquid-glass",
+    "source_name": "Apple Liquid Glass dynamic material and web CSS accessibility references",
+    "source_url": "https://www.apple.com/li/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# Apple Liquid Glass dynamic material and web CSS accessibility references - Accessibility Notes\n\nPage type: component_pattern\nUse cases: Liquid Glass interface background, premium AI dashboard, glass ecological interface, ambient dynamic scene, frosted cards and modals, high-end product UI\nEvidence: summary_only / high\nSource: https://www.apple.com/li/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/\n\n- Provide a prefers-reduced-motion fallback that freezes or greatly slows the background scene.\n- Keep contrast checks on final composited surfaces, because backdrop blur and color spill can reduce text legibility.\n- Do not place small text directly over high-frequency particles, moving caustics, or bright scenery.\n- Offer a stronger tint or dimming layer behind clear glass when the background becomes too detailed.\n- Avoid motion that simulates rapid camera movement, zooming, or parallax near reading content.\n\nAI summary: For high-end Liquid Glass web interfaces, use a slow, layered ambient scene behind glass surfaces so blur and refraction have meaningful visual input. Prefer ecological scenery such as aurora haze, water caustics, drifting mist, star dust, city light reflections, or abstract data currents over static gradients or decorative blobs. Keep motion subtle, preserve legibility, and provide reduced-motion fallbacks.",
+    "tokens": 182,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "ambient-background",
+        "dynamic-background",
+        "ecological-interface",
+        "glass-scene",
+        "aurora",
+        "caustics",
+        "drifting-mist",
+        "premium-dashboard",
+        "backdrop-filter",
+        "reduced-motion"
+      ],
+      "negative_prompt_tags": [
+        "static-gradient",
+        "decorative-orbs",
+        "bokeh-blobs",
+        "fast-particles",
+        "low-contrast",
+        "single-hue-neon",
+        "busy-background"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-ambient-dynamic-background-liquid-glass-implementation",
+    "record_id": "visual-style-ambient-dynamic-background-liquid-glass",
+    "source_name": "Apple Liquid Glass dynamic material and web CSS accessibility references",
+    "source_url": "https://www.apple.com/li/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# Apple Liquid Glass dynamic material and web CSS accessibility references - Implementation Hints\n\nPage type: component_pattern\nUse cases: Liquid Glass interface background, premium AI dashboard, glass ecological interface, ambient dynamic scene, frosted cards and modals, high-end product UI\nEvidence: summary_only / high\nSource: https://www.apple.com/li/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/\n\n- For CSS-only prototypes, combine fixed radial/linear gradients, mask-image, subtle noise texture, and long-duration transform animation on pseudo-elements.\n- For richer scenes, use canvas or WebGL for low-frequency particles, caustic flow, aurora bands, or data currents, then keep UI in DOM above it.\n- Use backdrop-filter only on translucent surfaces; opaque panels will hide the background and weaken the glass effect.\n- Suggested motion timing: 20s to 80s loops, low opacity, small transform distances, and no abrupt keyframe resets.\n- Use saturate plus blur on the glass layer rather than increasing background saturation; the glass should interpret the scene, not fight it.\n- Add an overlay dimmer under modals so clear glass stays legible over media-rich scenery.\n- Keep animation on transform and opacity where possible; avoid animating blur radius or expensive filters across large full-screen layers.\n- Use CSS custom properties for scene hue, glow strength, glass opacity, and motion speed so the background can adapt per page.\n\nAI summary: For high-end Liquid Glass web interfaces, use a slow, layered ambient scene behind glass surfaces so blur and refraction have meaningful visual input. Prefer ecological scenery such as aurora haze, water caustics, drifting mist, star dust, city light reflections, or abstract data currents over static gradients or decorative blobs. Keep motion subtle, preserve legibility, and provide reduced-motion fallbacks.",
+    "tokens": 264,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "ambient-background",
+        "dynamic-background",
+        "ecological-interface",
+        "glass-scene",
+        "aurora",
+        "caustics",
+        "drifting-mist",
+        "premium-dashboard",
+        "backdrop-filter",
+        "reduced-motion"
+      ],
+      "negative_prompt_tags": [
+        "static-gradient",
+        "decorative-orbs",
+        "bokeh-blobs",
+        "fast-particles",
+        "low-contrast",
+        "single-hue-neon",
+        "busy-background"
+      ]
+    }
+  }
+]

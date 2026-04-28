@@ -1,0 +1,76 @@
+{
+  "record_id": "playwright-locator-best-practices",
+  "source": {
+    "name": "Playwright Best Practices",
+    "url": "https://playwright.dev/docs/best-practices",
+    "source_type": "official_docs",
+    "license_notes": "Summarized guidance with source link; do not copy full docs.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "automation",
+  "automation_type": "browser_playwright",
+  "tooling": [
+    "Playwright"
+  ],
+  "goal": "Use resilient locators and avoid brittle selectors in browser automation.",
+  "when_to_use": [
+    "Automating web UI",
+    "Selectors are flaky",
+    "Agent needs to click/fill stable elements"
+  ],
+  "inputs_required": [
+    "Target URL",
+    "User-visible labels/roles",
+    "Stable test ids if available"
+  ],
+  "steps": [
+    "Prefer role, text, label, placeholder, and test id locators over CSS/XPath.",
+    "Use Playwright Inspector/codegen only as a starting point; review locator semantics.",
+    "Scope locators to a region when text repeats.",
+    "Avoid selecting by dynamic class names or layout-dependent nth-child selectors."
+  ],
+  "commands_or_apis": [
+    "page.getByRole(...)",
+    "page.getByLabel(...)",
+    "page.getByText(...)",
+    "locator.filter(...)"
+  ],
+  "verification": [
+    "Element action succeeds without arbitrary sleep",
+    "Locator remains unique or intentionally scoped",
+    "Screenshot or assertion confirms result"
+  ],
+  "failure_modes": [
+    "Multiple matching elements",
+    "Text changes due to locale",
+    "Dynamic class/hash changes",
+    "Hidden duplicate element"
+  ],
+  "safety_notes": [
+    "Do not automate destructive actions without explicit user instruction.",
+    "Prefer assertions before submit/publish/delete."
+  ],
+  "handoff_report": [
+    "Selectors used",
+    "Why they are stable",
+    "Screenshots/assertions"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "official",
+    "notes": "Official Playwright recommends user-facing locators and resilient tests."
+  },
+  "retrieval": {
+    "ai_summary": "Use Playwright resilient locators: role, label, text, placeholder, test id, and scoped locators. Avoid brittle CSS/XPath and arbitrary sleeps.",
+    "prompt_tags": [
+      "playwright",
+      "locator",
+      "selectors",
+      "role",
+      "text",
+      "test-id",
+      "stable"
+    ],
+    "negative_prompt_tags": []
+  }
+}

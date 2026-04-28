@@ -1,0 +1,101 @@
+{
+  "record_id": "visual-style-aurora-haze-background",
+  "source": {
+    "name": "MDN CSS gradients and Apple Liquid Glass material guidance",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient",
+    "source_type": "article",
+    "license_notes": "Distilled implementation guidance from public CSS gradient documentation and Apple Liquid Glass material descriptions. Store summarized guidance only.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "ui_design",
+  "page_type": "component_pattern",
+  "platform": [
+    "web",
+    "desktop",
+    "mobile"
+  ],
+  "use_cases": [
+    "premium AI dashboard background",
+    "Liquid Glass ecological interface",
+    "ambient hero background",
+    "frosted card backdrop",
+    "calm high-end SaaS UI"
+  ],
+  "visual_traits": [
+    "slow aurora bands behind translucent glass",
+    "misty atmospheric haze with soft depth falloff",
+    "green-blue, silver, cyan, and restrained violet light fields",
+    "large low-frequency gradients instead of decorative blobs",
+    "subtle scene movement that remains calmer than the UI"
+  ],
+  "layout_rules": [
+    "Place aurora motion in the far background and keep the UI layer stable.",
+    "Use broad bands and haze fields; avoid small repeated blobs that look decorative rather than environmental.",
+    "Keep the brightest aurora away from text-heavy cards and forms.",
+    "Pair dark glass cards with dimmed aurora fields, not full-saturation neon.",
+    "Use a subtle noise or grain layer to prevent flat digital gradients."
+  ],
+  "component_patterns": [
+    "aurora scene layer",
+    "mist field",
+    "glass dashboard card",
+    "frosted navigation",
+    "ambient hero panel",
+    "reduced-motion static aurora frame"
+  ],
+  "interaction_states": [
+    "idle slow drift",
+    "hover edge glint",
+    "modal open background dim",
+    "theme hue shift",
+    "reduced-motion frozen haze"
+  ],
+  "accessibility_notes": [
+    "Use prefers-reduced-motion to freeze or greatly slow aurora bands.",
+    "Keep text on tinted glass or solid-enough panels, not directly over bright aurora strokes.",
+    "Avoid rapid hue cycling or high-contrast sweeping bands near reading areas.",
+    "Test contrast on the final composite after backdrop blur and saturation."
+  ],
+  "implementation_hints": [
+    "CSS-only baseline: layer radial-gradient and linear-gradient backgrounds on fixed pseudo-elements, then animate transform and opacity over 30s to 90s loops.",
+    "Use mask-image or large blurred pseudo-elements to make aurora bands fade into the base field.",
+    "Animate transform, background-position, or opacity rather than expensive full-screen filter changes.",
+    "Use CSS variables for aurora hue, haze opacity, scene dim, and motion speed.",
+    "Add a dark translucent page overlay when cards need stronger text contrast.",
+    "For mobile, reduce opacity and motion amplitude to preserve battery and legibility."
+  ],
+  "avoid_when": [
+    "fast rainbow gradient cycling",
+    "high-frequency animated stripes",
+    "bright aurora directly behind form labels",
+    "single purple-blue full-page gradient",
+    "decorative orb backgrounds without scene depth",
+    "marketing hero composition when the task is an operational dashboard"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "summary_only",
+    "notes": "Derived from modern CSS gradient capabilities and Liquid Glass need for meaningful background content under translucent material."
+  },
+  "retrieval": {
+    "ai_summary": "Use aurora haze backgrounds for high-end Liquid Glass interfaces that need a calm ecological scene behind glass. Build broad, slow, layered gradient bands with mist, noise, dimming, and reduced-motion fallback; avoid fast rainbow motion, decorative blobs, and bright scenery behind text.",
+    "prompt_tags": [
+      "aurora-background",
+      "ambient-background",
+      "liquid-glass",
+      "ecological-interface",
+      "gradient-scene",
+      "mist-haze",
+      "premium-dashboard",
+      "reduced-motion"
+    ],
+    "negative_prompt_tags": [
+      "static-gradient",
+      "rainbow-cycle",
+      "decorative-orbs",
+      "bokeh-blobs",
+      "busy-background",
+      "low-contrast"
+    ]
+  }
+}

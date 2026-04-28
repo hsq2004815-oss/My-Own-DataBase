@@ -1,0 +1,72 @@
+[
+  {
+    "chunk_id": "design-airtable-chunk-1",
+    "file_id": "design-airtable",
+    "content": "# Airtable Inspired Design System - Brand Style\n\n**Category**: Design & Creative Tools\n**Description**: Spreadsheet-database hybrid. Colorful, friendly, structured data aesthetic\n**Source**: https://getdesign.md/airtable/design-md\n\n**Note**: 源文件仅提供跳转链接，详细设计系统内容需访问外部URL。\n\n## Design Philosophy\nSpreadsheet-database hybrid. Colorful, friendly, structured data aesthetic",
+    "tokens": 92,
+    "metadata": {
+      "section": "brand_style",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-airtable-chunk-2",
+    "file_id": "design-airtable",
+    "content": "# Airtable Inspired Design System - Color Palette\n\n**Colors mentioned**: red\n\n**Description**: Spreadsheet-database hybrid. Colorful, friendly, structured data aesthetic\n\n**Note**: 源文件仅提供跳转链接，具体色值需访问外部URL。",
+    "tokens": 52,
+    "metadata": {
+      "section": "color_palette",
+      "has_colors": true,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-airtable-chunk-3",
+    "file_id": "design-airtable",
+    "content": "# Airtable Inspired Design System - Typography\n\n**Information不足**: 源文件未提供具体排版信息。\n\n**Description**: Spreadsheet-database hybrid. Colorful, friendly, structured data aesthetic\n\n**Note**: 源文件仅提供跳转链接，详细排版需访问外部URL。",
+    "tokens": 53,
+    "metadata": {
+      "section": "typography",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-airtable-chunk-4",
+    "file_id": "design-airtable",
+    "content": "# Airtable Inspired Design System - Layout Principles\n\n**Layout mentioned**: structured\n\n**Description**: Spreadsheet-database hybrid. Colorful, friendly, structured data aesthetic\n\n**Note**: 源文件仅提供跳转链接，具体布局规范需访问外部URL。",
+    "tokens": 55,
+    "metadata": {
+      "section": "layout",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": true,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-airtable-chunk-5",
+    "file_id": "design-airtable",
+    "content": "# Airtable Inspired Design System - Components & Interaction\n\n**Information不足**: 源文件未提供具体组件信息。\n\n**Description**: Spreadsheet-database hybrid. Colorful, friendly, structured data aesthetic\n\n**Note**: 源文件仅提供跳转链接，详细组件需访问外部URL。",
+    "tokens": 56,
+    "metadata": {
+      "section": "components",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  }
+]

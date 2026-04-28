@@ -1,0 +1,205 @@
+[
+  {
+    "chunk_id": "windows-process-port-service-control-overview",
+    "record_id": "windows-process-port-service-control",
+    "automation_type": "windows_shell",
+    "source_name": "Local Windows service control notes",
+    "source_url": "local-generated:2026-04-25/windows-service-control",
+    "section": "overview",
+    "content": "# windows-process-port-service-control - Overview\n\nAutomation type: windows_shell\nTooling: PowerShell, uvicorn, FastAPI\nGoal: Start, verify, and stop local services such as the knowledge API without losing control of the shell.\nEvidence: tested / high\nSource: local-generated:2026-04-25/windows-service-control\n\nWhen to use:\n- Need to start local API\n- Port may be occupied\n- Need to verify service before agent call\n\nInputs required:\n- Working directory\n- Port\n- Startup command\n- Health endpoint\n\nAI summary: For local services, start in a controlled terminal/job, verify /health, inspect port conflicts before stopping processes, and report health response and shutdown state.",
+    "tokens": 95,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "uvicorn",
+        "FastAPI"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "windows",
+        "port",
+        "service",
+        "uvicorn",
+        "fastapi",
+        "health",
+        "process"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-process-port-service-control-steps",
+    "record_id": "windows-process-port-service-control",
+    "automation_type": "windows_shell",
+    "source_name": "Local Windows service control notes",
+    "source_url": "local-generated:2026-04-25/windows-service-control",
+    "section": "steps",
+    "content": "# windows-process-port-service-control - Execution Steps\n\nAutomation type: windows_shell\nTooling: PowerShell, uvicorn, FastAPI\nGoal: Start, verify, and stop local services such as the knowledge API without losing control of the shell.\nEvidence: tested / high\nSource: local-generated:2026-04-25/windows-service-control\n\n- Start service in a dedicated terminal or background job.\n- Wait briefly and call health endpoint.\n- If port is busy, identify listener before killing anything.\n- Use a different port for temporary tests.\n- Stop test jobs after verification.\n\nAI summary: For local services, start in a controlled terminal/job, verify /health, inspect port conflicts before stopping processes, and report health response and shutdown state.",
+    "tokens": 102,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "uvicorn",
+        "FastAPI"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "windows",
+        "port",
+        "service",
+        "uvicorn",
+        "fastapi",
+        "health",
+        "process"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-process-port-service-control-commands",
+    "record_id": "windows-process-port-service-control",
+    "automation_type": "windows_shell",
+    "source_name": "Local Windows service control notes",
+    "source_url": "local-generated:2026-04-25/windows-service-control",
+    "section": "commands",
+    "content": "# windows-process-port-service-control - Commands or APIs\n\nAutomation type: windows_shell\nTooling: PowerShell, uvicorn, FastAPI\nGoal: Start, verify, and stop local services such as the knowledge API without losing control of the shell.\nEvidence: tested / high\nSource: local-generated:2026-04-25/windows-service-control\n\n- python -m uvicorn app.main:app --host 127.0.0.1 --port 8765\n- Invoke-RestMethod http://127.0.0.1:8765/health\n- Get-NetTCPConnection -LocalPort 8765\n- Stop-Job / Stop-Process after confirmation\n\nAI summary: For local services, start in a controlled terminal/job, verify /health, inspect port conflicts before stopping processes, and report health response and shutdown state.",
+    "tokens": 84,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "uvicorn",
+        "FastAPI"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "windows",
+        "port",
+        "service",
+        "uvicorn",
+        "fastapi",
+        "health",
+        "process"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-process-port-service-control-verification",
+    "record_id": "windows-process-port-service-control",
+    "automation_type": "windows_shell",
+    "source_name": "Local Windows service control notes",
+    "source_url": "local-generated:2026-04-25/windows-service-control",
+    "section": "verification",
+    "content": "# windows-process-port-service-control - Verification\n\nAutomation type: windows_shell\nTooling: PowerShell, uvicorn, FastAPI\nGoal: Start, verify, and stop local services such as the knowledge API without losing control of the shell.\nEvidence: tested / high\nSource: local-generated:2026-04-25/windows-service-control\n\n- Health endpoint returns ok\n- Expected reference/chunk counts present\n- No orphan test job remains\n\nAI summary: For local services, start in a controlled terminal/job, verify /health, inspect port conflicts before stopping processes, and report health response and shutdown state.",
+    "tokens": 76,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "uvicorn",
+        "FastAPI"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "windows",
+        "port",
+        "service",
+        "uvicorn",
+        "fastapi",
+        "health",
+        "process"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-process-port-service-control-failure_modes",
+    "record_id": "windows-process-port-service-control",
+    "automation_type": "windows_shell",
+    "source_name": "Local Windows service control notes",
+    "source_url": "local-generated:2026-04-25/windows-service-control",
+    "section": "failure_modes",
+    "content": "# windows-process-port-service-control - Failure Modes\n\nAutomation type: windows_shell\nTooling: PowerShell, uvicorn, FastAPI\nGoal: Start, verify, and stop local services such as the knowledge API without losing control of the shell.\nEvidence: tested / high\nSource: local-generated:2026-04-25/windows-service-control\n\n- Port occupied\n- Wrong working directory\n- Module import failure\n- Background job left running\n\nAI summary: For local services, start in a controlled terminal/job, verify /health, inspect port conflicts before stopping processes, and report health response and shutdown state.",
+    "tokens": 77,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "uvicorn",
+        "FastAPI"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "windows",
+        "port",
+        "service",
+        "uvicorn",
+        "fastapi",
+        "health",
+        "process"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-process-port-service-control-safety",
+    "record_id": "windows-process-port-service-control",
+    "automation_type": "windows_shell",
+    "source_name": "Local Windows service control notes",
+    "source_url": "local-generated:2026-04-25/windows-service-control",
+    "section": "safety",
+    "content": "# windows-process-port-service-control - Safety Notes\n\nAutomation type: windows_shell\nTooling: PowerShell, uvicorn, FastAPI\nGoal: Start, verify, and stop local services such as the knowledge API without losing control of the shell.\nEvidence: tested / high\nSource: local-generated:2026-04-25/windows-service-control\n\n- Do not kill unrelated processes without inspecting owner/command.\n- Use localhost for local APIs.\n\nAI summary: For local services, start in a controlled terminal/job, verify /health, inspect port conflicts before stopping processes, and report health response and shutdown state.",
+    "tokens": 76,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "uvicorn",
+        "FastAPI"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "windows",
+        "port",
+        "service",
+        "uvicorn",
+        "fastapi",
+        "health",
+        "process"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-process-port-service-control-handoff",
+    "record_id": "windows-process-port-service-control",
+    "automation_type": "windows_shell",
+    "source_name": "Local Windows service control notes",
+    "source_url": "local-generated:2026-04-25/windows-service-control",
+    "section": "handoff",
+    "content": "# windows-process-port-service-control - Handoff Report\n\nAutomation type: windows_shell\nTooling: PowerShell, uvicorn, FastAPI\nGoal: Start, verify, and stop local services such as the knowledge API without losing control of the shell.\nEvidence: tested / high\nSource: local-generated:2026-04-25/windows-service-control\n\n- Command started\n- Port\n- Health response\n- Shutdown state\n\nAI summary: For local services, start in a controlled terminal/job, verify /health, inspect port conflicts before stopping processes, and report health response and shutdown state.",
+    "tokens": 72,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "uvicorn",
+        "FastAPI"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "windows",
+        "port",
+        "service",
+        "uvicorn",
+        "fastapi",
+        "health",
+        "process"
+      ],
+      "negative_prompt_tags": []
+    }
+  }
+]

@@ -1,0 +1,200 @@
+[
+  {
+    "chunk_id": "workflow-agent-handoff-report-template-overview",
+    "record_id": "workflow-agent-handoff-report-template",
+    "workflow_type": "handoff_report",
+    "source_name": "Agent handoff report template",
+    "source_url": "local-generated:2026-04-25/handoff-report",
+    "section": "overview",
+    "content": "# workflow-agent-handoff-report-template - Overview\n\nWorkflow type: handoff_report\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Make agents report enough evidence that the user can verify the database was actually used.\nEvidence: documented / high\nSource: local-generated:2026-04-25/handoff-report\n\nWhen to use:\n- Any task that claims to use the local database\n- Frontend generation\n- Database-backed research\n- Agent handoff between tools\n\nInputs required:\n- Task brief\n- Queries run\n- Chunks returned\n- Files changed\n- Verification output\n\nAI summary: When an agent uses the local database, final reports must include API/files read, exact queries, chunk ids, how chunks changed the implementation, files changed, verification, and gaps.",
+    "tokens": 107,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "handoff-report",
+        "evidence",
+        "chunk-ids",
+        "verification",
+        "auditable",
+        "database-used"
+      ],
+      "negative_prompt_tags": [
+        "vague",
+        "trust-me",
+        "no-queries"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-agent-handoff-report-template-steps",
+    "record_id": "workflow-agent-handoff-report-template",
+    "workflow_type": "handoff_report",
+    "source_name": "Agent handoff report template",
+    "source_url": "local-generated:2026-04-25/handoff-report",
+    "section": "steps",
+    "content": "# workflow-agent-handoff-report-template - Execution Steps\n\nWorkflow type: handoff_report\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Make agents report enough evidence that the user can verify the database was actually used.\nEvidence: documented / high\nSource: local-generated:2026-04-25/handoff-report\n\n- Record exactly which local files or API endpoints were read.\n- List each query and the key record/chunk ids used.\n- Explain how retrieved knowledge affected concrete design or implementation choices.\n- List changed files and run commands.\n- State verification performed and known gaps.\n\nAI summary: When an agent uses the local database, final reports must include API/files read, exact queries, chunk ids, how chunks changed the implementation, files changed, verification, and gaps.",
+    "tokens": 113,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "handoff-report",
+        "evidence",
+        "chunk-ids",
+        "verification",
+        "auditable",
+        "database-used"
+      ],
+      "negative_prompt_tags": [
+        "vague",
+        "trust-me",
+        "no-queries"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-agent-handoff-report-template-prompt_contract",
+    "record_id": "workflow-agent-handoff-report-template",
+    "workflow_type": "handoff_report",
+    "source_name": "Agent handoff report template",
+    "source_url": "local-generated:2026-04-25/handoff-report",
+    "section": "prompt_contract",
+    "content": "# workflow-agent-handoff-report-template - Prompt Contract\n\nWorkflow type: handoff_report\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Make agents report enough evidence that the user can verify the database was actually used.\nEvidence: documented / high\nSource: local-generated:2026-04-25/handoff-report\n\n- Do not just say 'used the database'; provide query and chunk evidence.\n- Keep report concise but auditable.\n- Report failures honestly.\n\nAI summary: When an agent uses the local database, final reports must include API/files read, exact queries, chunk ids, how chunks changed the implementation, files changed, verification, and gaps.",
+    "tokens": 90,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "handoff-report",
+        "evidence",
+        "chunk-ids",
+        "verification",
+        "auditable",
+        "database-used"
+      ],
+      "negative_prompt_tags": [
+        "vague",
+        "trust-me",
+        "no-queries"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-agent-handoff-report-template-verification",
+    "record_id": "workflow-agent-handoff-report-template",
+    "workflow_type": "handoff_report",
+    "source_name": "Agent handoff report template",
+    "source_url": "local-generated:2026-04-25/handoff-report",
+    "section": "verification",
+    "content": "# workflow-agent-handoff-report-template - Verification\n\nWorkflow type: handoff_report\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Make agents report enough evidence that the user can verify the database was actually used.\nEvidence: documented / high\nSource: local-generated:2026-04-25/handoff-report\n\n- Report contains endpoint/file evidence\n- Report contains chunk ids\n- Report maps chunks to changes\n- Report includes run/test evidence\n\nAI summary: When an agent uses the local database, final reports must include API/files read, exact queries, chunk ids, how chunks changed the implementation, files changed, verification, and gaps.",
+    "tokens": 87,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "handoff-report",
+        "evidence",
+        "chunk-ids",
+        "verification",
+        "auditable",
+        "database-used"
+      ],
+      "negative_prompt_tags": [
+        "vague",
+        "trust-me",
+        "no-queries"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-agent-handoff-report-template-failure_modes",
+    "record_id": "workflow-agent-handoff-report-template",
+    "workflow_type": "handoff_report",
+    "source_name": "Agent handoff report template",
+    "source_url": "local-generated:2026-04-25/handoff-report",
+    "section": "failure_modes",
+    "content": "# workflow-agent-handoff-report-template - Failure Modes\n\nWorkflow type: handoff_report\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Make agents report enough evidence that the user can verify the database was actually used.\nEvidence: documented / high\nSource: local-generated:2026-04-25/handoff-report\n\n- Vague final report\n- No query evidence\n- Claims database usage but no chunks listed\n- No verification gap disclosure\n\nAI summary: When an agent uses the local database, final reports must include API/files read, exact queries, chunk ids, how chunks changed the implementation, files changed, verification, and gaps.",
+    "tokens": 88,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "handoff-report",
+        "evidence",
+        "chunk-ids",
+        "verification",
+        "auditable",
+        "database-used"
+      ],
+      "negative_prompt_tags": [
+        "vague",
+        "trust-me",
+        "no-queries"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-agent-handoff-report-template-handoff",
+    "record_id": "workflow-agent-handoff-report-template",
+    "workflow_type": "handoff_report",
+    "source_name": "Agent handoff report template",
+    "source_url": "local-generated:2026-04-25/handoff-report",
+    "section": "handoff",
+    "content": "# workflow-agent-handoff-report-template - Handoff Report\n\nWorkflow type: handoff_report\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Make agents report enough evidence that the user can verify the database was actually used.\nEvidence: documented / high\nSource: local-generated:2026-04-25/handoff-report\n\n- Files/API read\n- Queries\n- Chunk ids\n- Design/implementation mapping\n- Changed files\n- Verification\n- Gaps\n\nAI summary: When an agent uses the local database, final reports must include API/files read, exact queries, chunk ids, how chunks changed the implementation, files changed, verification, and gaps.",
+    "tokens": 85,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "handoff-report",
+        "evidence",
+        "chunk-ids",
+        "verification",
+        "auditable",
+        "database-used"
+      ],
+      "negative_prompt_tags": [
+        "vague",
+        "trust-me",
+        "no-queries"
+      ]
+    }
+  }
+]

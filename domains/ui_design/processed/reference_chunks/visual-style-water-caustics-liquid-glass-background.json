@@ -1,0 +1,194 @@
+[
+  {
+    "chunk_id": "visual-style-water-caustics-liquid-glass-background-overview",
+    "record_id": "visual-style-water-caustics-liquid-glass-background",
+    "source_name": "MDN SVG filter turbulence and displacement references",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feTurbulence",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# MDN SVG filter turbulence and displacement references - Overview\n\nPage type: component_pattern\nUse cases: liquid glass interface background, water caustic lighting, refractive product UI, premium modal backdrop, high-end glass controls\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feTurbulence\n\nVisual traits:\n- slow refractive water-light caustics behind glass\n- thin flowing highlight veins that suggest optical distortion\n- subtle cyan, silver, and warm reflected light\n- liquid depth without turning the page into an aquarium\n- background movement that makes glass edges feel optically active\n\nUse when:\n- liquid glass interface background\n- water caustic lighting\n- refractive product UI\n- premium modal backdrop\n- high-end glass controls\n\nAvoid when:\n- dense data tables\n- long reading pages\n- forms with many validation messages\n- rapid water ripple effects\n- high-contrast wave lines under text\n- heavy SVG filters over full-screen layers on low-end devices\n\nAI summary: Use water caustics when Liquid Glass needs a more optical, refractive background than a static gradient. Keep flowing light low-opacity, slow, and away from text; implement with SVG turbulence/displacement, low-res canvas noise, or CSS highlight layers, with reduced-motion and static fallbacks.",
+    "tokens": 186,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "water-caustics",
+        "liquid-glass",
+        "refractive-background",
+        "svg-filter",
+        "feTurbulence",
+        "feDisplacementMap",
+        "glass-modal",
+        "specular-highlight"
+      ],
+      "negative_prompt_tags": [
+        "busy-background",
+        "fast-ripples",
+        "dense-table",
+        "low-contrast",
+        "heavy-filter",
+        "aquarium-theme"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-water-caustics-liquid-glass-background-layout",
+    "record_id": "visual-style-water-caustics-liquid-glass-background",
+    "source_name": "MDN SVG filter turbulence and displacement references",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feTurbulence",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# MDN SVG filter turbulence and displacement references - Layout Rules\n\nPage type: component_pattern\nUse cases: liquid glass interface background, water caustic lighting, refractive product UI, premium modal backdrop, high-end glass controls\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feTurbulence\n\n- Use caustics as low-opacity environmental light, not as the main content texture.\n- Keep caustic intensity stronger near large glass surfaces and weaker under text-heavy regions.\n- Pair caustic backgrounds with fewer glass layers; too many translucent panels over moving light become noisy.\n- Use calm base surfaces behind forms and tables, with caustics limited to margins or empty zones.\n- Reserve sharp specular lines for edges, dividers, and primary glass controls.\n\nAI summary: Use water caustics when Liquid Glass needs a more optical, refractive background than a static gradient. Keep flowing light low-opacity, slow, and away from text; implement with SVG turbulence/displacement, low-res canvas noise, or CSS highlight layers, with reduced-motion and static fallbacks.",
+    "tokens": 154,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "water-caustics",
+        "liquid-glass",
+        "refractive-background",
+        "svg-filter",
+        "feTurbulence",
+        "feDisplacementMap",
+        "glass-modal",
+        "specular-highlight"
+      ],
+      "negative_prompt_tags": [
+        "busy-background",
+        "fast-ripples",
+        "dense-table",
+        "low-contrast",
+        "heavy-filter",
+        "aquarium-theme"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-water-caustics-liquid-glass-background-components",
+    "record_id": "visual-style-water-caustics-liquid-glass-background",
+    "source_name": "MDN SVG filter turbulence and displacement references",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feTurbulence",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# MDN SVG filter turbulence and displacement references - Component Patterns\n\nPage type: component_pattern\nUse cases: liquid glass interface background, water caustic lighting, refractive product UI, premium modal backdrop, high-end glass controls\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feTurbulence\n\n- caustic light field\n- liquid glass card\n- refractive modal backdrop\n- specular edge highlight\n- dimmed form background\n- static fallback texture\n\nAI summary: Use water caustics when Liquid Glass needs a more optical, refractive background than a static gradient. Keep flowing light low-opacity, slow, and away from text; implement with SVG turbulence/displacement, low-res canvas noise, or CSS highlight layers, with reduced-motion and static fallbacks.",
+    "tokens": 105,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "water-caustics",
+        "liquid-glass",
+        "refractive-background",
+        "svg-filter",
+        "feTurbulence",
+        "feDisplacementMap",
+        "glass-modal",
+        "specular-highlight"
+      ],
+      "negative_prompt_tags": [
+        "busy-background",
+        "fast-ripples",
+        "dense-table",
+        "low-contrast",
+        "heavy-filter",
+        "aquarium-theme"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-water-caustics-liquid-glass-background-interaction",
+    "record_id": "visual-style-water-caustics-liquid-glass-background",
+    "source_name": "MDN SVG filter turbulence and displacement references",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feTurbulence",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# MDN SVG filter turbulence and displacement references - Interaction States\n\nPage type: component_pattern\nUse cases: liquid glass interface background, water caustic lighting, refractive product UI, premium modal backdrop, high-end glass controls\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feTurbulence\n\n- idle slow flow\n- hover specular edge\n- active press light shift\n- modal open caustic dim\n- reduced-motion frozen caustic\n\nAI summary: Use water caustics when Liquid Glass needs a more optical, refractive background than a static gradient. Keep flowing light low-opacity, slow, and away from text; implement with SVG turbulence/displacement, low-res canvas noise, or CSS highlight layers, with reduced-motion and static fallbacks.",
+    "tokens": 103,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "water-caustics",
+        "liquid-glass",
+        "refractive-background",
+        "svg-filter",
+        "feTurbulence",
+        "feDisplacementMap",
+        "glass-modal",
+        "specular-highlight"
+      ],
+      "negative_prompt_tags": [
+        "busy-background",
+        "fast-ripples",
+        "dense-table",
+        "low-contrast",
+        "heavy-filter",
+        "aquarium-theme"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-water-caustics-liquid-glass-background-accessibility",
+    "record_id": "visual-style-water-caustics-liquid-glass-background",
+    "source_name": "MDN SVG filter turbulence and displacement references",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feTurbulence",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# MDN SVG filter turbulence and displacement references - Accessibility Notes\n\nPage type: component_pattern\nUse cases: liquid glass interface background, water caustic lighting, refractive product UI, premium modal backdrop, high-end glass controls\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feTurbulence\n\n- Use reduced-motion to pause flowing caustics or replace them with a static texture.\n- Do not place validation text, table cells, or long paragraphs over bright caustic lines.\n- Keep caustic contrast below the contrast of interactive focus rings.\n- Add a tint layer behind glass cards when moving highlights reduce readability.\n\nAI summary: Use water caustics when Liquid Glass needs a more optical, refractive background than a static gradient. Keep flowing light low-opacity, slow, and away from text; implement with SVG turbulence/displacement, low-res canvas noise, or CSS highlight layers, with reduced-motion and static fallbacks.",
+    "tokens": 134,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "water-caustics",
+        "liquid-glass",
+        "refractive-background",
+        "svg-filter",
+        "feTurbulence",
+        "feDisplacementMap",
+        "glass-modal",
+        "specular-highlight"
+      ],
+      "negative_prompt_tags": [
+        "busy-background",
+        "fast-ripples",
+        "dense-table",
+        "low-contrast",
+        "heavy-filter",
+        "aquarium-theme"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-water-caustics-liquid-glass-background-implementation",
+    "record_id": "visual-style-water-caustics-liquid-glass-background",
+    "source_name": "MDN SVG filter turbulence and displacement references",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feTurbulence",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# MDN SVG filter turbulence and displacement references - Implementation Hints\n\nPage type: component_pattern\nUse cases: liquid glass interface background, water caustic lighting, refractive product UI, premium modal backdrop, high-end glass controls\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feTurbulence\n\n- SVG baseline: use feTurbulence as a procedural noise source and feDisplacementMap or masked gradients for slow refractive distortion.\n- Canvas baseline: render low-resolution flowing noise or line fields, upscale softly, and keep opacity low.\n- CSS fallback: layer radial gradients and thin blurred linear highlights with long transform animations.\n- Throttle intensity on mobile and avoid animating large blur/filter values every frame.\n- Use requestAnimationFrame for canvas animation and stop or pause when the page is hidden.\n- Keep caustic animation loops slow, around 24s to 90s, with no visible reset.\n\nAI summary: Use water caustics when Liquid Glass needs a more optical, refractive background than a static gradient. Keep flowing light low-opacity, slow, and away from text; implement with SVG turbulence/displacement, low-res canvas noise, or CSS highlight layers, with reduced-motion and static fallbacks.",
+    "tokens": 173,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "water-caustics",
+        "liquid-glass",
+        "refractive-background",
+        "svg-filter",
+        "feTurbulence",
+        "feDisplacementMap",
+        "glass-modal",
+        "specular-highlight"
+      ],
+      "negative_prompt_tags": [
+        "busy-background",
+        "fast-ripples",
+        "dense-table",
+        "low-contrast",
+        "heavy-filter",
+        "aquarium-theme"
+      ]
+    }
+  }
+]

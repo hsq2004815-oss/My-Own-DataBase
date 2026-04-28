@@ -1,0 +1,170 @@
+[
+  {
+    "chunk_id": "implementation-motion-website-reveal-parameters-overview",
+    "record_id": "implementation-motion-website-reveal-parameters",
+    "source_name": "Website reveal motion implementation parameters",
+    "source_url": "local-generated:2026-04-25/website-reveal-motion-parameters",
+    "page_type": "landing_page",
+    "section": "overview",
+    "content": "# Website reveal motion implementation parameters - Overview\n\nPage type: landing_page\nUse cases: page entry, dashboard first load, Liquid Glass hero, SaaS landing page, AI workspace\nEvidence: summary_only / high\nSource: local-generated:2026-04-25/website-reveal-motion-parameters\n\nVisual traits:\n- blur-in\n- rise from bottom\n- staggered reveal\n- soft settle\n- premium motion\n- glass panel entry\n\nUse when:\n- page entry\n- dashboard first load\n- Liquid Glass hero\n- SaaS landing page\n- AI workspace\n\nAvoid when:\n- frequent route changes\n- low-end mobile heavy page\n- critical workflow requiring immediate response\n- large tables with many animated rows\n\nAI summary: Website reveal implementation parameters: background 500-700ms, hero 650-900ms, toolbar 520-720ms, cards 560-760ms with 80-140ms stagger, blur/translate/opacity reveal, cubic-bezier smooth or soft spring easing, reduced-motion fallback.",
+    "tokens": 124,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "website-reveal",
+        "motion-parameters",
+        "blur-in",
+        "stagger",
+        "cubic-bezier",
+        "reduced-motion",
+        "liquid-glass"
+      ],
+      "negative_prompt_tags": [
+        "route-every-click",
+        "blocking-animation",
+        "many-table-rows"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-motion-website-reveal-parameters-layout",
+    "record_id": "implementation-motion-website-reveal-parameters",
+    "source_name": "Website reveal motion implementation parameters",
+    "source_url": "local-generated:2026-04-25/website-reveal-motion-parameters",
+    "page_type": "landing_page",
+    "section": "layout",
+    "content": "# Website reveal motion implementation parameters - Layout Rules\n\nPage type: landing_page\nUse cases: page entry, dashboard first load, Liquid Glass hero, SaaS landing page, AI workspace\nEvidence: summary_only / high\nSource: local-generated:2026-04-25/website-reveal-motion-parameters\n\n- Reveal background atmosphere first, then hero glass panel, then toolbar/search/CTA, then section headers, then cards with stagger.\n- Keep the full reveal sequence around 900-1200ms so it feels premium but does not block use.\n- Set final states in CSS/DOM immediately and use animation only as enhancement.\n- For glass UI, animate container opacity/blur/translate; avoid animating backdrop-filter on many child elements at once.\n\nAI summary: Website reveal implementation parameters: background 500-700ms, hero 650-900ms, toolbar 520-720ms, cards 560-760ms with 80-140ms stagger, blur/translate/opacity reveal, cubic-bezier smooth or soft spring easing, reduced-motion fallback.",
+    "tokens": 124,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "website-reveal",
+        "motion-parameters",
+        "blur-in",
+        "stagger",
+        "cubic-bezier",
+        "reduced-motion",
+        "liquid-glass"
+      ],
+      "negative_prompt_tags": [
+        "route-every-click",
+        "blocking-animation",
+        "many-table-rows"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-motion-website-reveal-parameters-components",
+    "record_id": "implementation-motion-website-reveal-parameters",
+    "source_name": "Website reveal motion implementation parameters",
+    "source_url": "local-generated:2026-04-25/website-reveal-motion-parameters",
+    "page_type": "landing_page",
+    "section": "components",
+    "content": "# Website reveal motion implementation parameters - Component Patterns\n\nPage type: landing_page\nUse cases: page entry, dashboard first load, Liquid Glass hero, SaaS landing page, AI workspace\nEvidence: summary_only / high\nSource: local-generated:2026-04-25/website-reveal-motion-parameters\n\n- page shell\n- ambient background\n- hero glass card\n- toolbar\n- CTA\n- tabs\n- project cards\n- modal panel\n\nAI summary: Website reveal implementation parameters: background 500-700ms, hero 650-900ms, toolbar 520-720ms, cards 560-760ms with 80-140ms stagger, blur/translate/opacity reveal, cubic-bezier smooth or soft spring easing, reduced-motion fallback.",
+    "tokens": 82,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "website-reveal",
+        "motion-parameters",
+        "blur-in",
+        "stagger",
+        "cubic-bezier",
+        "reduced-motion",
+        "liquid-glass"
+      ],
+      "negative_prompt_tags": [
+        "route-every-click",
+        "blocking-animation",
+        "many-table-rows"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-motion-website-reveal-parameters-interaction",
+    "record_id": "implementation-motion-website-reveal-parameters",
+    "source_name": "Website reveal motion implementation parameters",
+    "source_url": "local-generated:2026-04-25/website-reveal-motion-parameters",
+    "page_type": "landing_page",
+    "section": "interaction",
+    "content": "# Website reveal motion implementation parameters - Interaction States\n\nPage type: landing_page\nUse cases: page entry, dashboard first load, Liquid Glass hero, SaaS landing page, AI workspace\nEvidence: summary_only / high\nSource: local-generated:2026-04-25/website-reveal-motion-parameters\n\n- initial\n- revealing\n- settled\n- reduced motion\n- hover refinement\n\nAI summary: Website reveal implementation parameters: background 500-700ms, hero 650-900ms, toolbar 520-720ms, cards 560-760ms with 80-140ms stagger, blur/translate/opacity reveal, cubic-bezier smooth or soft spring easing, reduced-motion fallback.",
+    "tokens": 72,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "website-reveal",
+        "motion-parameters",
+        "blur-in",
+        "stagger",
+        "cubic-bezier",
+        "reduced-motion",
+        "liquid-glass"
+      ],
+      "negative_prompt_tags": [
+        "route-every-click",
+        "blocking-animation",
+        "many-table-rows"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-motion-website-reveal-parameters-accessibility",
+    "record_id": "implementation-motion-website-reveal-parameters",
+    "source_name": "Website reveal motion implementation parameters",
+    "source_url": "local-generated:2026-04-25/website-reveal-motion-parameters",
+    "page_type": "landing_page",
+    "section": "accessibility",
+    "content": "# Website reveal motion implementation parameters - Accessibility Notes\n\nPage type: landing_page\nUse cases: page entry, dashboard first load, Liquid Glass hero, SaaS landing page, AI workspace\nEvidence: summary_only / high\nSource: local-generated:2026-04-25/website-reveal-motion-parameters\n\n- Under prefers-reduced-motion, skip translate and blur; use opacity 0 to 1 over 120-180ms or no animation.\n- Do not delay keyboard access to controls while visual reveal is running.\n- Avoid repeated page reveal on every minor route or tab change.\n\nAI summary: Website reveal implementation parameters: background 500-700ms, hero 650-900ms, toolbar 520-720ms, cards 560-760ms with 80-140ms stagger, blur/translate/opacity reveal, cubic-bezier smooth or soft spring easing, reduced-motion fallback.",
+    "tokens": 102,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "website-reveal",
+        "motion-parameters",
+        "blur-in",
+        "stagger",
+        "cubic-bezier",
+        "reduced-motion",
+        "liquid-glass"
+      ],
+      "negative_prompt_tags": [
+        "route-every-click",
+        "blocking-animation",
+        "many-table-rows"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-motion-website-reveal-parameters-implementation",
+    "record_id": "implementation-motion-website-reveal-parameters",
+    "source_name": "Website reveal motion implementation parameters",
+    "source_url": "local-generated:2026-04-25/website-reveal-motion-parameters",
+    "page_type": "landing_page",
+    "section": "implementation",
+    "content": "# Website reveal motion implementation parameters - Implementation Hints\n\nPage type: landing_page\nUse cases: page entry, dashboard first load, Liquid Glass hero, SaaS landing page, AI workspace\nEvidence: summary_only / high\nSource: local-generated:2026-04-25/website-reveal-motion-parameters\n\n- Background atmosphere: opacity 0 to 1, blur 18px to 0, duration 500-700ms, easing cubic-bezier(.16,1,.3,1).\n- Hero panel: opacity 0 to 1, translateY(34px) to 0, blur 12px to 0, duration 650-900ms, delay 80-120ms, easing cubic-bezier(.16,1,.3,1).\n- Toolbar/search/CTA: opacity 0 to 1, translateY(22px) to 0, blur 8px to 0, duration 520-720ms, delay 160-220ms.\n- Tabs/header: opacity 0 to 1, translateY(16px) to 0, duration 420-600ms, delay 220-300ms.\n- Cards: opacity 0 to 1, translateY(28px) to 0, scale(.975) to 1, blur 10px to 0, duration 560-760ms, stagger 80-140ms per card.\n- Notification/toast entry: translateX(24px) or translateY(18px) plus opacity, duration 360-520ms, easing cubic-bezier(.2,1.2,.2,1) for spring-like settle.\n- Fallback easing when spring is unavailable: cubic-bezier(.16,1,.3,1) for smooth reveal; cubic-bezier(.2,1.25,.25,1) for soft overshoot.\n- Use will-change: transform, opacity, filter only during animation; remove or limit persistent will-change after settle.\n\nAI summary: Website reveal implementation parameters: background 500-700ms, hero 650-900ms, toolbar 520-720ms, cards 560-760ms with 80-140ms stagger, blur/translate/opacity reveal, cubic-bezier smooth or soft spring easing, reduced-motion fallback.",
+    "tokens": 193,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "website-reveal",
+        "motion-parameters",
+        "blur-in",
+        "stagger",
+        "cubic-bezier",
+        "reduced-motion",
+        "liquid-glass"
+      ],
+      "negative_prompt_tags": [
+        "route-every-click",
+        "blocking-animation",
+        "many-table-rows"
+      ]
+    }
+  }
+]

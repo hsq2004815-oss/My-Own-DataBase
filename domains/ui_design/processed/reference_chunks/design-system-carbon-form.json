@@ -1,0 +1,164 @@
+[
+  {
+    "chunk_id": "design-system-carbon-form-overview",
+    "record_id": "design-system-carbon-form",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://v10.carbondesignsystem.com/components/form/usage/",
+    "page_type": "form",
+    "section": "overview",
+    "content": "# IBM Carbon Design System - Overview\n\nPage type: form\nUse cases: enterprise form, settings page, admin workflow, data submission\nEvidence: direct_spec / high\nSource: https://v10.carbondesignsystem.com/components/form/usage/\n\nVisual traits:\n- structured\n- concise\n- accessible\n- low decoration\n- clear field hierarchy\n\nUse when:\n- enterprise form\n- settings page\n- admin workflow\n- data submission\n\nAvoid when:\n- marketing landing page\n- playful consumer onboarding\n\nAI summary: Use Carbon form patterns for enterprise data entry: short forms, grouped related fields, explicit labels/helper/error text, clear submit behavior, and accessible keyboard flow.",
+    "tokens": 90,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "form",
+        "enterprise",
+        "settings",
+        "validation",
+        "accessibility",
+        "admin"
+      ],
+      "negative_prompt_tags": [
+        "decorative",
+        "marketing",
+        "playful"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-carbon-form-layout",
+    "record_id": "design-system-carbon-form",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://v10.carbondesignsystem.com/components/form/usage/",
+    "page_type": "form",
+    "section": "layout",
+    "content": "# IBM Carbon Design System - Layout Rules\n\nPage type: form\nUse cases: enterprise form, settings page, admin workflow, data submission\nEvidence: direct_spec / high\nSource: https://v10.carbondesignsystem.com/components/form/usage/\n\n- Keep forms short and only ask for information that has clear value.\n- Group related controls and use consistent spacing between fields.\n- Place submit actions after the fields and keep the primary action visually clear.\n\nAI summary: Use Carbon form patterns for enterprise data entry: short forms, grouped related fields, explicit labels/helper/error text, clear submit behavior, and accessible keyboard flow.",
+    "tokens": 89,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "form",
+        "enterprise",
+        "settings",
+        "validation",
+        "accessibility",
+        "admin"
+      ],
+      "negative_prompt_tags": [
+        "decorative",
+        "marketing",
+        "playful"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-carbon-form-components",
+    "record_id": "design-system-carbon-form",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://v10.carbondesignsystem.com/components/form/usage/",
+    "page_type": "form",
+    "section": "components",
+    "content": "# IBM Carbon Design System - Component Patterns\n\nPage type: form\nUse cases: enterprise form, settings page, admin workflow, data submission\nEvidence: direct_spec / high\nSource: https://v10.carbondesignsystem.com/components/form/usage/\n\n- text input\n- text area\n- select\n- checkbox\n- radio\n- button\n- helper text\n- invalid text\n\nAI summary: Use Carbon form patterns for enterprise data entry: short forms, grouped related fields, explicit labels/helper/error text, clear submit behavior, and accessible keyboard flow.",
+    "tokens": 72,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "form",
+        "enterprise",
+        "settings",
+        "validation",
+        "accessibility",
+        "admin"
+      ],
+      "negative_prompt_tags": [
+        "decorative",
+        "marketing",
+        "playful"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-carbon-form-interaction",
+    "record_id": "design-system-carbon-form",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://v10.carbondesignsystem.com/components/form/usage/",
+    "page_type": "form",
+    "section": "interaction",
+    "content": "# IBM Carbon Design System - Interaction States\n\nPage type: form\nUse cases: enterprise form, settings page, admin workflow, data submission\nEvidence: direct_spec / high\nSource: https://v10.carbondesignsystem.com/components/form/usage/\n\n- focus\n- invalid\n- disabled\n- helper text\n- submit\n\nAI summary: Use Carbon form patterns for enterprise data entry: short forms, grouped related fields, explicit labels/helper/error text, clear submit behavior, and accessible keyboard flow.",
+    "tokens": 63,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "form",
+        "enterprise",
+        "settings",
+        "validation",
+        "accessibility",
+        "admin"
+      ],
+      "negative_prompt_tags": [
+        "decorative",
+        "marketing",
+        "playful"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-carbon-form-accessibility",
+    "record_id": "design-system-carbon-form",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://v10.carbondesignsystem.com/components/form/usage/",
+    "page_type": "form",
+    "section": "accessibility",
+    "content": "# IBM Carbon Design System - Accessibility Notes\n\nPage type: form\nUse cases: enterprise form, settings page, admin workflow, data submission\nEvidence: direct_spec / high\nSource: https://v10.carbondesignsystem.com/components/form/usage/\n\n- Use real form controls with labels and error text tied to fields.\n- Keep keyboard flow linear and predictable.\n\nAI summary: Use Carbon form patterns for enterprise data entry: short forms, grouped related fields, explicit labels/helper/error text, clear submit behavior, and accessible keyboard flow.",
+    "tokens": 72,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "form",
+        "enterprise",
+        "settings",
+        "validation",
+        "accessibility",
+        "admin"
+      ],
+      "negative_prompt_tags": [
+        "decorative",
+        "marketing",
+        "playful"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-carbon-form-implementation",
+    "record_id": "design-system-carbon-form",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://v10.carbondesignsystem.com/components/form/usage/",
+    "page_type": "form",
+    "section": "implementation",
+    "content": "# IBM Carbon Design System - Implementation Hints\n\nPage type: form\nUse cases: enterprise form, settings page, admin workflow, data submission\nEvidence: direct_spec / high\nSource: https://v10.carbondesignsystem.com/components/form/usage/\n\n- Use for serious enterprise forms where clarity beats visual flourish.\n- Represent validation and error states in code from the first version.\n- Avoid collecting optional fields unless they improve the task outcome.\n\nAI summary: Use Carbon form patterns for enterprise data entry: short forms, grouped related fields, explicit labels/helper/error text, clear submit behavior, and accessible keyboard flow.",
+    "tokens": 86,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "form",
+        "enterprise",
+        "settings",
+        "validation",
+        "accessibility",
+        "admin"
+      ],
+      "negative_prompt_tags": [
+        "decorative",
+        "marketing",
+        "playful"
+      ]
+    }
+  }
+]

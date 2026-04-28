@@ -1,0 +1,72 @@
+[
+  {
+    "chunk_id": "design-the-verge-chunk-1",
+    "file_id": "design-the-verge",
+    "content": "# The Verge Design System - Brand Style\n\n**Category**: Media & Consumer Tech\n**Description**: Tech editorial media. Acid-mint and ultraviolet accents, Manuka display type\n**Source**: https://getdesign.md/theverge/design-md\n\n**Note**: 源文件包含设计系统描述。\n\n## Design Philosophy\nTech editorial media. Acid-mint and ultraviolet accents, Manuka display type",
+    "tokens": 87,
+    "metadata": {
+      "section": "brand_style",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-the-verge-chunk-2",
+    "file_id": "design-the-verge",
+    "content": "# The Verge Design System - Color Palette\n\n**Information不足**: 源文件未提供具体配色信息。\n\n**Description**: Tech editorial media. Acid-mint and ultraviolet accents, Manuka display type\n\n**Note**: 源文件未包含配色细节。",
+    "tokens": 49,
+    "metadata": {
+      "section": "color_palette",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-the-verge-chunk-3",
+    "file_id": "design-the-verge",
+    "content": "# The Verge Design System - Typography\n\n**Typography mentioned**: type, display, Manuka\n\n**Description**: Tech editorial media. Acid-mint and ultraviolet accents, Manuka display type\n\n**Note**: 源文件可能包含字体细节。",
+    "tokens": 52,
+    "metadata": {
+      "section": "typography",
+      "has_colors": false,
+      "has_typography": true,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-the-verge-chunk-4",
+    "file_id": "design-the-verge",
+    "content": "# The Verge Design System - Layout Principles\n\n**Layout mentioned**: editorial\n\n**Description**: Tech editorial media. Acid-mint and ultraviolet accents, Manuka display type\n\n**Note**: 源文件可能包含布局细节。",
+    "tokens": 50,
+    "metadata": {
+      "section": "layout",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": true,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-the-verge-chunk-5",
+    "file_id": "design-the-verge",
+    "content": "# The Verge Design System - Components & Interaction\n\n**Components mentioned**: accent\n\n**Description**: Tech editorial media. Acid-mint and ultraviolet accents, Manuka display type\n\n**Note**: 源文件可能包含组件细节。",
+    "tokens": 52,
+    "metadata": {
+      "section": "components",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": true,
+      "info_sufficient": true
+    }
+  }
+]

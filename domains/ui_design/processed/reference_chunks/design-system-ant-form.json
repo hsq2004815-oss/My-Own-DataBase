@@ -1,0 +1,158 @@
+[
+  {
+    "chunk_id": "design-system-ant-form-overview",
+    "record_id": "design-system-ant-form",
+    "source_name": "Ant Design",
+    "source_url": "https://ant.design/components/form/",
+    "page_type": "form",
+    "section": "overview",
+    "content": "# Ant Design - Overview\n\nPage type: form\nUse cases: enterprise form, advanced search, settings page, admin CRUD\nEvidence: direct_spec / high\nSource: https://ant.design/components/form/\n\nVisual traits:\n- structured\n- label-driven\n- validation-ready\n- enterprise\n\nUse when:\n- enterprise form\n- advanced search\n- settings page\n- admin CRUD\n\nAvoid when:\n- one-field marketing capture\n- native mobile settings\n\nAI summary: Use Ant Design Form for enterprise React forms: controlled validation, label/grid layout, disabled states, scroll-to-first-error, and compact advanced-search layouts.",
+    "tokens": 79,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "antd",
+        "form",
+        "validation",
+        "enterprise",
+        "advanced-search",
+        "settings"
+      ],
+      "negative_prompt_tags": [
+        "marketing",
+        "native-mobile"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-ant-form-layout",
+    "record_id": "design-system-ant-form",
+    "source_name": "Ant Design",
+    "source_url": "https://ant.design/components/form/",
+    "page_type": "form",
+    "section": "layout",
+    "content": "# Ant Design - Layout Rules\n\nPage type: form\nUse cases: enterprise form, advanced search, settings page, admin CRUD\nEvidence: direct_spec / high\nSource: https://ant.design/components/form/\n\n- Choose horizontal, vertical, or inline layout based on density and scanning needs.\n- Use label alignment and grid columns consistently across a page.\n- For advanced table search, use compact multi-column forms.\n\nAI summary: Use Ant Design Form for enterprise React forms: controlled validation, label/grid layout, disabled states, scroll-to-first-error, and compact advanced-search layouts.",
+    "tokens": 79,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "antd",
+        "form",
+        "validation",
+        "enterprise",
+        "advanced-search",
+        "settings"
+      ],
+      "negative_prompt_tags": [
+        "marketing",
+        "native-mobile"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-ant-form-components",
+    "record_id": "design-system-ant-form",
+    "source_name": "Ant Design",
+    "source_url": "https://ant.design/components/form/",
+    "page_type": "form",
+    "section": "components",
+    "content": "# Ant Design - Component Patterns\n\nPage type: form\nUse cases: enterprise form, advanced search, settings page, admin CRUD\nEvidence: direct_spec / high\nSource: https://ant.design/components/form/\n\n- form\n- form item\n- label\n- required mark\n- validation feedback\n- initial values\n- scroll to first error\n\nAI summary: Use Ant Design Form for enterprise React forms: controlled validation, label/grid layout, disabled states, scroll-to-first-error, and compact advanced-search layouts.",
+    "tokens": 67,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "antd",
+        "form",
+        "validation",
+        "enterprise",
+        "advanced-search",
+        "settings"
+      ],
+      "negative_prompt_tags": [
+        "marketing",
+        "native-mobile"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-ant-form-interaction",
+    "record_id": "design-system-ant-form",
+    "source_name": "Ant Design",
+    "source_url": "https://ant.design/components/form/",
+    "page_type": "form",
+    "section": "interaction",
+    "content": "# Ant Design - Interaction States\n\nPage type: form\nUse cases: enterprise form, advanced search, settings page, admin CRUD\nEvidence: direct_spec / high\nSource: https://ant.design/components/form/\n\n- validating\n- error\n- warning\n- disabled\n- reset\n- submit\n\nAI summary: Use Ant Design Form for enterprise React forms: controlled validation, label/grid layout, disabled states, scroll-to-first-error, and compact advanced-search layouts.",
+    "tokens": 58,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "antd",
+        "form",
+        "validation",
+        "enterprise",
+        "advanced-search",
+        "settings"
+      ],
+      "negative_prompt_tags": [
+        "marketing",
+        "native-mobile"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-ant-form-accessibility",
+    "record_id": "design-system-ant-form",
+    "source_name": "Ant Design",
+    "source_url": "https://ant.design/components/form/",
+    "page_type": "form",
+    "section": "accessibility",
+    "content": "# Ant Design - Accessibility Notes\n\nPage type: form\nUse cases: enterprise form, advanced search, settings page, admin CRUD\nEvidence: direct_spec / high\nSource: https://ant.design/components/form/\n\n- Keep labels and validation messages attached to their fields.\n- Use scroll-to-error behavior for long forms.\n\nAI summary: Use Ant Design Form for enterprise React forms: controlled validation, label/grid layout, disabled states, scroll-to-first-error, and compact advanced-search layouts.",
+    "tokens": 63,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "antd",
+        "form",
+        "validation",
+        "enterprise",
+        "advanced-search",
+        "settings"
+      ],
+      "negative_prompt_tags": [
+        "marketing",
+        "native-mobile"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-ant-form-implementation",
+    "record_id": "design-system-ant-form",
+    "source_name": "Ant Design",
+    "source_url": "https://ant.design/components/form/",
+    "page_type": "form",
+    "section": "implementation",
+    "content": "# Ant Design - Implementation Hints\n\nPage type: form\nUse cases: enterprise form, advanced search, settings page, admin CRUD\nEvidence: direct_spec / high\nSource: https://ant.design/components/form/\n\n- Use for React admin forms where validation and layout control are important.\n- Make required vs optional fields explicit at the form level.\n\nAI summary: Use Ant Design Form for enterprise React forms: controlled validation, label/grid layout, disabled states, scroll-to-first-error, and compact advanced-search layouts.",
+    "tokens": 70,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "antd",
+        "form",
+        "validation",
+        "enterprise",
+        "advanced-search",
+        "settings"
+      ],
+      "negative_prompt_tags": [
+        "marketing",
+        "native-mobile"
+      ]
+    }
+  }
+]

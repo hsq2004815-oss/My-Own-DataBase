@@ -1,0 +1,164 @@
+[
+  {
+    "chunk_id": "design-system-primer-blankslate-overview",
+    "record_id": "design-system-primer-blankslate",
+    "source_name": "GitHub Primer",
+    "source_url": "https://primer.style/product/components/blankslate/",
+    "page_type": "empty_state",
+    "section": "overview",
+    "content": "# GitHub Primer - Overview\n\nPage type: empty_state\nUse cases: developer tool empty state, repository feature empty, docs/product first use, no content\nEvidence: direct_spec / high\nSource: https://primer.style/product/components/blankslate/\n\nVisual traits:\n- developer-focused\n- plain\n- direct\n- actionable\n- GitHub-like\n\nUse when:\n- developer tool empty state\n- repository feature empty\n- docs/product first use\n- no content\n\nAvoid when:\n- commerce onboarding\n- luxury landing page\n- data-loading skeleton\n\nAI summary: Use Primer Blankslate for developer-product empty states: small visual, concise heading, explanatory description, and a clear creation/start action.",
+    "tokens": 90,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "primer",
+        "github",
+        "developer-tool",
+        "empty-state",
+        "blankslate",
+        "create"
+      ],
+      "negative_prompt_tags": [
+        "commerce",
+        "luxury",
+        "loading"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-primer-blankslate-layout",
+    "record_id": "design-system-primer-blankslate",
+    "source_name": "GitHub Primer",
+    "source_url": "https://primer.style/product/components/blankslate/",
+    "page_type": "empty_state",
+    "section": "layout",
+    "content": "# GitHub Primer - Layout Rules\n\nPage type: empty_state\nUse cases: developer tool empty state, repository feature empty, docs/product first use, no content\nEvidence: direct_spec / high\nSource: https://primer.style/product/components/blankslate/\n\n- Explain why content is missing in a concise heading and description.\n- Use a primary action to create or start the missing resource.\n- Use narrow or spacious variants based on surrounding density.\n\nAI summary: Use Primer Blankslate for developer-product empty states: small visual, concise heading, explanatory description, and a clear creation/start action.",
+    "tokens": 83,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "primer",
+        "github",
+        "developer-tool",
+        "empty-state",
+        "blankslate",
+        "create"
+      ],
+      "negative_prompt_tags": [
+        "commerce",
+        "luxury",
+        "loading"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-primer-blankslate-components",
+    "record_id": "design-system-primer-blankslate",
+    "source_name": "GitHub Primer",
+    "source_url": "https://primer.style/product/components/blankslate/",
+    "page_type": "empty_state",
+    "section": "components",
+    "content": "# GitHub Primer - Component Patterns\n\nPage type: empty_state\nUse cases: developer tool empty state, repository feature empty, docs/product first use, no content\nEvidence: direct_spec / high\nSource: https://primer.style/product/components/blankslate/\n\n- visual icon\n- heading\n- description\n- primary action\n- secondary action\n- narrow variant\n- spacious variant\n\nAI summary: Use Primer Blankslate for developer-product empty states: small visual, concise heading, explanatory description, and a clear creation/start action.",
+    "tokens": 68,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "primer",
+        "github",
+        "developer-tool",
+        "empty-state",
+        "blankslate",
+        "create"
+      ],
+      "negative_prompt_tags": [
+        "commerce",
+        "luxury",
+        "loading"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-primer-blankslate-interaction",
+    "record_id": "design-system-primer-blankslate",
+    "source_name": "GitHub Primer",
+    "source_url": "https://primer.style/product/components/blankslate/",
+    "page_type": "empty_state",
+    "section": "interaction",
+    "content": "# GitHub Primer - Interaction States\n\nPage type: empty_state\nUse cases: developer tool empty state, repository feature empty, docs/product first use, no content\nEvidence: direct_spec / high\nSource: https://primer.style/product/components/blankslate/\n\n- no wiki\n- no repository content\n- first creation\n- learn more\n\nAI summary: Use Primer Blankslate for developer-product empty states: small visual, concise heading, explanatory description, and a clear creation/start action.",
+    "tokens": 62,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "primer",
+        "github",
+        "developer-tool",
+        "empty-state",
+        "blankslate",
+        "create"
+      ],
+      "negative_prompt_tags": [
+        "commerce",
+        "luxury",
+        "loading"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-primer-blankslate-accessibility",
+    "record_id": "design-system-primer-blankslate",
+    "source_name": "GitHub Primer",
+    "source_url": "https://primer.style/product/components/blankslate/",
+    "page_type": "empty_state",
+    "section": "accessibility",
+    "content": "# GitHub Primer - Accessibility Notes\n\nPage type: empty_state\nUse cases: developer tool empty state, repository feature empty, docs/product first use, no content\nEvidence: direct_spec / high\nSource: https://primer.style/product/components/blankslate/\n\n- The action should be an actual link or button with clear text.\n- The visual icon should support the message, not replace text.\n\nAI summary: Use Primer Blankslate for developer-product empty states: small visual, concise heading, explanatory description, and a clear creation/start action.",
+    "tokens": 73,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "primer",
+        "github",
+        "developer-tool",
+        "empty-state",
+        "blankslate",
+        "create"
+      ],
+      "negative_prompt_tags": [
+        "commerce",
+        "luxury",
+        "loading"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-primer-blankslate-implementation",
+    "record_id": "design-system-primer-blankslate",
+    "source_name": "GitHub Primer",
+    "source_url": "https://primer.style/product/components/blankslate/",
+    "page_type": "empty_state",
+    "section": "implementation",
+    "content": "# GitHub Primer - Implementation Hints\n\nPage type: empty_state\nUse cases: developer tool empty state, repository feature empty, docs/product first use, no content\nEvidence: direct_spec / high\nSource: https://primer.style/product/components/blankslate/\n\n- Use for developer tools and GitHub-like product surfaces.\n- Keep copy utilitarian and avoid excessive illustration.\n\nAI summary: Use Primer Blankslate for developer-product empty states: small visual, concise heading, explanatory description, and a clear creation/start action.",
+    "tokens": 66,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "primer",
+        "github",
+        "developer-tool",
+        "empty-state",
+        "blankslate",
+        "create"
+      ],
+      "negative_prompt_tags": [
+        "commerce",
+        "luxury",
+        "loading"
+      ]
+    }
+  }
+]

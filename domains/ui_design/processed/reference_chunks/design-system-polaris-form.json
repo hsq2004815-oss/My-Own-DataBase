@@ -1,0 +1,164 @@
+[
+  {
+    "chunk_id": "design-system-polaris-form-overview",
+    "record_id": "design-system-polaris-form",
+    "source_name": "Shopify Polaris",
+    "source_url": "https://polaris-react.shopify.com/components/selection-and-input/form",
+    "page_type": "form",
+    "section": "overview",
+    "content": "# Shopify Polaris - Overview\n\nPage type: form\nUse cases: merchant settings, commerce admin, newsletter signup, configuration form\nEvidence: direct_spec / high\nSource: https://polaris-react.shopify.com/components/selection-and-input/form\n\nVisual traits:\n- practical\n- clear\n- business-oriented\n- structured\n\nUse when:\n- merchant settings\n- commerce admin\n- newsletter signup\n- configuration form\n\nAvoid when:\n- multi-step wizard\n- freeform canvas\n- marketing signup hero only\n\nAI summary: Use Polaris form patterns for merchant/admin settings: native form semantics, standard spacing, clear help text, one submit action, and intentional keyboard submit behavior.",
+    "tokens": 86,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "form",
+        "commerce",
+        "settings",
+        "admin",
+        "submit",
+        "help-text"
+      ],
+      "negative_prompt_tags": [
+        "wizard",
+        "canvas",
+        "multiple-submit"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-polaris-form-layout",
+    "record_id": "design-system-polaris-form",
+    "source_name": "Shopify Polaris",
+    "source_url": "https://polaris-react.shopify.com/components/selection-and-input/form",
+    "page_type": "form",
+    "section": "layout",
+    "content": "# Shopify Polaris - Layout Rules\n\nPage type: form\nUse cases: merchant settings, commerce admin, newsletter signup, configuration form\nEvidence: direct_spec / high\nSource: https://polaris-react.shopify.com/components/selection-and-input/form\n\n- Wrap related inputs in a form and use standard form layout spacing.\n- Keep one true submit action at the end of the form.\n- Use help text when it changes user confidence or prevents mistakes.\n\nAI summary: Use Polaris form patterns for merchant/admin settings: native form semantics, standard spacing, clear help text, one submit action, and intentional keyboard submit behavior.",
+    "tokens": 87,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "form",
+        "commerce",
+        "settings",
+        "admin",
+        "submit",
+        "help-text"
+      ],
+      "negative_prompt_tags": [
+        "wizard",
+        "canvas",
+        "multiple-submit"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-polaris-form-components",
+    "record_id": "design-system-polaris-form",
+    "source_name": "Shopify Polaris",
+    "source_url": "https://polaris-react.shopify.com/components/selection-and-input/form",
+    "page_type": "form",
+    "section": "components",
+    "content": "# Shopify Polaris - Component Patterns\n\nPage type: form\nUse cases: merchant settings, commerce admin, newsletter signup, configuration form\nEvidence: direct_spec / high\nSource: https://polaris-react.shopify.com/components/selection-and-input/form\n\n- form\n- form layout\n- checkbox\n- text field\n- submit button\n- help text\n\nAI summary: Use Polaris form patterns for merchant/admin settings: native form semantics, standard spacing, clear help text, one submit action, and intentional keyboard submit behavior.",
+    "tokens": 66,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "form",
+        "commerce",
+        "settings",
+        "admin",
+        "submit",
+        "help-text"
+      ],
+      "negative_prompt_tags": [
+        "wizard",
+        "canvas",
+        "multiple-submit"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-polaris-form-interaction",
+    "record_id": "design-system-polaris-form",
+    "source_name": "Shopify Polaris",
+    "source_url": "https://polaris-react.shopify.com/components/selection-and-input/form",
+    "page_type": "form",
+    "section": "interaction",
+    "content": "# Shopify Polaris - Interaction States\n\nPage type: form\nUse cases: merchant settings, commerce admin, newsletter signup, configuration form\nEvidence: direct_spec / high\nSource: https://polaris-react.shopify.com/components/selection-and-input/form\n\n- submit\n- implicit enter submit\n- validation\n- reset\n- disabled\n\nAI summary: Use Polaris form patterns for merchant/admin settings: native form semantics, standard spacing, clear help text, one submit action, and intentional keyboard submit behavior.",
+    "tokens": 62,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "form",
+        "commerce",
+        "settings",
+        "admin",
+        "submit",
+        "help-text"
+      ],
+      "negative_prompt_tags": [
+        "wizard",
+        "canvas",
+        "multiple-submit"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-polaris-form-accessibility",
+    "record_id": "design-system-polaris-form",
+    "source_name": "Shopify Polaris",
+    "source_url": "https://polaris-react.shopify.com/components/selection-and-input/form",
+    "page_type": "form",
+    "section": "accessibility",
+    "content": "# Shopify Polaris - Accessibility Notes\n\nPage type: form\nUse cases: merchant settings, commerce admin, newsletter signup, configuration form\nEvidence: direct_spec / high\nSource: https://polaris-react.shopify.com/components/selection-and-input/form\n\n- Use the native form element behavior where possible.\n- Make keyboard submit behavior intentional; disable implicit submit only when it conflicts with the workflow.\n\nAI summary: Use Polaris form patterns for merchant/admin settings: native form semantics, standard spacing, clear help text, one submit action, and intentional keyboard submit behavior.",
+    "tokens": 75,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "form",
+        "commerce",
+        "settings",
+        "admin",
+        "submit",
+        "help-text"
+      ],
+      "negative_prompt_tags": [
+        "wizard",
+        "canvas",
+        "multiple-submit"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-polaris-form-implementation",
+    "record_id": "design-system-polaris-form",
+    "source_name": "Shopify Polaris",
+    "source_url": "https://polaris-react.shopify.com/components/selection-and-input/form",
+    "page_type": "form",
+    "section": "implementation",
+    "content": "# Shopify Polaris - Implementation Hints\n\nPage type: form\nUse cases: merchant settings, commerce admin, newsletter signup, configuration form\nEvidence: direct_spec / high\nSource: https://polaris-react.shopify.com/components/selection-and-input/form\n\n- Use for commerce/admin settings where predictable form behavior matters.\n- Do not scatter submit buttons; keep the main submit action clear and late in the flow.\n\nAI summary: Use Polaris form patterns for merchant/admin settings: native form semantics, standard spacing, clear help text, one submit action, and intentional keyboard submit behavior.",
+    "tokens": 77,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "form",
+        "commerce",
+        "settings",
+        "admin",
+        "submit",
+        "help-text"
+      ],
+      "negative_prompt_tags": [
+        "wizard",
+        "canvas",
+        "multiple-submit"
+      ]
+    }
+  }
+]

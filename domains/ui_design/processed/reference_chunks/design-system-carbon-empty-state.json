@@ -1,0 +1,164 @@
+[
+  {
+    "chunk_id": "design-system-carbon-empty-state-overview",
+    "record_id": "design-system-carbon-empty-state",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://v10.carbondesignsystem.com/patterns/empty-states-pattern/",
+    "page_type": "empty_state",
+    "section": "overview",
+    "content": "# IBM Carbon Design System - Overview\n\nPage type: empty_state\nUse cases: dashboard empty state, admin list with no data, first run, no search results\nEvidence: direct_spec / high\nSource: https://v10.carbondesignsystem.com/patterns/empty-states-pattern/\n\nVisual traits:\n- calm\n- explanatory\n- action-oriented\n- supportive\n\nUse when:\n- dashboard empty state\n- admin list with no data\n- first run\n- no search results\n\nAvoid when:\n- hard error\n- loading state\n- success confirmation\n\nAI summary: Use Carbon empty-state patterns to explain missing data, distinguish the cause, and offer a clear next action without making the user feel blocked or blamed.",
+    "tokens": 98,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "empty-state",
+        "no-data",
+        "dashboard",
+        "admin",
+        "first-run",
+        "guidance"
+      ],
+      "negative_prompt_tags": [
+        "error",
+        "loading",
+        "spinner-only"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-carbon-empty-state-layout",
+    "record_id": "design-system-carbon-empty-state",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://v10.carbondesignsystem.com/patterns/empty-states-pattern/",
+    "page_type": "empty_state",
+    "section": "layout",
+    "content": "# IBM Carbon Design System - Layout Rules\n\nPage type: empty_state\nUse cases: dashboard empty state, admin list with no data, first run, no search results\nEvidence: direct_spec / high\nSource: https://v10.carbondesignsystem.com/patterns/empty-states-pattern/\n\n- Explain why content is missing and what normally appears there.\n- Provide a next action when the user can recover or start.\n- Keep the empty state visually subordinate to the surrounding product shell.\n\nAI summary: Use Carbon empty-state patterns to explain missing data, distinguish the cause, and offer a clear next action without making the user feel blocked or blamed.",
+    "tokens": 94,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "empty-state",
+        "no-data",
+        "dashboard",
+        "admin",
+        "first-run",
+        "guidance"
+      ],
+      "negative_prompt_tags": [
+        "error",
+        "loading",
+        "spinner-only"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-carbon-empty-state-components",
+    "record_id": "design-system-carbon-empty-state",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://v10.carbondesignsystem.com/patterns/empty-states-pattern/",
+    "page_type": "empty_state",
+    "section": "components",
+    "content": "# IBM Carbon Design System - Component Patterns\n\nPage type: empty_state\nUse cases: dashboard empty state, admin list with no data, first run, no search results\nEvidence: direct_spec / high\nSource: https://v10.carbondesignsystem.com/patterns/empty-states-pattern/\n\n- illustration\n- heading\n- body explanation\n- primary action\n- secondary link\n\nAI summary: Use Carbon empty-state patterns to explain missing data, distinguish the cause, and offer a clear next action without making the user feel blocked or blamed.",
+    "tokens": 72,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "empty-state",
+        "no-data",
+        "dashboard",
+        "admin",
+        "first-run",
+        "guidance"
+      ],
+      "negative_prompt_tags": [
+        "error",
+        "loading",
+        "spinner-only"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-carbon-empty-state-interaction",
+    "record_id": "design-system-carbon-empty-state",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://v10.carbondesignsystem.com/patterns/empty-states-pattern/",
+    "page_type": "empty_state",
+    "section": "interaction",
+    "content": "# IBM Carbon Design System - Interaction States\n\nPage type: empty_state\nUse cases: dashboard empty state, admin list with no data, first run, no search results\nEvidence: direct_spec / high\nSource: https://v10.carbondesignsystem.com/patterns/empty-states-pattern/\n\n- first use\n- no results\n- permission-limited\n- cleared data\n\nAI summary: Use Carbon empty-state patterns to explain missing data, distinguish the cause, and offer a clear next action without making the user feel blocked or blamed.",
+    "tokens": 70,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "empty-state",
+        "no-data",
+        "dashboard",
+        "admin",
+        "first-run",
+        "guidance"
+      ],
+      "negative_prompt_tags": [
+        "error",
+        "loading",
+        "spinner-only"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-carbon-empty-state-accessibility",
+    "record_id": "design-system-carbon-empty-state",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://v10.carbondesignsystem.com/patterns/empty-states-pattern/",
+    "page_type": "empty_state",
+    "section": "accessibility",
+    "content": "# IBM Carbon Design System - Accessibility Notes\n\nPage type: empty_state\nUse cases: dashboard empty state, admin list with no data, first run, no search results\nEvidence: direct_spec / high\nSource: https://v10.carbondesignsystem.com/patterns/empty-states-pattern/\n\n- Do not rely on illustration alone to communicate the state.\n- Make the action button text specific and reachable by keyboard.\n\nAI summary: Use Carbon empty-state patterns to explain missing data, distinguish the cause, and offer a clear next action without making the user feel blocked or blamed.",
+    "tokens": 81,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "empty-state",
+        "no-data",
+        "dashboard",
+        "admin",
+        "first-run",
+        "guidance"
+      ],
+      "negative_prompt_tags": [
+        "error",
+        "loading",
+        "spinner-only"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-carbon-empty-state-implementation",
+    "record_id": "design-system-carbon-empty-state",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://v10.carbondesignsystem.com/patterns/empty-states-pattern/",
+    "page_type": "empty_state",
+    "section": "implementation",
+    "content": "# IBM Carbon Design System - Implementation Hints\n\nPage type: empty_state\nUse cases: dashboard empty state, admin list with no data, first run, no search results\nEvidence: direct_spec / high\nSource: https://v10.carbondesignsystem.com/patterns/empty-states-pattern/\n\n- Use empty states as product guidance, not just decoration.\n- Differentiate empty because new, empty because filtered, and empty because error.\n\nAI summary: Use Carbon empty-state patterns to explain missing data, distinguish the cause, and offer a clear next action without making the user feel blocked or blamed.",
+    "tokens": 81,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "empty-state",
+        "no-data",
+        "dashboard",
+        "admin",
+        "first-run",
+        "guidance"
+      ],
+      "negative_prompt_tags": [
+        "error",
+        "loading",
+        "spinner-only"
+      ]
+    }
+  }
+]

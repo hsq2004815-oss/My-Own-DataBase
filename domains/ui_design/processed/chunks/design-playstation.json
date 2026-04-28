@@ -1,0 +1,72 @@
+[
+  {
+    "chunk_id": "design-playstation-chunk-1",
+    "file_id": "design-playstation",
+    "content": "# PlayStation Design System - Brand Style\n\n**Category**: Media & Consumer Tech\n**Description**: Gaming console retail. Three-surface channel layout, cyan hover-scale interaction\n**Source**: https://getdesign.md/playstation/design-md\n\n**Note**: 源文件包含设计系统描述。\n\n## Design Philosophy\nGaming console retail. Three-surface channel layout, cyan hover-scale interaction",
+    "tokens": 90,
+    "metadata": {
+      "section": "brand_style",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-playstation-chunk-2",
+    "file_id": "design-playstation",
+    "content": "# PlayStation Design System - Color Palette\n\n**Colors mentioned**: cyan\n\n**Description**: Gaming console retail. Three-surface channel layout, cyan hover-scale interaction\n\n**Note**: 源文件可能包含具体色值。",
+    "tokens": 49,
+    "metadata": {
+      "section": "color_palette",
+      "has_colors": true,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-playstation-chunk-3",
+    "file_id": "design-playstation",
+    "content": "# PlayStation Design System - Typography\n\n**Information不足**: 源文件未提供具体排版信息。\n\n**Description**: Gaming console retail. Three-surface channel layout, cyan hover-scale interaction\n\n**Note**: 源文件未包含排版细节。",
+    "tokens": 50,
+    "metadata": {
+      "section": "typography",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-playstation-chunk-4",
+    "file_id": "design-playstation",
+    "content": "# PlayStation Design System - Layout Principles\n\n**Layout mentioned**: layout, channel, surface\n\n**Description**: Gaming console retail. Three-surface channel layout, cyan hover-scale interaction\n\n**Note**: 源文件可能包含布局细节。",
+    "tokens": 55,
+    "metadata": {
+      "section": "layout",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": true,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-playstation-chunk-5",
+    "file_id": "design-playstation",
+    "content": "# PlayStation Design System - Components & Interaction\n\n**Components mentioned**: interaction, hover, scale\n\n**Description**: Gaming console retail. Three-surface channel layout, cyan hover-scale interaction\n\n**Note**: 源文件可能包含组件细节。",
+    "tokens": 58,
+    "metadata": {
+      "section": "components",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": true,
+      "info_sufficient": true
+    }
+  }
+]

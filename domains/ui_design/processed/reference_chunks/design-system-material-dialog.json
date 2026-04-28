@@ -1,0 +1,164 @@
+[
+  {
+    "chunk_id": "design-system-material-dialog-overview",
+    "record_id": "design-system-material-dialog",
+    "source_name": "Material Design 3",
+    "source_url": "https://m3.material.io/components/dialogs/overview",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# Material Design 3 - Overview\n\nPage type: component_pattern\nUse cases: confirmation, destructive action, focused decision, short form modal\nEvidence: direct_spec / medium\nSource: https://m3.material.io/components/dialogs/overview\n\nVisual traits:\n- modal\n- focused\n- surface elevation\n- decision-oriented\n\nUse when:\n- confirmation\n- destructive action\n- focused decision\n- short form modal\n\nAvoid when:\n- long multi-step flow\n- large data table\n- passive notification\n\nAI summary: Use Material dialog patterns for short blocking decisions: focused surface, specific title/action labels, brief content, focus trapping, and clear confirm/cancel behavior.",
+    "tokens": 86,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "material",
+        "dialog",
+        "modal",
+        "confirmation",
+        "focus",
+        "mobile"
+      ],
+      "negative_prompt_tags": [
+        "long-flow",
+        "data-table",
+        "passive-toast"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-material-dialog-layout",
+    "record_id": "design-system-material-dialog",
+    "source_name": "Material Design 3",
+    "source_url": "https://m3.material.io/components/dialogs/overview",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# Material Design 3 - Layout Rules\n\nPage type: component_pattern\nUse cases: confirmation, destructive action, focused decision, short form modal\nEvidence: direct_spec / medium\nSource: https://m3.material.io/components/dialogs/overview\n\n- Use dialogs for short blocking decisions, not for long workflows.\n- Make the title and action labels specific to the decision.\n- Keep content brief and avoid nesting complex navigation inside a dialog.\n\nAI summary: Use Material dialog patterns for short blocking decisions: focused surface, specific title/action labels, brief content, focus trapping, and clear confirm/cancel behavior.",
+    "tokens": 83,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "material",
+        "dialog",
+        "modal",
+        "confirmation",
+        "focus",
+        "mobile"
+      ],
+      "negative_prompt_tags": [
+        "long-flow",
+        "data-table",
+        "passive-toast"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-material-dialog-components",
+    "record_id": "design-system-material-dialog",
+    "source_name": "Material Design 3",
+    "source_url": "https://m3.material.io/components/dialogs/overview",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# Material Design 3 - Component Patterns\n\nPage type: component_pattern\nUse cases: confirmation, destructive action, focused decision, short form modal\nEvidence: direct_spec / medium\nSource: https://m3.material.io/components/dialogs/overview\n\n- dialog surface\n- title\n- supporting text\n- actions\n- scrim\n- focus trap\n\nAI summary: Use Material dialog patterns for short blocking decisions: focused surface, specific title/action labels, brief content, focus trapping, and clear confirm/cancel behavior.",
+    "tokens": 64,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "material",
+        "dialog",
+        "modal",
+        "confirmation",
+        "focus",
+        "mobile"
+      ],
+      "negative_prompt_tags": [
+        "long-flow",
+        "data-table",
+        "passive-toast"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-material-dialog-interaction",
+    "record_id": "design-system-material-dialog",
+    "source_name": "Material Design 3",
+    "source_url": "https://m3.material.io/components/dialogs/overview",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# Material Design 3 - Interaction States\n\nPage type: component_pattern\nUse cases: confirmation, destructive action, focused decision, short form modal\nEvidence: direct_spec / medium\nSource: https://m3.material.io/components/dialogs/overview\n\n- open\n- dismiss\n- confirm\n- cancel\n- destructive\n- focus trapped\n\nAI summary: Use Material dialog patterns for short blocking decisions: focused surface, specific title/action labels, brief content, focus trapping, and clear confirm/cancel behavior.",
+    "tokens": 62,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "material",
+        "dialog",
+        "modal",
+        "confirmation",
+        "focus",
+        "mobile"
+      ],
+      "negative_prompt_tags": [
+        "long-flow",
+        "data-table",
+        "passive-toast"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-material-dialog-accessibility",
+    "record_id": "design-system-material-dialog",
+    "source_name": "Material Design 3",
+    "source_url": "https://m3.material.io/components/dialogs/overview",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# Material Design 3 - Accessibility Notes\n\nPage type: component_pattern\nUse cases: confirmation, destructive action, focused decision, short form modal\nEvidence: direct_spec / medium\nSource: https://m3.material.io/components/dialogs/overview\n\n- Trap focus while open and return focus to the trigger on close.\n- Use semantic labels and clear keyboard dismissal behavior.\n\nAI summary: Use Material dialog patterns for short blocking decisions: focused surface, specific title/action labels, brief content, focus trapping, and clear confirm/cancel behavior.",
+    "tokens": 71,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "material",
+        "dialog",
+        "modal",
+        "confirmation",
+        "focus",
+        "mobile"
+      ],
+      "negative_prompt_tags": [
+        "long-flow",
+        "data-table",
+        "passive-toast"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-material-dialog-implementation",
+    "record_id": "design-system-material-dialog",
+    "source_name": "Material Design 3",
+    "source_url": "https://m3.material.io/components/dialogs/overview",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# Material Design 3 - Implementation Hints\n\nPage type: component_pattern\nUse cases: confirmation, destructive action, focused decision, short form modal\nEvidence: direct_spec / medium\nSource: https://m3.material.io/components/dialogs/overview\n\n- Use for confirmations and small decisions in mobile/web apps.\n- Do not use a modal when inline editing or a dedicated page would be clearer.\n\nAI summary: Use Material dialog patterns for short blocking decisions: focused surface, specific title/action labels, brief content, focus trapping, and clear confirm/cancel behavior.",
+    "tokens": 75,
+    "metadata": {
+      "signal_strength": "medium",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "material",
+        "dialog",
+        "modal",
+        "confirmation",
+        "focus",
+        "mobile"
+      ],
+      "negative_prompt_tags": [
+        "long-flow",
+        "data-table",
+        "passive-toast"
+      ]
+    }
+  }
+]

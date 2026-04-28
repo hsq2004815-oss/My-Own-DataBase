@@ -1,0 +1,198 @@
+[
+  {
+    "chunk_id": "chrome-remote-debugging-security-boundary-overview",
+    "record_id": "chrome-remote-debugging-security-boundary",
+    "automation_type": "safety_protocol",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "overview",
+    "content": "# chrome-remote-debugging-security-boundary - Overview\n\nAutomation type: safety_protocol\nTooling: Chrome, Edge, CDP\nGoal: Prevent remote debugging from becoming a local security risk.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\nWhen to use:\n- Launching Chrome with remote debugging\n- Agent controls browser\n- Sensitive logged-in websites\n\nInputs required:\n- Port\n- Binding address\n- Browser profile\n- Task scope\n\nAI summary: CDP is powerful browser control. Bind remote debugging to 127.0.0.1, use dedicated profiles where possible, never expose the WebSocket endpoint, and stop before irreversible actions.",
+    "tokens": 84,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "security",
+        "remote-debugging",
+        "localhost",
+        "safety",
+        "irreversible"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-remote-debugging-security-boundary-steps",
+    "record_id": "chrome-remote-debugging-security-boundary",
+    "automation_type": "safety_protocol",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "steps",
+    "content": "# chrome-remote-debugging-security-boundary - Execution Steps\n\nAutomation type: safety_protocol\nTooling: Chrome, Edge, CDP\nGoal: Prevent remote debugging from becoming a local security risk.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- Bind to localhost only.\n- Use a dedicated automation profile when possible.\n- Avoid leaving remote debugging browser open after task.\n- Do not share WebSocket endpoint or expose port through firewall/tunnel.\n- Pause before destructive actions, purchases, deletes, or publishing.\n\nAI summary: CDP is powerful browser control. Bind remote debugging to 127.0.0.1, use dedicated profiles where possible, never expose the WebSocket endpoint, and stop before irreversible actions.",
+    "tokens": 97,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "security",
+        "remote-debugging",
+        "localhost",
+        "safety",
+        "irreversible"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-remote-debugging-security-boundary-commands",
+    "record_id": "chrome-remote-debugging-security-boundary",
+    "automation_type": "safety_protocol",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "commands",
+    "content": "# chrome-remote-debugging-security-boundary - Commands or APIs\n\nAutomation type: safety_protocol\nTooling: Chrome, Edge, CDP\nGoal: Prevent remote debugging from becoming a local security risk.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- --remote-debugging-address=127.0.0.1\n- netstat / Get-NetTCPConnection to verify listener\n- Stop browser/process after task\n\nAI summary: CDP is powerful browser control. Bind remote debugging to 127.0.0.1, use dedicated profiles where possible, never expose the WebSocket endpoint, and stop before irreversible actions.",
+    "tokens": 70,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "security",
+        "remote-debugging",
+        "localhost",
+        "safety",
+        "irreversible"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-remote-debugging-security-boundary-verification",
+    "record_id": "chrome-remote-debugging-security-boundary",
+    "automation_type": "safety_protocol",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "verification",
+    "content": "# chrome-remote-debugging-security-boundary - Verification\n\nAutomation type: safety_protocol\nTooling: Chrome, Edge, CDP\nGoal: Prevent remote debugging from becoming a local security risk.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- Port only listens locally\n- No unattended debug browser remains\n- Dangerous actions are confirmed\n\nAI summary: CDP is powerful browser control. Bind remote debugging to 127.0.0.1, use dedicated profiles where possible, never expose the WebSocket endpoint, and stop before irreversible actions.",
+    "tokens": 70,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "security",
+        "remote-debugging",
+        "localhost",
+        "safety",
+        "irreversible"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-remote-debugging-security-boundary-failure_modes",
+    "record_id": "chrome-remote-debugging-security-boundary",
+    "automation_type": "safety_protocol",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "failure_modes",
+    "content": "# chrome-remote-debugging-security-boundary - Failure Modes\n\nAutomation type: safety_protocol\nTooling: Chrome, Edge, CDP\nGoal: Prevent remote debugging from becoming a local security risk.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- Debug port exposed\n- Wrong website/account controlled\n- Credentials visible in logs/screenshots\n- Unconfirmed irreversible action\n\nAI summary: CDP is powerful browser control. Bind remote debugging to 127.0.0.1, use dedicated profiles where possible, never expose the WebSocket endpoint, and stop before irreversible actions.",
+    "tokens": 72,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "security",
+        "remote-debugging",
+        "localhost",
+        "safety",
+        "irreversible"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-remote-debugging-security-boundary-safety",
+    "record_id": "chrome-remote-debugging-security-boundary",
+    "automation_type": "safety_protocol",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "safety",
+    "content": "# chrome-remote-debugging-security-boundary - Safety Notes\n\nAutomation type: safety_protocol\nTooling: Chrome, Edge, CDP\nGoal: Prevent remote debugging from becoming a local security risk.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- Treat CDP as high privilege browser control.\n- Never expose debug port publicly.\n- Do not automate payments/deletion/publishing without explicit confirmation.\n\nAI summary: CDP is powerful browser control. Bind remote debugging to 127.0.0.1, use dedicated profiles where possible, never expose the WebSocket endpoint, and stop before irreversible actions.",
+    "tokens": 77,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "security",
+        "remote-debugging",
+        "localhost",
+        "safety",
+        "irreversible"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-remote-debugging-security-boundary-handoff",
+    "record_id": "chrome-remote-debugging-security-boundary",
+    "automation_type": "safety_protocol",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "handoff",
+    "content": "# chrome-remote-debugging-security-boundary - Handoff Report\n\nAutomation type: safety_protocol\nTooling: Chrome, Edge, CDP\nGoal: Prevent remote debugging from becoming a local security risk.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- Debug address\n- Profile\n- Scope\n- Safety stops\n- Shutdown evidence\n\nAI summary: CDP is powerful browser control. Bind remote debugging to 127.0.0.1, use dedicated profiles where possible, never expose the WebSocket endpoint, and stop before irreversible actions.",
+    "tokens": 68,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "security",
+        "remote-debugging",
+        "localhost",
+        "safety",
+        "irreversible"
+      ],
+      "negative_prompt_tags": []
+    }
+  }
+]

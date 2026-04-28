@@ -1,0 +1,176 @@
+[
+  {
+    "chunk_id": "design-system-carbon-data-table-overview",
+    "record_id": "design-system-carbon-data-table",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://carbondesignsystem.com/",
+    "page_type": "data_table",
+    "section": "overview",
+    "content": "# IBM Carbon Design System - Overview\n\nPage type: data_table\nUse cases: enterprise dashboard, admin panel, data management, audit logs\nEvidence: direct_spec / high\nSource: https://carbondesignsystem.com/\n\nVisual traits:\n- neutral palette\n- high information density\n- clear hierarchy\n- systematic spacing\n\nUse when:\n- enterprise dashboard\n- admin panel\n- data management\n- audit logs\n\nAvoid when:\n- luxury landing page\n- emotion-driven consumer campaign\n- highly editorial brand page\n\nAI summary: Use Carbon-style patterns for dense enterprise data tables: neutral palette, strong alignment, toolbar/filter locality, accessible row states, and explicit empty/loading/error handling.",
+    "tokens": 93,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "enterprise",
+        "data-table",
+        "admin",
+        "dashboard",
+        "filters",
+        "pagination",
+        "accessibility"
+      ],
+      "negative_prompt_tags": [
+        "flashy",
+        "marketing",
+        "luxury",
+        "experimental"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-carbon-data-table-layout",
+    "record_id": "design-system-carbon-data-table",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://carbondesignsystem.com/",
+    "page_type": "data_table",
+    "section": "layout",
+    "content": "# IBM Carbon Design System - Layout Rules\n\nPage type: data_table\nUse cases: enterprise dashboard, admin panel, data management, audit logs\nEvidence: direct_spec / high\nSource: https://carbondesignsystem.com/\n\n- Place table actions and filters close to the table they affect.\n- Keep primary actions visually distinct from secondary batch actions.\n- Use persistent column labels and predictable row alignment for scannability.\n\nAI summary: Use Carbon-style patterns for dense enterprise data tables: neutral palette, strong alignment, toolbar/filter locality, accessible row states, and explicit empty/loading/error handling.",
+    "tokens": 83,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "enterprise",
+        "data-table",
+        "admin",
+        "dashboard",
+        "filters",
+        "pagination",
+        "accessibility"
+      ],
+      "negative_prompt_tags": [
+        "flashy",
+        "marketing",
+        "luxury",
+        "experimental"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-carbon-data-table-components",
+    "record_id": "design-system-carbon-data-table",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://carbondesignsystem.com/",
+    "page_type": "data_table",
+    "section": "components",
+    "content": "# IBM Carbon Design System - Component Patterns\n\nPage type: data_table\nUse cases: enterprise dashboard, admin panel, data management, audit logs\nEvidence: direct_spec / high\nSource: https://carbondesignsystem.com/\n\n- toolbar\n- filter controls\n- sortable columns\n- row selection\n- pagination\n- empty state\n- loading state\n\nAI summary: Use Carbon-style patterns for dense enterprise data tables: neutral palette, strong alignment, toolbar/filter locality, accessible row states, and explicit empty/loading/error handling.",
+    "tokens": 69,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "enterprise",
+        "data-table",
+        "admin",
+        "dashboard",
+        "filters",
+        "pagination",
+        "accessibility"
+      ],
+      "negative_prompt_tags": [
+        "flashy",
+        "marketing",
+        "luxury",
+        "experimental"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-carbon-data-table-interaction",
+    "record_id": "design-system-carbon-data-table",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://carbondesignsystem.com/",
+    "page_type": "data_table",
+    "section": "interaction",
+    "content": "# IBM Carbon Design System - Interaction States\n\nPage type: data_table\nUse cases: enterprise dashboard, admin panel, data management, audit logs\nEvidence: direct_spec / high\nSource: https://carbondesignsystem.com/\n\n- hover row\n- selected row\n- loading\n- empty\n- error\n- disabled action\n\nAI summary: Use Carbon-style patterns for dense enterprise data tables: neutral palette, strong alignment, toolbar/filter locality, accessible row states, and explicit empty/loading/error handling.",
+    "tokens": 65,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "enterprise",
+        "data-table",
+        "admin",
+        "dashboard",
+        "filters",
+        "pagination",
+        "accessibility"
+      ],
+      "negative_prompt_tags": [
+        "flashy",
+        "marketing",
+        "luxury",
+        "experimental"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-carbon-data-table-accessibility",
+    "record_id": "design-system-carbon-data-table",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://carbondesignsystem.com/",
+    "page_type": "data_table",
+    "section": "accessibility",
+    "content": "# IBM Carbon Design System - Accessibility Notes\n\nPage type: data_table\nUse cases: enterprise dashboard, admin panel, data management, audit logs\nEvidence: direct_spec / high\nSource: https://carbondesignsystem.com/\n\n- Keyboard navigation and visible focus states are required for dense data surfaces.\n- Status, sorting, and selection should not rely on color alone.\n\nAI summary: Use Carbon-style patterns for dense enterprise data tables: neutral palette, strong alignment, toolbar/filter locality, accessible row states, and explicit empty/loading/error handling.",
+    "tokens": 74,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "enterprise",
+        "data-table",
+        "admin",
+        "dashboard",
+        "filters",
+        "pagination",
+        "accessibility"
+      ],
+      "negative_prompt_tags": [
+        "flashy",
+        "marketing",
+        "luxury",
+        "experimental"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-carbon-data-table-implementation",
+    "record_id": "design-system-carbon-data-table",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://carbondesignsystem.com/",
+    "page_type": "data_table",
+    "section": "implementation",
+    "content": "# IBM Carbon Design System - Implementation Hints\n\nPage type: data_table\nUse cases: enterprise dashboard, admin panel, data management, audit logs\nEvidence: direct_spec / high\nSource: https://carbondesignsystem.com/\n\n- Use when the user asks for serious B2B, admin, analytics, or enterprise UI.\n- Favor restraint over decorative gradients on data-heavy pages.\n- Expose empty/error/loading states in code, not only the happy path.\n\nAI summary: Use Carbon-style patterns for dense enterprise data tables: neutral palette, strong alignment, toolbar/filter locality, accessible row states, and explicit empty/loading/error handling.",
+    "tokens": 84,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "enterprise",
+        "data-table",
+        "admin",
+        "dashboard",
+        "filters",
+        "pagination",
+        "accessibility"
+      ],
+      "negative_prompt_tags": [
+        "flashy",
+        "marketing",
+        "luxury",
+        "experimental"
+      ]
+    }
+  }
+]

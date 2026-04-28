@@ -1,0 +1,79 @@
+{
+  "record_id": "design-system-carbon-empty-state",
+  "source": {
+    "name": "IBM Carbon Design System",
+    "url": "https://v10.carbondesignsystem.com/patterns/empty-states-pattern/",
+    "source_type": "official_design_system",
+    "license_notes": "Use source links and summarized guidance only; do not copy full documentation verbatim.",
+    "captured_at": "2026-04-24"
+  },
+  "domain": "ui_design",
+  "page_type": "empty_state",
+  "platform": [
+    "web"
+  ],
+  "use_cases": [
+    "dashboard empty state",
+    "admin list with no data",
+    "first run",
+    "no search results"
+  ],
+  "visual_traits": [
+    "calm",
+    "explanatory",
+    "action-oriented",
+    "supportive"
+  ],
+  "layout_rules": [
+    "Explain why content is missing and what normally appears there.",
+    "Provide a next action when the user can recover or start.",
+    "Keep the empty state visually subordinate to the surrounding product shell."
+  ],
+  "component_patterns": [
+    "illustration",
+    "heading",
+    "body explanation",
+    "primary action",
+    "secondary link"
+  ],
+  "interaction_states": [
+    "first use",
+    "no results",
+    "permission-limited",
+    "cleared data"
+  ],
+  "accessibility_notes": [
+    "Do not rely on illustration alone to communicate the state.",
+    "Make the action button text specific and reachable by keyboard."
+  ],
+  "implementation_hints": [
+    "Use empty states as product guidance, not just decoration.",
+    "Differentiate empty because new, empty because filtered, and empty because error."
+  ],
+  "avoid_when": [
+    "hard error",
+    "loading state",
+    "success confirmation"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "direct_spec",
+    "notes": "Official Carbon empty-state pattern summarized."
+  },
+  "retrieval": {
+    "ai_summary": "Use Carbon empty-state patterns to explain missing data, distinguish the cause, and offer a clear next action without making the user feel blocked or blamed.",
+    "prompt_tags": [
+      "empty-state",
+      "no-data",
+      "dashboard",
+      "admin",
+      "first-run",
+      "guidance"
+    ],
+    "negative_prompt_tags": [
+      "error",
+      "loading",
+      "spinner-only"
+    ]
+  }
+}

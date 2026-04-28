@@ -1,0 +1,170 @@
+[
+  {
+    "chunk_id": "design-system-ant-table-overview",
+    "record_id": "design-system-ant-table",
+    "source_name": "Ant Design",
+    "source_url": "https://ant.design/components/table/",
+    "page_type": "data_table",
+    "section": "overview",
+    "content": "# Ant Design - Overview\n\nPage type: data_table\nUse cases: Chinese enterprise admin, management system, operations dashboard, CRUD list\nEvidence: direct_spec / high\nSource: https://ant.design/components/table/\n\nVisual traits:\n- dense\n- practical\n- enterprise\n- component-driven\n- configurable\n\nUse when:\n- Chinese enterprise admin\n- management system\n- operations dashboard\n- CRUD list\n\nAvoid when:\n- brand landing page\n- simple mobile-first list\n- editorial content\n\nAI summary: Use Ant Design Table for dense enterprise CRUD/admin data: pagination, sorting, filtering, selection, expansion, fixed columns, loading and empty states.",
+    "tokens": 87,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "antd",
+        "table",
+        "enterprise",
+        "admin",
+        "crud",
+        "pagination",
+        "filters"
+      ],
+      "negative_prompt_tags": [
+        "marketing",
+        "editorial",
+        "mobile-only"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-ant-table-layout",
+    "record_id": "design-system-ant-table",
+    "source_name": "Ant Design",
+    "source_url": "https://ant.design/components/table/",
+    "page_type": "data_table",
+    "section": "layout",
+    "content": "# Ant Design - Layout Rules\n\nPage type: data_table\nUse cases: Chinese enterprise admin, management system, operations dashboard, CRUD list\nEvidence: direct_spec / high\nSource: https://ant.design/components/table/\n\n- Use tables for structured rows and columns with management actions.\n- Expose sorting, filtering, pagination, selection, expansion, and custom empty states when the data task needs them.\n- Keep actions predictable and close to the row or toolbar scope they affect.\n\nAI summary: Use Ant Design Table for dense enterprise CRUD/admin data: pagination, sorting, filtering, selection, expansion, fixed columns, loading and empty states.",
+    "tokens": 90,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "antd",
+        "table",
+        "enterprise",
+        "admin",
+        "crud",
+        "pagination",
+        "filters"
+      ],
+      "negative_prompt_tags": [
+        "marketing",
+        "editorial",
+        "mobile-only"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-ant-table-components",
+    "record_id": "design-system-ant-table",
+    "source_name": "Ant Design",
+    "source_url": "https://ant.design/components/table/",
+    "page_type": "data_table",
+    "section": "components",
+    "content": "# Ant Design - Component Patterns\n\nPage type: data_table\nUse cases: Chinese enterprise admin, management system, operations dashboard, CRUD list\nEvidence: direct_spec / high\nSource: https://ant.design/components/table/\n\n- table\n- pagination\n- selection\n- sorter\n- filters\n- expanded row\n- fixed column\n- summary\n- empty state\n\nAI summary: Use Ant Design Table for dense enterprise CRUD/admin data: pagination, sorting, filtering, selection, expansion, fixed columns, loading and empty states.",
+    "tokens": 69,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "antd",
+        "table",
+        "enterprise",
+        "admin",
+        "crud",
+        "pagination",
+        "filters"
+      ],
+      "negative_prompt_tags": [
+        "marketing",
+        "editorial",
+        "mobile-only"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-ant-table-interaction",
+    "record_id": "design-system-ant-table",
+    "source_name": "Ant Design",
+    "source_url": "https://ant.design/components/table/",
+    "page_type": "data_table",
+    "section": "interaction",
+    "content": "# Ant Design - Interaction States\n\nPage type: data_table\nUse cases: Chinese enterprise admin, management system, operations dashboard, CRUD list\nEvidence: direct_spec / high\nSource: https://ant.design/components/table/\n\n- selected\n- expanded\n- loading\n- empty\n- sorted\n- filtered\n- fixed column scroll\n\nAI summary: Use Ant Design Table for dense enterprise CRUD/admin data: pagination, sorting, filtering, selection, expansion, fixed columns, loading and empty states.",
+    "tokens": 64,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "antd",
+        "table",
+        "enterprise",
+        "admin",
+        "crud",
+        "pagination",
+        "filters"
+      ],
+      "negative_prompt_tags": [
+        "marketing",
+        "editorial",
+        "mobile-only"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-ant-table-accessibility",
+    "record_id": "design-system-ant-table",
+    "source_name": "Ant Design",
+    "source_url": "https://ant.design/components/table/",
+    "page_type": "data_table",
+    "section": "accessibility",
+    "content": "# Ant Design - Accessibility Notes\n\nPage type: data_table\nUse cases: Chinese enterprise admin, management system, operations dashboard, CRUD list\nEvidence: direct_spec / high\nSource: https://ant.design/components/table/\n\n- Preserve semantic table structure when customizing cells.\n- Do not hide important actions behind hover-only behavior for keyboard users.\n\nAI summary: Use Ant Design Table for dense enterprise CRUD/admin data: pagination, sorting, filtering, selection, expansion, fixed columns, loading and empty states.",
+    "tokens": 68,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "antd",
+        "table",
+        "enterprise",
+        "admin",
+        "crud",
+        "pagination",
+        "filters"
+      ],
+      "negative_prompt_tags": [
+        "marketing",
+        "editorial",
+        "mobile-only"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-ant-table-implementation",
+    "record_id": "design-system-ant-table",
+    "source_name": "Ant Design",
+    "source_url": "https://ant.design/components/table/",
+    "page_type": "data_table",
+    "section": "implementation",
+    "content": "# Ant Design - Implementation Hints\n\nPage type: data_table\nUse cases: Chinese enterprise admin, management system, operations dashboard, CRUD list\nEvidence: direct_spec / high\nSource: https://ant.design/components/table/\n\n- Use as a strong default for React enterprise admin pages in Chinese product contexts.\n- Prefer Ant table when speed and convention matter more than bespoke visual branding.\n\nAI summary: Use Ant Design Table for dense enterprise CRUD/admin data: pagination, sorting, filtering, selection, expansion, fixed columns, loading and empty states.",
+    "tokens": 77,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "antd",
+        "table",
+        "enterprise",
+        "admin",
+        "crud",
+        "pagination",
+        "filters"
+      ],
+      "negative_prompt_tags": [
+        "marketing",
+        "editorial",
+        "mobile-only"
+      ]
+    }
+  }
+]

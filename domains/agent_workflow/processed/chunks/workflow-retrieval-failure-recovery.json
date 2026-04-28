@@ -1,0 +1,226 @@
+[
+  {
+    "chunk_id": "workflow-retrieval-failure-recovery-overview",
+    "record_id": "workflow-retrieval-failure-recovery",
+    "workflow_type": "failure_recovery",
+    "source_name": "Retrieval failure recovery workflow",
+    "source_url": "local-generated:2026-04-25/retrieval-failure",
+    "section": "overview",
+    "content": "# workflow-retrieval-failure-recovery - Overview\n\nWorkflow type: failure_recovery\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Recover when local knowledge retrieval fails or returns irrelevant results.\nEvidence: observed / high\nSource: local-generated:2026-04-25/retrieval-failure\n\nWhen to use:\n- /health fails\n- /ui/search returns empty\n- Search returns broad unrelated chunks\n- Agent cannot access local path\n- SQLite index missing\n\nInputs required:\n- Error message\n- Query attempted\n- API status\n- Available scripts\n\nAI summary: If local retrieval fails, check API health, simplify or refine queries, rebuild index if missing, fix Windows/Bash paths, and report fallback evidence instead of silently using memory.",
+    "tokens": 101,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "failure-recovery",
+        "search-empty",
+        "api-down",
+        "path-error",
+        "rebuild-index",
+        "fallback"
+      ],
+      "negative_prompt_tags": [
+        "stop-after-one-failure",
+        "silent-memory-fallback"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-retrieval-failure-recovery-steps",
+    "record_id": "workflow-retrieval-failure-recovery",
+    "workflow_type": "failure_recovery",
+    "source_name": "Retrieval failure recovery workflow",
+    "source_url": "local-generated:2026-04-25/retrieval-failure",
+    "section": "steps",
+    "content": "# workflow-retrieval-failure-recovery - Execution Steps\n\nWorkflow type: failure_recovery\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Recover when local knowledge retrieval fails or returns irrelevant results.\nEvidence: observed / high\nSource: local-generated:2026-04-25/retrieval-failure\n\n- If API is down, start backend_api with uvicorn or fall back to search_ui.py.\n- If search is empty, simplify query to one core term, then try synonyms.\n- If results are broad, add style/page/component constraints or use a more specific query.\n- If SQLite DB is missing, run make_chunks.py and build_sqlite_index.py for the relevant domain.\n- If direct script path fails on Windows Bash, use forward slashes or call the HTTP API.\n- If no knowledge exists, report the gap and optionally create a new reference record after research.\n\nAI summary: If local retrieval fails, check API health, simplify or refine queries, rebuild index if missing, fix Windows/Bash paths, and report fallback evidence instead of silently using memory.",
+    "tokens": 152,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "failure-recovery",
+        "search-empty",
+        "api-down",
+        "path-error",
+        "rebuild-index",
+        "fallback"
+      ],
+      "negative_prompt_tags": [
+        "stop-after-one-failure",
+        "silent-memory-fallback"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-retrieval-failure-recovery-api",
+    "record_id": "workflow-retrieval-failure-recovery",
+    "workflow_type": "failure_recovery",
+    "source_name": "Retrieval failure recovery workflow",
+    "source_url": "local-generated:2026-04-25/retrieval-failure",
+    "section": "api",
+    "content": "# workflow-retrieval-failure-recovery - API Calls\n\nWorkflow type: failure_recovery\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Recover when local knowledge retrieval fails or returns irrelevant results.\nEvidence: observed / high\nSource: local-generated:2026-04-25/retrieval-failure\n\n- GET /health\n- GET /ui/search?q={simplified_query}&limit=5\n\nAI summary: If local retrieval fails, check API health, simplify or refine queries, rebuild index if missing, fix Windows/Bash paths, and report fallback evidence instead of silently using memory.",
+    "tokens": 68,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "failure-recovery",
+        "search-empty",
+        "api-down",
+        "path-error",
+        "rebuild-index",
+        "fallback"
+      ],
+      "negative_prompt_tags": [
+        "stop-after-one-failure",
+        "silent-memory-fallback"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-retrieval-failure-recovery-prompt_contract",
+    "record_id": "workflow-retrieval-failure-recovery",
+    "workflow_type": "failure_recovery",
+    "source_name": "Retrieval failure recovery workflow",
+    "source_url": "local-generated:2026-04-25/retrieval-failure",
+    "section": "prompt_contract",
+    "content": "# workflow-retrieval-failure-recovery - Prompt Contract\n\nWorkflow type: failure_recovery\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Recover when local knowledge retrieval fails or returns irrelevant results.\nEvidence: observed / high\nSource: local-generated:2026-04-25/retrieval-failure\n\n- Do not stop after one failed query.\n- Retry narrower/broader queries before claiming no data.\n- Distinguish no data from API/path failure.\n\nAI summary: If local retrieval fails, check API health, simplify or refine queries, rebuild index if missing, fix Windows/Bash paths, and report fallback evidence instead of silently using memory.",
+    "tokens": 85,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "failure-recovery",
+        "search-empty",
+        "api-down",
+        "path-error",
+        "rebuild-index",
+        "fallback"
+      ],
+      "negative_prompt_tags": [
+        "stop-after-one-failure",
+        "silent-memory-fallback"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-retrieval-failure-recovery-verification",
+    "record_id": "workflow-retrieval-failure-recovery",
+    "workflow_type": "failure_recovery",
+    "source_name": "Retrieval failure recovery workflow",
+    "source_url": "local-generated:2026-04-25/retrieval-failure",
+    "section": "verification",
+    "content": "# workflow-retrieval-failure-recovery - Verification\n\nWorkflow type: failure_recovery\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Recover when local knowledge retrieval fails or returns irrelevant results.\nEvidence: observed / high\nSource: local-generated:2026-04-25/retrieval-failure\n\n- Recovery path returns chunks or a clear gap report\n- The final report states the failure and fallback used\n\nAI summary: If local retrieval fails, check API health, simplify or refine queries, rebuild index if missing, fix Windows/Bash paths, and report fallback evidence instead of silently using memory.",
+    "tokens": 81,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "failure-recovery",
+        "search-empty",
+        "api-down",
+        "path-error",
+        "rebuild-index",
+        "fallback"
+      ],
+      "negative_prompt_tags": [
+        "stop-after-one-failure",
+        "silent-memory-fallback"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-retrieval-failure-recovery-failure_modes",
+    "record_id": "workflow-retrieval-failure-recovery",
+    "workflow_type": "failure_recovery",
+    "source_name": "Retrieval failure recovery workflow",
+    "source_url": "local-generated:2026-04-25/retrieval-failure",
+    "section": "failure_modes",
+    "content": "# workflow-retrieval-failure-recovery - Failure Modes\n\nWorkflow type: failure_recovery\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Recover when local knowledge retrieval fails or returns irrelevant results.\nEvidence: observed / high\nSource: local-generated:2026-04-25/retrieval-failure\n\n- Treating path error as missing data\n- Using too many keywords in FTS query\n- Ignoring API startup state\n- Silently falling back to memory\n\nAI summary: If local retrieval fails, check API health, simplify or refine queries, rebuild index if missing, fix Windows/Bash paths, and report fallback evidence instead of silently using memory.",
+    "tokens": 88,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "failure-recovery",
+        "search-empty",
+        "api-down",
+        "path-error",
+        "rebuild-index",
+        "fallback"
+      ],
+      "negative_prompt_tags": [
+        "stop-after-one-failure",
+        "silent-memory-fallback"
+      ]
+    }
+  },
+  {
+    "chunk_id": "workflow-retrieval-failure-recovery-handoff",
+    "record_id": "workflow-retrieval-failure-recovery",
+    "workflow_type": "failure_recovery",
+    "source_name": "Retrieval failure recovery workflow",
+    "source_url": "local-generated:2026-04-25/retrieval-failure",
+    "section": "handoff",
+    "content": "# workflow-retrieval-failure-recovery - Handoff Report\n\nWorkflow type: failure_recovery\nAgent targets: Claude Code, Codex, Cursor, local agents\nGoal: Recover when local knowledge retrieval fails or returns irrelevant results.\nEvidence: observed / high\nSource: local-generated:2026-04-25/retrieval-failure\n\n- Original failure\n- Fallback attempted\n- Recovered result or remaining gap\n\nAI summary: If local retrieval fails, check API health, simplify or refine queries, rebuild index if missing, fix Windows/Bash paths, and report fallback evidence instead of silently using memory.",
+    "tokens": 74,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "observed",
+      "prompt_tags": [
+        "failure-recovery",
+        "search-empty",
+        "api-down",
+        "path-error",
+        "rebuild-index",
+        "fallback"
+      ],
+      "negative_prompt_tags": [
+        "stop-after-one-failure",
+        "silent-memory-fallback"
+      ]
+    }
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "asset_id": "flowbite-ui-kit-repository-b314bf6c",
+  "domain": "ui_assets",
+  "asset_type": "asset_collection",
+  "usage_policy": "review_required",
+  "files": {
+    "file_path": "F:\\materials\\04_ui_kits_UI组件包\\github_templates\\flowbite",
+    "preview_path": "",
+    "original_path": "F:\\materials\\04_ui_kits_UI组件包\\github_templates\\flowbite",
+    "sha1": "b314bf6c",
+    "size_bytes": 17062548,
+    "extension": ""
+  },
+  "source": {
+    "name": "Flowbite UI kit repository",
+    "url": "",
+    "captured_at": "2026-04-26T10:40:33.994460+00:00",
+    "notes": "Collection-level registration. Approximate file_count=365."
+  },
+  "license": {
+    "label": "review required",
+    "notes": "Review license before using this collection in a project."
+  },
+  "style_tags": [
+    "ui-kit",
+    "components",
+    "tailwind",
+    "flowbite"
+  ],
+  "use_cases": [],
+  "avoid_when": [],
+  "implementation_notes": [
+    "Registered as a collection to avoid per-file metadata noise.",
+    "Inspect the collection documentation and license before direct use."
+  ],
+  "quality": {
+    "curation_status": "new",
+    "notes": "Collection-level metadata; individual files are not indexed yet."
+  },
+  "retrieval": {
+    "ai_summary": "Flowbite UI kit repository collection registered for UI asset lookup. Review usage policy and license before use.",
+    "prompt_tags": [
+      "ui-kit",
+      "components",
+      "tailwind",
+      "flowbite",
+      "asset-collection"
+    ],
+    "negative_prompt_tags": []
+  }
+}

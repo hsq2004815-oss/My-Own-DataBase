@@ -1,0 +1,105 @@
+{
+  "record_id": "implementation-liquid-glass-dark-neon-parameters",
+  "source": {
+    "name": "Dark neon Liquid Glass implementation parameters",
+    "url": "local-generated:2026-04-25/dark-neon-liquid-glass-parameters",
+    "source_type": "case_study",
+    "license_notes": "Original implementation guidance distilled from local dark Liquid Glass reference and Claude Code test gaps.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "ui_design",
+  "page_type": "component_pattern",
+  "platform": [
+    "web",
+    "mobile"
+  ],
+  "use_cases": [
+    "premium card",
+    "dark mode hero",
+    "selected state",
+    "Pro plan card",
+    "AI control panel",
+    "neon status tile"
+  ],
+  "visual_traits": [
+    "black translucent glass",
+    "cyan edge glint",
+    "magenta rim glow",
+    "orange caustic",
+    "white text",
+    "deep shadow",
+    "neon active ring"
+  ],
+  "layout_rules": [
+    "Use dark neon glass as an accent or premium area, not the default surface for the whole page.",
+    "Keep text white or near-white and use muted gray only for secondary copy with sufficient contrast.",
+    "Place neon glints near edges/corners and icon rings, not directly behind body text.",
+    "Pair dark neon with lighter surrounding surfaces so it reads as intentional emphasis."
+  ],
+  "component_patterns": [
+    "dark premium card",
+    "dark pill button",
+    "neon icon tile",
+    "dark search field",
+    "active tab",
+    "dark toggle"
+  ],
+  "interaction_states": [
+    "hover glow",
+    "pressed inset",
+    "selected neon ring",
+    "disabled muted",
+    "focus-visible rim",
+    "active premium"
+  ],
+  "accessibility_notes": [
+    "Use text colors around #F8FAFC or #FFFFFF for primary labels on dark glass.",
+    "Avoid relying on cyan/magenta glow as the only selected/success indicator.",
+    "Check contrast after backdrop blur because background color can bleed through."
+  ],
+  "implementation_hints": [
+    "Base dark glass: rgba(8,10,16,0.68) to rgba(8,10,16,0.78); strong default rgba(8,10,16,0.72).",
+    "Secondary dark glass: rgba(15,23,42,0.58) to rgba(15,23,42,0.70).",
+    "Backdrop filter: blur(18px) saturate(160%) for cards; blur(24px) saturate(180%) for hero/premium surfaces.",
+    "White rim: border 1px solid rgba(255,255,255,0.18) to rgba(255,255,255,0.32); hover can rise to 0.42.",
+    "Cyan glint: rgba(34,211,238,0.28) to rgba(34,211,238,0.46), usually radial-gradient at top-left or icon edge.",
+    "Magenta glint: rgba(217,70,239,0.22) to rgba(217,70,239,0.40), usually bottom-right or active ring.",
+    "Orange glint: rgba(251,146,60,0.16) to rgba(251,146,60,0.32), use sparingly for warm caustic highlights.",
+    "Deep shadow: 0 24px 60px rgba(2,6,23,0.34) plus 0 8px 24px rgba(15,23,42,0.22).",
+    "Inset gloss: inset 0 1px 1px rgba(255,255,255,0.22), inset 0 -1px 2px rgba(0,0,0,0.35).",
+    "Neon active ring: box-shadow 0 0 0 1px rgba(34,211,238,0.38), 0 0 24px rgba(217,70,239,0.24).",
+    "Pressed state: reduce translateY by 1px, increase inset dark shadow, and slightly reduce outer glow.",
+    "Disabled state: background rgba(15,23,42,0.38), border rgba(255,255,255,0.12), text rgba(248,250,252,0.45), remove neon glints."
+  ],
+  "avoid_when": [
+    "long reading area",
+    "standard enterprise CRUD",
+    "legal/medical workflow",
+    "low contrast mode",
+    "large repeated list rows"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "summary_only",
+    "notes": "Added after Claude Code reported dark-neon needed finer color/glow values."
+  },
+  "retrieval": {
+    "ai_summary": "Dark neon Liquid Glass parameters: dark fill rgba(8,10,16,0.68-0.78), rim rgba white 0.18-0.32, cyan glint rgba(34,211,238,0.28-0.46), magenta rgba(217,70,239,0.22-0.40), orange rgba(251,146,60,0.16-0.32), deep shadows, inset gloss, active neon rings.",
+    "prompt_tags": [
+      "dark-glass",
+      "neon-parameters",
+      "liquid-glass",
+      "cyan",
+      "magenta",
+      "orange",
+      "premium-card",
+      "dark-mode"
+    ],
+    "negative_prompt_tags": [
+      "flat-dark",
+      "low-contrast",
+      "all-page-dark",
+      "no-text-indicator"
+    ]
+  }
+}

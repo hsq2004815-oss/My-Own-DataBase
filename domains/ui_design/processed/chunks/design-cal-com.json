@@ -1,0 +1,72 @@
+[
+  {
+    "chunk_id": "design-cal-com-chunk-1",
+    "file_id": "design-cal-com",
+    "content": "# Cal.com Design System - Brand Style\n\n**Category**: Productivity & SaaS\n**Description**: Open-source scheduling. Clean neutral UI, developer-oriented simplicity\n**Source**: https://getdesign.md/cal/design-md\n\n**Note**: 源文件包含设计系统描述。\n\n## Design Philosophy\nOpen-source scheduling. Clean neutral UI, developer-oriented simplicity",
+    "tokens": 82,
+    "metadata": {
+      "section": "brand_style",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-cal-com-chunk-2",
+    "file_id": "design-cal-com",
+    "content": "# Cal.com Design System - Color Palette\n\n**Information不足**: 源文件未提供具体配色信息。\n\n**Description**: Open-source scheduling. Clean neutral UI, developer-oriented simplicity\n\n**Note**: 源文件未包含配色细节。",
+    "tokens": 47,
+    "metadata": {
+      "section": "color_palette",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-cal-com-chunk-3",
+    "file_id": "design-cal-com",
+    "content": "# Cal.com Design System - Typography\n\n**Information不足**: 源文件未提供具体排版信息。\n\n**Description**: Open-source scheduling. Clean neutral UI, developer-oriented simplicity\n\n**Note**: 源文件未包含排版细节。",
+    "tokens": 46,
+    "metadata": {
+      "section": "typography",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-cal-com-chunk-4",
+    "file_id": "design-cal-com",
+    "content": "# Cal.com Design System - Layout Principles\n\n**Layout mentioned**: clean\n\n**Description**: Open-source scheduling. Clean neutral UI, developer-oriented simplicity\n\n**Note**: 源文件可能包含布局细节。",
+    "tokens": 47,
+    "metadata": {
+      "section": "layout",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": true,
+      "has_components": false,
+      "info_sufficient": true
+    }
+  },
+  {
+    "chunk_id": "design-cal-com-chunk-5",
+    "file_id": "design-cal-com",
+    "content": "# Cal.com Design System - Components & Interaction\n\n**Information不足**: 源文件未提供具体组件信息。\n\n**Description**: Open-source scheduling. Clean neutral UI, developer-oriented simplicity\n\n**Note**: 源文件未包含组件细节。",
+    "tokens": 50,
+    "metadata": {
+      "section": "components",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  }
+]

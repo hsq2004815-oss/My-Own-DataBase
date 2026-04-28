@@ -1,0 +1,23 @@
+* text=auto eol=lf
+
+*.db binary
+*.sqlite binary
+*.sqlite3 binary
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.mp4 binary
+*.mov binary
+*.webm binary
+
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+
+*.zip binary
+*.7z binary
+*.rar binary

@@ -1,0 +1,39 @@
+{
+  "asset_id": "jetbrainsmono-ff9d89ab",
+  "domain": "ui_assets",
+  "asset_type": "font",
+  "usage_policy": "review_required",
+  "files": {
+    "file_path": "E:\\DataBase\\domains\\ui_assets\\raw\\review_required\\fonts\\JetBrainsMono.woff2",
+    "preview_path": "",
+    "original_path": "F:\\materials\\09_fonts_字体\\inter\\docs\\res\\JetBrainsMono.woff2",
+    "sha1": "ff9d89ab8df4863b0b0ca423f0e1f4b6e9805fb1",
+    "size_bytes": 70952,
+    "extension": ".woff2"
+  },
+  "source": {
+    "name": "local import",
+    "url": "",
+    "captured_at": "2026-04-26T10:40:06.596981+00:00",
+    "notes": "Imported by scripts/ui_assets/ingest_assets.py"
+  },
+  "license": {
+    "label": "review required",
+    "notes": "Review each font license before direct use."
+  },
+  "style_tags": [],
+  "use_cases": [],
+  "avoid_when": [],
+  "implementation_notes": [],
+  "quality": {
+    "curation_status": "new",
+    "notes": "Review usage_policy and license before direct project use."
+  },
+  "retrieval": {
+    "ai_summary": "font asset for font. Review usage policy before use.",
+    "prompt_tags": [
+      "font"
+    ],
+    "negative_prompt_tags": []
+  }
+}

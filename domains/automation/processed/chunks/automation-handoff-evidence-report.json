@@ -1,0 +1,212 @@
+[
+  {
+    "chunk_id": "automation-handoff-evidence-report-overview",
+    "record_id": "automation-handoff-evidence-report",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation evidence report protocol",
+    "source_url": "local-generated:2026-04-25/automation-evidence-report",
+    "section": "overview",
+    "content": "# automation-handoff-evidence-report - Overview\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, local agents\nGoal: Require automation agents to report objective evidence rather than vague completion claims.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-evidence-report\n\nWhen to use:\n- Any browser/local automation task\n- Task changes remote website/admin state\n- User needs proof of completion\n\nInputs required:\n- Task scope\n- Target URL/app\n- Files used\n- Expected success criteria\n\nAI summary: Automation handoff must include target, inputs, steps, objective evidence, retries, skipped dangerous actions, and remaining gaps. Do not claim success without proof.",
+    "tokens": 91,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "handoff",
+        "evidence",
+        "screenshot",
+        "verification",
+        "report",
+        "dangerous-actions"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-handoff-evidence-report-steps",
+    "record_id": "automation-handoff-evidence-report",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation evidence report protocol",
+    "source_url": "local-generated:2026-04-25/automation-evidence-report",
+    "section": "steps",
+    "content": "# automation-handoff-evidence-report - Execution Steps\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, local agents\nGoal: Require automation agents to report objective evidence rather than vague completion claims.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-evidence-report\n\n- Report target URL/app and environment.\n- List key steps performed.\n- Include screenshots/logs/assertions for success.\n- List skipped dangerous actions and confirmations needed.\n- Report errors, retries, and remaining gaps.\n\nAI summary: Automation handoff must include target, inputs, steps, objective evidence, retries, skipped dangerous actions, and remaining gaps. Do not claim success without proof.",
+    "tokens": 88,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "handoff",
+        "evidence",
+        "screenshot",
+        "verification",
+        "report",
+        "dangerous-actions"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-handoff-evidence-report-commands",
+    "record_id": "automation-handoff-evidence-report",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation evidence report protocol",
+    "source_url": "local-generated:2026-04-25/automation-evidence-report",
+    "section": "commands",
+    "content": "# automation-handoff-evidence-report - Commands or APIs\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, local agents\nGoal: Require automation agents to report objective evidence rather than vague completion claims.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-evidence-report\n\n- /health outputs\n- screenshots\n- console/page errors\n- current URL/title\n- uploaded filename\n- success banner\n\nAI summary: Automation handoff must include target, inputs, steps, objective evidence, retries, skipped dangerous actions, and remaining gaps. Do not claim success without proof.",
+    "tokens": 75,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "handoff",
+        "evidence",
+        "screenshot",
+        "verification",
+        "report",
+        "dangerous-actions"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-handoff-evidence-report-verification",
+    "record_id": "automation-handoff-evidence-report",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation evidence report protocol",
+    "source_url": "local-generated:2026-04-25/automation-evidence-report",
+    "section": "verification",
+    "content": "# automation-handoff-evidence-report - Verification\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, local agents\nGoal: Require automation agents to report objective evidence rather than vague completion claims.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-evidence-report\n\n- Evidence shows final state\n- No unexplained errors remain\n- Dangerous actions are explicitly confirmed or skipped\n\nAI summary: Automation handoff must include target, inputs, steps, objective evidence, retries, skipped dangerous actions, and remaining gaps. Do not claim success without proof.",
+    "tokens": 74,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "handoff",
+        "evidence",
+        "screenshot",
+        "verification",
+        "report",
+        "dangerous-actions"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-handoff-evidence-report-failure_modes",
+    "record_id": "automation-handoff-evidence-report",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation evidence report protocol",
+    "source_url": "local-generated:2026-04-25/automation-evidence-report",
+    "section": "failure_modes",
+    "content": "# automation-handoff-evidence-report - Failure Modes\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, local agents\nGoal: Require automation agents to report objective evidence rather than vague completion claims.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-evidence-report\n\n- No screenshot\n- No final state assertion\n- Agent claims success after partial upload\n- Dangerous action performed silently\n\nAI summary: Automation handoff must include target, inputs, steps, objective evidence, retries, skipped dangerous actions, and remaining gaps. Do not claim success without proof.",
+    "tokens": 77,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "handoff",
+        "evidence",
+        "screenshot",
+        "verification",
+        "report",
+        "dangerous-actions"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-handoff-evidence-report-safety",
+    "record_id": "automation-handoff-evidence-report",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation evidence report protocol",
+    "source_url": "local-generated:2026-04-25/automation-evidence-report",
+    "section": "safety",
+    "content": "# automation-handoff-evidence-report - Safety Notes\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, local agents\nGoal: Require automation agents to report objective evidence rather than vague completion claims.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-evidence-report\n\n- Publishing, deleting, paying, sending, or changing account settings require explicit user confirmation unless already authorized.\n\nAI summary: Automation handoff must include target, inputs, steps, objective evidence, retries, skipped dangerous actions, and remaining gaps. Do not claim success without proof.",
+    "tokens": 73,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "handoff",
+        "evidence",
+        "screenshot",
+        "verification",
+        "report",
+        "dangerous-actions"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-handoff-evidence-report-handoff",
+    "record_id": "automation-handoff-evidence-report",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation evidence report protocol",
+    "source_url": "local-generated:2026-04-25/automation-evidence-report",
+    "section": "handoff",
+    "content": "# automation-handoff-evidence-report - Handoff Report\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, local agents\nGoal: Require automation agents to report objective evidence rather than vague completion claims.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-evidence-report\n\n- Target\n- Inputs\n- Steps\n- Evidence\n- Retries\n- Skipped/blocked actions\n- Remaining gaps\n\nAI summary: Automation handoff must include target, inputs, steps, objective evidence, retries, skipped dangerous actions, and remaining gaps. Do not claim success without proof.",
+    "tokens": 73,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "handoff",
+        "evidence",
+        "screenshot",
+        "verification",
+        "report",
+        "dangerous-actions"
+      ],
+      "negative_prompt_tags": []
+    }
+  }
+]

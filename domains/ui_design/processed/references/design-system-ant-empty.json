@@ -1,0 +1,79 @@
+{
+  "record_id": "design-system-ant-empty",
+  "source": {
+    "name": "Ant Design",
+    "url": "https://ant.design/components/empty/",
+    "source_type": "official_design_system",
+    "license_notes": "Use source links and summarized guidance only; do not copy full documentation verbatim.",
+    "captured_at": "2026-04-24"
+  },
+  "domain": "ui_design",
+  "page_type": "empty_state",
+  "platform": [
+    "web"
+  ],
+  "use_cases": [
+    "no data",
+    "empty table",
+    "empty transfer list",
+    "fresh setup"
+  ],
+  "visual_traits": [
+    "minimal",
+    "friendly",
+    "componentized",
+    "neutral"
+  ],
+  "layout_rules": [
+    "Use a clear empty placeholder when no data is available.",
+    "Include a simple create action when the empty state is a fresh-start opportunity.",
+    "Customize image and description only when it improves clarity."
+  ],
+  "component_patterns": [
+    "empty illustration",
+    "description",
+    "footer action",
+    "simple image variant",
+    "custom image"
+  ],
+  "interaction_states": [
+    "no data",
+    "create now",
+    "empty table",
+    "empty transfer"
+  ],
+  "accessibility_notes": [
+    "Do not make the illustration the only explanation.",
+    "Keep action text explicit and keyboard reachable."
+  ],
+  "implementation_hints": [
+    "Use for compact enterprise empty states inside tables, lists, or transfer components.",
+    "Pair with creation CTA when the next step is obvious."
+  ],
+  "avoid_when": [
+    "full onboarding story",
+    "server error",
+    "loading"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "direct_spec",
+    "notes": "Official Ant Design Empty component summarized."
+  },
+  "retrieval": {
+    "ai_summary": "Use Ant Design Empty for concise no-data placeholders in enterprise UI: neutral illustration, clear description, and optional create action for fresh-start states.",
+    "prompt_tags": [
+      "antd",
+      "empty",
+      "no-data",
+      "table",
+      "create",
+      "enterprise"
+    ],
+    "negative_prompt_tags": [
+      "loading",
+      "error",
+      "long-onboarding"
+    ]
+  }
+}

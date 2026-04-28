@@ -1,0 +1,20 @@
+{
+  "file_id": "design-clickhouse",
+  "title": "ClickHouse Design System",
+  "domain": "ui_design",
+  "source_id": "awesome-design-md",
+  "relative_path": "design-md/clickhouse/README.md",
+  "file_type": "markdown",
+  "tags": [
+    "Backend, Database & DevOps",
+    "yellow",
+    "accent"
+  ],
+  "status": "processed",
+  "processed": true,
+  "chunked": true,
+  "indexed": false,
+  "created_at": "2026-04-17T09:34:38.950Z",
+  "updated_at": "2026-04-17T09:34:38.950Z",
+  "notes": "Processed from awesome-design-md collection"
+}

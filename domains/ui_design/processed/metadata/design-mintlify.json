@@ -1,0 +1,21 @@
+{
+  "file_id": "design-mintlify",
+  "title": "Mintlify Design System",
+  "domain": "ui_design",
+  "source_id": "awesome-design-md",
+  "relative_path": "design-md/mintlify/README.md",
+  "file_type": "markdown",
+  "tags": [
+    "Productivity & SaaS",
+    "green",
+    "clean",
+    "accent"
+  ],
+  "status": "processed",
+  "processed": true,
+  "chunked": true,
+  "indexed": false,
+  "created_at": "2026-04-17T09:34:38.958Z",
+  "updated_at": "2026-04-17T09:34:38.958Z",
+  "notes": "Processed from awesome-design-md collection"
+}

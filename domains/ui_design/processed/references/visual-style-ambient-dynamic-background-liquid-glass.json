@@ -1,0 +1,114 @@
+{
+  "record_id": "visual-style-ambient-dynamic-background-liquid-glass",
+  "source": {
+    "name": "Apple Liquid Glass dynamic material and web CSS accessibility references",
+    "url": "https://www.apple.com/li/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/",
+    "source_type": "article",
+    "license_notes": "Distilled design guidance from public Apple Liquid Glass material descriptions plus MDN CSS references for backdrop-filter and reduced motion. Store summarized guidance only.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "ui_design",
+  "page_type": "component_pattern",
+  "platform": [
+    "web",
+    "desktop",
+    "mobile"
+  ],
+  "use_cases": [
+    "Liquid Glass interface background",
+    "premium AI dashboard",
+    "glass ecological interface",
+    "ambient dynamic scene",
+    "frosted cards and modals",
+    "high-end product UI"
+  ],
+  "visual_traits": [
+    "slow moving ambient scene behind translucent glass surfaces",
+    "layered depth with far background, middle atmospheric field, and foreground glass UI",
+    "low-contrast motion that gives backdrop-filter something to refract without stealing attention",
+    "environmental light sources that create soft highlights and color spill on glass edges",
+    "subtle ecological motifs such as aurora haze, water caustics, drifting mist, star dust, city light reflections, or abstract data currents",
+    "restrained color shifts that avoid one-note purple-blue gradients"
+  ],
+  "layout_rules": [
+    "Treat the dynamic background as a scene, not decoration; it should imply depth, weather, light, or data flow behind the interface.",
+    "Keep primary text and controls on stable glass surfaces; animated background detail should stay outside dense reading zones.",
+    "Use three layers: a calm base field, one or two slow motion atmospheric layers, and a glass UI layer with clear hierarchy.",
+    "Let larger cards and modals reveal more of the background than small controls, because large glass surfaces need richer visual input.",
+    "Reserve strong highlights for edges, selected cards, and primary actions; background motion should remain secondary.",
+    "Use neutral dark, graphite, green-blue, cyan, silver, or warm light accents instead of saturating the whole page with a single neon hue."
+  ],
+  "component_patterns": [
+    "ambient scene background",
+    "frosted glass card over moving scenery",
+    "glass modal over dimmed dynamic field",
+    "translucent navigation layer",
+    "soft caustic highlight",
+    "animated atmospheric canvas",
+    "reduced-motion background fallback"
+  ],
+  "interaction_states": [
+    "idle slow drift",
+    "hover edge highlight",
+    "modal open background dimming",
+    "focus-visible high contrast rim",
+    "reduced-motion static scene",
+    "theme shift between light and dark environments"
+  ],
+  "accessibility_notes": [
+    "Provide a prefers-reduced-motion fallback that freezes or greatly slows the background scene.",
+    "Keep contrast checks on final composited surfaces, because backdrop blur and color spill can reduce text legibility.",
+    "Do not place small text directly over high-frequency particles, moving caustics, or bright scenery.",
+    "Offer a stronger tint or dimming layer behind clear glass when the background becomes too detailed.",
+    "Avoid motion that simulates rapid camera movement, zooming, or parallax near reading content."
+  ],
+  "implementation_hints": [
+    "For CSS-only prototypes, combine fixed radial/linear gradients, mask-image, subtle noise texture, and long-duration transform animation on pseudo-elements.",
+    "For richer scenes, use canvas or WebGL for low-frequency particles, caustic flow, aurora bands, or data currents, then keep UI in DOM above it.",
+    "Use backdrop-filter only on translucent surfaces; opaque panels will hide the background and weaken the glass effect.",
+    "Suggested motion timing: 20s to 80s loops, low opacity, small transform distances, and no abrupt keyframe resets.",
+    "Use saturate plus blur on the glass layer rather than increasing background saturation; the glass should interpret the scene, not fight it.",
+    "Add an overlay dimmer under modals so clear glass stays legible over media-rich scenery.",
+    "Keep animation on transform and opacity where possible; avoid animating blur radius or expensive filters across large full-screen layers.",
+    "Use CSS custom properties for scene hue, glow strength, glass opacity, and motion speed so the background can adapt per page."
+  ],
+  "avoid_when": [
+    "static flat gradient as the only glass backdrop",
+    "decorative orb or blob backgrounds that do not imply a coherent scene",
+    "fast particle fields behind readable text",
+    "high contrast scenery under forms or tables",
+    "whole-page saturated purple-blue neon glow",
+    "applying backdrop-filter to hundreds of repeated rows",
+    "requiring WebGL for core usability"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "summary_only",
+    "notes": "Design inference from Apple Liquid Glass descriptions of surrounding content, real-time movement, specular highlights, and dynamic material behavior, combined with MDN backdrop-filter transparency and prefers-reduced-motion constraints."
+  },
+  "retrieval": {
+    "ai_summary": "For high-end Liquid Glass web interfaces, use a slow, layered ambient scene behind glass surfaces so blur and refraction have meaningful visual input. Prefer ecological scenery such as aurora haze, water caustics, drifting mist, star dust, city light reflections, or abstract data currents over static gradients or decorative blobs. Keep motion subtle, preserve legibility, and provide reduced-motion fallbacks.",
+    "prompt_tags": [
+      "liquid-glass",
+      "ambient-background",
+      "dynamic-background",
+      "ecological-interface",
+      "glass-scene",
+      "aurora",
+      "caustics",
+      "drifting-mist",
+      "premium-dashboard",
+      "backdrop-filter",
+      "reduced-motion"
+    ],
+    "negative_prompt_tags": [
+      "static-gradient",
+      "decorative-orbs",
+      "bokeh-blobs",
+      "fast-particles",
+      "low-contrast",
+      "single-hue-neon",
+      "busy-background"
+    ]
+  }
+}

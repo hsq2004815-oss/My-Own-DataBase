@@ -1,0 +1,86 @@
+{
+  "record_id": "motion-pattern-website-reveal-blur",
+  "source": {
+    "name": "Swishy website reveal templates",
+    "url": "https://www.swishy.ai/",
+    "source_type": "pattern_library",
+    "license_notes": "Use summarized motion patterns only; do not copy template output or assets.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "ui_design",
+  "page_type": "landing_page",
+  "platform": [
+    "web"
+  ],
+  "use_cases": [
+    "landing page entry",
+    "product reveal",
+    "dashboard first load",
+    "portfolio hero",
+    "SaaS demo"
+  ],
+  "visual_traits": [
+    "blur-in",
+    "ease from bottom",
+    "website reveal",
+    "soft depth",
+    "launch animation"
+  ],
+  "layout_rules": [
+    "Reveal the shell first, then primary content, then secondary cards and controls.",
+    "Use blur and vertical translation for a premium first-load effect, but settle within about one second.",
+    "Stagger cards and controls so the page feels assembled rather than dumped onto the screen."
+  ],
+  "component_patterns": [
+    "page shell",
+    "hero card",
+    "dashboard cards",
+    "CTA",
+    "search bar",
+    "navigation"
+  ],
+  "interaction_states": [
+    "initial blur",
+    "rise",
+    "settle",
+    "stagger",
+    "hover refinement"
+  ],
+  "accessibility_notes": [
+    "Keep content available in DOM immediately.",
+    "Under reduced motion, use a short fade without blur/translation.",
+    "Avoid making users wait for essential navigation."
+  ],
+  "implementation_hints": [
+    "Use opacity 0 to 1, translateY 24-48px to 0, blur 12px to 0px, duration 600-900ms.",
+    "Use staggered delays of 80-140ms for card groups.",
+    "For Liquid Glass pages, reveal background glow first, then glass panels, then inner controls."
+  ],
+  "avoid_when": [
+    "frequent route changes",
+    "admin workflow repeated every click",
+    "low-end mobile heavy page"
+  ],
+  "quality": {
+    "signal_strength": "medium",
+    "evidence_level": "summary_only",
+    "notes": "Swishy lists a Website reveal template described as easing and blurring in from the bottom."
+  },
+  "retrieval": {
+    "ai_summary": "Use website reveal blur for premium page entry: background glow, glass panels, and controls rise from below while blur resolves, with 600-900ms duration and reduced-motion fallback.",
+    "prompt_tags": [
+      "website-reveal",
+      "blur-in",
+      "page-entry",
+      "stagger",
+      "landing-page",
+      "dashboard",
+      "liquid-glass"
+    ],
+    "negative_prompt_tags": [
+      "every-route",
+      "slow-navigation",
+      "no-reduced-motion"
+    ]
+  }
+}

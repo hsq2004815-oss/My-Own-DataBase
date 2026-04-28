@@ -1,0 +1,176 @@
+[
+  {
+    "chunk_id": "visual-style-liquid-glass-form-modal-overview",
+    "record_id": "visual-style-liquid-glass-form-modal",
+    "source_name": "User-provided Liquid Glass form/modal screenshots",
+    "source_url": "local-chat-reference:2026-04-25/liquid-glass-form-modal",
+    "page_type": "form",
+    "section": "overview",
+    "content": "# User-provided Liquid Glass form/modal screenshots - Overview\n\nPage type: form\nUse cases: create project modal, workspace setup, invite member, premium onboarding form\nEvidence: screenshot_observed / high\nSource: local-chat-reference:2026-04-25/liquid-glass-form-modal\n\nVisual traits:\n- frosted modal panel\n- soft grid background\n- glass input fields\n- validation glow\n- large rounded submit button\n- misty depth\n\nUse when:\n- create project modal\n- workspace setup\n- invite member\n- premium onboarding form\n\nAvoid when:\n- very long form\n- government form\n- banking KYC\n- data-heavy admin edit page\n\nAI summary: Use Liquid Glass form/modal patterns for premium setup flows: a frosted modal card, simple stacked fields, glass inputs, colored validation glow, toggles/checkboxes, and a large luminous CTA.",
+    "tokens": 116,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "screenshot_observed",
+      "prompt_tags": [
+        "liquid-glass",
+        "form",
+        "modal",
+        "frosted-panel",
+        "validation",
+        "premium-onboarding",
+        "glass-input"
+      ],
+      "negative_prompt_tags": [
+        "long-form",
+        "government",
+        "banking",
+        "plain-form"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-liquid-glass-form-modal-layout",
+    "record_id": "visual-style-liquid-glass-form-modal",
+    "source_name": "User-provided Liquid Glass form/modal screenshots",
+    "source_url": "local-chat-reference:2026-04-25/liquid-glass-form-modal",
+    "page_type": "form",
+    "section": "layout",
+    "content": "# User-provided Liquid Glass form/modal screenshots - Layout Rules\n\nPage type: form\nUse cases: create project modal, workspace setup, invite member, premium onboarding form\nEvidence: screenshot_observed / high\nSource: local-chat-reference:2026-04-25/liquid-glass-form-modal\n\n- Put the main form inside a single translucent frosted panel with a broad radius and subtle rim highlight.\n- Use stacked labels and inputs; glass effects already add visual complexity, so form layout should stay simple.\n- Show validation with colored glow plus text, for example red rim for missing category and green rim for confirmed selection.\n- Use a large bottom-aligned glass CTA with soft blue/purple light for the primary action.\n- Keep the background quiet: faint grid, soft gradient, or blurred side panels.\n\nAI summary: Use Liquid Glass form/modal patterns for premium setup flows: a frosted modal card, simple stacked fields, glass inputs, colored validation glow, toggles/checkboxes, and a large luminous CTA.",
+    "tokens": 145,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "screenshot_observed",
+      "prompt_tags": [
+        "liquid-glass",
+        "form",
+        "modal",
+        "frosted-panel",
+        "validation",
+        "premium-onboarding",
+        "glass-input"
+      ],
+      "negative_prompt_tags": [
+        "long-form",
+        "government",
+        "banking",
+        "plain-form"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-liquid-glass-form-modal-components",
+    "record_id": "visual-style-liquid-glass-form-modal",
+    "source_name": "User-provided Liquid Glass form/modal screenshots",
+    "source_url": "local-chat-reference:2026-04-25/liquid-glass-form-modal",
+    "page_type": "form",
+    "section": "components",
+    "content": "# User-provided Liquid Glass form/modal screenshots - Component Patterns\n\nPage type: form\nUse cases: create project modal, workspace setup, invite member, premium onboarding form\nEvidence: screenshot_observed / high\nSource: local-chat-reference:2026-04-25/liquid-glass-form-modal\n\n- modal panel\n- text input\n- select field\n- textarea\n- toggle\n- checkbox\n- submit button\n- validation message\n\nAI summary: Use Liquid Glass form/modal patterns for premium setup flows: a frosted modal card, simple stacked fields, glass inputs, colored validation glow, toggles/checkboxes, and a large luminous CTA.",
+    "tokens": 80,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "screenshot_observed",
+      "prompt_tags": [
+        "liquid-glass",
+        "form",
+        "modal",
+        "frosted-panel",
+        "validation",
+        "premium-onboarding",
+        "glass-input"
+      ],
+      "negative_prompt_tags": [
+        "long-form",
+        "government",
+        "banking",
+        "plain-form"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-liquid-glass-form-modal-interaction",
+    "record_id": "visual-style-liquid-glass-form-modal",
+    "source_name": "User-provided Liquid Glass form/modal screenshots",
+    "source_url": "local-chat-reference:2026-04-25/liquid-glass-form-modal",
+    "page_type": "form",
+    "section": "interaction",
+    "content": "# User-provided Liquid Glass form/modal screenshots - Interaction States\n\nPage type: form\nUse cases: create project modal, workspace setup, invite member, premium onboarding form\nEvidence: screenshot_observed / high\nSource: local-chat-reference:2026-04-25/liquid-glass-form-modal\n\n- focused field\n- invalid field\n- valid field\n- disabled submit\n- toggle on\n- checkbox unchecked\n- loading submit\n\nAI summary: Use Liquid Glass form/modal patterns for premium setup flows: a frosted modal card, simple stacked fields, glass inputs, colored validation glow, toggles/checkboxes, and a large luminous CTA.",
+    "tokens": 80,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "screenshot_observed",
+      "prompt_tags": [
+        "liquid-glass",
+        "form",
+        "modal",
+        "frosted-panel",
+        "validation",
+        "premium-onboarding",
+        "glass-input"
+      ],
+      "negative_prompt_tags": [
+        "long-form",
+        "government",
+        "banking",
+        "plain-form"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-liquid-glass-form-modal-accessibility",
+    "record_id": "visual-style-liquid-glass-form-modal",
+    "source_name": "User-provided Liquid Glass form/modal screenshots",
+    "source_url": "local-chat-reference:2026-04-25/liquid-glass-form-modal",
+    "page_type": "form",
+    "section": "accessibility",
+    "content": "# User-provided Liquid Glass form/modal screenshots - Accessibility Notes\n\nPage type: form\nUse cases: create project modal, workspace setup, invite member, premium onboarding form\nEvidence: screenshot_observed / high\nSource: local-chat-reference:2026-04-25/liquid-glass-form-modal\n\n- Validation message must be text, not only red glow.\n- Glass fields need a visible border and sufficient label contrast.\n- Avoid placing important labels over noisy blurred content.\n\nAI summary: Use Liquid Glass form/modal patterns for premium setup flows: a frosted modal card, simple stacked fields, glass inputs, colored validation glow, toggles/checkboxes, and a large luminous CTA.",
+    "tokens": 89,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "screenshot_observed",
+      "prompt_tags": [
+        "liquid-glass",
+        "form",
+        "modal",
+        "frosted-panel",
+        "validation",
+        "premium-onboarding",
+        "glass-input"
+      ],
+      "negative_prompt_tags": [
+        "long-form",
+        "government",
+        "banking",
+        "plain-form"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-liquid-glass-form-modal-implementation",
+    "record_id": "visual-style-liquid-glass-form-modal",
+    "source_name": "User-provided Liquid Glass form/modal screenshots",
+    "source_url": "local-chat-reference:2026-04-25/liquid-glass-form-modal",
+    "page_type": "form",
+    "section": "implementation",
+    "content": "# User-provided Liquid Glass form/modal screenshots - Implementation Hints\n\nPage type: form\nUse cases: create project modal, workspace setup, invite member, premium onboarding form\nEvidence: screenshot_observed / high\nSource: local-chat-reference:2026-04-25/liquid-glass-form-modal\n\n- Use one glass-card wrapper for the modal and lighter glass inset surfaces for fields.\n- For error fields, combine rgba red border, red outer glow, and plain text message.\n- For success fields, combine green edge glow with check icon or success text.\n- Use backdrop-filter only where supported and provide a translucent fallback background.\n\nAI summary: Use Liquid Glass form/modal patterns for premium setup flows: a frosted modal card, simple stacked fields, glass inputs, colored validation glow, toggles/checkboxes, and a large luminous CTA.",
+    "tokens": 115,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "screenshot_observed",
+      "prompt_tags": [
+        "liquid-glass",
+        "form",
+        "modal",
+        "frosted-panel",
+        "validation",
+        "premium-onboarding",
+        "glass-input"
+      ],
+      "negative_prompt_tags": [
+        "long-form",
+        "government",
+        "banking",
+        "plain-form"
+      ]
+    }
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "record_id": "motion-pattern-device-product-showcase",
+  "source": {
+    "name": "Swishy device and product showcase templates",
+    "url": "https://www.swishy.ai/",
+    "source_type": "pattern_library",
+    "license_notes": "Use summarized motion patterns only; do not copy template output or assets.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "ui_design",
+  "page_type": "landing_page",
+  "platform": [
+    "web",
+    "mobile"
+  ],
+  "use_cases": [
+    "app launch page",
+    "product demo",
+    "mobile app preview",
+    "social launch video",
+    "hero showcase"
+  ],
+  "visual_traits": [
+    "device mockup",
+    "laptop opening",
+    "phone message preview",
+    "app video showcase",
+    "3D perspective",
+    "gallery"
+  ],
+  "layout_rules": [
+    "Use device motion to demonstrate product context before diving into feature details.",
+    "Keep perspective motion slow and stable so UI content remains readable.",
+    "Use mockup entry as a hero moment, then transition into static usable screenshots or cards."
+  ],
+  "component_patterns": [
+    "phone mockup",
+    "laptop opening",
+    "app showcase",
+    "mobile bookshelf",
+    "photo booth",
+    "product hero"
+  ],
+  "interaction_states": [
+    "mockup enter",
+    "screen reveal",
+    "perspective rotate",
+    "message pop",
+    "settle"
+  ],
+  "accessibility_notes": [
+    "Avoid motion sickness from large 3D rotations.",
+    "Provide static screenshot alternative.",
+    "Do not hide core product information inside video-only motion."
+  ],
+  "implementation_hints": [
+    "Use transform perspective with small rotations, not extreme spins, for product mockups.",
+    "A 700-1200ms entry can work for hero sections; keep repeated interactions shorter.",
+    "Liquid Glass UI pairs well with device mockups when glass controls float above the device frame."
+  ],
+  "avoid_when": [
+    "enterprise admin daily workflow",
+    "documentation page",
+    "low bandwidth landing page"
+  ],
+  "quality": {
+    "signal_strength": "medium",
+    "evidence_level": "summary_only",
+    "notes": "Swishy lists laptop opening, phone messages, app video showcase, mobile bookshelf, and similar product showcase templates."
+  },
+  "retrieval": {
+    "ai_summary": "Use device/product showcase motion for app launch and hero sections: phone/laptop mockup entry, perspective reveal, message pop-ups, and settled readable product screens, with static fallback.",
+    "prompt_tags": [
+      "device-mockup",
+      "product-showcase",
+      "app-launch",
+      "laptop-opening",
+      "phone-preview",
+      "hero-motion"
+    ],
+    "negative_prompt_tags": [
+      "daily-admin",
+      "docs",
+      "motion-sickness"
+    ]
+  }
+}

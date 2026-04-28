@@ -1,0 +1,194 @@
+[
+  {
+    "chunk_id": "visual-style-data-current-particle-background-overview",
+    "record_id": "visual-style-data-current-particle-background",
+    "source_name": "MDN Canvas animation and requestAnimationFrame references",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# MDN Canvas animation and requestAnimationFrame references - Overview\n\nPage type: component_pattern\nUse cases: AI dashboard background, automation console, analytics interface, agent workflow UI, data visualization shell, glass command center\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame\n\nVisual traits:\n- low-density data currents moving behind glass panels\n- slow particle drift with occasional connection lines\n- depth layers of dust, telemetry, and soft light trails\n- technical atmosphere without sci-fi clutter\n- subtle motion that supports AI or analytics context\n\nUse when:\n- AI dashboard background\n- automation console\n- analytics interface\n- agent workflow UI\n- data visualization shell\n- glass command center\n\nAvoid when:\n- high particle density behind text\n- cursor-chasing particles in serious productivity tools\n- fast network-line animations\n- bright blinking nodes\n- turning the whole UI into a sci-fi dashboard when the domain is operational\n- running canvas animation without reduced-motion or visibility pause\n\nAI summary: Use data current particle backgrounds for AI, analytics, and automation glass interfaces. Keep particles sparse, slow, peripheral, and pauseable; implement with canvas and requestAnimationFrame when many points are needed, with reduced-motion and visibility throttling.",
+    "tokens": 185,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "data-current",
+        "particle-background",
+        "ai-dashboard",
+        "analytics-ui",
+        "automation-console",
+        "canvas-animation",
+        "requestAnimationFrame",
+        "glass-command-center"
+      ],
+      "negative_prompt_tags": [
+        "dense-particles",
+        "fast-network-lines",
+        "cursor-chasing",
+        "strobing",
+        "sci-fi-clutter",
+        "no-reduced-motion"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-data-current-particle-background-layout",
+    "record_id": "visual-style-data-current-particle-background",
+    "source_name": "MDN Canvas animation and requestAnimationFrame references",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# MDN Canvas animation and requestAnimationFrame references - Layout Rules\n\nPage type: component_pattern\nUse cases: AI dashboard background, automation console, analytics interface, agent workflow UI, data visualization shell, glass command center\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame\n\n- Keep particles sparse enough that empty space remains visible behind glass.\n- Use data current motion in peripheral zones and behind overview cards, not under forms or dense text.\n- Prefer horizontal or orbital flow paths that imply system activity without distracting from controls.\n- Fade particles near modal and navigation surfaces to keep hierarchy clear.\n- Use one data-current layer plus one ambient glow layer; avoid stacking many unrelated particle systems.\n\nAI summary: Use data current particle backgrounds for AI, analytics, and automation glass interfaces. Keep particles sparse, slow, peripheral, and pauseable; implement with canvas and requestAnimationFrame when many points are needed, with reduced-motion and visibility throttling.",
+    "tokens": 146,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "data-current",
+        "particle-background",
+        "ai-dashboard",
+        "analytics-ui",
+        "automation-console",
+        "canvas-animation",
+        "requestAnimationFrame",
+        "glass-command-center"
+      ],
+      "negative_prompt_tags": [
+        "dense-particles",
+        "fast-network-lines",
+        "cursor-chasing",
+        "strobing",
+        "sci-fi-clutter",
+        "no-reduced-motion"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-data-current-particle-background-components",
+    "record_id": "visual-style-data-current-particle-background",
+    "source_name": "MDN Canvas animation and requestAnimationFrame references",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# MDN Canvas animation and requestAnimationFrame references - Component Patterns\n\nPage type: component_pattern\nUse cases: AI dashboard background, automation console, analytics interface, agent workflow UI, data visualization shell, glass command center\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame\n\n- canvas particle current\n- telemetry dust layer\n- glass analytics card\n- agent activity backdrop\n- soft connection lines\n- static reduced-motion constellation\n\nAI summary: Use data current particle backgrounds for AI, analytics, and automation glass interfaces. Keep particles sparse, slow, peripheral, and pauseable; implement with canvas and requestAnimationFrame when many points are needed, with reduced-motion and visibility throttling.",
+    "tokens": 97,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "data-current",
+        "particle-background",
+        "ai-dashboard",
+        "analytics-ui",
+        "automation-console",
+        "canvas-animation",
+        "requestAnimationFrame",
+        "glass-command-center"
+      ],
+      "negative_prompt_tags": [
+        "dense-particles",
+        "fast-network-lines",
+        "cursor-chasing",
+        "strobing",
+        "sci-fi-clutter",
+        "no-reduced-motion"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-data-current-particle-background-interaction",
+    "record_id": "visual-style-data-current-particle-background",
+    "source_name": "MDN Canvas animation and requestAnimationFrame references",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# MDN Canvas animation and requestAnimationFrame references - Interaction States\n\nPage type: component_pattern\nUse cases: AI dashboard background, automation console, analytics interface, agent workflow UI, data visualization shell, glass command center\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame\n\n- idle particle drift\n- hover local attraction\n- active card glow pulse\n- loading data current acceleration\n- reduced-motion static dots\n- modal open particle fade\n\nAI summary: Use data current particle backgrounds for AI, analytics, and automation glass interfaces. Keep particles sparse, slow, peripheral, and pauseable; implement with canvas and requestAnimationFrame when many points are needed, with reduced-motion and visibility throttling.",
+    "tokens": 100,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "data-current",
+        "particle-background",
+        "ai-dashboard",
+        "analytics-ui",
+        "automation-console",
+        "canvas-animation",
+        "requestAnimationFrame",
+        "glass-command-center"
+      ],
+      "negative_prompt_tags": [
+        "dense-particles",
+        "fast-network-lines",
+        "cursor-chasing",
+        "strobing",
+        "sci-fi-clutter",
+        "no-reduced-motion"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-data-current-particle-background-accessibility",
+    "record_id": "visual-style-data-current-particle-background",
+    "source_name": "MDN Canvas animation and requestAnimationFrame references",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# MDN Canvas animation and requestAnimationFrame references - Accessibility Notes\n\nPage type: component_pattern\nUse cases: AI dashboard background, automation console, analytics interface, agent workflow UI, data visualization shell, glass command center\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame\n\n- Provide reduced-motion mode that stops particle movement or uses a static constellation.\n- Do not make particle motion a required status indicator; pair loading or activity states with text.\n- Keep moving points and lines below text contrast priority.\n- Avoid rapid flicker, dense strobing, or pointer-chasing effects near interactive elements.\n\nAI summary: Use data current particle backgrounds for AI, analytics, and automation glass interfaces. Keep particles sparse, slow, peripheral, and pauseable; implement with canvas and requestAnimationFrame when many points are needed, with reduced-motion and visibility throttling.",
+    "tokens": 125,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "data-current",
+        "particle-background",
+        "ai-dashboard",
+        "analytics-ui",
+        "automation-console",
+        "canvas-animation",
+        "requestAnimationFrame",
+        "glass-command-center"
+      ],
+      "negative_prompt_tags": [
+        "dense-particles",
+        "fast-network-lines",
+        "cursor-chasing",
+        "strobing",
+        "sci-fi-clutter",
+        "no-reduced-motion"
+      ]
+    }
+  },
+  {
+    "chunk_id": "visual-style-data-current-particle-background-implementation",
+    "record_id": "visual-style-data-current-particle-background",
+    "source_name": "MDN Canvas animation and requestAnimationFrame references",
+    "source_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# MDN Canvas animation and requestAnimationFrame references - Implementation Hints\n\nPage type: component_pattern\nUse cases: AI dashboard background, automation console, analytics interface, agent workflow UI, data visualization shell, glass command center\nEvidence: summary_only / high\nSource: https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame\n\n- Use canvas for particles when the background needs many moving points; use requestAnimationFrame for synchronized browser painting.\n- Scale particle count by viewport area and device capability; keep mobile counts lower.\n- Use delta-time based movement so speed is stable across refresh rates.\n- Pause or heavily throttle animation when hidden, when reduced-motion is requested, or when the tab loses visibility.\n- Draw at a reduced internal resolution and blur/upscale softly if the current is atmospheric rather than precise.\n- Use color tokens for particle hue, line alpha, and glow so the scene can match dark or light glass themes.\n\nAI summary: Use data current particle backgrounds for AI, analytics, and automation glass interfaces. Keep particles sparse, slow, peripheral, and pauseable; implement with canvas and requestAnimationFrame when many points are needed, with reduced-motion and visibility throttling.",
+    "tokens": 174,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "data-current",
+        "particle-background",
+        "ai-dashboard",
+        "analytics-ui",
+        "automation-console",
+        "canvas-animation",
+        "requestAnimationFrame",
+        "glass-command-center"
+      ],
+      "negative_prompt_tags": [
+        "dense-particles",
+        "fast-network-lines",
+        "cursor-chasing",
+        "strobing",
+        "sci-fi-clutter",
+        "no-reduced-motion"
+      ]
+    }
+  }
+]

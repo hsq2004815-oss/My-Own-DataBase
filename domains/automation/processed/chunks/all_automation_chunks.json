@@ -1,0 +1,2214 @@
+[
+  {
+    "chunk_id": "automation-failure-recovery-playbook-overview",
+    "record_id": "automation-failure-recovery-playbook",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation failure recovery playbook",
+    "source_url": "local-generated:2026-04-25/automation-failure-recovery",
+    "section": "overview",
+    "content": "# automation-failure-recovery-playbook - Overview\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, Windows\nGoal: Recover from common browser and local automation failures with bounded retries and evidence.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-failure-recovery\n\nWhen to use:\n- Selector not found\n- Click intercepted\n- Upload failed\n- Login expired\n- API down\n- Path error\n- Timeout\n\nInputs required:\n- Error output\n- Current screenshot\n- Current URL\n- Last successful step\n\nAI summary: When automation fails, classify the failure, capture evidence, retry with a targeted fallback, stop on auth/dangerous ambiguity, and report recovered state or blocker.",
+    "tokens": 96,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "Windows"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "failure",
+        "recovery",
+        "selector",
+        "overlay",
+        "upload",
+        "auth",
+        "timeout",
+        "path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-failure-recovery-playbook-steps",
+    "record_id": "automation-failure-recovery-playbook",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation failure recovery playbook",
+    "source_url": "local-generated:2026-04-25/automation-failure-recovery",
+    "section": "steps",
+    "content": "# automation-failure-recovery-playbook - Execution Steps\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, Windows\nGoal: Recover from common browser and local automation failures with bounded retries and evidence.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-failure-recovery\n\n- Classify failure as selector, timing, overlay, frame, auth, path, network, or permission.\n- Capture screenshot/log at failure point.\n- Retry with narrower locator or explicit state wait, not blind repetition.\n- Check frame/popup/overlay context.\n- For upload failures, verify path and actual file input.\n- For auth failures, stop and report login requirement.\n- For irreversible action ambiguity, stop and ask for confirmation.\n\nAI summary: When automation fails, classify the failure, capture evidence, retry with a targeted fallback, stop on auth/dangerous ambiguity, and report recovered state or blocker.",
+    "tokens": 122,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "Windows"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "failure",
+        "recovery",
+        "selector",
+        "overlay",
+        "upload",
+        "auth",
+        "timeout",
+        "path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-failure-recovery-playbook-commands",
+    "record_id": "automation-failure-recovery-playbook",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation failure recovery playbook",
+    "source_url": "local-generated:2026-04-25/automation-failure-recovery",
+    "section": "commands",
+    "content": "# automation-failure-recovery-playbook - Commands or APIs\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, Windows\nGoal: Recover from common browser and local automation failures with bounded retries and evidence.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-failure-recovery\n\n- screenshot\n- console logs\n- locator count\n- frameLocator\n- health endpoint\n- path exists check\n\nAI summary: When automation fails, classify the failure, capture evidence, retry with a targeted fallback, stop on auth/dangerous ambiguity, and report recovered state or blocker.",
+    "tokens": 76,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "Windows"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "failure",
+        "recovery",
+        "selector",
+        "overlay",
+        "upload",
+        "auth",
+        "timeout",
+        "path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-failure-recovery-playbook-verification",
+    "record_id": "automation-failure-recovery-playbook",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation failure recovery playbook",
+    "source_url": "local-generated:2026-04-25/automation-failure-recovery",
+    "section": "verification",
+    "content": "# automation-failure-recovery-playbook - Verification\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, Windows\nGoal: Recover from common browser and local automation failures with bounded retries and evidence.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-failure-recovery\n\n- Failure category identified\n- Fallback attempted\n- Either recovered or clear blocker reported\n\nAI summary: When automation fails, classify the failure, capture evidence, retry with a targeted fallback, stop on auth/dangerous ambiguity, and report recovered state or blocker.",
+    "tokens": 71,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "Windows"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "failure",
+        "recovery",
+        "selector",
+        "overlay",
+        "upload",
+        "auth",
+        "timeout",
+        "path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-failure-recovery-playbook-failure_modes",
+    "record_id": "automation-failure-recovery-playbook",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation failure recovery playbook",
+    "source_url": "local-generated:2026-04-25/automation-failure-recovery",
+    "section": "failure_modes",
+    "content": "# automation-failure-recovery-playbook - Failure Modes\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, Windows\nGoal: Recover from common browser and local automation failures with bounded retries and evidence.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-failure-recovery\n\n- Infinite retry loop\n- Silent fallback to wrong element\n- Publishing from wrong account\n- Ignoring auth expiration\n\nAI summary: When automation fails, classify the failure, capture evidence, retry with a targeted fallback, stop on auth/dangerous ambiguity, and report recovered state or blocker.",
+    "tokens": 77,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "Windows"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "failure",
+        "recovery",
+        "selector",
+        "overlay",
+        "upload",
+        "auth",
+        "timeout",
+        "path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-failure-recovery-playbook-safety",
+    "record_id": "automation-failure-recovery-playbook",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation failure recovery playbook",
+    "source_url": "local-generated:2026-04-25/automation-failure-recovery",
+    "section": "safety",
+    "content": "# automation-failure-recovery-playbook - Safety Notes\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, Windows\nGoal: Recover from common browser and local automation failures with bounded retries and evidence.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-failure-recovery\n\n- Bound retries; do not brute-force sensitive flows.\n- Stop on auth/payment/delete/publish ambiguity.\n\nAI summary: When automation fails, classify the failure, capture evidence, retry with a targeted fallback, stop on auth/dangerous ambiguity, and report recovered state or blocker.",
+    "tokens": 71,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "Windows"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "failure",
+        "recovery",
+        "selector",
+        "overlay",
+        "upload",
+        "auth",
+        "timeout",
+        "path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-failure-recovery-playbook-handoff",
+    "record_id": "automation-failure-recovery-playbook",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation failure recovery playbook",
+    "source_url": "local-generated:2026-04-25/automation-failure-recovery",
+    "section": "handoff",
+    "content": "# automation-failure-recovery-playbook - Handoff Report\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, Windows\nGoal: Recover from common browser and local automation failures with bounded retries and evidence.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-failure-recovery\n\n- Failure category\n- Evidence\n- Fallback\n- Recovered result or blocker\n\nAI summary: When automation fails, classify the failure, capture evidence, retry with a targeted fallback, stop on auth/dangerous ambiguity, and report recovered state or blocker.",
+    "tokens": 70,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "Windows"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "failure",
+        "recovery",
+        "selector",
+        "overlay",
+        "upload",
+        "auth",
+        "timeout",
+        "path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-handoff-evidence-report-overview",
+    "record_id": "automation-handoff-evidence-report",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation evidence report protocol",
+    "source_url": "local-generated:2026-04-25/automation-evidence-report",
+    "section": "overview",
+    "content": "# automation-handoff-evidence-report - Overview\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, local agents\nGoal: Require automation agents to report objective evidence rather than vague completion claims.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-evidence-report\n\nWhen to use:\n- Any browser/local automation task\n- Task changes remote website/admin state\n- User needs proof of completion\n\nInputs required:\n- Task scope\n- Target URL/app\n- Files used\n- Expected success criteria\n\nAI summary: Automation handoff must include target, inputs, steps, objective evidence, retries, skipped dangerous actions, and remaining gaps. Do not claim success without proof.",
+    "tokens": 91,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "handoff",
+        "evidence",
+        "screenshot",
+        "verification",
+        "report",
+        "dangerous-actions"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-handoff-evidence-report-steps",
+    "record_id": "automation-handoff-evidence-report",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation evidence report protocol",
+    "source_url": "local-generated:2026-04-25/automation-evidence-report",
+    "section": "steps",
+    "content": "# automation-handoff-evidence-report - Execution Steps\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, local agents\nGoal: Require automation agents to report objective evidence rather than vague completion claims.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-evidence-report\n\n- Report target URL/app and environment.\n- List key steps performed.\n- Include screenshots/logs/assertions for success.\n- List skipped dangerous actions and confirmations needed.\n- Report errors, retries, and remaining gaps.\n\nAI summary: Automation handoff must include target, inputs, steps, objective evidence, retries, skipped dangerous actions, and remaining gaps. Do not claim success without proof.",
+    "tokens": 88,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "handoff",
+        "evidence",
+        "screenshot",
+        "verification",
+        "report",
+        "dangerous-actions"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-handoff-evidence-report-commands",
+    "record_id": "automation-handoff-evidence-report",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation evidence report protocol",
+    "source_url": "local-generated:2026-04-25/automation-evidence-report",
+    "section": "commands",
+    "content": "# automation-handoff-evidence-report - Commands or APIs\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, local agents\nGoal: Require automation agents to report objective evidence rather than vague completion claims.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-evidence-report\n\n- /health outputs\n- screenshots\n- console/page errors\n- current URL/title\n- uploaded filename\n- success banner\n\nAI summary: Automation handoff must include target, inputs, steps, objective evidence, retries, skipped dangerous actions, and remaining gaps. Do not claim success without proof.",
+    "tokens": 75,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "handoff",
+        "evidence",
+        "screenshot",
+        "verification",
+        "report",
+        "dangerous-actions"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-handoff-evidence-report-verification",
+    "record_id": "automation-handoff-evidence-report",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation evidence report protocol",
+    "source_url": "local-generated:2026-04-25/automation-evidence-report",
+    "section": "verification",
+    "content": "# automation-handoff-evidence-report - Verification\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, local agents\nGoal: Require automation agents to report objective evidence rather than vague completion claims.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-evidence-report\n\n- Evidence shows final state\n- No unexplained errors remain\n- Dangerous actions are explicitly confirmed or skipped\n\nAI summary: Automation handoff must include target, inputs, steps, objective evidence, retries, skipped dangerous actions, and remaining gaps. Do not claim success without proof.",
+    "tokens": 74,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "handoff",
+        "evidence",
+        "screenshot",
+        "verification",
+        "report",
+        "dangerous-actions"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-handoff-evidence-report-failure_modes",
+    "record_id": "automation-handoff-evidence-report",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation evidence report protocol",
+    "source_url": "local-generated:2026-04-25/automation-evidence-report",
+    "section": "failure_modes",
+    "content": "# automation-handoff-evidence-report - Failure Modes\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, local agents\nGoal: Require automation agents to report objective evidence rather than vague completion claims.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-evidence-report\n\n- No screenshot\n- No final state assertion\n- Agent claims success after partial upload\n- Dangerous action performed silently\n\nAI summary: Automation handoff must include target, inputs, steps, objective evidence, retries, skipped dangerous actions, and remaining gaps. Do not claim success without proof.",
+    "tokens": 77,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "handoff",
+        "evidence",
+        "screenshot",
+        "verification",
+        "report",
+        "dangerous-actions"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-handoff-evidence-report-safety",
+    "record_id": "automation-handoff-evidence-report",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation evidence report protocol",
+    "source_url": "local-generated:2026-04-25/automation-evidence-report",
+    "section": "safety",
+    "content": "# automation-handoff-evidence-report - Safety Notes\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, local agents\nGoal: Require automation agents to report objective evidence rather than vague completion claims.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-evidence-report\n\n- Publishing, deleting, paying, sending, or changing account settings require explicit user confirmation unless already authorized.\n\nAI summary: Automation handoff must include target, inputs, steps, objective evidence, retries, skipped dangerous actions, and remaining gaps. Do not claim success without proof.",
+    "tokens": 73,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "handoff",
+        "evidence",
+        "screenshot",
+        "verification",
+        "report",
+        "dangerous-actions"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "automation-handoff-evidence-report-handoff",
+    "record_id": "automation-handoff-evidence-report",
+    "automation_type": "verification_debugging",
+    "source_name": "Automation evidence report protocol",
+    "source_url": "local-generated:2026-04-25/automation-evidence-report",
+    "section": "handoff",
+    "content": "# automation-handoff-evidence-report - Handoff Report\n\nAutomation type: verification_debugging\nTooling: Playwright, CDP, PowerShell, local agents\nGoal: Require automation agents to report objective evidence rather than vague completion claims.\nEvidence: documented / high\nSource: local-generated:2026-04-25/automation-evidence-report\n\n- Target\n- Inputs\n- Steps\n- Evidence\n- Retries\n- Skipped/blocked actions\n- Remaining gaps\n\nAI summary: Automation handoff must include target, inputs, steps, objective evidence, retries, skipped dangerous actions, and remaining gaps. Do not claim success without proof.",
+    "tokens": 73,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "CDP",
+        "PowerShell",
+        "local agents"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "automation",
+        "handoff",
+        "evidence",
+        "screenshot",
+        "verification",
+        "report",
+        "dangerous-actions"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-cdp-existing-browser-session-overview",
+    "record_id": "chrome-cdp-existing-browser-session",
+    "automation_type": "browser_cdp",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "overview",
+    "content": "# chrome-cdp-existing-browser-session - Overview\n\nAutomation type: browser_cdp\nTooling: Chrome, Edge, CDP, Playwright\nGoal: Connect automation to an existing logged-in Chromium browser through a local remote debugging port.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\nWhen to use:\n- Need existing login/session\n- MFA makes fresh browser login hard\n- Need inspectable live browser\n- Admin console automation\n\nInputs required:\n- Browser launched with remote debugging\n- Local port\n- User data directory/profile\n- Target URL\n\nAI summary: Use CDP when an agent must control an already logged-in Chrome/Edge session: launch with localhost remote-debugging port, verify /json/version, connect, confirm account, and close the port after use.",
+    "tokens": 104,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP",
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "chrome",
+        "edge",
+        "remote-debugging",
+        "existing-session",
+        "logged-in",
+        "connectOverCDP"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-cdp-existing-browser-session-steps",
+    "record_id": "chrome-cdp-existing-browser-session",
+    "automation_type": "browser_cdp",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "steps",
+    "content": "# chrome-cdp-existing-browser-session - Execution Steps\n\nAutomation type: browser_cdp\nTooling: Chrome, Edge, CDP, Playwright\nGoal: Connect automation to an existing logged-in Chromium browser through a local remote debugging port.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- Start Chrome/Edge with remote debugging bound to localhost and a dedicated user-data-dir/profile.\n- Check http://127.0.0.1:{port}/json/version or /json/list.\n- Connect Playwright or CDP client to the browser WebSocket endpoint.\n- Reuse logged-in state but verify account/profile before acting.\n- Close debug browser or port when done.\n\nAI summary: Use CDP when an agent must control an already logged-in Chrome/Edge session: launch with localhost remote-debugging port, verify /json/version, connect, confirm account, and close the port after use.",
+    "tokens": 110,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP",
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "chrome",
+        "edge",
+        "remote-debugging",
+        "existing-session",
+        "logged-in",
+        "connectOverCDP"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-cdp-existing-browser-session-commands",
+    "record_id": "chrome-cdp-existing-browser-session",
+    "automation_type": "browser_cdp",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "commands",
+    "content": "# chrome-cdp-existing-browser-session - Commands or APIs\n\nAutomation type: browser_cdp\nTooling: Chrome, Edge, CDP, Playwright\nGoal: Connect automation to an existing logged-in Chromium browser through a local remote debugging port.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- --remote-debugging-port=9222\n- --remote-debugging-address=127.0.0.1\n- http://127.0.0.1:9222/json/version\n- chromium.connectOverCDP(...)\n\nAI summary: Use CDP when an agent must control an already logged-in Chrome/Edge session: launch with localhost remote-debugging port, verify /json/version, connect, confirm account, and close the port after use.",
+    "tokens": 73,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP",
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "chrome",
+        "edge",
+        "remote-debugging",
+        "existing-session",
+        "logged-in",
+        "connectOverCDP"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-cdp-existing-browser-session-verification",
+    "record_id": "chrome-cdp-existing-browser-session",
+    "automation_type": "browser_cdp",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "verification",
+    "content": "# chrome-cdp-existing-browser-session - Verification\n\nAutomation type: browser_cdp\nTooling: Chrome, Edge, CDP, Playwright\nGoal: Connect automation to an existing logged-in Chromium browser through a local remote debugging port.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- /json/version returns browser info\n- Automation sees target page\n- Logged-in account is verified\n- Final screenshot proves outcome\n\nAI summary: Use CDP when an agent must control an already logged-in Chrome/Edge session: launch with localhost remote-debugging port, verify /json/version, connect, confirm account, and close the port after use.",
+    "tokens": 83,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP",
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "chrome",
+        "edge",
+        "remote-debugging",
+        "existing-session",
+        "logged-in",
+        "connectOverCDP"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-cdp-existing-browser-session-failure_modes",
+    "record_id": "chrome-cdp-existing-browser-session",
+    "automation_type": "browser_cdp",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "failure_modes",
+    "content": "# chrome-cdp-existing-browser-session - Failure Modes\n\nAutomation type: browser_cdp\nTooling: Chrome, Edge, CDP, Playwright\nGoal: Connect automation to an existing logged-in Chromium browser through a local remote debugging port.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- Port not listening\n- Wrong profile/user data dir\n- Chrome blocks default profile use\n- Security exposure\n- Account mismatch\n\nAI summary: Use CDP when an agent must control an already logged-in Chrome/Edge session: launch with localhost remote-debugging port, verify /json/version, connect, confirm account, and close the port after use.",
+    "tokens": 85,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP",
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "chrome",
+        "edge",
+        "remote-debugging",
+        "existing-session",
+        "logged-in",
+        "connectOverCDP"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-cdp-existing-browser-session-safety",
+    "record_id": "chrome-cdp-existing-browser-session",
+    "automation_type": "browser_cdp",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "safety",
+    "content": "# chrome-cdp-existing-browser-session - Safety Notes\n\nAutomation type: browser_cdp\nTooling: Chrome, Edge, CDP, Playwright\nGoal: Connect automation to an existing logged-in Chromium browser through a local remote debugging port.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- Bind debugging port to 127.0.0.1 only.\n- Do not expose CDP port to network.\n- Confirm account before irreversible actions.\n- Close debug session after task.\n\nAI summary: Use CDP when an agent must control an already logged-in Chrome/Edge session: launch with localhost remote-debugging port, verify /json/version, connect, confirm account, and close the port after use.",
+    "tokens": 91,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP",
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "chrome",
+        "edge",
+        "remote-debugging",
+        "existing-session",
+        "logged-in",
+        "connectOverCDP"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-cdp-existing-browser-session-handoff",
+    "record_id": "chrome-cdp-existing-browser-session",
+    "automation_type": "browser_cdp",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "handoff",
+    "content": "# chrome-cdp-existing-browser-session - Handoff Report\n\nAutomation type: browser_cdp\nTooling: Chrome, Edge, CDP, Playwright\nGoal: Connect automation to an existing logged-in Chromium browser through a local remote debugging port.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- Port/profile\n- Account verified\n- Pages/tabs used\n- Screenshots\n- Any irreversible action skipped or confirmed\n\nAI summary: Use CDP when an agent must control an already logged-in Chrome/Edge session: launch with localhost remote-debugging port, verify /json/version, connect, confirm account, and close the port after use.",
+    "tokens": 81,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP",
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "chrome",
+        "edge",
+        "remote-debugging",
+        "existing-session",
+        "logged-in",
+        "connectOverCDP"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-remote-debugging-security-boundary-overview",
+    "record_id": "chrome-remote-debugging-security-boundary",
+    "automation_type": "safety_protocol",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "overview",
+    "content": "# chrome-remote-debugging-security-boundary - Overview\n\nAutomation type: safety_protocol\nTooling: Chrome, Edge, CDP\nGoal: Prevent remote debugging from becoming a local security risk.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\nWhen to use:\n- Launching Chrome with remote debugging\n- Agent controls browser\n- Sensitive logged-in websites\n\nInputs required:\n- Port\n- Binding address\n- Browser profile\n- Task scope\n\nAI summary: CDP is powerful browser control. Bind remote debugging to 127.0.0.1, use dedicated profiles where possible, never expose the WebSocket endpoint, and stop before irreversible actions.",
+    "tokens": 84,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "security",
+        "remote-debugging",
+        "localhost",
+        "safety",
+        "irreversible"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-remote-debugging-security-boundary-steps",
+    "record_id": "chrome-remote-debugging-security-boundary",
+    "automation_type": "safety_protocol",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "steps",
+    "content": "# chrome-remote-debugging-security-boundary - Execution Steps\n\nAutomation type: safety_protocol\nTooling: Chrome, Edge, CDP\nGoal: Prevent remote debugging from becoming a local security risk.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- Bind to localhost only.\n- Use a dedicated automation profile when possible.\n- Avoid leaving remote debugging browser open after task.\n- Do not share WebSocket endpoint or expose port through firewall/tunnel.\n- Pause before destructive actions, purchases, deletes, or publishing.\n\nAI summary: CDP is powerful browser control. Bind remote debugging to 127.0.0.1, use dedicated profiles where possible, never expose the WebSocket endpoint, and stop before irreversible actions.",
+    "tokens": 97,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "security",
+        "remote-debugging",
+        "localhost",
+        "safety",
+        "irreversible"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-remote-debugging-security-boundary-commands",
+    "record_id": "chrome-remote-debugging-security-boundary",
+    "automation_type": "safety_protocol",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "commands",
+    "content": "# chrome-remote-debugging-security-boundary - Commands or APIs\n\nAutomation type: safety_protocol\nTooling: Chrome, Edge, CDP\nGoal: Prevent remote debugging from becoming a local security risk.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- --remote-debugging-address=127.0.0.1\n- netstat / Get-NetTCPConnection to verify listener\n- Stop browser/process after task\n\nAI summary: CDP is powerful browser control. Bind remote debugging to 127.0.0.1, use dedicated profiles where possible, never expose the WebSocket endpoint, and stop before irreversible actions.",
+    "tokens": 70,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "security",
+        "remote-debugging",
+        "localhost",
+        "safety",
+        "irreversible"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-remote-debugging-security-boundary-verification",
+    "record_id": "chrome-remote-debugging-security-boundary",
+    "automation_type": "safety_protocol",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "verification",
+    "content": "# chrome-remote-debugging-security-boundary - Verification\n\nAutomation type: safety_protocol\nTooling: Chrome, Edge, CDP\nGoal: Prevent remote debugging from becoming a local security risk.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- Port only listens locally\n- No unattended debug browser remains\n- Dangerous actions are confirmed\n\nAI summary: CDP is powerful browser control. Bind remote debugging to 127.0.0.1, use dedicated profiles where possible, never expose the WebSocket endpoint, and stop before irreversible actions.",
+    "tokens": 70,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "security",
+        "remote-debugging",
+        "localhost",
+        "safety",
+        "irreversible"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-remote-debugging-security-boundary-failure_modes",
+    "record_id": "chrome-remote-debugging-security-boundary",
+    "automation_type": "safety_protocol",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "failure_modes",
+    "content": "# chrome-remote-debugging-security-boundary - Failure Modes\n\nAutomation type: safety_protocol\nTooling: Chrome, Edge, CDP\nGoal: Prevent remote debugging from becoming a local security risk.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- Debug port exposed\n- Wrong website/account controlled\n- Credentials visible in logs/screenshots\n- Unconfirmed irreversible action\n\nAI summary: CDP is powerful browser control. Bind remote debugging to 127.0.0.1, use dedicated profiles where possible, never expose the WebSocket endpoint, and stop before irreversible actions.",
+    "tokens": 72,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "security",
+        "remote-debugging",
+        "localhost",
+        "safety",
+        "irreversible"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-remote-debugging-security-boundary-safety",
+    "record_id": "chrome-remote-debugging-security-boundary",
+    "automation_type": "safety_protocol",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "safety",
+    "content": "# chrome-remote-debugging-security-boundary - Safety Notes\n\nAutomation type: safety_protocol\nTooling: Chrome, Edge, CDP\nGoal: Prevent remote debugging from becoming a local security risk.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- Treat CDP as high privilege browser control.\n- Never expose debug port publicly.\n- Do not automate payments/deletion/publishing without explicit confirmation.\n\nAI summary: CDP is powerful browser control. Bind remote debugging to 127.0.0.1, use dedicated profiles where possible, never expose the WebSocket endpoint, and stop before irreversible actions.",
+    "tokens": 77,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "security",
+        "remote-debugging",
+        "localhost",
+        "safety",
+        "irreversible"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "chrome-remote-debugging-security-boundary-handoff",
+    "record_id": "chrome-remote-debugging-security-boundary",
+    "automation_type": "safety_protocol",
+    "source_name": "Chrome DevTools Remote Debugging",
+    "source_url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "section": "handoff",
+    "content": "# chrome-remote-debugging-security-boundary - Handoff Report\n\nAutomation type: safety_protocol\nTooling: Chrome, Edge, CDP\nGoal: Prevent remote debugging from becoming a local security risk.\nEvidence: official / high\nSource: https://developer.chrome.com/docs/devtools/remote-debugging\n\n- Debug address\n- Profile\n- Scope\n- Safety stops\n- Shutdown evidence\n\nAI summary: CDP is powerful browser control. Bind remote debugging to 127.0.0.1, use dedicated profiles where possible, never expose the WebSocket endpoint, and stop before irreversible actions.",
+    "tokens": 68,
+    "metadata": {
+      "tooling": [
+        "Chrome",
+        "Edge",
+        "CDP"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "cdp",
+        "security",
+        "remote-debugging",
+        "localhost",
+        "safety",
+        "irreversible"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-auto-wait-actionability-overview",
+    "record_id": "playwright-auto-wait-actionability",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Auto-waiting and Actionability",
+    "source_url": "https://playwright.dev/docs/actionability",
+    "section": "overview",
+    "content": "# playwright-auto-wait-actionability - Overview\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Rely on Playwright auto-waiting and actionability checks instead of manual sleep-heavy automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/actionability\n\nWhen to use:\n- Clicks fail intermittently\n- Page needs waiting\n- Form submit or navigation is flaky\n\nInputs required:\n- Target action\n- Expected post-action state\n- Timeout budget\n\nAI summary: Use Playwright auto-waiting/actionability and auto-retrying assertions. Avoid fixed sleeps; wait for specific UI state, URL, response, or locator.",
+    "tokens": 78,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "auto-wait",
+        "actionability",
+        "assertion",
+        "flaky",
+        "wait"
+      ],
+      "negative_prompt_tags": [
+        "sleep-only",
+        "force-click-default"
+      ]
+    }
+  },
+  {
+    "chunk_id": "playwright-auto-wait-actionability-steps",
+    "record_id": "playwright-auto-wait-actionability",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Auto-waiting and Actionability",
+    "source_url": "https://playwright.dev/docs/actionability",
+    "section": "steps",
+    "content": "# playwright-auto-wait-actionability - Execution Steps\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Rely on Playwright auto-waiting and actionability checks instead of manual sleep-heavy automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/actionability\n\n- Use locators directly; Playwright waits for visible/enabled/stable where relevant.\n- Prefer auto-retrying expect assertions for final state.\n- Wait for specific UI state, URL, response, or locator rather than fixed time.\n- Use explicit waits only for known asynchronous boundaries.\n\nAI summary: Use Playwright auto-waiting/actionability and auto-retrying assertions. Avoid fixed sleeps; wait for specific UI state, URL, response, or locator.",
+    "tokens": 90,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "auto-wait",
+        "actionability",
+        "assertion",
+        "flaky",
+        "wait"
+      ],
+      "negative_prompt_tags": [
+        "sleep-only",
+        "force-click-default"
+      ]
+    }
+  },
+  {
+    "chunk_id": "playwright-auto-wait-actionability-commands",
+    "record_id": "playwright-auto-wait-actionability",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Auto-waiting and Actionability",
+    "source_url": "https://playwright.dev/docs/actionability",
+    "section": "commands",
+    "content": "# playwright-auto-wait-actionability - Commands or APIs\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Rely on Playwright auto-waiting and actionability checks instead of manual sleep-heavy automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/actionability\n\n- await locator.click()\n- await expect(locator).toBeVisible()\n- await expect(page).toHaveURL(...)\n\nAI summary: Use Playwright auto-waiting/actionability and auto-retrying assertions. Avoid fixed sleeps; wait for specific UI state, URL, response, or locator.",
+    "tokens": 59,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "auto-wait",
+        "actionability",
+        "assertion",
+        "flaky",
+        "wait"
+      ],
+      "negative_prompt_tags": [
+        "sleep-only",
+        "force-click-default"
+      ]
+    }
+  },
+  {
+    "chunk_id": "playwright-auto-wait-actionability-verification",
+    "record_id": "playwright-auto-wait-actionability",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Auto-waiting and Actionability",
+    "source_url": "https://playwright.dev/docs/actionability",
+    "section": "verification",
+    "content": "# playwright-auto-wait-actionability - Verification\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Rely on Playwright auto-waiting and actionability checks instead of manual sleep-heavy automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/actionability\n\n- No fixed sleep required\n- Assertion proves expected state\n- Failure message points to missing state\n\nAI summary: Use Playwright auto-waiting/actionability and auto-retrying assertions. Avoid fixed sleeps; wait for specific UI state, URL, response, or locator.",
+    "tokens": 65,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "auto-wait",
+        "actionability",
+        "assertion",
+        "flaky",
+        "wait"
+      ],
+      "negative_prompt_tags": [
+        "sleep-only",
+        "force-click-default"
+      ]
+    }
+  },
+  {
+    "chunk_id": "playwright-auto-wait-actionability-failure_modes",
+    "record_id": "playwright-auto-wait-actionability",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Auto-waiting and Actionability",
+    "source_url": "https://playwright.dev/docs/actionability",
+    "section": "failure_modes",
+    "content": "# playwright-auto-wait-actionability - Failure Modes\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Rely on Playwright auto-waiting and actionability checks instead of manual sleep-heavy automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/actionability\n\n- Element detached\n- Overlay intercepts click\n- Animation not settled\n- Disabled button\n\nAI summary: Use Playwright auto-waiting/actionability and auto-retrying assertions. Avoid fixed sleeps; wait for specific UI state, URL, response, or locator.",
+    "tokens": 63,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "auto-wait",
+        "actionability",
+        "assertion",
+        "flaky",
+        "wait"
+      ],
+      "negative_prompt_tags": [
+        "sleep-only",
+        "force-click-default"
+      ]
+    }
+  },
+  {
+    "chunk_id": "playwright-auto-wait-actionability-safety",
+    "record_id": "playwright-auto-wait-actionability",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Auto-waiting and Actionability",
+    "source_url": "https://playwright.dev/docs/actionability",
+    "section": "safety",
+    "content": "# playwright-auto-wait-actionability - Safety Notes\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Rely on Playwright auto-waiting and actionability checks instead of manual sleep-heavy automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/actionability\n\n- Do not bypass actionability with force unless the task explicitly requires it and risk is low.\n\nAI summary: Use Playwright auto-waiting/actionability and auto-retrying assertions. Avoid fixed sleeps; wait for specific UI state, URL, response, or locator.",
+    "tokens": 66,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "auto-wait",
+        "actionability",
+        "assertion",
+        "flaky",
+        "wait"
+      ],
+      "negative_prompt_tags": [
+        "sleep-only",
+        "force-click-default"
+      ]
+    }
+  },
+  {
+    "chunk_id": "playwright-auto-wait-actionability-handoff",
+    "record_id": "playwright-auto-wait-actionability",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Auto-waiting and Actionability",
+    "source_url": "https://playwright.dev/docs/actionability",
+    "section": "handoff",
+    "content": "# playwright-auto-wait-actionability - Handoff Report\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Rely on Playwright auto-waiting and actionability checks instead of manual sleep-heavy automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/actionability\n\n- Action attempted\n- Assertion used\n- Any forced actions or waits\n\nAI summary: Use Playwright auto-waiting/actionability and auto-retrying assertions. Avoid fixed sleeps; wait for specific UI state, URL, response, or locator.",
+    "tokens": 61,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "auto-wait",
+        "actionability",
+        "assertion",
+        "flaky",
+        "wait"
+      ],
+      "negative_prompt_tags": [
+        "sleep-only",
+        "force-click-default"
+      ]
+    }
+  },
+  {
+    "chunk_id": "playwright-file-upload-patterns-overview",
+    "record_id": "playwright-file-upload-patterns",
+    "automation_type": "file_upload",
+    "source_name": "Playwright Actions/Input",
+    "source_url": "https://playwright.dev/docs/input",
+    "section": "overview",
+    "content": "# playwright-file-upload-patterns - Overview\n\nAutomation type: file_upload\nTooling: Playwright, Windows paths\nGoal: Upload files reliably through file inputs, file chooser events, iframe-aware locators, and upload verification.\nEvidence: official / high\nSource: https://playwright.dev/docs/input\n\nWhen to use:\n- Need to upload image/video/pdf\n- Upload button opens OS file picker\n- Styled dropzone hides input\n- Upload lives inside iframe\n\nInputs required:\n- Absolute file path\n- Expected accepted file types\n- Upload success indicator\n- Frame/dropzone locator\n\nAI summary: For file upload, verify the path, target the real input[type=file] or filechooser, handle iframe context, then wait for filename/progress/success evidence.",
+    "tokens": 97,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "Windows paths"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "file-upload",
+        "setInputFiles",
+        "filechooser",
+        "iframe",
+        "dropzone",
+        "windows-path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-file-upload-patterns-steps",
+    "record_id": "playwright-file-upload-patterns",
+    "automation_type": "file_upload",
+    "source_name": "Playwright Actions/Input",
+    "source_url": "https://playwright.dev/docs/input",
+    "section": "steps",
+    "content": "# playwright-file-upload-patterns - Execution Steps\n\nAutomation type: file_upload\nTooling: Playwright, Windows paths\nGoal: Upload files reliably through file inputs, file chooser events, iframe-aware locators, and upload verification.\nEvidence: official / high\nSource: https://playwright.dev/docs/input\n\n- Verify file exists before upload.\n- Prefer locator.setInputFiles on the actual input[type=file].\n- If a file chooser opens, wait for page.waitForEvent('filechooser') then setFiles.\n- For iframes, locate frame first then target the input inside it.\n- After setting file, wait for filename/progress/success state.\n\nAI summary: For file upload, verify the path, target the real input[type=file] or filechooser, handle iframe context, then wait for filename/progress/success evidence.",
+    "tokens": 99,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "Windows paths"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "file-upload",
+        "setInputFiles",
+        "filechooser",
+        "iframe",
+        "dropzone",
+        "windows-path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-file-upload-patterns-commands",
+    "record_id": "playwright-file-upload-patterns",
+    "automation_type": "file_upload",
+    "source_name": "Playwright Actions/Input",
+    "source_url": "https://playwright.dev/docs/input",
+    "section": "commands",
+    "content": "# playwright-file-upload-patterns - Commands or APIs\n\nAutomation type: file_upload\nTooling: Playwright, Windows paths\nGoal: Upload files reliably through file inputs, file chooser events, iframe-aware locators, and upload verification.\nEvidence: official / high\nSource: https://playwright.dev/docs/input\n\n- locator.setInputFiles(path)\n- page.waitForEvent('filechooser')\n- fileChooser.setFiles(path)\n- frameLocator(...).locator('input[type=file]')\n\nAI summary: For file upload, verify the path, target the real input[type=file] or filechooser, handle iframe context, then wait for filename/progress/success evidence.",
+    "tokens": 64,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "Windows paths"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "file-upload",
+        "setInputFiles",
+        "filechooser",
+        "iframe",
+        "dropzone",
+        "windows-path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-file-upload-patterns-verification",
+    "record_id": "playwright-file-upload-patterns",
+    "automation_type": "file_upload",
+    "source_name": "Playwright Actions/Input",
+    "source_url": "https://playwright.dev/docs/input",
+    "section": "verification",
+    "content": "# playwright-file-upload-patterns - Verification\n\nAutomation type: file_upload\nTooling: Playwright, Windows paths\nGoal: Upload files reliably through file inputs, file chooser events, iframe-aware locators, and upload verification.\nEvidence: official / high\nSource: https://playwright.dev/docs/input\n\n- Uploaded filename appears\n- Progress reaches complete\n- Submit/publish button becomes enabled\n- Screenshot shows uploaded item\n\nAI summary: For file upload, verify the path, target the real input[type=file] or filechooser, handle iframe context, then wait for filename/progress/success evidence.",
+    "tokens": 72,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "Windows paths"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "file-upload",
+        "setInputFiles",
+        "filechooser",
+        "iframe",
+        "dropzone",
+        "windows-path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-file-upload-patterns-failure_modes",
+    "record_id": "playwright-file-upload-patterns",
+    "automation_type": "file_upload",
+    "source_name": "Playwright Actions/Input",
+    "source_url": "https://playwright.dev/docs/input",
+    "section": "failure_modes",
+    "content": "# playwright-file-upload-patterns - Failure Modes\n\nAutomation type: file_upload\nTooling: Playwright, Windows paths\nGoal: Upload files reliably through file inputs, file chooser events, iframe-aware locators, and upload verification.\nEvidence: official / high\nSource: https://playwright.dev/docs/input\n\n- Targeting styled div instead of input\n- Invalid Windows/Bash path\n- Hidden input not connected\n- Iframe context missed\n- File type rejected\n\nAI summary: For file upload, verify the path, target the real input[type=file] or filechooser, handle iframe context, then wait for filename/progress/success evidence.",
+    "tokens": 79,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "Windows paths"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "file-upload",
+        "setInputFiles",
+        "filechooser",
+        "iframe",
+        "dropzone",
+        "windows-path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-file-upload-patterns-safety",
+    "record_id": "playwright-file-upload-patterns",
+    "automation_type": "file_upload",
+    "source_name": "Playwright Actions/Input",
+    "source_url": "https://playwright.dev/docs/input",
+    "section": "safety",
+    "content": "# playwright-file-upload-patterns - Safety Notes\n\nAutomation type: file_upload\nTooling: Playwright, Windows paths\nGoal: Upload files reliably through file inputs, file chooser events, iframe-aware locators, and upload verification.\nEvidence: official / high\nSource: https://playwright.dev/docs/input\n\n- Do not click publish/submit after upload unless requested.\n- Never upload private files without explicit path confirmation.\n\nAI summary: For file upload, verify the path, target the real input[type=file] or filechooser, handle iframe context, then wait for filename/progress/success evidence.",
+    "tokens": 73,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "Windows paths"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "file-upload",
+        "setInputFiles",
+        "filechooser",
+        "iframe",
+        "dropzone",
+        "windows-path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-file-upload-patterns-handoff",
+    "record_id": "playwright-file-upload-patterns",
+    "automation_type": "file_upload",
+    "source_name": "Playwright Actions/Input",
+    "source_url": "https://playwright.dev/docs/input",
+    "section": "handoff",
+    "content": "# playwright-file-upload-patterns - Handoff Report\n\nAutomation type: file_upload\nTooling: Playwright, Windows paths\nGoal: Upload files reliably through file inputs, file chooser events, iframe-aware locators, and upload verification.\nEvidence: official / high\nSource: https://playwright.dev/docs/input\n\n- File path used\n- Upload method\n- Success indicator\n- Screenshot/log evidence\n\nAI summary: For file upload, verify the path, target the real input[type=file] or filechooser, handle iframe context, then wait for filename/progress/success evidence.",
+    "tokens": 68,
+    "metadata": {
+      "tooling": [
+        "Playwright",
+        "Windows paths"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "file-upload",
+        "setInputFiles",
+        "filechooser",
+        "iframe",
+        "dropzone",
+        "windows-path"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-locator-best-practices-overview",
+    "record_id": "playwright-locator-best-practices",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "overview",
+    "content": "# playwright-locator-best-practices - Overview\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Use resilient locators and avoid brittle selectors in browser automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\nWhen to use:\n- Automating web UI\n- Selectors are flaky\n- Agent needs to click/fill stable elements\n\nInputs required:\n- Target URL\n- User-visible labels/roles\n- Stable test ids if available\n\nAI summary: Use Playwright resilient locators: role, label, text, placeholder, test id, and scoped locators. Avoid brittle CSS/XPath and arbitrary sleeps.",
+    "tokens": 79,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "locator",
+        "selectors",
+        "role",
+        "text",
+        "test-id",
+        "stable"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-locator-best-practices-steps",
+    "record_id": "playwright-locator-best-practices",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "steps",
+    "content": "# playwright-locator-best-practices - Execution Steps\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Use resilient locators and avoid brittle selectors in browser automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Prefer role, text, label, placeholder, and test id locators over CSS/XPath.\n- Use Playwright Inspector/codegen only as a starting point; review locator semantics.\n- Scope locators to a region when text repeats.\n- Avoid selecting by dynamic class names or layout-dependent nth-child selectors.\n\nAI summary: Use Playwright resilient locators: role, label, text, placeholder, test id, and scoped locators. Avoid brittle CSS/XPath and arbitrary sleeps.",
+    "tokens": 92,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "locator",
+        "selectors",
+        "role",
+        "text",
+        "test-id",
+        "stable"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-locator-best-practices-commands",
+    "record_id": "playwright-locator-best-practices",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "commands",
+    "content": "# playwright-locator-best-practices - Commands or APIs\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Use resilient locators and avoid brittle selectors in browser automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- page.getByRole(...)\n- page.getByLabel(...)\n- page.getByText(...)\n- locator.filter(...)\n\nAI summary: Use Playwright resilient locators: role, label, text, placeholder, test id, and scoped locators. Avoid brittle CSS/XPath and arbitrary sleeps.",
+    "tokens": 57,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "locator",
+        "selectors",
+        "role",
+        "text",
+        "test-id",
+        "stable"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-locator-best-practices-verification",
+    "record_id": "playwright-locator-best-practices",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "verification",
+    "content": "# playwright-locator-best-practices - Verification\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Use resilient locators and avoid brittle selectors in browser automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Element action succeeds without arbitrary sleep\n- Locator remains unique or intentionally scoped\n- Screenshot or assertion confirms result\n\nAI summary: Use Playwright resilient locators: role, label, text, placeholder, test id, and scoped locators. Avoid brittle CSS/XPath and arbitrary sleeps.",
+    "tokens": 67,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "locator",
+        "selectors",
+        "role",
+        "text",
+        "test-id",
+        "stable"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-locator-best-practices-failure_modes",
+    "record_id": "playwright-locator-best-practices",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "failure_modes",
+    "content": "# playwright-locator-best-practices - Failure Modes\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Use resilient locators and avoid brittle selectors in browser automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Multiple matching elements\n- Text changes due to locale\n- Dynamic class/hash changes\n- Hidden duplicate element\n\nAI summary: Use Playwright resilient locators: role, label, text, placeholder, test id, and scoped locators. Avoid brittle CSS/XPath and arbitrary sleeps.",
+    "tokens": 66,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "locator",
+        "selectors",
+        "role",
+        "text",
+        "test-id",
+        "stable"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-locator-best-practices-safety",
+    "record_id": "playwright-locator-best-practices",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "safety",
+    "content": "# playwright-locator-best-practices - Safety Notes\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Use resilient locators and avoid brittle selectors in browser automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Do not automate destructive actions without explicit user instruction.\n- Prefer assertions before submit/publish/delete.\n\nAI summary: Use Playwright resilient locators: role, label, text, placeholder, test id, and scoped locators. Avoid brittle CSS/XPath and arbitrary sleeps.",
+    "tokens": 63,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "locator",
+        "selectors",
+        "role",
+        "text",
+        "test-id",
+        "stable"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-locator-best-practices-handoff",
+    "record_id": "playwright-locator-best-practices",
+    "automation_type": "browser_playwright",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "handoff",
+    "content": "# playwright-locator-best-practices - Handoff Report\n\nAutomation type: browser_playwright\nTooling: Playwright\nGoal: Use resilient locators and avoid brittle selectors in browser automation.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Selectors used\n- Why they are stable\n- Screenshots/assertions\n\nAI summary: Use Playwright resilient locators: role, label, text, placeholder, test id, and scoped locators. Avoid brittle CSS/XPath and arbitrary sleeps.",
+    "tokens": 58,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "locator",
+        "selectors",
+        "role",
+        "text",
+        "test-id",
+        "stable"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-overlay-modal-iframe-handling-overview",
+    "record_id": "playwright-overlay-modal-iframe-handling",
+    "automation_type": "overlay_modal_iframe",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "overview",
+    "content": "# playwright-overlay-modal-iframe-handling - Overview\n\nAutomation type: overlay_modal_iframe\nTooling: Playwright\nGoal: Handle overlays, modals, dropdowns, popups, and iframes without brittle clicks.\nEvidence: official / medium\nSource: https://playwright.dev/docs/best-practices\n\nWhen to use:\n- Element is covered\n- Dropdown option not clickable\n- Modal blocks page\n- Target content inside iframe\n- Popup opens new page\n\nInputs required:\n- Current screenshot\n- Expected target element\n- Frame/popup relationship\n\nAI summary: For overlays/modals/dropdowns/iframes, detect the blocking surface, interact by role, use frameLocator or popup waits, then verify target state by screenshot/assertion.",
+    "tokens": 86,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "overlay",
+        "modal",
+        "dropdown",
+        "iframe",
+        "popup",
+        "frameLocator"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-overlay-modal-iframe-handling-steps",
+    "record_id": "playwright-overlay-modal-iframe-handling",
+    "automation_type": "overlay_modal_iframe",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "steps",
+    "content": "# playwright-overlay-modal-iframe-handling - Execution Steps\n\nAutomation type: overlay_modal_iframe\nTooling: Playwright\nGoal: Handle overlays, modals, dropdowns, popups, and iframes without brittle clicks.\nEvidence: official / medium\nSource: https://playwright.dev/docs/best-practices\n\n- Check for visible dialogs/overlays before clicking underlying controls.\n- Close or interact with modal using role/name locators.\n- Use frameLocator for iframe content.\n- Use page.waitForEvent('popup') when a new tab/window is expected.\n- Wait for dropdown listbox/menu option visibility before selecting.\n\nAI summary: For overlays/modals/dropdowns/iframes, detect the blocking surface, interact by role, use frameLocator or popup waits, then verify target state by screenshot/assertion.",
+    "tokens": 91,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "overlay",
+        "modal",
+        "dropdown",
+        "iframe",
+        "popup",
+        "frameLocator"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-overlay-modal-iframe-handling-commands",
+    "record_id": "playwright-overlay-modal-iframe-handling",
+    "automation_type": "overlay_modal_iframe",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "commands",
+    "content": "# playwright-overlay-modal-iframe-handling - Commands or APIs\n\nAutomation type: overlay_modal_iframe\nTooling: Playwright\nGoal: Handle overlays, modals, dropdowns, popups, and iframes without brittle clicks.\nEvidence: official / medium\nSource: https://playwright.dev/docs/best-practices\n\n- page.getByRole('dialog')\n- frameLocator(...)\n- page.waitForEvent('popup')\n- getByRole('option')\n- getByRole('menuitem')\n\nAI summary: For overlays/modals/dropdowns/iframes, detect the blocking surface, interact by role, use frameLocator or popup waits, then verify target state by screenshot/assertion.",
+    "tokens": 60,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "overlay",
+        "modal",
+        "dropdown",
+        "iframe",
+        "popup",
+        "frameLocator"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-overlay-modal-iframe-handling-verification",
+    "record_id": "playwright-overlay-modal-iframe-handling",
+    "automation_type": "overlay_modal_iframe",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "verification",
+    "content": "# playwright-overlay-modal-iframe-handling - Verification\n\nAutomation type: overlay_modal_iframe\nTooling: Playwright\nGoal: Handle overlays, modals, dropdowns, popups, and iframes without brittle clicks.\nEvidence: official / medium\nSource: https://playwright.dev/docs/best-practices\n\n- Overlay no longer covers target\n- Correct frame/popup receives action\n- Selected option appears\n- Screenshot confirms state\n\nAI summary: For overlays/modals/dropdowns/iframes, detect the blocking surface, interact by role, use frameLocator or popup waits, then verify target state by screenshot/assertion.",
+    "tokens": 67,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "overlay",
+        "modal",
+        "dropdown",
+        "iframe",
+        "popup",
+        "frameLocator"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-overlay-modal-iframe-handling-failure_modes",
+    "record_id": "playwright-overlay-modal-iframe-handling",
+    "automation_type": "overlay_modal_iframe",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "failure_modes",
+    "content": "# playwright-overlay-modal-iframe-handling - Failure Modes\n\nAutomation type: overlay_modal_iframe\nTooling: Playwright\nGoal: Handle overlays, modals, dropdowns, popups, and iframes without brittle clicks.\nEvidence: official / medium\nSource: https://playwright.dev/docs/best-practices\n\n- Click intercepted\n- Wrong frame\n- Popup missed\n- Dropdown closes before selection\n- Overlay animation still running\n\nAI summary: For overlays/modals/dropdowns/iframes, detect the blocking surface, interact by role, use frameLocator or popup waits, then verify target state by screenshot/assertion.",
+    "tokens": 68,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "overlay",
+        "modal",
+        "dropdown",
+        "iframe",
+        "popup",
+        "frameLocator"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-overlay-modal-iframe-handling-safety",
+    "record_id": "playwright-overlay-modal-iframe-handling",
+    "automation_type": "overlay_modal_iframe",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "safety",
+    "content": "# playwright-overlay-modal-iframe-handling - Safety Notes\n\nAutomation type: overlay_modal_iframe\nTooling: Playwright\nGoal: Handle overlays, modals, dropdowns, popups, and iframes without brittle clicks.\nEvidence: official / medium\nSource: https://playwright.dev/docs/best-practices\n\n- Do not dismiss security/permission/payment dialogs unless user explicitly authorizes it.\n\nAI summary: For overlays/modals/dropdowns/iframes, detect the blocking surface, interact by role, use frameLocator or popup waits, then verify target state by screenshot/assertion.",
+    "tokens": 60,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "overlay",
+        "modal",
+        "dropdown",
+        "iframe",
+        "popup",
+        "frameLocator"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-overlay-modal-iframe-handling-handoff",
+    "record_id": "playwright-overlay-modal-iframe-handling",
+    "automation_type": "overlay_modal_iframe",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "handoff",
+    "content": "# playwright-overlay-modal-iframe-handling - Handoff Report\n\nAutomation type: overlay_modal_iframe\nTooling: Playwright\nGoal: Handle overlays, modals, dropdowns, popups, and iframes without brittle clicks.\nEvidence: official / medium\nSource: https://playwright.dev/docs/best-practices\n\n- Blocking element found\n- Frame/popup handled\n- Final visible state\n\nAI summary: For overlays/modals/dropdowns/iframes, detect the blocking surface, interact by role, use frameLocator or popup waits, then verify target state by screenshot/assertion.",
+    "tokens": 60,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "overlay",
+        "modal",
+        "dropdown",
+        "iframe",
+        "popup",
+        "frameLocator"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-trace-screenshot-debugging-overview",
+    "record_id": "playwright-trace-screenshot-debugging",
+    "automation_type": "verification_debugging",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "overview",
+    "content": "# playwright-trace-screenshot-debugging - Overview\n\nAutomation type: verification_debugging\nTooling: Playwright\nGoal: Capture useful evidence and debug data when browser automation succeeds or fails.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\nWhen to use:\n- Automation task needs proof\n- A step failed\n- Need to inspect console/network\n- CI/local discrepancy\n\nInputs required:\n- Expected result\n- Failure point\n- Browser context/page\n\nAI summary: Automation reports should include screenshots/assertions, current URL/title, console/page errors when relevant, and trace/log references for failures.",
+    "tokens": 77,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "trace",
+        "screenshot",
+        "console",
+        "debugging",
+        "evidence",
+        "verification"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-trace-screenshot-debugging-steps",
+    "record_id": "playwright-trace-screenshot-debugging",
+    "automation_type": "verification_debugging",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "steps",
+    "content": "# playwright-trace-screenshot-debugging - Execution Steps\n\nAutomation type: verification_debugging\nTooling: Playwright\nGoal: Capture useful evidence and debug data when browser automation succeeds or fails.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Take screenshots at major milestones and on failure.\n- Capture console errors and page errors when debugging.\n- Use Playwright trace viewer for deep failures instead of relying only on screenshots.\n- Log current URL, title, visible state, and key selector statuses.\n\nAI summary: Automation reports should include screenshots/assertions, current URL/title, console/page errors when relevant, and trace/log references for failures.",
+    "tokens": 90,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "trace",
+        "screenshot",
+        "console",
+        "debugging",
+        "evidence",
+        "verification"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-trace-screenshot-debugging-commands",
+    "record_id": "playwright-trace-screenshot-debugging",
+    "automation_type": "verification_debugging",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "commands",
+    "content": "# playwright-trace-screenshot-debugging - Commands or APIs\n\nAutomation type: verification_debugging\nTooling: Playwright\nGoal: Capture useful evidence and debug data when browser automation succeeds or fails.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- page.screenshot(...) / locator.screenshot(...)\n- page.on('console', ...)\n- page.on('pageerror', ...)\n- trace viewer\n\nAI summary: Automation reports should include screenshots/assertions, current URL/title, console/page errors when relevant, and trace/log references for failures.",
+    "tokens": 61,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "trace",
+        "screenshot",
+        "console",
+        "debugging",
+        "evidence",
+        "verification"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-trace-screenshot-debugging-verification",
+    "record_id": "playwright-trace-screenshot-debugging",
+    "automation_type": "verification_debugging",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "verification",
+    "content": "# playwright-trace-screenshot-debugging - Verification\n\nAutomation type: verification_debugging\nTooling: Playwright\nGoal: Capture useful evidence and debug data when browser automation succeeds or fails.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Screenshot shows final state\n- Console errors reviewed\n- Trace or log path reported if captured\n\nAI summary: Automation reports should include screenshots/assertions, current URL/title, console/page errors when relevant, and trace/log references for failures.",
+    "tokens": 63,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "trace",
+        "screenshot",
+        "console",
+        "debugging",
+        "evidence",
+        "verification"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-trace-screenshot-debugging-failure_modes",
+    "record_id": "playwright-trace-screenshot-debugging",
+    "automation_type": "verification_debugging",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "failure_modes",
+    "content": "# playwright-trace-screenshot-debugging - Failure Modes\n\nAutomation type: verification_debugging\nTooling: Playwright\nGoal: Capture useful evidence and debug data when browser automation succeeds or fails.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Screenshot taken too early\n- Console errors ignored\n- Trace not enabled\n- Final state not asserted\n\nAI summary: Automation reports should include screenshots/assertions, current URL/title, console/page errors when relevant, and trace/log references for failures.",
+    "tokens": 65,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "trace",
+        "screenshot",
+        "console",
+        "debugging",
+        "evidence",
+        "verification"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-trace-screenshot-debugging-safety",
+    "record_id": "playwright-trace-screenshot-debugging",
+    "automation_type": "verification_debugging",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "safety",
+    "content": "# playwright-trace-screenshot-debugging - Safety Notes\n\nAutomation type: verification_debugging\nTooling: Playwright\nGoal: Capture useful evidence and debug data when browser automation succeeds or fails.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Do not include secrets/tokens in screenshots or logs if avoidable.\n\nAI summary: Automation reports should include screenshots/assertions, current URL/title, console/page errors when relevant, and trace/log references for failures.",
+    "tokens": 58,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "trace",
+        "screenshot",
+        "console",
+        "debugging",
+        "evidence",
+        "verification"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "playwright-trace-screenshot-debugging-handoff",
+    "record_id": "playwright-trace-screenshot-debugging",
+    "automation_type": "verification_debugging",
+    "source_name": "Playwright Best Practices",
+    "source_url": "https://playwright.dev/docs/best-practices",
+    "section": "handoff",
+    "content": "# playwright-trace-screenshot-debugging - Handoff Report\n\nAutomation type: verification_debugging\nTooling: Playwright\nGoal: Capture useful evidence and debug data when browser automation succeeds or fails.\nEvidence: official / high\nSource: https://playwright.dev/docs/best-practices\n\n- Screenshots\n- Console/page errors\n- Current URL/title\n- Assertions\n- Known gaps\n\nAI summary: Automation reports should include screenshots/assertions, current URL/title, console/page errors when relevant, and trace/log references for failures.",
+    "tokens": 60,
+    "metadata": {
+      "tooling": [
+        "Playwright"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "playwright",
+        "trace",
+        "screenshot",
+        "console",
+        "debugging",
+        "evidence",
+        "verification"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-powershell-quoting-and-paths-overview",
+    "record_id": "windows-powershell-quoting-and-paths",
+    "automation_type": "windows_shell",
+    "source_name": "PowerShell about_Quoting_Rules",
+    "source_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules",
+    "section": "overview",
+    "content": "# windows-powershell-quoting-and-paths - Overview\n\nAutomation type: windows_shell\nTooling: PowerShell, Windows, Python\nGoal: Run Windows local commands with safe quoting, literal paths, and shell-aware path handling.\nEvidence: official / high\nSource: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules\n\nWhen to use:\n- Windows path contains backslashes/spaces/Chinese\n- Bash ate backslashes\n- PowerShell command has quotes\n- Need to run Python scripts\n\nInputs required:\n- Shell type\n- Target path\n- Command arguments\n\nAI summary: On Windows, use PowerShell -NoProfile and -LiteralPath for exact paths; in Bash use forward slashes. Avoid raw backslash Windows paths in Bash and report corrected commands.",
+    "tokens": 93,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "Windows",
+        "Python"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "powershell",
+        "windows-path",
+        "quoting",
+        "literalpath",
+        "bash",
+        "no-profile",
+        "encoding"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-powershell-quoting-and-paths-steps",
+    "record_id": "windows-powershell-quoting-and-paths",
+    "automation_type": "windows_shell",
+    "source_name": "PowerShell about_Quoting_Rules",
+    "source_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules",
+    "section": "steps",
+    "content": "# windows-powershell-quoting-and-paths - Execution Steps\n\nAutomation type: windows_shell\nTooling: PowerShell, Windows, Python\nGoal: Run Windows local commands with safe quoting, literal paths, and shell-aware path handling.\nEvidence: official / high\nSource: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules\n\n- Use PowerShell -NoProfile to avoid startup hook noise when needed.\n- Use -LiteralPath for exact filesystem paths.\n- Use single quotes for literal PowerShell strings; double quotes when variable expansion is needed.\n- In Bash/Git Bash use forward slashes such as E:/DataBase/..., not raw E:\\DataBase\\...\n- Quote paths with spaces and avoid composing destructive commands across shells.\n\nAI summary: On Windows, use PowerShell -NoProfile and -LiteralPath for exact paths; in Bash use forward slashes. Avoid raw backslash Windows paths in Bash and report corrected commands.",
+    "tokens": 118,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "Windows",
+        "Python"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "powershell",
+        "windows-path",
+        "quoting",
+        "literalpath",
+        "bash",
+        "no-profile",
+        "encoding"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-powershell-quoting-and-paths-commands",
+    "record_id": "windows-powershell-quoting-and-paths",
+    "automation_type": "windows_shell",
+    "source_name": "PowerShell about_Quoting_Rules",
+    "source_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules",
+    "section": "commands",
+    "content": "# windows-powershell-quoting-and-paths - Commands or APIs\n\nAutomation type: windows_shell\nTooling: PowerShell, Windows, Python\nGoal: Run Windows local commands with safe quoting, literal paths, and shell-aware path handling.\nEvidence: official / high\nSource: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules\n\n- Get-Content -LiteralPath 'E:\\DataBase\\...'\n- python 'E:\\DataBase\\script.py'\n- E:/DataBase/script.py in Bash\n- pwsh -NoProfile -Command ...\n\nAI summary: On Windows, use PowerShell -NoProfile and -LiteralPath for exact paths; in Bash use forward slashes. Avoid raw backslash Windows paths in Bash and report corrected commands.",
+    "tokens": 77,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "Windows",
+        "Python"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "powershell",
+        "windows-path",
+        "quoting",
+        "literalpath",
+        "bash",
+        "no-profile",
+        "encoding"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-powershell-quoting-and-paths-verification",
+    "record_id": "windows-powershell-quoting-and-paths",
+    "automation_type": "windows_shell",
+    "source_name": "PowerShell about_Quoting_Rules",
+    "source_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules",
+    "section": "verification",
+    "content": "# windows-powershell-quoting-and-paths - Verification\n\nAutomation type: windows_shell\nTooling: PowerShell, Windows, Python\nGoal: Run Windows local commands with safe quoting, literal paths, and shell-aware path handling.\nEvidence: official / high\nSource: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules\n\n- Command reads intended file\n- No duplicated/corrupted path\n- No conda GBK startup noise when -NoProfile is used\n\nAI summary: On Windows, use PowerShell -NoProfile and -LiteralPath for exact paths; in Bash use forward slashes. Avoid raw backslash Windows paths in Bash and report corrected commands.",
+    "tokens": 78,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "Windows",
+        "Python"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "powershell",
+        "windows-path",
+        "quoting",
+        "literalpath",
+        "bash",
+        "no-profile",
+        "encoding"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-powershell-quoting-and-paths-failure_modes",
+    "record_id": "windows-powershell-quoting-and-paths",
+    "automation_type": "windows_shell",
+    "source_name": "PowerShell about_Quoting_Rules",
+    "source_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules",
+    "section": "failure_modes",
+    "content": "# windows-powershell-quoting-and-paths - Failure Modes\n\nAutomation type: windows_shell\nTooling: PowerShell, Windows, Python\nGoal: Run Windows local commands with safe quoting, literal paths, and shell-aware path handling.\nEvidence: official / high\nSource: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules\n\n- Backslashes consumed in Bash\n- Quote nesting breaks command\n- Chinese path encoding noise\n- Wildcard expansion hits wrong files\n\nAI summary: On Windows, use PowerShell -NoProfile and -LiteralPath for exact paths; in Bash use forward slashes. Avoid raw backslash Windows paths in Bash and report corrected commands.",
+    "tokens": 81,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "Windows",
+        "Python"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "powershell",
+        "windows-path",
+        "quoting",
+        "literalpath",
+        "bash",
+        "no-profile",
+        "encoding"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-powershell-quoting-and-paths-safety",
+    "record_id": "windows-powershell-quoting-and-paths",
+    "automation_type": "windows_shell",
+    "source_name": "PowerShell about_Quoting_Rules",
+    "source_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules",
+    "section": "safety",
+    "content": "# windows-powershell-quoting-and-paths - Safety Notes\n\nAutomation type: windows_shell\nTooling: PowerShell, Windows, Python\nGoal: Run Windows local commands with safe quoting, literal paths, and shell-aware path handling.\nEvidence: official / high\nSource: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules\n\n- Use native PowerShell file cmdlets for Windows file operations.\n- Avoid destructive commands unless explicitly authorized.\n\nAI summary: On Windows, use PowerShell -NoProfile and -LiteralPath for exact paths; in Bash use forward slashes. Avoid raw backslash Windows paths in Bash and report corrected commands.",
+    "tokens": 77,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "Windows",
+        "Python"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "powershell",
+        "windows-path",
+        "quoting",
+        "literalpath",
+        "bash",
+        "no-profile",
+        "encoding"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-powershell-quoting-and-paths-handoff",
+    "record_id": "windows-powershell-quoting-and-paths",
+    "automation_type": "windows_shell",
+    "source_name": "PowerShell about_Quoting_Rules",
+    "source_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules",
+    "section": "handoff",
+    "content": "# windows-powershell-quoting-and-paths - Handoff Report\n\nAutomation type: windows_shell\nTooling: PowerShell, Windows, Python\nGoal: Run Windows local commands with safe quoting, literal paths, and shell-aware path handling.\nEvidence: official / high\nSource: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules\n\n- Shell used\n- Corrected path\n- Command output\n- Any quoting workaround\n\nAI summary: On Windows, use PowerShell -NoProfile and -LiteralPath for exact paths; in Bash use forward slashes. Avoid raw backslash Windows paths in Bash and report corrected commands.",
+    "tokens": 73,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "Windows",
+        "Python"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "official",
+      "prompt_tags": [
+        "powershell",
+        "windows-path",
+        "quoting",
+        "literalpath",
+        "bash",
+        "no-profile",
+        "encoding"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-process-port-service-control-overview",
+    "record_id": "windows-process-port-service-control",
+    "automation_type": "windows_shell",
+    "source_name": "Local Windows service control notes",
+    "source_url": "local-generated:2026-04-25/windows-service-control",
+    "section": "overview",
+    "content": "# windows-process-port-service-control - Overview\n\nAutomation type: windows_shell\nTooling: PowerShell, uvicorn, FastAPI\nGoal: Start, verify, and stop local services such as the knowledge API without losing control of the shell.\nEvidence: tested / high\nSource: local-generated:2026-04-25/windows-service-control\n\nWhen to use:\n- Need to start local API\n- Port may be occupied\n- Need to verify service before agent call\n\nInputs required:\n- Working directory\n- Port\n- Startup command\n- Health endpoint\n\nAI summary: For local services, start in a controlled terminal/job, verify /health, inspect port conflicts before stopping processes, and report health response and shutdown state.",
+    "tokens": 95,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "uvicorn",
+        "FastAPI"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "windows",
+        "port",
+        "service",
+        "uvicorn",
+        "fastapi",
+        "health",
+        "process"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-process-port-service-control-steps",
+    "record_id": "windows-process-port-service-control",
+    "automation_type": "windows_shell",
+    "source_name": "Local Windows service control notes",
+    "source_url": "local-generated:2026-04-25/windows-service-control",
+    "section": "steps",
+    "content": "# windows-process-port-service-control - Execution Steps\n\nAutomation type: windows_shell\nTooling: PowerShell, uvicorn, FastAPI\nGoal: Start, verify, and stop local services such as the knowledge API without losing control of the shell.\nEvidence: tested / high\nSource: local-generated:2026-04-25/windows-service-control\n\n- Start service in a dedicated terminal or background job.\n- Wait briefly and call health endpoint.\n- If port is busy, identify listener before killing anything.\n- Use a different port for temporary tests.\n- Stop test jobs after verification.\n\nAI summary: For local services, start in a controlled terminal/job, verify /health, inspect port conflicts before stopping processes, and report health response and shutdown state.",
+    "tokens": 102,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "uvicorn",
+        "FastAPI"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "windows",
+        "port",
+        "service",
+        "uvicorn",
+        "fastapi",
+        "health",
+        "process"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-process-port-service-control-commands",
+    "record_id": "windows-process-port-service-control",
+    "automation_type": "windows_shell",
+    "source_name": "Local Windows service control notes",
+    "source_url": "local-generated:2026-04-25/windows-service-control",
+    "section": "commands",
+    "content": "# windows-process-port-service-control - Commands or APIs\n\nAutomation type: windows_shell\nTooling: PowerShell, uvicorn, FastAPI\nGoal: Start, verify, and stop local services such as the knowledge API without losing control of the shell.\nEvidence: tested / high\nSource: local-generated:2026-04-25/windows-service-control\n\n- python -m uvicorn app.main:app --host 127.0.0.1 --port 8765\n- Invoke-RestMethod http://127.0.0.1:8765/health\n- Get-NetTCPConnection -LocalPort 8765\n- Stop-Job / Stop-Process after confirmation\n\nAI summary: For local services, start in a controlled terminal/job, verify /health, inspect port conflicts before stopping processes, and report health response and shutdown state.",
+    "tokens": 84,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "uvicorn",
+        "FastAPI"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "windows",
+        "port",
+        "service",
+        "uvicorn",
+        "fastapi",
+        "health",
+        "process"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-process-port-service-control-verification",
+    "record_id": "windows-process-port-service-control",
+    "automation_type": "windows_shell",
+    "source_name": "Local Windows service control notes",
+    "source_url": "local-generated:2026-04-25/windows-service-control",
+    "section": "verification",
+    "content": "# windows-process-port-service-control - Verification\n\nAutomation type: windows_shell\nTooling: PowerShell, uvicorn, FastAPI\nGoal: Start, verify, and stop local services such as the knowledge API without losing control of the shell.\nEvidence: tested / high\nSource: local-generated:2026-04-25/windows-service-control\n\n- Health endpoint returns ok\n- Expected reference/chunk counts present\n- No orphan test job remains\n\nAI summary: For local services, start in a controlled terminal/job, verify /health, inspect port conflicts before stopping processes, and report health response and shutdown state.",
+    "tokens": 76,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "uvicorn",
+        "FastAPI"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "windows",
+        "port",
+        "service",
+        "uvicorn",
+        "fastapi",
+        "health",
+        "process"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-process-port-service-control-failure_modes",
+    "record_id": "windows-process-port-service-control",
+    "automation_type": "windows_shell",
+    "source_name": "Local Windows service control notes",
+    "source_url": "local-generated:2026-04-25/windows-service-control",
+    "section": "failure_modes",
+    "content": "# windows-process-port-service-control - Failure Modes\n\nAutomation type: windows_shell\nTooling: PowerShell, uvicorn, FastAPI\nGoal: Start, verify, and stop local services such as the knowledge API without losing control of the shell.\nEvidence: tested / high\nSource: local-generated:2026-04-25/windows-service-control\n\n- Port occupied\n- Wrong working directory\n- Module import failure\n- Background job left running\n\nAI summary: For local services, start in a controlled terminal/job, verify /health, inspect port conflicts before stopping processes, and report health response and shutdown state.",
+    "tokens": 77,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "uvicorn",
+        "FastAPI"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "windows",
+        "port",
+        "service",
+        "uvicorn",
+        "fastapi",
+        "health",
+        "process"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-process-port-service-control-safety",
+    "record_id": "windows-process-port-service-control",
+    "automation_type": "windows_shell",
+    "source_name": "Local Windows service control notes",
+    "source_url": "local-generated:2026-04-25/windows-service-control",
+    "section": "safety",
+    "content": "# windows-process-port-service-control - Safety Notes\n\nAutomation type: windows_shell\nTooling: PowerShell, uvicorn, FastAPI\nGoal: Start, verify, and stop local services such as the knowledge API without losing control of the shell.\nEvidence: tested / high\nSource: local-generated:2026-04-25/windows-service-control\n\n- Do not kill unrelated processes without inspecting owner/command.\n- Use localhost for local APIs.\n\nAI summary: For local services, start in a controlled terminal/job, verify /health, inspect port conflicts before stopping processes, and report health response and shutdown state.",
+    "tokens": 76,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "uvicorn",
+        "FastAPI"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "windows",
+        "port",
+        "service",
+        "uvicorn",
+        "fastapi",
+        "health",
+        "process"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "windows-process-port-service-control-handoff",
+    "record_id": "windows-process-port-service-control",
+    "automation_type": "windows_shell",
+    "source_name": "Local Windows service control notes",
+    "source_url": "local-generated:2026-04-25/windows-service-control",
+    "section": "handoff",
+    "content": "# windows-process-port-service-control - Handoff Report\n\nAutomation type: windows_shell\nTooling: PowerShell, uvicorn, FastAPI\nGoal: Start, verify, and stop local services such as the knowledge API without losing control of the shell.\nEvidence: tested / high\nSource: local-generated:2026-04-25/windows-service-control\n\n- Command started\n- Port\n- Health response\n- Shutdown state\n\nAI summary: For local services, start in a controlled terminal/job, verify /health, inspect port conflicts before stopping processes, and report health response and shutdown state.",
+    "tokens": 72,
+    "metadata": {
+      "tooling": [
+        "PowerShell",
+        "uvicorn",
+        "FastAPI"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "tested",
+      "prompt_tags": [
+        "windows",
+        "port",
+        "service",
+        "uvicorn",
+        "fastapi",
+        "health",
+        "process"
+      ],
+      "negative_prompt_tags": []
+    }
+  }
+]

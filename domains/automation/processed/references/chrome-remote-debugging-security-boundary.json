@@ -1,0 +1,81 @@
+{
+  "record_id": "chrome-remote-debugging-security-boundary",
+  "source": {
+    "name": "Chrome DevTools Remote Debugging",
+    "url": "https://developer.chrome.com/docs/devtools/remote-debugging",
+    "source_type": "official_docs",
+    "license_notes": "Summarized guidance with source link; do not copy full docs.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "automation",
+  "automation_type": "safety_protocol",
+  "tooling": [
+    "Chrome",
+    "Edge",
+    "CDP"
+  ],
+  "goal": "Prevent remote debugging from becoming a local security risk.",
+  "when_to_use": [
+    "Launching Chrome with remote debugging",
+    "Agent controls browser",
+    "Sensitive logged-in websites"
+  ],
+  "inputs_required": [
+    "Port",
+    "Binding address",
+    "Browser profile",
+    "Task scope"
+  ],
+  "steps": [
+    "Bind to localhost only.",
+    "Use a dedicated automation profile when possible.",
+    "Avoid leaving remote debugging browser open after task.",
+    "Do not share WebSocket endpoint or expose port through firewall/tunnel.",
+    "Pause before destructive actions, purchases, deletes, or publishing."
+  ],
+  "commands_or_apis": [
+    "--remote-debugging-address=127.0.0.1",
+    "netstat / Get-NetTCPConnection to verify listener",
+    "Stop browser/process after task"
+  ],
+  "verification": [
+    "Port only listens locally",
+    "No unattended debug browser remains",
+    "Dangerous actions are confirmed"
+  ],
+  "failure_modes": [
+    "Debug port exposed",
+    "Wrong website/account controlled",
+    "Credentials visible in logs/screenshots",
+    "Unconfirmed irreversible action"
+  ],
+  "safety_notes": [
+    "Treat CDP as high privilege browser control.",
+    "Never expose debug port publicly.",
+    "Do not automate payments/deletion/publishing without explicit confirmation."
+  ],
+  "handoff_report": [
+    "Debug address",
+    "Profile",
+    "Scope",
+    "Safety stops",
+    "Shutdown evidence"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "official",
+    "notes": "Security guidance synthesized from CDP capability and local automation risk."
+  },
+  "retrieval": {
+    "ai_summary": "CDP is powerful browser control. Bind remote debugging to 127.0.0.1, use dedicated profiles where possible, never expose the WebSocket endpoint, and stop before irreversible actions.",
+    "prompt_tags": [
+      "cdp",
+      "security",
+      "remote-debugging",
+      "localhost",
+      "safety",
+      "irreversible"
+    ],
+    "negative_prompt_tags": []
+  }
+}

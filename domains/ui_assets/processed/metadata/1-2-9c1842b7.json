@@ -1,0 +1,39 @@
+{
+  "asset_id": "1-2-9c1842b7",
+  "domain": "ui_assets",
+  "asset_type": "motion_reference",
+  "usage_policy": "inspiration_only",
+  "files": {
+    "file_path": "E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\videos\\1 (2).mp4",
+    "preview_path": "",
+    "original_path": "F:\\materials\\02_videos_动态视频\\1 (2).mp4",
+    "sha1": "9c1842b7d6024314939733df84289c1d2f1a60a7",
+    "size_bytes": 4806985,
+    "extension": ".mp4"
+  },
+  "source": {
+    "name": "local import",
+    "url": "",
+    "captured_at": "2026-04-26T10:40:03.822558+00:00",
+    "notes": "Imported by scripts/ui_assets/ingest_assets.py"
+  },
+  "license": {
+    "label": "reference only",
+    "notes": "Motion reference only; do not reuse video files directly in projects."
+  },
+  "style_tags": [],
+  "use_cases": [],
+  "avoid_when": [],
+  "implementation_notes": [],
+  "quality": {
+    "curation_status": "new",
+    "notes": "Review usage_policy and license before direct project use."
+  },
+  "retrieval": {
+    "ai_summary": "motion reference asset for motion reference. Review usage policy before use.",
+    "prompt_tags": [
+      "motion-reference"
+    ],
+    "negative_prompt_tags": []
+  }
+}

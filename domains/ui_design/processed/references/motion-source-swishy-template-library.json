@@ -1,0 +1,95 @@
+{
+  "record_id": "motion-source-swishy-template-library",
+  "source": {
+    "name": "Swishy AI Motion Templates",
+    "url": "https://www.swishy.ai/",
+    "source_type": "pattern_library",
+    "license_notes": "Use as inspiration and taxonomy only. Store short pattern summaries, not copied videos, template code, or proprietary assets.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "ui_design",
+  "page_type": "component_pattern",
+  "platform": [
+    "web",
+    "mobile"
+  ],
+  "use_cases": [
+    "motion design reference",
+    "AI generated UI",
+    "landing page animation",
+    "social preview",
+    "product demo"
+  ],
+  "visual_traits": [
+    "AI motion design",
+    "template gallery",
+    "kinetic typography",
+    "social-ready animation",
+    "microinteraction prompts"
+  ],
+  "layout_rules": [
+    "Treat Swishy as a motion-pattern source, not as a static visual design system.",
+    "Extract reusable animation intent: timing, entrance direction, reveal type, bounce/spring feel, and hierarchy.",
+    "Keep implementation original and adapted to the product UI rather than copying template output."
+  ],
+  "component_patterns": [
+    "text animation",
+    "message animation",
+    "social media card",
+    "logo reveal",
+    "infographic animation",
+    "launch video",
+    "notification",
+    "toggle",
+    "website reveal"
+  ],
+  "interaction_states": [
+    "enter",
+    "exit",
+    "hover",
+    "tap",
+    "notification pop",
+    "typing",
+    "reveal",
+    "morph"
+  ],
+  "accessibility_notes": [
+    "Avoid motion that blocks reading or repeats endlessly without value.",
+    "Respect reduced-motion preferences for large reveals, parallax, and spring effects.",
+    "Do not use motion alone to communicate critical status."
+  ],
+  "implementation_hints": [
+    "Use this source when a UI needs polish through motion: hero reveal, notification stack, typewriter text, animated metrics, or product demo sequences.",
+    "Translate templates into motion specs: duration, delay, easing, stagger, transform, opacity, blur, and spring behavior.",
+    "For app UI, prefer short 150-450ms microinteractions; reserve longer 800-1600ms sequences for hero or video-style presentation."
+  ],
+  "avoid_when": [
+    "serious data entry",
+    "high-frequency workflow",
+    "accessibility-critical flow",
+    "print/static export"
+  ],
+  "quality": {
+    "signal_strength": "medium",
+    "evidence_level": "summary_only",
+    "notes": "Derived from Swishy template listing and feature descriptions."
+  },
+  "retrieval": {
+    "ai_summary": "Use Swishy as an optional motion-pattern reference for kinetic typography, notifications, website reveals, data viz motion, mockup animations, social cards, and launch/demo sequences. Store motion intent, not copied assets.",
+    "prompt_tags": [
+      "swishy",
+      "motion",
+      "animation",
+      "template-library",
+      "kinetic-typography",
+      "notification",
+      "website-reveal",
+      "data-viz"
+    ],
+    "negative_prompt_tags": [
+      "copy-template",
+      "static-only",
+      "reduced-motion-ignored"
+    ]
+  }
+}

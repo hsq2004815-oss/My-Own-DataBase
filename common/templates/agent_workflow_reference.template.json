@@ -1,0 +1,32 @@
+{
+  "record_id": "",
+  "source": {
+    "name": "",
+    "url": "",
+    "source_type": "local_procedure",
+    "license_notes": "Original local workflow notes.",
+    "captured_at": ""
+  },
+  "domain": "agent_workflow",
+  "workflow_type": "",
+  "agent_targets": [],
+  "goal": "",
+  "when_to_use": [],
+  "inputs_required": [],
+  "steps": [],
+  "api_calls": [],
+  "prompt_contract": [],
+  "verification": [],
+  "failure_modes": [],
+  "handoff_report": [],
+  "quality": {
+    "signal_strength": "medium",
+    "evidence_level": "draft",
+    "notes": ""
+  },
+  "retrieval": {
+    "ai_summary": "",
+    "prompt_tags": [],
+    "negative_prompt_tags": []
+  }
+}

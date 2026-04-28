@@ -1,0 +1,39 @@
+{
+  "automation_types": [
+    {
+      "id": "browser_playwright",
+      "label": "Playwright browser automation",
+      "description": "Locator, actionability, waits, forms, screenshots, trace, upload."
+    },
+    {
+      "id": "browser_cdp",
+      "label": "Chrome DevTools Protocol",
+      "description": "Attach to existing logged-in Chromium sessions through remote debugging."
+    },
+    {
+      "id": "file_upload",
+      "label": "File upload automation",
+      "description": "File chooser, input[type=file], iframe, upload verification and retry."
+    },
+    {
+      "id": "windows_shell",
+      "label": "Windows shell automation",
+      "description": "PowerShell, paths, quoting, ports, processes, service startup."
+    },
+    {
+      "id": "overlay_modal_iframe",
+      "label": "Overlay/modal/iframe handling",
+      "description": "Handle blockers around menus, dialogs, popups, frames and overlays."
+    },
+    {
+      "id": "verification_debugging",
+      "label": "Verification and debugging",
+      "description": "Screenshots, traces, console logs, network logs, final evidence."
+    },
+    {
+      "id": "safety_protocol",
+      "label": "Automation safety protocol",
+      "description": "Guardrails for irreversible actions, credentials, publishing, deletion and payments."
+    }
+  ]
+}

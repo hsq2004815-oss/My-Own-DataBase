@@ -1,0 +1,164 @@
+[
+  {
+    "chunk_id": "design-system-primer-nav-list-overview",
+    "record_id": "design-system-primer-nav-list",
+    "source_name": "GitHub Primer",
+    "source_url": "https://primer.style/product/components/nav-list/",
+    "page_type": "developer_tool",
+    "section": "overview",
+    "content": "# GitHub Primer - Overview\n\nPage type: developer_tool\nUse cases: developer tool sidebar, repository settings, admin navigation, docs product navigation\nEvidence: direct_spec / high\nSource: https://primer.style/product/components/nav-list/\n\nVisual traits:\n- vertical\n- contextual\n- compact\n- hierarchical\n- developer-focused\n\nUse when:\n- developer tool sidebar\n- repository settings\n- admin navigation\n- docs product navigation\n\nAvoid when:\n- marketing top nav\n- deep file explorer tree\n- mobile bottom nav\n\nAI summary: Use Primer NavList for developer/admin sidebars: vertical contextual links, active state via aria-current, grouped sections, limited nesting, and optional leading icons.",
+    "tokens": 92,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "primer",
+        "github",
+        "sidebar",
+        "navigation",
+        "developer-tool",
+        "settings"
+      ],
+      "negative_prompt_tags": [
+        "marketing-nav",
+        "file-tree",
+        "mobile-bottom-nav"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-primer-nav-list-layout",
+    "record_id": "design-system-primer-nav-list",
+    "source_name": "GitHub Primer",
+    "source_url": "https://primer.style/product/components/nav-list/",
+    "page_type": "developer_tool",
+    "section": "layout",
+    "content": "# GitHub Primer - Layout Rules\n\nPage type: developer_tool\nUse cases: developer tool sidebar, repository settings, admin navigation, docs product navigation\nEvidence: direct_spec / high\nSource: https://primer.style/product/components/nav-list/\n\n- Use vertical nav for the current context and mark the active view clearly.\n- Group long lists into named sections or use dividers for visual grouping.\n- Limit nested navigation depth; reconsider IA if more than a few levels are needed.\n\nAI summary: Use Primer NavList for developer/admin sidebars: vertical contextual links, active state via aria-current, grouped sections, limited nesting, and optional leading icons.",
+    "tokens": 92,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "primer",
+        "github",
+        "sidebar",
+        "navigation",
+        "developer-tool",
+        "settings"
+      ],
+      "negative_prompt_tags": [
+        "marketing-nav",
+        "file-tree",
+        "mobile-bottom-nav"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-primer-nav-list-components",
+    "record_id": "design-system-primer-nav-list",
+    "source_name": "GitHub Primer",
+    "source_url": "https://primer.style/product/components/nav-list/",
+    "page_type": "developer_tool",
+    "section": "components",
+    "content": "# GitHub Primer - Component Patterns\n\nPage type: developer_tool\nUse cases: developer tool sidebar, repository settings, admin navigation, docs product navigation\nEvidence: direct_spec / high\nSource: https://primer.style/product/components/nav-list/\n\n- nav list\n- nav item\n- group\n- subnav\n- leading visual\n- aria-current\n\nAI summary: Use Primer NavList for developer/admin sidebars: vertical contextual links, active state via aria-current, grouped sections, limited nesting, and optional leading icons.",
+    "tokens": 65,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "primer",
+        "github",
+        "sidebar",
+        "navigation",
+        "developer-tool",
+        "settings"
+      ],
+      "negative_prompt_tags": [
+        "marketing-nav",
+        "file-tree",
+        "mobile-bottom-nav"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-primer-nav-list-interaction",
+    "record_id": "design-system-primer-nav-list",
+    "source_name": "GitHub Primer",
+    "source_url": "https://primer.style/product/components/nav-list/",
+    "page_type": "developer_tool",
+    "section": "interaction",
+    "content": "# GitHub Primer - Interaction States\n\nPage type: developer_tool\nUse cases: developer tool sidebar, repository settings, admin navigation, docs product navigation\nEvidence: direct_spec / high\nSource: https://primer.style/product/components/nav-list/\n\n- current page\n- expanded\n- collapsed\n- hover\n- focus\n\nAI summary: Use Primer NavList for developer/admin sidebars: vertical contextual links, active state via aria-current, grouped sections, limited nesting, and optional leading icons.",
+    "tokens": 61,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "primer",
+        "github",
+        "sidebar",
+        "navigation",
+        "developer-tool",
+        "settings"
+      ],
+      "negative_prompt_tags": [
+        "marketing-nav",
+        "file-tree",
+        "mobile-bottom-nav"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-primer-nav-list-accessibility",
+    "record_id": "design-system-primer-nav-list",
+    "source_name": "GitHub Primer",
+    "source_url": "https://primer.style/product/components/nav-list/",
+    "page_type": "developer_tool",
+    "section": "accessibility",
+    "content": "# GitHub Primer - Accessibility Notes\n\nPage type: developer_tool\nUse cases: developer tool sidebar, repository settings, admin navigation, docs product navigation\nEvidence: direct_spec / high\nSource: https://primer.style/product/components/nav-list/\n\n- Use aria-current for the active item.\n- Do not replace navigation with a tree view when semantic navigation is needed.\n\nAI summary: Use Primer NavList for developer/admin sidebars: vertical contextual links, active state via aria-current, grouped sections, limited nesting, and optional leading icons.",
+    "tokens": 71,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "primer",
+        "github",
+        "sidebar",
+        "navigation",
+        "developer-tool",
+        "settings"
+      ],
+      "negative_prompt_tags": [
+        "marketing-nav",
+        "file-tree",
+        "mobile-bottom-nav"
+      ]
+    }
+  },
+  {
+    "chunk_id": "design-system-primer-nav-list-implementation",
+    "record_id": "design-system-primer-nav-list",
+    "source_name": "GitHub Primer",
+    "source_url": "https://primer.style/product/components/nav-list/",
+    "page_type": "developer_tool",
+    "section": "implementation",
+    "content": "# GitHub Primer - Implementation Hints\n\nPage type: developer_tool\nUse cases: developer tool sidebar, repository settings, admin navigation, docs product navigation\nEvidence: direct_spec / high\nSource: https://primer.style/product/components/nav-list/\n\n- Use for GitHub-like sidebars in developer tools and admin settings.\n- Icons should clarify destinations, not add noise.\n\nAI summary: Use Primer NavList for developer/admin sidebars: vertical contextual links, active state via aria-current, grouped sections, limited nesting, and optional leading icons.",
+    "tokens": 69,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "primer",
+        "github",
+        "sidebar",
+        "navigation",
+        "developer-tool",
+        "settings"
+      ],
+      "negative_prompt_tags": [
+        "marketing-nav",
+        "file-tree",
+        "mobile-bottom-nav"
+      ]
+    }
+  }
+]

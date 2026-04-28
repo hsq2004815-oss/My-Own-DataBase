@@ -1,0 +1,72 @@
+[
+  {
+    "chunk_id": "design-expo-chunk-1",
+    "file_id": "design-expo",
+    "content": "# Expo Inspired Design System - Brand Style\n\n**Category**: Developer Tools & IDEs\n**Description**: React Native platform. Dark theme, tight letter-spacing, code-centric\n**Source**: https://getdesign.md/expo/design-md\n\n**Note**: 源文件仅提供跳转链接，详细设计系统内容需访问外部URL。\n\n## Design Philosophy\nReact Native platform. Dark theme, tight letter-spacing, code-centric",
+    "tokens": 87,
+    "metadata": {
+      "section": "brand_style",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-expo-chunk-2",
+    "file_id": "design-expo",
+    "content": "# Expo Inspired Design System - Color Palette\n\n**Colors mentioned**: dark\n\n**Description**: React Native platform. Dark theme, tight letter-spacing, code-centric\n\n**Note**: 源文件仅提供跳转链接，具体色值需访问外部URL。",
+    "tokens": 50,
+    "metadata": {
+      "section": "color_palette",
+      "has_colors": true,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-expo-chunk-3",
+    "file_id": "design-expo",
+    "content": "# Expo Inspired Design System - Typography\n\n**Typography mentioned**: letter-spacing, tight\n\n**Description**: React Native platform. Dark theme, tight letter-spacing, code-centric\n\n**Note**: 源文件仅提供跳转链接，具体字体规格需访问外部URL。",
+    "tokens": 55,
+    "metadata": {
+      "section": "typography",
+      "has_colors": false,
+      "has_typography": true,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-expo-chunk-4",
+    "file_id": "design-expo",
+    "content": "# Expo Inspired Design System - Layout Principles\n\n**Layout mentioned**: spacing\n\n**Description**: React Native platform. Dark theme, tight letter-spacing, code-centric\n\n**Note**: 源文件仅提供跳转链接，具体布局规范需访问外部URL。",
+    "tokens": 52,
+    "metadata": {
+      "section": "layout",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": true,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  },
+  {
+    "chunk_id": "design-expo-chunk-5",
+    "file_id": "design-expo",
+    "content": "# Expo Inspired Design System - Components & Interaction\n\n**Information不足**: 源文件未提供具体组件信息。\n\n**Description**: React Native platform. Dark theme, tight letter-spacing, code-centric\n\n**Note**: 源文件仅提供跳转链接，详细组件需访问外部URL。",
+    "tokens": 54,
+    "metadata": {
+      "section": "components",
+      "has_colors": false,
+      "has_typography": false,
+      "has_layout": false,
+      "has_components": false,
+      "info_sufficient": false
+    }
+  }
+]

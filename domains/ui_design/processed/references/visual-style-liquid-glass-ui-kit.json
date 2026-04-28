@@ -1,0 +1,110 @@
+{
+  "record_id": "visual-style-liquid-glass-ui-kit",
+  "source": {
+    "name": "User-provided Liquid Glass UI Kit screenshots",
+    "url": "local-chat-reference:2026-04-25/liquid-glass-ui-kit",
+    "source_type": "product_screenshot",
+    "license_notes": "User-provided visual reference for personal knowledge base. Store summarized observations, not redistributed original images.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "ui_design",
+  "page_type": "component_pattern",
+  "platform": [
+    "web",
+    "mobile"
+  ],
+  "use_cases": [
+    "AI app",
+    "premium SaaS",
+    "creative tool",
+    "mobile app concept",
+    "hero board",
+    "component showcase"
+  ],
+  "visual_traits": [
+    "liquid glass",
+    "thick translucent material",
+    "frosted blur",
+    "rounded capsule geometry",
+    "specular highlights",
+    "chromatic edge glow",
+    "soft refractive shadows",
+    "pale luminous background",
+    "tactile 3D controls"
+  ],
+  "layout_rules": [
+    "Use large radius values so buttons and inputs feel like rounded glass capsules rather than flat rectangles.",
+    "Layer controls above a soft light background or blurred gradient so transparency has something to refract.",
+    "Keep generous spacing between glass components because their shadows and glow need breathing room.",
+    "Use a small set of accent colors as internal glow, not as flat fills across every component.",
+    "Use heavier glass blocks for hero cards and lighter glass pills for secondary controls."
+  ],
+  "component_patterns": [
+    "primary pill button",
+    "secondary pill button",
+    "glass search field",
+    "dropdown field",
+    "toggle switch",
+    "icon button",
+    "tabs",
+    "toast",
+    "modal card",
+    "floating action button",
+    "validation field"
+  ],
+  "interaction_states": [
+    "pressed with inset shadow",
+    "hover with brighter rim highlight",
+    "focus with colored glow ring",
+    "selected with saturated internal gradient",
+    "disabled with lower opacity and reduced shadow",
+    "error with red edge glow",
+    "success with green edge glow"
+  ],
+  "accessibility_notes": [
+    "Do not put low-contrast gray text on transparent glass; text should usually be near-black on light glass or white on dark glass.",
+    "Use glass as a surface treatment, not as the only state indicator; pair color with icons or text.",
+    "Offer a reduced-transparency fallback for accessibility and low-performance devices."
+  ],
+  "implementation_hints": [
+    "CSS baseline: backdrop-filter blur, translucent background, layered box-shadow, inner border, inset highlight, and pseudo-elements for glossy streaks.",
+    "Use radial gradients at corners to simulate caustic color glints and edge refraction.",
+    "For realistic glass, combine outer drop shadow, inner white highlight, subtle dark inner stroke, and a top-left glossy reflection.",
+    "Animate hover by moving highlight and increasing rim brightness, not by scaling aggressively.",
+    "Use sparingly for dense enterprise tables; reserve full liquid glass for hero, cards, buttons, search, modal, and navigation shells."
+  ],
+  "avoid_when": [
+    "dense enterprise data table",
+    "low-end device UI",
+    "high contrast compliance screen",
+    "long text reading page",
+    "serious financial/legal form"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "screenshot_observed",
+    "notes": "Derived from eight user-provided screenshots showing liquid glass buttons, inputs, modals, cards, switches, tabs, and dark variants."
+  },
+  "retrieval": {
+    "ai_summary": "Use this when the user asks for Liquid Glass or glassmorphism like the provided screenshots: thick rounded translucent components, frosted blur, glossy specular highlights, chromatic edge glow, soft refractive shadows, and tactile 3D pill controls.",
+    "prompt_tags": [
+      "liquid-glass",
+      "glassmorphism",
+      "frosted",
+      "translucent",
+      "3d-ui",
+      "glossy",
+      "premium",
+      "capsule",
+      "blur",
+      "chromatic-glow"
+    ],
+    "negative_prompt_tags": [
+      "flat",
+      "material-flat",
+      "dense-table",
+      "plain-admin",
+      "low-contrast-text"
+    ]
+  }
+}

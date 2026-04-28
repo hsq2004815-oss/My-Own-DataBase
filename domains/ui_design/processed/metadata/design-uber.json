@@ -1,0 +1,23 @@
+{
+  "file_id": "design-uber",
+  "title": "Uber Design System",
+  "domain": "ui_design",
+  "source_id": "awesome-design-md",
+  "relative_path": "design-md/uber/README.md",
+  "file_type": "markdown",
+  "tags": [
+    "Media & Consumer Tech",
+    "black",
+    "white",
+    "type",
+    "tight",
+    "bold"
+  ],
+  "status": "processed",
+  "processed": true,
+  "chunked": true,
+  "indexed": false,
+  "created_at": "2026-04-17T09:34:38.980Z",
+  "updated_at": "2026-04-17T09:34:38.980Z",
+  "notes": "Processed from awesome-design-md collection"
+}

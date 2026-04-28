@@ -1,0 +1,74 @@
+{
+  "page_types": [
+    {
+      "id": "landing_page",
+      "label": "Landing page",
+      "description": "Marketing entry page with hero, proof, feature blocks, and conversion CTA."
+    },
+    {
+      "id": "dashboard",
+      "label": "Dashboard",
+      "description": "Overview page with metrics, charts, lists, alerts, and drill-down entry points."
+    },
+    {
+      "id": "data_table",
+      "label": "Data table",
+      "description": "Dense data management surface with filters, sorting, row actions, selection, and pagination."
+    },
+    {
+      "id": "form",
+      "label": "Form",
+      "description": "Data entry flow with validation, required states, help text, and submit/cancel actions."
+    },
+    {
+      "id": "settings_page",
+      "label": "Settings page",
+      "description": "Configuration page for account, workspace, billing, permissions, integrations, or preferences."
+    },
+    {
+      "id": "pricing_page",
+      "label": "Pricing page",
+      "description": "Plan comparison and purchase-intent page with tiers, feature matrix, FAQ, and CTA."
+    },
+    {
+      "id": "onboarding",
+      "label": "Onboarding",
+      "description": "First-run or setup flow that guides users through activation."
+    },
+    {
+      "id": "checkout",
+      "label": "Checkout",
+      "description": "Purchase flow with cart, payment, address, review, confirmation, and trust cues."
+    },
+    {
+      "id": "ai_chat_interface",
+      "label": "AI chat interface",
+      "description": "Assistant or agent surface with prompt input, conversation history, tool output, and citations."
+    },
+    {
+      "id": "developer_tool",
+      "label": "Developer tool",
+      "description": "Docs, API dashboard, code editor, CLI helper, logs, traces, or workflow automation interface."
+    },
+    {
+      "id": "empty_state",
+      "label": "Empty state",
+      "description": "No-data state that explains value, cause, and next action."
+    },
+    {
+      "id": "error_state",
+      "label": "Error state",
+      "description": "Recoverable or blocking failure state with clear explanation and next action."
+    },
+    {
+      "id": "mobile_app_screen",
+      "label": "Mobile app screen",
+      "description": "Mobile-first screen pattern with platform conventions, gestures, and compact hierarchy."
+    },
+    {
+      "id": "component_pattern",
+      "label": "Component pattern",
+      "description": "Reusable UI component guidance such as button, dialog, menu, navigation, tabs, toast, or card."
+    }
+  ]
+}

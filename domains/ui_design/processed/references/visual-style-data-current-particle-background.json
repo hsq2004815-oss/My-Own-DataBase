@@ -1,0 +1,103 @@
+{
+  "record_id": "visual-style-data-current-particle-background",
+  "source": {
+    "name": "MDN Canvas animation and requestAnimationFrame references",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame",
+    "source_type": "article",
+    "license_notes": "Distilled implementation guidance from public Canvas and requestAnimationFrame documentation. Store summarized guidance only.",
+    "captured_at": "2026-04-25"
+  },
+  "domain": "ui_design",
+  "page_type": "component_pattern",
+  "platform": [
+    "web",
+    "desktop",
+    "mobile"
+  ],
+  "use_cases": [
+    "AI dashboard background",
+    "automation console",
+    "analytics interface",
+    "agent workflow UI",
+    "data visualization shell",
+    "glass command center"
+  ],
+  "visual_traits": [
+    "low-density data currents moving behind glass panels",
+    "slow particle drift with occasional connection lines",
+    "depth layers of dust, telemetry, and soft light trails",
+    "technical atmosphere without sci-fi clutter",
+    "subtle motion that supports AI or analytics context"
+  ],
+  "layout_rules": [
+    "Keep particles sparse enough that empty space remains visible behind glass.",
+    "Use data current motion in peripheral zones and behind overview cards, not under forms or dense text.",
+    "Prefer horizontal or orbital flow paths that imply system activity without distracting from controls.",
+    "Fade particles near modal and navigation surfaces to keep hierarchy clear.",
+    "Use one data-current layer plus one ambient glow layer; avoid stacking many unrelated particle systems."
+  ],
+  "component_patterns": [
+    "canvas particle current",
+    "telemetry dust layer",
+    "glass analytics card",
+    "agent activity backdrop",
+    "soft connection lines",
+    "static reduced-motion constellation"
+  ],
+  "interaction_states": [
+    "idle particle drift",
+    "hover local attraction",
+    "active card glow pulse",
+    "loading data current acceleration",
+    "reduced-motion static dots",
+    "modal open particle fade"
+  ],
+  "accessibility_notes": [
+    "Provide reduced-motion mode that stops particle movement or uses a static constellation.",
+    "Do not make particle motion a required status indicator; pair loading or activity states with text.",
+    "Keep moving points and lines below text contrast priority.",
+    "Avoid rapid flicker, dense strobing, or pointer-chasing effects near interactive elements."
+  ],
+  "implementation_hints": [
+    "Use canvas for particles when the background needs many moving points; use requestAnimationFrame for synchronized browser painting.",
+    "Scale particle count by viewport area and device capability; keep mobile counts lower.",
+    "Use delta-time based movement so speed is stable across refresh rates.",
+    "Pause or heavily throttle animation when hidden, when reduced-motion is requested, or when the tab loses visibility.",
+    "Draw at a reduced internal resolution and blur/upscale softly if the current is atmospheric rather than precise.",
+    "Use color tokens for particle hue, line alpha, and glow so the scene can match dark or light glass themes."
+  ],
+  "avoid_when": [
+    "high particle density behind text",
+    "cursor-chasing particles in serious productivity tools",
+    "fast network-line animations",
+    "bright blinking nodes",
+    "turning the whole UI into a sci-fi dashboard when the domain is operational",
+    "running canvas animation without reduced-motion or visibility pause"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "summary_only",
+    "notes": "Pattern applies Canvas/requestAnimationFrame animation constraints to data-current backgrounds for AI and analytics glass interfaces."
+  },
+  "retrieval": {
+    "ai_summary": "Use data current particle backgrounds for AI, analytics, and automation glass interfaces. Keep particles sparse, slow, peripheral, and pauseable; implement with canvas and requestAnimationFrame when many points are needed, with reduced-motion and visibility throttling.",
+    "prompt_tags": [
+      "data-current",
+      "particle-background",
+      "ai-dashboard",
+      "analytics-ui",
+      "automation-console",
+      "canvas-animation",
+      "requestAnimationFrame",
+      "glass-command-center"
+    ],
+    "negative_prompt_tags": [
+      "dense-particles",
+      "fast-network-lines",
+      "cursor-chasing",
+      "strobing",
+      "sci-fi-clutter",
+      "no-reduced-motion"
+    ]
+  }
+}
