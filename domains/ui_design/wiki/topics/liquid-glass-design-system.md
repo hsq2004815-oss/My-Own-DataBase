@@ -1,6 +1,10 @@
 # Liquid Glass Design System
 
-Use Liquid Glass as a premium material system, not as `bg-white/10 backdrop-blur` sprinkled everywhere. It is preferred for high-end landing pages, AI product pages, design agency pages, cinematic heroes, portfolio surfaces, and selected controls. It remains optional for ordinary admin tables, dense forms, and CRUD dashboards.
+Use Liquid Glass as a premium material system, not as `bg-white/10
+backdrop-blur` sprinkled everywhere. It is preferred for high-end landing
+pages, AI product pages, design agency pages, cinematic heroes, portfolio
+surfaces, and selected controls. It remains optional for ordinary admin tables,
+dense forms, and CRUD dashboards.
 
 ## Two Levels Of Glass
 
@@ -50,4 +54,6 @@ Prefer a pseudo-element gradient border:
 
 ## Implementation Notes
 
-Use CSS custom properties for glass opacity, blur, rim opacity, highlight strength, and background dim. Keep animated filters limited; animate transform and opacity instead of full-screen blur radius.
+Use CSS custom properties for glass opacity, blur, rim opacity, highlight
+strength, and background dim. Keep animated filters limited; animate transform
+and opacity instead of full-screen blur radius.

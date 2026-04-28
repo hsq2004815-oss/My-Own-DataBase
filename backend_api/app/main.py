@@ -790,7 +790,7 @@ def search_fts(conn: sqlite3.Connection, query: str, limit: int) -> list[sqlite3
             WHERE chunks_fts MATCH ?
             LIMIT ?
             """,
-            (query, limit),
+            (query, max(limit * 6, limit)),
         ).fetchall()
     except sqlite3.OperationalError:
         return []
@@ -806,7 +806,7 @@ def search_like(conn: sqlite3.Connection, query: str, limit: int) -> list[sqlite
         WHERE content LIKE ? OR page_type LIKE ? OR section LIKE ? OR source_name LIKE ?
         LIMIT ?
         """,
-        (pattern, pattern, pattern, pattern, limit),
+        (pattern, pattern, pattern, pattern, max(limit * 6, limit)),
     ).fetchall()
 
 
@@ -820,7 +820,7 @@ def search_like_terms(conn: sqlite3.Connection, query: str, limit: int) -> list[
         clauses.append("(content LIKE ? OR page_type LIKE ? OR section LIKE ? OR source_name LIKE ?)")
         pattern = f"%{term}%"
         params.extend([pattern, pattern, pattern, pattern])
-    params.append(max(limit * 4, limit))
+    params.append(max(limit * 12, limit))
     return conn.execute(
         f"""
         SELECT chunk_id, record_id, source_name, source_url, page_type,
@@ -839,10 +839,11 @@ def search_ui_chunks(q: str, limit: int) -> list[ChunkResult]:
     with connect() as conn:
         rows = (
             search_fts(conn, normalized_q, candidate_limit)
-            or search_like(conn, normalized_q, candidate_limit)
-            or search_like_terms(conn, normalized_q, candidate_limit)
+            + search_like(conn, normalized_q, candidate_limit)
+            + search_like_terms(conn, normalized_q, candidate_limit)
         )
     chunks = [row_to_chunk(row) for row in rows]
+    chunks = list({chunk.chunk_id: chunk for chunk in chunks}.values())
     return sorted(chunks, key=lambda chunk: chunk_score(chunk, normalized_q, 0), reverse=True)[:limit]
 
 

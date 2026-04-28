@@ -1,5 +1,24 @@
 [
   {
+    "source_id": "user-distilled-premium-web-ui-prompts",
+    "name": "User distilled premium web UI prompt set",
+    "url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "source_type": "case_study",
+    "priority": 1,
+    "best_for": [
+      "premium-web-ui",
+      "landing-page",
+      "liquid-glass",
+      "cinematic-hero",
+      "typography",
+      "motion",
+      "portfolio",
+      "SaaS homepage"
+    ],
+    "capture_plan": "Seeded from user-provided premium Web UI prompt rules; keep as high-priority default guidance and do not copy external media assets directly.",
+    "status": "seeded"
+  },
+  {
     "source_id": "apple-hig",
     "name": "Apple Human Interface Guidelines",
     "url": "https://developer.apple.com/design/human-interface-guidelines/",

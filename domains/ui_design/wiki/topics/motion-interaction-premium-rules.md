@@ -56,4 +56,6 @@ Use for major hero headings:
 
 ## Avoid
 
-Avoid fast bouncing, excessive spinning, neon flashing, every element moving at once, looping chart motion after values settle, and animation that hurts readability.
+Avoid fast bouncing, excessive spinning, neon flashing, every element moving at
+once, looping chart motion after values settle, and animation that hurts
+readability.

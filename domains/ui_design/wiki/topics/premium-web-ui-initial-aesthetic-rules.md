@@ -2,9 +2,15 @@
 
 ## Goal
 
-When an agent designs Web UI, landing pages, SaaS pages, dashboards, portfolios, or product websites, it should not default to generic templates. The default target is premium, cinematic, responsive, visually disciplined, and implementation-ready.
+When an agent designs Web UI, landing pages, SaaS pages, dashboards,
+portfolios, or product websites, it should not default to generic templates.
+The default target is premium, cinematic, responsive, visually disciplined,
+and implementation-ready.
 
-High-end UI comes from restraint, spacing, hierarchy, typography, material quality, controlled color, cinematic media, subtle motion, and responsive composition. Avoid generic blue-white SaaS templates unless explicitly requested.
+High-end UI comes from restraint, spacing, hierarchy, typography, material
+quality, controlled color, cinematic media, subtle motion, and responsive
+composition. Avoid generic blue-white SaaS templates unless explicitly
+requested.
 
 ## Default Visual Directions
 
@@ -42,7 +48,9 @@ White editorial UI:
 - Description and nav muted text: `#6F6F6F`.
 - Rely on typography, spacing, video, and composition rather than colorful gradients.
 
-Avoid mixing purple, blue, green, orange, and pink in one page; default bright blue SaaS primary colors; heavy shadows on dark surfaces; thick borders; and low-contrast gray text on glass.
+Avoid mixing purple, blue, green, orange, and pink in one page; default bright
+blue SaaS primary colors; heavy shadows on dark surfaces; thick borders; and
+low-contrast gray text on glass.
 
 ## Typography Rules
 
@@ -56,18 +64,31 @@ Recommended pairings:
 - Inter + Inter.
 - Geist + Inter for black-white developer SaaS.
 
-Hero titles should be very large, short, memorable, and tightly set: line-height `0.8` to `0.95`, letter-spacing `-0.02em` to `-0.05em`, font-weight `400` to `500`. Avoid default `font-bold` unless the brand requires it.
+Hero titles should be very large, short, memorable, and tightly set:
+line-height `0.8` to `0.95`, letter-spacing `-0.02em` to `-0.05em`,
+font-weight `400` to `500`. Avoid default `font-bold` unless the brand
+requires it.
 
-Section headings should use `text-4xl` to `text-6xl`, tight line-height, and clear contrast with body text. Body copy should be small but readable, `white/60` to `white/80` on dark backgrounds, with max-width around `32ch` to `64ch`.
+Section headings should use `text-4xl` to `text-6xl`, tight line-height, and
+clear contrast with body text. Body copy should be small but readable,
+`white/60` to `white/80` on dark backgrounds, with max-width around `32ch` to
+`64ch`.
 
 ## Hero Section Rules
 
 Avoid generic left-text-right-image by default. Prefer one of these:
 
-1. Center cinematic poster hero: floating navbar, large centered headline, short subheadline, CTA row, cinematic video or image background, gradient readability fades.
-2. Giant staggered typography hero: absolute-positioned huge words, magazine-cover composition, minimal palette, useful for data, security, AI, finance, and creative portfolios.
-3. Video-first immersive hero: video `z-0`, overlay `z-0` or `z-5`, content `z-10` or `z-20`, navbar `z-50`, explicit readability overlay.
-4. Product or design agency hero: announcement pill, gradient headline or editorial serif title, glass CTA, logo cloud or partner row, video or animated visual below hero text.
+1. Center cinematic poster hero: floating navbar, large centered headline,
+   short subheadline, CTA row, cinematic video or image background, gradient
+   readability fades.
+2. Giant staggered typography hero: absolute-positioned huge words,
+   magazine-cover composition, minimal palette, useful for data, security, AI,
+   finance, and creative portfolios.
+3. Video-first immersive hero: video `z-0`, overlay `z-0` or `z-5`, content
+   `z-10` or `z-20`, navbar `z-50`, explicit readability overlay.
+4. Product or design agency hero: announcement pill, gradient headline or
+   editorial serif title, glass CTA, logo cloud or partner row, video or
+   animated visual below hero text.
 
 Hero should feel like a launch page or film title frame, not a generic template.
 
@@ -90,7 +111,11 @@ Primary CTA styles:
 - White page: black button with white text.
 - Video/glass page: strong liquid glass.
 
-CTA composition should use text plus an ArrowUpRight icon, text plus circular icon container, or a secondary action with Play icon. Hover should be restrained: `hover:scale-[1.03]`, `hover:scale-105`, `hover:bg-neutral-200`, or gradient-border change. Avoid bouncing, rainbow glow, too many button variants, and unclear primary action.
+CTA composition should use text plus an ArrowUpRight icon, text plus circular
+icon container, or a secondary action with Play icon. Hover should be
+restrained: `hover:scale-[1.03]`, `hover:scale-105`,
+`hover:bg-neutral-200`, or gradient-border change. Avoid bouncing, rainbow
+glow, too many button variants, and unclear primary action.
 
 ## Responsive Rules
 
@@ -117,4 +142,9 @@ Recommended type scale:
 
 ## Negative Rules
 
-Do not generate generic blue-white SaaS templates, big random gradient backgrounds, many colors at once, thick borders, heavy dark-mode shadows, same-size card grids everywhere, over-centered layouts for every section, excessive animations, accidentally cropped video content, unclear z-index layering, desktop nav forced into mobile, or adjective-only style notes without implementable CSS/layout rules.
+Do not generate generic blue-white SaaS templates, big random gradient
+backgrounds, many colors at once, thick borders, heavy dark-mode shadows,
+same-size card grids everywhere, over-centered layouts for every section,
+excessive animations, accidentally cropped video content, unclear z-index
+layering, desktop nav forced into mobile, or adjective-only style notes without
+implementable CSS/layout rules.

@@ -4,9 +4,16 @@ Use this as the default design stance before generating premium Web UI.
 
 ## Starter Prompt
 
-Design the UI as a premium, cinematic, responsive Web experience rather than a generic template. Choose one dominant visual direction: dark cinematic glass, black-white neutral SaaS, white editorial luxury, portfolio editorial dark, video-first immersive landing page, or premium AI product/design agency landing page.
+Design the UI as a premium, cinematic, responsive Web experience rather than a
+generic template. Choose one dominant visual direction: dark cinematic glass,
+black-white neutral SaaS, white editorial luxury, portfolio editorial dark,
+video-first immersive landing page, or premium AI product/design agency landing
+page.
 
-Use disciplined typography, large whitespace, clear hierarchy, restrained color, high-quality material treatment, subtle motion, and explicit responsive composition. Avoid generic blue-white SaaS defaults unless the user asks for them.
+Use disciplined typography, large whitespace, clear hierarchy, restrained
+color, high-quality material treatment, subtle motion, and explicit responsive
+composition. Avoid generic blue-white SaaS defaults unless the user asks for
+them.
 
 For landing pages and premium product sites, prioritize:
 
@@ -17,7 +24,8 @@ For landing pages and premium product sites, prioritize:
 5. `motion-interaction-premium-rules.md`
 6. `landing-page-section-patterns.md`
 
-Use brand `design-*.md` files only as secondary references. If a brand topic is marked information-insufficient, do not let it override the premium rules.
+Use brand `design-*.md` files only as secondary references. If a brand topic is
+marked information-insufficient, do not let it override the premium rules.
 
 ## Implementation Checklist
 

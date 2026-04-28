@@ -21,7 +21,7 @@ def search_fts(conn: sqlite3.Connection, query: str, limit: int) -> list[sqlite3
             WHERE chunks_fts MATCH ?
             LIMIT ?
             """,
-            (query, limit),
+            (query, max(limit * 6, limit)),
         ).fetchall()
     except sqlite3.OperationalError:
         return []
@@ -36,13 +36,28 @@ def search_like(conn: sqlite3.Connection, query: str, limit: int) -> list[sqlite
         WHERE content LIKE ? OR page_type LIKE ? OR section LIKE ?
         LIMIT ?
         """,
-        (pattern, pattern, pattern, limit),
+        (pattern, pattern, pattern, max(limit * 6, limit)),
     ).fetchall()
 
 
 def query_terms(query: str) -> list[str]:
+    aliases = {
+        "高级": "premium",
+        "高端": "premium",
+        "玻璃": "liquid glass glassmorphism",
+        "拟态": "glassmorphism",
+        "视频": "video",
+        "背景": "background",
+        "字体": "typography",
+        "动效": "motion",
+        "首页": "landing page",
+    }
+    expanded = query
+    for source, target in aliases.items():
+        if source in expanded:
+            expanded = f"{expanded} {target}"
     terms: list[str] = []
-    for raw in query.replace("/", " ").replace("-", " ").split():
+    for raw in expanded.replace("/", " ").replace("-", " ").split():
         term = raw.strip().lower()
         if len(term) >= 2 and term not in {"and", "with", "the", "for", "page"}:
             terms.append(term)
@@ -59,7 +74,7 @@ def search_like_terms(conn: sqlite3.Connection, query: str, limit: int) -> list[
         clauses.append("(content LIKE ? OR page_type LIKE ? OR section LIKE ? OR source_name LIKE ?)")
         pattern = f"%{term}%"
         params.extend([pattern, pattern, pattern, pattern])
-    params.append(max(limit * 4, limit))
+    params.append(max(limit * 12, limit))
     return conn.execute(
         f"""
         SELECT chunk_id, record_id, source_name, page_type, section, content
@@ -80,6 +95,22 @@ def score_row(row: sqlite3.Row, query: str) -> int:
     for term in query_terms(query):
         if term in haystack:
             score += 10
+    terms = set(query_terms(query))
+    if "glass" in terms or "liquid" in terms or "glassmorphism" in terms:
+        if "liquid-glass-premium-system" in haystack:
+            score += 55
+    if "video" in terms or "hero" in terms:
+        if "cinematic-video-hero" in haystack:
+            score += 55
+    if "typography" in terms or "type" in terms:
+        if "typography" in haystack:
+            score += 55
+    if "motion" in terms or "blur" in terms:
+        if "motion-blurtext" in haystack or "motion-reveal" in haystack:
+            score += 45
+    if "landing" in terms:
+        if "landing-page-premium-section-composition" in haystack:
+            score += 25
     if "premium" in haystack:
         score += 8
     if "user distilled premium web ui prompt set" in haystack:
@@ -91,7 +122,24 @@ def score_row(row: sqlite3.Row, query: str) -> int:
 
 def rank_rows(rows: list[sqlite3.Row], query: str, limit: int) -> list[sqlite3.Row]:
     deduped = {row["chunk_id"]: row for row in rows}
-    return sorted(deduped.values(), key=lambda row: score_row(row, query), reverse=True)[:limit]
+    ranked = sorted(deduped.values(), key=lambda row: score_row(row, query), reverse=True)
+    selected: list[sqlite3.Row] = []
+    per_record: dict[str, int] = {}
+    for row in ranked:
+        count = per_record.get(row["record_id"], 0)
+        if count >= 2:
+            continue
+        selected.append(row)
+        per_record[row["record_id"]] = count + 1
+        if len(selected) >= limit:
+            return selected
+    for row in ranked:
+        if row in selected:
+            continue
+        selected.append(row)
+        if len(selected) >= limit:
+            return selected
+    return selected
 
 
 def compact(text: str, max_chars: int = 420) -> str:
@@ -114,11 +162,12 @@ def main() -> int:
     conn = sqlite3.connect(args.db)
     conn.row_factory = sqlite3.Row
     try:
-        rows = (
+        candidates = (
             search_fts(conn, args.query, args.limit)
-            or search_like(conn, args.query, args.limit)
-            or rank_rows(search_like_terms(conn, args.query, args.limit), args.query, args.limit)
+            + search_like(conn, args.query, args.limit)
+            + search_like_terms(conn, args.query, args.limit)
         )
+        rows = rank_rows(candidates, args.query, args.limit)
     finally:
         conn.close()
 

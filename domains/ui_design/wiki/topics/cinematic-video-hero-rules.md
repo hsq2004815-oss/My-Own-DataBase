@@ -1,6 +1,9 @@
 # Cinematic Video Hero Rules
 
-Video heroes create atmosphere and make premium pages feel like product launches or film title frames. They are suitable for high-end landing pages, AI product sites, portfolios, editorial product pages, and design agency websites.
+Video heroes create atmosphere and make premium pages feel like product
+launches or film title frames. They are suitable for high-end landing pages,
+AI product sites, portfolios, editorial product pages, and design agency
+websites.
 
 ## Hero Layout
 

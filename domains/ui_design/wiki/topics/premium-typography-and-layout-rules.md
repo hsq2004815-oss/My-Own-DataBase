@@ -1,6 +1,7 @@
 # Premium Typography And Layout Rules
 
-Premium UI depends on disciplined type, spacing, and composition more than decoration.
+Premium UI depends on disciplined type, spacing, and composition more than
+decoration.
 
 ## Font Pairing
 
@@ -32,7 +33,9 @@ Use separate display and body fonts where possible:
 
 ## Composition
 
-Use asymmetry and whitespace. On desktop, alternate dense information and open space. On landing pages, avoid making every section centered. Use large media fields, editorial margins, and scale contrast.
+Use asymmetry and whitespace. On desktop, alternate dense information and open
+space. On landing pages, avoid making every section centered. Use large media
+fields, editorial margins, and scale contrast.
 
 Useful layouts:
 
@@ -45,4 +48,6 @@ Useful layouts:
 
 ## Negative Rules
 
-Avoid same-size card grids everywhere, random gradients, weak text contrast, crowded navs, body copy wider than the reader can scan, and default SaaS typography with `font-bold` hero headings.
+Avoid same-size card grids everywhere, random gradients, weak text contrast,
+crowded navs, body copy wider than the reader can scan, and default SaaS
+typography with `font-bold` hero headings.
