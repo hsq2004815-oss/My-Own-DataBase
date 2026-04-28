@@ -1,5 +1,227 @@
 [
   {
+    "chunk_id": "aesthetic-premium-web-ui-initial-rules-overview",
+    "record_id": "aesthetic-premium-web-ui-initial-rules",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "overview",
+    "content": "# User distilled premium web UI prompt set - Overview\n\nPage type: landing_page\nUse cases: premium web UI default aesthetic, high-end landing page, AI product website, SaaS launch page, portfolio editorial page, design agency website\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\nVisual traits:\n- premium cinematic composition instead of generic templates\n- restrained color system with one accent family\n- large disciplined typography and strong hierarchy\n- material quality through glass, neutral surfaces, media, and precise borders\n- subtle staggered motion\n- responsive layouts with asymmetry and whitespace\n\nUse when:\n- premium web UI default aesthetic\n- high-end landing page\n- AI product website\n- SaaS launch page\n- portfolio editorial page\n- design agency website\n\nAvoid when:\n- generic blue-white SaaS template\n- many colors mixed in one page\n- thick borders\n- heavy dark-mode shadows\n- same-size card grids everywhere\n- over-centered layouts for every section\n- unclear z-index layering\n- only adjectives without implementable rules\n\nAI summary: Default premium Web UI rules for agents: avoid generic blue-white SaaS templates; choose one dominant direction such as dark cinematic glass, monochrome SaaS, white editorial luxury, portfolio dark, video-first landing, or premium AI product. Use restrained color, large typography, cinematic media, subtle motion, responsive asymmetry, and implementation-ready component rules.",
+    "tokens": 209,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "premium-web-ui",
+        "landing-page",
+        "dark-cinematic",
+        "white-editorial",
+        "monochrome-saas",
+        "cinematic-hero",
+        "floating-navbar",
+        "editorial-typography",
+        "motion-reveal",
+        "bento-grid",
+        "ai-product",
+        "portfolio"
+      ],
+      "negative_prompt_tags": [
+        "generic-saas",
+        "blue-white-default",
+        "random-gradient",
+        "too-many-colors",
+        "same-size-cards",
+        "thick-borders",
+        "unclear-z-index"
+      ]
+    }
+  },
+  {
+    "chunk_id": "aesthetic-premium-web-ui-initial-rules-layout",
+    "record_id": "aesthetic-premium-web-ui-initial-rules",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "layout",
+    "content": "# User distilled premium web UI prompt set - Layout Rules\n\nPage type: landing_page\nUse cases: premium web UI default aesthetic, high-end landing page, AI product website, SaaS launch page, portfolio editorial page, design agency website\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Choose one dominant visual direction: dark cinematic glass, black-white neutral SaaS, white editorial luxury, portfolio editorial dark, video-first immersive landing page, or premium AI product/design agency.\n- Avoid generic left-text-right-image as the default hero; prefer poster hero, giant staggered type, video-first hero, or product/agency hero.\n- Use large whitespace and scale contrast on desktop; stack vertically and keep CTA visible on mobile.\n- Use brand design topics only as secondary references; information-insufficient brand topics must not override the premium rules.\n- For dark premium UI use near-black backgrounds, white/95 primary text, white/60-80 body text, white/5-15 borders, and white/3-12 surfaces.\n- For white editorial UI use white background, black headline/logo/CTA, muted gray nav/body text, and rely on typography, spacing, media, and composition.\n\nAI summary: Default premium Web UI rules for agents: avoid generic blue-white SaaS templates; choose one dominant direction such as dark cinematic glass, monochrome SaaS, white editorial luxury, portfolio dark, video-first landing, or premium AI product. Use restrained color, large typography, cinematic media, subtle motion, responsive asymmetry, and implementation-ready component rules.",
+    "tokens": 215,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "premium-web-ui",
+        "landing-page",
+        "dark-cinematic",
+        "white-editorial",
+        "monochrome-saas",
+        "cinematic-hero",
+        "floating-navbar",
+        "editorial-typography",
+        "motion-reveal",
+        "bento-grid",
+        "ai-product",
+        "portfolio"
+      ],
+      "negative_prompt_tags": [
+        "generic-saas",
+        "blue-white-default",
+        "random-gradient",
+        "too-many-colors",
+        "same-size-cards",
+        "thick-borders",
+        "unclear-z-index"
+      ]
+    }
+  },
+  {
+    "chunk_id": "aesthetic-premium-web-ui-initial-rules-components",
+    "record_id": "aesthetic-premium-web-ui-initial-rules",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "components",
+    "content": "# User distilled premium web UI prompt set - Component Patterns\n\nPage type: landing_page\nUse cases: premium web UI default aesthetic, high-end landing page, AI product website, SaaS launch page, portfolio editorial page, design agency website\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- floating pill navbar\n- center cinematic poster hero\n- giant staggered typography hero\n- video-first immersive hero\n- glass CTA row\n- logo cloud\n- feature chess section\n- portfolio bento\n- CTA footer\n\nAI summary: Default premium Web UI rules for agents: avoid generic blue-white SaaS templates; choose one dominant direction such as dark cinematic glass, monochrome SaaS, white editorial luxury, portfolio dark, video-first landing, or premium AI product. Use restrained color, large typography, cinematic media, subtle motion, responsive asymmetry, and implementation-ready component rules.",
+    "tokens": 128,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "premium-web-ui",
+        "landing-page",
+        "dark-cinematic",
+        "white-editorial",
+        "monochrome-saas",
+        "cinematic-hero",
+        "floating-navbar",
+        "editorial-typography",
+        "motion-reveal",
+        "bento-grid",
+        "ai-product",
+        "portfolio"
+      ],
+      "negative_prompt_tags": [
+        "generic-saas",
+        "blue-white-default",
+        "random-gradient",
+        "too-many-colors",
+        "same-size-cards",
+        "thick-borders",
+        "unclear-z-index"
+      ]
+    }
+  },
+  {
+    "chunk_id": "aesthetic-premium-web-ui-initial-rules-interaction",
+    "record_id": "aesthetic-premium-web-ui-initial-rules",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "interaction",
+    "content": "# User distilled premium web UI prompt set - Interaction States\n\nPage type: landing_page\nUse cases: premium web UI default aesthetic, high-end landing page, AI product website, SaaS launch page, portfolio editorial page, design agency website\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- staggered entrance sequence\n- hover scale 1.03 for primary CTA\n- muted to white nav link hover\n- glass edge highlight on hover\n- scroll reveal once\n- reduced motion fallback\n\nAI summary: Default premium Web UI rules for agents: avoid generic blue-white SaaS templates; choose one dominant direction such as dark cinematic glass, monochrome SaaS, white editorial luxury, portfolio dark, video-first landing, or premium AI product. Use restrained color, large typography, cinematic media, subtle motion, responsive asymmetry, and implementation-ready component rules.",
+    "tokens": 125,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "premium-web-ui",
+        "landing-page",
+        "dark-cinematic",
+        "white-editorial",
+        "monochrome-saas",
+        "cinematic-hero",
+        "floating-navbar",
+        "editorial-typography",
+        "motion-reveal",
+        "bento-grid",
+        "ai-product",
+        "portfolio"
+      ],
+      "negative_prompt_tags": [
+        "generic-saas",
+        "blue-white-default",
+        "random-gradient",
+        "too-many-colors",
+        "same-size-cards",
+        "thick-borders",
+        "unclear-z-index"
+      ]
+    }
+  },
+  {
+    "chunk_id": "aesthetic-premium-web-ui-initial-rules-accessibility",
+    "record_id": "aesthetic-premium-web-ui-initial-rules",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "accessibility",
+    "content": "# User distilled premium web UI prompt set - Accessibility Notes\n\nPage type: landing_page\nUse cases: premium web UI default aesthetic, high-end landing page, AI product website, SaaS launch page, portfolio editorial page, design agency website\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Maintain contrast on glass and video overlays.\n- Do not place white text over bright video without a gradient or dim overlay.\n- Avoid excessive animation and respect reduced motion.\n- Do not force desktop navigation into mobile layouts.\n- Use readable body copy widths around 32ch to 64ch.\n\nAI summary: Default premium Web UI rules for agents: avoid generic blue-white SaaS templates; choose one dominant direction such as dark cinematic glass, monochrome SaaS, white editorial luxury, portfolio dark, video-first landing, or premium AI product. Use restrained color, large typography, cinematic media, subtle motion, responsive asymmetry, and implementation-ready component rules.",
+    "tokens": 143,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "premium-web-ui",
+        "landing-page",
+        "dark-cinematic",
+        "white-editorial",
+        "monochrome-saas",
+        "cinematic-hero",
+        "floating-navbar",
+        "editorial-typography",
+        "motion-reveal",
+        "bento-grid",
+        "ai-product",
+        "portfolio"
+      ],
+      "negative_prompt_tags": [
+        "generic-saas",
+        "blue-white-default",
+        "random-gradient",
+        "too-many-colors",
+        "same-size-cards",
+        "thick-borders",
+        "unclear-z-index"
+      ]
+    }
+  },
+  {
+    "chunk_id": "aesthetic-premium-web-ui-initial-rules-implementation",
+    "record_id": "aesthetic-premium-web-ui-initial-rules",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "implementation",
+    "content": "# User distilled premium web UI prompt set - Implementation Hints\n\nPage type: landing_page\nUse cases: premium web UI default aesthetic, high-end landing page, AI product website, SaaS launch page, portfolio editorial page, design agency website\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Use one accent system per page such as purple/pink gradient, blue steel gradient, or monochrome precision.\n- Use display/body font pairing such as Instrument Serif italic + Inter, Readex Pro, Inter, or Geist + Inter.\n- Hero titles should use line-height 0.8-0.95, letter-spacing -0.02em to -0.05em, and font-weight 400-500.\n- Use explicit z-index layering for media: video z-0, overlay z-0/z-5, content z-10/z-20, navbar z-50.\n- Use clamp or vw sizes for giant type and check mobile overflow.\n- Keep paragraphs concise and avoid filling every empty area.\n\nAI summary: Default premium Web UI rules for agents: avoid generic blue-white SaaS templates; choose one dominant direction such as dark cinematic glass, monochrome SaaS, white editorial luxury, portfolio dark, video-first landing, or premium AI product. Use restrained color, large typography, cinematic media, subtle motion, responsive asymmetry, and implementation-ready component rules.",
+    "tokens": 181,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "premium-web-ui",
+        "landing-page",
+        "dark-cinematic",
+        "white-editorial",
+        "monochrome-saas",
+        "cinematic-hero",
+        "floating-navbar",
+        "editorial-typography",
+        "motion-reveal",
+        "bento-grid",
+        "ai-product",
+        "portfolio"
+      ],
+      "negative_prompt_tags": [
+        "generic-saas",
+        "blue-white-default",
+        "random-gradient",
+        "too-many-colors",
+        "same-size-cards",
+        "thick-borders",
+        "unclear-z-index"
+      ]
+    }
+  },
+  {
     "chunk_id": "component-library-shadcn-modern-web-overview",
     "record_id": "component-library-shadcn-modern-web",
     "source_name": "shadcn/ui",
@@ -3018,6 +3240,210 @@
     }
   },
   {
+    "chunk_id": "implementation-liquid-glass-premium-system-overview",
+    "record_id": "implementation-liquid-glass-premium-system",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# User distilled premium web UI prompt set - Overview\n\nPage type: component_pattern\nUse cases: premium Liquid Glass system, glassmorphism landing page, AI product hero controls, floating navbar, glass CTA, premium card surfaces\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\nVisual traits:\n- two-level glass material system\n- subtle translucent cards and strong CTA glass\n- gradient pseudo-element rim border\n- inset highlight and controlled outer shadow\n- blurred background media or ambient scenery visible through surfaces\n- rounded full controls and rounded 2xl/3xl cards\n\nUse when:\n- premium Liquid Glass system\n- glassmorphism landing page\n- AI product hero controls\n- floating navbar\n- glass CTA\n- premium card surfaces\n\nAvoid when:\n- ordinary dense admin table\n- long text article\n- strict high contrast workflow\n- low-end heavy page\n- no meaningful background behind glass\n- hundreds of repeated glass cells\n\nAI summary: Premium Liquid Glass implementation rules: use two glass levels, subtle translucent surfaces for nav/cards and strong glass for CTA/selected controls; add gradient pseudo-element borders, inset highlights, fallback colors, and contrast checks. For high-end landing pages and cinematic UI, Liquid Glass is a priority material; for dense CRUD/table tasks it remains optional.",
+    "tokens": 195,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "glassmorphism",
+        "premium-web-ui",
+        "floating-navbar",
+        "glass-cta",
+        "gradient-border",
+        "backdrop-filter",
+        "rounded-full",
+        "cinematic-hero",
+        "landing-page"
+      ],
+      "negative_prompt_tags": [
+        "basic-bg-white-10",
+        "no-fallback",
+        "low-contrast",
+        "dense-table-glass",
+        "hundreds-of-rows",
+        "flat-surface"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-liquid-glass-premium-system-layout",
+    "record_id": "implementation-liquid-glass-premium-system",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# User distilled premium web UI prompt set - Layout Rules\n\nPage type: component_pattern\nUse cases: premium Liquid Glass system, glassmorphism landing page, AI product hero controls, floating navbar, glass CTA, premium card surfaces\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Use subtle glass for navbars, badges, chips, cards, and stat blocks.\n- Use strong glass only for primary CTAs, emphasized controls, selected states, and hero surfaces.\n- Keep strong glass away from dense data grids and hundreds of repeated rows.\n- Glass needs meaningful background input; use media, ambient scenes, or gentle gradients behind it.\n- Keep primary text on stable tinted glass surfaces and avoid busy detail under small text.\n\nAI summary: Premium Liquid Glass implementation rules: use two glass levels, subtle translucent surfaces for nav/cards and strong glass for CTA/selected controls; add gradient pseudo-element borders, inset highlights, fallback colors, and contrast checks. For high-end landing pages and cinematic UI, Liquid Glass is a priority material; for dense CRUD/table tasks it remains optional.",
+    "tokens": 165,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "glassmorphism",
+        "premium-web-ui",
+        "floating-navbar",
+        "glass-cta",
+        "gradient-border",
+        "backdrop-filter",
+        "rounded-full",
+        "cinematic-hero",
+        "landing-page"
+      ],
+      "negative_prompt_tags": [
+        "basic-bg-white-10",
+        "no-fallback",
+        "low-contrast",
+        "dense-table-glass",
+        "hundreds-of-rows",
+        "flat-surface"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-liquid-glass-premium-system-components",
+    "record_id": "implementation-liquid-glass-premium-system",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# User distilled premium web UI prompt set - Component Patterns\n\nPage type: component_pattern\nUse cases: premium Liquid Glass system, glassmorphism landing page, AI product hero controls, floating navbar, glass CTA, premium card surfaces\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- subtle glass navbar\n- strong liquid glass CTA\n- glass badge\n- glass stat block\n- glass modal\n- pseudo-element gradient border\n- hover edge highlight\n\nAI summary: Premium Liquid Glass implementation rules: use two glass levels, subtle translucent surfaces for nav/cards and strong glass for CTA/selected controls; add gradient pseudo-element borders, inset highlights, fallback colors, and contrast checks. For high-end landing pages and cinematic UI, Liquid Glass is a priority material; for dense CRUD/table tasks it remains optional.",
+    "tokens": 120,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "glassmorphism",
+        "premium-web-ui",
+        "floating-navbar",
+        "glass-cta",
+        "gradient-border",
+        "backdrop-filter",
+        "rounded-full",
+        "cinematic-hero",
+        "landing-page"
+      ],
+      "negative_prompt_tags": [
+        "basic-bg-white-10",
+        "no-fallback",
+        "low-contrast",
+        "dense-table-glass",
+        "hundreds-of-rows",
+        "flat-surface"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-liquid-glass-premium-system-interaction",
+    "record_id": "implementation-liquid-glass-premium-system",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# User distilled premium web UI prompt set - Interaction States\n\nPage type: component_pattern\nUse cases: premium Liquid Glass system, glassmorphism landing page, AI product hero controls, floating navbar, glass CTA, premium card surfaces\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- hover edge highlight\n- active pressed inset\n- focus-visible high contrast rim\n- selected stronger glass\n- disabled reduced opacity\n- reduced transparency fallback\n\nAI summary: Premium Liquid Glass implementation rules: use two glass levels, subtle translucent surfaces for nav/cards and strong glass for CTA/selected controls; add gradient pseudo-element borders, inset highlights, fallback colors, and contrast checks. For high-end landing pages and cinematic UI, Liquid Glass is a priority material; for dense CRUD/table tasks it remains optional.",
+    "tokens": 118,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "glassmorphism",
+        "premium-web-ui",
+        "floating-navbar",
+        "glass-cta",
+        "gradient-border",
+        "backdrop-filter",
+        "rounded-full",
+        "cinematic-hero",
+        "landing-page"
+      ],
+      "negative_prompt_tags": [
+        "basic-bg-white-10",
+        "no-fallback",
+        "low-contrast",
+        "dense-table-glass",
+        "hundreds-of-rows",
+        "flat-surface"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-liquid-glass-premium-system-accessibility",
+    "record_id": "implementation-liquid-glass-premium-system",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# User distilled premium web UI prompt set - Accessibility Notes\n\nPage type: component_pattern\nUse cases: premium Liquid Glass system, glassmorphism landing page, AI product hero controls, floating navbar, glass CTA, premium card surfaces\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Provide backdrop-filter fallback colors.\n- Check contrast after blur and media overlays are composited.\n- Do not use color glow as the only state indicator.\n- Respect reduced transparency where practical.\n- Avoid low-contrast gray text on glass.\n\nAI summary: Premium Liquid Glass implementation rules: use two glass levels, subtle translucent surfaces for nav/cards and strong glass for CTA/selected controls; add gradient pseudo-element borders, inset highlights, fallback colors, and contrast checks. For high-end landing pages and cinematic UI, Liquid Glass is a priority material; for dense CRUD/table tasks it remains optional.",
+    "tokens": 132,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "glassmorphism",
+        "premium-web-ui",
+        "floating-navbar",
+        "glass-cta",
+        "gradient-border",
+        "backdrop-filter",
+        "rounded-full",
+        "cinematic-hero",
+        "landing-page"
+      ],
+      "negative_prompt_tags": [
+        "basic-bg-white-10",
+        "no-fallback",
+        "low-contrast",
+        "dense-table-glass",
+        "hundreds-of-rows",
+        "flat-surface"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-liquid-glass-premium-system-implementation",
+    "record_id": "implementation-liquid-glass-premium-system",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# User distilled premium web UI prompt set - Implementation Hints\n\nPage type: component_pattern\nUse cases: premium Liquid Glass system, glassmorphism landing page, AI product hero controls, floating navbar, glass CTA, premium card surfaces\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Subtle glass background: rgba(255,255,255,0.01) to rgba(255,255,255,0.12).\n- Subtle glass blur: backdrop-filter blur(4px) to blur(16px), with -webkit-backdrop-filter.\n- Strong glass blur: blur(40px) to blur(50px), stronger inset highlight, subtle outer shadow, and gradient rim border.\n- Use ::before with inset:0, border-radius:inherit, 1px-1.5px padding, linear-gradient rim, and mask-composite exclude/xor where supported.\n- Use rounded-full for nav/badge/CTA and rounded-2xl or rounded-3xl for cards.\n- Do not stop at bg-white/10 backdrop-blur; add rim, highlight, fallback, and controlled layering.\n\nAI summary: Premium Liquid Glass implementation rules: use two glass levels, subtle translucent surfaces for nav/cards and strong glass for CTA/selected controls; add gradient pseudo-element borders, inset highlights, fallback colors, and contrast checks. For high-end landing pages and cinematic UI, Liquid Glass is a priority material; for dense CRUD/table tasks it remains optional.",
+    "tokens": 167,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "glassmorphism",
+        "premium-web-ui",
+        "floating-navbar",
+        "glass-cta",
+        "gradient-border",
+        "backdrop-filter",
+        "rounded-full",
+        "cinematic-hero",
+        "landing-page"
+      ],
+      "negative_prompt_tags": [
+        "basic-bg-white-10",
+        "no-fallback",
+        "low-contrast",
+        "dense-table-glass",
+        "hundreds-of-rows",
+        "flat-surface"
+      ]
+    }
+  },
+  {
     "chunk_id": "implementation-motion-website-reveal-parameters-overview",
     "record_id": "implementation-motion-website-reveal-parameters",
     "source_name": "Website reveal motion implementation parameters",
@@ -4202,6 +4628,810 @@
         "copy-template",
         "static-only",
         "reduced-motion-ignored"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-cinematic-video-hero-overview",
+    "record_id": "pattern-cinematic-video-hero",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "overview",
+    "content": "# User distilled premium web UI prompt set - Overview\n\nPage type: landing_page\nUse cases: cinematic hero, video-first immersive landing page, premium AI product page, portfolio landing page, design agency homepage, launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\nVisual traits:\n- film-title-frame hero composition\n- full-bleed atmospheric video or large poster media\n- explicit dark overlays and gradient fades\n- large centered headline\n- floating navbar above media\n- CTA row that remains readable over video\n\nUse when:\n- cinematic hero\n- video-first immersive landing page\n- premium AI product page\n- portfolio landing page\n- design agency homepage\n- launch page\n\nAvoid when:\n- ordinary form or table workflow\n- video without readable overlay\n- bright video behind white text\n- cropped product content\n- video stealing attention from CTA\n- heavy full-screen video blur\n\nAI summary: Cinematic video hero pattern for premium landing pages: full-bleed or poster video, explicit z-index layers, gradient readability overlays, floating navbar, large centered headline, CTA row, HLS/MP4 fallbacks, and reduced-motion/static poster fallback. Use it for AI products, portfolios, design agencies, and launch pages.",
+    "tokens": 181,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "cinematic-hero",
+        "video-background",
+        "hls-video",
+        "premium-web-ui",
+        "landing-page",
+        "floating-navbar",
+        "dark-cinematic",
+        "hero-section",
+        "video-first",
+        "motion-reveal"
+      ],
+      "negative_prompt_tags": [
+        "generic-split-hero",
+        "cropped-video",
+        "no-overlay",
+        "low-contrast",
+        "autoplay-audio",
+        "heavy-video-blur"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-cinematic-video-hero-layout",
+    "record_id": "pattern-cinematic-video-hero",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "layout",
+    "content": "# User distilled premium web UI prompt set - Layout Rules\n\nPage type: landing_page\nUse cases: cinematic hero, video-first immersive landing page, premium AI product page, portfolio landing page, design agency homepage, launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Use video z-0, overlay z-0 or z-5, content z-10 or z-20, navbar z-50.\n- Atmospheric background video should use object-cover; product/light transparent video should use w-full h-auto and avoid cropping.\n- Overlay text requires a dim layer or gradient fade.\n- Bottom fade height should be about 160px to 300px depending on contrast.\n- Use large centered headline and short subheadline; do not let video compete with CTA.\n- Avoid generic split hero unless the media is immersive and specifically supports the story.\n\nAI summary: Cinematic video hero pattern for premium landing pages: full-bleed or poster video, explicit z-index layers, gradient readability overlays, floating navbar, large centered headline, CTA row, HLS/MP4 fallbacks, and reduced-motion/static poster fallback. Use it for AI products, portfolios, design agencies, and launch pages.",
+    "tokens": 168,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "cinematic-hero",
+        "video-background",
+        "hls-video",
+        "premium-web-ui",
+        "landing-page",
+        "floating-navbar",
+        "dark-cinematic",
+        "hero-section",
+        "video-first",
+        "motion-reveal"
+      ],
+      "negative_prompt_tags": [
+        "generic-split-hero",
+        "cropped-video",
+        "no-overlay",
+        "low-contrast",
+        "autoplay-audio",
+        "heavy-video-blur"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-cinematic-video-hero-components",
+    "record_id": "pattern-cinematic-video-hero",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "components",
+    "content": "# User distilled premium web UI prompt set - Component Patterns\n\nPage type: landing_page\nUse cases: cinematic hero, video-first immersive landing page, premium AI product page, portfolio landing page, design agency homepage, launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- fixed or absolute floating navbar\n- video background layer\n- gradient readability overlay\n- poster headline\n- primary CTA and secondary Play action\n- logo cloud under hero\n- manual fade loop video component\n\nAI summary: Cinematic video hero pattern for premium landing pages: full-bleed or poster video, explicit z-index layers, gradient readability overlays, floating navbar, large centered headline, CTA row, HLS/MP4 fallbacks, and reduced-motion/static poster fallback. Use it for AI products, portfolios, design agencies, and launch pages.",
+    "tokens": 119,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "cinematic-hero",
+        "video-background",
+        "hls-video",
+        "premium-web-ui",
+        "landing-page",
+        "floating-navbar",
+        "dark-cinematic",
+        "hero-section",
+        "video-first",
+        "motion-reveal"
+      ],
+      "negative_prompt_tags": [
+        "generic-split-hero",
+        "cropped-video",
+        "no-overlay",
+        "low-contrast",
+        "autoplay-audio",
+        "heavy-video-blur"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-cinematic-video-hero-interaction",
+    "record_id": "pattern-cinematic-video-hero",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "interaction",
+    "content": "# User distilled premium web UI prompt set - Interaction States\n\nPage type: landing_page\nUse cases: cinematic hero, video-first immersive landing page, premium AI product page, portfolio landing page, design agency homepage, launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- video autoplay muted playsInline\n- manual fade loop when video hard-cuts\n- CTA hover scale\n- secondary play hover\n- reduced motion static poster\n- fallback MP4 when HLS fails\n\nAI summary: Cinematic video hero pattern for premium landing pages: full-bleed or poster video, explicit z-index layers, gradient readability overlays, floating navbar, large centered headline, CTA row, HLS/MP4 fallbacks, and reduced-motion/static poster fallback. Use it for AI products, portfolios, design agencies, and launch pages.",
+    "tokens": 115,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "cinematic-hero",
+        "video-background",
+        "hls-video",
+        "premium-web-ui",
+        "landing-page",
+        "floating-navbar",
+        "dark-cinematic",
+        "hero-section",
+        "video-first",
+        "motion-reveal"
+      ],
+      "negative_prompt_tags": [
+        "generic-split-hero",
+        "cropped-video",
+        "no-overlay",
+        "low-contrast",
+        "autoplay-audio",
+        "heavy-video-blur"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-cinematic-video-hero-accessibility",
+    "record_id": "pattern-cinematic-video-hero",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "accessibility",
+    "content": "# User distilled premium web UI prompt set - Accessibility Notes\n\nPage type: landing_page\nUse cases: cinematic hero, video-first immersive landing page, premium AI product page, portfolio landing page, design agency homepage, launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Keep text readable over bright video with overlays.\n- Avoid rapid camera movement behind reading content.\n- Provide reduced-motion or static poster fallback.\n- Do not rely on video content to communicate the only value proposition.\n- Do not crop important product/video content by accident.\n\nAI summary: Cinematic video hero pattern for premium landing pages: full-bleed or poster video, explicit z-index layers, gradient readability overlays, floating navbar, large centered headline, CTA row, HLS/MP4 fallbacks, and reduced-motion/static poster fallback. Use it for AI products, portfolios, design agencies, and launch pages.",
+    "tokens": 130,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "cinematic-hero",
+        "video-background",
+        "hls-video",
+        "premium-web-ui",
+        "landing-page",
+        "floating-navbar",
+        "dark-cinematic",
+        "hero-section",
+        "video-first",
+        "motion-reveal"
+      ],
+      "negative_prompt_tags": [
+        "generic-split-hero",
+        "cropped-video",
+        "no-overlay",
+        "low-contrast",
+        "autoplay-audio",
+        "heavy-video-blur"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-cinematic-video-hero-implementation",
+    "record_id": "pattern-cinematic-video-hero",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "implementation",
+    "content": "# User distilled premium web UI prompt set - Implementation Hints\n\nPage type: landing_page\nUse cases: cinematic hero, video-first immersive landing page, premium AI product page, portfolio landing page, design agency homepage, launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Video attributes: autoPlay, muted, loop or custom loop, playsInline, preload='auto'.\n- Use hls.js for .m3u8 when needed, native HLS where possible, and MP4 fallback when provided.\n- For hard cuts, fade in over 0.5s, fade out 0.5s before end, set opacity 0 on ended, wait 100ms, reset currentTime to 0, play, then fade back to 1.\n- Common overlays: bg-black/20, bg-gradient-to-t from-black to-transparent, bg-gradient-to-b from-black via-transparent to-black.\n- Avoid heavy CSS blur on full-screen video; use overlays and composition instead.\n\nAI summary: Cinematic video hero pattern for premium landing pages: full-bleed or poster video, explicit z-index layers, gradient readability overlays, floating navbar, large centered headline, CTA row, HLS/MP4 fallbacks, and reduced-motion/static poster fallback. Use it for AI products, portfolios, design agencies, and launch pages.",
+    "tokens": 165,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "cinematic-hero",
+        "video-background",
+        "hls-video",
+        "premium-web-ui",
+        "landing-page",
+        "floating-navbar",
+        "dark-cinematic",
+        "hero-section",
+        "video-first",
+        "motion-reveal"
+      ],
+      "negative_prompt_tags": [
+        "generic-split-hero",
+        "cropped-video",
+        "no-overlay",
+        "low-contrast",
+        "autoplay-audio",
+        "heavy-video-blur"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-landing-page-premium-section-composition-overview",
+    "record_id": "pattern-landing-page-premium-section-composition",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "overview",
+    "content": "# User distilled premium web UI prompt set - Overview\n\nPage type: landing_page\nUse cases: premium landing page composition, AI product homepage, SaaS marketing page, portfolio bento, agency homepage, product launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\nVisual traits:\n- varied section rhythm\n- large media feature rows\n- asymmetric bento grids\n- controlled logo cloud opacity\n- large stat numbers\n- testimonial glass cards\n- strong CTA footer\n\nUse when:\n- premium landing page composition\n- AI product homepage\n- SaaS marketing page\n- portfolio bento\n- agency homepage\n- product launch page\n\nAvoid when:\n- all cards same size\n- too many sections with identical centered layout\n- table-like stats\n- overloaded logo cloud\n- hover-only content on mobile\n- generic feature grid with no media hierarchy\n\nAI summary: Premium landing page section composition: use varied rhythm across hero, logo cloud, feature chess, bento grid, stats, testimonials, portfolio/journal, parallax gallery, and CTA footer. Avoid identical card grids; mix media, asymmetry, large type, and restrained glass.",
+    "tokens": 168,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "landing-page",
+        "premium-web-ui",
+        "bento-grid",
+        "feature-chess",
+        "logo-cloud",
+        "testimonials",
+        "stats",
+        "portfolio",
+        "cta-footer",
+        "dark-cinematic",
+        "white-editorial"
+      ],
+      "negative_prompt_tags": [
+        "same-size-cards",
+        "generic-feature-grid",
+        "over-centered",
+        "table-like-stats",
+        "overloaded-logos"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-landing-page-premium-section-composition-layout",
+    "record_id": "pattern-landing-page-premium-section-composition",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "layout",
+    "content": "# User distilled premium web UI prompt set - Layout Rules\n\nPage type: landing_page\nUse cases: premium landing page composition, AI product homepage, SaaS marketing page, portfolio bento, agency homepage, product launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Use a varied sequence such as Hero, Logo Cloud, How It Works, Capabilities, Feature Chess, Feature Grid, Stats, Testimonials, CTA Footer, Portfolio Bento, Journal, or Parallax Gallery.\n- Feature rows should alternate text and media, use large headings, keep body copy short, and use glass/rounded/video media containers.\n- Bento grids should not make every card the same size; use 7/5 and 5/7 columns and mix large and small cards.\n- Stats should be large numbers with small labels, not table-like rows.\n- Testimonials should use muted quote text, strong names, white/50 roles, and liquid-glass rounded-2xl p-8 cards.\n- Logo clouds should use controlled opacity, optionally infinite horizontal slider, and avoid too many logos.\n\nAI summary: Premium landing page section composition: use varied rhythm across hero, logo cloud, feature chess, bento grid, stats, testimonials, portfolio/journal, parallax gallery, and CTA footer. Avoid identical card grids; mix media, asymmetry, large type, and restrained glass.",
+    "tokens": 191,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "landing-page",
+        "premium-web-ui",
+        "bento-grid",
+        "feature-chess",
+        "logo-cloud",
+        "testimonials",
+        "stats",
+        "portfolio",
+        "cta-footer",
+        "dark-cinematic",
+        "white-editorial"
+      ],
+      "negative_prompt_tags": [
+        "same-size-cards",
+        "generic-feature-grid",
+        "over-centered",
+        "table-like-stats",
+        "overloaded-logos"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-landing-page-premium-section-composition-components",
+    "record_id": "pattern-landing-page-premium-section-composition",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "components",
+    "content": "# User distilled premium web UI prompt set - Component Patterns\n\nPage type: landing_page\nUse cases: premium landing page composition, AI product homepage, SaaS marketing page, portfolio bento, agency homepage, product launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- hero\n- logo cloud\n- how it works\n- capabilities\n- feature chess\n- feature grid\n- stats\n- testimonials\n- CTA footer\n- portfolio bento\n- journal\n- parallax gallery\n\nAI summary: Premium landing page section composition: use varied rhythm across hero, logo cloud, feature chess, bento grid, stats, testimonials, portfolio/journal, parallax gallery, and CTA footer. Avoid identical card grids; mix media, asymmetry, large type, and restrained glass.",
+    "tokens": 109,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "landing-page",
+        "premium-web-ui",
+        "bento-grid",
+        "feature-chess",
+        "logo-cloud",
+        "testimonials",
+        "stats",
+        "portfolio",
+        "cta-footer",
+        "dark-cinematic",
+        "white-editorial"
+      ],
+      "negative_prompt_tags": [
+        "same-size-cards",
+        "generic-feature-grid",
+        "over-centered",
+        "table-like-stats",
+        "overloaded-logos"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-landing-page-premium-section-composition-interaction",
+    "record_id": "pattern-landing-page-premium-section-composition",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "interaction",
+    "content": "# User distilled premium web UI prompt set - Interaction States\n\nPage type: landing_page\nUse cases: premium landing page composition, AI product homepage, SaaS marketing page, portfolio bento, agency homepage, product launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- hover media overlay\n- slow hover zoom\n- scroll reveal section\n- logo slider\n- CTA hover scale\n- mobile stacked sections\n\nAI summary: Premium landing page section composition: use varied rhythm across hero, logo cloud, feature chess, bento grid, stats, testimonials, portfolio/journal, parallax gallery, and CTA footer. Avoid identical card grids; mix media, asymmetry, large type, and restrained glass.",
+    "tokens": 100,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "landing-page",
+        "premium-web-ui",
+        "bento-grid",
+        "feature-chess",
+        "logo-cloud",
+        "testimonials",
+        "stats",
+        "portfolio",
+        "cta-footer",
+        "dark-cinematic",
+        "white-editorial"
+      ],
+      "negative_prompt_tags": [
+        "same-size-cards",
+        "generic-feature-grid",
+        "over-centered",
+        "table-like-stats",
+        "overloaded-logos"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-landing-page-premium-section-composition-accessibility",
+    "record_id": "pattern-landing-page-premium-section-composition",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "accessibility",
+    "content": "# User distilled premium web UI prompt set - Accessibility Notes\n\nPage type: landing_page\nUse cases: premium landing page composition, AI product homepage, SaaS marketing page, portfolio bento, agency homepage, product launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Do not overload logo clouds with too many low-contrast marks.\n- Keep section headings and body copy readable over media backgrounds.\n- Use responsive stacking for bento and feature rows.\n- Do not rely on hover-only content for mobile.\n- Keep testimonials and stats semantically readable.\n\nAI summary: Premium landing page section composition: use varied rhythm across hero, logo cloud, feature chess, bento grid, stats, testimonials, portfolio/journal, parallax gallery, and CTA footer. Avoid identical card grids; mix media, asymmetry, large type, and restrained glass.",
+    "tokens": 124,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "landing-page",
+        "premium-web-ui",
+        "bento-grid",
+        "feature-chess",
+        "logo-cloud",
+        "testimonials",
+        "stats",
+        "portfolio",
+        "cta-footer",
+        "dark-cinematic",
+        "white-editorial"
+      ],
+      "negative_prompt_tags": [
+        "same-size-cards",
+        "generic-feature-grid",
+        "over-centered",
+        "table-like-stats",
+        "overloaded-logos"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-landing-page-premium-section-composition-implementation",
+    "record_id": "pattern-landing-page-premium-section-composition",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "implementation",
+    "content": "# User distilled premium web UI prompt set - Implementation Hints\n\nPage type: landing_page\nUse cases: premium landing page composition, AI product homepage, SaaS marketing page, portfolio bento, agency homepage, product launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Use 7/5 and 5/7 desktop grid columns for bento and feature chess sections.\n- Use image/video backgrounds with hover overlays in selected bento cards.\n- Use large number plus small label for stats; consider serif italic or tight sans for premium contrast.\n- Use liquid-glass rounded-2xl p-8 for dark testimonial cards.\n- Use white/inverted logos on dark background with opacity control.\n- Use one primary CTA in the footer and keep copy short.\n\nAI summary: Premium landing page section composition: use varied rhythm across hero, logo cloud, feature chess, bento grid, stats, testimonials, portfolio/journal, parallax gallery, and CTA footer. Avoid identical card grids; mix media, asymmetry, large type, and restrained glass.",
+    "tokens": 151,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "landing-page",
+        "premium-web-ui",
+        "bento-grid",
+        "feature-chess",
+        "logo-cloud",
+        "testimonials",
+        "stats",
+        "portfolio",
+        "cta-footer",
+        "dark-cinematic",
+        "white-editorial"
+      ],
+      "negative_prompt_tags": [
+        "same-size-cards",
+        "generic-feature-grid",
+        "over-centered",
+        "table-like-stats",
+        "overloaded-logos"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-motion-blurtext-fading-video-overview",
+    "record_id": "pattern-motion-blurtext-fading-video",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# User distilled premium web UI prompt set - Overview\n\nPage type: component_pattern\nUse cases: premium hero entrance motion, BlurText headline, scroll reveal, fading video loop, cinematic landing page motion, premium CTA interaction\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\nVisual traits:\n- slow subtle staggered motion\n- blur-to-sharp text reveal\n- opacity and y-axis entrance\n- manual video fade loop\n- quiet hover feedback\n- readability-preserving animation\n\nUse when:\n- premium hero entrance motion\n- BlurText headline\n- scroll reveal\n- fading video loop\n- cinematic landing page motion\n- premium CTA interaction\n\nAvoid when:\n- fast bouncing motion\n- excessive spinning\n- neon flashing\n- every element moving at once\n- looping chart animation after values settle\n- motion that hurts readability\n\nAI summary: Premium motion rules: use slow staggered blur/y/opacity entrances, BlurText word reveal, scroll reveal once, restrained hover scale, and manual fading video loops for hard-cut media. Avoid bouncing, flashing, or animating everything at once.",
+    "tokens": 158,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "motion-reveal",
+        "blurtext",
+        "fading-video",
+        "cinematic-hero",
+        "premium-web-ui",
+        "scroll-reveal",
+        "framer-motion",
+        "landing-page",
+        "video-background"
+      ],
+      "negative_prompt_tags": [
+        "bouncy",
+        "spinning",
+        "flashing",
+        "overanimated",
+        "unreadable-motion",
+        "looping-data"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-motion-blurtext-fading-video-layout",
+    "record_id": "pattern-motion-blurtext-fading-video",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# User distilled premium web UI prompt set - Layout Rules\n\nPage type: component_pattern\nUse cases: premium hero entrance motion, BlurText headline, scroll reveal, fading video loop, cinematic landing page motion, premium CTA interaction\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Use motion to reveal hierarchy, not to decorate every element.\n- Sequence hero elements: badge, heading, subheading, CTA, then stats/partners.\n- Use scroll reveal once for section entrances.\n- Let data/chart motion settle to readable static values.\n- Reduce parallax and heavy motion on mobile.\n\nAI summary: Premium motion rules: use slow staggered blur/y/opacity entrances, BlurText word reveal, scroll reveal once, restrained hover scale, and manual fading video loops for hard-cut media. Avoid bouncing, flashing, or animating everything at once.",
+    "tokens": 121,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "motion-reveal",
+        "blurtext",
+        "fading-video",
+        "cinematic-hero",
+        "premium-web-ui",
+        "scroll-reveal",
+        "framer-motion",
+        "landing-page",
+        "video-background"
+      ],
+      "negative_prompt_tags": [
+        "bouncy",
+        "spinning",
+        "flashing",
+        "overanimated",
+        "unreadable-motion",
+        "looping-data"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-motion-blurtext-fading-video-components",
+    "record_id": "pattern-motion-blurtext-fading-video",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# User distilled premium web UI prompt set - Component Patterns\n\nPage type: component_pattern\nUse cases: premium hero entrance motion, BlurText headline, scroll reveal, fading video loop, cinematic landing page motion, premium CTA interaction\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- BlurText hero heading\n- staggered hero entrance\n- scroll reveal section\n- manual fading video loop\n- hover scale CTA\n- media card hover overlay\n\nAI summary: Premium motion rules: use slow staggered blur/y/opacity entrances, BlurText word reveal, scroll reveal once, restrained hover scale, and manual fading video loops for hard-cut media. Avoid bouncing, flashing, or animating everything at once.",
+    "tokens": 101,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "motion-reveal",
+        "blurtext",
+        "fading-video",
+        "cinematic-hero",
+        "premium-web-ui",
+        "scroll-reveal",
+        "framer-motion",
+        "landing-page",
+        "video-background"
+      ],
+      "negative_prompt_tags": [
+        "bouncy",
+        "spinning",
+        "flashing",
+        "overanimated",
+        "unreadable-motion",
+        "looping-data"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-motion-blurtext-fading-video-interaction",
+    "record_id": "pattern-motion-blurtext-fading-video",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# User distilled premium web UI prompt set - Interaction States\n\nPage type: component_pattern\nUse cases: premium hero entrance motion, BlurText headline, scroll reveal, fading video loop, cinematic landing page motion, premium CTA interaction\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- initial opacity 0 y 20 blur 10px\n- animate opacity 1 y 0 blur 0px\n- word stagger 0.08s to 0.12s\n- video fade out before end\n- hover scale 1.03\n- reduced motion skip\n\nAI summary: Premium motion rules: use slow staggered blur/y/opacity entrances, BlurText word reveal, scroll reveal once, restrained hover scale, and manual fading video loops for hard-cut media. Avoid bouncing, flashing, or animating everything at once.",
+    "tokens": 111,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "motion-reveal",
+        "blurtext",
+        "fading-video",
+        "cinematic-hero",
+        "premium-web-ui",
+        "scroll-reveal",
+        "framer-motion",
+        "landing-page",
+        "video-background"
+      ],
+      "negative_prompt_tags": [
+        "bouncy",
+        "spinning",
+        "flashing",
+        "overanimated",
+        "unreadable-motion",
+        "looping-data"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-motion-blurtext-fading-video-accessibility",
+    "record_id": "pattern-motion-blurtext-fading-video",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# User distilled premium web UI prompt set - Accessibility Notes\n\nPage type: component_pattern\nUse cases: premium hero entrance motion, BlurText headline, scroll reveal, fading video loop, cinematic landing page motion, premium CTA interaction\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Respect prefers-reduced-motion.\n- Do not animate every element at once.\n- Avoid fast bouncing, spinning, neon flashing, or motion that harms readability.\n- Do not rely on animation as the only way to communicate state or data.\n- Keep text readable during blur transitions.\n\nAI summary: Premium motion rules: use slow staggered blur/y/opacity entrances, BlurText word reveal, scroll reveal once, restrained hover scale, and manual fading video loops for hard-cut media. Avoid bouncing, flashing, or animating everything at once.",
+    "tokens": 120,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "motion-reveal",
+        "blurtext",
+        "fading-video",
+        "cinematic-hero",
+        "premium-web-ui",
+        "scroll-reveal",
+        "framer-motion",
+        "landing-page",
+        "video-background"
+      ],
+      "negative_prompt_tags": [
+        "bouncy",
+        "spinning",
+        "flashing",
+        "overanimated",
+        "unreadable-motion",
+        "looping-data"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-motion-blurtext-fading-video-implementation",
+    "record_id": "pattern-motion-blurtext-fading-video",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# User distilled premium web UI prompt set - Implementation Hints\n\nPage type: component_pattern\nUse cases: premium hero entrance motion, BlurText headline, scroll reveal, fading video loop, cinematic landing page motion, premium CTA interaction\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Default entrance: opacity 0, y 20, filter blur(10px) to opacity 1, y 0, filter blur(0px).\n- Use duration 0.6s to 1.2s and easeOut or power3.out.\n- Hero timing: badge 0.3-0.4s, heading 0.4-0.6s, subheading 0.8s, CTA 1.0-1.1s, stats 1.2-1.4s.\n- BlurText: split by words; each word enters from blur(10px), opacity 0, y 50; middle blur(5px), opacity 0.5, y -5; final blur(0), opacity 1, y 0.\n- Manual video loop: fade in 0.5s, fade out 0.5s before end, opacity 0 on ended, wait 100ms, reset currentTime, play, fade to 1.\n- Use whileInView, viewport once, opacity 0 to 1, y 30 to 0, duration 0.8s to 1s for scroll reveal.\n\nAI summary: Premium motion rules: use slow staggered blur/y/opacity entrances, BlurText word reveal, scroll reveal once, restrained hover scale, and manual fading video loops for hard-cut media. Avoid bouncing, flashing, or animating everything at once.",
+    "tokens": 184,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "motion-reveal",
+        "blurtext",
+        "fading-video",
+        "cinematic-hero",
+        "premium-web-ui",
+        "scroll-reveal",
+        "framer-motion",
+        "landing-page",
+        "video-background"
+      ],
+      "negative_prompt_tags": [
+        "bouncy",
+        "spinning",
+        "flashing",
+        "overanimated",
+        "unreadable-motion",
+        "looping-data"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-typography-editorial-saas-overview",
+    "record_id": "pattern-premium-typography-editorial-saas",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "overview",
+    "content": "# User distilled premium web UI prompt set - Overview\n\nPage type: landing_page\nUse cases: premium typography system, editorial SaaS landing page, black-white developer SaaS, white luxury editorial page, portfolio editorial dark page, high-end product homepage\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\nVisual traits:\n- separate display and body fonts\n- very large tight hero type\n- short memorable headline lines\n- restrained paragraph widths\n- editorial whitespace\n- asymmetric desktop composition\n\nUse when:\n- premium typography system\n- editorial SaaS landing page\n- black-white developer SaaS\n- white luxury editorial page\n- portfolio editorial dark page\n- high-end product homepage\n\nAvoid when:\n- default font-bold hero\n- paragraphs stretched too wide\n- same heading size across all sections\n- weak hierarchy\n- over-centered every section\n- desktop type scale forced onto mobile\n\nAI summary: Premium typography and layout rules: use display/body font pairing, very large tight hero type, short memorable lines, body copy max-width 32ch-64ch, editorial whitespace, asymmetry, and responsive clamp/vw sizing. Avoid default bold SaaS headings and wide paragraphs.",
+    "tokens": 171,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "editorial-typography",
+        "premium-web-ui",
+        "white-editorial",
+        "monochrome-saas",
+        "portfolio",
+        "landing-page",
+        "giant-type",
+        "responsive-typography",
+        "geist",
+        "instrument-serif"
+      ],
+      "negative_prompt_tags": [
+        "default-bold",
+        "wide-paragraph",
+        "weak-hierarchy",
+        "over-centered",
+        "mobile-overflow"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-typography-editorial-saas-layout",
+    "record_id": "pattern-premium-typography-editorial-saas",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "layout",
+    "content": "# User distilled premium web UI prompt set - Layout Rules\n\nPage type: landing_page\nUse cases: premium typography system, editorial SaaS landing page, black-white developer SaaS, white luxury editorial page, portfolio editorial dark page, high-end product homepage\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Use display/body pairings such as Instrument Serif italic + Inter, Instrument Serif italic + Barlow, Readex Pro, Inter, or Geist + Inter.\n- Hero title line-height should be 0.8 to 0.95 with letter-spacing -0.02em to -0.05em.\n- Hero font-weight should usually be 400 to 500, not default bold.\n- Section headings should use text-4xl to text-6xl with tight line-height.\n- Body copy should stay small but readable, with max-width around 32ch to 64ch.\n- On desktop, use asymmetry, scale contrast, and whitespace instead of filling every area.\n\nAI summary: Premium typography and layout rules: use display/body font pairing, very large tight hero type, short memorable lines, body copy max-width 32ch-64ch, editorial whitespace, asymmetry, and responsive clamp/vw sizing. Avoid default bold SaaS headings and wide paragraphs.",
+    "tokens": 169,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "editorial-typography",
+        "premium-web-ui",
+        "white-editorial",
+        "monochrome-saas",
+        "portfolio",
+        "landing-page",
+        "giant-type",
+        "responsive-typography",
+        "geist",
+        "instrument-serif"
+      ],
+      "negative_prompt_tags": [
+        "default-bold",
+        "wide-paragraph",
+        "weak-hierarchy",
+        "over-centered",
+        "mobile-overflow"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-typography-editorial-saas-components",
+    "record_id": "pattern-premium-typography-editorial-saas",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "components",
+    "content": "# User distilled premium web UI prompt set - Component Patterns\n\nPage type: landing_page\nUse cases: premium typography system, editorial SaaS landing page, black-white developer SaaS, white luxury editorial page, portfolio editorial dark page, high-end product homepage\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- editorial serif hero\n- monochrome SaaS headline\n- giant staggered type\n- short subheadline block\n- stat typography\n- journal section\n- portfolio caption\n\nAI summary: Premium typography and layout rules: use display/body font pairing, very large tight hero type, short memorable lines, body copy max-width 32ch-64ch, editorial whitespace, asymmetry, and responsive clamp/vw sizing. Avoid default bold SaaS headings and wide paragraphs.",
+    "tokens": 106,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "editorial-typography",
+        "premium-web-ui",
+        "white-editorial",
+        "monochrome-saas",
+        "portfolio",
+        "landing-page",
+        "giant-type",
+        "responsive-typography",
+        "geist",
+        "instrument-serif"
+      ],
+      "negative_prompt_tags": [
+        "default-bold",
+        "wide-paragraph",
+        "weak-hierarchy",
+        "over-centered",
+        "mobile-overflow"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-typography-editorial-saas-interaction",
+    "record_id": "pattern-premium-typography-editorial-saas",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "interaction",
+    "content": "# User distilled premium web UI prompt set - Interaction States\n\nPage type: landing_page\nUse cases: premium typography system, editorial SaaS landing page, black-white developer SaaS, white luxury editorial page, portfolio editorial dark page, high-end product homepage\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- BlurText word reveal\n- scroll reveal heading\n- hover underline or muted-to-strong link\n- responsive type clamp\n- mobile line break adjustment\n\nAI summary: Premium typography and layout rules: use display/body font pairing, very large tight hero type, short memorable lines, body copy max-width 32ch-64ch, editorial whitespace, asymmetry, and responsive clamp/vw sizing. Avoid default bold SaaS headings and wide paragraphs.",
+    "tokens": 104,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "editorial-typography",
+        "premium-web-ui",
+        "white-editorial",
+        "monochrome-saas",
+        "portfolio",
+        "landing-page",
+        "giant-type",
+        "responsive-typography",
+        "geist",
+        "instrument-serif"
+      ],
+      "negative_prompt_tags": [
+        "default-bold",
+        "wide-paragraph",
+        "weak-hierarchy",
+        "over-centered",
+        "mobile-overflow"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-typography-editorial-saas-accessibility",
+    "record_id": "pattern-premium-typography-editorial-saas",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "accessibility",
+    "content": "# User distilled premium web UI prompt set - Accessibility Notes\n\nPage type: landing_page\nUse cases: premium typography system, editorial SaaS landing page, black-white developer SaaS, white luxury editorial page, portfolio editorial dark page, high-end product homepage\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Do not make display type so tight that letters collide on mobile.\n- Keep paragraph widths readable.\n- Avoid low-contrast gray copy on dark or glass backgrounds.\n- Do not rely only on decorative serif styling for hierarchy.\n- Check long words and mixed English/Chinese line wrapping.\n\nAI summary: Premium typography and layout rules: use display/body font pairing, very large tight hero type, short memorable lines, body copy max-width 32ch-64ch, editorial whitespace, asymmetry, and responsive clamp/vw sizing. Avoid default bold SaaS headings and wide paragraphs.",
+    "tokens": 129,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "editorial-typography",
+        "premium-web-ui",
+        "white-editorial",
+        "monochrome-saas",
+        "portfolio",
+        "landing-page",
+        "giant-type",
+        "responsive-typography",
+        "geist",
+        "instrument-serif"
+      ],
+      "negative_prompt_tags": [
+        "default-bold",
+        "wide-paragraph",
+        "weak-hierarchy",
+        "over-centered",
+        "mobile-overflow"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-typography-editorial-saas-implementation",
+    "record_id": "pattern-premium-typography-editorial-saas",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "implementation",
+    "content": "# User distilled premium web UI prompt set - Implementation Hints\n\nPage type: landing_page\nUse cases: premium typography system, editorial SaaS landing page, black-white developer SaaS, white luxury editorial page, portfolio editorial dark page, high-end product homepage\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Hero heading scale: text-5xl -> md:text-7xl -> lg:text-[5.5rem].\n- Giant type scale: text-[14vw] md:text-[13vw].\n- Section heading scale: text-4xl -> md:text-5xl -> lg:text-6xl.\n- Use clamp() or viewport units for huge type and test mobile overflow.\n- Use max-width utilities for body copy and avoid full-width paragraphs.\n- Use Geist + Inter for developer SaaS; use serif italic pairing for luxury/editorial contrast.\n\nAI summary: Premium typography and layout rules: use display/body font pairing, very large tight hero type, short memorable lines, body copy max-width 32ch-64ch, editorial whitespace, asymmetry, and responsive clamp/vw sizing. Avoid default bold SaaS headings and wide paragraphs.",
+    "tokens": 144,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "editorial-typography",
+        "premium-web-ui",
+        "white-editorial",
+        "monochrome-saas",
+        "portfolio",
+        "landing-page",
+        "giant-type",
+        "responsive-typography",
+        "geist",
+        "instrument-serif"
+      ],
+      "negative_prompt_tags": [
+        "default-bold",
+        "wide-paragraph",
+        "weak-hierarchy",
+        "over-centered",
+        "mobile-overflow"
       ]
     }
   },

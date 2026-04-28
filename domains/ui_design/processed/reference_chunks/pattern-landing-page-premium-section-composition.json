@@ -1,0 +1,206 @@
+[
+  {
+    "chunk_id": "pattern-landing-page-premium-section-composition-overview",
+    "record_id": "pattern-landing-page-premium-section-composition",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "overview",
+    "content": "# User distilled premium web UI prompt set - Overview\n\nPage type: landing_page\nUse cases: premium landing page composition, AI product homepage, SaaS marketing page, portfolio bento, agency homepage, product launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\nVisual traits:\n- varied section rhythm\n- large media feature rows\n- asymmetric bento grids\n- controlled logo cloud opacity\n- large stat numbers\n- testimonial glass cards\n- strong CTA footer\n\nUse when:\n- premium landing page composition\n- AI product homepage\n- SaaS marketing page\n- portfolio bento\n- agency homepage\n- product launch page\n\nAvoid when:\n- all cards same size\n- too many sections with identical centered layout\n- table-like stats\n- overloaded logo cloud\n- hover-only content on mobile\n- generic feature grid with no media hierarchy\n\nAI summary: Premium landing page section composition: use varied rhythm across hero, logo cloud, feature chess, bento grid, stats, testimonials, portfolio/journal, parallax gallery, and CTA footer. Avoid identical card grids; mix media, asymmetry, large type, and restrained glass.",
+    "tokens": 168,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "landing-page",
+        "premium-web-ui",
+        "bento-grid",
+        "feature-chess",
+        "logo-cloud",
+        "testimonials",
+        "stats",
+        "portfolio",
+        "cta-footer",
+        "dark-cinematic",
+        "white-editorial"
+      ],
+      "negative_prompt_tags": [
+        "same-size-cards",
+        "generic-feature-grid",
+        "over-centered",
+        "table-like-stats",
+        "overloaded-logos"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-landing-page-premium-section-composition-layout",
+    "record_id": "pattern-landing-page-premium-section-composition",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "layout",
+    "content": "# User distilled premium web UI prompt set - Layout Rules\n\nPage type: landing_page\nUse cases: premium landing page composition, AI product homepage, SaaS marketing page, portfolio bento, agency homepage, product launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Use a varied sequence such as Hero, Logo Cloud, How It Works, Capabilities, Feature Chess, Feature Grid, Stats, Testimonials, CTA Footer, Portfolio Bento, Journal, or Parallax Gallery.\n- Feature rows should alternate text and media, use large headings, keep body copy short, and use glass/rounded/video media containers.\n- Bento grids should not make every card the same size; use 7/5 and 5/7 columns and mix large and small cards.\n- Stats should be large numbers with small labels, not table-like rows.\n- Testimonials should use muted quote text, strong names, white/50 roles, and liquid-glass rounded-2xl p-8 cards.\n- Logo clouds should use controlled opacity, optionally infinite horizontal slider, and avoid too many logos.\n\nAI summary: Premium landing page section composition: use varied rhythm across hero, logo cloud, feature chess, bento grid, stats, testimonials, portfolio/journal, parallax gallery, and CTA footer. Avoid identical card grids; mix media, asymmetry, large type, and restrained glass.",
+    "tokens": 191,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "landing-page",
+        "premium-web-ui",
+        "bento-grid",
+        "feature-chess",
+        "logo-cloud",
+        "testimonials",
+        "stats",
+        "portfolio",
+        "cta-footer",
+        "dark-cinematic",
+        "white-editorial"
+      ],
+      "negative_prompt_tags": [
+        "same-size-cards",
+        "generic-feature-grid",
+        "over-centered",
+        "table-like-stats",
+        "overloaded-logos"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-landing-page-premium-section-composition-components",
+    "record_id": "pattern-landing-page-premium-section-composition",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "components",
+    "content": "# User distilled premium web UI prompt set - Component Patterns\n\nPage type: landing_page\nUse cases: premium landing page composition, AI product homepage, SaaS marketing page, portfolio bento, agency homepage, product launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- hero\n- logo cloud\n- how it works\n- capabilities\n- feature chess\n- feature grid\n- stats\n- testimonials\n- CTA footer\n- portfolio bento\n- journal\n- parallax gallery\n\nAI summary: Premium landing page section composition: use varied rhythm across hero, logo cloud, feature chess, bento grid, stats, testimonials, portfolio/journal, parallax gallery, and CTA footer. Avoid identical card grids; mix media, asymmetry, large type, and restrained glass.",
+    "tokens": 109,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "landing-page",
+        "premium-web-ui",
+        "bento-grid",
+        "feature-chess",
+        "logo-cloud",
+        "testimonials",
+        "stats",
+        "portfolio",
+        "cta-footer",
+        "dark-cinematic",
+        "white-editorial"
+      ],
+      "negative_prompt_tags": [
+        "same-size-cards",
+        "generic-feature-grid",
+        "over-centered",
+        "table-like-stats",
+        "overloaded-logos"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-landing-page-premium-section-composition-interaction",
+    "record_id": "pattern-landing-page-premium-section-composition",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "interaction",
+    "content": "# User distilled premium web UI prompt set - Interaction States\n\nPage type: landing_page\nUse cases: premium landing page composition, AI product homepage, SaaS marketing page, portfolio bento, agency homepage, product launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- hover media overlay\n- slow hover zoom\n- scroll reveal section\n- logo slider\n- CTA hover scale\n- mobile stacked sections\n\nAI summary: Premium landing page section composition: use varied rhythm across hero, logo cloud, feature chess, bento grid, stats, testimonials, portfolio/journal, parallax gallery, and CTA footer. Avoid identical card grids; mix media, asymmetry, large type, and restrained glass.",
+    "tokens": 100,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "landing-page",
+        "premium-web-ui",
+        "bento-grid",
+        "feature-chess",
+        "logo-cloud",
+        "testimonials",
+        "stats",
+        "portfolio",
+        "cta-footer",
+        "dark-cinematic",
+        "white-editorial"
+      ],
+      "negative_prompt_tags": [
+        "same-size-cards",
+        "generic-feature-grid",
+        "over-centered",
+        "table-like-stats",
+        "overloaded-logos"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-landing-page-premium-section-composition-accessibility",
+    "record_id": "pattern-landing-page-premium-section-composition",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "accessibility",
+    "content": "# User distilled premium web UI prompt set - Accessibility Notes\n\nPage type: landing_page\nUse cases: premium landing page composition, AI product homepage, SaaS marketing page, portfolio bento, agency homepage, product launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Do not overload logo clouds with too many low-contrast marks.\n- Keep section headings and body copy readable over media backgrounds.\n- Use responsive stacking for bento and feature rows.\n- Do not rely on hover-only content for mobile.\n- Keep testimonials and stats semantically readable.\n\nAI summary: Premium landing page section composition: use varied rhythm across hero, logo cloud, feature chess, bento grid, stats, testimonials, portfolio/journal, parallax gallery, and CTA footer. Avoid identical card grids; mix media, asymmetry, large type, and restrained glass.",
+    "tokens": 124,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "landing-page",
+        "premium-web-ui",
+        "bento-grid",
+        "feature-chess",
+        "logo-cloud",
+        "testimonials",
+        "stats",
+        "portfolio",
+        "cta-footer",
+        "dark-cinematic",
+        "white-editorial"
+      ],
+      "negative_prompt_tags": [
+        "same-size-cards",
+        "generic-feature-grid",
+        "over-centered",
+        "table-like-stats",
+        "overloaded-logos"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-landing-page-premium-section-composition-implementation",
+    "record_id": "pattern-landing-page-premium-section-composition",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "implementation",
+    "content": "# User distilled premium web UI prompt set - Implementation Hints\n\nPage type: landing_page\nUse cases: premium landing page composition, AI product homepage, SaaS marketing page, portfolio bento, agency homepage, product launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Use 7/5 and 5/7 desktop grid columns for bento and feature chess sections.\n- Use image/video backgrounds with hover overlays in selected bento cards.\n- Use large number plus small label for stats; consider serif italic or tight sans for premium contrast.\n- Use liquid-glass rounded-2xl p-8 for dark testimonial cards.\n- Use white/inverted logos on dark background with opacity control.\n- Use one primary CTA in the footer and keep copy short.\n\nAI summary: Premium landing page section composition: use varied rhythm across hero, logo cloud, feature chess, bento grid, stats, testimonials, portfolio/journal, parallax gallery, and CTA footer. Avoid identical card grids; mix media, asymmetry, large type, and restrained glass.",
+    "tokens": 151,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "landing-page",
+        "premium-web-ui",
+        "bento-grid",
+        "feature-chess",
+        "logo-cloud",
+        "testimonials",
+        "stats",
+        "portfolio",
+        "cta-footer",
+        "dark-cinematic",
+        "white-editorial"
+      ],
+      "negative_prompt_tags": [
+        "same-size-cards",
+        "generic-feature-grid",
+        "over-centered",
+        "table-like-stats",
+        "overloaded-logos"
+      ]
+    }
+  }
+]

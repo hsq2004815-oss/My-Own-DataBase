@@ -1,0 +1,104 @@
+{
+  "record_id": "pattern-cinematic-video-hero",
+  "source": {
+    "name": "User distilled premium web UI prompt set",
+    "url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "source_type": "case_study",
+    "license_notes": "Rules distilled from user-provided prompts for personal knowledge base use. Do not copy external media assets directly.",
+    "captured_at": "2026-04-28"
+  },
+  "domain": "ui_design",
+  "page_type": "landing_page",
+  "platform": ["web", "desktop", "mobile"],
+  "use_cases": [
+    "cinematic hero",
+    "video-first immersive landing page",
+    "premium AI product page",
+    "portfolio landing page",
+    "design agency homepage",
+    "launch page"
+  ],
+  "visual_traits": [
+    "film-title-frame hero composition",
+    "full-bleed atmospheric video or large poster media",
+    "explicit dark overlays and gradient fades",
+    "large centered headline",
+    "floating navbar above media",
+    "CTA row that remains readable over video"
+  ],
+  "layout_rules": [
+    "Use video z-0, overlay z-0 or z-5, content z-10 or z-20, navbar z-50.",
+    "Atmospheric background video should use object-cover; product/light transparent video should use w-full h-auto and avoid cropping.",
+    "Overlay text requires a dim layer or gradient fade.",
+    "Bottom fade height should be about 160px to 300px depending on contrast.",
+    "Use large centered headline and short subheadline; do not let video compete with CTA.",
+    "Avoid generic split hero unless the media is immersive and specifically supports the story."
+  ],
+  "component_patterns": [
+    "fixed or absolute floating navbar",
+    "video background layer",
+    "gradient readability overlay",
+    "poster headline",
+    "primary CTA and secondary Play action",
+    "logo cloud under hero",
+    "manual fade loop video component"
+  ],
+  "interaction_states": [
+    "video autoplay muted playsInline",
+    "manual fade loop when video hard-cuts",
+    "CTA hover scale",
+    "secondary play hover",
+    "reduced motion static poster",
+    "fallback MP4 when HLS fails"
+  ],
+  "accessibility_notes": [
+    "Keep text readable over bright video with overlays.",
+    "Avoid rapid camera movement behind reading content.",
+    "Provide reduced-motion or static poster fallback.",
+    "Do not rely on video content to communicate the only value proposition.",
+    "Do not crop important product/video content by accident."
+  ],
+  "implementation_hints": [
+    "Video attributes: autoPlay, muted, loop or custom loop, playsInline, preload='auto'.",
+    "Use hls.js for .m3u8 when needed, native HLS where possible, and MP4 fallback when provided.",
+    "For hard cuts, fade in over 0.5s, fade out 0.5s before end, set opacity 0 on ended, wait 100ms, reset currentTime to 0, play, then fade back to 1.",
+    "Common overlays: bg-black/20, bg-gradient-to-t from-black to-transparent, bg-gradient-to-b from-black via-transparent to-black.",
+    "Avoid heavy CSS blur on full-screen video; use overlays and composition instead."
+  ],
+  "avoid_when": [
+    "ordinary form or table workflow",
+    "video without readable overlay",
+    "bright video behind white text",
+    "cropped product content",
+    "video stealing attention from CTA",
+    "heavy full-screen video blur"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "summary_only",
+    "notes": "Distilled from multiple detailed React/Tailwind premium landing page prompts covering glassmorphism, video hero sections, typography, motion, SaaS, portfolio, and editorial layouts."
+  },
+  "retrieval": {
+    "ai_summary": "Cinematic video hero pattern for premium landing pages: full-bleed or poster video, explicit z-index layers, gradient readability overlays, floating navbar, large centered headline, CTA row, HLS/MP4 fallbacks, and reduced-motion/static poster fallback. Use it for AI products, portfolios, design agencies, and launch pages.",
+    "prompt_tags": [
+      "cinematic-hero",
+      "video-background",
+      "hls-video",
+      "premium-web-ui",
+      "landing-page",
+      "floating-navbar",
+      "dark-cinematic",
+      "hero-section",
+      "video-first",
+      "motion-reveal"
+    ],
+    "negative_prompt_tags": [
+      "generic-split-hero",
+      "cropped-video",
+      "no-overlay",
+      "low-contrast",
+      "autoplay-audio",
+      "heavy-video-blur"
+    ]
+  }
+}

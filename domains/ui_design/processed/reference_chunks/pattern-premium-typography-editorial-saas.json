@@ -1,0 +1,200 @@
+[
+  {
+    "chunk_id": "pattern-premium-typography-editorial-saas-overview",
+    "record_id": "pattern-premium-typography-editorial-saas",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "overview",
+    "content": "# User distilled premium web UI prompt set - Overview\n\nPage type: landing_page\nUse cases: premium typography system, editorial SaaS landing page, black-white developer SaaS, white luxury editorial page, portfolio editorial dark page, high-end product homepage\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\nVisual traits:\n- separate display and body fonts\n- very large tight hero type\n- short memorable headline lines\n- restrained paragraph widths\n- editorial whitespace\n- asymmetric desktop composition\n\nUse when:\n- premium typography system\n- editorial SaaS landing page\n- black-white developer SaaS\n- white luxury editorial page\n- portfolio editorial dark page\n- high-end product homepage\n\nAvoid when:\n- default font-bold hero\n- paragraphs stretched too wide\n- same heading size across all sections\n- weak hierarchy\n- over-centered every section\n- desktop type scale forced onto mobile\n\nAI summary: Premium typography and layout rules: use display/body font pairing, very large tight hero type, short memorable lines, body copy max-width 32ch-64ch, editorial whitespace, asymmetry, and responsive clamp/vw sizing. Avoid default bold SaaS headings and wide paragraphs.",
+    "tokens": 171,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "editorial-typography",
+        "premium-web-ui",
+        "white-editorial",
+        "monochrome-saas",
+        "portfolio",
+        "landing-page",
+        "giant-type",
+        "responsive-typography",
+        "geist",
+        "instrument-serif"
+      ],
+      "negative_prompt_tags": [
+        "default-bold",
+        "wide-paragraph",
+        "weak-hierarchy",
+        "over-centered",
+        "mobile-overflow"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-typography-editorial-saas-layout",
+    "record_id": "pattern-premium-typography-editorial-saas",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "layout",
+    "content": "# User distilled premium web UI prompt set - Layout Rules\n\nPage type: landing_page\nUse cases: premium typography system, editorial SaaS landing page, black-white developer SaaS, white luxury editorial page, portfolio editorial dark page, high-end product homepage\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Use display/body pairings such as Instrument Serif italic + Inter, Instrument Serif italic + Barlow, Readex Pro, Inter, or Geist + Inter.\n- Hero title line-height should be 0.8 to 0.95 with letter-spacing -0.02em to -0.05em.\n- Hero font-weight should usually be 400 to 500, not default bold.\n- Section headings should use text-4xl to text-6xl with tight line-height.\n- Body copy should stay small but readable, with max-width around 32ch to 64ch.\n- On desktop, use asymmetry, scale contrast, and whitespace instead of filling every area.\n\nAI summary: Premium typography and layout rules: use display/body font pairing, very large tight hero type, short memorable lines, body copy max-width 32ch-64ch, editorial whitespace, asymmetry, and responsive clamp/vw sizing. Avoid default bold SaaS headings and wide paragraphs.",
+    "tokens": 169,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "editorial-typography",
+        "premium-web-ui",
+        "white-editorial",
+        "monochrome-saas",
+        "portfolio",
+        "landing-page",
+        "giant-type",
+        "responsive-typography",
+        "geist",
+        "instrument-serif"
+      ],
+      "negative_prompt_tags": [
+        "default-bold",
+        "wide-paragraph",
+        "weak-hierarchy",
+        "over-centered",
+        "mobile-overflow"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-typography-editorial-saas-components",
+    "record_id": "pattern-premium-typography-editorial-saas",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "components",
+    "content": "# User distilled premium web UI prompt set - Component Patterns\n\nPage type: landing_page\nUse cases: premium typography system, editorial SaaS landing page, black-white developer SaaS, white luxury editorial page, portfolio editorial dark page, high-end product homepage\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- editorial serif hero\n- monochrome SaaS headline\n- giant staggered type\n- short subheadline block\n- stat typography\n- journal section\n- portfolio caption\n\nAI summary: Premium typography and layout rules: use display/body font pairing, very large tight hero type, short memorable lines, body copy max-width 32ch-64ch, editorial whitespace, asymmetry, and responsive clamp/vw sizing. Avoid default bold SaaS headings and wide paragraphs.",
+    "tokens": 106,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "editorial-typography",
+        "premium-web-ui",
+        "white-editorial",
+        "monochrome-saas",
+        "portfolio",
+        "landing-page",
+        "giant-type",
+        "responsive-typography",
+        "geist",
+        "instrument-serif"
+      ],
+      "negative_prompt_tags": [
+        "default-bold",
+        "wide-paragraph",
+        "weak-hierarchy",
+        "over-centered",
+        "mobile-overflow"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-typography-editorial-saas-interaction",
+    "record_id": "pattern-premium-typography-editorial-saas",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "interaction",
+    "content": "# User distilled premium web UI prompt set - Interaction States\n\nPage type: landing_page\nUse cases: premium typography system, editorial SaaS landing page, black-white developer SaaS, white luxury editorial page, portfolio editorial dark page, high-end product homepage\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- BlurText word reveal\n- scroll reveal heading\n- hover underline or muted-to-strong link\n- responsive type clamp\n- mobile line break adjustment\n\nAI summary: Premium typography and layout rules: use display/body font pairing, very large tight hero type, short memorable lines, body copy max-width 32ch-64ch, editorial whitespace, asymmetry, and responsive clamp/vw sizing. Avoid default bold SaaS headings and wide paragraphs.",
+    "tokens": 104,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "editorial-typography",
+        "premium-web-ui",
+        "white-editorial",
+        "monochrome-saas",
+        "portfolio",
+        "landing-page",
+        "giant-type",
+        "responsive-typography",
+        "geist",
+        "instrument-serif"
+      ],
+      "negative_prompt_tags": [
+        "default-bold",
+        "wide-paragraph",
+        "weak-hierarchy",
+        "over-centered",
+        "mobile-overflow"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-typography-editorial-saas-accessibility",
+    "record_id": "pattern-premium-typography-editorial-saas",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "accessibility",
+    "content": "# User distilled premium web UI prompt set - Accessibility Notes\n\nPage type: landing_page\nUse cases: premium typography system, editorial SaaS landing page, black-white developer SaaS, white luxury editorial page, portfolio editorial dark page, high-end product homepage\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Do not make display type so tight that letters collide on mobile.\n- Keep paragraph widths readable.\n- Avoid low-contrast gray copy on dark or glass backgrounds.\n- Do not rely only on decorative serif styling for hierarchy.\n- Check long words and mixed English/Chinese line wrapping.\n\nAI summary: Premium typography and layout rules: use display/body font pairing, very large tight hero type, short memorable lines, body copy max-width 32ch-64ch, editorial whitespace, asymmetry, and responsive clamp/vw sizing. Avoid default bold SaaS headings and wide paragraphs.",
+    "tokens": 129,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "editorial-typography",
+        "premium-web-ui",
+        "white-editorial",
+        "monochrome-saas",
+        "portfolio",
+        "landing-page",
+        "giant-type",
+        "responsive-typography",
+        "geist",
+        "instrument-serif"
+      ],
+      "negative_prompt_tags": [
+        "default-bold",
+        "wide-paragraph",
+        "weak-hierarchy",
+        "over-centered",
+        "mobile-overflow"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-typography-editorial-saas-implementation",
+    "record_id": "pattern-premium-typography-editorial-saas",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "implementation",
+    "content": "# User distilled premium web UI prompt set - Implementation Hints\n\nPage type: landing_page\nUse cases: premium typography system, editorial SaaS landing page, black-white developer SaaS, white luxury editorial page, portfolio editorial dark page, high-end product homepage\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Hero heading scale: text-5xl -> md:text-7xl -> lg:text-[5.5rem].\n- Giant type scale: text-[14vw] md:text-[13vw].\n- Section heading scale: text-4xl -> md:text-5xl -> lg:text-6xl.\n- Use clamp() or viewport units for huge type and test mobile overflow.\n- Use max-width utilities for body copy and avoid full-width paragraphs.\n- Use Geist + Inter for developer SaaS; use serif italic pairing for luxury/editorial contrast.\n\nAI summary: Premium typography and layout rules: use display/body font pairing, very large tight hero type, short memorable lines, body copy max-width 32ch-64ch, editorial whitespace, asymmetry, and responsive clamp/vw sizing. Avoid default bold SaaS headings and wide paragraphs.",
+    "tokens": 144,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "editorial-typography",
+        "premium-web-ui",
+        "white-editorial",
+        "monochrome-saas",
+        "portfolio",
+        "landing-page",
+        "giant-type",
+        "responsive-typography",
+        "geist",
+        "instrument-serif"
+      ],
+      "negative_prompt_tags": [
+        "default-bold",
+        "wide-paragraph",
+        "weak-hierarchy",
+        "over-centered",
+        "mobile-overflow"
+      ]
+    }
+  }
+]

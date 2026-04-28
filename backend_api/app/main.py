@@ -152,6 +152,11 @@ class BriefRequest(BaseModel):
 
 
 UI_QUERY_RULES: list[tuple[tuple[str, ...], str]] = [
+    (("premium", "high-end", "high end", "高级", "高端", "审美", "质感", "cinematic", "电影感"), "premium web ui"),
+    (("landing page", "homepage", "首页", "官网", "落地页", "产品页"), "premium landing page"),
+    (("video hero", "video-first", "video background", "hero", "floating navbar", "视频背景", "视频 hero", "沉浸式"), "cinematic video hero"),
+    (("portfolio", "作品集", "agency", "设计机构"), "portfolio editorial dark landing page"),
+    (("saas", "SaaS", "developer saas", "开发者工具"), "monochrome saas editorial typography"),
     (("liquid glass", "glass", "玻璃", "frosted", "backdrop"), "liquid glass"),
     (("ambient", "dynamic background", "scene", "scenery", "ecology", "ecological", "aurora", "caustics", "动态背景", "动态景色", "背景景色", "生态", "生态界面", "氛围背景", "环境背景"), "ambient dynamic background liquid glass"),
     (("aurora", "haze", "mist", "atmospheric", "极光", "雾气", "光带", "氛围雾"), "aurora haze background"),
@@ -207,6 +212,16 @@ QUERY_SYNONYMS: dict[str, str] = {
     "液态玻璃": "liquid glass",
     "毛玻璃": "liquid glass",
     "磨砂玻璃": "liquid glass",
+    "高级": "premium web ui",
+    "高端": "premium web ui",
+    "高级审美": "premium web ui",
+    "高端首页": "premium landing page",
+    "官网": "premium landing page",
+    "落地页": "premium landing page",
+    "视频背景": "cinematic video hero",
+    "视频首页": "cinematic video hero",
+    "沉浸式": "cinematic video hero",
+    "作品集": "portfolio editorial dark landing page",
     "半透明": "translucent",
     "背景模糊": "backdrop-filter",
     "动态背景": "ambient dynamic background liquid glass",
@@ -795,11 +810,38 @@ def search_like(conn: sqlite3.Connection, query: str, limit: int) -> list[sqlite
     ).fetchall()
 
 
+def search_like_terms(conn: sqlite3.Connection, query: str, limit: int) -> list[sqlite3.Row]:
+    terms = query_terms(query)
+    if not terms:
+        return []
+    clauses = []
+    params: list[str | int] = []
+    for term in terms:
+        clauses.append("(content LIKE ? OR page_type LIKE ? OR section LIKE ? OR source_name LIKE ?)")
+        pattern = f"%{term}%"
+        params.extend([pattern, pattern, pattern, pattern])
+    params.append(max(limit * 4, limit))
+    return conn.execute(
+        f"""
+        SELECT chunk_id, record_id, source_name, source_url, page_type,
+               section, content, tokens, metadata_json
+        FROM chunks
+        WHERE {" OR ".join(clauses)}
+        LIMIT ?
+        """,
+        params,
+    ).fetchall()
+
+
 def search_ui_chunks(q: str, limit: int) -> list[ChunkResult]:
     normalized_q = normalize_query(q)
     candidate_limit = max(10, min(50, limit * 4))
     with connect() as conn:
-        rows = search_fts(conn, normalized_q, candidate_limit) or search_like(conn, normalized_q, candidate_limit)
+        rows = (
+            search_fts(conn, normalized_q, candidate_limit)
+            or search_like(conn, normalized_q, candidate_limit)
+            or search_like_terms(conn, normalized_q, candidate_limit)
+        )
     chunks = [row_to_chunk(row) for row in rows]
     return sorted(chunks, key=lambda chunk: chunk_score(chunk, normalized_q, 0), reverse=True)[:limit]
 

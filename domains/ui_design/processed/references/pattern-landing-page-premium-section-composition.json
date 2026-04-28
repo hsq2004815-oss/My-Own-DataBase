@@ -1,0 +1,111 @@
+{
+  "record_id": "pattern-landing-page-premium-section-composition",
+  "source": {
+    "name": "User distilled premium web UI prompt set",
+    "url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "source_type": "case_study",
+    "license_notes": "Rules distilled from user-provided prompts for personal knowledge base use. Do not copy external media assets directly.",
+    "captured_at": "2026-04-28"
+  },
+  "domain": "ui_design",
+  "page_type": "landing_page",
+  "platform": ["web", "desktop", "mobile"],
+  "use_cases": [
+    "premium landing page composition",
+    "AI product homepage",
+    "SaaS marketing page",
+    "portfolio bento",
+    "agency homepage",
+    "product launch page"
+  ],
+  "visual_traits": [
+    "varied section rhythm",
+    "large media feature rows",
+    "asymmetric bento grids",
+    "controlled logo cloud opacity",
+    "large stat numbers",
+    "testimonial glass cards",
+    "strong CTA footer"
+  ],
+  "layout_rules": [
+    "Use a varied sequence such as Hero, Logo Cloud, How It Works, Capabilities, Feature Chess, Feature Grid, Stats, Testimonials, CTA Footer, Portfolio Bento, Journal, or Parallax Gallery.",
+    "Feature rows should alternate text and media, use large headings, keep body copy short, and use glass/rounded/video media containers.",
+    "Bento grids should not make every card the same size; use 7/5 and 5/7 columns and mix large and small cards.",
+    "Stats should be large numbers with small labels, not table-like rows.",
+    "Testimonials should use muted quote text, strong names, white/50 roles, and liquid-glass rounded-2xl p-8 cards.",
+    "Logo clouds should use controlled opacity, optionally infinite horizontal slider, and avoid too many logos."
+  ],
+  "component_patterns": [
+    "hero",
+    "logo cloud",
+    "how it works",
+    "capabilities",
+    "feature chess",
+    "feature grid",
+    "stats",
+    "testimonials",
+    "CTA footer",
+    "portfolio bento",
+    "journal",
+    "parallax gallery"
+  ],
+  "interaction_states": [
+    "hover media overlay",
+    "slow hover zoom",
+    "scroll reveal section",
+    "logo slider",
+    "CTA hover scale",
+    "mobile stacked sections"
+  ],
+  "accessibility_notes": [
+    "Do not overload logo clouds with too many low-contrast marks.",
+    "Keep section headings and body copy readable over media backgrounds.",
+    "Use responsive stacking for bento and feature rows.",
+    "Do not rely on hover-only content for mobile.",
+    "Keep testimonials and stats semantically readable."
+  ],
+  "implementation_hints": [
+    "Use 7/5 and 5/7 desktop grid columns for bento and feature chess sections.",
+    "Use image/video backgrounds with hover overlays in selected bento cards.",
+    "Use large number plus small label for stats; consider serif italic or tight sans for premium contrast.",
+    "Use liquid-glass rounded-2xl p-8 for dark testimonial cards.",
+    "Use white/inverted logos on dark background with opacity control.",
+    "Use one primary CTA in the footer and keep copy short."
+  ],
+  "avoid_when": [
+    "all cards same size",
+    "too many sections with identical centered layout",
+    "table-like stats",
+    "overloaded logo cloud",
+    "hover-only content on mobile",
+    "generic feature grid with no media hierarchy"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "summary_only",
+    "notes": "Distilled from multiple detailed React/Tailwind premium landing page prompts covering glassmorphism, video hero sections, typography, motion, SaaS, portfolio, and editorial layouts."
+  },
+  "retrieval": {
+    "ai_summary": "Premium landing page section composition: use varied rhythm across hero, logo cloud, feature chess, bento grid, stats, testimonials, portfolio/journal, parallax gallery, and CTA footer. Avoid identical card grids; mix media, asymmetry, large type, and restrained glass.",
+    "prompt_tags": [
+      "landing-page",
+      "premium-web-ui",
+      "bento-grid",
+      "feature-chess",
+      "logo-cloud",
+      "testimonials",
+      "stats",
+      "portfolio",
+      "cta-footer",
+      "dark-cinematic",
+      "white-editorial"
+    ],
+    "negative_prompt_tags": [
+      "same-size-cards",
+      "generic-feature-grid",
+      "over-centered",
+      "table-like-stats",
+      "overloaded-logos"
+    ]
+  }
+}

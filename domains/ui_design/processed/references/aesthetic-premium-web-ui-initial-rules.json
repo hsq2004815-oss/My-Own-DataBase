@@ -1,0 +1,112 @@
+{
+  "record_id": "aesthetic-premium-web-ui-initial-rules",
+  "source": {
+    "name": "User distilled premium web UI prompt set",
+    "url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "source_type": "case_study",
+    "license_notes": "Rules distilled from user-provided prompts for personal knowledge base use. Do not copy external media assets directly.",
+    "captured_at": "2026-04-28"
+  },
+  "domain": "ui_design",
+  "page_type": "landing_page",
+  "platform": ["web", "desktop", "mobile"],
+  "use_cases": [
+    "premium web UI default aesthetic",
+    "high-end landing page",
+    "AI product website",
+    "SaaS launch page",
+    "portfolio editorial page",
+    "design agency website"
+  ],
+  "visual_traits": [
+    "premium cinematic composition instead of generic templates",
+    "restrained color system with one accent family",
+    "large disciplined typography and strong hierarchy",
+    "material quality through glass, neutral surfaces, media, and precise borders",
+    "subtle staggered motion",
+    "responsive layouts with asymmetry and whitespace"
+  ],
+  "layout_rules": [
+    "Choose one dominant visual direction: dark cinematic glass, black-white neutral SaaS, white editorial luxury, portfolio editorial dark, video-first immersive landing page, or premium AI product/design agency.",
+    "Avoid generic left-text-right-image as the default hero; prefer poster hero, giant staggered type, video-first hero, or product/agency hero.",
+    "Use large whitespace and scale contrast on desktop; stack vertically and keep CTA visible on mobile.",
+    "Use brand design topics only as secondary references; information-insufficient brand topics must not override the premium rules.",
+    "For dark premium UI use near-black backgrounds, white/95 primary text, white/60-80 body text, white/5-15 borders, and white/3-12 surfaces.",
+    "For white editorial UI use white background, black headline/logo/CTA, muted gray nav/body text, and rely on typography, spacing, media, and composition."
+  ],
+  "component_patterns": [
+    "floating pill navbar",
+    "center cinematic poster hero",
+    "giant staggered typography hero",
+    "video-first immersive hero",
+    "glass CTA row",
+    "logo cloud",
+    "feature chess section",
+    "portfolio bento",
+    "CTA footer"
+  ],
+  "interaction_states": [
+    "staggered entrance sequence",
+    "hover scale 1.03 for primary CTA",
+    "muted to white nav link hover",
+    "glass edge highlight on hover",
+    "scroll reveal once",
+    "reduced motion fallback"
+  ],
+  "accessibility_notes": [
+    "Maintain contrast on glass and video overlays.",
+    "Do not place white text over bright video without a gradient or dim overlay.",
+    "Avoid excessive animation and respect reduced motion.",
+    "Do not force desktop navigation into mobile layouts.",
+    "Use readable body copy widths around 32ch to 64ch."
+  ],
+  "implementation_hints": [
+    "Use one accent system per page such as purple/pink gradient, blue steel gradient, or monochrome precision.",
+    "Use display/body font pairing such as Instrument Serif italic + Inter, Readex Pro, Inter, or Geist + Inter.",
+    "Hero titles should use line-height 0.8-0.95, letter-spacing -0.02em to -0.05em, and font-weight 400-500.",
+    "Use explicit z-index layering for media: video z-0, overlay z-0/z-5, content z-10/z-20, navbar z-50.",
+    "Use clamp or vw sizes for giant type and check mobile overflow.",
+    "Keep paragraphs concise and avoid filling every empty area."
+  ],
+  "avoid_when": [
+    "generic blue-white SaaS template",
+    "many colors mixed in one page",
+    "thick borders",
+    "heavy dark-mode shadows",
+    "same-size card grids everywhere",
+    "over-centered layouts for every section",
+    "unclear z-index layering",
+    "only adjectives without implementable rules"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "summary_only",
+    "notes": "Distilled from multiple detailed React/Tailwind premium landing page prompts covering glassmorphism, video hero sections, typography, motion, SaaS, portfolio, and editorial layouts."
+  },
+  "retrieval": {
+    "ai_summary": "Default premium Web UI rules for agents: avoid generic blue-white SaaS templates; choose one dominant direction such as dark cinematic glass, monochrome SaaS, white editorial luxury, portfolio dark, video-first landing, or premium AI product. Use restrained color, large typography, cinematic media, subtle motion, responsive asymmetry, and implementation-ready component rules.",
+    "prompt_tags": [
+      "premium-web-ui",
+      "landing-page",
+      "dark-cinematic",
+      "white-editorial",
+      "monochrome-saas",
+      "cinematic-hero",
+      "floating-navbar",
+      "editorial-typography",
+      "motion-reveal",
+      "bento-grid",
+      "ai-product",
+      "portfolio"
+    ],
+    "negative_prompt_tags": [
+      "generic-saas",
+      "blue-white-default",
+      "random-gradient",
+      "too-many-colors",
+      "same-size-cards",
+      "thick-borders",
+      "unclear-z-index"
+    ]
+  }
+}

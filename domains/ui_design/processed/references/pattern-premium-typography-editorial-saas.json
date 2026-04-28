@@ -1,0 +1,103 @@
+{
+  "record_id": "pattern-premium-typography-editorial-saas",
+  "source": {
+    "name": "User distilled premium web UI prompt set",
+    "url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "source_type": "case_study",
+    "license_notes": "Rules distilled from user-provided prompts for personal knowledge base use. Do not copy external media assets directly.",
+    "captured_at": "2026-04-28"
+  },
+  "domain": "ui_design",
+  "page_type": "landing_page",
+  "platform": ["web", "desktop", "mobile"],
+  "use_cases": [
+    "premium typography system",
+    "editorial SaaS landing page",
+    "black-white developer SaaS",
+    "white luxury editorial page",
+    "portfolio editorial dark page",
+    "high-end product homepage"
+  ],
+  "visual_traits": [
+    "separate display and body fonts",
+    "very large tight hero type",
+    "short memorable headline lines",
+    "restrained paragraph widths",
+    "editorial whitespace",
+    "asymmetric desktop composition"
+  ],
+  "layout_rules": [
+    "Use display/body pairings such as Instrument Serif italic + Inter, Instrument Serif italic + Barlow, Readex Pro, Inter, or Geist + Inter.",
+    "Hero title line-height should be 0.8 to 0.95 with letter-spacing -0.02em to -0.05em.",
+    "Hero font-weight should usually be 400 to 500, not default bold.",
+    "Section headings should use text-4xl to text-6xl with tight line-height.",
+    "Body copy should stay small but readable, with max-width around 32ch to 64ch.",
+    "On desktop, use asymmetry, scale contrast, and whitespace instead of filling every area."
+  ],
+  "component_patterns": [
+    "editorial serif hero",
+    "monochrome SaaS headline",
+    "giant staggered type",
+    "short subheadline block",
+    "stat typography",
+    "journal section",
+    "portfolio caption"
+  ],
+  "interaction_states": [
+    "BlurText word reveal",
+    "scroll reveal heading",
+    "hover underline or muted-to-strong link",
+    "responsive type clamp",
+    "mobile line break adjustment"
+  ],
+  "accessibility_notes": [
+    "Do not make display type so tight that letters collide on mobile.",
+    "Keep paragraph widths readable.",
+    "Avoid low-contrast gray copy on dark or glass backgrounds.",
+    "Do not rely only on decorative serif styling for hierarchy.",
+    "Check long words and mixed English/Chinese line wrapping."
+  ],
+  "implementation_hints": [
+    "Hero heading scale: text-5xl -> md:text-7xl -> lg:text-[5.5rem].",
+    "Giant type scale: text-[14vw] md:text-[13vw].",
+    "Section heading scale: text-4xl -> md:text-5xl -> lg:text-6xl.",
+    "Use clamp() or viewport units for huge type and test mobile overflow.",
+    "Use max-width utilities for body copy and avoid full-width paragraphs.",
+    "Use Geist + Inter for developer SaaS; use serif italic pairing for luxury/editorial contrast."
+  ],
+  "avoid_when": [
+    "default font-bold hero",
+    "paragraphs stretched too wide",
+    "same heading size across all sections",
+    "weak hierarchy",
+    "over-centered every section",
+    "desktop type scale forced onto mobile"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "summary_only",
+    "notes": "Distilled from multiple detailed React/Tailwind premium landing page prompts covering glassmorphism, video hero sections, typography, motion, SaaS, portfolio, and editorial layouts."
+  },
+  "retrieval": {
+    "ai_summary": "Premium typography and layout rules: use display/body font pairing, very large tight hero type, short memorable lines, body copy max-width 32ch-64ch, editorial whitespace, asymmetry, and responsive clamp/vw sizing. Avoid default bold SaaS headings and wide paragraphs.",
+    "prompt_tags": [
+      "editorial-typography",
+      "premium-web-ui",
+      "white-editorial",
+      "monochrome-saas",
+      "portfolio",
+      "landing-page",
+      "giant-type",
+      "responsive-typography",
+      "geist",
+      "instrument-serif"
+    ],
+    "negative_prompt_tags": [
+      "default-bold",
+      "wide-paragraph",
+      "weak-hierarchy",
+      "over-centered",
+      "mobile-overflow"
+    ]
+  }
+}

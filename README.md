@@ -4,7 +4,7 @@
 
 ## 当前快照
 
-- UI Design: 32 references / 192 chunks
+- UI Design: 38 references / 228 chunks
 - Agent Workflow: 5 references / 33 chunks
 - Automation: 11 references / 77 chunks
 - UI Assets: 255 metadata records
@@ -82,6 +82,8 @@ Invoke-RestMethod "http://127.0.0.1:8765/health"
 ```powershell
 python E:\DataBase\scripts\brief.py "做一个玻璃生态 AI dashboard，带动态背景和字体" --ui 8 --workflow 4 --automation 0 --assets 6
 ```
+
+普通 Web UI、landing page、SaaS 官网、portfolio 和产品页任务会优先检索 `ui_design` 的高级审美总规则层，包括 premium Web UI、Liquid Glass、cinematic video hero、typography/layout、motion reveal 和 landing page section patterns。品牌 `design-*.md` 文件只作为补充参考，不覆盖这些默认规则。
 
 需要浏览器自动化、上传、CDP、截图或验证时再打开 automation：
 

@@ -18,11 +18,19 @@ python E:\DataBase\scripts\ui_design\build_sqlite_index.py
 python E:\DataBase\scripts\ui_design\search_ui.py "website reveal" --limit 5
 ```
 
+For the premium UI rule layer, also verify:
+
+```powershell
+python E:\DataBase\scripts\ui_design\search_ui.py "premium cinematic glass landing page" --limit 8
+python E:\DataBase\scripts\ui_design\search_ui.py "liquid glass video hero blur typography" --limit 8
+python E:\DataBase\scripts\ui_design\search_ui.py "高级 玻璃 拟态 landing page 视频 背景" --limit 8
+```
+
 ## 当前验证结果
 
-- `normalize_reference.py --check`: validated 26 UI reference record(s)
-- `make_chunks.py`: created 156 chunk(s) from 26 reference record(s)
-- `build_sqlite_index.py`: indexed 26 reference record(s) and 156 chunk(s), FTS5 enabled
+- `normalize_reference.py --check`: validated 38 UI reference record(s)
+- `make_chunks.py`: created 228 chunk(s) from 38 reference record(s)
+- `build_sqlite_index.py`: indexed 38 reference record(s) and 228 chunk(s), FTS5 enabled
 - `search_ui.py "website reveal" --limit 3`: returned Swishy website reveal chunks
 - `search_ui.py "notification" --limit 3`: returned notification/message motion chunks, after one broader dialog match
 - `search_ui.py "kinetic typography" --limit 3`: returned Swishy kinetic typography chunks

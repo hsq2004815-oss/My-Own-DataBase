@@ -1,0 +1,224 @@
+[
+  {
+    "chunk_id": "aesthetic-premium-web-ui-initial-rules-overview",
+    "record_id": "aesthetic-premium-web-ui-initial-rules",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "overview",
+    "content": "# User distilled premium web UI prompt set - Overview\n\nPage type: landing_page\nUse cases: premium web UI default aesthetic, high-end landing page, AI product website, SaaS launch page, portfolio editorial page, design agency website\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\nVisual traits:\n- premium cinematic composition instead of generic templates\n- restrained color system with one accent family\n- large disciplined typography and strong hierarchy\n- material quality through glass, neutral surfaces, media, and precise borders\n- subtle staggered motion\n- responsive layouts with asymmetry and whitespace\n\nUse when:\n- premium web UI default aesthetic\n- high-end landing page\n- AI product website\n- SaaS launch page\n- portfolio editorial page\n- design agency website\n\nAvoid when:\n- generic blue-white SaaS template\n- many colors mixed in one page\n- thick borders\n- heavy dark-mode shadows\n- same-size card grids everywhere\n- over-centered layouts for every section\n- unclear z-index layering\n- only adjectives without implementable rules\n\nAI summary: Default premium Web UI rules for agents: avoid generic blue-white SaaS templates; choose one dominant direction such as dark cinematic glass, monochrome SaaS, white editorial luxury, portfolio dark, video-first landing, or premium AI product. Use restrained color, large typography, cinematic media, subtle motion, responsive asymmetry, and implementation-ready component rules.",
+    "tokens": 209,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "premium-web-ui",
+        "landing-page",
+        "dark-cinematic",
+        "white-editorial",
+        "monochrome-saas",
+        "cinematic-hero",
+        "floating-navbar",
+        "editorial-typography",
+        "motion-reveal",
+        "bento-grid",
+        "ai-product",
+        "portfolio"
+      ],
+      "negative_prompt_tags": [
+        "generic-saas",
+        "blue-white-default",
+        "random-gradient",
+        "too-many-colors",
+        "same-size-cards",
+        "thick-borders",
+        "unclear-z-index"
+      ]
+    }
+  },
+  {
+    "chunk_id": "aesthetic-premium-web-ui-initial-rules-layout",
+    "record_id": "aesthetic-premium-web-ui-initial-rules",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "layout",
+    "content": "# User distilled premium web UI prompt set - Layout Rules\n\nPage type: landing_page\nUse cases: premium web UI default aesthetic, high-end landing page, AI product website, SaaS launch page, portfolio editorial page, design agency website\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Choose one dominant visual direction: dark cinematic glass, black-white neutral SaaS, white editorial luxury, portfolio editorial dark, video-first immersive landing page, or premium AI product/design agency.\n- Avoid generic left-text-right-image as the default hero; prefer poster hero, giant staggered type, video-first hero, or product/agency hero.\n- Use large whitespace and scale contrast on desktop; stack vertically and keep CTA visible on mobile.\n- Use brand design topics only as secondary references; information-insufficient brand topics must not override the premium rules.\n- For dark premium UI use near-black backgrounds, white/95 primary text, white/60-80 body text, white/5-15 borders, and white/3-12 surfaces.\n- For white editorial UI use white background, black headline/logo/CTA, muted gray nav/body text, and rely on typography, spacing, media, and composition.\n\nAI summary: Default premium Web UI rules for agents: avoid generic blue-white SaaS templates; choose one dominant direction such as dark cinematic glass, monochrome SaaS, white editorial luxury, portfolio dark, video-first landing, or premium AI product. Use restrained color, large typography, cinematic media, subtle motion, responsive asymmetry, and implementation-ready component rules.",
+    "tokens": 215,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "premium-web-ui",
+        "landing-page",
+        "dark-cinematic",
+        "white-editorial",
+        "monochrome-saas",
+        "cinematic-hero",
+        "floating-navbar",
+        "editorial-typography",
+        "motion-reveal",
+        "bento-grid",
+        "ai-product",
+        "portfolio"
+      ],
+      "negative_prompt_tags": [
+        "generic-saas",
+        "blue-white-default",
+        "random-gradient",
+        "too-many-colors",
+        "same-size-cards",
+        "thick-borders",
+        "unclear-z-index"
+      ]
+    }
+  },
+  {
+    "chunk_id": "aesthetic-premium-web-ui-initial-rules-components",
+    "record_id": "aesthetic-premium-web-ui-initial-rules",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "components",
+    "content": "# User distilled premium web UI prompt set - Component Patterns\n\nPage type: landing_page\nUse cases: premium web UI default aesthetic, high-end landing page, AI product website, SaaS launch page, portfolio editorial page, design agency website\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- floating pill navbar\n- center cinematic poster hero\n- giant staggered typography hero\n- video-first immersive hero\n- glass CTA row\n- logo cloud\n- feature chess section\n- portfolio bento\n- CTA footer\n\nAI summary: Default premium Web UI rules for agents: avoid generic blue-white SaaS templates; choose one dominant direction such as dark cinematic glass, monochrome SaaS, white editorial luxury, portfolio dark, video-first landing, or premium AI product. Use restrained color, large typography, cinematic media, subtle motion, responsive asymmetry, and implementation-ready component rules.",
+    "tokens": 128,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "premium-web-ui",
+        "landing-page",
+        "dark-cinematic",
+        "white-editorial",
+        "monochrome-saas",
+        "cinematic-hero",
+        "floating-navbar",
+        "editorial-typography",
+        "motion-reveal",
+        "bento-grid",
+        "ai-product",
+        "portfolio"
+      ],
+      "negative_prompt_tags": [
+        "generic-saas",
+        "blue-white-default",
+        "random-gradient",
+        "too-many-colors",
+        "same-size-cards",
+        "thick-borders",
+        "unclear-z-index"
+      ]
+    }
+  },
+  {
+    "chunk_id": "aesthetic-premium-web-ui-initial-rules-interaction",
+    "record_id": "aesthetic-premium-web-ui-initial-rules",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "interaction",
+    "content": "# User distilled premium web UI prompt set - Interaction States\n\nPage type: landing_page\nUse cases: premium web UI default aesthetic, high-end landing page, AI product website, SaaS launch page, portfolio editorial page, design agency website\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- staggered entrance sequence\n- hover scale 1.03 for primary CTA\n- muted to white nav link hover\n- glass edge highlight on hover\n- scroll reveal once\n- reduced motion fallback\n\nAI summary: Default premium Web UI rules for agents: avoid generic blue-white SaaS templates; choose one dominant direction such as dark cinematic glass, monochrome SaaS, white editorial luxury, portfolio dark, video-first landing, or premium AI product. Use restrained color, large typography, cinematic media, subtle motion, responsive asymmetry, and implementation-ready component rules.",
+    "tokens": 125,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "premium-web-ui",
+        "landing-page",
+        "dark-cinematic",
+        "white-editorial",
+        "monochrome-saas",
+        "cinematic-hero",
+        "floating-navbar",
+        "editorial-typography",
+        "motion-reveal",
+        "bento-grid",
+        "ai-product",
+        "portfolio"
+      ],
+      "negative_prompt_tags": [
+        "generic-saas",
+        "blue-white-default",
+        "random-gradient",
+        "too-many-colors",
+        "same-size-cards",
+        "thick-borders",
+        "unclear-z-index"
+      ]
+    }
+  },
+  {
+    "chunk_id": "aesthetic-premium-web-ui-initial-rules-accessibility",
+    "record_id": "aesthetic-premium-web-ui-initial-rules",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "accessibility",
+    "content": "# User distilled premium web UI prompt set - Accessibility Notes\n\nPage type: landing_page\nUse cases: premium web UI default aesthetic, high-end landing page, AI product website, SaaS launch page, portfolio editorial page, design agency website\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Maintain contrast on glass and video overlays.\n- Do not place white text over bright video without a gradient or dim overlay.\n- Avoid excessive animation and respect reduced motion.\n- Do not force desktop navigation into mobile layouts.\n- Use readable body copy widths around 32ch to 64ch.\n\nAI summary: Default premium Web UI rules for agents: avoid generic blue-white SaaS templates; choose one dominant direction such as dark cinematic glass, monochrome SaaS, white editorial luxury, portfolio dark, video-first landing, or premium AI product. Use restrained color, large typography, cinematic media, subtle motion, responsive asymmetry, and implementation-ready component rules.",
+    "tokens": 143,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "premium-web-ui",
+        "landing-page",
+        "dark-cinematic",
+        "white-editorial",
+        "monochrome-saas",
+        "cinematic-hero",
+        "floating-navbar",
+        "editorial-typography",
+        "motion-reveal",
+        "bento-grid",
+        "ai-product",
+        "portfolio"
+      ],
+      "negative_prompt_tags": [
+        "generic-saas",
+        "blue-white-default",
+        "random-gradient",
+        "too-many-colors",
+        "same-size-cards",
+        "thick-borders",
+        "unclear-z-index"
+      ]
+    }
+  },
+  {
+    "chunk_id": "aesthetic-premium-web-ui-initial-rules-implementation",
+    "record_id": "aesthetic-premium-web-ui-initial-rules",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "implementation",
+    "content": "# User distilled premium web UI prompt set - Implementation Hints\n\nPage type: landing_page\nUse cases: premium web UI default aesthetic, high-end landing page, AI product website, SaaS launch page, portfolio editorial page, design agency website\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Use one accent system per page such as purple/pink gradient, blue steel gradient, or monochrome precision.\n- Use display/body font pairing such as Instrument Serif italic + Inter, Readex Pro, Inter, or Geist + Inter.\n- Hero titles should use line-height 0.8-0.95, letter-spacing -0.02em to -0.05em, and font-weight 400-500.\n- Use explicit z-index layering for media: video z-0, overlay z-0/z-5, content z-10/z-20, navbar z-50.\n- Use clamp or vw sizes for giant type and check mobile overflow.\n- Keep paragraphs concise and avoid filling every empty area.\n\nAI summary: Default premium Web UI rules for agents: avoid generic blue-white SaaS templates; choose one dominant direction such as dark cinematic glass, monochrome SaaS, white editorial luxury, portfolio dark, video-first landing, or premium AI product. Use restrained color, large typography, cinematic media, subtle motion, responsive asymmetry, and implementation-ready component rules.",
+    "tokens": 181,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "premium-web-ui",
+        "landing-page",
+        "dark-cinematic",
+        "white-editorial",
+        "monochrome-saas",
+        "cinematic-hero",
+        "floating-navbar",
+        "editorial-typography",
+        "motion-reveal",
+        "bento-grid",
+        "ai-product",
+        "portfolio"
+      ],
+      "negative_prompt_tags": [
+        "generic-saas",
+        "blue-white-default",
+        "random-gradient",
+        "too-many-colors",
+        "same-size-cards",
+        "thick-borders",
+        "unclear-z-index"
+      ]
+    }
+  }
+]

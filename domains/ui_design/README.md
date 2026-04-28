@@ -17,3 +17,18 @@ raw -> processed -> wiki -> output
 - wiki: 沉淀后的长期知识
 - output: 草稿、答案、报告、最终稿
 - registry: 数据源、文件索引、标签体系
+
+## 默认 UI 生成策略
+
+普通 UI、前端、landing page、SaaS 官网、portfolio 和产品页任务，优先读取高级审美总规则，再结合具体 page_type、组件 reference 和用户 brief。
+
+默认优先级：
+
+1. `wiki/topics/premium-web-ui-initial-aesthetic-rules.md`
+2. `wiki/topics/liquid-glass-design-system.md`
+3. `wiki/topics/cinematic-video-hero-rules.md`
+4. `wiki/topics/premium-typography-and-layout-rules.md`
+5. `wiki/topics/motion-interaction-premium-rules.md`
+6. `wiki/topics/landing-page-section-patterns.md`
+
+`design-*.md` 品牌文件作为参考，不作为默认高级审美核心。如果品牌 topic 信息不足，不要让它覆盖 premium rules。具体业务页面再结合 page_type、component references、素材授权状态和用户 brief。

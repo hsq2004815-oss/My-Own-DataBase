@@ -24,6 +24,7 @@ Thumbs.db
 .idea/
 .vscode/
 .obsidian/workspace.json
+.omx/
 
 # Build/export scratch space
 tmp/

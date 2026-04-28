@@ -40,6 +40,60 @@ def search_like(conn: sqlite3.Connection, query: str, limit: int) -> list[sqlite
     ).fetchall()
 
 
+def query_terms(query: str) -> list[str]:
+    terms: list[str] = []
+    for raw in query.replace("/", " ").replace("-", " ").split():
+        term = raw.strip().lower()
+        if len(term) >= 2 and term not in {"and", "with", "the", "for", "page"}:
+            terms.append(term)
+    return list(dict.fromkeys(terms))
+
+
+def search_like_terms(conn: sqlite3.Connection, query: str, limit: int) -> list[sqlite3.Row]:
+    terms = query_terms(query)
+    if not terms:
+        return []
+    clauses = []
+    params: list[str | int] = []
+    for term in terms:
+        clauses.append("(content LIKE ? OR page_type LIKE ? OR section LIKE ? OR source_name LIKE ?)")
+        pattern = f"%{term}%"
+        params.extend([pattern, pattern, pattern, pattern])
+    params.append(max(limit * 4, limit))
+    return conn.execute(
+        f"""
+        SELECT chunk_id, record_id, source_name, page_type, section, content
+        FROM chunks
+        WHERE {" OR ".join(clauses)}
+        LIMIT ?
+        """,
+        params,
+    ).fetchall()
+
+
+def score_row(row: sqlite3.Row, query: str) -> int:
+    haystack = " ".join(
+        str(row[key]).lower()
+        for key in ("chunk_id", "record_id", "source_name", "page_type", "section", "content")
+    )
+    score = 0
+    for term in query_terms(query):
+        if term in haystack:
+            score += 10
+    if "premium" in haystack:
+        score += 8
+    if "user distilled premium web ui prompt set" in haystack:
+        score += 12
+    if row["section"] in {"implementation", "layout", "overview"}:
+        score += 4
+    return score
+
+
+def rank_rows(rows: list[sqlite3.Row], query: str, limit: int) -> list[sqlite3.Row]:
+    deduped = {row["chunk_id"]: row for row in rows}
+    return sorted(deduped.values(), key=lambda row: score_row(row, query), reverse=True)[:limit]
+
+
 def compact(text: str, max_chars: int = 420) -> str:
     text = " ".join(text.split())
     if len(text) <= max_chars:
@@ -60,7 +114,11 @@ def main() -> int:
     conn = sqlite3.connect(args.db)
     conn.row_factory = sqlite3.Row
     try:
-        rows = search_fts(conn, args.query, args.limit) or search_like(conn, args.query, args.limit)
+        rows = (
+            search_fts(conn, args.query, args.limit)
+            or search_like(conn, args.query, args.limit)
+            or rank_rows(search_like_terms(conn, args.query, args.limit), args.query, args.limit)
+        )
     finally:
         conn.close()
 

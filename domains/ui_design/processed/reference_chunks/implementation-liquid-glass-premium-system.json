@@ -1,0 +1,206 @@
+[
+  {
+    "chunk_id": "implementation-liquid-glass-premium-system-overview",
+    "record_id": "implementation-liquid-glass-premium-system",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# User distilled premium web UI prompt set - Overview\n\nPage type: component_pattern\nUse cases: premium Liquid Glass system, glassmorphism landing page, AI product hero controls, floating navbar, glass CTA, premium card surfaces\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\nVisual traits:\n- two-level glass material system\n- subtle translucent cards and strong CTA glass\n- gradient pseudo-element rim border\n- inset highlight and controlled outer shadow\n- blurred background media or ambient scenery visible through surfaces\n- rounded full controls and rounded 2xl/3xl cards\n\nUse when:\n- premium Liquid Glass system\n- glassmorphism landing page\n- AI product hero controls\n- floating navbar\n- glass CTA\n- premium card surfaces\n\nAvoid when:\n- ordinary dense admin table\n- long text article\n- strict high contrast workflow\n- low-end heavy page\n- no meaningful background behind glass\n- hundreds of repeated glass cells\n\nAI summary: Premium Liquid Glass implementation rules: use two glass levels, subtle translucent surfaces for nav/cards and strong glass for CTA/selected controls; add gradient pseudo-element borders, inset highlights, fallback colors, and contrast checks. For high-end landing pages and cinematic UI, Liquid Glass is a priority material; for dense CRUD/table tasks it remains optional.",
+    "tokens": 195,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "glassmorphism",
+        "premium-web-ui",
+        "floating-navbar",
+        "glass-cta",
+        "gradient-border",
+        "backdrop-filter",
+        "rounded-full",
+        "cinematic-hero",
+        "landing-page"
+      ],
+      "negative_prompt_tags": [
+        "basic-bg-white-10",
+        "no-fallback",
+        "low-contrast",
+        "dense-table-glass",
+        "hundreds-of-rows",
+        "flat-surface"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-liquid-glass-premium-system-layout",
+    "record_id": "implementation-liquid-glass-premium-system",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# User distilled premium web UI prompt set - Layout Rules\n\nPage type: component_pattern\nUse cases: premium Liquid Glass system, glassmorphism landing page, AI product hero controls, floating navbar, glass CTA, premium card surfaces\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Use subtle glass for navbars, badges, chips, cards, and stat blocks.\n- Use strong glass only for primary CTAs, emphasized controls, selected states, and hero surfaces.\n- Keep strong glass away from dense data grids and hundreds of repeated rows.\n- Glass needs meaningful background input; use media, ambient scenes, or gentle gradients behind it.\n- Keep primary text on stable tinted glass surfaces and avoid busy detail under small text.\n\nAI summary: Premium Liquid Glass implementation rules: use two glass levels, subtle translucent surfaces for nav/cards and strong glass for CTA/selected controls; add gradient pseudo-element borders, inset highlights, fallback colors, and contrast checks. For high-end landing pages and cinematic UI, Liquid Glass is a priority material; for dense CRUD/table tasks it remains optional.",
+    "tokens": 165,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "glassmorphism",
+        "premium-web-ui",
+        "floating-navbar",
+        "glass-cta",
+        "gradient-border",
+        "backdrop-filter",
+        "rounded-full",
+        "cinematic-hero",
+        "landing-page"
+      ],
+      "negative_prompt_tags": [
+        "basic-bg-white-10",
+        "no-fallback",
+        "low-contrast",
+        "dense-table-glass",
+        "hundreds-of-rows",
+        "flat-surface"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-liquid-glass-premium-system-components",
+    "record_id": "implementation-liquid-glass-premium-system",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# User distilled premium web UI prompt set - Component Patterns\n\nPage type: component_pattern\nUse cases: premium Liquid Glass system, glassmorphism landing page, AI product hero controls, floating navbar, glass CTA, premium card surfaces\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- subtle glass navbar\n- strong liquid glass CTA\n- glass badge\n- glass stat block\n- glass modal\n- pseudo-element gradient border\n- hover edge highlight\n\nAI summary: Premium Liquid Glass implementation rules: use two glass levels, subtle translucent surfaces for nav/cards and strong glass for CTA/selected controls; add gradient pseudo-element borders, inset highlights, fallback colors, and contrast checks. For high-end landing pages and cinematic UI, Liquid Glass is a priority material; for dense CRUD/table tasks it remains optional.",
+    "tokens": 120,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "glassmorphism",
+        "premium-web-ui",
+        "floating-navbar",
+        "glass-cta",
+        "gradient-border",
+        "backdrop-filter",
+        "rounded-full",
+        "cinematic-hero",
+        "landing-page"
+      ],
+      "negative_prompt_tags": [
+        "basic-bg-white-10",
+        "no-fallback",
+        "low-contrast",
+        "dense-table-glass",
+        "hundreds-of-rows",
+        "flat-surface"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-liquid-glass-premium-system-interaction",
+    "record_id": "implementation-liquid-glass-premium-system",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# User distilled premium web UI prompt set - Interaction States\n\nPage type: component_pattern\nUse cases: premium Liquid Glass system, glassmorphism landing page, AI product hero controls, floating navbar, glass CTA, premium card surfaces\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- hover edge highlight\n- active pressed inset\n- focus-visible high contrast rim\n- selected stronger glass\n- disabled reduced opacity\n- reduced transparency fallback\n\nAI summary: Premium Liquid Glass implementation rules: use two glass levels, subtle translucent surfaces for nav/cards and strong glass for CTA/selected controls; add gradient pseudo-element borders, inset highlights, fallback colors, and contrast checks. For high-end landing pages and cinematic UI, Liquid Glass is a priority material; for dense CRUD/table tasks it remains optional.",
+    "tokens": 118,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "glassmorphism",
+        "premium-web-ui",
+        "floating-navbar",
+        "glass-cta",
+        "gradient-border",
+        "backdrop-filter",
+        "rounded-full",
+        "cinematic-hero",
+        "landing-page"
+      ],
+      "negative_prompt_tags": [
+        "basic-bg-white-10",
+        "no-fallback",
+        "low-contrast",
+        "dense-table-glass",
+        "hundreds-of-rows",
+        "flat-surface"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-liquid-glass-premium-system-accessibility",
+    "record_id": "implementation-liquid-glass-premium-system",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# User distilled premium web UI prompt set - Accessibility Notes\n\nPage type: component_pattern\nUse cases: premium Liquid Glass system, glassmorphism landing page, AI product hero controls, floating navbar, glass CTA, premium card surfaces\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Provide backdrop-filter fallback colors.\n- Check contrast after blur and media overlays are composited.\n- Do not use color glow as the only state indicator.\n- Respect reduced transparency where practical.\n- Avoid low-contrast gray text on glass.\n\nAI summary: Premium Liquid Glass implementation rules: use two glass levels, subtle translucent surfaces for nav/cards and strong glass for CTA/selected controls; add gradient pseudo-element borders, inset highlights, fallback colors, and contrast checks. For high-end landing pages and cinematic UI, Liquid Glass is a priority material; for dense CRUD/table tasks it remains optional.",
+    "tokens": 132,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "glassmorphism",
+        "premium-web-ui",
+        "floating-navbar",
+        "glass-cta",
+        "gradient-border",
+        "backdrop-filter",
+        "rounded-full",
+        "cinematic-hero",
+        "landing-page"
+      ],
+      "negative_prompt_tags": [
+        "basic-bg-white-10",
+        "no-fallback",
+        "low-contrast",
+        "dense-table-glass",
+        "hundreds-of-rows",
+        "flat-surface"
+      ]
+    }
+  },
+  {
+    "chunk_id": "implementation-liquid-glass-premium-system-implementation",
+    "record_id": "implementation-liquid-glass-premium-system",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# User distilled premium web UI prompt set - Implementation Hints\n\nPage type: component_pattern\nUse cases: premium Liquid Glass system, glassmorphism landing page, AI product hero controls, floating navbar, glass CTA, premium card surfaces\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Subtle glass background: rgba(255,255,255,0.01) to rgba(255,255,255,0.12).\n- Subtle glass blur: backdrop-filter blur(4px) to blur(16px), with -webkit-backdrop-filter.\n- Strong glass blur: blur(40px) to blur(50px), stronger inset highlight, subtle outer shadow, and gradient rim border.\n- Use ::before with inset:0, border-radius:inherit, 1px-1.5px padding, linear-gradient rim, and mask-composite exclude/xor where supported.\n- Use rounded-full for nav/badge/CTA and rounded-2xl or rounded-3xl for cards.\n- Do not stop at bg-white/10 backdrop-blur; add rim, highlight, fallback, and controlled layering.\n\nAI summary: Premium Liquid Glass implementation rules: use two glass levels, subtle translucent surfaces for nav/cards and strong glass for CTA/selected controls; add gradient pseudo-element borders, inset highlights, fallback colors, and contrast checks. For high-end landing pages and cinematic UI, Liquid Glass is a priority material; for dense CRUD/table tasks it remains optional.",
+    "tokens": 167,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "liquid-glass",
+        "glassmorphism",
+        "premium-web-ui",
+        "floating-navbar",
+        "glass-cta",
+        "gradient-border",
+        "backdrop-filter",
+        "rounded-full",
+        "cinematic-hero",
+        "landing-page"
+      ],
+      "negative_prompt_tags": [
+        "basic-bg-white-10",
+        "no-fallback",
+        "low-contrast",
+        "dense-table-glass",
+        "hundreds-of-rows",
+        "flat-surface"
+      ]
+    }
+  }
+]

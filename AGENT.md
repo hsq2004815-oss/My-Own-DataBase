@@ -22,6 +22,7 @@ python -m uvicorn app.main:app --host 127.0.0.1 --port 8765 --reload
 ## Domain Routing
 
 - UI/frontend/design work: use `ui_design` plus `agent_workflow`; keep `automation_limit=0`.
+- For ordinary Web UI, landing page, SaaS homepage, product page, dashboard, and portfolio tasks, treat the `ui_design` premium rules as the default aesthetic layer before brand `design-*.md` topics.
 - Dynamic backgrounds, screenshots, fonts, icons, or UI kits: include `ui_assets` suggestions and follow `usage_policy`.
 - Browser automation, uploads, CDP, selectors, screenshots, iframe/modal handling, or verification: explicitly request automation chunks with `--automation > 0`.
 - API or retrieval maintenance: inspect `backend_api/app/main.py`, `scripts/brief.py`, and the relevant domain scripts.
@@ -34,6 +35,19 @@ python -m uvicorn app.main:app --host 127.0.0.1 --port 8765 --reload
 - `inspiration_only`: borrow ideas only.
 - `review_required`: inspect license and source before direct use.
 - Do not treat unknown web downloads as reusable product assets.
+
+## UI Aesthetic Defaults
+
+For premium Web UI generation, prefer these `ui_design` wiki topics and their processed references first:
+
+1. `domains/ui_design/wiki/topics/premium-web-ui-initial-aesthetic-rules.md`
+2. `domains/ui_design/wiki/topics/liquid-glass-design-system.md`
+3. `domains/ui_design/wiki/topics/cinematic-video-hero-rules.md`
+4. `domains/ui_design/wiki/topics/premium-typography-and-layout-rules.md`
+5. `domains/ui_design/wiki/topics/motion-interaction-premium-rules.md`
+6. `domains/ui_design/wiki/topics/landing-page-section-patterns.md`
+
+Use brand `design-*.md` topics as secondary flavor references. If a brand topic is information-insufficient, do not let it override the premium rules.
 
 ## Repository Hygiene
 

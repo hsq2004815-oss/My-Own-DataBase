@@ -1,0 +1,206 @@
+[
+  {
+    "chunk_id": "pattern-cinematic-video-hero-overview",
+    "record_id": "pattern-cinematic-video-hero",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "overview",
+    "content": "# User distilled premium web UI prompt set - Overview\n\nPage type: landing_page\nUse cases: cinematic hero, video-first immersive landing page, premium AI product page, portfolio landing page, design agency homepage, launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\nVisual traits:\n- film-title-frame hero composition\n- full-bleed atmospheric video or large poster media\n- explicit dark overlays and gradient fades\n- large centered headline\n- floating navbar above media\n- CTA row that remains readable over video\n\nUse when:\n- cinematic hero\n- video-first immersive landing page\n- premium AI product page\n- portfolio landing page\n- design agency homepage\n- launch page\n\nAvoid when:\n- ordinary form or table workflow\n- video without readable overlay\n- bright video behind white text\n- cropped product content\n- video stealing attention from CTA\n- heavy full-screen video blur\n\nAI summary: Cinematic video hero pattern for premium landing pages: full-bleed or poster video, explicit z-index layers, gradient readability overlays, floating navbar, large centered headline, CTA row, HLS/MP4 fallbacks, and reduced-motion/static poster fallback. Use it for AI products, portfolios, design agencies, and launch pages.",
+    "tokens": 181,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "cinematic-hero",
+        "video-background",
+        "hls-video",
+        "premium-web-ui",
+        "landing-page",
+        "floating-navbar",
+        "dark-cinematic",
+        "hero-section",
+        "video-first",
+        "motion-reveal"
+      ],
+      "negative_prompt_tags": [
+        "generic-split-hero",
+        "cropped-video",
+        "no-overlay",
+        "low-contrast",
+        "autoplay-audio",
+        "heavy-video-blur"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-cinematic-video-hero-layout",
+    "record_id": "pattern-cinematic-video-hero",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "layout",
+    "content": "# User distilled premium web UI prompt set - Layout Rules\n\nPage type: landing_page\nUse cases: cinematic hero, video-first immersive landing page, premium AI product page, portfolio landing page, design agency homepage, launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Use video z-0, overlay z-0 or z-5, content z-10 or z-20, navbar z-50.\n- Atmospheric background video should use object-cover; product/light transparent video should use w-full h-auto and avoid cropping.\n- Overlay text requires a dim layer or gradient fade.\n- Bottom fade height should be about 160px to 300px depending on contrast.\n- Use large centered headline and short subheadline; do not let video compete with CTA.\n- Avoid generic split hero unless the media is immersive and specifically supports the story.\n\nAI summary: Cinematic video hero pattern for premium landing pages: full-bleed or poster video, explicit z-index layers, gradient readability overlays, floating navbar, large centered headline, CTA row, HLS/MP4 fallbacks, and reduced-motion/static poster fallback. Use it for AI products, portfolios, design agencies, and launch pages.",
+    "tokens": 168,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "cinematic-hero",
+        "video-background",
+        "hls-video",
+        "premium-web-ui",
+        "landing-page",
+        "floating-navbar",
+        "dark-cinematic",
+        "hero-section",
+        "video-first",
+        "motion-reveal"
+      ],
+      "negative_prompt_tags": [
+        "generic-split-hero",
+        "cropped-video",
+        "no-overlay",
+        "low-contrast",
+        "autoplay-audio",
+        "heavy-video-blur"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-cinematic-video-hero-components",
+    "record_id": "pattern-cinematic-video-hero",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "components",
+    "content": "# User distilled premium web UI prompt set - Component Patterns\n\nPage type: landing_page\nUse cases: cinematic hero, video-first immersive landing page, premium AI product page, portfolio landing page, design agency homepage, launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- fixed or absolute floating navbar\n- video background layer\n- gradient readability overlay\n- poster headline\n- primary CTA and secondary Play action\n- logo cloud under hero\n- manual fade loop video component\n\nAI summary: Cinematic video hero pattern for premium landing pages: full-bleed or poster video, explicit z-index layers, gradient readability overlays, floating navbar, large centered headline, CTA row, HLS/MP4 fallbacks, and reduced-motion/static poster fallback. Use it for AI products, portfolios, design agencies, and launch pages.",
+    "tokens": 119,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "cinematic-hero",
+        "video-background",
+        "hls-video",
+        "premium-web-ui",
+        "landing-page",
+        "floating-navbar",
+        "dark-cinematic",
+        "hero-section",
+        "video-first",
+        "motion-reveal"
+      ],
+      "negative_prompt_tags": [
+        "generic-split-hero",
+        "cropped-video",
+        "no-overlay",
+        "low-contrast",
+        "autoplay-audio",
+        "heavy-video-blur"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-cinematic-video-hero-interaction",
+    "record_id": "pattern-cinematic-video-hero",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "interaction",
+    "content": "# User distilled premium web UI prompt set - Interaction States\n\nPage type: landing_page\nUse cases: cinematic hero, video-first immersive landing page, premium AI product page, portfolio landing page, design agency homepage, launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- video autoplay muted playsInline\n- manual fade loop when video hard-cuts\n- CTA hover scale\n- secondary play hover\n- reduced motion static poster\n- fallback MP4 when HLS fails\n\nAI summary: Cinematic video hero pattern for premium landing pages: full-bleed or poster video, explicit z-index layers, gradient readability overlays, floating navbar, large centered headline, CTA row, HLS/MP4 fallbacks, and reduced-motion/static poster fallback. Use it for AI products, portfolios, design agencies, and launch pages.",
+    "tokens": 115,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "cinematic-hero",
+        "video-background",
+        "hls-video",
+        "premium-web-ui",
+        "landing-page",
+        "floating-navbar",
+        "dark-cinematic",
+        "hero-section",
+        "video-first",
+        "motion-reveal"
+      ],
+      "negative_prompt_tags": [
+        "generic-split-hero",
+        "cropped-video",
+        "no-overlay",
+        "low-contrast",
+        "autoplay-audio",
+        "heavy-video-blur"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-cinematic-video-hero-accessibility",
+    "record_id": "pattern-cinematic-video-hero",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "accessibility",
+    "content": "# User distilled premium web UI prompt set - Accessibility Notes\n\nPage type: landing_page\nUse cases: cinematic hero, video-first immersive landing page, premium AI product page, portfolio landing page, design agency homepage, launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Keep text readable over bright video with overlays.\n- Avoid rapid camera movement behind reading content.\n- Provide reduced-motion or static poster fallback.\n- Do not rely on video content to communicate the only value proposition.\n- Do not crop important product/video content by accident.\n\nAI summary: Cinematic video hero pattern for premium landing pages: full-bleed or poster video, explicit z-index layers, gradient readability overlays, floating navbar, large centered headline, CTA row, HLS/MP4 fallbacks, and reduced-motion/static poster fallback. Use it for AI products, portfolios, design agencies, and launch pages.",
+    "tokens": 130,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "cinematic-hero",
+        "video-background",
+        "hls-video",
+        "premium-web-ui",
+        "landing-page",
+        "floating-navbar",
+        "dark-cinematic",
+        "hero-section",
+        "video-first",
+        "motion-reveal"
+      ],
+      "negative_prompt_tags": [
+        "generic-split-hero",
+        "cropped-video",
+        "no-overlay",
+        "low-contrast",
+        "autoplay-audio",
+        "heavy-video-blur"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-cinematic-video-hero-implementation",
+    "record_id": "pattern-cinematic-video-hero",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "landing_page",
+    "section": "implementation",
+    "content": "# User distilled premium web UI prompt set - Implementation Hints\n\nPage type: landing_page\nUse cases: cinematic hero, video-first immersive landing page, premium AI product page, portfolio landing page, design agency homepage, launch page\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Video attributes: autoPlay, muted, loop or custom loop, playsInline, preload='auto'.\n- Use hls.js for .m3u8 when needed, native HLS where possible, and MP4 fallback when provided.\n- For hard cuts, fade in over 0.5s, fade out 0.5s before end, set opacity 0 on ended, wait 100ms, reset currentTime to 0, play, then fade back to 1.\n- Common overlays: bg-black/20, bg-gradient-to-t from-black to-transparent, bg-gradient-to-b from-black via-transparent to-black.\n- Avoid heavy CSS blur on full-screen video; use overlays and composition instead.\n\nAI summary: Cinematic video hero pattern for premium landing pages: full-bleed or poster video, explicit z-index layers, gradient readability overlays, floating navbar, large centered headline, CTA row, HLS/MP4 fallbacks, and reduced-motion/static poster fallback. Use it for AI products, portfolios, design agencies, and launch pages.",
+    "tokens": 165,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "cinematic-hero",
+        "video-background",
+        "hls-video",
+        "premium-web-ui",
+        "landing-page",
+        "floating-navbar",
+        "dark-cinematic",
+        "hero-section",
+        "video-first",
+        "motion-reveal"
+      ],
+      "negative_prompt_tags": [
+        "generic-split-hero",
+        "cropped-video",
+        "no-overlay",
+        "low-contrast",
+        "autoplay-audio",
+        "heavy-video-blur"
+      ]
+    }
+  }
+]

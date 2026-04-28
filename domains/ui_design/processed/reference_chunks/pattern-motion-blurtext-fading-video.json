@@ -1,0 +1,200 @@
+[
+  {
+    "chunk_id": "pattern-motion-blurtext-fading-video-overview",
+    "record_id": "pattern-motion-blurtext-fading-video",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# User distilled premium web UI prompt set - Overview\n\nPage type: component_pattern\nUse cases: premium hero entrance motion, BlurText headline, scroll reveal, fading video loop, cinematic landing page motion, premium CTA interaction\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\nVisual traits:\n- slow subtle staggered motion\n- blur-to-sharp text reveal\n- opacity and y-axis entrance\n- manual video fade loop\n- quiet hover feedback\n- readability-preserving animation\n\nUse when:\n- premium hero entrance motion\n- BlurText headline\n- scroll reveal\n- fading video loop\n- cinematic landing page motion\n- premium CTA interaction\n\nAvoid when:\n- fast bouncing motion\n- excessive spinning\n- neon flashing\n- every element moving at once\n- looping chart animation after values settle\n- motion that hurts readability\n\nAI summary: Premium motion rules: use slow staggered blur/y/opacity entrances, BlurText word reveal, scroll reveal once, restrained hover scale, and manual fading video loops for hard-cut media. Avoid bouncing, flashing, or animating everything at once.",
+    "tokens": 158,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "motion-reveal",
+        "blurtext",
+        "fading-video",
+        "cinematic-hero",
+        "premium-web-ui",
+        "scroll-reveal",
+        "framer-motion",
+        "landing-page",
+        "video-background"
+      ],
+      "negative_prompt_tags": [
+        "bouncy",
+        "spinning",
+        "flashing",
+        "overanimated",
+        "unreadable-motion",
+        "looping-data"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-motion-blurtext-fading-video-layout",
+    "record_id": "pattern-motion-blurtext-fading-video",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# User distilled premium web UI prompt set - Layout Rules\n\nPage type: component_pattern\nUse cases: premium hero entrance motion, BlurText headline, scroll reveal, fading video loop, cinematic landing page motion, premium CTA interaction\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Use motion to reveal hierarchy, not to decorate every element.\n- Sequence hero elements: badge, heading, subheading, CTA, then stats/partners.\n- Use scroll reveal once for section entrances.\n- Let data/chart motion settle to readable static values.\n- Reduce parallax and heavy motion on mobile.\n\nAI summary: Premium motion rules: use slow staggered blur/y/opacity entrances, BlurText word reveal, scroll reveal once, restrained hover scale, and manual fading video loops for hard-cut media. Avoid bouncing, flashing, or animating everything at once.",
+    "tokens": 121,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "motion-reveal",
+        "blurtext",
+        "fading-video",
+        "cinematic-hero",
+        "premium-web-ui",
+        "scroll-reveal",
+        "framer-motion",
+        "landing-page",
+        "video-background"
+      ],
+      "negative_prompt_tags": [
+        "bouncy",
+        "spinning",
+        "flashing",
+        "overanimated",
+        "unreadable-motion",
+        "looping-data"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-motion-blurtext-fading-video-components",
+    "record_id": "pattern-motion-blurtext-fading-video",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# User distilled premium web UI prompt set - Component Patterns\n\nPage type: component_pattern\nUse cases: premium hero entrance motion, BlurText headline, scroll reveal, fading video loop, cinematic landing page motion, premium CTA interaction\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- BlurText hero heading\n- staggered hero entrance\n- scroll reveal section\n- manual fading video loop\n- hover scale CTA\n- media card hover overlay\n\nAI summary: Premium motion rules: use slow staggered blur/y/opacity entrances, BlurText word reveal, scroll reveal once, restrained hover scale, and manual fading video loops for hard-cut media. Avoid bouncing, flashing, or animating everything at once.",
+    "tokens": 101,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "motion-reveal",
+        "blurtext",
+        "fading-video",
+        "cinematic-hero",
+        "premium-web-ui",
+        "scroll-reveal",
+        "framer-motion",
+        "landing-page",
+        "video-background"
+      ],
+      "negative_prompt_tags": [
+        "bouncy",
+        "spinning",
+        "flashing",
+        "overanimated",
+        "unreadable-motion",
+        "looping-data"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-motion-blurtext-fading-video-interaction",
+    "record_id": "pattern-motion-blurtext-fading-video",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# User distilled premium web UI prompt set - Interaction States\n\nPage type: component_pattern\nUse cases: premium hero entrance motion, BlurText headline, scroll reveal, fading video loop, cinematic landing page motion, premium CTA interaction\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- initial opacity 0 y 20 blur 10px\n- animate opacity 1 y 0 blur 0px\n- word stagger 0.08s to 0.12s\n- video fade out before end\n- hover scale 1.03\n- reduced motion skip\n\nAI summary: Premium motion rules: use slow staggered blur/y/opacity entrances, BlurText word reveal, scroll reveal once, restrained hover scale, and manual fading video loops for hard-cut media. Avoid bouncing, flashing, or animating everything at once.",
+    "tokens": 111,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "motion-reveal",
+        "blurtext",
+        "fading-video",
+        "cinematic-hero",
+        "premium-web-ui",
+        "scroll-reveal",
+        "framer-motion",
+        "landing-page",
+        "video-background"
+      ],
+      "negative_prompt_tags": [
+        "bouncy",
+        "spinning",
+        "flashing",
+        "overanimated",
+        "unreadable-motion",
+        "looping-data"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-motion-blurtext-fading-video-accessibility",
+    "record_id": "pattern-motion-blurtext-fading-video",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# User distilled premium web UI prompt set - Accessibility Notes\n\nPage type: component_pattern\nUse cases: premium hero entrance motion, BlurText headline, scroll reveal, fading video loop, cinematic landing page motion, premium CTA interaction\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Respect prefers-reduced-motion.\n- Do not animate every element at once.\n- Avoid fast bouncing, spinning, neon flashing, or motion that harms readability.\n- Do not rely on animation as the only way to communicate state or data.\n- Keep text readable during blur transitions.\n\nAI summary: Premium motion rules: use slow staggered blur/y/opacity entrances, BlurText word reveal, scroll reveal once, restrained hover scale, and manual fading video loops for hard-cut media. Avoid bouncing, flashing, or animating everything at once.",
+    "tokens": 120,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "motion-reveal",
+        "blurtext",
+        "fading-video",
+        "cinematic-hero",
+        "premium-web-ui",
+        "scroll-reveal",
+        "framer-motion",
+        "landing-page",
+        "video-background"
+      ],
+      "negative_prompt_tags": [
+        "bouncy",
+        "spinning",
+        "flashing",
+        "overanimated",
+        "unreadable-motion",
+        "looping-data"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-motion-blurtext-fading-video-implementation",
+    "record_id": "pattern-motion-blurtext-fading-video",
+    "source_name": "User distilled premium web UI prompt set",
+    "source_url": "local-generated:2026-04-28/premium-web-ui-prompts",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# User distilled premium web UI prompt set - Implementation Hints\n\nPage type: component_pattern\nUse cases: premium hero entrance motion, BlurText headline, scroll reveal, fading video loop, cinematic landing page motion, premium CTA interaction\nEvidence: summary_only / high\nSource: local-generated:2026-04-28/premium-web-ui-prompts\n\n- Default entrance: opacity 0, y 20, filter blur(10px) to opacity 1, y 0, filter blur(0px).\n- Use duration 0.6s to 1.2s and easeOut or power3.out.\n- Hero timing: badge 0.3-0.4s, heading 0.4-0.6s, subheading 0.8s, CTA 1.0-1.1s, stats 1.2-1.4s.\n- BlurText: split by words; each word enters from blur(10px), opacity 0, y 50; middle blur(5px), opacity 0.5, y -5; final blur(0), opacity 1, y 0.\n- Manual video loop: fade in 0.5s, fade out 0.5s before end, opacity 0 on ended, wait 100ms, reset currentTime, play, fade to 1.\n- Use whileInView, viewport once, opacity 0 to 1, y 30 to 0, duration 0.8s to 1s for scroll reveal.\n\nAI summary: Premium motion rules: use slow staggered blur/y/opacity entrances, BlurText word reveal, scroll reveal once, restrained hover scale, and manual fading video loops for hard-cut media. Avoid bouncing, flashing, or animating everything at once.",
+    "tokens": 184,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "summary_only",
+      "prompt_tags": [
+        "motion-reveal",
+        "blurtext",
+        "fading-video",
+        "cinematic-hero",
+        "premium-web-ui",
+        "scroll-reveal",
+        "framer-motion",
+        "landing-page",
+        "video-background"
+      ],
+      "negative_prompt_tags": [
+        "bouncy",
+        "spinning",
+        "flashing",
+        "overanimated",
+        "unreadable-motion",
+        "looping-data"
+      ]
+    }
+  }
+]

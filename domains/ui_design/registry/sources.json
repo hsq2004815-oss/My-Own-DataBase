@@ -1,13 +1,13 @@
-﻿[
+[
   {
-    "source_id": "",
-    "name": "",
-    "source_type": "",
-    "location": "",
+    "source_id": "premium-web-ui-prompts",
+    "name": "User distilled premium web UI prompt set",
+    "source_type": "case_study",
+    "location": "local-generated:2026-04-28/premium-web-ui-prompts",
     "domain": "ui_design",
     "status": "active",
-    "created_at": "",
-    "updated_at": "",
-    "notes": ""
+    "created_at": "2026-04-28",
+    "updated_at": "2026-04-28",
+    "notes": "High-priority premium Web UI default rules distilled from user-provided prompts. Do not copy external media assets directly."
   }
 ]

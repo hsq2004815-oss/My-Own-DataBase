@@ -368,5 +368,80 @@
     "tag": "Universal Sans",
     "category": "design",
     "description": "Tag for Universal Sans"
+  },
+  {
+    "tag": "premium-web-ui",
+    "category": "design",
+    "description": "Default high-end Web UI aesthetic rules for landing pages, SaaS pages, dashboards, and portfolios"
+  },
+  {
+    "tag": "liquid-glass",
+    "category": "design",
+    "description": "Premium two-level glassmorphism material system"
+  },
+  {
+    "tag": "cinematic-hero",
+    "category": "design",
+    "description": "Film-title-frame hero composition with controlled media, type, overlays, and CTA hierarchy"
+  },
+  {
+    "tag": "video-background",
+    "category": "design",
+    "description": "Atmospheric video background or video-first landing page media"
+  },
+  {
+    "tag": "hls-video",
+    "category": "design",
+    "description": "HLS video with native/hls.js handling and MP4 fallback"
+  },
+  {
+    "tag": "blurtext",
+    "category": "design",
+    "description": "Blur-to-sharp staggered headline entrance pattern"
+  },
+  {
+    "tag": "editorial-typography",
+    "category": "design",
+    "description": "Premium display/body typography, tight hero type, and readable copy measure"
+  },
+  {
+    "tag": "floating-navbar",
+    "category": "design",
+    "description": "Fixed or absolute pill navbar with glass center links and mobile simplification"
+  },
+  {
+    "tag": "glassmorphism",
+    "category": "design",
+    "description": "Translucent glass surface treatment with blur, rim, highlight, and fallback"
+  },
+  {
+    "tag": "bento-grid",
+    "category": "design",
+    "description": "Asymmetric premium feature or portfolio grid with varied card sizes"
+  },
+  {
+    "tag": "landing-page",
+    "category": "design",
+    "description": "Premium marketing page structure with hero, proof, sections, and CTA"
+  },
+  {
+    "tag": "motion-reveal",
+    "category": "design",
+    "description": "Slow staggered opacity, y, and blur entrance motion"
+  },
+  {
+    "tag": "dark-cinematic",
+    "category": "design",
+    "description": "Near-black cinematic UI direction with restrained contrast and media"
+  },
+  {
+    "tag": "white-editorial",
+    "category": "design",
+    "description": "White luxury editorial UI direction driven by type, spacing, and media"
+  },
+  {
+    "tag": "monochrome-saas",
+    "category": "design",
+    "description": "Black-white neutral SaaS direction with disciplined typography and minimal color"
   }
 ]
