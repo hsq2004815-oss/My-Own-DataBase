@@ -147,11 +147,14 @@ For premium Web UI generation, prefer these `ui_design` wiki topics and their pr
 1. `domains/ui_design/wiki/topics/premium-web-ui-initial-aesthetic-rules.md`
 2. `domains/ui_design/wiki/topics/liquid-glass-design-system.md`
 3. `domains/ui_design/wiki/topics/cinematic-video-hero-rules.md`
-4. `domains/ui_design/wiki/topics/premium-typography-and-layout-rules.md`
-5. `domains/ui_design/wiki/topics/motion-interaction-premium-rules.md`
-6. `domains/ui_design/wiki/topics/landing-page-section-patterns.md`
+4. `domains/ui_design/wiki/topics/video-hero-layout-patterns.md`
+5. `domains/ui_design/wiki/topics/premium-typography-and-layout-rules.md`
+6. `domains/ui_design/wiki/topics/motion-interaction-premium-rules.md`
+7. `domains/ui_design/wiki/topics/landing-page-section-patterns.md`
 
 Use brand `design-*.md` topics as secondary flavor references. If a brand topic is information-insufficient, do not let it override the premium rules.
+
+For Hero / Landing Page / SaaS Homepage / Portfolio First Screen tasks, prioritize video hero layout patterns and cinematic video hero rules. For Web App / Dashboard / Workspace tasks, prioritize `liquid-glass-web-app-ui-kit.md` instead; do not apply hero rules blindly to forms, dashboards, or complex consoles.
 
 ## Repository Hygiene
 

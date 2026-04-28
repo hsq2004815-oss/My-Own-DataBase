@@ -20,5 +20,16 @@
     "created_at": "2026-04-28",
     "updated_at": "2026-04-28",
     "notes": "User-provided local HTML distilled into Web App / SaaS Workspace / Dashboard Liquid Glass UI Kit rules. Not a landing page source."
+  },
+  {
+    "source_id": "user-curated-premium-video-hero-skill-set",
+    "name": "User curated premium video hero skill set",
+    "source_type": "case_study",
+    "location": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "domain": "ui_design",
+    "status": "active",
+    "created_at": "2026-04-28",
+    "updated_at": "2026-04-28",
+    "notes": "High-priority Hero / Landing Page / SaaS Homepage / Portfolio First Screen video hero composition rules. Not a Web App / Dashboard component-system source."
   }
 ]

@@ -24,22 +24,29 @@ For the premium UI rule layer, also verify:
 python E:\DataBase\scripts\ui_design\search_ui.py "premium cinematic glass landing page" --limit 8
 python E:\DataBase\scripts\ui_design\search_ui.py "liquid glass video hero blur typography" --limit 8
 python E:\DataBase\scripts\ui_design\search_ui.py "高级 玻璃 拟态 landing page 视频 背景" --limit 8
+python E:\DataBase\scripts\ui_design\search_ui.py "video hero layout bottom left HLS glass navbar" --limit 8
+python E:\DataBase\scripts\ui_design\search_ui.py "双栏 液态玻璃 灰度 视频背景 Hero" --limit 8
+python E:\DataBase\scripts\ui_design\search_ui.py "编程教育 HLS 背景 网格线 光晕 首屏" --limit 8
 ```
 
 ## 当前验证结果
 
-- `normalize_reference.py --check`: validated 38 UI reference record(s)
-- `make_chunks.py`: created 228 chunk(s) from 38 reference record(s)
-- `build_sqlite_index.py`: indexed 38 reference record(s) and 228 chunk(s), FTS5 enabled
+- `normalize_reference.py --check`: validated 44 UI reference record(s)
+- `make_chunks.py`: created 264 chunk(s) from 44 reference record(s)
+- `build_sqlite_index.py`: indexed 44 reference record(s) and 264 chunk(s), FTS5 enabled
 - `search_ui.py "website reveal" --limit 3`: returned Swishy website reveal chunks
 - `search_ui.py "notification" --limit 3`: returned notification/message motion chunks, after one broader dialog match
 - `search_ui.py "kinetic typography" --limit 3`: returned Swishy kinetic typography chunks
 - `search_ui.py "data visualization" --limit 3`: returned Swishy dashboard/data-viz chunks
+- `search_ui.py "video hero layout bottom left HLS glass navbar" --limit 8`: returns `pattern-video-hero-layout-variants`, technical HLS, cinematic hero, and CTA/navbar chunks.
+- `search_ui.py "双栏 液态玻璃 灰度 视频背景 Hero" --limit 8`: returns two-panel Liquid Glass hero and strict grayscale glass hero chunks first.
+- `search_ui.py "编程教育 HLS 背景 网格线 光晕 首屏" --limit 8`: returns technical education HLS hero chunks first.
 
 ## Optional Sources
 
 - Liquid Glass: 可选视觉风格，不是默认偏好。只有任务明确要求玻璃拟态、Liquid Glass、frosted blur、半透明胶囊控件、折射高光、彩色边缘光等效果，或该风格被明确选中时，才应检索并采用这组资料。
 - Swishy.ai: 可选动效模式源，适合提取 kinetic typography、notification/message stack、website reveal blur、data visualization motion、device/product showcase 等“动效意图”。只存摘要和模式，不复制模板代码、视频输出或素材。
+- Video Hero Layout Patterns: 用于 Hero / Landing Page / SaaS Homepage / Portfolio First Screen / coding education first screen。不要把它误用于 Web App、Dashboard、Workspace 组件系统。
 
 ## 下一步
 

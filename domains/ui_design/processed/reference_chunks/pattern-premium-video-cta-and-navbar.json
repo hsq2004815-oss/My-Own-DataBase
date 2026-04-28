@@ -1,0 +1,236 @@
+[
+  {
+    "chunk_id": "pattern-premium-video-cta-and-navbar-overview",
+    "record_id": "pattern-premium-video-cta-and-navbar",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# User curated premium video hero skill set - Overview\n\nPage type: component_pattern\nUse cases: video hero CTA system, transparent overlay navbar, glass navigation, mobile fullscreen menu, campaign SVG CTA, SaaS dual CTA, glass CTA\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\nVisual traits:\n- CTA style matches hero composition\n- custom SVG-shaped CTA for campaign heroes\n- dual CTA for SaaS/app video heroes\n- strong glass CTA for Liquid Glass video heroes\n- transparent overlay navbar\n- glass navbar for busy video backgrounds\n- functional mobile full-screen menu\n- tagline pill above SaaS headline\n\nUse when:\n- video hero CTA system\n- transparent overlay navbar\n- glass navigation\n- mobile fullscreen menu\n- campaign SVG CTA\n- SaaS dual CTA\n- glass CTA\n\nAvoid when:\n- desktop navigation squeezed into mobile\n- too many CTA variants\n- bouncy CTA motion\n- navbar competing with hero headline\n- low-contrast nav on video\n- CTA readability lost over video\n\nAI summary: Premium video hero CTA and navigation system: custom SVG-shaped CTA for campaign heroes, dual CTA for SaaS/app video heroes, strong glass CTA for Liquid Glass heroes, transparent overlay nav for full-screen video, glass nav for busy backgrounds, tagline pill, and functional mobile full-screen menu.",
+    "tokens": 203,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "custom SVG CTA",
+        "dual-cta",
+        "tagline-pill",
+        "transparent-overlay-navbar",
+        "mobile-fullscreen-menu",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "HLS hero",
+        "bottom-left hero",
+        "top-aligned hero",
+        "centered SaaS hero",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "玻璃导航",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "too-many-cta-styles",
+        "desktop-nav-on-mobile",
+        "low-contrast-navbar",
+        "bouncy-buttons"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-video-cta-and-navbar-layout",
+    "record_id": "pattern-premium-video-cta-and-navbar",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# User curated premium video hero skill set - Layout Rules\n\nPage type: component_pattern\nUse cases: video hero CTA system, transparent overlay navbar, glass navigation, mobile fullscreen menu, campaign SVG CTA, SaaS dual CTA, glass CTA\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Custom SVG-shaped CTA uses SVG filling the button container and text centered above it.\n- Campaign CTA can use fixed size around 184px by 65px.\n- Dual CTA uses a brand-color primary action and dark neutral or deep brand secondary action.\n- Both dual CTA buttons should share height and radius.\n- Glass CTA uses strong glass and may include an icon in a circular container.\n- Transparent overlay navbar is full-width, z-20 or higher, with logo left, links center or center-left, and actions right.\n- Desktop navbar padding can be wide, such as px-[120px], when composition needs cinematic spacing.\n- Mobile hides desktop links/buttons and opens a full-screen dark overlay menu.\n\nAI summary: Premium video hero CTA and navigation system: custom SVG-shaped CTA for campaign heroes, dual CTA for SaaS/app video heroes, strong glass CTA for Liquid Glass heroes, transparent overlay nav for full-screen video, glass nav for busy backgrounds, tagline pill, and functional mobile full-screen menu.",
+    "tokens": 201,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "custom SVG CTA",
+        "dual-cta",
+        "tagline-pill",
+        "transparent-overlay-navbar",
+        "mobile-fullscreen-menu",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "HLS hero",
+        "bottom-left hero",
+        "top-aligned hero",
+        "centered SaaS hero",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "玻璃导航",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "too-many-cta-styles",
+        "desktop-nav-on-mobile",
+        "low-contrast-navbar",
+        "bouncy-buttons"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-video-cta-and-navbar-components",
+    "record_id": "pattern-premium-video-cta-and-navbar",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# User curated premium video hero skill set - Component Patterns\n\nPage type: component_pattern\nUse cases: video hero CTA system, transparent overlay navbar, glass navigation, mobile fullscreen menu, campaign SVG CTA, SaaS dual CTA, glass CTA\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- custom SVG CTA\n- dual CTA\n- glass CTA\n- tagline pill\n- inner New badge\n- transparent overlay navbar\n- glass navigation\n- hamburger trigger\n- mobile fullscreen menu\n- CTA icon circle\n\nAI summary: Premium video hero CTA and navigation system: custom SVG-shaped CTA for campaign heroes, dual CTA for SaaS/app video heroes, strong glass CTA for Liquid Glass heroes, transparent overlay nav for full-screen video, glass nav for busy backgrounds, tagline pill, and functional mobile full-screen menu.",
+    "tokens": 123,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "custom SVG CTA",
+        "dual-cta",
+        "tagline-pill",
+        "transparent-overlay-navbar",
+        "mobile-fullscreen-menu",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "HLS hero",
+        "bottom-left hero",
+        "top-aligned hero",
+        "centered SaaS hero",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "玻璃导航",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "too-many-cta-styles",
+        "desktop-nav-on-mobile",
+        "low-contrast-navbar",
+        "bouncy-buttons"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-video-cta-and-navbar-interaction",
+    "record_id": "pattern-premium-video-cta-and-navbar",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# User curated premium video hero skill set - Interaction States\n\nPage type: component_pattern\nUse cases: video hero CTA system, transparent overlay navbar, glass navigation, mobile fullscreen menu, campaign SVG CTA, SaaS dual CTA, glass CTA\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Custom SVG CTA hover uses scale-105; active uses scale-95.\n- Glass CTA hover uses scale-105; active uses scale-95.\n- Dual CTA hover slightly lightens backgrounds.\n- Avoid large bouncy CTA interactions.\n- Mobile menu must open and close predictably.\n- Navbar must remain above video and overlays.\n- Glass navigation must preserve contrast as video brightness changes.\n\nAI summary: Premium video hero CTA and navigation system: custom SVG-shaped CTA for campaign heroes, dual CTA for SaaS/app video heroes, strong glass CTA for Liquid Glass heroes, transparent overlay nav for full-screen video, glass nav for busy backgrounds, tagline pill, and functional mobile full-screen menu.",
+    "tokens": 146,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "custom SVG CTA",
+        "dual-cta",
+        "tagline-pill",
+        "transparent-overlay-navbar",
+        "mobile-fullscreen-menu",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "HLS hero",
+        "bottom-left hero",
+        "top-aligned hero",
+        "centered SaaS hero",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "玻璃导航",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "too-many-cta-styles",
+        "desktop-nav-on-mobile",
+        "low-contrast-navbar",
+        "bouncy-buttons"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-video-cta-and-navbar-accessibility",
+    "record_id": "pattern-premium-video-cta-and-navbar",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# User curated premium video hero skill set - Accessibility Notes\n\nPage type: component_pattern\nUse cases: video hero CTA system, transparent overlay navbar, glass navigation, mobile fullscreen menu, campaign SVG CTA, SaaS dual CTA, glass CTA\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- CTA text must remain readable over custom SVG shapes.\n- Mobile menu requires keyboard focus management and a close path.\n- Hamburger requires accessible label.\n- Do not rely on color alone to distinguish primary and secondary CTA.\n- Navigation links must remain readable over video.\n- Do not hide key action buttons on mobile without an accessible alternative.\n\nAI summary: Premium video hero CTA and navigation system: custom SVG-shaped CTA for campaign heroes, dual CTA for SaaS/app video heroes, strong glass CTA for Liquid Glass heroes, transparent overlay nav for full-screen video, glass nav for busy backgrounds, tagline pill, and functional mobile full-screen menu.",
+    "tokens": 148,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "custom SVG CTA",
+        "dual-cta",
+        "tagline-pill",
+        "transparent-overlay-navbar",
+        "mobile-fullscreen-menu",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "HLS hero",
+        "bottom-left hero",
+        "top-aligned hero",
+        "centered SaaS hero",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "玻璃导航",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "too-many-cta-styles",
+        "desktop-nav-on-mobile",
+        "low-contrast-navbar",
+        "bouncy-buttons"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-video-cta-and-navbar-implementation",
+    "record_id": "pattern-premium-video-cta-and-navbar",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# User curated premium video hero skill set - Implementation Hints\n\nPage type: component_pattern\nUse cases: video hero CTA system, transparent overlay navbar, glass navigation, mobile fullscreen menu, campaign SVG CTA, SaaS dual CTA, glass CTA\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Tagline pill can be around 38px height with radius around 10px and an inner solid badge such as New.\n- Transparent overlay navbar suits full-screen video hero, SaaS app first screen, and product launch page.\n- Glass navigation suits busy backgrounds, changing video brightness, and floating control feel.\n- Custom SVG CTA suits campaign or distinctive brand heroes.\n- Use only one CTA system per hero family; do not mix custom SVG CTA, dual CTA, and glass CTA without hierarchy.\n\nAI summary: Premium video hero CTA and navigation system: custom SVG-shaped CTA for campaign heroes, dual CTA for SaaS/app video heroes, strong glass CTA for Liquid Glass heroes, transparent overlay nav for full-screen video, glass nav for busy backgrounds, tagline pill, and functional mobile full-screen menu.",
+    "tokens": 169,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "custom SVG CTA",
+        "dual-cta",
+        "tagline-pill",
+        "transparent-overlay-navbar",
+        "mobile-fullscreen-menu",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "HLS hero",
+        "bottom-left hero",
+        "top-aligned hero",
+        "centered SaaS hero",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "玻璃导航",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "too-many-cta-styles",
+        "desktop-nav-on-mobile",
+        "low-contrast-navbar",
+        "bouncy-buttons"
+      ]
+    }
+  }
+]

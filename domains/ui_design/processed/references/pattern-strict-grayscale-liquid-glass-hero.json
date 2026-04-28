@@ -1,0 +1,110 @@
+{
+  "record_id": "pattern-strict-grayscale-liquid-glass-hero",
+  "source": {
+    "name": "User curated premium video hero skill set",
+    "url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "source_type": "case_study",
+    "license_notes": "User-curated prompt rules distilled into reusable local database guidance. Do not copy external media assets directly.",
+    "captured_at": "2026-04-28"
+  },
+  "domain": "ui_design",
+  "page_type": "landing_page",
+  "platform": ["web", "desktop", "mobile"],
+  "use_cases": [
+    "strict grayscale hero",
+    "minimal cinematic brand page",
+    "luxury AI product",
+    "art and creative platform",
+    "high-end editorial landing page",
+    "restrained Liquid Glass video hero"
+  ],
+  "visual_traits": [
+    "strict grayscale palette",
+    "no colored accents",
+    "white opacity hierarchy",
+    "HSL grayscale tokens",
+    "premium material quality",
+    "Liquid Glass pseudo-rim",
+    "serif accent typography",
+    "single accent punctuation"
+  ],
+  "layout_rules": [
+    "Use strict grayscale only for restrained premium hero pages.",
+    "Do not introduce purple, cyan, green, orange, or other colored accents.",
+    "Use HSL grayscale tokens such as 0 0% X%.",
+    "Text hierarchy should rely on white opacity: primary text-white, secondary text-white/80, body text-white/60, muted text-white/50.",
+    "Use glass material, typography, layout, video atmosphere, spacing, blur, and pseudo-element rim effects to create premium feel.",
+    "Use one accent punctuation, symbol, word, slash, bracket, cursor, or final period instead of a full gradient headline."
+  ],
+  "component_patterns": [
+    "strict grayscale background video",
+    "light glass pills",
+    "strong glass CTA",
+    "pseudo-element glass rim",
+    "single accent punctuation",
+    "serif italic emphasis",
+    "grayscale typography hierarchy",
+    "minimal glass information cluster"
+  ],
+  "interaction_states": [
+    "CTA hover may use restrained scale-105; active uses scale-95.",
+    "Hover and focus states should use white opacity, rim brightness, or grayscale shadow rather than colored glow.",
+    "Video can be dimmed or reduced in opacity to preserve grayscale contrast.",
+    "Reduced transparency uses stronger grayscale fills.",
+    "Reduced motion uses static poster or simplified opacity reveal."
+  ],
+  "accessibility_notes": [
+    "Check contrast after grayscale opacity and backdrop-filter are composited.",
+    "Do not rely on subtle opacity alone for focus-visible states.",
+    "Preserve keyboard focus rings using grayscale high contrast.",
+    "Do not make body copy too faint on dark video.",
+    "Provide fallback fills when backdrop-filter is unsupported."
+  ],
+  "implementation_hints": [
+    "Use white opacity hierarchy: primary text-white, secondary text-white/80, body text-white/60, muted text-white/50.",
+    "Use HSL grayscale tokens, for example hsl(0 0% X%).",
+    "Use pseudo-element gradient rim for premium glass instead of only border-white/20.",
+    "Use Source Serif 4 or Instrument Serif italic only for short emphasis, not full body text.",
+    "Premium restraint can come from grayscale material quality and composition, not colored gradients."
+  ],
+  "avoid_when": [
+    "brand requires colorful accents",
+    "data-heavy dashboard",
+    "low-contrast video without overlays",
+    "full-line gradient headline",
+    "random colored glow",
+    "using color as only state indicator"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "direct_spec",
+    "notes": "Directly distilled from the user-curated strict grayscale Liquid Glass hero rules."
+  },
+  "retrieval": {
+    "ai_summary": "Strict grayscale Liquid Glass hero for premium, artistic, restrained landing pages. Uses no colored accents, HSL grayscale tokens, white opacity text hierarchy, pseudo-element glass rim, video atmosphere, serif accent typography, and single accent punctuation instead of full-line gradients.",
+    "prompt_tags": [
+      "strict-grayscale-glass",
+      "strict grayscale glass",
+      "liquid glass hero",
+      "single-accent-punctuation",
+      "serif-accent-typography",
+      "video hero",
+      "cinematic hero",
+      "two-panel hero",
+      "MP4 background video",
+      "custom SVG CTA",
+      "灰度玻璃拟态",
+      "双栏玻璃首屏",
+      "高级视频首屏",
+      "暗黑视频背景",
+      "灰度 Hero"
+    ],
+    "negative_prompt_tags": [
+      "colored-gradient-accent",
+      "purple-glow",
+      "cyan-glow",
+      "low-contrast-gray",
+      "full-gradient-headline"
+    ]
+  }
+}

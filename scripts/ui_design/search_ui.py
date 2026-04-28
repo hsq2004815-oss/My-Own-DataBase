@@ -50,6 +50,16 @@ def query_terms(query: str) -> list[str]:
         "工作区": "workspace web app ui kit",
         "项目空间": "workspace web app ui kit",
         "视频": "video",
+        "视频首屏": "video hero layout",
+        "高级视频首屏": "video hero layout",
+        "底部左对齐": "bottom left hero",
+        "顶部压迫式": "top aligned hero",
+        "双栏": "two panel split hero",
+        "液态玻璃": "liquid glass",
+        "灰度": "strict grayscale",
+        "编程教育": "technical education",
+        "网格线": "vertical grid",
+        "光晕": "svg glow",
         "背景": "background",
         "字体": "typography",
         "动效": "motion",
@@ -110,6 +120,23 @@ def score_row(row: sqlite3.Row, query: str) -> int:
     if "video" in terms or "hero" in terms:
         if "cinematic-video-hero" in haystack:
             score += 55
+        if "pattern-video-hero-layout-variants" in haystack:
+            score += 80
+    if "bottom" in terms or "top" in terms or "aligned" in terms:
+        if "pattern-video-hero-layout-variants" in haystack:
+            score += 70
+    if "panel" in terms or "split" in terms:
+        if "two-panel-liquid-glass-hero" in haystack:
+            score += 130
+    if "hls" in terms or "education" in terms or "technical" in terms or "grid" in terms or "glow" in terms:
+        if "technical-education-hls-hero" in haystack:
+            score += 85
+    if "grayscale" in terms or "strict" in terms:
+        if "strict-grayscale-liquid-glass-hero" in haystack:
+            score += 130
+    if "cta" in terms or "navbar" in terms or "menu" in terms:
+        if "premium-video-cta-and-navbar" in haystack:
+            score += 65
     if "typography" in terms or "type" in terms:
         if "typography" in haystack:
             score += 55

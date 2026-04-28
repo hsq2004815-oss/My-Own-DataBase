@@ -68,6 +68,25 @@ Strong liquid glass:
 - Gradient rim border.
 - `rounded-full` for nav, badges, and CTA; `rounded-2xl` or `rounded-3xl` for cards.
 
+## Hero Glass System
+
+For video hero and landing page openings, use the two-tier glass system from
+`video-hero-layout-patterns.md`:
+
+- Light glass for pills, chips, social buttons, small cards, secondary controls,
+  and feature cards.
+- Strong glass for CTA, large panels, main overlays, primary cards, and major
+  information blocks.
+
+Do not use the same glass intensity everywhere. Hero glass needs hierarchy:
+`.liquid-glass` for supporting elements and `.liquid-glass-strong` for CTA or
+major panels.
+
+Strict grayscale Liquid Glass heroes must avoid colored accents entirely. Use
+HSL grayscale tokens, white opacity hierarchy, glass material, typography,
+video atmosphere, spacing, blur, and pseudo-element rim effects to create the
+premium feel.
+
 ## High-End Glass Border
 
 Prefer a pseudo-element gradient border:
@@ -77,6 +96,10 @@ Prefer a pseudo-element gradient border:
 - Padding around `1px` to `1.5px`.
 - Linear gradient with stronger top/bottom opacity and transparent middle.
 - Mask-composite exclude/xor trick where supported.
+
+Normal `border-white/20` is acceptable for quick drafts, but premium hero
+glass should use `::before`, `1px` to `1.5px` padding, gradient rim, and
+`mask-composite: exclude` / `xor` where possible.
 
 ## Layout Rules
 

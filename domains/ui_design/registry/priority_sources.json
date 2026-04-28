@@ -40,6 +40,28 @@
     "status": "seeded"
   },
   {
+    "source_id": "user-curated-premium-video-hero-skill-set",
+    "name": "User curated premium video hero skill set",
+    "url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "source_type": "case_study",
+    "priority": 1,
+    "best_for": [
+      "video-hero-layouts",
+      "cinematic-hero",
+      "landing-page",
+      "SaaS homepage",
+      "portfolio first screen",
+      "HLS hero",
+      "MP4 background video",
+      "two-panel hero",
+      "technical education hero",
+      "strict grayscale glass",
+      "CTA and navbar patterns"
+    ],
+    "capture_plan": "Use for premium Hero / Landing Page / SaaS Homepage / Portfolio First Screen composition. Do not apply blindly to Web App / Dashboard / Workspace component systems.",
+    "status": "seeded"
+  },
+  {
     "source_id": "apple-hig",
     "name": "Apple Human Interface Guidelines",
     "url": "https://developer.apple.com/design/human-interface-guidelines/",

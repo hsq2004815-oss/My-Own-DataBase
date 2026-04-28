@@ -1,0 +1,120 @@
+{
+  "record_id": "pattern-technical-education-hls-hero",
+  "source": {
+    "name": "User curated premium video hero skill set",
+    "url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "source_type": "case_study",
+    "license_notes": "User-curated prompt rules distilled into reusable local database guidance. Do not copy external media assets directly.",
+    "captured_at": "2026-04-28"
+  },
+  "domain": "ui_design",
+  "page_type": "landing_page",
+  "platform": ["web", "desktop", "mobile"],
+  "use_cases": [
+    "coding education hero",
+    "technical bootcamp landing page",
+    "career-ready curriculum hero",
+    "engineering learning product",
+    "developer portfolio landing page",
+    "technical HLS video background"
+  ],
+  "visual_traits": [
+    "HLS video background at reduced opacity",
+    "dark left gradient and bottom-up gradient",
+    "desktop vertical grid lines",
+    "central SVG ellipse glow",
+    "floating 200px glass info card",
+    "large uppercase technical headline",
+    "single accent punctuation",
+    "serif italic emphasis"
+  ],
+  "layout_rules": [
+    "Use HLS video background for technical education or engineering learning products.",
+    "Use video opacity around 60% when text needs stronger readability.",
+    "Use dark left gradient for left-side text and bottom-up gradient for bottom content.",
+    "Place vertical grid lines at 25%, 50%, and 75% with opacity around white/10 on desktop.",
+    "Use SVG ellipse glow with Gaussian blur around 20px to 40px behind content, not over text.",
+    "Use a floating glass info card around 200px by 200px above the headline, optionally shifted with translate-y-[-50px].",
+    "Use one accent punctuation, symbol, or keyword instead of full-line gradient headline."
+  ],
+  "component_patterns": [
+    "HLS video background",
+    "MP4 fallback source",
+    "left gradient overlay",
+    "bottom-up gradient overlay",
+    "vertical grid overlay",
+    "SVG ellipse glow",
+    "floating glass info card",
+    "career-ready eyebrow",
+    "uppercase headline",
+    "single accent punctuation",
+    "serif italic emphasis word"
+  ],
+  "interaction_states": [
+    "Use hls.js for .m3u8 when browser support requires it.",
+    "Use native HLS when supported by the browser.",
+    "Use MP4 fallback when provided.",
+    "Use enableWorker:false in sandboxed preview environments if needed.",
+    "Grid lines should remain stable and not become animated noise.",
+    "SVG glow can fade subtly but must not reduce text readability.",
+    "Reduced-motion mode should keep structure and use poster/fallback where appropriate."
+  ],
+  "accessibility_notes": [
+    "Do not rely only on one black transparent overlay; use directional gradients.",
+    "Keep video motion behind text subdued.",
+    "Ensure grid lines and glow do not reduce contrast.",
+    "Provide non-video fallback or poster when HLS fails.",
+    "Do not use video content as the only explanation of the product.",
+    "Keep mobile layout simpler and reduce or hide desktop grid lines."
+  ],
+  "implementation_hints": [
+    "HLS: use hls.js for .m3u8, native HLS if browser canPlayType supports it, and MP4 fallback if available.",
+    "In sandboxed environments, hls.js can use enableWorker:false for stability.",
+    "Vertical grid lines at 25%, 50%, and 75% create engineering structure.",
+    "SVG glow uses ellipse plus Gaussian blur around 20px to 40px, matching the accent color.",
+    "Floating glass info card can show year, credibility, instructor proof, feature highlight, or product claim.",
+    "Technical typography can use Inter Extra Bold headline, Plus Jakarta Sans eyebrow, and Instrument Serif italic for one emphasized word."
+  ],
+  "avoid_when": [
+    "non-technical lifestyle homepage",
+    "simple MP4 hero where HLS is unnecessary",
+    "dense app dashboard",
+    "grid lines that create visual noise",
+    "glow placed over readable text",
+    "HLS without fallback or native support check"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "direct_spec",
+    "notes": "Directly distilled from the user-curated technical education HLS hero rules."
+  },
+  "retrieval": {
+    "ai_summary": "Technical education HLS hero for coding bootcamp, developer curriculum, engineering learning, and career-ready course landing pages. Uses hls.js/native HLS/MP4 fallback, video opacity around 60%, dark directional gradients, desktop vertical grid overlay, SVG ellipse glow, floating 200px glass info card, uppercase headline, serif accent, and single accent punctuation.",
+    "prompt_tags": [
+      "technical-education-hero",
+      "coding education hero",
+      "HLS hero",
+      "hls-video-hero",
+      "vertical-grid-overlay",
+      "SVG glow",
+      "single-accent-punctuation",
+      "serif-accent-typography",
+      "video hero",
+      "cinematic hero",
+      "MP4 background video",
+      "mobile fullscreen menu",
+      "编程教育首屏",
+      "HLS 背景",
+      "网格线",
+      "光晕",
+      "高级视频首屏",
+      "暗黑视频背景"
+    ],
+    "negative_prompt_tags": [
+      "hls-without-fallback",
+      "glow-over-text",
+      "no-gradient-overlay",
+      "animated-grid-noise"
+    ]
+  }
+}

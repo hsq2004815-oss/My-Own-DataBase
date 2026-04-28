@@ -29,6 +29,18 @@ Parameters:
 - CTA: `1.0s` to `1.1s`.
 - Stats/partners: `1.2s` to `1.4s`.
 
+For video hero layouts, keep motion subordinate to video readability:
+
+- MP4 or HLS background should not animate additional CSS blur after first
+  reveal.
+- CTA hover can use restrained `scale-105`; active can use `scale-95`.
+- Transparent or glass nav hover should change opacity, rim, or background
+  subtly.
+- Mobile full-screen menu should open quickly and clearly, not with excessive
+  bounce.
+- Technical education hero can animate SVG glow opacity slowly, but grid lines
+  should remain stable.
+
 ## BlurText
 
 Use for major hero headings:

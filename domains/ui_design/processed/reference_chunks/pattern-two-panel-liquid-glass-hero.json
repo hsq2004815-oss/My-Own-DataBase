@@ -1,0 +1,230 @@
+[
+  {
+    "chunk_id": "pattern-two-panel-liquid-glass-hero-overview",
+    "record_id": "pattern-two-panel-liquid-glass-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "overview",
+    "content": "# User curated premium video hero skill set - Overview\n\nPage type: landing_page\nUse cases: creative AI split hero, visual generation platform, premium design platform, art and lifestyle product, Liquid Glass landing hero, portfolio first screen\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\nVisual traits:\n- full-screen video background\n- two-panel split composition\n- left narrative panel\n- right information cluster\n- light and strong Liquid Glass hierarchy\n- pseudo-element gradient glass rim\n- secondary glass cards and pills\n\nUse when:\n- creative AI split hero\n- visual generation platform\n- premium design platform\n- art and lifestyle product\n- Liquid Glass landing hero\n- portfolio first screen\n\nAvoid when:\n- dense dashboard workspace\n- small mobile-only page\n- no meaningful background media\n- right cluster unrelated to hero story\n- same glass intensity on every element\n- forcing desktop right panel onto small screens\n\nAI summary: Two-panel Liquid Glass split hero for premium creative AI, art, design, lifestyle, and visual-generation landing pages. Uses full-screen video, left narrative around 52%, right information cluster around 48%, right side hidden on mobile, two-tier glass hierarchy, strong glass CTA, light glass pills/cards, and pseudo-element gradient rims.",
+    "tokens": 192,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "two-panel hero",
+        "liquid glass hero",
+        "two-panel-split-hero",
+        "hero-information-cluster",
+        "strict grayscale glass",
+        "video hero",
+        "cinematic hero",
+        "custom SVG CTA",
+        "mobile fullscreen menu",
+        "双栏玻璃首屏",
+        "双栏 液态玻璃",
+        "灰度玻璃拟态",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "dashboard-ui-kit",
+        "random-floating-cards",
+        "same-glass-strength",
+        "mobile-overcrowding"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-two-panel-liquid-glass-hero-layout",
+    "record_id": "pattern-two-panel-liquid-glass-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "layout",
+    "content": "# User curated premium video hero skill set - Layout Rules\n\nPage type: landing_page\nUse cases: creative AI split hero, visual generation platform, premium design platform, art and lifestyle product, Liquid Glass landing hero, portfolio first screen\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Use flex row and min-h-screen over a full-screen video background.\n- Left panel carries main narrative and is around 52% width on desktop.\n- Right panel carries secondary information clusters and is around 48% width on desktop.\n- Hide the right panel on mobile and prioritize the left main narrative.\n- Left panel contains brand navigation, logo, large headline, CTA, tags, pills, quote, or brand statement.\n- Right panel can contain social icon pill, account/sparkle button, community card, feature preview cards, bottom feature card, thumbnail, or plus button.\n- Information clusters must support the main story and must not feel like random floating decoration.\n\nAI summary: Two-panel Liquid Glass split hero for premium creative AI, art, design, lifestyle, and visual-generation landing pages. Uses full-screen video, left narrative around 52%, right information cluster around 48%, right side hidden on mobile, two-tier glass hierarchy, strong glass CTA, light glass pills/cards, and pseudo-element gradient rims.",
+    "tokens": 196,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "two-panel hero",
+        "liquid glass hero",
+        "two-panel-split-hero",
+        "hero-information-cluster",
+        "strict grayscale glass",
+        "video hero",
+        "cinematic hero",
+        "custom SVG CTA",
+        "mobile fullscreen menu",
+        "双栏玻璃首屏",
+        "双栏 液态玻璃",
+        "灰度玻璃拟态",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "dashboard-ui-kit",
+        "random-floating-cards",
+        "same-glass-strength",
+        "mobile-overcrowding"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-two-panel-liquid-glass-hero-components",
+    "record_id": "pattern-two-panel-liquid-glass-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "components",
+    "content": "# User curated premium video hero skill set - Component Patterns\n\nPage type: landing_page\nUse cases: creative AI split hero, visual generation platform, premium design platform, art and lifestyle product, Liquid Glass landing hero, portfolio first screen\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- liquid-glass light pills\n- liquid-glass-strong CTA\n- glass social icon pill\n- glass information cluster\n- community card\n- feature preview card\n- thumbnail plus button\n- quote card\n- pseudo-element gradient rim\n- two-tier glass hierarchy\n\nAI summary: Two-panel Liquid Glass split hero for premium creative AI, art, design, lifestyle, and visual-generation landing pages. Uses full-screen video, left narrative around 52%, right information cluster around 48%, right side hidden on mobile, two-tier glass hierarchy, strong glass CTA, light glass pills/cards, and pseudo-element gradient rims.",
+    "tokens": 129,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "two-panel hero",
+        "liquid glass hero",
+        "two-panel-split-hero",
+        "hero-information-cluster",
+        "strict grayscale glass",
+        "video hero",
+        "cinematic hero",
+        "custom SVG CTA",
+        "mobile fullscreen menu",
+        "双栏玻璃首屏",
+        "双栏 液态玻璃",
+        "灰度玻璃拟态",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "dashboard-ui-kit",
+        "random-floating-cards",
+        "same-glass-strength",
+        "mobile-overcrowding"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-two-panel-liquid-glass-hero-interaction",
+    "record_id": "pattern-two-panel-liquid-glass-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "interaction",
+    "content": "# User curated premium video hero skill set - Interaction States\n\nPage type: landing_page\nUse cases: creative AI split hero, visual generation platform, premium design platform, art and lifestyle product, Liquid Glass landing hero, portfolio first screen\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Glass CTA hover uses scale-105; active uses scale-95.\n- Light glass supports pills, chips, social buttons, small cards, secondary controls, and feature cards.\n- Strong glass supports CTA, large panels, main overlays, primary cards, and major information blocks.\n- Do not use the same glass intensity everywhere.\n- Use video overlays or reduced opacity to preserve text and CTA readability.\n- Mobile should remove or collapse secondary clusters instead of cramming them under the headline.\n\nAI summary: Two-panel Liquid Glass split hero for premium creative AI, art, design, lifestyle, and visual-generation landing pages. Uses full-screen video, left narrative around 52%, right information cluster around 48%, right side hidden on mobile, two-tier glass hierarchy, strong glass CTA, light glass pills/cards, and pseudo-element gradient rims.",
+    "tokens": 167,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "two-panel hero",
+        "liquid glass hero",
+        "two-panel-split-hero",
+        "hero-information-cluster",
+        "strict grayscale glass",
+        "video hero",
+        "cinematic hero",
+        "custom SVG CTA",
+        "mobile fullscreen menu",
+        "双栏玻璃首屏",
+        "双栏 液态玻璃",
+        "灰度玻璃拟态",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "dashboard-ui-kit",
+        "random-floating-cards",
+        "same-glass-strength",
+        "mobile-overcrowding"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-two-panel-liquid-glass-hero-accessibility",
+    "record_id": "pattern-two-panel-liquid-glass-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "accessibility",
+    "content": "# User curated premium video hero skill set - Accessibility Notes\n\nPage type: landing_page\nUse cases: creative AI split hero, visual generation platform, premium design platform, art and lifestyle product, Liquid Glass landing hero, portfolio first screen\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Keep primary narrative first in DOM order.\n- Hide decorative right-panel elements from assistive tech if they do not add meaning.\n- Ensure mobile retains CTA and main value proposition.\n- Check contrast on every glass cluster over video.\n- Do not rely on glass blur alone for text readability.\n- Respect reduced motion and reduced transparency.\n\nAI summary: Two-panel Liquid Glass split hero for premium creative AI, art, design, lifestyle, and visual-generation landing pages. Uses full-screen video, left narrative around 52%, right information cluster around 48%, right side hidden on mobile, two-tier glass hierarchy, strong glass CTA, light glass pills/cards, and pseudo-element gradient rims.",
+    "tokens": 149,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "two-panel hero",
+        "liquid glass hero",
+        "two-panel-split-hero",
+        "hero-information-cluster",
+        "strict grayscale glass",
+        "video hero",
+        "cinematic hero",
+        "custom SVG CTA",
+        "mobile fullscreen menu",
+        "双栏玻璃首屏",
+        "双栏 液态玻璃",
+        "灰度玻璃拟态",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "dashboard-ui-kit",
+        "random-floating-cards",
+        "same-glass-strength",
+        "mobile-overcrowding"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-two-panel-liquid-glass-hero-implementation",
+    "record_id": "pattern-two-panel-liquid-glass-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "implementation",
+    "content": "# User curated premium video hero skill set - Implementation Hints\n\nPage type: landing_page\nUse cases: creative AI split hero, visual generation platform, premium design platform, art and lifestyle product, Liquid Glass landing hero, portfolio first screen\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Desktop layout: left panel about 52%, right panel about 48%.\n- Use .liquid-glass for light elements and .liquid-glass-strong for CTA or major panels.\n- Premium glass boundaries use ::before, padding 1px to 1.5px, linear-gradient rim, and mask-composite exclude/xor where supported.\n- Glass UI needs hierarchy: light glass is supporting; strong glass is closer to the viewer.\n- Use directional overlays when video brightness changes behind either panel.\n\nAI summary: Two-panel Liquid Glass split hero for premium creative AI, art, design, lifestyle, and visual-generation landing pages. Uses full-screen video, left narrative around 52%, right information cluster around 48%, right side hidden on mobile, two-tier glass hierarchy, strong glass CTA, light glass pills/cards, and pseudo-element gradient rims.",
+    "tokens": 159,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "two-panel hero",
+        "liquid glass hero",
+        "two-panel-split-hero",
+        "hero-information-cluster",
+        "strict grayscale glass",
+        "video hero",
+        "cinematic hero",
+        "custom SVG CTA",
+        "mobile fullscreen menu",
+        "双栏玻璃首屏",
+        "双栏 液态玻璃",
+        "灰度玻璃拟态",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "dashboard-ui-kit",
+        "random-floating-cards",
+        "same-glass-strength",
+        "mobile-overcrowding"
+      ]
+    }
+  }
+]

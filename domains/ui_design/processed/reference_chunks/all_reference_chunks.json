@@ -5700,6 +5700,1206 @@
     }
   },
   {
+    "chunk_id": "pattern-premium-video-cta-and-navbar-overview",
+    "record_id": "pattern-premium-video-cta-and-navbar",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "component_pattern",
+    "section": "overview",
+    "content": "# User curated premium video hero skill set - Overview\n\nPage type: component_pattern\nUse cases: video hero CTA system, transparent overlay navbar, glass navigation, mobile fullscreen menu, campaign SVG CTA, SaaS dual CTA, glass CTA\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\nVisual traits:\n- CTA style matches hero composition\n- custom SVG-shaped CTA for campaign heroes\n- dual CTA for SaaS/app video heroes\n- strong glass CTA for Liquid Glass video heroes\n- transparent overlay navbar\n- glass navbar for busy video backgrounds\n- functional mobile full-screen menu\n- tagline pill above SaaS headline\n\nUse when:\n- video hero CTA system\n- transparent overlay navbar\n- glass navigation\n- mobile fullscreen menu\n- campaign SVG CTA\n- SaaS dual CTA\n- glass CTA\n\nAvoid when:\n- desktop navigation squeezed into mobile\n- too many CTA variants\n- bouncy CTA motion\n- navbar competing with hero headline\n- low-contrast nav on video\n- CTA readability lost over video\n\nAI summary: Premium video hero CTA and navigation system: custom SVG-shaped CTA for campaign heroes, dual CTA for SaaS/app video heroes, strong glass CTA for Liquid Glass heroes, transparent overlay nav for full-screen video, glass nav for busy backgrounds, tagline pill, and functional mobile full-screen menu.",
+    "tokens": 203,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "custom SVG CTA",
+        "dual-cta",
+        "tagline-pill",
+        "transparent-overlay-navbar",
+        "mobile-fullscreen-menu",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "HLS hero",
+        "bottom-left hero",
+        "top-aligned hero",
+        "centered SaaS hero",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "玻璃导航",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "too-many-cta-styles",
+        "desktop-nav-on-mobile",
+        "low-contrast-navbar",
+        "bouncy-buttons"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-video-cta-and-navbar-layout",
+    "record_id": "pattern-premium-video-cta-and-navbar",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "component_pattern",
+    "section": "layout",
+    "content": "# User curated premium video hero skill set - Layout Rules\n\nPage type: component_pattern\nUse cases: video hero CTA system, transparent overlay navbar, glass navigation, mobile fullscreen menu, campaign SVG CTA, SaaS dual CTA, glass CTA\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Custom SVG-shaped CTA uses SVG filling the button container and text centered above it.\n- Campaign CTA can use fixed size around 184px by 65px.\n- Dual CTA uses a brand-color primary action and dark neutral or deep brand secondary action.\n- Both dual CTA buttons should share height and radius.\n- Glass CTA uses strong glass and may include an icon in a circular container.\n- Transparent overlay navbar is full-width, z-20 or higher, with logo left, links center or center-left, and actions right.\n- Desktop navbar padding can be wide, such as px-[120px], when composition needs cinematic spacing.\n- Mobile hides desktop links/buttons and opens a full-screen dark overlay menu.\n\nAI summary: Premium video hero CTA and navigation system: custom SVG-shaped CTA for campaign heroes, dual CTA for SaaS/app video heroes, strong glass CTA for Liquid Glass heroes, transparent overlay nav for full-screen video, glass nav for busy backgrounds, tagline pill, and functional mobile full-screen menu.",
+    "tokens": 201,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "custom SVG CTA",
+        "dual-cta",
+        "tagline-pill",
+        "transparent-overlay-navbar",
+        "mobile-fullscreen-menu",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "HLS hero",
+        "bottom-left hero",
+        "top-aligned hero",
+        "centered SaaS hero",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "玻璃导航",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "too-many-cta-styles",
+        "desktop-nav-on-mobile",
+        "low-contrast-navbar",
+        "bouncy-buttons"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-video-cta-and-navbar-components",
+    "record_id": "pattern-premium-video-cta-and-navbar",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "component_pattern",
+    "section": "components",
+    "content": "# User curated premium video hero skill set - Component Patterns\n\nPage type: component_pattern\nUse cases: video hero CTA system, transparent overlay navbar, glass navigation, mobile fullscreen menu, campaign SVG CTA, SaaS dual CTA, glass CTA\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- custom SVG CTA\n- dual CTA\n- glass CTA\n- tagline pill\n- inner New badge\n- transparent overlay navbar\n- glass navigation\n- hamburger trigger\n- mobile fullscreen menu\n- CTA icon circle\n\nAI summary: Premium video hero CTA and navigation system: custom SVG-shaped CTA for campaign heroes, dual CTA for SaaS/app video heroes, strong glass CTA for Liquid Glass heroes, transparent overlay nav for full-screen video, glass nav for busy backgrounds, tagline pill, and functional mobile full-screen menu.",
+    "tokens": 123,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "custom SVG CTA",
+        "dual-cta",
+        "tagline-pill",
+        "transparent-overlay-navbar",
+        "mobile-fullscreen-menu",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "HLS hero",
+        "bottom-left hero",
+        "top-aligned hero",
+        "centered SaaS hero",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "玻璃导航",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "too-many-cta-styles",
+        "desktop-nav-on-mobile",
+        "low-contrast-navbar",
+        "bouncy-buttons"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-video-cta-and-navbar-interaction",
+    "record_id": "pattern-premium-video-cta-and-navbar",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "component_pattern",
+    "section": "interaction",
+    "content": "# User curated premium video hero skill set - Interaction States\n\nPage type: component_pattern\nUse cases: video hero CTA system, transparent overlay navbar, glass navigation, mobile fullscreen menu, campaign SVG CTA, SaaS dual CTA, glass CTA\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Custom SVG CTA hover uses scale-105; active uses scale-95.\n- Glass CTA hover uses scale-105; active uses scale-95.\n- Dual CTA hover slightly lightens backgrounds.\n- Avoid large bouncy CTA interactions.\n- Mobile menu must open and close predictably.\n- Navbar must remain above video and overlays.\n- Glass navigation must preserve contrast as video brightness changes.\n\nAI summary: Premium video hero CTA and navigation system: custom SVG-shaped CTA for campaign heroes, dual CTA for SaaS/app video heroes, strong glass CTA for Liquid Glass heroes, transparent overlay nav for full-screen video, glass nav for busy backgrounds, tagline pill, and functional mobile full-screen menu.",
+    "tokens": 146,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "custom SVG CTA",
+        "dual-cta",
+        "tagline-pill",
+        "transparent-overlay-navbar",
+        "mobile-fullscreen-menu",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "HLS hero",
+        "bottom-left hero",
+        "top-aligned hero",
+        "centered SaaS hero",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "玻璃导航",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "too-many-cta-styles",
+        "desktop-nav-on-mobile",
+        "low-contrast-navbar",
+        "bouncy-buttons"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-video-cta-and-navbar-accessibility",
+    "record_id": "pattern-premium-video-cta-and-navbar",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "component_pattern",
+    "section": "accessibility",
+    "content": "# User curated premium video hero skill set - Accessibility Notes\n\nPage type: component_pattern\nUse cases: video hero CTA system, transparent overlay navbar, glass navigation, mobile fullscreen menu, campaign SVG CTA, SaaS dual CTA, glass CTA\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- CTA text must remain readable over custom SVG shapes.\n- Mobile menu requires keyboard focus management and a close path.\n- Hamburger requires accessible label.\n- Do not rely on color alone to distinguish primary and secondary CTA.\n- Navigation links must remain readable over video.\n- Do not hide key action buttons on mobile without an accessible alternative.\n\nAI summary: Premium video hero CTA and navigation system: custom SVG-shaped CTA for campaign heroes, dual CTA for SaaS/app video heroes, strong glass CTA for Liquid Glass heroes, transparent overlay nav for full-screen video, glass nav for busy backgrounds, tagline pill, and functional mobile full-screen menu.",
+    "tokens": 148,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "custom SVG CTA",
+        "dual-cta",
+        "tagline-pill",
+        "transparent-overlay-navbar",
+        "mobile-fullscreen-menu",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "HLS hero",
+        "bottom-left hero",
+        "top-aligned hero",
+        "centered SaaS hero",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "玻璃导航",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "too-many-cta-styles",
+        "desktop-nav-on-mobile",
+        "low-contrast-navbar",
+        "bouncy-buttons"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-premium-video-cta-and-navbar-implementation",
+    "record_id": "pattern-premium-video-cta-and-navbar",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "component_pattern",
+    "section": "implementation",
+    "content": "# User curated premium video hero skill set - Implementation Hints\n\nPage type: component_pattern\nUse cases: video hero CTA system, transparent overlay navbar, glass navigation, mobile fullscreen menu, campaign SVG CTA, SaaS dual CTA, glass CTA\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Tagline pill can be around 38px height with radius around 10px and an inner solid badge such as New.\n- Transparent overlay navbar suits full-screen video hero, SaaS app first screen, and product launch page.\n- Glass navigation suits busy backgrounds, changing video brightness, and floating control feel.\n- Custom SVG CTA suits campaign or distinctive brand heroes.\n- Use only one CTA system per hero family; do not mix custom SVG CTA, dual CTA, and glass CTA without hierarchy.\n\nAI summary: Premium video hero CTA and navigation system: custom SVG-shaped CTA for campaign heroes, dual CTA for SaaS/app video heroes, strong glass CTA for Liquid Glass heroes, transparent overlay nav for full-screen video, glass nav for busy backgrounds, tagline pill, and functional mobile full-screen menu.",
+    "tokens": 169,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "custom SVG CTA",
+        "dual-cta",
+        "tagline-pill",
+        "transparent-overlay-navbar",
+        "mobile-fullscreen-menu",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "HLS hero",
+        "bottom-left hero",
+        "top-aligned hero",
+        "centered SaaS hero",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "玻璃导航",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "too-many-cta-styles",
+        "desktop-nav-on-mobile",
+        "low-contrast-navbar",
+        "bouncy-buttons"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-strict-grayscale-liquid-glass-hero-overview",
+    "record_id": "pattern-strict-grayscale-liquid-glass-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "overview",
+    "content": "# User curated premium video hero skill set - Overview\n\nPage type: landing_page\nUse cases: strict grayscale hero, minimal cinematic brand page, luxury AI product, art and creative platform, high-end editorial landing page, restrained Liquid Glass video hero\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\nVisual traits:\n- strict grayscale palette\n- no colored accents\n- white opacity hierarchy\n- HSL grayscale tokens\n- premium material quality\n- Liquid Glass pseudo-rim\n- serif accent typography\n- single accent punctuation\n\nUse when:\n- strict grayscale hero\n- minimal cinematic brand page\n- luxury AI product\n- art and creative platform\n- high-end editorial landing page\n- restrained Liquid Glass video hero\n\nAvoid when:\n- brand requires colorful accents\n- data-heavy dashboard\n- low-contrast video without overlays\n- full-line gradient headline\n- random colored glow\n- using color as only state indicator\n\nAI summary: Strict grayscale Liquid Glass hero for premium, artistic, restrained landing pages. Uses no colored accents, HSL grayscale tokens, white opacity text hierarchy, pseudo-element glass rim, video atmosphere, serif accent typography, and single accent punctuation instead of full-line gradients.",
+    "tokens": 179,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "strict-grayscale-glass",
+        "strict grayscale glass",
+        "liquid glass hero",
+        "single-accent-punctuation",
+        "serif-accent-typography",
+        "video hero",
+        "cinematic hero",
+        "two-panel hero",
+        "MP4 background video",
+        "custom SVG CTA",
+        "灰度玻璃拟态",
+        "双栏玻璃首屏",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "灰度 Hero"
+      ],
+      "negative_prompt_tags": [
+        "colored-gradient-accent",
+        "purple-glow",
+        "cyan-glow",
+        "low-contrast-gray",
+        "full-gradient-headline"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-strict-grayscale-liquid-glass-hero-layout",
+    "record_id": "pattern-strict-grayscale-liquid-glass-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "layout",
+    "content": "# User curated premium video hero skill set - Layout Rules\n\nPage type: landing_page\nUse cases: strict grayscale hero, minimal cinematic brand page, luxury AI product, art and creative platform, high-end editorial landing page, restrained Liquid Glass video hero\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Use strict grayscale only for restrained premium hero pages.\n- Do not introduce purple, cyan, green, orange, or other colored accents.\n- Use HSL grayscale tokens such as 0 0% X%.\n- Text hierarchy should rely on white opacity: primary text-white, secondary text-white/80, body text-white/60, muted text-white/50.\n- Use glass material, typography, layout, video atmosphere, spacing, blur, and pseudo-element rim effects to create premium feel.\n- Use one accent punctuation, symbol, word, slash, bracket, cursor, or final period instead of a full gradient headline.\n\nAI summary: Strict grayscale Liquid Glass hero for premium, artistic, restrained landing pages. Uses no colored accents, HSL grayscale tokens, white opacity text hierarchy, pseudo-element glass rim, video atmosphere, serif accent typography, and single accent punctuation instead of full-line gradients.",
+    "tokens": 170,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "strict-grayscale-glass",
+        "strict grayscale glass",
+        "liquid glass hero",
+        "single-accent-punctuation",
+        "serif-accent-typography",
+        "video hero",
+        "cinematic hero",
+        "two-panel hero",
+        "MP4 background video",
+        "custom SVG CTA",
+        "灰度玻璃拟态",
+        "双栏玻璃首屏",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "灰度 Hero"
+      ],
+      "negative_prompt_tags": [
+        "colored-gradient-accent",
+        "purple-glow",
+        "cyan-glow",
+        "low-contrast-gray",
+        "full-gradient-headline"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-strict-grayscale-liquid-glass-hero-components",
+    "record_id": "pattern-strict-grayscale-liquid-glass-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "components",
+    "content": "# User curated premium video hero skill set - Component Patterns\n\nPage type: landing_page\nUse cases: strict grayscale hero, minimal cinematic brand page, luxury AI product, art and creative platform, high-end editorial landing page, restrained Liquid Glass video hero\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- strict grayscale background video\n- light glass pills\n- strong glass CTA\n- pseudo-element glass rim\n- single accent punctuation\n- serif italic emphasis\n- grayscale typography hierarchy\n- minimal glass information cluster\n\nAI summary: Strict grayscale Liquid Glass hero for premium, artistic, restrained landing pages. Uses no colored accents, HSL grayscale tokens, white opacity text hierarchy, pseudo-element glass rim, video atmosphere, serif accent typography, and single accent punctuation instead of full-line gradients.",
+    "tokens": 119,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "strict-grayscale-glass",
+        "strict grayscale glass",
+        "liquid glass hero",
+        "single-accent-punctuation",
+        "serif-accent-typography",
+        "video hero",
+        "cinematic hero",
+        "two-panel hero",
+        "MP4 background video",
+        "custom SVG CTA",
+        "灰度玻璃拟态",
+        "双栏玻璃首屏",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "灰度 Hero"
+      ],
+      "negative_prompt_tags": [
+        "colored-gradient-accent",
+        "purple-glow",
+        "cyan-glow",
+        "low-contrast-gray",
+        "full-gradient-headline"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-strict-grayscale-liquid-glass-hero-interaction",
+    "record_id": "pattern-strict-grayscale-liquid-glass-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "interaction",
+    "content": "# User curated premium video hero skill set - Interaction States\n\nPage type: landing_page\nUse cases: strict grayscale hero, minimal cinematic brand page, luxury AI product, art and creative platform, high-end editorial landing page, restrained Liquid Glass video hero\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- CTA hover may use restrained scale-105; active uses scale-95.\n- Hover and focus states should use white opacity, rim brightness, or grayscale shadow rather than colored glow.\n- Video can be dimmed or reduced in opacity to preserve grayscale contrast.\n- Reduced transparency uses stronger grayscale fills.\n- Reduced motion uses static poster or simplified opacity reveal.\n\nAI summary: Strict grayscale Liquid Glass hero for premium, artistic, restrained landing pages. Uses no colored accents, HSL grayscale tokens, white opacity text hierarchy, pseudo-element glass rim, video atmosphere, serif accent typography, and single accent punctuation instead of full-line gradients.",
+    "tokens": 143,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "strict-grayscale-glass",
+        "strict grayscale glass",
+        "liquid glass hero",
+        "single-accent-punctuation",
+        "serif-accent-typography",
+        "video hero",
+        "cinematic hero",
+        "two-panel hero",
+        "MP4 background video",
+        "custom SVG CTA",
+        "灰度玻璃拟态",
+        "双栏玻璃首屏",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "灰度 Hero"
+      ],
+      "negative_prompt_tags": [
+        "colored-gradient-accent",
+        "purple-glow",
+        "cyan-glow",
+        "low-contrast-gray",
+        "full-gradient-headline"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-strict-grayscale-liquid-glass-hero-accessibility",
+    "record_id": "pattern-strict-grayscale-liquid-glass-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "accessibility",
+    "content": "# User curated premium video hero skill set - Accessibility Notes\n\nPage type: landing_page\nUse cases: strict grayscale hero, minimal cinematic brand page, luxury AI product, art and creative platform, high-end editorial landing page, restrained Liquid Glass video hero\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Check contrast after grayscale opacity and backdrop-filter are composited.\n- Do not rely on subtle opacity alone for focus-visible states.\n- Preserve keyboard focus rings using grayscale high contrast.\n- Do not make body copy too faint on dark video.\n- Provide fallback fills when backdrop-filter is unsupported.\n\nAI summary: Strict grayscale Liquid Glass hero for premium, artistic, restrained landing pages. Uses no colored accents, HSL grayscale tokens, white opacity text hierarchy, pseudo-element glass rim, video atmosphere, serif accent typography, and single accent punctuation instead of full-line gradients.",
+    "tokens": 134,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "strict-grayscale-glass",
+        "strict grayscale glass",
+        "liquid glass hero",
+        "single-accent-punctuation",
+        "serif-accent-typography",
+        "video hero",
+        "cinematic hero",
+        "two-panel hero",
+        "MP4 background video",
+        "custom SVG CTA",
+        "灰度玻璃拟态",
+        "双栏玻璃首屏",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "灰度 Hero"
+      ],
+      "negative_prompt_tags": [
+        "colored-gradient-accent",
+        "purple-glow",
+        "cyan-glow",
+        "low-contrast-gray",
+        "full-gradient-headline"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-strict-grayscale-liquid-glass-hero-implementation",
+    "record_id": "pattern-strict-grayscale-liquid-glass-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "implementation",
+    "content": "# User curated premium video hero skill set - Implementation Hints\n\nPage type: landing_page\nUse cases: strict grayscale hero, minimal cinematic brand page, luxury AI product, art and creative platform, high-end editorial landing page, restrained Liquid Glass video hero\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Use white opacity hierarchy: primary text-white, secondary text-white/80, body text-white/60, muted text-white/50.\n- Use HSL grayscale tokens, for example hsl(0 0% X%).\n- Use pseudo-element gradient rim for premium glass instead of only border-white/20.\n- Use Source Serif 4 or Instrument Serif italic only for short emphasis, not full body text.\n- Premium restraint can come from grayscale material quality and composition, not colored gradients.\n\nAI summary: Strict grayscale Liquid Glass hero for premium, artistic, restrained landing pages. Uses no colored accents, HSL grayscale tokens, white opacity text hierarchy, pseudo-element glass rim, video atmosphere, serif accent typography, and single accent punctuation instead of full-line gradients.",
+    "tokens": 151,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "strict-grayscale-glass",
+        "strict grayscale glass",
+        "liquid glass hero",
+        "single-accent-punctuation",
+        "serif-accent-typography",
+        "video hero",
+        "cinematic hero",
+        "two-panel hero",
+        "MP4 background video",
+        "custom SVG CTA",
+        "灰度玻璃拟态",
+        "双栏玻璃首屏",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "灰度 Hero"
+      ],
+      "negative_prompt_tags": [
+        "colored-gradient-accent",
+        "purple-glow",
+        "cyan-glow",
+        "low-contrast-gray",
+        "full-gradient-headline"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-technical-education-hls-hero-overview",
+    "record_id": "pattern-technical-education-hls-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "overview",
+    "content": "# User curated premium video hero skill set - Overview\n\nPage type: landing_page\nUse cases: coding education hero, technical bootcamp landing page, career-ready curriculum hero, engineering learning product, developer portfolio landing page, technical HLS video background\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\nVisual traits:\n- HLS video background at reduced opacity\n- dark left gradient and bottom-up gradient\n- desktop vertical grid lines\n- central SVG ellipse glow\n- floating 200px glass info card\n- large uppercase technical headline\n- single accent punctuation\n- serif italic emphasis\n\nUse when:\n- coding education hero\n- technical bootcamp landing page\n- career-ready curriculum hero\n- engineering learning product\n- developer portfolio landing page\n- technical HLS video background\n\nAvoid when:\n- non-technical lifestyle homepage\n- simple MP4 hero where HLS is unnecessary\n- dense app dashboard\n- grid lines that create visual noise\n- glow placed over readable text\n- HLS without fallback or native support check\n\nAI summary: Technical education HLS hero for coding bootcamp, developer curriculum, engineering learning, and career-ready course landing pages. Uses hls.js/native HLS/MP4 fallback, video opacity around 60%, dark directional gradients, desktop vertical grid overlay, SVG ellipse glow, floating 200px glass info card, uppercase headline, serif accent, and single accent punctuation.",
+    "tokens": 204,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "technical-education-hero",
+        "coding education hero",
+        "HLS hero",
+        "hls-video-hero",
+        "vertical-grid-overlay",
+        "SVG glow",
+        "single-accent-punctuation",
+        "serif-accent-typography",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "mobile fullscreen menu",
+        "编程教育首屏",
+        "HLS 背景",
+        "网格线",
+        "光晕",
+        "高级视频首屏",
+        "暗黑视频背景"
+      ],
+      "negative_prompt_tags": [
+        "hls-without-fallback",
+        "glow-over-text",
+        "no-gradient-overlay",
+        "animated-grid-noise"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-technical-education-hls-hero-layout",
+    "record_id": "pattern-technical-education-hls-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "layout",
+    "content": "# User curated premium video hero skill set - Layout Rules\n\nPage type: landing_page\nUse cases: coding education hero, technical bootcamp landing page, career-ready curriculum hero, engineering learning product, developer portfolio landing page, technical HLS video background\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Use HLS video background for technical education or engineering learning products.\n- Use video opacity around 60% when text needs stronger readability.\n- Use dark left gradient for left-side text and bottom-up gradient for bottom content.\n- Place vertical grid lines at 25%, 50%, and 75% with opacity around white/10 on desktop.\n- Use SVG ellipse glow with Gaussian blur around 20px to 40px behind content, not over text.\n- Use a floating glass info card around 200px by 200px above the headline, optionally shifted with translate-y-[-50px].\n- Use one accent punctuation, symbol, or keyword instead of full-line gradient headline.\n\nAI summary: Technical education HLS hero for coding bootcamp, developer curriculum, engineering learning, and career-ready course landing pages. Uses hls.js/native HLS/MP4 fallback, video opacity around 60%, dark directional gradients, desktop vertical grid overlay, SVG ellipse glow, floating 200px glass info card, uppercase headline, serif accent, and single accent punctuation.",
+    "tokens": 193,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "technical-education-hero",
+        "coding education hero",
+        "HLS hero",
+        "hls-video-hero",
+        "vertical-grid-overlay",
+        "SVG glow",
+        "single-accent-punctuation",
+        "serif-accent-typography",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "mobile fullscreen menu",
+        "编程教育首屏",
+        "HLS 背景",
+        "网格线",
+        "光晕",
+        "高级视频首屏",
+        "暗黑视频背景"
+      ],
+      "negative_prompt_tags": [
+        "hls-without-fallback",
+        "glow-over-text",
+        "no-gradient-overlay",
+        "animated-grid-noise"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-technical-education-hls-hero-components",
+    "record_id": "pattern-technical-education-hls-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "components",
+    "content": "# User curated premium video hero skill set - Component Patterns\n\nPage type: landing_page\nUse cases: coding education hero, technical bootcamp landing page, career-ready curriculum hero, engineering learning product, developer portfolio landing page, technical HLS video background\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- HLS video background\n- MP4 fallback source\n- left gradient overlay\n- bottom-up gradient overlay\n- vertical grid overlay\n- SVG ellipse glow\n- floating glass info card\n- career-ready eyebrow\n- uppercase headline\n- single accent punctuation\n- serif italic emphasis word\n\nAI summary: Technical education HLS hero for coding bootcamp, developer curriculum, engineering learning, and career-ready course landing pages. Uses hls.js/native HLS/MP4 fallback, video opacity around 60%, dark directional gradients, desktop vertical grid overlay, SVG ellipse glow, floating 200px glass info card, uppercase headline, serif accent, and single accent punctuation.",
+    "tokens": 136,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "technical-education-hero",
+        "coding education hero",
+        "HLS hero",
+        "hls-video-hero",
+        "vertical-grid-overlay",
+        "SVG glow",
+        "single-accent-punctuation",
+        "serif-accent-typography",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "mobile fullscreen menu",
+        "编程教育首屏",
+        "HLS 背景",
+        "网格线",
+        "光晕",
+        "高级视频首屏",
+        "暗黑视频背景"
+      ],
+      "negative_prompt_tags": [
+        "hls-without-fallback",
+        "glow-over-text",
+        "no-gradient-overlay",
+        "animated-grid-noise"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-technical-education-hls-hero-interaction",
+    "record_id": "pattern-technical-education-hls-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "interaction",
+    "content": "# User curated premium video hero skill set - Interaction States\n\nPage type: landing_page\nUse cases: coding education hero, technical bootcamp landing page, career-ready curriculum hero, engineering learning product, developer portfolio landing page, technical HLS video background\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Use hls.js for .m3u8 when browser support requires it.\n- Use native HLS when supported by the browser.\n- Use MP4 fallback when provided.\n- Use enableWorker:false in sandboxed preview environments if needed.\n- Grid lines should remain stable and not become animated noise.\n- SVG glow can fade subtly but must not reduce text readability.\n- Reduced-motion mode should keep structure and use poster/fallback where appropriate.\n\nAI summary: Technical education HLS hero for coding bootcamp, developer curriculum, engineering learning, and career-ready course landing pages. Uses hls.js/native HLS/MP4 fallback, video opacity around 60%, dark directional gradients, desktop vertical grid overlay, SVG ellipse glow, floating 200px glass info card, uppercase headline, serif accent, and single accent punctuation.",
+    "tokens": 160,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "technical-education-hero",
+        "coding education hero",
+        "HLS hero",
+        "hls-video-hero",
+        "vertical-grid-overlay",
+        "SVG glow",
+        "single-accent-punctuation",
+        "serif-accent-typography",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "mobile fullscreen menu",
+        "编程教育首屏",
+        "HLS 背景",
+        "网格线",
+        "光晕",
+        "高级视频首屏",
+        "暗黑视频背景"
+      ],
+      "negative_prompt_tags": [
+        "hls-without-fallback",
+        "glow-over-text",
+        "no-gradient-overlay",
+        "animated-grid-noise"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-technical-education-hls-hero-accessibility",
+    "record_id": "pattern-technical-education-hls-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "accessibility",
+    "content": "# User curated premium video hero skill set - Accessibility Notes\n\nPage type: landing_page\nUse cases: coding education hero, technical bootcamp landing page, career-ready curriculum hero, engineering learning product, developer portfolio landing page, technical HLS video background\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Do not rely only on one black transparent overlay; use directional gradients.\n- Keep video motion behind text subdued.\n- Ensure grid lines and glow do not reduce contrast.\n- Provide non-video fallback or poster when HLS fails.\n- Do not use video content as the only explanation of the product.\n- Keep mobile layout simpler and reduce or hide desktop grid lines.\n\nAI summary: Technical education HLS hero for coding bootcamp, developer curriculum, engineering learning, and career-ready course landing pages. Uses hls.js/native HLS/MP4 fallback, video opacity around 60%, dark directional gradients, desktop vertical grid overlay, SVG ellipse glow, floating 200px glass info card, uppercase headline, serif accent, and single accent punctuation.",
+    "tokens": 156,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "technical-education-hero",
+        "coding education hero",
+        "HLS hero",
+        "hls-video-hero",
+        "vertical-grid-overlay",
+        "SVG glow",
+        "single-accent-punctuation",
+        "serif-accent-typography",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "mobile fullscreen menu",
+        "编程教育首屏",
+        "HLS 背景",
+        "网格线",
+        "光晕",
+        "高级视频首屏",
+        "暗黑视频背景"
+      ],
+      "negative_prompt_tags": [
+        "hls-without-fallback",
+        "glow-over-text",
+        "no-gradient-overlay",
+        "animated-grid-noise"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-technical-education-hls-hero-implementation",
+    "record_id": "pattern-technical-education-hls-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "implementation",
+    "content": "# User curated premium video hero skill set - Implementation Hints\n\nPage type: landing_page\nUse cases: coding education hero, technical bootcamp landing page, career-ready curriculum hero, engineering learning product, developer portfolio landing page, technical HLS video background\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- HLS: use hls.js for .m3u8, native HLS if browser canPlayType supports it, and MP4 fallback if available.\n- In sandboxed environments, hls.js can use enableWorker:false for stability.\n- Vertical grid lines at 25%, 50%, and 75% create engineering structure.\n- SVG glow uses ellipse plus Gaussian blur around 20px to 40px, matching the accent color.\n- Floating glass info card can show year, credibility, instructor proof, feature highlight, or product claim.\n- Technical typography can use Inter Extra Bold headline, Plus Jakarta Sans eyebrow, and Instrument Serif italic for one emphasized word.\n\nAI summary: Technical education HLS hero for coding bootcamp, developer curriculum, engineering learning, and career-ready course landing pages. Uses hls.js/native HLS/MP4 fallback, video opacity around 60%, dark directional gradients, desktop vertical grid overlay, SVG ellipse glow, floating 200px glass info card, uppercase headline, serif accent, and single accent punctuation.",
+    "tokens": 185,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "technical-education-hero",
+        "coding education hero",
+        "HLS hero",
+        "hls-video-hero",
+        "vertical-grid-overlay",
+        "SVG glow",
+        "single-accent-punctuation",
+        "serif-accent-typography",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "mobile fullscreen menu",
+        "编程教育首屏",
+        "HLS 背景",
+        "网格线",
+        "光晕",
+        "高级视频首屏",
+        "暗黑视频背景"
+      ],
+      "negative_prompt_tags": [
+        "hls-without-fallback",
+        "glow-over-text",
+        "no-gradient-overlay",
+        "animated-grid-noise"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-two-panel-liquid-glass-hero-overview",
+    "record_id": "pattern-two-panel-liquid-glass-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "overview",
+    "content": "# User curated premium video hero skill set - Overview\n\nPage type: landing_page\nUse cases: creative AI split hero, visual generation platform, premium design platform, art and lifestyle product, Liquid Glass landing hero, portfolio first screen\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\nVisual traits:\n- full-screen video background\n- two-panel split composition\n- left narrative panel\n- right information cluster\n- light and strong Liquid Glass hierarchy\n- pseudo-element gradient glass rim\n- secondary glass cards and pills\n\nUse when:\n- creative AI split hero\n- visual generation platform\n- premium design platform\n- art and lifestyle product\n- Liquid Glass landing hero\n- portfolio first screen\n\nAvoid when:\n- dense dashboard workspace\n- small mobile-only page\n- no meaningful background media\n- right cluster unrelated to hero story\n- same glass intensity on every element\n- forcing desktop right panel onto small screens\n\nAI summary: Two-panel Liquid Glass split hero for premium creative AI, art, design, lifestyle, and visual-generation landing pages. Uses full-screen video, left narrative around 52%, right information cluster around 48%, right side hidden on mobile, two-tier glass hierarchy, strong glass CTA, light glass pills/cards, and pseudo-element gradient rims.",
+    "tokens": 192,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "two-panel hero",
+        "liquid glass hero",
+        "two-panel-split-hero",
+        "hero-information-cluster",
+        "strict grayscale glass",
+        "video hero",
+        "cinematic hero",
+        "custom SVG CTA",
+        "mobile fullscreen menu",
+        "双栏玻璃首屏",
+        "双栏 液态玻璃",
+        "灰度玻璃拟态",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "dashboard-ui-kit",
+        "random-floating-cards",
+        "same-glass-strength",
+        "mobile-overcrowding"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-two-panel-liquid-glass-hero-layout",
+    "record_id": "pattern-two-panel-liquid-glass-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "layout",
+    "content": "# User curated premium video hero skill set - Layout Rules\n\nPage type: landing_page\nUse cases: creative AI split hero, visual generation platform, premium design platform, art and lifestyle product, Liquid Glass landing hero, portfolio first screen\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Use flex row and min-h-screen over a full-screen video background.\n- Left panel carries main narrative and is around 52% width on desktop.\n- Right panel carries secondary information clusters and is around 48% width on desktop.\n- Hide the right panel on mobile and prioritize the left main narrative.\n- Left panel contains brand navigation, logo, large headline, CTA, tags, pills, quote, or brand statement.\n- Right panel can contain social icon pill, account/sparkle button, community card, feature preview cards, bottom feature card, thumbnail, or plus button.\n- Information clusters must support the main story and must not feel like random floating decoration.\n\nAI summary: Two-panel Liquid Glass split hero for premium creative AI, art, design, lifestyle, and visual-generation landing pages. Uses full-screen video, left narrative around 52%, right information cluster around 48%, right side hidden on mobile, two-tier glass hierarchy, strong glass CTA, light glass pills/cards, and pseudo-element gradient rims.",
+    "tokens": 196,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "two-panel hero",
+        "liquid glass hero",
+        "two-panel-split-hero",
+        "hero-information-cluster",
+        "strict grayscale glass",
+        "video hero",
+        "cinematic hero",
+        "custom SVG CTA",
+        "mobile fullscreen menu",
+        "双栏玻璃首屏",
+        "双栏 液态玻璃",
+        "灰度玻璃拟态",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "dashboard-ui-kit",
+        "random-floating-cards",
+        "same-glass-strength",
+        "mobile-overcrowding"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-two-panel-liquid-glass-hero-components",
+    "record_id": "pattern-two-panel-liquid-glass-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "components",
+    "content": "# User curated premium video hero skill set - Component Patterns\n\nPage type: landing_page\nUse cases: creative AI split hero, visual generation platform, premium design platform, art and lifestyle product, Liquid Glass landing hero, portfolio first screen\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- liquid-glass light pills\n- liquid-glass-strong CTA\n- glass social icon pill\n- glass information cluster\n- community card\n- feature preview card\n- thumbnail plus button\n- quote card\n- pseudo-element gradient rim\n- two-tier glass hierarchy\n\nAI summary: Two-panel Liquid Glass split hero for premium creative AI, art, design, lifestyle, and visual-generation landing pages. Uses full-screen video, left narrative around 52%, right information cluster around 48%, right side hidden on mobile, two-tier glass hierarchy, strong glass CTA, light glass pills/cards, and pseudo-element gradient rims.",
+    "tokens": 129,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "two-panel hero",
+        "liquid glass hero",
+        "two-panel-split-hero",
+        "hero-information-cluster",
+        "strict grayscale glass",
+        "video hero",
+        "cinematic hero",
+        "custom SVG CTA",
+        "mobile fullscreen menu",
+        "双栏玻璃首屏",
+        "双栏 液态玻璃",
+        "灰度玻璃拟态",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "dashboard-ui-kit",
+        "random-floating-cards",
+        "same-glass-strength",
+        "mobile-overcrowding"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-two-panel-liquid-glass-hero-interaction",
+    "record_id": "pattern-two-panel-liquid-glass-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "interaction",
+    "content": "# User curated premium video hero skill set - Interaction States\n\nPage type: landing_page\nUse cases: creative AI split hero, visual generation platform, premium design platform, art and lifestyle product, Liquid Glass landing hero, portfolio first screen\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Glass CTA hover uses scale-105; active uses scale-95.\n- Light glass supports pills, chips, social buttons, small cards, secondary controls, and feature cards.\n- Strong glass supports CTA, large panels, main overlays, primary cards, and major information blocks.\n- Do not use the same glass intensity everywhere.\n- Use video overlays or reduced opacity to preserve text and CTA readability.\n- Mobile should remove or collapse secondary clusters instead of cramming them under the headline.\n\nAI summary: Two-panel Liquid Glass split hero for premium creative AI, art, design, lifestyle, and visual-generation landing pages. Uses full-screen video, left narrative around 52%, right information cluster around 48%, right side hidden on mobile, two-tier glass hierarchy, strong glass CTA, light glass pills/cards, and pseudo-element gradient rims.",
+    "tokens": 167,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "two-panel hero",
+        "liquid glass hero",
+        "two-panel-split-hero",
+        "hero-information-cluster",
+        "strict grayscale glass",
+        "video hero",
+        "cinematic hero",
+        "custom SVG CTA",
+        "mobile fullscreen menu",
+        "双栏玻璃首屏",
+        "双栏 液态玻璃",
+        "灰度玻璃拟态",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "dashboard-ui-kit",
+        "random-floating-cards",
+        "same-glass-strength",
+        "mobile-overcrowding"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-two-panel-liquid-glass-hero-accessibility",
+    "record_id": "pattern-two-panel-liquid-glass-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "accessibility",
+    "content": "# User curated premium video hero skill set - Accessibility Notes\n\nPage type: landing_page\nUse cases: creative AI split hero, visual generation platform, premium design platform, art and lifestyle product, Liquid Glass landing hero, portfolio first screen\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Keep primary narrative first in DOM order.\n- Hide decorative right-panel elements from assistive tech if they do not add meaning.\n- Ensure mobile retains CTA and main value proposition.\n- Check contrast on every glass cluster over video.\n- Do not rely on glass blur alone for text readability.\n- Respect reduced motion and reduced transparency.\n\nAI summary: Two-panel Liquid Glass split hero for premium creative AI, art, design, lifestyle, and visual-generation landing pages. Uses full-screen video, left narrative around 52%, right information cluster around 48%, right side hidden on mobile, two-tier glass hierarchy, strong glass CTA, light glass pills/cards, and pseudo-element gradient rims.",
+    "tokens": 149,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "two-panel hero",
+        "liquid glass hero",
+        "two-panel-split-hero",
+        "hero-information-cluster",
+        "strict grayscale glass",
+        "video hero",
+        "cinematic hero",
+        "custom SVG CTA",
+        "mobile fullscreen menu",
+        "双栏玻璃首屏",
+        "双栏 液态玻璃",
+        "灰度玻璃拟态",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "dashboard-ui-kit",
+        "random-floating-cards",
+        "same-glass-strength",
+        "mobile-overcrowding"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-two-panel-liquid-glass-hero-implementation",
+    "record_id": "pattern-two-panel-liquid-glass-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "implementation",
+    "content": "# User curated premium video hero skill set - Implementation Hints\n\nPage type: landing_page\nUse cases: creative AI split hero, visual generation platform, premium design platform, art and lifestyle product, Liquid Glass landing hero, portfolio first screen\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Desktop layout: left panel about 52%, right panel about 48%.\n- Use .liquid-glass for light elements and .liquid-glass-strong for CTA or major panels.\n- Premium glass boundaries use ::before, padding 1px to 1.5px, linear-gradient rim, and mask-composite exclude/xor where supported.\n- Glass UI needs hierarchy: light glass is supporting; strong glass is closer to the viewer.\n- Use directional overlays when video brightness changes behind either panel.\n\nAI summary: Two-panel Liquid Glass split hero for premium creative AI, art, design, lifestyle, and visual-generation landing pages. Uses full-screen video, left narrative around 52%, right information cluster around 48%, right side hidden on mobile, two-tier glass hierarchy, strong glass CTA, light glass pills/cards, and pseudo-element gradient rims.",
+    "tokens": 159,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "two-panel hero",
+        "liquid glass hero",
+        "two-panel-split-hero",
+        "hero-information-cluster",
+        "strict grayscale glass",
+        "video hero",
+        "cinematic hero",
+        "custom SVG CTA",
+        "mobile fullscreen menu",
+        "双栏玻璃首屏",
+        "双栏 液态玻璃",
+        "灰度玻璃拟态",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "dashboard-ui-kit",
+        "random-floating-cards",
+        "same-glass-strength",
+        "mobile-overcrowding"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-video-hero-layout-variants-overview",
+    "record_id": "pattern-video-hero-layout-variants",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "overview",
+    "content": "# User curated premium video hero skill set - Overview\n\nPage type: landing_page\nUse cases: premium video hero, landing page opening, SaaS homepage hero, portfolio first screen, cinematic product website, app launch page\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\nVisual traits:\n- multiple hero composition models instead of one centered template\n- full-screen video with readable content layers\n- top-aligned campaign pressure\n- bottom-left film poster composition\n- centered SaaS/app video hero\n- two-panel Liquid Glass split hero\n- technical education HLS hero\n- strict grayscale Liquid Glass hero\n\nUse when:\n- premium video hero\n- landing page opening\n- SaaS homepage hero\n- portfolio first screen\n- cinematic product website\n- app launch page\n\nAvoid when:\n- dashboard or persistent workspace UI\n- complex console or dense form workflow\n- video without readability checks\n- forcing desktop navigation into mobile\n- mixing too many CTA systems\n- random decorative information clusters\n- full-line gradient headlines when single accent punctuation is enough\n\nAI summary: Premium video hero layout system for landing page, SaaS homepage, portfolio first screen, app launch, and cinematic product websites. Choose a composition model before coding: top-aligned campaign, bottom-left poster, MP4 dark video, centered SaaS/app video, two-panel Liquid Glass, technical education HLS, or strict grayscale glass. Includes video layer, typography, CTA, nav, mobile menu, overlays, and information clusters.",
+    "tokens": 221,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "video hero",
+        "cinematic hero",
+        "HLS hero",
+        "MP4 background video",
+        "bottom-left hero",
+        "top-aligned hero",
+        "centered SaaS hero",
+        "two-panel hero",
+        "liquid glass hero",
+        "strict grayscale glass",
+        "coding education hero",
+        "SVG glow",
+        "vertical grid overlay",
+        "custom SVG CTA",
+        "mobile fullscreen menu",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "双栏玻璃首屏",
+        "灰度玻璃拟态",
+        "编程教育首屏",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "dashboard-ui-kit",
+        "workspace-components",
+        "generic-centered-hero",
+        "no-video-overlay",
+        "desktop-nav-on-mobile"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-video-hero-layout-variants-layout",
+    "record_id": "pattern-video-hero-layout-variants",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "layout",
+    "content": "# User curated premium video hero skill set - Layout Rules\n\nPage type: landing_page\nUse cases: premium video hero, landing page opening, SaaS homepage hero, portfolio first screen, cinematic product website, app launch page\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Choose a clear hero composition model before coding.\n- Do not default every hero to centered text.\n- Top-aligned cinematic hero uses min-h-screen, large top padding, giant uppercase type, tight line-height, and campaign CTA.\n- Bottom-left cinematic hero uses full-screen video, content bottom-left, controlled max-width, and directional gradients.\n- Centered SaaS/app video hero uses centered headline, tagline pill, dual CTA, and transparent overlay navigation.\n- Two-panel Liquid Glass split hero uses left narrative around 52% and right information cluster around 48%, with right panel hidden on mobile.\n- Technical education HLS hero uses HLS video, vertical grid, SVG glow, floating glass info card, and uppercase technical headline.\n- Strict grayscale hero uses no colored accents and relies on opacity hierarchy, material, typography, and spacing.\n\nAI summary: Premium video hero layout system for landing page, SaaS homepage, portfolio first screen, app launch, and cinematic product websites. Choose a composition model before coding: top-aligned campaign, bottom-left poster, MP4 dark video, centered SaaS/app video, two-panel Liquid Glass, technical education HLS, or strict grayscale glass. Includes video layer, typography, CTA, nav, mobile menu, overlays, and information clusters.",
+    "tokens": 224,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "video hero",
+        "cinematic hero",
+        "HLS hero",
+        "MP4 background video",
+        "bottom-left hero",
+        "top-aligned hero",
+        "centered SaaS hero",
+        "two-panel hero",
+        "liquid glass hero",
+        "strict grayscale glass",
+        "coding education hero",
+        "SVG glow",
+        "vertical grid overlay",
+        "custom SVG CTA",
+        "mobile fullscreen menu",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "双栏玻璃首屏",
+        "灰度玻璃拟态",
+        "编程教育首屏",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "dashboard-ui-kit",
+        "workspace-components",
+        "generic-centered-hero",
+        "no-video-overlay",
+        "desktop-nav-on-mobile"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-video-hero-layout-variants-components",
+    "record_id": "pattern-video-hero-layout-variants",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "components",
+    "content": "# User curated premium video hero skill set - Component Patterns\n\nPage type: landing_page\nUse cases: premium video hero, landing page opening, SaaS homepage hero, portfolio first screen, cinematic product website, app launch page\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- top-aligned uppercase headline\n- bottom-left content cluster\n- full-screen MP4 background video\n- centered SaaS tagline pill\n- dual CTA row\n- transparent overlay navbar\n- mobile fullscreen menu\n- directional readability gradient\n- glass information cluster\n- custom SVG CTA\n- single accent punctuation\n\nAI summary: Premium video hero layout system for landing page, SaaS homepage, portfolio first screen, app launch, and cinematic product websites. Choose a composition model before coding: top-aligned campaign, bottom-left poster, MP4 dark video, centered SaaS/app video, two-panel Liquid Glass, technical education HLS, or strict grayscale glass. Includes video layer, typography, CTA, nav, mobile menu, overlays, and information clusters.",
+    "tokens": 145,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "video hero",
+        "cinematic hero",
+        "HLS hero",
+        "MP4 background video",
+        "bottom-left hero",
+        "top-aligned hero",
+        "centered SaaS hero",
+        "two-panel hero",
+        "liquid glass hero",
+        "strict grayscale glass",
+        "coding education hero",
+        "SVG glow",
+        "vertical grid overlay",
+        "custom SVG CTA",
+        "mobile fullscreen menu",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "双栏玻璃首屏",
+        "灰度玻璃拟态",
+        "编程教育首屏",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "dashboard-ui-kit",
+        "workspace-components",
+        "generic-centered-hero",
+        "no-video-overlay",
+        "desktop-nav-on-mobile"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-video-hero-layout-variants-interaction",
+    "record_id": "pattern-video-hero-layout-variants",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "interaction",
+    "content": "# User curated premium video hero skill set - Interaction States\n\nPage type: landing_page\nUse cases: premium video hero, landing page opening, SaaS homepage hero, portfolio first screen, cinematic product website, app launch page\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- MP4 video uses autoPlay, loop, muted, playsInline, object-cover, absolute inset-0, and z-0.\n- Content sits above video at z-10 or z-20; navbar sits above at z-20 to z-50.\n- CTA hover uses restrained scale-105; active uses scale-95.\n- Mobile hamburger opens a functional full-screen dark overlay menu.\n- Video readability must be checked before omitting overlays.\n- Reduced-motion mode should use static poster or reduced video emphasis.\n\nAI summary: Premium video hero layout system for landing page, SaaS homepage, portfolio first screen, app launch, and cinematic product websites. Choose a composition model before coding: top-aligned campaign, bottom-left poster, MP4 dark video, centered SaaS/app video, two-panel Liquid Glass, technical education HLS, or strict grayscale glass. Includes video layer, typography, CTA, nav, mobile menu, overlays, and information clusters.",
+    "tokens": 167,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "video hero",
+        "cinematic hero",
+        "HLS hero",
+        "MP4 background video",
+        "bottom-left hero",
+        "top-aligned hero",
+        "centered SaaS hero",
+        "two-panel hero",
+        "liquid glass hero",
+        "strict grayscale glass",
+        "coding education hero",
+        "SVG glow",
+        "vertical grid overlay",
+        "custom SVG CTA",
+        "mobile fullscreen menu",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "双栏玻璃首屏",
+        "灰度玻璃拟态",
+        "编程教育首屏",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "dashboard-ui-kit",
+        "workspace-components",
+        "generic-centered-hero",
+        "no-video-overlay",
+        "desktop-nav-on-mobile"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-video-hero-layout-variants-accessibility",
+    "record_id": "pattern-video-hero-layout-variants",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "accessibility",
+    "content": "# User curated premium video hero skill set - Accessibility Notes\n\nPage type: landing_page\nUse cases: premium video hero, landing page opening, SaaS homepage hero, portfolio first screen, cinematic product website, app launch page\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Do not place white text directly over bright video areas without gradient support.\n- Do not rely on video content as the only value proposition.\n- Use muted autoplay video only; never autoplay audio.\n- Mobile menus must be keyboard reachable and dismissible.\n- Check CTA contrast against video and overlays.\n- Avoid rapid motion behind long reading content.\n\nAI summary: Premium video hero layout system for landing page, SaaS homepage, portfolio first screen, app launch, and cinematic product websites. Choose a composition model before coding: top-aligned campaign, bottom-left poster, MP4 dark video, centered SaaS/app video, two-panel Liquid Glass, technical education HLS, or strict grayscale glass. Includes video layer, typography, CTA, nav, mobile menu, overlays, and information clusters.",
+    "tokens": 159,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "video hero",
+        "cinematic hero",
+        "HLS hero",
+        "MP4 background video",
+        "bottom-left hero",
+        "top-aligned hero",
+        "centered SaaS hero",
+        "two-panel hero",
+        "liquid glass hero",
+        "strict grayscale glass",
+        "coding education hero",
+        "SVG glow",
+        "vertical grid overlay",
+        "custom SVG CTA",
+        "mobile fullscreen menu",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "双栏玻璃首屏",
+        "灰度玻璃拟态",
+        "编程教育首屏",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "dashboard-ui-kit",
+        "workspace-components",
+        "generic-centered-hero",
+        "no-video-overlay",
+        "desktop-nav-on-mobile"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-video-hero-layout-variants-implementation",
+    "record_id": "pattern-video-hero-layout-variants",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "implementation",
+    "content": "# User curated premium video hero skill set - Implementation Hints\n\nPage type: landing_page\nUse cases: premium video hero, landing page opening, SaaS homepage hero, portfolio first screen, cinematic product website, app launch page\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Recommended hero models: top-aligned cinematic, bottom-left cinematic, full-screen MP4 dark video, centered SaaS/app video, strict grayscale Liquid Glass, two-panel Liquid Glass split, and technical education HLS.\n- Top-aligned campaign typography can use Rubik or strong geometric sans, uppercase, bold, text-6xl mobile, text-8xl tablet, around 100px desktop, line-height 0.98, letter-spacing -2px to -4px.\n- Bottom-left hero z-index: video z-0, overlay z-5, content z-10 or z-20, navbar z-50.\n- MP4 background video requires autoPlay, loop, muted, playsInline, absolute inset-0, w-full, h-full, object-cover, z-0.\n- Directional overlays are better than a single generic black overlay: left text uses left-to-right gradient, bottom text uses bottom-up gradient, centered text uses radial or central contrast layer.\n\nAI summary: Premium video hero layout system for landing page, SaaS homepage, portfolio first screen, app launch, and cinematic product websites. Choose a composition model before coding: top-aligned campaign, bottom-left poster, MP4 dark video, centered SaaS/app video, two-panel Liquid Glass, technical education HLS, or strict grayscale glass. Includes video layer, typography, CTA, nav, mobile menu, overlays, and information clusters.",
+    "tokens": 210,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "video hero",
+        "cinematic hero",
+        "HLS hero",
+        "MP4 background video",
+        "bottom-left hero",
+        "top-aligned hero",
+        "centered SaaS hero",
+        "two-panel hero",
+        "liquid glass hero",
+        "strict grayscale glass",
+        "coding education hero",
+        "SVG glow",
+        "vertical grid overlay",
+        "custom SVG CTA",
+        "mobile fullscreen menu",
+        "高级视频首屏",
+        "暗黑视频背景",
+        "双栏玻璃首屏",
+        "灰度玻璃拟态",
+        "编程教育首屏",
+        "底部左对齐 Hero",
+        "顶部压迫式 Hero"
+      ],
+      "negative_prompt_tags": [
+        "dashboard-ui-kit",
+        "workspace-components",
+        "generic-centered-hero",
+        "no-video-overlay",
+        "desktop-nav-on-mobile"
+      ]
+    }
+  },
+  {
     "chunk_id": "visual-style-ambient-dynamic-background-liquid-glass-overview",
     "record_id": "visual-style-ambient-dynamic-background-liquid-glass",
     "source_name": "Apple Liquid Glass dynamic material and web CSS accessibility references",

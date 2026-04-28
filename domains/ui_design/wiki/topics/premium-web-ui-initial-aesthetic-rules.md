@@ -23,12 +23,19 @@ Choose one dominant direction based on task context. Do not mix all styles at on
 5. Video-first immersive landing page.
 6. Premium AI product or design agency landing page.
 7. Liquid Glass Web App / SaaS Workspace / Dashboard UI Kit.
+8. Advanced video hero layout system.
 
 Use direction 7 when the task is an app surface rather than a marketing page:
 AI project workspace, SaaS dashboard, internal tool, project management
 workspace, app UI kit, control-heavy dashboard, or a screen with search, tabs,
 cards, modal forms, validation, and toast feedback. In this mode, do not default
 to landing-page hero composition.
+
+Use direction 8 when the task is a Hero, Landing Page, SaaS Homepage,
+Portfolio First Screen, product launch, coding education platform, or
+cinematic website. In this mode, prioritize `cinematic-video-hero-rules.md`
+and `video-hero-layout-patterns.md`. Do not blindly apply Web App / Dashboard
+UI Kit rules to hero pages.
 
 ## Color Rules
 
@@ -96,6 +103,18 @@ Avoid generic left-text-right-image by default. Prefer one of these:
 4. Product or design agency hero: announcement pill, gradient headline or
    editorial serif title, glass CTA, logo cloud or partner row, video or
    animated visual below hero text.
+5. Top-aligned cinematic campaign hero: content near top with giant uppercase
+   type and custom SVG CTA.
+6. Bottom-left cinematic poster hero: full-screen video, directional overlay,
+   bottom-left content, editorial/luxury composition.
+7. Centered SaaS / app video hero: tagline pill, dual CTA, transparent overlay
+   navbar, mobile full-screen menu.
+8. Two-panel Liquid Glass split hero: left narrative, right information
+   cluster, full-screen video, glass panels.
+9. Technical education HLS hero: HLS video, vertical grid, SVG glow, floating
+   glass info card, single accent punctuation.
+10. Strict grayscale Liquid Glass hero: no colored accents, white opacity
+    hierarchy, premium material and typography.
 
 Hero should feel like a launch page or film title frame, not a generic template.
 

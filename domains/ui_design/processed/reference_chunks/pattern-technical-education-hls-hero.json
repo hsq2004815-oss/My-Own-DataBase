@@ -1,0 +1,242 @@
+[
+  {
+    "chunk_id": "pattern-technical-education-hls-hero-overview",
+    "record_id": "pattern-technical-education-hls-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "overview",
+    "content": "# User curated premium video hero skill set - Overview\n\nPage type: landing_page\nUse cases: coding education hero, technical bootcamp landing page, career-ready curriculum hero, engineering learning product, developer portfolio landing page, technical HLS video background\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\nVisual traits:\n- HLS video background at reduced opacity\n- dark left gradient and bottom-up gradient\n- desktop vertical grid lines\n- central SVG ellipse glow\n- floating 200px glass info card\n- large uppercase technical headline\n- single accent punctuation\n- serif italic emphasis\n\nUse when:\n- coding education hero\n- technical bootcamp landing page\n- career-ready curriculum hero\n- engineering learning product\n- developer portfolio landing page\n- technical HLS video background\n\nAvoid when:\n- non-technical lifestyle homepage\n- simple MP4 hero where HLS is unnecessary\n- dense app dashboard\n- grid lines that create visual noise\n- glow placed over readable text\n- HLS without fallback or native support check\n\nAI summary: Technical education HLS hero for coding bootcamp, developer curriculum, engineering learning, and career-ready course landing pages. Uses hls.js/native HLS/MP4 fallback, video opacity around 60%, dark directional gradients, desktop vertical grid overlay, SVG ellipse glow, floating 200px glass info card, uppercase headline, serif accent, and single accent punctuation.",
+    "tokens": 204,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "technical-education-hero",
+        "coding education hero",
+        "HLS hero",
+        "hls-video-hero",
+        "vertical-grid-overlay",
+        "SVG glow",
+        "single-accent-punctuation",
+        "serif-accent-typography",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "mobile fullscreen menu",
+        "编程教育首屏",
+        "HLS 背景",
+        "网格线",
+        "光晕",
+        "高级视频首屏",
+        "暗黑视频背景"
+      ],
+      "negative_prompt_tags": [
+        "hls-without-fallback",
+        "glow-over-text",
+        "no-gradient-overlay",
+        "animated-grid-noise"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-technical-education-hls-hero-layout",
+    "record_id": "pattern-technical-education-hls-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "layout",
+    "content": "# User curated premium video hero skill set - Layout Rules\n\nPage type: landing_page\nUse cases: coding education hero, technical bootcamp landing page, career-ready curriculum hero, engineering learning product, developer portfolio landing page, technical HLS video background\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Use HLS video background for technical education or engineering learning products.\n- Use video opacity around 60% when text needs stronger readability.\n- Use dark left gradient for left-side text and bottom-up gradient for bottom content.\n- Place vertical grid lines at 25%, 50%, and 75% with opacity around white/10 on desktop.\n- Use SVG ellipse glow with Gaussian blur around 20px to 40px behind content, not over text.\n- Use a floating glass info card around 200px by 200px above the headline, optionally shifted with translate-y-[-50px].\n- Use one accent punctuation, symbol, or keyword instead of full-line gradient headline.\n\nAI summary: Technical education HLS hero for coding bootcamp, developer curriculum, engineering learning, and career-ready course landing pages. Uses hls.js/native HLS/MP4 fallback, video opacity around 60%, dark directional gradients, desktop vertical grid overlay, SVG ellipse glow, floating 200px glass info card, uppercase headline, serif accent, and single accent punctuation.",
+    "tokens": 193,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "technical-education-hero",
+        "coding education hero",
+        "HLS hero",
+        "hls-video-hero",
+        "vertical-grid-overlay",
+        "SVG glow",
+        "single-accent-punctuation",
+        "serif-accent-typography",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "mobile fullscreen menu",
+        "编程教育首屏",
+        "HLS 背景",
+        "网格线",
+        "光晕",
+        "高级视频首屏",
+        "暗黑视频背景"
+      ],
+      "negative_prompt_tags": [
+        "hls-without-fallback",
+        "glow-over-text",
+        "no-gradient-overlay",
+        "animated-grid-noise"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-technical-education-hls-hero-components",
+    "record_id": "pattern-technical-education-hls-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "components",
+    "content": "# User curated premium video hero skill set - Component Patterns\n\nPage type: landing_page\nUse cases: coding education hero, technical bootcamp landing page, career-ready curriculum hero, engineering learning product, developer portfolio landing page, technical HLS video background\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- HLS video background\n- MP4 fallback source\n- left gradient overlay\n- bottom-up gradient overlay\n- vertical grid overlay\n- SVG ellipse glow\n- floating glass info card\n- career-ready eyebrow\n- uppercase headline\n- single accent punctuation\n- serif italic emphasis word\n\nAI summary: Technical education HLS hero for coding bootcamp, developer curriculum, engineering learning, and career-ready course landing pages. Uses hls.js/native HLS/MP4 fallback, video opacity around 60%, dark directional gradients, desktop vertical grid overlay, SVG ellipse glow, floating 200px glass info card, uppercase headline, serif accent, and single accent punctuation.",
+    "tokens": 136,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "technical-education-hero",
+        "coding education hero",
+        "HLS hero",
+        "hls-video-hero",
+        "vertical-grid-overlay",
+        "SVG glow",
+        "single-accent-punctuation",
+        "serif-accent-typography",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "mobile fullscreen menu",
+        "编程教育首屏",
+        "HLS 背景",
+        "网格线",
+        "光晕",
+        "高级视频首屏",
+        "暗黑视频背景"
+      ],
+      "negative_prompt_tags": [
+        "hls-without-fallback",
+        "glow-over-text",
+        "no-gradient-overlay",
+        "animated-grid-noise"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-technical-education-hls-hero-interaction",
+    "record_id": "pattern-technical-education-hls-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "interaction",
+    "content": "# User curated premium video hero skill set - Interaction States\n\nPage type: landing_page\nUse cases: coding education hero, technical bootcamp landing page, career-ready curriculum hero, engineering learning product, developer portfolio landing page, technical HLS video background\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Use hls.js for .m3u8 when browser support requires it.\n- Use native HLS when supported by the browser.\n- Use MP4 fallback when provided.\n- Use enableWorker:false in sandboxed preview environments if needed.\n- Grid lines should remain stable and not become animated noise.\n- SVG glow can fade subtly but must not reduce text readability.\n- Reduced-motion mode should keep structure and use poster/fallback where appropriate.\n\nAI summary: Technical education HLS hero for coding bootcamp, developer curriculum, engineering learning, and career-ready course landing pages. Uses hls.js/native HLS/MP4 fallback, video opacity around 60%, dark directional gradients, desktop vertical grid overlay, SVG ellipse glow, floating 200px glass info card, uppercase headline, serif accent, and single accent punctuation.",
+    "tokens": 160,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "technical-education-hero",
+        "coding education hero",
+        "HLS hero",
+        "hls-video-hero",
+        "vertical-grid-overlay",
+        "SVG glow",
+        "single-accent-punctuation",
+        "serif-accent-typography",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "mobile fullscreen menu",
+        "编程教育首屏",
+        "HLS 背景",
+        "网格线",
+        "光晕",
+        "高级视频首屏",
+        "暗黑视频背景"
+      ],
+      "negative_prompt_tags": [
+        "hls-without-fallback",
+        "glow-over-text",
+        "no-gradient-overlay",
+        "animated-grid-noise"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-technical-education-hls-hero-accessibility",
+    "record_id": "pattern-technical-education-hls-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "accessibility",
+    "content": "# User curated premium video hero skill set - Accessibility Notes\n\nPage type: landing_page\nUse cases: coding education hero, technical bootcamp landing page, career-ready curriculum hero, engineering learning product, developer portfolio landing page, technical HLS video background\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- Do not rely only on one black transparent overlay; use directional gradients.\n- Keep video motion behind text subdued.\n- Ensure grid lines and glow do not reduce contrast.\n- Provide non-video fallback or poster when HLS fails.\n- Do not use video content as the only explanation of the product.\n- Keep mobile layout simpler and reduce or hide desktop grid lines.\n\nAI summary: Technical education HLS hero for coding bootcamp, developer curriculum, engineering learning, and career-ready course landing pages. Uses hls.js/native HLS/MP4 fallback, video opacity around 60%, dark directional gradients, desktop vertical grid overlay, SVG ellipse glow, floating 200px glass info card, uppercase headline, serif accent, and single accent punctuation.",
+    "tokens": 156,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "technical-education-hero",
+        "coding education hero",
+        "HLS hero",
+        "hls-video-hero",
+        "vertical-grid-overlay",
+        "SVG glow",
+        "single-accent-punctuation",
+        "serif-accent-typography",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "mobile fullscreen menu",
+        "编程教育首屏",
+        "HLS 背景",
+        "网格线",
+        "光晕",
+        "高级视频首屏",
+        "暗黑视频背景"
+      ],
+      "negative_prompt_tags": [
+        "hls-without-fallback",
+        "glow-over-text",
+        "no-gradient-overlay",
+        "animated-grid-noise"
+      ]
+    }
+  },
+  {
+    "chunk_id": "pattern-technical-education-hls-hero-implementation",
+    "record_id": "pattern-technical-education-hls-hero",
+    "source_name": "User curated premium video hero skill set",
+    "source_url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "page_type": "landing_page",
+    "section": "implementation",
+    "content": "# User curated premium video hero skill set - Implementation Hints\n\nPage type: landing_page\nUse cases: coding education hero, technical bootcamp landing page, career-ready curriculum hero, engineering learning product, developer portfolio landing page, technical HLS video background\nEvidence: direct_spec / high\nSource: local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt\n\n- HLS: use hls.js for .m3u8, native HLS if browser canPlayType supports it, and MP4 fallback if available.\n- In sandboxed environments, hls.js can use enableWorker:false for stability.\n- Vertical grid lines at 25%, 50%, and 75% create engineering structure.\n- SVG glow uses ellipse plus Gaussian blur around 20px to 40px, matching the accent color.\n- Floating glass info card can show year, credibility, instructor proof, feature highlight, or product claim.\n- Technical typography can use Inter Extra Bold headline, Plus Jakarta Sans eyebrow, and Instrument Serif italic for one emphasized word.\n\nAI summary: Technical education HLS hero for coding bootcamp, developer curriculum, engineering learning, and career-ready course landing pages. Uses hls.js/native HLS/MP4 fallback, video opacity around 60%, dark directional gradients, desktop vertical grid overlay, SVG ellipse glow, floating 200px glass info card, uppercase headline, serif accent, and single accent punctuation.",
+    "tokens": 185,
+    "metadata": {
+      "signal_strength": "high",
+      "evidence_level": "direct_spec",
+      "prompt_tags": [
+        "technical-education-hero",
+        "coding education hero",
+        "HLS hero",
+        "hls-video-hero",
+        "vertical-grid-overlay",
+        "SVG glow",
+        "single-accent-punctuation",
+        "serif-accent-typography",
+        "video hero",
+        "cinematic hero",
+        "MP4 background video",
+        "mobile fullscreen menu",
+        "编程教育首屏",
+        "HLS 背景",
+        "网格线",
+        "光晕",
+        "高级视频首屏",
+        "暗黑视频背景"
+      ],
+      "negative_prompt_tags": [
+        "hls-without-fallback",
+        "glow-over-text",
+        "no-gradient-overlay",
+        "animated-grid-noise"
+      ]
+    }
+  }
+]

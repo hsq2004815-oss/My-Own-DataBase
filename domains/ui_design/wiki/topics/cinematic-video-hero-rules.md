@@ -13,6 +13,48 @@ websites.
 - Use large centered headline, short subheadline, CTA row, and a floating navbar.
 - Add gradient fades for readability.
 
+For more specific composition choices, use `video-hero-layout-patterns.md`.
+Choose a model before coding: top-aligned campaign, bottom-left cinematic
+poster, full-screen MP4 dark video, centered SaaS/app video, strict grayscale
+Liquid Glass, two-panel Liquid Glass split hero, or technical education HLS
+hero.
+
+## Composition Models
+
+Top-aligned cinematic hero:
+
+- Use for campaign, brand launch, creative product, and high-impact homepage.
+- Align content near the top with large padding, around `pt-32` mobile and
+  `pt-48` desktop.
+- Use uppercase giant type, line-height around `0.98`, and letter-spacing
+  around `-2px` to `-4px`.
+- CTA may use a fixed-size custom SVG background shape, for example `184px` by
+  `65px`.
+
+Bottom-left cinematic hero:
+
+- Use for film-poster, luxury, fashion, portfolio, and visual-first startup
+  pages.
+- Position content bottom-left, not centered.
+- Add bottom and left directional gradients behind text.
+- Keep content max-width controlled and put navbar above video at `z-50`.
+
+Centered SaaS / app video hero:
+
+- Use for polished SaaS, booking, AI app, and software launch pages.
+- Center content vertically and horizontally.
+- Use a tagline pill above the headline, one or two CTAs, and transparent
+  overlay navigation.
+- Mobile navigation should use hamburger plus full-screen dark overlay menu.
+
+Technical education HLS hero:
+
+- Use for coding education, technical career platforms, bootcamps, and developer
+  learning products.
+- Combine HLS video, dark directional gradients, desktop vertical grid lines,
+  SVG ellipse glow, floating `200px` glass info card, uppercase headline, and
+  single accent punctuation.
+
 ## Video Attributes
 
 Base attributes:
@@ -54,6 +96,18 @@ If a video hard-cuts, use a manual `requestAnimationFrame` driven fade loop:
 - Use hls.js for `.m3u8` when the browser needs it.
 - Fallback to native HLS when possible.
 - Fallback to MP4 when HLS fails if provided.
+- In sandboxed preview environments, use `enableWorker: false` when worker
+  setup causes instability.
+
+## CTA And Navigation
+
+- Use transparent overlay navbar for clean SaaS/app video heroes.
+- Use glass navigation for busy video backgrounds or changing brightness.
+- Do not squeeze desktop links into mobile; use hamburger plus full-screen dark
+  overlay menu.
+- Match CTA to hero style: custom SVG CTA for campaign heroes, dual CTA for
+  SaaS/app heroes, strong glass CTA for Liquid Glass video heroes.
+- Avoid mixing too many button systems in one hero.
 
 ## Avoid
 
@@ -62,3 +116,5 @@ If a video hard-cuts, use a manual `requestAnimationFrame` driven fade loop:
 - Letting video steal attention from CTA.
 - Heavy CSS blur on full-screen video.
 - Motion that makes reading difficult.
+- Defaulting every video hero to centered text.
+- Applying Web App / Dashboard UI Kit rules to marketing hero composition.

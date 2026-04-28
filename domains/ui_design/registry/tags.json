@@ -508,5 +508,100 @@
     "tag": "micro-interaction-states",
     "category": "design",
     "description": "Hover, focus, active, loading, validation, disabled, toast, and reveal interaction states"
+  },
+  {
+    "tag": "video-hero-layouts",
+    "category": "design",
+    "description": "Premium video hero composition systems for landing pages, SaaS homepages, portfolios, and launch pages"
+  },
+  {
+    "tag": "top-aligned-hero",
+    "category": "design",
+    "description": "Campaign-like hero with top-aligned content and giant uppercase type"
+  },
+  {
+    "tag": "bottom-left-hero",
+    "category": "design",
+    "description": "Film-poster hero with content placed bottom-left over full-screen video"
+  },
+  {
+    "tag": "centered-video-hero",
+    "category": "design",
+    "description": "Centered SaaS or app launch hero over full-screen video"
+  },
+  {
+    "tag": "two-panel-split-hero",
+    "category": "design",
+    "description": "Two-panel hero with left narrative and right supporting information cluster"
+  },
+  {
+    "tag": "technical-education-hero",
+    "category": "design",
+    "description": "Coding education or engineering learning hero with HLS video, grid, glow, and technical typography"
+  },
+  {
+    "tag": "hls-video-hero",
+    "category": "design",
+    "description": "Hero pattern using HLS video, native fallback, and MP4 fallback"
+  },
+  {
+    "tag": "mp4-video-background",
+    "category": "design",
+    "description": "Native MP4 full-screen video background with autoplay muted playsInline"
+  },
+  {
+    "tag": "strict-grayscale-glass",
+    "category": "design",
+    "description": "Strict grayscale Liquid Glass hero with no colored accents"
+  },
+  {
+    "tag": "transparent-overlay-navbar",
+    "category": "design",
+    "description": "Transparent full-width navbar over video hero content"
+  },
+  {
+    "tag": "mobile-fullscreen-menu",
+    "category": "design",
+    "description": "Mobile hamburger navigation that opens a full-screen overlay menu"
+  },
+  {
+    "tag": "custom-svg-cta",
+    "category": "design",
+    "description": "CTA button using a custom SVG shape behind centered text"
+  },
+  {
+    "tag": "svg-glow",
+    "category": "design",
+    "description": "SVG ellipse glow with Gaussian blur placed behind hero content"
+  },
+  {
+    "tag": "vertical-grid-overlay",
+    "category": "design",
+    "description": "Desktop technical grid lines over a hero background"
+  },
+  {
+    "tag": "single-accent-punctuation",
+    "category": "design",
+    "description": "Restrained hero accent using one punctuation mark, symbol, keyword, or cursor"
+  },
+  {
+    "tag": "serif-accent-typography",
+    "category": "design",
+    "description": "Short serif italic or serif accent inside an otherwise sans hero"
+  },
+  {
+    "tag": "tagline-pill",
+    "category": "design",
+    "description": "Glass or compact pill above a SaaS/app hero headline"
+  },
+  {
+    "tag": "dual-cta",
+    "category": "design",
+    "description": "Primary and secondary CTA pair with shared height and radius"
+  },
+  {
+    "tag": "hero-information-cluster",
+    "category": "design",
+    "description": "Secondary grouped hero content such as social proof, mini cards, stats, tags, or product teasers"
   }
 ]

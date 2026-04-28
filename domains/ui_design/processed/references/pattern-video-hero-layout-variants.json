@@ -1,0 +1,125 @@
+{
+  "record_id": "pattern-video-hero-layout-variants",
+  "source": {
+    "name": "User curated premium video hero skill set",
+    "url": "local-file:D:/Downloads/codex_video_hero_layout_patterns_prompt.txt",
+    "source_type": "case_study",
+    "license_notes": "User-curated prompt rules distilled into reusable local database guidance. Do not copy external media assets directly.",
+    "captured_at": "2026-04-28"
+  },
+  "domain": "ui_design",
+  "page_type": "landing_page",
+  "platform": ["web", "desktop", "mobile"],
+  "use_cases": [
+    "premium video hero",
+    "landing page opening",
+    "SaaS homepage hero",
+    "portfolio first screen",
+    "cinematic product website",
+    "app launch page"
+  ],
+  "visual_traits": [
+    "multiple hero composition models instead of one centered template",
+    "full-screen video with readable content layers",
+    "top-aligned campaign pressure",
+    "bottom-left film poster composition",
+    "centered SaaS/app video hero",
+    "two-panel Liquid Glass split hero",
+    "technical education HLS hero",
+    "strict grayscale Liquid Glass hero"
+  ],
+  "layout_rules": [
+    "Choose a clear hero composition model before coding.",
+    "Do not default every hero to centered text.",
+    "Top-aligned cinematic hero uses min-h-screen, large top padding, giant uppercase type, tight line-height, and campaign CTA.",
+    "Bottom-left cinematic hero uses full-screen video, content bottom-left, controlled max-width, and directional gradients.",
+    "Centered SaaS/app video hero uses centered headline, tagline pill, dual CTA, and transparent overlay navigation.",
+    "Two-panel Liquid Glass split hero uses left narrative around 52% and right information cluster around 48%, with right panel hidden on mobile.",
+    "Technical education HLS hero uses HLS video, vertical grid, SVG glow, floating glass info card, and uppercase technical headline.",
+    "Strict grayscale hero uses no colored accents and relies on opacity hierarchy, material, typography, and spacing."
+  ],
+  "component_patterns": [
+    "top-aligned uppercase headline",
+    "bottom-left content cluster",
+    "full-screen MP4 background video",
+    "centered SaaS tagline pill",
+    "dual CTA row",
+    "transparent overlay navbar",
+    "mobile fullscreen menu",
+    "directional readability gradient",
+    "glass information cluster",
+    "custom SVG CTA",
+    "single accent punctuation"
+  ],
+  "interaction_states": [
+    "MP4 video uses autoPlay, loop, muted, playsInline, object-cover, absolute inset-0, and z-0.",
+    "Content sits above video at z-10 or z-20; navbar sits above at z-20 to z-50.",
+    "CTA hover uses restrained scale-105; active uses scale-95.",
+    "Mobile hamburger opens a functional full-screen dark overlay menu.",
+    "Video readability must be checked before omitting overlays.",
+    "Reduced-motion mode should use static poster or reduced video emphasis."
+  ],
+  "accessibility_notes": [
+    "Do not place white text directly over bright video areas without gradient support.",
+    "Do not rely on video content as the only value proposition.",
+    "Use muted autoplay video only; never autoplay audio.",
+    "Mobile menus must be keyboard reachable and dismissible.",
+    "Check CTA contrast against video and overlays.",
+    "Avoid rapid motion behind long reading content."
+  ],
+  "implementation_hints": [
+    "Recommended hero models: top-aligned cinematic, bottom-left cinematic, full-screen MP4 dark video, centered SaaS/app video, strict grayscale Liquid Glass, two-panel Liquid Glass split, and technical education HLS.",
+    "Top-aligned campaign typography can use Rubik or strong geometric sans, uppercase, bold, text-6xl mobile, text-8xl tablet, around 100px desktop, line-height 0.98, letter-spacing -2px to -4px.",
+    "Bottom-left hero z-index: video z-0, overlay z-5, content z-10 or z-20, navbar z-50.",
+    "MP4 background video requires autoPlay, loop, muted, playsInline, absolute inset-0, w-full, h-full, object-cover, z-0.",
+    "Directional overlays are better than a single generic black overlay: left text uses left-to-right gradient, bottom text uses bottom-up gradient, centered text uses radial or central contrast layer."
+  ],
+  "avoid_when": [
+    "dashboard or persistent workspace UI",
+    "complex console or dense form workflow",
+    "video without readability checks",
+    "forcing desktop navigation into mobile",
+    "mixing too many CTA systems",
+    "random decorative information clusters",
+    "full-line gradient headlines when single accent punctuation is enough"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "direct_spec",
+    "notes": "Directly distilled from the user-curated premium video hero layout prompt."
+  },
+  "retrieval": {
+    "ai_summary": "Premium video hero layout system for landing page, SaaS homepage, portfolio first screen, app launch, and cinematic product websites. Choose a composition model before coding: top-aligned campaign, bottom-left poster, MP4 dark video, centered SaaS/app video, two-panel Liquid Glass, technical education HLS, or strict grayscale glass. Includes video layer, typography, CTA, nav, mobile menu, overlays, and information clusters.",
+    "prompt_tags": [
+      "video hero",
+      "cinematic hero",
+      "HLS hero",
+      "MP4 background video",
+      "bottom-left hero",
+      "top-aligned hero",
+      "centered SaaS hero",
+      "two-panel hero",
+      "liquid glass hero",
+      "strict grayscale glass",
+      "coding education hero",
+      "SVG glow",
+      "vertical grid overlay",
+      "custom SVG CTA",
+      "mobile fullscreen menu",
+      "高级视频首屏",
+      "暗黑视频背景",
+      "双栏玻璃首屏",
+      "灰度玻璃拟态",
+      "编程教育首屏",
+      "底部左对齐 Hero",
+      "顶部压迫式 Hero"
+    ],
+    "negative_prompt_tags": [
+      "dashboard-ui-kit",
+      "workspace-components",
+      "generic-centered-hero",
+      "no-video-overlay",
+      "desktop-nav-on-mobile"
+    ]
+  }
+}
