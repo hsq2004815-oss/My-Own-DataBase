@@ -1,0 +1,89 @@
+{
+  "id": "backend_github_project_nodebestpractices",
+  "project_name": "nodebestpractices",
+  "domain": "backend",
+  "source_type": "github_project",
+  "local_path": "E:\\DataBase\\domains\\backend\\raw\\github_projects\\node\\nodebestpractices",
+  "summary": "Node.js Best Practices 文档仓库，包含大量 Node 生产、测试、错误处理、安全、性能、Docker 和项目结构建议；不是完整后端应用。",
+  "tech_stack": [
+    "Dockerfile example",
+    "GitHub Actions for docs/lint",
+    "GitHub Actions 文档流程",
+    "README 多语言",
+    "sections",
+    "文档示例含 Express",
+    "文档覆盖 Jest/测试实践；仓库自身 markdownlint"
+  ],
+  "backend_subdomains": [
+    "Node.js rules",
+    "Testing",
+    "Security",
+    "Docker",
+    "Production"
+  ],
+  "strengths": [
+    "社区最佳实践丰富",
+    "多语言文档",
+    "规则候选价值高"
+  ],
+  "weaknesses": [
+    "非应用源码",
+    "无 DB/auth 实现",
+    "示例版本需筛选"
+  ],
+  "use_as": [
+    "Node 通用规则来源",
+    "错误/测试/部署 checklist 背景"
+  ],
+  "avoid_when": [
+    "需要可运行模板",
+    "需要 Prisma/Express 分层源码",
+    "需要权限实现"
+  ],
+  "trust_level": "core_reference",
+  "quality_score": {
+    "readme": 5,
+    "structure": 4,
+    "testing": 0,
+    "docker": 3,
+    "database_migration": 0,
+    "auth_permission": 0,
+    "logging_error_handling": 4,
+    "personal_project_value": 4,
+    "medium_project_value": 4,
+    "core_rule_value": 5
+  },
+  "recommended_target_files": [
+    "rules/backend-security-checklist.md",
+    "rules/error-handling-and-logging-rules.md",
+    "rules/deployment-and-env-rules.md",
+    "rules/backend-project-template-rules.md"
+  ],
+  "retrieval": {
+    "prompt_tags": [
+      "Node.js",
+      "best practices",
+      "Docker",
+      "testing",
+      "security",
+      "node",
+      "core_reference",
+      "backend github project",
+      "后端项目分析"
+    ],
+    "keywords": [
+      "Node.js best practices",
+      "error handling testing",
+      "Dockerfile best practice",
+      "Node security checklist",
+      "project structure",
+      "Node.js rules",
+      "Testing",
+      "Security",
+      "Docker",
+      "Production",
+      "backend rules candidate",
+      "后端规则候选"
+    ]
+  }
+}

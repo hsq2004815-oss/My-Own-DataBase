@@ -1,0 +1,80 @@
+[
+  {
+    "chunk_id": "backend-github-fastapi-langchain-rag-architecture",
+    "project_name": "fastapi-langchain-rag",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "fastapi-langchain-rag architecture observation",
+    "content": "fastapi-langchain-rag 的核心定位是：面向 RAG 问答系统的 FastAPI + LangChain 后端，使用 PostgreSQL/pgvector、Redis、SQLModel/SQLAlchemy，并包含 Cloud Run/Terraform 与迁移文档。 目录和边界观察：后端代码集中在 backend/app，下分 api、config、core、crud、ingestion、models、schemas、utils。；docs 按 getting-started、project-structure、database、data-migration、IaC 分章，适合学习项目说明文档组织。；ingestion 单独成模块，说明 RAG 项目应把文档解析/切分/入库和普通 API 路由隔离。 可复用重点是把项目能力拆成清晰模块，而不是复制全部源码。规则候选：RAG 后端应把 ingestion、vector store、API routes、schemas/models 分开。 适合检索时命中架构、项目模板、分层设计、AI Agent 生成后端骨架等任务。",
+    "tags": [
+      "FastAPI",
+      "RAG",
+      "LangChain",
+      "pgvector",
+      "AI backend",
+      "向量检索",
+      "architecture",
+      "ai_backend",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/ai-backend-design-rules.md",
+      "wiki/patterns/rag-backend-pipeline-pattern.md",
+      "wiki/templates/rag-backend-template.md",
+      "rules/deployment-and-env-rules.md"
+    ],
+    "trust_level": "good_reference"
+  },
+  {
+    "chunk_id": "backend-github-fastapi-langchain-rag-quality",
+    "project_name": "fastapi-langchain-rag",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "fastapi-langchain-rag quality observation",
+    "content": "fastapi-langchain-rag 的质量与部署观察：未发现成体系 tests 目录。；README/docs 清晰，但缺少测试证据降低模板可信度。；对 AI/RAG 架构参考价值高，对通用质量基线参考价值中等。；有 backend/Dockerfile。；README 描述 Cloud Run、CloudSQL、Redis 和 Terraform。 质量评分中 README=4/5、结构=4/5、测试=1/5、部署=3/5，trust_level=good_reference。不建议照搬：Terraform/Cloud Run/订阅系统对个人项目默认偏重。；OCR/unstructured/pdf 依赖很重，不应无需求默认加入。；缺少完整测试目录时不要把实现细节提升为核心规则。 适合用于判断样本是否能进入核心 rules，或仅作为 sample。",
+    "tags": [
+      "FastAPI",
+      "RAG",
+      "LangChain",
+      "pgvector",
+      "AI backend",
+      "向量检索",
+      "quality",
+      "ai_backend",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/ai-backend-design-rules.md",
+      "wiki/patterns/rag-backend-pipeline-pattern.md",
+      "wiki/templates/rag-backend-template.md",
+      "rules/deployment-and-env-rules.md"
+    ],
+    "trust_level": "good_reference"
+  },
+  {
+    "chunk_id": "backend-github-fastapi-langchain-rag-rules",
+    "project_name": "fastapi-langchain-rag",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "fastapi-langchain-rag rules observation",
+    "content": "fastapi-langchain-rag 的 API/数据/权限观察：存在 python-jose、fastapi-nextauth-jwt、passlib 等依赖。；用户/订阅限制是项目目标之一，但 RBAC/管理员权限实现未完整确认。；使用 PostgreSQL + pgvector 作为 RAG 向量存储核心。；使用 SQLModel/SQLAlchemy，适合学习模型与向量库结合。；存在 FastAPI API 路由组织线索。；OpenAPI/Swagger 可由 FastAPI 默认提供，未发现独立文档增强。 推荐关联知识库文件包括：rules/ai-backend-design-rules.md、wiki/patterns/rag-backend-pipeline-pattern.md、wiki/templates/rag-backend-template.md、rules/deployment-and-env-rules.md。生成代码时应先确认该项目是完整模板、库项目还是文档型规则来源；只有被多个项目共同支持的做法才应进入核心 rules，单一项目特性保留为 sample 或 wiki pattern 候选。",
+    "tags": [
+      "FastAPI",
+      "RAG",
+      "LangChain",
+      "pgvector",
+      "AI backend",
+      "向量检索",
+      "rules",
+      "ai_backend",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/ai-backend-design-rules.md",
+      "wiki/patterns/rag-backend-pipeline-pattern.md",
+      "wiki/templates/rag-backend-template.md",
+      "rules/deployment-and-env-rules.md"
+    ],
+    "trust_level": "good_reference"
+  }
+]

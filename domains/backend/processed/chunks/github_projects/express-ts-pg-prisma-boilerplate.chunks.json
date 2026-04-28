@@ -1,0 +1,83 @@
+[
+  {
+    "chunk_id": "backend-github-express-ts-pg-prisma-boilerplate-architecture",
+    "project_name": "express-ts-pg-prisma-boilerplate",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "express-ts-pg-prisma-boilerplate architecture observation",
+    "content": "express-ts-pg-prisma-boilerplate 的核心定位是：Express 5 + TypeScript + Prisma + PostgreSQL boilerplate，采用 Routes → Controllers → Services → Repositories 四层架构，支持 JWT access/refresh rotation、RBAC、Zod、Vitest、Supertest 和 Prisma migrations。 目录和边界观察：src/features/auth 与 src/features/user 按 feature 自包含。；每个 feature 下有 controllers、repositories、routes、schemas、services、tests。；src/middleware 包含 authenticate、authorize、error、request-guard、security、validation。 可复用重点是把项目能力拆成清晰模块，而不是复制全部源码。规则候选：Express TypeScript 项目应按 feature 拆分 routes/controllers/services/repositories/schemas。 适合检索时命中架构、项目模板、分层设计、AI Agent 生成后端骨架等任务。",
+    "tags": [
+      "Express",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "JWT",
+      "RBAC",
+      "architecture",
+      "node",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/backend-layered-architecture-rules.md",
+      "rules/auth-and-permission-rules.md",
+      "rules/database-modeling-rules.md",
+      "wiki/templates/express-project-template.md",
+      "wiki/patterns/jwt-refresh-token-pattern.md"
+    ],
+    "trust_level": "core_reference"
+  },
+  {
+    "chunk_id": "backend-github-express-ts-pg-prisma-boilerplate-quality",
+    "project_name": "express-ts-pg-prisma-boilerplate",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "express-ts-pg-prisma-boilerplate quality observation",
+    "content": "express-ts-pg-prisma-boilerplate 的质量与部署观察：unit tests 和 integration tests 分开。；Vitest + Supertest 覆盖 auth/user。；对个人项目和中型项目都具有高参考价值。；Dockerfile 偏开发，Makefile 提供 docker compose、migration、seed、test、lint 操作。；GitHub Actions CI 存在。 质量评分中 README=5/5、结构=5/5、测试=5/5、部署=4/5，trust_level=core_reference。不建议照搬：Dockerfile 使用 npm install/dev 命令，生产镜像还需优化。；没有 OpenAPI/Swagger 默认能力。；不要把 UNUSED_VARIABLE 当真实配置复制。 适合用于判断样本是否能进入核心 rules，或仅作为 sample。",
+    "tags": [
+      "Express",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "JWT",
+      "RBAC",
+      "quality",
+      "node",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/backend-layered-architecture-rules.md",
+      "rules/auth-and-permission-rules.md",
+      "rules/database-modeling-rules.md",
+      "wiki/templates/express-project-template.md",
+      "wiki/patterns/jwt-refresh-token-pattern.md"
+    ],
+    "trust_level": "core_reference"
+  },
+  {
+    "chunk_id": "backend-github-express-ts-pg-prisma-boilerplate-rules",
+    "project_name": "express-ts-pg-prisma-boilerplate",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "express-ts-pg-prisma-boilerplate rules observation",
+    "content": "express-ts-pg-prisma-boilerplate 的 API/数据/权限观察：JWT access token + refresh token rotation。；refresh token 以 SHA-256 hash 入库，HttpOnly cookie，jti 防碰撞。；Prisma schema、seed.ts、migrations 多个版本。；PostgreSQL 通过 pg/Prisma adapter。；README 明确 routes/controllers/services/repositories 四层。；REST API 组织清晰。 推荐关联知识库文件包括：rules/backend-layered-architecture-rules.md、rules/auth-and-permission-rules.md、rules/database-modeling-rules.md、wiki/templates/express-project-template.md。生成代码时应先确认该项目是完整模板、库项目还是文档型规则来源；只有被多个项目共同支持的做法才应进入核心 rules，单一项目特性保留为 sample 或 wiki pattern 候选。",
+    "tags": [
+      "Express",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "JWT",
+      "RBAC",
+      "rules",
+      "node",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/backend-layered-architecture-rules.md",
+      "rules/auth-and-permission-rules.md",
+      "rules/database-modeling-rules.md",
+      "wiki/templates/express-project-template.md",
+      "wiki/patterns/jwt-refresh-token-pattern.md"
+    ],
+    "trust_level": "core_reference"
+  }
+]

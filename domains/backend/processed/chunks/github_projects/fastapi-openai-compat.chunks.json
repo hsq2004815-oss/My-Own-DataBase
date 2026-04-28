@@ -1,0 +1,77 @@
+[
+  {
+    "chunk_id": "backend-github-fastapi-openai-compat-architecture",
+    "project_name": "fastapi-openai-compat",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "fastapi-openai-compat architecture observation",
+    "content": "fastapi-openai-compat 的核心定位是：FastAPI router factory，用于实现 OpenAI-compatible Chat Completions、Responses、Files upload 和 SSE streaming 端点，测试与 CI 较完整。 目录和边界观察：src/fastapi_openai_compat 下按 chat_completions、responses、files、models、router、streaming 拆分。；tests 覆盖导出、集成、OpenAI client、Responses streaming 等场景。；examples 提供 basic echo、Haystack chat、responses with files 等示例。 可复用重点是把项目能力拆成清晰模块，而不是复制全部源码。规则候选：OpenAI-compatible API 应保持 /v1、models、chat/completions、responses、files 等协议边界清晰。 适合检索时命中架构、项目模板、分层设计、AI Agent 生成后端骨架等任务。",
+    "tags": [
+      "OpenAI-compatible",
+      "FastAPI",
+      "SSE",
+      "Responses API",
+      "Files API",
+      "architecture",
+      "ai_backend",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/ai-backend-design-rules.md",
+      "rules/api-design-rules.md",
+      "wiki/patterns/sse-streaming-response-pattern.md",
+      "wiki/templates/rag-backend-template.md"
+    ],
+    "trust_level": "core_reference"
+  },
+  {
+    "chunk_id": "backend-github-fastapi-openai-compat-quality",
+    "project_name": "fastapi-openai-compat",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "fastapi-openai-compat quality observation",
+    "content": "fastapi-openai-compat 的质量与部署观察：测试目录完整，覆盖 streaming、OpenAI client、Files、Responses、exports。；Makefile 提供 lint、format-check、typecheck、pytest。；对 AI backend API 协议兼容非常有参考价值。；没有 Docker 默认路径。；pyproject、Makefile、GitHub Actions 支撑库发布和测试。 质量评分中 README=5/5、结构=4/5、测试=5/5、部署=1/5，trust_level=core_reference。不建议照搬：不要把库项目当完整业务模板。；未内置鉴权/数据库，不应提升为通用后端模板规则。；文件上传持久化策略需由宿主实现。 适合用于判断样本是否能进入核心 rules，或仅作为 sample。",
+    "tags": [
+      "OpenAI-compatible",
+      "FastAPI",
+      "SSE",
+      "Responses API",
+      "Files API",
+      "quality",
+      "ai_backend",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/ai-backend-design-rules.md",
+      "rules/api-design-rules.md",
+      "wiki/patterns/sse-streaming-response-pattern.md",
+      "wiki/templates/rag-backend-template.md"
+    ],
+    "trust_level": "core_reference"
+  },
+  {
+    "chunk_id": "backend-github-fastapi-openai-compat-rules",
+    "project_name": "fastapi-openai-compat",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "fastapi-openai-compat rules observation",
+    "content": "fastapi-openai-compat 的 API/数据/权限观察：未发现内置 JWT/Session/OAuth/RBAC。；作为 router factory 更适合由宿主应用在外层处理中间件、API key 或用户权限。；未发现数据库、ORM 或 migration。；文件上传由回调处理，持久化交给接入方。；REST/OpenAI-compatible endpoints 是核心能力。；覆盖 /v1/models、/v1/chat/completions、Responses、Files 等 OpenAI 风格接口。 推荐关联知识库文件包括：rules/ai-backend-design-rules.md、rules/api-design-rules.md、wiki/patterns/sse-streaming-response-pattern.md、wiki/templates/rag-backend-template.md。生成代码时应先确认该项目是完整模板、库项目还是文档型规则来源；只有被多个项目共同支持的做法才应进入核心 rules，单一项目特性保留为 sample 或 wiki pattern 候选。",
+    "tags": [
+      "OpenAI-compatible",
+      "FastAPI",
+      "SSE",
+      "Responses API",
+      "Files API",
+      "rules",
+      "ai_backend",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/ai-backend-design-rules.md",
+      "rules/api-design-rules.md",
+      "wiki/patterns/sse-streaming-response-pattern.md",
+      "wiki/templates/rag-backend-template.md"
+    ],
+    "trust_level": "core_reference"
+  }
+]

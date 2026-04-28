@@ -1,0 +1,80 @@
+[
+  {
+    "chunk_id": "backend-github-express-typescript-skeleton-architecture",
+    "project_name": "express-typescript-skeleton",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "express-typescript-skeleton architecture observation",
+    "content": "express-typescript-skeleton 的核心定位是：生产级 Node.js TypeScript Express 模板，采用 domain/application/infrastructure/presentation 分层与偏六边形架构，集成 Prisma、Docker Compose、Jest/Supertest、CI/CD、logger、cache、DI 和大量质量工具。 目录和边界观察：src 分为 application、domain、infrastructure、presentation、types。；presentation/rest/controllers、middlewares、filters、exceptions 与 domain/application 分离。；infrastructure/shared 包含 authentication、cache、config、di、logger、persistence。 可复用重点是把项目能力拆成清晰模块，而不是复制全部源码。规则候选：大型 Express 项目可以采用 presentation/application/domain/infrastructure，但个人默认不应上来就生成重型 DDD。 适合检索时命中架构、项目模板、分层设计、AI Agent 生成后端骨架等任务。",
+    "tags": [
+      "Express",
+      "TypeScript",
+      "DDD",
+      "Prisma",
+      "Jest",
+      "Docker",
+      "architecture",
+      "node",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/backend-layered-architecture-rules.md",
+      "rules/backend-project-template-rules.md",
+      "rules/error-handling-and-logging-rules.md",
+      "wiki/templates/express-project-template.md"
+    ],
+    "trust_level": "good_reference"
+  },
+  {
+    "chunk_id": "backend-github-express-typescript-skeleton-quality",
+    "project_name": "express-typescript-skeleton",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "express-typescript-skeleton quality observation",
+    "content": "express-typescript-skeleton 的质量与部署观察：unit/integration/e2e 三层测试目录。；package scripts 覆盖 type、format、lint、markdown、packagejson 等。；架构质量强，但学习和维护成本高。；docker/Dockerfile 多阶段生产镜像，pm2/wait。；docker-compose 包含 app、postgres、pgweb 和日志 volume。 质量评分中 README=5/5、结构=5/5、测试=5/5、部署=5/5，trust_level=good_reference。不建议照搬：复杂 DDD/hexagonal 对个人项目默认不划算。；工具链和 GitHub 治理文件非常多，初学者维护成本高。；Ts.ED 平台依赖可能偏离普通 Express 项目预期。 适合用于判断样本是否能进入核心 rules，或仅作为 sample。",
+    "tags": [
+      "Express",
+      "TypeScript",
+      "DDD",
+      "Prisma",
+      "Jest",
+      "Docker",
+      "quality",
+      "node",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/backend-layered-architecture-rules.md",
+      "rules/backend-project-template-rules.md",
+      "rules/error-handling-and-logging-rules.md",
+      "wiki/templates/express-project-template.md"
+    ],
+    "trust_level": "good_reference"
+  },
+  {
+    "chunk_id": "backend-github-express-typescript-skeleton-rules",
+    "project_name": "express-typescript-skeleton",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "express-typescript-skeleton rules observation",
+    "content": "express-typescript-skeleton 的 API/数据/权限观察：sessions/users/authentication 领域存在。；JWT 依赖线索。；Prisma + PostgreSQL。；Docker compose 提供 Postgres 和 pgweb。；REST presentation 层明确。；controller/middleware/filter/exception 分离。 推荐关联知识库文件包括：rules/backend-layered-architecture-rules.md、rules/backend-project-template-rules.md、rules/error-handling-and-logging-rules.md、wiki/templates/express-project-template.md。生成代码时应先确认该项目是完整模板、库项目还是文档型规则来源；只有被多个项目共同支持的做法才应进入核心 rules，单一项目特性保留为 sample 或 wiki pattern 候选。",
+    "tags": [
+      "Express",
+      "TypeScript",
+      "DDD",
+      "Prisma",
+      "Jest",
+      "Docker",
+      "rules",
+      "node",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/backend-layered-architecture-rules.md",
+      "rules/backend-project-template-rules.md",
+      "rules/error-handling-and-logging-rules.md",
+      "wiki/templates/express-project-template.md"
+    ],
+    "trust_level": "good_reference"
+  }
+]

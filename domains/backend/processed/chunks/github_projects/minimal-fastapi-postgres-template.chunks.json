@@ -1,0 +1,83 @@
+[
+  {
+    "chunk_id": "backend-github-minimal-fastapi-postgres-template-architecture",
+    "project_name": "minimal-fastapi-postgres-template",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "minimal-fastapi-postgres-template architecture observation",
+    "content": "minimal-fastapi-postgres-template 的核心定位是：现代 FastAPI + PostgreSQL 模板，包含 SQLAlchemy async、Alembic、JWT、Prometheus、Docker、Makefile、pre-commit、Ruff、mypy、pytest/coverage 和 GitHub Actions。 目录和边界观察：app 下有 auth、core、probe、tests，业务域和基础设施边界清楚。；core 包含 config、database_session、lifespan、metrics、models。；auth 包含 dependencies、jwt、models、password、responses、schemas、views 和 tests。 可复用重点是把项目能力拆成清晰模块，而不是复制全部源码。规则候选：FastAPI + PostgreSQL 默认模板应包含 core/config、core/database_session、alembic、auth/tests、probe。 适合检索时命中架构、项目模板、分层设计、AI Agent 生成后端骨架等任务。",
+    "tags": [
+      "FastAPI",
+      "PostgreSQL",
+      "SQLAlchemy async",
+      "Alembic",
+      "pytest",
+      "CI",
+      "architecture",
+      "fastapi",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/backend-project-template-rules.md",
+      "rules/database-modeling-rules.md",
+      "rules/deployment-and-env-rules.md",
+      "wiki/templates/fastapi-project-template.md",
+      "rules/performance-and-stability-rules.md"
+    ],
+    "trust_level": "core_reference"
+  },
+  {
+    "chunk_id": "backend-github-minimal-fastapi-postgres-template-quality",
+    "project_name": "minimal-fastapi-postgres-template",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "minimal-fastapi-postgres-template quality observation",
+    "content": "minimal-fastapi-postgres-template 的质量与部署观察：pyproject 设置 pytest、coverage、100% coverage gate、xdist。；CI 覆盖 tests/type_check。；这是 FastAPI 个人/中型项目模板中最强样本之一。；Dockerfile 使用 uv export/requirements 分阶段思路。；docker-compose 提供 postgres 服务。 质量评分中 README=5/5、结构=5/5、测试=5/5、部署=5/5，trust_level=core_reference。不建议照搬：Python 3.14 要求较新，复制时需按项目环境调整。；示例 .env 中的 secret/password 只能作为本地占位，生成规则时应改成 <change-me>。；未覆盖 refresh token/RBAC，不应作为完整权限系统来源。 适合用于判断样本是否能进入核心 rules，或仅作为 sample。",
+    "tags": [
+      "FastAPI",
+      "PostgreSQL",
+      "SQLAlchemy async",
+      "Alembic",
+      "pytest",
+      "CI",
+      "quality",
+      "fastapi",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/backend-project-template-rules.md",
+      "rules/database-modeling-rules.md",
+      "rules/deployment-and-env-rules.md",
+      "wiki/templates/fastapi-project-template.md",
+      "rules/performance-and-stability-rules.md"
+    ],
+    "trust_level": "core_reference"
+  },
+  {
+    "chunk_id": "backend-github-minimal-fastapi-postgres-template-rules",
+    "project_name": "minimal-fastapi-postgres-template",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "minimal-fastapi-postgres-template rules observation",
+    "content": "minimal-fastapi-postgres-template 的 API/数据/权限观察：JWT、bcrypt、auth dependencies、password 模块齐全。；有 auth tests 和 factories。；PostgreSQL + asyncpg + SQLAlchemy[asyncio]。；Alembic migration 完整存在。；FastAPI REST API 结构清楚。；probe/views.py 提供健康检查/探针线索。 推荐关联知识库文件包括：rules/backend-project-template-rules.md、rules/database-modeling-rules.md、rules/deployment-and-env-rules.md、wiki/templates/fastapi-project-template.md。生成代码时应先确认该项目是完整模板、库项目还是文档型规则来源；只有被多个项目共同支持的做法才应进入核心 rules，单一项目特性保留为 sample 或 wiki pattern 候选。",
+    "tags": [
+      "FastAPI",
+      "PostgreSQL",
+      "SQLAlchemy async",
+      "Alembic",
+      "pytest",
+      "CI",
+      "rules",
+      "fastapi",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/backend-project-template-rules.md",
+      "rules/database-modeling-rules.md",
+      "rules/deployment-and-env-rules.md",
+      "wiki/templates/fastapi-project-template.md",
+      "rules/performance-and-stability-rules.md"
+    ],
+    "trust_level": "core_reference"
+  }
+]

@@ -1,0 +1,94 @@
+{
+  "id": "backend_github_project_fastapi_template",
+  "project_name": "fastapi-template",
+  "domain": "backend",
+  "source_type": "github_project",
+  "local_path": "E:\\DataBase\\domains\\backend\\raw\\github_projects\\fastapi\\fastapi-template",
+  "summary": "较早期 FastAPI 模板，包含 Redis、Docker、PostgreSQL、Alembic、auth 模块和少量测试，追求简单结构。",
+  "tech_stack": [
+    "Alembic",
+    "Dockerfile",
+    "FastAPI",
+    "PostgreSQL",
+    "README",
+    "Redis/aioredis",
+    "SQLAlchemy/Databases 线索",
+    "auth tests",
+    "docker-compose",
+    "passlib",
+    "pytest",
+    "python-jose",
+    "未发现 RBAC"
+  ],
+  "backend_subdomains": [
+    "FastAPI",
+    "Docker Compose",
+    "PostgreSQL",
+    "Redis",
+    "JWT"
+  ],
+  "strengths": [
+    "简单",
+    "Docker Compose 包含 Redis/Postgres",
+    "有少量 auth 测试"
+  ],
+  "weaknesses": [
+    "偏旧",
+    "扁平结构扩展性弱",
+    "质量基线不足"
+  ],
+  "use_as": [
+    "小型模板 sample",
+    "Docker Compose sample"
+  ],
+  "avoid_when": [
+    "中型项目",
+    "现代 FastAPI 规则沉淀",
+    "需要高测试覆盖"
+  ],
+  "trust_level": "sample_only",
+  "quality_score": {
+    "readme": 4,
+    "structure": 3,
+    "testing": 2,
+    "docker": 4,
+    "database_migration": 3,
+    "auth_permission": 3,
+    "logging_error_handling": 2,
+    "personal_project_value": 3,
+    "medium_project_value": 3,
+    "core_rule_value": 2
+  },
+  "recommended_target_files": [
+    "wiki/templates/fastapi-project-template.md",
+    "wiki/patterns/docker-compose-backend-pattern.md",
+    "rules/backend-project-template-rules.md"
+  ],
+  "retrieval": {
+    "prompt_tags": [
+      "FastAPI",
+      "template",
+      "Redis",
+      "Docker Compose",
+      "PostgreSQL",
+      "fastapi",
+      "sample_only",
+      "backend github project",
+      "后端项目分析"
+    ],
+    "keywords": [
+      "FastAPI template",
+      "Redis Postgres",
+      "Pipfile",
+      "auth tests",
+      "simple structure",
+      "FastAPI",
+      "Docker Compose",
+      "PostgreSQL",
+      "Redis",
+      "JWT",
+      "backend rules candidate",
+      "后端规则候选"
+    ]
+  }
+}

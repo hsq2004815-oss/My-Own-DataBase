@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "backend_reference.schema.json",
+  "title": "Backend Reference Record",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "domain",
+    "category",
+    "source",
+    "captured_at",
+    "summary",
+    "key_points",
+    "applicable_scenarios",
+    "avoid_when",
+    "implementation_notes",
+    "agent_usage",
+    "retrieval",
+    "related_rules",
+    "related_topics"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable backend reference id."
+    },
+    "title": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string",
+      "const": "backend"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "architecture",
+        "api",
+        "database",
+        "auth",
+        "security",
+        "observability",
+        "deployment",
+        "performance",
+        "ai_backend",
+        "github_projects",
+        "framework",
+        "queue",
+        "cache",
+        "file_upload",
+        "webhook",
+        "testing",
+        "project_template"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "name",
+        "url",
+        "source_type"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "source_type": {
+          "type": "string",
+          "enum": [
+            "official_doc",
+            "github_project",
+            "engineering_guide",
+            "architecture_case",
+            "security_standard",
+            "api_guideline",
+            "production_pattern",
+            "framework_doc",
+            "database_doc",
+            "deployment_doc",
+            "observability_doc",
+            "ai_backend_case"
+          ]
+        },
+        "license_notes": {
+          "type": "string"
+        },
+        "captured_at": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "captured_at": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "key_points": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "applicable_scenarios": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "avoid_when": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "implementation_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "agent_usage": {
+      "type": "object",
+      "required": [
+        "when_to_use",
+        "how_to_apply",
+        "code_generation_rules"
+      ],
+      "properties": {
+        "when_to_use": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "how_to_apply": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "code_generation_rules": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "retrieval": {
+      "type": "object",
+      "required": [
+        "prompt_tags",
+        "keywords"
+      ],
+      "properties": {
+        "ai_summary": {
+          "type": "string"
+        },
+        "prompt_tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "negative_prompt_tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "related_rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "quality": {
+      "type": "object",
+      "properties": {
+        "signal_strength": {
+          "type": "string",
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ]
+        },
+        "evidence_level": {
+          "type": "string",
+          "enum": [
+            "official",
+            "multi_project",
+            "single_project",
+            "analysis_only",
+            "draft"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

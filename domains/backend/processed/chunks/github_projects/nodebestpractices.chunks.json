@@ -1,0 +1,77 @@
+[
+  {
+    "chunk_id": "backend-github-nodebestpractices-architecture",
+    "project_name": "nodebestpractices",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "nodebestpractices architecture observation",
+    "content": "nodebestpractices 的核心定位是：Node.js Best Practices 文档仓库，包含大量 Node 生产、测试、错误处理、安全、性能、Docker 和项目结构建议；不是完整后端应用。 目录和边界观察：sections 下按 codestyle、docker、errorhandling、performance、production、projectstructure、security、testingandquality 分类。；README 多语言，内容是规则集合。；sections/examples/dockerfile 提供 Node Dockerfile 示例。 可复用重点是把项目能力拆成清晰模块，而不是复制全部源码。规则候选：Node 核心规则应强调错误流程测试、CI、Docker layer caching、非 root/small image 等生产实践。 适合检索时命中架构、项目模板、分层设计、AI Agent 生成后端骨架等任务。",
+    "tags": [
+      "Node.js",
+      "best practices",
+      "Docker",
+      "testing",
+      "security",
+      "architecture",
+      "node",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/backend-security-checklist.md",
+      "rules/error-handling-and-logging-rules.md",
+      "rules/deployment-and-env-rules.md",
+      "rules/backend-project-template-rules.md"
+    ],
+    "trust_level": "core_reference"
+  },
+  {
+    "chunk_id": "backend-github-nodebestpractices-quality",
+    "project_name": "nodebestpractices",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "nodebestpractices quality observation",
+    "content": "nodebestpractices 的质量与部署观察：文档强调测试命名、AAA、CI、middleware 测试等。；仓库自身主要是 markdownlint。；对核心规则库价值高，对模板代码价值低。；sections/docker 与 Dockerfile example 可参考。；不是完整 compose/backend deploy 模板。 质量评分中 README=5/5、结构=4/5、测试=0/5、部署=3/5，trust_level=core_reference。不建议照搬：不要把文档仓库当完整 Express 模板。；部分示例 Node 版本较旧，只取原则不照搬版本。；没有数据库/鉴权源码。 适合用于判断样本是否能进入核心 rules，或仅作为 sample。",
+    "tags": [
+      "Node.js",
+      "best practices",
+      "Docker",
+      "testing",
+      "security",
+      "quality",
+      "node",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/backend-security-checklist.md",
+      "rules/error-handling-and-logging-rules.md",
+      "rules/deployment-and-env-rules.md",
+      "rules/backend-project-template-rules.md"
+    ],
+    "trust_level": "core_reference"
+  },
+  {
+    "chunk_id": "backend-github-nodebestpractices-rules",
+    "project_name": "nodebestpractices",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "nodebestpractices rules observation",
+    "content": "nodebestpractices 的 API/数据/权限观察：未发现项目级 JWT/Session/RBAC。；安全章节可作为 checklist 背景，但不提供权限实现样本。；未发现数据库/ORM/migration。；不适合数据库规则来源。；非应用项目，未提供 REST API。；可作为 API/Express 通用工程实践背景，不是接口设计源码证据。 推荐关联知识库文件包括：rules/backend-security-checklist.md、rules/error-handling-and-logging-rules.md、rules/deployment-and-env-rules.md、rules/backend-project-template-rules.md。生成代码时应先确认该项目是完整模板、库项目还是文档型规则来源；只有被多个项目共同支持的做法才应进入核心 rules，单一项目特性保留为 sample 或 wiki pattern 候选。",
+    "tags": [
+      "Node.js",
+      "best practices",
+      "Docker",
+      "testing",
+      "security",
+      "rules",
+      "node",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/backend-security-checklist.md",
+      "rules/error-handling-and-logging-rules.md",
+      "rules/deployment-and-env-rules.md",
+      "rules/backend-project-template-rules.md"
+    ],
+    "trust_level": "core_reference"
+  }
+]

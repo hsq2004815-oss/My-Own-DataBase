@@ -23,6 +23,7 @@ runtime/briefs/
 Thumbs.db
 .idea/
 .vscode/
+.claude/
 .obsidian/workspace.json
 .omx/
 

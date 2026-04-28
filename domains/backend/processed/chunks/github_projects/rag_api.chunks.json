@@ -1,0 +1,80 @@
+[
+  {
+    "chunk_id": "backend-github-rag_api-architecture",
+    "project_name": "rag_api",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "rag_api architecture observation",
+    "content": "rag_api 的核心定位是：ID-based RAG FastAPI 项目，面向 LibreChat 等集成，使用 LangChain、PostgreSQL/pgvector、MongoDB/多向量存储、文件上传与较完整测试。 目录和边界观察：app 下有 routes、services、utils、config、middleware、models。；services/vector_store 单独处理向量存储，routes/document_routes 和 pgvector_routes 区分 API 面。；tests 下包含 unit、services、utils、integration，覆盖上传隔离、配置、middleware、vector store。 可复用重点是把项目能力拆成清晰模块，而不是复制全部源码。规则候选：RAG API 应围绕 file_id / metadata 做隔离和检索过滤。 适合检索时命中架构、项目模板、分层设计、AI Agent 生成后端骨架等任务。",
+    "tags": [
+      "RAG",
+      "FastAPI",
+      "pgvector",
+      "file upload",
+      "LangChain",
+      "LibreChat",
+      "architecture",
+      "ai_backend",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/ai-backend-design-rules.md",
+      "wiki/patterns/rag-backend-pipeline-pattern.md",
+      "wiki/patterns/file-upload-processing-pattern.md",
+      "rules/backend-security-checklist.md"
+    ],
+    "trust_level": "core_reference"
+  },
+  {
+    "chunk_id": "backend-github-rag_api-quality",
+    "project_name": "rag_api",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "rag_api quality observation",
+    "content": "rag_api 的质量与部署观察：测试覆盖比多数样本强，包含 services、utils、integration。；对 RAG API、文件上传隔离、向量服务工厂有较高参考价值。；缺少迁移目录导致数据库治理分偏低。；Dockerfile 安装 pandoc、libmagic、OCR/文档处理依赖。；api-compose.yaml 提供 API service 和 uploads volume。 质量评分中 README=4/5、结构=4/5、测试=4/5、部署=4/5，trust_level=core_reference。不建议照搬：不要默认引入所有文档格式和 OCR 依赖。；无明确 migration 时不应作为数据库演进规则来源。；多向量/多模型支持会增加个人项目维护成本。 适合用于判断样本是否能进入核心 rules，或仅作为 sample。",
+    "tags": [
+      "RAG",
+      "FastAPI",
+      "pgvector",
+      "file upload",
+      "LangChain",
+      "LibreChat",
+      "quality",
+      "ai_backend",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/ai-backend-design-rules.md",
+      "wiki/patterns/rag-backend-pipeline-pattern.md",
+      "wiki/patterns/file-upload-processing-pattern.md",
+      "rules/backend-security-checklist.md"
+    ],
+    "trust_level": "core_reference"
+  },
+  {
+    "chunk_id": "backend-github-rag_api-rules",
+    "project_name": "rag_api",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "rag_api rules observation",
+    "content": "rag_api 的 API/数据/权限观察：有 PyJWT 依赖，但未从摘要确认完整登录/用户/RBAC。；面向集成场景时应在网关或 API 层补充 API key/JWT 权限。；核心是 PostgreSQL/pgvector 与 LangChain vector store。；使用 SQLAlchemy/asyncpg/psycopg2。；提供文档管理、添加/查询/删除和 pgvector 相关 REST API。；OpenAPI/Swagger 可由 FastAPI 默认提供。 推荐关联知识库文件包括：rules/ai-backend-design-rules.md、wiki/patterns/rag-backend-pipeline-pattern.md、wiki/patterns/file-upload-processing-pattern.md、rules/backend-security-checklist.md。生成代码时应先确认该项目是完整模板、库项目还是文档型规则来源；只有被多个项目共同支持的做法才应进入核心 rules，单一项目特性保留为 sample 或 wiki pattern 候选。",
+    "tags": [
+      "RAG",
+      "FastAPI",
+      "pgvector",
+      "file upload",
+      "LangChain",
+      "LibreChat",
+      "rules",
+      "ai_backend",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/ai-backend-design-rules.md",
+      "wiki/patterns/rag-backend-pipeline-pattern.md",
+      "wiki/patterns/file-upload-processing-pattern.md",
+      "rules/backend-security-checklist.md"
+    ],
+    "trust_level": "core_reference"
+  }
+]

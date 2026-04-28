@@ -1,0 +1,97 @@
+{
+  "id": "backend_github_project_fastapi_openai_compat",
+  "project_name": "fastapi-openai-compat",
+  "domain": "backend",
+  "source_type": "github_project",
+  "local_path": "E:\\DataBase\\domains\\backend\\raw\\github_projects\\ai_backend\\fastapi-openai-compat",
+  "summary": "FastAPI router factory，用于实现 OpenAI-compatible Chat Completions、Responses、Files upload 和 SSE streaming 端点，测试与 CI 较完整。",
+  "tech_stack": [
+    "FastAPI",
+    "FastAPI/OpenAPI 默认能力",
+    "Files endpoint 回调处理，具体存储由调用方实现",
+    "GitHub Actions tests",
+    "OpenAI client integration tests",
+    "PyPI publish workflow",
+    "README",
+    "examples README",
+    "httpx",
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "未发现 Docker；库项目以包发布为主"
+  ],
+  "backend_subdomains": [
+    "OpenAI-compatible API",
+    "FastAPI",
+    "SSE",
+    "file upload",
+    "pytest"
+  ],
+  "strengths": [
+    "协议边界清晰",
+    "测试/CI 完整",
+    "适合 AI 网关和 RAG 接口复用"
+  ],
+  "weaknesses": [
+    "不是完整应用",
+    "无数据库/鉴权",
+    "部署参考弱"
+  ],
+  "use_as": [
+    "OpenAI-compatible API 核心参考",
+    "SSE streaming 测试参考",
+    "FastAPI router factory 样本"
+  ],
+  "avoid_when": [
+    "需要完整 CRUD/DB 模板",
+    "需要内置权限系统",
+    "只做普通 REST API"
+  ],
+  "trust_level": "core_reference",
+  "quality_score": {
+    "readme": 5,
+    "structure": 4,
+    "testing": 5,
+    "docker": 1,
+    "database_migration": 0,
+    "auth_permission": 0,
+    "logging_error_handling": 3,
+    "personal_project_value": 4,
+    "medium_project_value": 4,
+    "core_rule_value": 5
+  },
+  "recommended_target_files": [
+    "rules/ai-backend-design-rules.md",
+    "rules/api-design-rules.md",
+    "wiki/patterns/sse-streaming-response-pattern.md",
+    "wiki/templates/rag-backend-template.md"
+  ],
+  "retrieval": {
+    "prompt_tags": [
+      "OpenAI-compatible",
+      "FastAPI",
+      "SSE",
+      "Responses API",
+      "Files API",
+      "ai_backend",
+      "core_reference",
+      "backend github project",
+      "后端项目分析"
+    ],
+    "keywords": [
+      "OpenAI compatible API",
+      "Chat Completions",
+      "Responses API",
+      "SSE streaming",
+      "FastAPI router factory",
+      "文件上传 endpoint",
+      "OpenAI-compatible API",
+      "FastAPI",
+      "SSE",
+      "file upload",
+      "pytest",
+      "backend rules candidate",
+      "后端规则候选"
+    ]
+  }
+}

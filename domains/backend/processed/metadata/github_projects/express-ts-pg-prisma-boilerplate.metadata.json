@@ -1,0 +1,107 @@
+{
+  "id": "backend_github_project_express_ts_pg_prisma_boilerplate",
+  "project_name": "express-ts-pg-prisma-boilerplate",
+  "domain": "backend",
+  "source_type": "github_project",
+  "local_path": "E:\\DataBase\\domains\\backend\\raw\\github_projects\\node\\express-ts-pg-prisma-boilerplate",
+  "summary": "Express 5 + TypeScript + Prisma + PostgreSQL boilerplate，采用 Routes → Controllers → Services → Repositories 四层架构，支持 JWT access/refresh rotation、RBAC、Zod、Vitest、Supertest 和 Prisma migrations。",
+  "tech_stack": [
+    "Dockerfile",
+    "Express 5",
+    "GitHub Actions CI",
+    "HttpOnly cookie",
+    "JWT access token",
+    "Makefile",
+    "PostgreSQL",
+    "Prisma",
+    "Prisma Migrate",
+    "RBAC USER/ADMIN middleware",
+    "README",
+    "Refresh token rotation",
+    "Supertest",
+    "TypeScript",
+    "Vitest",
+    "docker compose workflow 线索",
+    "integration tests"
+  ],
+  "backend_subdomains": [
+    "Express",
+    "TypeScript",
+    "Prisma",
+    "PostgreSQL",
+    "JWT refresh",
+    "RBAC",
+    "Vitest"
+  ],
+  "strengths": [
+    "分层清楚",
+    "auth 安全细节强",
+    "测试完整",
+    "个人项目适配好"
+  ],
+  "weaknesses": [
+    "生产 Docker 还可改进",
+    "无 Swagger",
+    "trace/logging 不完整"
+  ],
+  "use_as": [
+    "Express 核心模板",
+    "JWT refresh pattern",
+    "Prisma migration sample"
+  ],
+  "avoid_when": [
+    "需要 NestJS 框架",
+    "需要 OpenAPI-first",
+    "不需要 auth/db"
+  ],
+  "trust_level": "core_reference",
+  "quality_score": {
+    "readme": 5,
+    "structure": 5,
+    "testing": 5,
+    "docker": 4,
+    "database_migration": 5,
+    "auth_permission": 5,
+    "logging_error_handling": 3,
+    "personal_project_value": 5,
+    "medium_project_value": 5,
+    "core_rule_value": 5
+  },
+  "recommended_target_files": [
+    "rules/backend-layered-architecture-rules.md",
+    "rules/auth-and-permission-rules.md",
+    "rules/database-modeling-rules.md",
+    "wiki/templates/express-project-template.md",
+    "wiki/patterns/jwt-refresh-token-pattern.md"
+  ],
+  "retrieval": {
+    "prompt_tags": [
+      "Express",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "JWT",
+      "RBAC",
+      "node",
+      "core_reference",
+      "backend github project",
+      "后端项目分析"
+    ],
+    "keywords": [
+      "Express TypeScript Prisma",
+      "refresh token rotation",
+      "HttpOnly cookie",
+      "feature based architecture",
+      "Vitest integration tests",
+      "Express",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "JWT refresh",
+      "RBAC",
+      "Vitest",
+      "backend rules candidate",
+      "后端规则候选"
+    ]
+  }
+}

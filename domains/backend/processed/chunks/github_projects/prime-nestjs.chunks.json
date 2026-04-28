@@ -1,0 +1,80 @@
+[
+  {
+    "chunk_id": "backend-github-prime-nestjs-architecture",
+    "project_name": "prime-nestjs",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "prime-nestjs architecture observation",
+    "content": "prime-nestjs 的核心定位是：生产导向 NestJS starter，提供 JWT RSA256、RBAC、PostgreSQL + TypeORM、Swagger、Docker Compose、Jest 单元/e2e、Helmet/CORS 和健康检查。 目录和边界观察：src/auth、src/users、src/tasks、src/config、src/logger 按模块组织。；auth 中有 controller/service/module/dto/strategy/guard/spec。；tasks/users 有 dto/entities/services/controllers/spec。 可复用重点是把项目能力拆成清晰模块，而不是复制全部源码。规则候选：NestJS production starter 应同时提供 Swagger、healthcheck、Docker healthcheck、unit/e2e tests。 适合检索时命中架构、项目模板、分层设计、AI Agent 生成后端骨架等任务。",
+    "tags": [
+      "NestJS",
+      "JWT",
+      "RBAC",
+      "TypeORM",
+      "Swagger",
+      "Jest",
+      "architecture",
+      "nestjs",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "wiki/templates/nestjs-project-template.md",
+      "rules/auth-and-permission-rules.md",
+      "rules/deployment-and-env-rules.md",
+      "wiki/patterns/rbac-permission-pattern.md"
+    ],
+    "trust_level": "good_reference"
+  },
+  {
+    "chunk_id": "backend-github-prime-nestjs-quality",
+    "project_name": "prime-nestjs",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "prime-nestjs quality observation",
+    "content": "prime-nestjs 的质量与部署观察：Jest unit + e2e，多个 spec 文件。；README 清楚列出质量工具。；适合作为 NestJS good reference。；多阶段 Dockerfile，生产阶段非 root 用户。；docker-compose 绑定 127.0.0.1 暴露端口，有 healthcheck 和 network。 质量评分中 README=5/5、结构=4/5、测试=4/5、部署=5/5，trust_level=good_reference。不建议照搬：仍然比个人 CRUD 项目重。；TypeORM schema:sync 脚本在生产应谨慎，不应作为默认迁移方式。；CASL/RBAC 需要需求明确后再默认启用。 适合用于判断样本是否能进入核心 rules，或仅作为 sample。",
+    "tags": [
+      "NestJS",
+      "JWT",
+      "RBAC",
+      "TypeORM",
+      "Swagger",
+      "Jest",
+      "quality",
+      "nestjs",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "wiki/templates/nestjs-project-template.md",
+      "rules/auth-and-permission-rules.md",
+      "rules/deployment-and-env-rules.md",
+      "wiki/patterns/rbac-permission-pattern.md"
+    ],
+    "trust_level": "good_reference"
+  },
+  {
+    "chunk_id": "backend-github-prime-nestjs-rules",
+    "project_name": "prime-nestjs",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "prime-nestjs rules observation",
+    "content": "prime-nestjs 的 API/数据/权限观察：JWT RSA256 with private/public key placeholders。；roles.guard、jwt.strategy、jwt-auth.guard、role enum 明确。；PostgreSQL + TypeORM。；package scripts 提供 migration:generate/run/revert/schema sync/drop。；REST API 由 NestJS controllers 暴露。；Swagger 自动文档位于 /api。 推荐关联知识库文件包括：wiki/templates/nestjs-project-template.md、rules/auth-and-permission-rules.md、rules/deployment-and-env-rules.md、wiki/patterns/rbac-permission-pattern.md。生成代码时应先确认该项目是完整模板、库项目还是文档型规则来源；只有被多个项目共同支持的做法才应进入核心 rules，单一项目特性保留为 sample 或 wiki pattern 候选。",
+    "tags": [
+      "NestJS",
+      "JWT",
+      "RBAC",
+      "TypeORM",
+      "Swagger",
+      "Jest",
+      "rules",
+      "nestjs",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "wiki/templates/nestjs-project-template.md",
+      "rules/auth-and-permission-rules.md",
+      "rules/deployment-and-env-rules.md",
+      "wiki/patterns/rbac-permission-pattern.md"
+    ],
+    "trust_level": "good_reference"
+  }
+]

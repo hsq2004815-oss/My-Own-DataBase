@@ -1,0 +1,108 @@
+{
+  "id": "backend_github_project_express_typescript_skeleton",
+  "project_name": "express-typescript-skeleton",
+  "domain": "backend",
+  "source_type": "github_project",
+  "local_path": "E:\\DataBase\\domains\\backend\\raw\\github_projects\\node\\express-typescript-skeleton",
+  "summary": "生产级 Node.js TypeScript Express 模板，采用 domain/application/infrastructure/presentation 分层与偏六边形架构，集成 Prisma、Docker Compose、Jest/Supertest、CI/CD、logger、cache、DI 和大量质量工具。",
+  "tech_stack": [
+    ".github docs",
+    "Express via Ts.ED platform 线索",
+    "GitHub Actions CI/CD",
+    "JWT/session modules",
+    "Jest",
+    "Makefile",
+    "PostgreSQL",
+    "Prisma",
+    "Prisma Migrate",
+    "README",
+    "Redis/cache 线索",
+    "Redis/ioredis",
+    "Renovate",
+    "Supertest",
+    "TypeScript",
+    "docker/Dockerfile",
+    "docker/docker-compose.yml",
+    "unit/integration/e2e",
+    "用户/session 领域，RBAC 未完整确认"
+  ],
+  "backend_subdomains": [
+    "Express",
+    "TypeScript",
+    "DDD",
+    "Prisma",
+    "Docker",
+    "Jest",
+    "CI/CD"
+  ],
+  "strengths": [
+    "架构边界强",
+    "测试/CI/CD 完整",
+    "日志/异常/DI 参考好"
+  ],
+  "weaknesses": [
+    "过重",
+    "个人项目性价比低",
+    "平台依赖复杂"
+  ],
+  "use_as": [
+    "中型 Express 架构参考",
+    "测试分层参考",
+    "错误日志参考"
+  ],
+  "avoid_when": [
+    "个人小项目",
+    "快速 CRUD",
+    "不需要 DDD/hexagonal"
+  ],
+  "trust_level": "good_reference",
+  "quality_score": {
+    "readme": 5,
+    "structure": 5,
+    "testing": 5,
+    "docker": 5,
+    "database_migration": 4,
+    "auth_permission": 4,
+    "logging_error_handling": 5,
+    "personal_project_value": 2,
+    "medium_project_value": 5,
+    "core_rule_value": 4
+  },
+  "recommended_target_files": [
+    "rules/backend-layered-architecture-rules.md",
+    "rules/backend-project-template-rules.md",
+    "rules/error-handling-and-logging-rules.md",
+    "wiki/templates/express-project-template.md"
+  ],
+  "retrieval": {
+    "prompt_tags": [
+      "Express",
+      "TypeScript",
+      "DDD",
+      "Prisma",
+      "Jest",
+      "Docker",
+      "node",
+      "good_reference",
+      "backend github project",
+      "后端项目分析"
+    ],
+    "keywords": [
+      "Express TypeScript skeleton",
+      "hexagonal architecture",
+      "DDD Node",
+      "Prisma persistence",
+      "Jest e2e",
+      "Docker Compose",
+      "Express",
+      "TypeScript",
+      "DDD",
+      "Prisma",
+      "Docker",
+      "Jest",
+      "CI/CD",
+      "backend rules candidate",
+      "后端规则候选"
+    ]
+  }
+}

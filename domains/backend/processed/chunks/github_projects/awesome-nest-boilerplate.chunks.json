@@ -1,0 +1,80 @@
+[
+  {
+    "chunk_id": "backend-github-awesome-nest-boilerplate-architecture",
+    "project_name": "awesome-nest-boilerplate",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "awesome-nest-boilerplate architecture observation",
+    "content": "awesome-nest-boilerplate 的核心定位是：高度工程化 NestJS boilerplate，包含 TypeORM、migrations、JWT/roles、Swagger、i18n、S3、Meilisearch、Docker Compose、docs、测试和多套 AI/Cursor 规则，但依赖和环境示例很重。 目录和边界观察：源码在 awesome-nest-boilerplate-main/src。；common/dto、constants、database/migrations、decorators、filters、guards、interceptors、modules、providers、shared/services 分层很细。；modules/auth、modules/user、modules/post 按 NestJS module 组织。 可复用重点是把项目能力拆成清晰模块，而不是复制全部源码。规则候选：NestJS 项目应按 module/controller/service/entity/dto/guard/filter/interceptor 分层。 适合检索时命中架构、项目模板、分层设计、AI Agent 生成后端骨架等任务。",
+    "tags": [
+      "NestJS",
+      "TypeORM",
+      "RBAC",
+      "Swagger",
+      "Docker Compose",
+      "architecture",
+      "nestjs",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/backend-layered-architecture-rules.md",
+      "rules/auth-and-permission-rules.md",
+      "wiki/templates/nestjs-project-template.md",
+      "rules/backend-security-checklist.md",
+      "wiki/patterns/rbac-permission-pattern.md"
+    ],
+    "trust_level": "good_reference"
+  },
+  {
+    "chunk_id": "backend-github-awesome-nest-boilerplate-quality",
+    "project_name": "awesome-nest-boilerplate",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "awesome-nest-boilerplate quality observation",
+    "content": "awesome-nest-boilerplate 的质量与部署观察：auth.controller.spec 和 e2e 测试存在，docs/testing.md 说明测试规则。；lint workflow 存在。；工程化强，但模板复杂度高。；Dockerfile 多阶段构建。；docker-compose 包含 app、postgres、pgadmin、meilisearch。 质量评分中 README=4/5、结构=5/5、测试=4/5、部署=5/5，trust_level=good_reference。不建议照搬：.env.example 含完整 RSA private key，存在 secret 示例风险。；S3/Meilisearch/BullMQ/i18n/CQRS 等对个人项目默认过重。；Node 25 和复杂构建链不适合作为保守默认。 适合用于判断样本是否能进入核心 rules，或仅作为 sample。",
+    "tags": [
+      "NestJS",
+      "TypeORM",
+      "RBAC",
+      "Swagger",
+      "Docker Compose",
+      "quality",
+      "nestjs",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/backend-layered-architecture-rules.md",
+      "rules/auth-and-permission-rules.md",
+      "wiki/templates/nestjs-project-template.md",
+      "rules/backend-security-checklist.md",
+      "wiki/patterns/rbac-permission-pattern.md"
+    ],
+    "trust_level": "good_reference"
+  },
+  {
+    "chunk_id": "backend-github-awesome-nest-boilerplate-rules",
+    "project_name": "awesome-nest-boilerplate",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "awesome-nest-boilerplate rules observation",
+    "content": "awesome-nest-boilerplate 的 API/数据/权限观察：auth module 包含 controller/service/jwt.strategy/public.strategy。；guards/auth.guard、guards/roles.guard、roles.decorator、role-type constant 说明 RBAC 边界清晰。；TypeORM + PostgreSQL 是主要路径。；src/database/migrations 有 users、settings、posts 等迁移。；NestJS controller/service/module 结构完整。；setup-swagger.ts 和 decorators/swagger.schema.ts 提供 OpenAPI/Swagger。 推荐关联知识库文件包括：rules/backend-layered-architecture-rules.md、rules/auth-and-permission-rules.md、wiki/templates/nestjs-project-template.md、rules/backend-security-checklist.md。生成代码时应先确认该项目是完整模板、库项目还是文档型规则来源；只有被多个项目共同支持的做法才应进入核心 rules，单一项目特性保留为 sample 或 wiki pattern 候选。",
+    "tags": [
+      "NestJS",
+      "TypeORM",
+      "RBAC",
+      "Swagger",
+      "Docker Compose",
+      "rules",
+      "nestjs",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/backend-layered-architecture-rules.md",
+      "rules/auth-and-permission-rules.md",
+      "wiki/templates/nestjs-project-template.md",
+      "rules/backend-security-checklist.md",
+      "wiki/patterns/rbac-permission-pattern.md"
+    ],
+    "trust_level": "good_reference"
+  }
+]

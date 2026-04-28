@@ -1,0 +1,108 @@
+{
+  "id": "backend_github_project_awesome_nest_boilerplate",
+  "project_name": "awesome-nest-boilerplate",
+  "domain": "backend",
+  "source_type": "github_project",
+  "local_path": "E:\\DataBase\\domains\\backend\\raw\\github_projects\\nestjs\\awesome-nest-boilerplate",
+  "summary": "高度工程化 NestJS boilerplate，包含 TypeORM、migrations、JWT/roles、Swagger、i18n、S3、Meilisearch、Docker Compose、docs、测试和多套 AI/Cursor 规则，但依赖和环境示例很重。",
+  "tech_stack": [
+    "AWS S3 service",
+    "BullMQ 依赖线索",
+    "Dockerfile",
+    "Express platform",
+    "GitHub Actions docs/lint",
+    "JWT",
+    "Jest",
+    "Meilisearch",
+    "Meilisearch 非缓存但作为搜索服务；Redis 未明确",
+    "NestJS",
+    "Passport strategies",
+    "PostgreSQL",
+    "Roles guard/RBAC",
+    "Supertest/e2e",
+    "Swagger setup",
+    "TypeORM",
+    "TypeORM migrations",
+    "VitePress docs",
+    "controller spec",
+    "docker-compose",
+    "docs",
+    "多 ORM 依赖线索"
+  ],
+  "backend_subdomains": [
+    "NestJS",
+    "TypeORM",
+    "RBAC",
+    "Swagger",
+    "Docker",
+    "S3"
+  ],
+  "strengths": [
+    "模块化完整",
+    "权限/Swagger/migration 清楚",
+    "适合中型项目"
+  ],
+  "weaknesses": [
+    "过重",
+    "env 私钥风险",
+    "个人项目成本高"
+  ],
+  "use_as": [
+    "NestJS 中型模板",
+    "RBAC pattern",
+    "Swagger/DTO 示例"
+  ],
+  "avoid_when": [
+    "个人小项目",
+    "不需要搜索/S3/队列",
+    "需要低依赖模板"
+  ],
+  "trust_level": "good_reference",
+  "quality_score": {
+    "readme": 4,
+    "structure": 5,
+    "testing": 4,
+    "docker": 5,
+    "database_migration": 4,
+    "auth_permission": 5,
+    "logging_error_handling": 4,
+    "personal_project_value": 2,
+    "medium_project_value": 5,
+    "core_rule_value": 4
+  },
+  "recommended_target_files": [
+    "rules/backend-layered-architecture-rules.md",
+    "rules/auth-and-permission-rules.md",
+    "wiki/templates/nestjs-project-template.md",
+    "rules/backend-security-checklist.md",
+    "wiki/patterns/rbac-permission-pattern.md"
+  ],
+  "retrieval": {
+    "prompt_tags": [
+      "NestJS",
+      "TypeORM",
+      "RBAC",
+      "Swagger",
+      "Docker Compose",
+      "nestjs",
+      "good_reference",
+      "backend github project",
+      "后端项目分析"
+    ],
+    "keywords": [
+      "NestJS boilerplate",
+      "roles guard",
+      "TypeORM migrations",
+      "Swagger decorators",
+      "RSA private key risk",
+      "NestJS",
+      "TypeORM",
+      "RBAC",
+      "Swagger",
+      "Docker",
+      "S3",
+      "backend rules candidate",
+      "后端规则候选"
+    ]
+  }
+}

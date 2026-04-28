@@ -1,0 +1,107 @@
+{
+  "id": "backend_github_project_rag_api",
+  "project_name": "rag_api",
+  "domain": "backend",
+  "source_type": "github_project",
+  "local_path": "E:\\DataBase\\domains\\backend\\raw\\github_projects\\ai_backend\\rag_api",
+  "summary": "ID-based RAG FastAPI 项目，面向 LibreChat 等集成，使用 LangChain、PostgreSQL/pgvector、MongoDB/多向量存储、文件上传与较完整测试。",
+  "tech_stack": [
+    "Dockerfile",
+    "FastAPI",
+    "GitHub Actions CI/docker/release workflows",
+    "LangChain",
+    "MongoDB 线索",
+    "PostgreSQL/pgvector",
+    "PyJWT 依赖，具体认证边界需专项确认",
+    "README",
+    "S3/boto3 依赖线索",
+    "SQLAlchemy",
+    "api-compose.yaml",
+    "devcontainer",
+    "integration tests",
+    "pytest",
+    "unittest",
+    "uploads volume",
+    "未发现 Alembic/Prisma migration",
+    "未发现 Redis",
+    "未发现完整 RBAC",
+    "本地文档处理"
+  ],
+  "backend_subdomains": [
+    "RAG",
+    "FastAPI",
+    "pgvector",
+    "file upload",
+    "LangChain",
+    "CI"
+  ],
+  "strengths": [
+    "RAG 领域完整度高",
+    "测试较完整",
+    "文件上传和向量服务边界清楚"
+  ],
+  "weaknesses": [
+    "无明确 migration",
+    "依赖重",
+    "鉴权/RBAC 不完整"
+  ],
+  "use_as": [
+    "AI backend 核心参考",
+    "RAG ingestion pattern",
+    "文件上传安全样本"
+  ],
+  "avoid_when": [
+    "只做简单 CRUD",
+    "不能维护 OCR/多格式依赖",
+    "需要完整 auth 模板"
+  ],
+  "trust_level": "core_reference",
+  "quality_score": {
+    "readme": 4,
+    "structure": 4,
+    "testing": 4,
+    "docker": 4,
+    "database_migration": 1,
+    "auth_permission": 2,
+    "logging_error_handling": 3,
+    "personal_project_value": 4,
+    "medium_project_value": 4,
+    "core_rule_value": 4
+  },
+  "recommended_target_files": [
+    "rules/ai-backend-design-rules.md",
+    "wiki/patterns/rag-backend-pipeline-pattern.md",
+    "wiki/patterns/file-upload-processing-pattern.md",
+    "rules/backend-security-checklist.md"
+  ],
+  "retrieval": {
+    "prompt_tags": [
+      "RAG",
+      "FastAPI",
+      "pgvector",
+      "file upload",
+      "LangChain",
+      "LibreChat",
+      "ai_backend",
+      "core_reference",
+      "backend github project",
+      "后端项目分析"
+    ],
+    "keywords": [
+      "ID-based RAG",
+      "file_id retrieval",
+      "pgvector filter",
+      "文档上传隔离",
+      "LangChain vector store",
+      "AI backend",
+      "RAG",
+      "FastAPI",
+      "pgvector",
+      "file upload",
+      "LangChain",
+      "CI",
+      "backend rules candidate",
+      "后端规则候选"
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "chunk_id": "backend-github-fastapi-template-architecture",
+    "project_name": "fastapi-template",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "fastapi-template architecture observation",
+    "content": "fastapi-template 的核心定位是：较早期 FastAPI 模板，包含 Redis、Docker、PostgreSQL、Alembic、auth 模块和少量测试，追求简单结构。 目录和边界观察：app 下是 base/db/models/routes/schema/services/settings 的扁平结构。；auth 模块单独包含 api、exceptions、models、schema、services、tests。；alembic 在根目录。 可复用重点是把项目能力拆成清晰模块，而不是复制全部源码。规则候选：个人 FastAPI 模板可以从简单结构开始，但应在业务增多时迁移到 feature-based。 适合检索时命中架构、项目模板、分层设计、AI Agent 生成后端骨架等任务。",
+    "tags": [
+      "FastAPI",
+      "template",
+      "Redis",
+      "Docker Compose",
+      "PostgreSQL",
+      "architecture",
+      "fastapi",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "wiki/templates/fastapi-project-template.md",
+      "wiki/patterns/docker-compose-backend-pattern.md",
+      "rules/backend-project-template-rules.md"
+    ],
+    "trust_level": "sample_only"
+  },
+  {
+    "chunk_id": "backend-github-fastapi-template-quality",
+    "project_name": "fastapi-template",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "fastapi-template quality observation",
+    "content": "fastapi-template 的质量与部署观察：auth/tests/test_auth_api.py 提供少量测试。；测试覆盖不完整。；依赖和模板风格偏旧。；Dockerfile 使用 Python 3.9 slim、pipenv。；docker-compose 启动 web、postgres、redis。 质量评分中 README=4/5、结构=3/5、测试=2/5、部署=4/5，trust_level=sample_only。不建议照搬：Pipfile/Python 3.9 模板偏旧。；Dockerfile 使用 pipenv 安装对现代 uv/poetry/pip-tools 项目未必合适。；测试和错误处理不足。 适合用于判断样本是否能进入核心 rules，或仅作为 sample。",
+    "tags": [
+      "FastAPI",
+      "template",
+      "Redis",
+      "Docker Compose",
+      "PostgreSQL",
+      "quality",
+      "fastapi",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "wiki/templates/fastapi-project-template.md",
+      "wiki/patterns/docker-compose-backend-pattern.md",
+      "rules/backend-project-template-rules.md"
+    ],
+    "trust_level": "sample_only"
+  },
+  {
+    "chunk_id": "backend-github-fastapi-template-rules",
+    "project_name": "fastapi-template",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "fastapi-template rules observation",
+    "content": "fastapi-template 的 API/数据/权限观察：使用 python-jose/passlib/python-multipart。；有 auth tests。；PostgreSQL、Databases、asyncpg、SQLAlchemy utils、Alembic。；Redis 由 docker-compose 提供。；有 app/routes.py 和 auth/api.py。；API versioning 未发现。 推荐关联知识库文件包括：wiki/templates/fastapi-project-template.md、wiki/patterns/docker-compose-backend-pattern.md、rules/backend-project-template-rules.md。生成代码时应先确认该项目是完整模板、库项目还是文档型规则来源；只有被多个项目共同支持的做法才应进入核心 rules，单一项目特性保留为 sample 或 wiki pattern 候选。",
+    "tags": [
+      "FastAPI",
+      "template",
+      "Redis",
+      "Docker Compose",
+      "PostgreSQL",
+      "rules",
+      "fastapi",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "wiki/templates/fastapi-project-template.md",
+      "wiki/patterns/docker-compose-backend-pattern.md",
+      "rules/backend-project-template-rules.md"
+    ],
+    "trust_level": "sample_only"
+  }
+]

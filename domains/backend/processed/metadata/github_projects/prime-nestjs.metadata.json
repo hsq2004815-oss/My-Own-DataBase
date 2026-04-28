@@ -1,0 +1,104 @@
+{
+  "id": "backend_github_project_prime_nestjs",
+  "project_name": "prime-nestjs",
+  "domain": "backend",
+  "source_type": "github_project",
+  "local_path": "E:\\DataBase\\domains\\backend\\raw\\github_projects\\nestjs\\prime-nestjs",
+  "summary": "生产导向 NestJS starter，提供 JWT RSA256、RBAC、PostgreSQL + TypeORM、Swagger、Docker Compose、Jest 单元/e2e、Helmet/CORS 和健康检查。",
+  "tech_stack": [
+    "CodeQL",
+    "Dockerfile",
+    "GitHub Actions CI",
+    "JWT RSA256",
+    "Jest",
+    "NestJS",
+    "Passport",
+    "PostgreSQL",
+    "RBAC/CASL/roles guard",
+    "Supertest",
+    "Swagger",
+    "TypeORM",
+    "TypeORM migrations scripts",
+    "docker-compose",
+    "documentation/*.md",
+    "e2e",
+    "schedule 依赖线索"
+  ],
+  "backend_subdomains": [
+    "NestJS",
+    "TypeORM",
+    "JWT RSA",
+    "RBAC",
+    "Swagger",
+    "Docker"
+  ],
+  "strengths": [
+    "生产能力均衡",
+    "auth/RBAC 清楚",
+    "Docker/healthcheck 好"
+  ],
+  "weaknesses": [
+    "个人项目偏重",
+    "migration 需规范化",
+    "高级权限需需求驱动"
+  ],
+  "use_as": [
+    "NestJS 模板参考",
+    "JWT/RBAC sample",
+    "Docker healthcheck sample"
+  ],
+  "avoid_when": [
+    "极简 API",
+    "不需要 PostgreSQL/Auth",
+    "不想维护 NestJS 全套工具链"
+  ],
+  "trust_level": "good_reference",
+  "quality_score": {
+    "readme": 5,
+    "structure": 4,
+    "testing": 4,
+    "docker": 5,
+    "database_migration": 4,
+    "auth_permission": 5,
+    "logging_error_handling": 4,
+    "personal_project_value": 4,
+    "medium_project_value": 5,
+    "core_rule_value": 4
+  },
+  "recommended_target_files": [
+    "wiki/templates/nestjs-project-template.md",
+    "rules/auth-and-permission-rules.md",
+    "rules/deployment-and-env-rules.md",
+    "wiki/patterns/rbac-permission-pattern.md"
+  ],
+  "retrieval": {
+    "prompt_tags": [
+      "NestJS",
+      "JWT",
+      "RBAC",
+      "TypeORM",
+      "Swagger",
+      "Jest",
+      "nestjs",
+      "good_reference",
+      "backend github project",
+      "后端项目分析"
+    ],
+    "keywords": [
+      "Prime NestJS",
+      "JWT RSA256",
+      "roles guard",
+      "TypeORM migration",
+      "Docker healthcheck",
+      "Swagger docs",
+      "NestJS",
+      "TypeORM",
+      "JWT RSA",
+      "RBAC",
+      "Swagger",
+      "Docker",
+      "backend rules candidate",
+      "后端规则候选"
+    ]
+  }
+}

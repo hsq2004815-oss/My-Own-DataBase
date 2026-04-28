@@ -1,0 +1,104 @@
+{
+  "id": "backend_github_project_fastapi_langchain_rag",
+  "project_name": "fastapi-langchain-rag",
+  "domain": "backend",
+  "source_type": "github_project",
+  "local_path": "E:\\DataBase\\domains\\backend\\raw\\github_projects\\ai_backend\\fastapi-langchain-rag",
+  "summary": "面向 RAG 问答系统的 FastAPI + LangChain 后端，使用 PostgreSQL/pgvector、Redis、SQLModel/SQLAlchemy，并包含 Cloud Run/Terraform 与迁移文档。",
+  "tech_stack": [
+    "Alembic 文档/迁移说明",
+    "Dockerfile",
+    "FastAPI",
+    "GCP Cloud Run/Terraform 文档",
+    "GitHub Actions 线索",
+    "LangChain",
+    "NextAuth JWT 集成线索",
+    "PostgreSQL/pgvector",
+    "README",
+    "Redis",
+    "SQLAlchemy",
+    "SQLModel",
+    "Vercel 前端说明",
+    "docs 分章节教程",
+    "python-jose",
+    "未发现完整 tests 目录",
+    "本地/文档解析管线，云存储未完整确认",
+    "订阅/用户限制线索，RBAC 未完整确认"
+  ],
+  "backend_subdomains": [
+    "FastAPI",
+    "RAG",
+    "pgvector",
+    "LangChain",
+    "Docker",
+    "Cloud Run"
+  ],
+  "strengths": [
+    "RAG 架构完整",
+    "docs 分章清晰",
+    "pgvector/Redis/SQLModel 组合有参考价值"
+  ],
+  "weaknesses": [
+    "测试证据弱",
+    "部署和解析依赖偏重",
+    "部分鉴权/权限细节未确认"
+  ],
+  "use_as": [
+    "RAG 后端结构样本",
+    "pgvector 项目参考",
+    "文档型教程参考"
+  ],
+  "avoid_when": [
+    "只需要 CRUD API",
+    "个人项目不需要云部署/订阅",
+    "不能接受重型文档解析依赖"
+  ],
+  "trust_level": "good_reference",
+  "quality_score": {
+    "readme": 4,
+    "structure": 4,
+    "testing": 1,
+    "docker": 3,
+    "database_migration": 3,
+    "auth_permission": 3,
+    "logging_error_handling": 3,
+    "personal_project_value": 3,
+    "medium_project_value": 4,
+    "core_rule_value": 4
+  },
+  "recommended_target_files": [
+    "rules/ai-backend-design-rules.md",
+    "wiki/patterns/rag-backend-pipeline-pattern.md",
+    "wiki/templates/rag-backend-template.md",
+    "rules/deployment-and-env-rules.md"
+  ],
+  "retrieval": {
+    "prompt_tags": [
+      "FastAPI",
+      "RAG",
+      "LangChain",
+      "pgvector",
+      "AI backend",
+      "向量检索",
+      "ai_backend",
+      "good_reference",
+      "backend github project",
+      "后端项目分析"
+    ],
+    "keywords": [
+      "FastAPI RAG",
+      "LangChain 后端",
+      "pgvector vector database",
+      "文档 ingestion",
+      "Cloud Run 部署",
+      "FastAPI",
+      "RAG",
+      "pgvector",
+      "LangChain",
+      "Docker",
+      "Cloud Run",
+      "backend rules candidate",
+      "后端规则候选"
+    ]
+  }
+}

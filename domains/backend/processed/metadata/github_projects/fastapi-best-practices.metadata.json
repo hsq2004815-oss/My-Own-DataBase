@@ -1,0 +1,95 @@
+{
+  "id": "backend_github_project_fastapi_best_practices",
+  "project_name": "fastapi-best-practices",
+  "domain": "backend",
+  "source_type": "github_project",
+  "local_path": "E:\\DataBase\\domains\\backend\\raw\\github_projects\\fastapi\\fastapi-best-practices",
+  "summary": "社区维护的 FastAPI 最佳实践文档，覆盖项目结构、异步路由、Pydantic、依赖、SQLAlchemy/Alembic、JWT、测试和反模式。",
+  "tech_stack": [
+    "AGENTS.md",
+    "Alembic 文档实践",
+    "FastAPI 文档规则",
+    "JWT 文档实践",
+    "README",
+    "README_ZH",
+    "SQLAlchemy 2 文档实践",
+    "依赖/权限建议，具体实现未运行",
+    "文档提及测试实践，项目本身非测试套件",
+    "文档覆盖 SQLAlchemy/PostgreSQL 等实践"
+  ],
+  "backend_subdomains": [
+    "FastAPI rules",
+    "Pydantic",
+    "SQLAlchemy",
+    "Alembic",
+    "JWT",
+    "Agent rules"
+  ],
+  "strengths": [
+    "规则清晰",
+    "有中文 README",
+    "适合 AI Agent 约束"
+  ],
+  "weaknesses": [
+    "文档仓库非应用",
+    "无运行测试",
+    "不能单独证明实现质量"
+  ],
+  "use_as": [
+    "FastAPI 核心规则来源",
+    "Agent 代码生成约束",
+    "反模式 checklist"
+  ],
+  "avoid_when": [
+    "需要完整源码模板",
+    "需要部署样例",
+    "需要数据库 schema 实例"
+  ],
+  "trust_level": "core_reference",
+  "quality_score": {
+    "readme": 5,
+    "structure": 4,
+    "testing": 0,
+    "docker": 0,
+    "database_migration": 3,
+    "auth_permission": 2,
+    "logging_error_handling": 3,
+    "personal_project_value": 4,
+    "medium_project_value": 4,
+    "core_rule_value": 5
+  },
+  "recommended_target_files": [
+    "rules/backend-layered-architecture-rules.md",
+    "rules/api-design-rules.md",
+    "rules/database-modeling-rules.md",
+    "rules/backend-project-template-rules.md"
+  ],
+  "retrieval": {
+    "prompt_tags": [
+      "FastAPI",
+      "best practices",
+      "rules",
+      "Pydantic",
+      "SQLAlchemy",
+      "fastapi",
+      "core_reference",
+      "backend github project",
+      "后端项目分析"
+    ],
+    "keywords": [
+      "FastAPI 最佳实践",
+      "Agent rules",
+      "Pydantic Settings",
+      "SQLAlchemy Alembic",
+      "async routes",
+      "FastAPI rules",
+      "Pydantic",
+      "SQLAlchemy",
+      "Alembic",
+      "JWT",
+      "Agent rules",
+      "backend rules candidate",
+      "后端规则候选"
+    ]
+  }
+}

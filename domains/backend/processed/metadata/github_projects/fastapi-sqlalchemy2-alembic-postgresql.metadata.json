@@ -1,0 +1,92 @@
+{
+  "id": "backend_github_project_fastapi_sqlalchemy2_alembic_postgresql",
+  "project_name": "fastapi-sqlalchemy2-alembic-postgresql",
+  "domain": "backend",
+  "source_type": "github_project",
+  "local_path": "E:\\DataBase\\domains\\backend\\raw\\github_projects\\fastapi\\fastapi-sqlalchemy2-alembic-postgresql",
+  "summary": "FastAPI + SQLAlchemy 2 + Alembic + PostgreSQL starter，采用类似 Django app 的 feature-based 结构，包含 auth/user/core/alembic。",
+  "tech_stack": [
+    "Alembic",
+    "FastAPI",
+    "JWT/PyJWT",
+    "PostgreSQL",
+    "README",
+    "SQLAlchemy 2",
+    "bcrypt",
+    "docker-compose PostgreSQL 服务",
+    "未发现 tests",
+    "用户/认证基础，RBAC 未发现"
+  ],
+  "backend_subdomains": [
+    "FastAPI",
+    "SQLAlchemy",
+    "Alembic",
+    "PostgreSQL",
+    "JWT"
+  ],
+  "strengths": [
+    "结构清晰",
+    "DB/migration 线索明确",
+    "适合轻量学习"
+  ],
+  "weaknesses": [
+    "无测试",
+    "部署不完整",
+    "错误/权限规范弱"
+  ],
+  "use_as": [
+    "FastAPI DB starter",
+    "feature-based 分层样本",
+    "JWT sample"
+  ],
+  "avoid_when": [
+    "需要生产质量保证",
+    "需要复杂权限",
+    "需要 CI/CD 模板"
+  ],
+  "trust_level": "good_reference",
+  "quality_score": {
+    "readme": 4,
+    "structure": 4,
+    "testing": 0,
+    "docker": 2,
+    "database_migration": 4,
+    "auth_permission": 3,
+    "logging_error_handling": 2,
+    "personal_project_value": 4,
+    "medium_project_value": 3,
+    "core_rule_value": 3
+  },
+  "recommended_target_files": [
+    "rules/database-modeling-rules.md",
+    "rules/backend-layered-architecture-rules.md",
+    "rules/auth-and-permission-rules.md",
+    "wiki/templates/fastapi-project-template.md"
+  ],
+  "retrieval": {
+    "prompt_tags": [
+      "FastAPI",
+      "SQLAlchemy2",
+      "Alembic",
+      "PostgreSQL",
+      "JWT",
+      "fastapi",
+      "good_reference",
+      "backend github project",
+      "后端项目分析"
+    ],
+    "keywords": [
+      "FastAPI SQLAlchemy2",
+      "Alembic migration",
+      "feature based architecture",
+      "PostgreSQL starter",
+      "FastAPI",
+      "SQLAlchemy",
+      "Alembic",
+      "PostgreSQL",
+      "JWT",
+      "backend rules candidate",
+      "后端规则候选"
+    ]
+  }
+}

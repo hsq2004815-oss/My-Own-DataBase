@@ -1,0 +1,77 @@
+[
+  {
+    "chunk_id": "backend-github-fastapi-sqlalchemy2-alembic-postgresql-architecture",
+    "project_name": "fastapi-sqlalchemy2-alembic-postgresql",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "fastapi-sqlalchemy2-alembic-postgresql architecture observation",
+    "content": "fastapi-sqlalchemy2-alembic-postgresql 的核心定位是：FastAPI + SQLAlchemy 2 + Alembic + PostgreSQL starter，采用类似 Django app 的 feature-based 结构，包含 auth/user/core/alembic。 目录和边界观察：按 auth、user、core、alembic 拆分，auth/user 内再分 models/routes/services/schemas。；core 包含 config、config_loader、database。；alembic/versions 有 create_users_table migration。 可复用重点是把项目能力拆成清晰模块，而不是复制全部源码。规则候选：小型 FastAPI CRUD 可以按 feature 分组，每个 feature 包含 routes/services/models/schemas。 适合检索时命中架构、项目模板、分层设计、AI Agent 生成后端骨架等任务。",
+    "tags": [
+      "FastAPI",
+      "SQLAlchemy2",
+      "Alembic",
+      "PostgreSQL",
+      "JWT",
+      "architecture",
+      "fastapi",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/database-modeling-rules.md",
+      "rules/backend-layered-architecture-rules.md",
+      "rules/auth-and-permission-rules.md",
+      "wiki/templates/fastapi-project-template.md"
+    ],
+    "trust_level": "good_reference"
+  },
+  {
+    "chunk_id": "backend-github-fastapi-sqlalchemy2-alembic-postgresql-quality",
+    "project_name": "fastapi-sqlalchemy2-alembic-postgresql",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "fastapi-sqlalchemy2-alembic-postgresql quality observation",
+    "content": "fastapi-sqlalchemy2-alembic-postgresql 的质量与部署观察：未发现 tests。；适合作为结构/数据库 starter 样本，不适合作为质量核心模板。；docker-compose 只提供 PostgreSQL 服务。；未发现 Dockerfile 和 CI。 质量评分中 README=4/5、结构=4/5、测试=0/5、部署=2/5，trust_level=good_reference。不建议照搬：无 tests/CI，不应作为唯一核心规则来源。；docker-compose 只有数据库，完整部署参考不足。；缺少统一错误和权限策略。 适合用于判断样本是否能进入核心 rules，或仅作为 sample。",
+    "tags": [
+      "FastAPI",
+      "SQLAlchemy2",
+      "Alembic",
+      "PostgreSQL",
+      "JWT",
+      "quality",
+      "fastapi",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/database-modeling-rules.md",
+      "rules/backend-layered-architecture-rules.md",
+      "rules/auth-and-permission-rules.md",
+      "wiki/templates/fastapi-project-template.md"
+    ],
+    "trust_level": "good_reference"
+  },
+  {
+    "chunk_id": "backend-github-fastapi-sqlalchemy2-alembic-postgresql-rules",
+    "project_name": "fastapi-sqlalchemy2-alembic-postgresql",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "fastapi-sqlalchemy2-alembic-postgresql rules observation",
+    "content": "fastapi-sqlalchemy2-alembic-postgresql 的 API/数据/权限观察：auth/models/token、auth_service、auth_utils 和 PyJWT/bcrypt 体现 JWT 登录基础。；未发现 refresh token 或 RBAC。；PostgreSQL + SQLAlchemy 2 + Alembic 是核心价值。；有 users table migration。；存在 auth_router、user_router。；未发现 API versioning。 推荐关联知识库文件包括：rules/database-modeling-rules.md、rules/backend-layered-architecture-rules.md、rules/auth-and-permission-rules.md、wiki/templates/fastapi-project-template.md。生成代码时应先确认该项目是完整模板、库项目还是文档型规则来源；只有被多个项目共同支持的做法才应进入核心 rules，单一项目特性保留为 sample 或 wiki pattern 候选。",
+    "tags": [
+      "FastAPI",
+      "SQLAlchemy2",
+      "Alembic",
+      "PostgreSQL",
+      "JWT",
+      "rules",
+      "fastapi",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/database-modeling-rules.md",
+      "rules/backend-layered-architecture-rules.md",
+      "rules/auth-and-permission-rules.md",
+      "wiki/templates/fastapi-project-template.md"
+    ],
+    "trust_level": "good_reference"
+  }
+]

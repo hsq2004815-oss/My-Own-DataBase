@@ -1,0 +1,77 @@
+[
+  {
+    "chunk_id": "backend-github-fastapi-best-practices-architecture",
+    "project_name": "fastapi-best-practices",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "fastapi-best-practices architecture observation",
+    "content": "fastapi-best-practices 的核心定位是：社区维护的 FastAPI 最佳实践文档，覆盖项目结构、异步路由、Pydantic、依赖、SQLAlchemy/Alembic、JWT、测试和反模式。 目录和边界观察：该项目基本是文档仓库，不是可运行应用。；README 目录覆盖 Project Structure、Async Routes、Pydantic、Dependencies 等主题。；有 AGENTS.md 机器可读规则，对 AI Agent 生成 FastAPI 代码很有价值。 可复用重点是把项目能力拆成清晰模块，而不是复制全部源码。规则候选：FastAPI 规则必须区分 I/O async、CPU-bound sync/offload，避免盲目 async。 适合检索时命中架构、项目模板、分层设计、AI Agent 生成后端骨架等任务。",
+    "tags": [
+      "FastAPI",
+      "best practices",
+      "rules",
+      "Pydantic",
+      "SQLAlchemy",
+      "architecture",
+      "fastapi",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/backend-layered-architecture-rules.md",
+      "rules/api-design-rules.md",
+      "rules/database-modeling-rules.md",
+      "rules/backend-project-template-rules.md"
+    ],
+    "trust_level": "core_reference"
+  },
+  {
+    "chunk_id": "backend-github-fastapi-best-practices-quality",
+    "project_name": "fastapi-best-practices",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "fastapi-best-practices quality observation",
+    "content": "fastapi-best-practices 的质量与部署观察：文档质量高但无项目测试。；对核心规则库价值高，对模板代码价值低。；未发现 Docker/Compose/CI 作为本项目核心。；更适合 rules，不适合 deployment template。 质量评分中 README=5/5、结构=4/5、测试=0/5、部署=0/5，trust_level=core_reference。不建议照搬：不要把文档仓库当可运行模板。；单条建议进入核心 rules 前应与代码项目或官方文档交叉验证。；没有 Docker/test/db 实现证据。 适合用于判断样本是否能进入核心 rules，或仅作为 sample。",
+    "tags": [
+      "FastAPI",
+      "best practices",
+      "rules",
+      "Pydantic",
+      "SQLAlchemy",
+      "quality",
+      "fastapi",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/backend-layered-architecture-rules.md",
+      "rules/api-design-rules.md",
+      "rules/database-modeling-rules.md",
+      "rules/backend-project-template-rules.md"
+    ],
+    "trust_level": "core_reference"
+  },
+  {
+    "chunk_id": "backend-github-fastapi-best-practices-rules",
+    "project_name": "fastapi-best-practices",
+    "domain": "backend",
+    "source_type": "github_project_analysis",
+    "title": "fastapi-best-practices rules observation",
+    "content": "fastapi-best-practices 的 API/数据/权限观察：文档提到 JWT 等实践。；非完整权限系统源码，不应单独作为 RBAC 规则来源。；文档覆盖 SQLAlchemy 2 和 Alembic，但不是本地可运行数据库实现。；可作为规则候选来源，必须与 minimal-fastapi-postgres-template 等代码项目共同验证。；非应用项目，未提供实际 API。；文档可作为 REST API 组织、依赖注入、响应模型候选来源。 推荐关联知识库文件包括：rules/backend-layered-architecture-rules.md、rules/api-design-rules.md、rules/database-modeling-rules.md、rules/backend-project-template-rules.md。生成代码时应先确认该项目是完整模板、库项目还是文档型规则来源；只有被多个项目共同支持的做法才应进入核心 rules，单一项目特性保留为 sample 或 wiki pattern 候选。",
+    "tags": [
+      "FastAPI",
+      "best practices",
+      "rules",
+      "Pydantic",
+      "SQLAlchemy",
+      "rules",
+      "fastapi",
+      "backend-analysis"
+    ],
+    "target_files": [
+      "rules/backend-layered-architecture-rules.md",
+      "rules/api-design-rules.md",
+      "rules/database-modeling-rules.md",
+      "rules/backend-project-template-rules.md"
+    ],
+    "trust_level": "core_reference"
+  }
+]

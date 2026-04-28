@@ -1,0 +1,113 @@
+{
+  "id": "backend_github_project_minimal_fastapi_postgres_template",
+  "project_name": "minimal-fastapi-postgres-template",
+  "domain": "backend",
+  "source_type": "github_project",
+  "local_path": "E:\\DataBase\\domains\\backend\\raw\\github_projects\\fastapi\\minimal-fastapi-postgres-template",
+  "summary": "现代 FastAPI + PostgreSQL 模板，包含 SQLAlchemy async、Alembic、JWT、Prometheus、Docker、Makefile、pre-commit、Ruff、mypy、pytest/coverage 和 GitHub Actions。",
+  "tech_stack": [
+    "Alembic",
+    "Dependabot",
+    "Dockerfile",
+    "FastAPI",
+    "FastAPI docs",
+    "GitHub Actions tests",
+    "JWT/PyJWT",
+    "Makefile",
+    "PostgreSQL",
+    "README",
+    "SQLAlchemy async",
+    "bcrypt",
+    "dev_build",
+    "docker-compose",
+    "freezegun",
+    "httpx",
+    "polyfactory",
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "pytest-xdist",
+    "type_check",
+    "基础 auth，RBAC 未完整发现"
+  ],
+  "backend_subdomains": [
+    "FastAPI",
+    "PostgreSQL",
+    "SQLAlchemy async",
+    "Alembic",
+    "JWT",
+    "CI",
+    "metrics"
+  ],
+  "strengths": [
+    "现代质量链完整",
+    "测试强",
+    "结构适合个人默认模板"
+  ],
+  "weaknesses": [
+    "Python 版本较新",
+    "refresh/RBAC 不完整",
+    "示例 env 需安全替换"
+  ],
+  "use_as": [
+    "FastAPI 核心模板",
+    "DB/migration 规则来源",
+    "质量基线参考"
+  ],
+  "avoid_when": [
+    "只需极简 demo",
+    "无法使用新 Python",
+    "需要复杂权限系统"
+  ],
+  "trust_level": "core_reference",
+  "quality_score": {
+    "readme": 5,
+    "structure": 5,
+    "testing": 5,
+    "docker": 5,
+    "database_migration": 5,
+    "auth_permission": 4,
+    "logging_error_handling": 4,
+    "personal_project_value": 5,
+    "medium_project_value": 5,
+    "core_rule_value": 5
+  },
+  "recommended_target_files": [
+    "rules/backend-project-template-rules.md",
+    "rules/database-modeling-rules.md",
+    "rules/deployment-and-env-rules.md",
+    "wiki/templates/fastapi-project-template.md",
+    "rules/performance-and-stability-rules.md"
+  ],
+  "retrieval": {
+    "prompt_tags": [
+      "FastAPI",
+      "PostgreSQL",
+      "SQLAlchemy async",
+      "Alembic",
+      "pytest",
+      "CI",
+      "fastapi",
+      "core_reference",
+      "backend github project",
+      "后端项目分析"
+    ],
+    "keywords": [
+      "minimal FastAPI template",
+      "SQLAlchemy async",
+      "Alembic PostgreSQL",
+      "pytest coverage",
+      "Ruff mypy",
+      "健康检查 metrics",
+      "FastAPI",
+      "PostgreSQL",
+      "SQLAlchemy async",
+      "Alembic",
+      "JWT",
+      "CI",
+      "metrics",
+      "backend rules candidate",
+      "后端规则候选"
+    ]
+  }
+}
