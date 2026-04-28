@@ -65,4 +65,6 @@ python E:\DataBase\scripts\ui_assets\enrich_metadata.py
 
 - Screenshots 会补充 `dark-cinematic`、`liquid-glass`、`floating-navbar`、`giant-typography`、`bento-grid`、`dashboard-preview`、`editorial-layout`、`portfolio-inspiration`、`SaaS-hero` 等标签。
 - Videos 会补充 `motion-reference`、`hero-background`、`ambient-motion`、`cinematic-loop`、`glass-refraction`、`particle-background`、`gradient-motion` 等标签。
+- Lottie collection 会保持 collection-level，不强行逐个索引文件；当前生成 loading、micro interaction、hover motion、JSON web animation、animated icon 和 implementation notes summary chunks。
 - `inspiration_only` 只能作为风格参考，不得复制到项目；没有 `direct_use` 授权时，agent 应用 CSS、SVG、Canvas、WebGL 或自有/生成素材复刻风格。
+- `review_required` 不能默认直接商用；Lottie 直接使用前必须确认 license。

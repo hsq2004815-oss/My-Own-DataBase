@@ -421,7 +421,7 @@ def preferred_asset_types(query: str) -> set[str]:
         preferred.update({"icon", "asset_collection"})
     if any(term in lower for term in ("component", "ui kit", "button", "modal", "window", "control", "组件", "按钮", "弹窗", "窗口")):
         preferred.update({"asset_collection", "component_code", "surface", "control"})
-    if any(term in lower for term in ("lottie", "animation", "micro interaction", "动效", "动画")):
+    if any(term in lower for term in ("lottie", "animation", "loading", "hover motion", "micro interaction", "json animation", "animated icon", "lightweight", "小动画", "动效", "动画", "微交互", "加载动画", "按钮动画", "图标动画", "lottie 动画")):
         preferred.update({"asset_collection", "motion_reference"})
     return preferred
 
@@ -437,6 +437,13 @@ def asset_query_terms(query: str) -> list[str]:
         "背景": "background hero-background",
         "动效": "motion motion-reference",
         "动画": "motion motion-reference",
+        "小动画": "small-animation lottie micro-interaction lightweight-ui-animation",
+        "微交互": "micro-interaction lottie web-ui-motion",
+        "加载动画": "loading-animation lottie json-animation",
+        "按钮动画": "button-animation hover-motion lottie",
+        "图标动画": "animated-icon lottie",
+        "Lottie 动画": "lottie animation json-animation web-ui-motion",
+        "lottie 动画": "lottie animation json-animation web-ui-motion",
         "玻璃": "liquid glass liquid-glass glassmorphism",
         "按钮": "button kit control",
         "截图": "screenshot inspiration",

@@ -25,27 +25,90 @@
     "lottie",
     "animation",
     "json",
-    "motion"
+    "motion",
+    "lottie-animation",
+    "small-animation",
+    "micro-interaction",
+    "loading-animation",
+    "hover-motion",
+    "button-animation",
+    "animated-icon",
+    "json-animation",
+    "web-ui-motion",
+    "lightweight-ui-animation"
   ],
-  "use_cases": [],
-  "avoid_when": [],
+  "use_cases": [
+    "loading animation",
+    "hover motion",
+    "micro interaction",
+    "json animation reference",
+    "web UI motion",
+    "button animation",
+    "animated icon",
+    "lightweight UI animation",
+    "小动画",
+    "微交互",
+    "加载动画",
+    "按钮动画",
+    "图标动画"
+  ],
+  "avoid_when": [
+    "Do not default to direct commercial use; usage_policy is review_required.",
+    "Do not index or ship individual Lottie files until license and source are reviewed.",
+    "Avoid heavy or distracting animation for core reading and task flows.",
+    "Respect prefers-reduced-motion and provide a static fallback."
+  ],
   "implementation_notes": [
     "Registered as a collection to avoid per-file metadata noise.",
-    "Inspect the collection documentation and license before direct use."
+    "Inspect the collection documentation and license before direct use.",
+    "Usage policy: review_required. Inspect source and license before direct use.",
+    "Prefer recreating the style with original CSS, SVG, Canvas, or project-owned media until usage rights are confirmed.",
+    "Keep this as collection-level metadata; do not split all files unless a later task needs per-file curation.",
+    "Use Lottie for compact loading states, animated icons, hover feedback, and micro interactions.",
+    "Lazy-load animations and cap loop counts for UI affordances.",
+    "Provide reduced-motion fallbacks and avoid animation as the only state indicator.",
+    "When direct_use is not confirmed, recreate the motion with owned Lottie JSON, CSS, SVG, Canvas, or generated assets."
   ],
   "quality": {
-    "curation_status": "new",
-    "notes": "Collection-level metadata; individual files are not indexed yet."
+    "curation_status": "reviewed",
+    "notes": "Collection-level Lottie metadata enriched for retrieval; individual files are still not indexed."
   },
   "retrieval": {
-    "ai_summary": "Lottie Web library and demos collection registered for UI asset lookup. Review usage policy and license before use.",
+    "ai_summary": "Review-required Lottie Web library and demos collection for loading animation, hover motion, micro interaction, JSON web animation, button animation, animated icon, and lightweight web UI motion inspiration. Use as style reference only until license is confirmed; recreate with owned CSS/SVG/Canvas/Lottie assets when direct_use is not available.",
     "prompt_tags": [
       "lottie",
       "animation",
       "json",
       "motion",
-      "asset-collection"
+      "asset-collection",
+      "lottie-animation",
+      "small-animation",
+      "micro-interaction",
+      "loading-animation",
+      "hover-motion",
+      "button-animation",
+      "animated-icon",
+      "json-animation",
+      "web-ui-motion",
+      "lightweight-ui-animation",
+      "loading animation",
+      "hover motion",
+      "micro interaction",
+      "json animation reference",
+      "web UI motion",
+      "button animation",
+      "animated icon",
+      "lightweight UI animation",
+      "小动画",
+      "微交互",
+      "加载动画",
+      "按钮动画",
+      "图标动画"
     ],
-    "negative_prompt_tags": []
+    "negative_prompt_tags": [
+      "direct-commercial-use-without-license",
+      "unreviewed-lottie-file",
+      "excessive-animation"
+    ]
   }
 }

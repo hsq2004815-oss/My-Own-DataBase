@@ -38,6 +38,74 @@ VIDEO_TAGS = [
     "gradient-motion",
 ]
 
+LOTTIE_ASSET_ID = "lottie-web-library-and-demos-b6a4ec55"
+LOTTIE_TAGS = [
+    "lottie",
+    "lottie-animation",
+    "small-animation",
+    "micro-interaction",
+    "loading-animation",
+    "hover-motion",
+    "button-animation",
+    "animated-icon",
+    "json-animation",
+    "web-ui-motion",
+    "lightweight-ui-animation",
+]
+LOTTIE_USE_CASES = [
+    "loading animation",
+    "hover motion",
+    "micro interaction",
+    "json animation reference",
+    "web UI motion",
+    "button animation",
+    "animated icon",
+    "lightweight UI animation",
+    "小动画",
+    "微交互",
+    "加载动画",
+    "按钮动画",
+    "图标动画",
+]
+LOTTIE_SUMMARIES: list[dict[str, Any]] = [
+    {
+        "chunk_id": "lottie-loading-animation-summary",
+        "title": "Lottie Loading Animation Summary",
+        "tags": ["lottie", "loading-animation", "json-animation", "lightweight-ui-animation", "加载动画"],
+        "content": "Use this collection as a review_required reference for lightweight loading animations, progress states, skeleton alternatives, empty-state waits, and async feedback. Do not assume direct commercial use until the collection license is checked.",
+    },
+    {
+        "chunk_id": "lottie-micro-interaction-summary",
+        "title": "Lottie Micro Interaction Summary",
+        "tags": ["lottie", "micro-interaction", "web-ui-motion", "小动画", "微交互"],
+        "content": "Use as inspiration for small UI micro interactions: success feedback, subtle state changes, form confirmation, onboarding delight, and compact product moments. Recreate or use only after license review.",
+    },
+    {
+        "chunk_id": "lottie-hover-motion-summary",
+        "title": "Lottie Hover Motion Summary",
+        "tags": ["lottie", "hover-motion", "button-animation", "web-ui-motion", "按钮动画"],
+        "content": "Use as a reference for hover motion on buttons, cards, nav items, feature icons, and premium CTA states. Keep hover animation lightweight, optional, and accessible.",
+    },
+    {
+        "chunk_id": "lottie-json-web-animation-summary",
+        "title": "Lottie JSON Web Animation Summary",
+        "tags": ["lottie", "json-animation", "web-ui-motion", "lightweight-ui-animation"],
+        "content": "Use as collection-level guidance for JSON-driven web UI animation. Prefer lazy loading, reduced-motion handling, bounded file sizes, and license confirmation before direct use.",
+    },
+    {
+        "chunk_id": "lottie-ui-icon-animation-summary",
+        "title": "Lottie UI Icon Animation Summary",
+        "tags": ["lottie", "animated-icon", "button-animation", "micro-interaction", "图标动画"],
+        "content": "Use as inspiration for animated icons in buttons, feature bullets, status badges, empty states, onboarding steps, and product UI affordances. Avoid overuse and do not ship unreviewed assets.",
+    },
+    {
+        "chunk_id": "lottie-implementation-notes-summary",
+        "title": "Lottie Implementation Notes Summary",
+        "tags": ["lottie", "implementation-notes", "review-required", "web-ui-motion"],
+        "content": "Implementation notes: this collection is review_required, individual files are not indexed, and direct commercial use requires license confirmation. Agents may use it as style reference and should recreate equivalent motion with owned JSON, CSS, SVG, Canvas, or generated assets when direct_use is not confirmed.",
+    },
+]
+
 SCREENSHOT_PROFILES: dict[str, dict[str, list[str] | str]] = {
     "reference 2": {
         "tags": ["liquid-glass", "floating-navbar", "SaaS-hero", "dashboard-preview"],
@@ -257,6 +325,10 @@ def profile_for(record: dict[str, Any]) -> dict[str, list[str] | str] | None:
     return None
 
 
+def is_lottie_collection(record: dict[str, Any]) -> bool:
+    return record.get("asset_id") == LOTTIE_ASSET_ID
+
+
 def usage_notes(policy: str) -> list[str]:
     if policy == "inspiration_only":
         return [
@@ -274,6 +346,48 @@ def usage_notes(policy: str) -> list[str]:
 
 
 def enrich_record(record: dict[str, Any]) -> bool:
+    if is_lottie_collection(record):
+        policy = str(record.get("usage_policy", "unknown"))
+        record["style_tags"] = uniq(list(record.get("style_tags") or []) + LOTTIE_TAGS)
+        record["use_cases"] = uniq(list(record.get("use_cases") or []) + LOTTIE_USE_CASES)
+        record["avoid_when"] = uniq(
+            list(record.get("avoid_when") or [])
+            + [
+                "Do not default to direct commercial use; usage_policy is review_required.",
+                "Do not index or ship individual Lottie files until license and source are reviewed.",
+                "Avoid heavy or distracting animation for core reading and task flows.",
+                "Respect prefers-reduced-motion and provide a static fallback.",
+            ]
+        )
+        record["implementation_notes"] = uniq(
+            list(record.get("implementation_notes") or [])
+            + usage_notes(policy)
+            + [
+                "Keep this as collection-level metadata; do not split all files unless a later task needs per-file curation.",
+                "Use Lottie for compact loading states, animated icons, hover feedback, and micro interactions.",
+                "Lazy-load animations and cap loop counts for UI affordances.",
+                "Provide reduced-motion fallbacks and avoid animation as the only state indicator.",
+                "When direct_use is not confirmed, recreate the motion with owned Lottie JSON, CSS, SVG, Canvas, or generated assets.",
+            ]
+        )
+        quality = record.get("quality") if isinstance(record.get("quality"), dict) else {}
+        quality["curation_status"] = "reviewed"
+        quality["notes"] = "Collection-level Lottie metadata enriched for retrieval; individual files are still not indexed."
+        record["quality"] = quality
+        retrieval = record.get("retrieval") if isinstance(record.get("retrieval"), dict) else {}
+        retrieval["ai_summary"] = (
+            "Review-required Lottie Web library and demos collection for loading animation, hover motion, "
+            "micro interaction, JSON web animation, button animation, animated icon, and lightweight web UI motion inspiration. "
+            "Use as style reference only until license is confirmed; recreate with owned CSS/SVG/Canvas/Lottie assets when direct_use is not available."
+        )
+        retrieval["prompt_tags"] = uniq(list(retrieval.get("prompt_tags") or []) + LOTTIE_TAGS + LOTTIE_USE_CASES)
+        retrieval["negative_prompt_tags"] = uniq(
+            list(retrieval.get("negative_prompt_tags") or [])
+            + ["direct-commercial-use-without-license", "unreviewed-lottie-file", "excessive-animation"]
+        )
+        record["retrieval"] = retrieval
+        return True
+
     profile = profile_for(record)
     if profile is None:
         return False
@@ -360,6 +474,41 @@ def chunk_for(record: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def lottie_chunks(record: dict[str, Any]) -> list[dict[str, Any]]:
+    retrieval = record.get("retrieval") if isinstance(record.get("retrieval"), dict) else {}
+    files = record.get("files") if isinstance(record.get("files"), dict) else {}
+    chunks: list[dict[str, Any]] = []
+    for item in LOTTIE_SUMMARIES:
+        content = "\n".join(
+            [
+                f"# {item['title']}",
+                f"Asset id: {record['asset_id']}",
+                f"Asset type: {record.get('asset_type', '')}",
+                f"Usage policy: {record.get('usage_policy', '')}",
+                f"File path: {files.get('file_path', '')}",
+                f"Style tags: {', '.join(record.get('style_tags', []))}",
+                f"Use cases: {', '.join(record.get('use_cases', []))}",
+                f"Summary: {item['content']}",
+                f"Collection summary: {retrieval.get('ai_summary', '')}",
+            ]
+        )
+        chunks.append(
+            {
+                "chunk_id": item["chunk_id"],
+                "asset_id": record["asset_id"],
+                "asset_type": record.get("asset_type", ""),
+                "usage_policy": record.get("usage_policy", ""),
+                "content": content,
+                "metadata": {
+                    "style_tags": uniq(list(record.get("style_tags", [])) + list(item["tags"])),
+                    "use_cases": record.get("use_cases", []),
+                    "prompt_tags": uniq(list(retrieval.get("prompt_tags", [])) + list(item["tags"])),
+                },
+            }
+        )
+    return chunks
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Enrich UI asset metadata and generate asset chunks.")
     parser.add_argument("--check", action="store_true", help="Validate and report without writing files.")
@@ -379,11 +528,16 @@ def main() -> int:
                 write_json(path, record)
         if record.get("asset_type") in {"screenshot_reference", "motion_reference"}:
             chunks.append(chunk_for(record))
+        elif is_lottie_collection(record):
+            chunks.extend(lottie_chunks(record))
 
     if not args.check:
         CHUNK_DIR.mkdir(parents=True, exist_ok=True)
         for chunk in chunks:
-            write_json(CHUNK_DIR / f"{chunk['asset_id']}.json", chunk)
+            filename = chunk["asset_id"]
+            if not str(chunk["chunk_id"]).endswith("-asset-summary"):
+                filename = chunk["chunk_id"]
+            write_json(CHUNK_DIR / f"{filename}.json", chunk)
         write_json(CHUNK_DIR / "all_asset_chunks.json", chunks)
 
     action = "would enrich" if args.check else "enriched"
