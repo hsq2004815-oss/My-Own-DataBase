@@ -1,0 +1,28 @@
+{
+  "chunk_id": "1-5-c0b8e9a4-asset-summary",
+  "asset_id": "1-5-c0b8e9a4",
+  "asset_type": "motion_reference",
+  "usage_policy": "inspiration_only",
+  "content": "# 1-5-c0b8e9a4 asset retrieval chunk\nAsset type: motion_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\videos\\1 (5).mp4\nStyle tags: motion-reference, hero-background, cinematic-loop\nUse cases: product device showcase, robotics hero motion\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Product showcase motion reference with device/robotic arm composition for premium hardware, robotics, and developer product heroes. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+  "metadata": {
+    "style_tags": [
+      "motion-reference",
+      "hero-background",
+      "cinematic-loop"
+    ],
+    "use_cases": [
+      "product device showcase",
+      "robotics hero motion"
+    ],
+    "prompt_tags": [
+      "motion-reference",
+      "hero-background",
+      "cinematic-loop",
+      "ambient-motion",
+      "glass-refraction",
+      "particle-background",
+      "gradient-motion",
+      "1 (5)"
+    ]
+  }
+}

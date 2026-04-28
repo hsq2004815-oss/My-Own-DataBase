@@ -1,0 +1,31 @@
+{
+  "chunk_id": "reference1-17-1455b382-asset-summary",
+  "asset_id": "reference1-17-1455b382",
+  "asset_type": "screenshot_reference",
+  "usage_policy": "inspiration_only",
+  "content": "# reference1-17-1455b382 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (17).png\nStyle tags: dark-cinematic, giant-typography, portfolio-inspiration\nUse cases: security landing hero, editorial dark composition\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark editorial hero with giant fragmented typography, warm cinematic accent, floating navbar, and security/product narrative. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+  "metadata": {
+    "style_tags": [
+      "dark-cinematic",
+      "giant-typography",
+      "portfolio-inspiration"
+    ],
+    "use_cases": [
+      "security landing hero",
+      "editorial dark composition"
+    ],
+    "prompt_tags": [
+      "screenshot-reference",
+      "dark-cinematic",
+      "giant-typography",
+      "portfolio-inspiration",
+      "liquid-glass",
+      "floating-navbar",
+      "bento-grid",
+      "dashboard-preview",
+      "editorial-layout",
+      "SaaS-hero",
+      "reference1 (17)"
+    ]
+  }
+}

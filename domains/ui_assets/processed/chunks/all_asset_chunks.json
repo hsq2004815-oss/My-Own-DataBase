@@ -1,0 +1,1860 @@
+[
+  {
+    "chunk_id": "1-1-7aea0fe3-asset-summary",
+    "asset_id": "1-1-7aea0fe3",
+    "asset_type": "motion_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# 1-1-7aea0fe3 asset retrieval chunk\nAsset type: motion_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\videos\\1 (1).mp4\nStyle tags: motion-reference, hero-background, ambient-motion, cinematic-loop, particle-background\nUse cases: dark cinematic hero background, portfolio background motion\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark vortex-like ambient motion reference for cinematic hero backgrounds, portfolio covers, and deep-space particle moods. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "motion-reference",
+        "hero-background",
+        "ambient-motion",
+        "cinematic-loop",
+        "particle-background"
+      ],
+      "use_cases": [
+        "dark cinematic hero background",
+        "portfolio background motion"
+      ],
+      "prompt_tags": [
+        "motion-reference",
+        "hero-background",
+        "ambient-motion",
+        "cinematic-loop",
+        "particle-background",
+        "glass-refraction",
+        "gradient-motion",
+        "1 (1)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "1-10-2da52658-asset-summary",
+    "asset_id": "1-10-2da52658",
+    "asset_type": "motion_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# 1-10-2da52658 asset retrieval chunk\nAsset type: motion_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\videos\\1 (10).mp4\nStyle tags: motion-reference, hero-background, gradient-motion\nUse cases: light SaaS hero background, soft pastel landing motion\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Light SaaS hero motion reference with pastel gradient and simple management product composition for clean landing pages. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "motion-reference",
+        "hero-background",
+        "gradient-motion"
+      ],
+      "use_cases": [
+        "light SaaS hero background",
+        "soft pastel landing motion"
+      ],
+      "prompt_tags": [
+        "motion-reference",
+        "hero-background",
+        "gradient-motion",
+        "ambient-motion",
+        "cinematic-loop",
+        "glass-refraction",
+        "particle-background",
+        "1 (10)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "1-11-b41dcf16-asset-summary",
+    "asset_id": "1-11-b41dcf16",
+    "asset_type": "motion_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# 1-11-b41dcf16 asset retrieval chunk\nAsset type: motion_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\videos\\1 (11).mp4\nStyle tags: motion-reference, hero-background, ambient-motion, cinematic-loop\nUse cases: scenic portfolio background, optimistic landing hero\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Bright scenic hero motion reference with landscape and clouds, useful for optimistic portfolio or product landing backgrounds. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "motion-reference",
+        "hero-background",
+        "ambient-motion",
+        "cinematic-loop"
+      ],
+      "use_cases": [
+        "scenic portfolio background",
+        "optimistic landing hero"
+      ],
+      "prompt_tags": [
+        "motion-reference",
+        "hero-background",
+        "ambient-motion",
+        "cinematic-loop",
+        "glass-refraction",
+        "particle-background",
+        "gradient-motion",
+        "1 (11)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "1-12-32978367-asset-summary",
+    "asset_id": "1-12-32978367",
+    "asset_type": "motion_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# 1-12-32978367 asset retrieval chunk\nAsset type: motion_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\videos\\1 (12).mp4\nStyle tags: motion-reference, hero-background, ambient-motion, cinematic-loop, gradient-motion\nUse cases: dark SaaS video hero, blue abstract product background\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark SaaS video hero reference with blue abstract glass-like background and product-leadership landing composition. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "motion-reference",
+        "hero-background",
+        "ambient-motion",
+        "cinematic-loop",
+        "gradient-motion"
+      ],
+      "use_cases": [
+        "dark SaaS video hero",
+        "blue abstract product background"
+      ],
+      "prompt_tags": [
+        "motion-reference",
+        "hero-background",
+        "ambient-motion",
+        "cinematic-loop",
+        "gradient-motion",
+        "glass-refraction",
+        "particle-background",
+        "1 (12)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "1-13-e1fddfc7-asset-summary",
+    "asset_id": "1-13-e1fddfc7",
+    "asset_type": "motion_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# 1-13-e1fddfc7 asset retrieval chunk\nAsset type: motion_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\videos\\1 (13).mp4\nStyle tags: motion-reference, hero-background, particle-background, cinematic-loop\nUse cases: finance/asset hero background, particle landing motion\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark asset/finance hero motion reference with floating coin-like particles, useful for cinematic finance landing backgrounds. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "motion-reference",
+        "hero-background",
+        "particle-background",
+        "cinematic-loop"
+      ],
+      "use_cases": [
+        "finance/asset hero background",
+        "particle landing motion"
+      ],
+      "prompt_tags": [
+        "motion-reference",
+        "hero-background",
+        "particle-background",
+        "cinematic-loop",
+        "ambient-motion",
+        "glass-refraction",
+        "gradient-motion",
+        "1 (13)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "1-2-9c1842b7-asset-summary",
+    "asset_id": "1-2-9c1842b7",
+    "asset_type": "motion_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# 1-2-9c1842b7 asset retrieval chunk\nAsset type: motion_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\videos\\1 (2).mp4\nStyle tags: motion-reference, hero-background, ambient-motion, cinematic-loop, gradient-motion\nUse cases: abstract gradient hero background, dark landing page atmosphere\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Abstract dark gradient motion reference with colored light flare, suitable for premium hero backgrounds and cinematic transitions. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "motion-reference",
+        "hero-background",
+        "ambient-motion",
+        "cinematic-loop",
+        "gradient-motion"
+      ],
+      "use_cases": [
+        "abstract gradient hero background",
+        "dark landing page atmosphere"
+      ],
+      "prompt_tags": [
+        "motion-reference",
+        "hero-background",
+        "ambient-motion",
+        "cinematic-loop",
+        "gradient-motion",
+        "glass-refraction",
+        "particle-background",
+        "1 (2)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "1-3-177ca097-asset-summary",
+    "asset_id": "1-3-177ca097",
+    "asset_type": "motion_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# 1-3-177ca097 asset retrieval chunk\nAsset type: motion_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\videos\\1 (3).mp4\nStyle tags: motion-reference, hero-background, ambient-motion, cinematic-loop\nUse cases: scenic portfolio background, cinematic editorial hero\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Cinematic landscape motion reference with atmospheric scene depth for portfolio, AI, and editorial hero backgrounds. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "motion-reference",
+        "hero-background",
+        "ambient-motion",
+        "cinematic-loop"
+      ],
+      "use_cases": [
+        "scenic portfolio background",
+        "cinematic editorial hero"
+      ],
+      "prompt_tags": [
+        "motion-reference",
+        "hero-background",
+        "ambient-motion",
+        "cinematic-loop",
+        "glass-refraction",
+        "particle-background",
+        "gradient-motion",
+        "1 (3)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "1-4-61f1e4ed-asset-summary",
+    "asset_id": "1-4-61f1e4ed",
+    "asset_type": "motion_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# 1-4-61f1e4ed asset retrieval chunk\nAsset type: motion_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\videos\\1 (4).mp4\nStyle tags: motion-reference, hero-background, glass-refraction, gradient-motion\nUse cases: glass product showcase, liquid glass refraction inspiration\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Glass refraction motion reference with prism-like object and light beams, useful for Liquid Glass product showcases and premium hero visuals. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "motion-reference",
+        "hero-background",
+        "glass-refraction",
+        "gradient-motion"
+      ],
+      "use_cases": [
+        "glass product showcase",
+        "liquid glass refraction inspiration"
+      ],
+      "prompt_tags": [
+        "motion-reference",
+        "hero-background",
+        "glass-refraction",
+        "gradient-motion",
+        "ambient-motion",
+        "cinematic-loop",
+        "particle-background",
+        "1 (4)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "1-5-c0b8e9a4-asset-summary",
+    "asset_id": "1-5-c0b8e9a4",
+    "asset_type": "motion_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# 1-5-c0b8e9a4 asset retrieval chunk\nAsset type: motion_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\videos\\1 (5).mp4\nStyle tags: motion-reference, hero-background, cinematic-loop\nUse cases: product device showcase, robotics hero motion\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Product showcase motion reference with device/robotic arm composition for premium hardware, robotics, and developer product heroes. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "motion-reference",
+        "hero-background",
+        "cinematic-loop"
+      ],
+      "use_cases": [
+        "product device showcase",
+        "robotics hero motion"
+      ],
+      "prompt_tags": [
+        "motion-reference",
+        "hero-background",
+        "cinematic-loop",
+        "ambient-motion",
+        "glass-refraction",
+        "particle-background",
+        "gradient-motion",
+        "1 (5)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "1-6-7aea0fe3-asset-summary",
+    "asset_id": "1-6-7aea0fe3",
+    "asset_type": "motion_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# 1-6-7aea0fe3 asset retrieval chunk\nAsset type: motion_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\videos\\1 (6).mp4\nStyle tags: motion-reference, hero-background, ambient-motion, cinematic-loop, particle-background\nUse cases: dark cinematic hero background, portfolio background motion\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark vortex-like ambient loop reference for cinematic hero backgrounds and deep-space premium landing pages. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "motion-reference",
+        "hero-background",
+        "ambient-motion",
+        "cinematic-loop",
+        "particle-background"
+      ],
+      "use_cases": [
+        "dark cinematic hero background",
+        "portfolio background motion"
+      ],
+      "prompt_tags": [
+        "motion-reference",
+        "hero-background",
+        "ambient-motion",
+        "cinematic-loop",
+        "particle-background",
+        "glass-refraction",
+        "gradient-motion",
+        "1 (6)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "1-7-e9456b53-asset-summary",
+    "asset_id": "1-7-e9456b53",
+    "asset_type": "motion_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# 1-7-e9456b53 asset retrieval chunk\nAsset type: motion_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\videos\\1 (7).mp4\nStyle tags: motion-reference, hero-background, ambient-motion, gradient-motion\nUse cases: soft abstract background, ambient hero motion\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Soft blue abstract gradient motion reference for subtle hero background animation and atmospheric UI sections. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "motion-reference",
+        "hero-background",
+        "ambient-motion",
+        "gradient-motion"
+      ],
+      "use_cases": [
+        "soft abstract background",
+        "ambient hero motion"
+      ],
+      "prompt_tags": [
+        "motion-reference",
+        "hero-background",
+        "ambient-motion",
+        "gradient-motion",
+        "cinematic-loop",
+        "glass-refraction",
+        "particle-background",
+        "1 (7)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "1-8-5e093f96-asset-summary",
+    "asset_id": "1-8-5e093f96",
+    "asset_type": "motion_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# 1-8-5e093f96 asset retrieval chunk\nAsset type: motion_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\videos\\1 (8).mp4\nStyle tags: motion-reference, hero-background, ambient-motion, gradient-motion\nUse cases: soft abstract background, ambient hero motion\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Soft blue abstract gradient loop reference for ambient hero motion and gentle background animation. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "motion-reference",
+        "hero-background",
+        "ambient-motion",
+        "gradient-motion"
+      ],
+      "use_cases": [
+        "soft abstract background",
+        "ambient hero motion"
+      ],
+      "prompt_tags": [
+        "motion-reference",
+        "hero-background",
+        "ambient-motion",
+        "gradient-motion",
+        "cinematic-loop",
+        "glass-refraction",
+        "particle-background",
+        "1 (8)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "1-9-afbabc46-asset-summary",
+    "asset_id": "1-9-afbabc46",
+    "asset_type": "motion_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# 1-9-afbabc46 asset retrieval chunk\nAsset type: motion_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\videos\\1 (9).mp4\nStyle tags: motion-reference, hero-background, gradient-motion, cinematic-loop\nUse cases: finance hero background, dark SaaS landing motion\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark finance SaaS hero motion reference with vivid gradient light band, useful for premium product hero backgrounds. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "motion-reference",
+        "hero-background",
+        "gradient-motion",
+        "cinematic-loop"
+      ],
+      "use_cases": [
+        "finance hero background",
+        "dark SaaS landing motion"
+      ],
+      "prompt_tags": [
+        "motion-reference",
+        "hero-background",
+        "gradient-motion",
+        "cinematic-loop",
+        "ambient-motion",
+        "glass-refraction",
+        "particle-background",
+        "1 (9)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference-2-10-ec21949c-asset-summary",
+    "asset_id": "reference-2-10-ec21949c",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference-2-10-ec21949c asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference 2(10).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass UI screenshot reference with translucent controls, floating pills, glossy buttons, soft shadows, and glass card surfaces. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference 2(10)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference-2-11-80b39b17-asset-summary",
+    "asset_id": "reference-2-11-80b39b17",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference-2-11-80b39b17 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference 2(11).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass UI screenshot reference with translucent controls, floating pills, glossy buttons, soft shadows, and glass card surfaces. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference 2(11)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference-2-12-e88116d2-asset-summary",
+    "asset_id": "reference-2-12-e88116d2",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference-2-12-e88116d2 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference 2(12).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass UI screenshot reference with translucent controls, floating pills, glossy buttons, soft shadows, and glass card surfaces. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference 2(12)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference-2-13-df26e6c3-asset-summary",
+    "asset_id": "reference-2-13-df26e6c3",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference-2-13-df26e6c3 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference 2(13).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass UI screenshot reference with translucent controls, floating pills, glossy buttons, soft shadows, and glass card surfaces. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference 2(13)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference-2-7-8a1d601c-asset-summary",
+    "asset_id": "reference-2-7-8a1d601c",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference-2-7-8a1d601c asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference 2(7).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass UI screenshot reference with translucent controls, floating pills, glossy buttons, soft shadows, and glass card surfaces. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference 2(7)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference-2-8-db93b537-asset-summary",
+    "asset_id": "reference-2-8-db93b537",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference-2-8-db93b537 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference 2(8).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass UI screenshot reference with translucent controls, floating pills, glossy buttons, soft shadows, and glass card surfaces. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference 2(8)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference-2-9-0561508b-asset-summary",
+    "asset_id": "reference-2-9-0561508b",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference-2-9-0561508b asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference 2(9).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass UI screenshot reference with translucent controls, floating pills, glossy buttons, soft shadows, and glass card surfaces. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference 2(9)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-1-3e422fc4-asset-summary",
+    "asset_id": "reference1-1-3e422fc4",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-1-3e422fc4 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (1).png\nStyle tags: dark-cinematic, dashboard-preview, SaaS-hero\nUse cases: dark analytics landing inspiration, dashboard hero reference\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark cinematic analytics hero screenshot with dashboard preview, glowing CTA, and high-contrast product storytelling. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "dark-cinematic",
+        "dashboard-preview",
+        "SaaS-hero"
+      ],
+      "use_cases": [
+        "dark analytics landing inspiration",
+        "dashboard hero reference"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "dark-cinematic",
+        "dashboard-preview",
+        "SaaS-hero",
+        "liquid-glass",
+        "floating-navbar",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference1 (1)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-10-3e0a3b20-asset-summary",
+    "asset_id": "reference1-10-3e0a3b20",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-10-3e0a3b20 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (10).png\nStyle tags: dark-cinematic, floating-navbar, dashboard-preview, SaaS-hero\nUse cases: finance SaaS hero, dashboard preview inspiration\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark cinematic finance SaaS hero with floating navigation, dashboard product preview, glowing orb, and restrained neon accent. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "dark-cinematic",
+        "floating-navbar",
+        "dashboard-preview",
+        "SaaS-hero"
+      ],
+      "use_cases": [
+        "finance SaaS hero",
+        "dashboard preview inspiration"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "dark-cinematic",
+        "floating-navbar",
+        "dashboard-preview",
+        "SaaS-hero",
+        "liquid-glass",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference1 (10)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-11-e34eb5b9-asset-summary",
+    "asset_id": "reference1-11-e34eb5b9",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-11-e34eb5b9 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (11).png\nStyle tags: dark-cinematic, giant-typography, SaaS-hero\nUse cases: AI product landing hero, giant typography hero\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Premium dark AI landing hero with giant typography, glossy abstract background, floating navbar, and cinematic product mood. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "dark-cinematic",
+        "giant-typography",
+        "SaaS-hero"
+      ],
+      "use_cases": [
+        "AI product landing hero",
+        "giant typography hero"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "dark-cinematic",
+        "giant-typography",
+        "SaaS-hero",
+        "liquid-glass",
+        "floating-navbar",
+        "bento-grid",
+        "dashboard-preview",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference1 (11)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-12-67839751-asset-summary",
+    "asset_id": "reference1-12-67839751",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-12-67839751 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (12).png\nStyle tags: dark-cinematic, giant-typography, SaaS-hero\nUse cases: product leader landing page, dark SaaS hero\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark SaaS hero screenshot with large editorial headline, blue glass-like 3D background, floating navbar, and clear CTA row. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "dark-cinematic",
+        "giant-typography",
+        "SaaS-hero"
+      ],
+      "use_cases": [
+        "product leader landing page",
+        "dark SaaS hero"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "dark-cinematic",
+        "giant-typography",
+        "SaaS-hero",
+        "liquid-glass",
+        "floating-navbar",
+        "bento-grid",
+        "dashboard-preview",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference1 (12)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-13-a07e400c-asset-summary",
+    "asset_id": "reference1-13-a07e400c",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-13-a07e400c asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (13).png\nStyle tags: dark-cinematic, giant-typography, SaaS-hero\nUse cases: growth landing hero, cinematic dark product page\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Minimal dark product hero with huge centered type, blue cinematic glow, floating top nav, and restrained CTA hierarchy. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "dark-cinematic",
+        "giant-typography",
+        "SaaS-hero"
+      ],
+      "use_cases": [
+        "growth landing hero",
+        "cinematic dark product page"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "dark-cinematic",
+        "giant-typography",
+        "SaaS-hero",
+        "liquid-glass",
+        "floating-navbar",
+        "bento-grid",
+        "dashboard-preview",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference1 (13)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-14-f0737e0e-asset-summary",
+    "asset_id": "reference1-14-f0737e0e",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-14-f0737e0e asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (14).png\nStyle tags: dark-cinematic, editorial-layout, portfolio-inspiration\nUse cases: agency portfolio hero, cinematic landing cover\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark cinematic agency or portfolio hero with dramatic atmospheric background, editorial serif emphasis, and centered CTA. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "dark-cinematic",
+        "editorial-layout",
+        "portfolio-inspiration"
+      ],
+      "use_cases": [
+        "agency portfolio hero",
+        "cinematic landing cover"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "dark-cinematic",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "liquid-glass",
+        "floating-navbar",
+        "giant-typography",
+        "bento-grid",
+        "dashboard-preview",
+        "SaaS-hero",
+        "reference1 (14)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-15-7f1eae82-asset-summary",
+    "asset_id": "reference1-15-7f1eae82",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-15-7f1eae82 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (15).png\nStyle tags: editorial-layout, SaaS-hero, dashboard-preview\nUse cases: white editorial SaaS page, automation product landing\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: White editorial SaaS screenshot with airy composition, product dashboard preview, soft nature backdrop, and restrained black CTA. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "editorial-layout",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "white editorial SaaS page",
+        "automation product landing"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "editorial-layout",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "liquid-glass",
+        "floating-navbar",
+        "giant-typography",
+        "bento-grid",
+        "portfolio-inspiration",
+        "reference1 (15)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-16-a4d37f40-asset-summary",
+    "asset_id": "reference1-16-a4d37f40",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-16-a4d37f40 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (16).png\nStyle tags: dark-cinematic, giant-typography, portfolio-inspiration\nUse cases: security product hero, bold portfolio composition\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark cinematic security hero with oversized staggered typography, human figure media, and sharp data/security positioning. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "dark-cinematic",
+        "giant-typography",
+        "portfolio-inspiration"
+      ],
+      "use_cases": [
+        "security product hero",
+        "bold portfolio composition"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "dark-cinematic",
+        "giant-typography",
+        "portfolio-inspiration",
+        "liquid-glass",
+        "floating-navbar",
+        "bento-grid",
+        "dashboard-preview",
+        "editorial-layout",
+        "SaaS-hero",
+        "reference1 (16)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-17-1455b382-asset-summary",
+    "asset_id": "reference1-17-1455b382",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-17-1455b382 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (17).png\nStyle tags: dark-cinematic, giant-typography, portfolio-inspiration\nUse cases: security landing hero, editorial dark composition\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark editorial hero with giant fragmented typography, warm cinematic accent, floating navbar, and security/product narrative. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "dark-cinematic",
+        "giant-typography",
+        "portfolio-inspiration"
+      ],
+      "use_cases": [
+        "security landing hero",
+        "editorial dark composition"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "dark-cinematic",
+        "giant-typography",
+        "portfolio-inspiration",
+        "liquid-glass",
+        "floating-navbar",
+        "bento-grid",
+        "dashboard-preview",
+        "editorial-layout",
+        "SaaS-hero",
+        "reference1 (17)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-18-1d024d05-asset-summary",
+    "asset_id": "reference1-18-1d024d05",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-18-1d024d05 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (18).png\nStyle tags: editorial-layout, portfolio-inspiration, SaaS-hero\nUse cases: city/vision portfolio hero, future technology landing\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Editorial technology landing screenshot with scenic media background, understated navbar, strong headline, and portfolio-style CTA. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "editorial-layout",
+        "portfolio-inspiration",
+        "SaaS-hero"
+      ],
+      "use_cases": [
+        "city/vision portfolio hero",
+        "future technology landing"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "SaaS-hero",
+        "dark-cinematic",
+        "liquid-glass",
+        "floating-navbar",
+        "giant-typography",
+        "bento-grid",
+        "dashboard-preview",
+        "reference1 (18)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-19-ad1a8f27-asset-summary",
+    "asset_id": "reference1-19-ad1a8f27",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-19-ad1a8f27 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (19).png\nStyle tags: dark-cinematic, editorial-layout, portfolio-inspiration\nUse cases: AI portfolio hero, dark editorial landing page\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark editorial AI hero with serif typography, atmospheric illustration, floating nav, and premium portfolio composition. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "dark-cinematic",
+        "editorial-layout",
+        "portfolio-inspiration"
+      ],
+      "use_cases": [
+        "AI portfolio hero",
+        "dark editorial landing page"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "dark-cinematic",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "liquid-glass",
+        "floating-navbar",
+        "giant-typography",
+        "bento-grid",
+        "dashboard-preview",
+        "SaaS-hero",
+        "reference1 (19)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-2-1c01e931-asset-summary",
+    "asset_id": "reference1-2-1c01e931",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-2-1c01e931 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (2).png\nStyle tags: dark-cinematic, giant-typography, SaaS-hero\nUse cases: dark product hero, red accent landing page\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark premium product hero with bold centered headline, red abstract motion-like shape, floating navbar, and focused CTA. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "dark-cinematic",
+        "giant-typography",
+        "SaaS-hero"
+      ],
+      "use_cases": [
+        "dark product hero",
+        "red accent landing page"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "dark-cinematic",
+        "giant-typography",
+        "SaaS-hero",
+        "liquid-glass",
+        "floating-navbar",
+        "bento-grid",
+        "dashboard-preview",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference1 (2)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-20-14e97f9f-asset-summary",
+    "asset_id": "reference1-20-14e97f9f",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-20-14e97f9f asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (20).png\nStyle tags: liquid-glass, dashboard-preview, SaaS-hero\nUse cases: glass dashboard preview, technical product hero\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Light blue glassmorphism product page with translucent hex panels, dashboard-like preview, and operational evaluation positioning. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "dashboard-preview",
+        "SaaS-hero"
+      ],
+      "use_cases": [
+        "glass dashboard preview",
+        "technical product hero"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "dashboard-preview",
+        "SaaS-hero",
+        "dark-cinematic",
+        "floating-navbar",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference1 (20)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-3-26553a17-asset-summary",
+    "asset_id": "reference1-3-26553a17",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-3-26553a17 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (3).png\nStyle tags: editorial-layout, SaaS-hero\nUse cases: AI cloud landing page, white SaaS hero\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: White SaaS hero screenshot with clean headline, black CTA, subtle pastel gradient product/media field, and minimal nav. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "editorial-layout",
+        "SaaS-hero"
+      ],
+      "use_cases": [
+        "AI cloud landing page",
+        "white SaaS hero"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "editorial-layout",
+        "SaaS-hero",
+        "dark-cinematic",
+        "liquid-glass",
+        "floating-navbar",
+        "giant-typography",
+        "bento-grid",
+        "dashboard-preview",
+        "portfolio-inspiration",
+        "reference1 (3)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-4-e330066a-asset-summary",
+    "asset_id": "reference1-4-e330066a",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-4-e330066a asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (4).png\nStyle tags: dark-cinematic, dashboard-preview, SaaS-hero\nUse cases: SEO dashboard hero, dark SaaS dashboard preview\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark SaaS research landing screenshot with purple gradient glow, dashboard preview strip, floating nav, and premium hero structure. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "dark-cinematic",
+        "dashboard-preview",
+        "SaaS-hero"
+      ],
+      "use_cases": [
+        "SEO dashboard hero",
+        "dark SaaS dashboard preview"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "dark-cinematic",
+        "dashboard-preview",
+        "SaaS-hero",
+        "liquid-glass",
+        "floating-navbar",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference1 (4)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-5-ba4d1264-asset-summary",
+    "asset_id": "reference1-5-ba4d1264",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-5-ba4d1264 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (5).png\nStyle tags: dark-cinematic, dashboard-preview, bento-grid, SaaS-hero\nUse cases: research dashboard section, bento dashboard inspiration\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark dashboard-focused screenshot with purple cards, research panels, bento-like product preview, and premium SaaS structure. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "dark-cinematic",
+        "dashboard-preview",
+        "bento-grid",
+        "SaaS-hero"
+      ],
+      "use_cases": [
+        "research dashboard section",
+        "bento dashboard inspiration"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "dark-cinematic",
+        "dashboard-preview",
+        "bento-grid",
+        "SaaS-hero",
+        "liquid-glass",
+        "floating-navbar",
+        "giant-typography",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference1 (5)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-6-93a6c30a-asset-summary",
+    "asset_id": "reference1-6-93a6c30a",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-6-93a6c30a asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (6).png\nStyle tags: dark-cinematic, dashboard-preview, SaaS-hero\nUse cases: AI reflection app hero, dark dashboard preview\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark SaaS hero with purple horizon glow, dashboard preview, floating navbar, and premium AI productivity positioning. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "dark-cinematic",
+        "dashboard-preview",
+        "SaaS-hero"
+      ],
+      "use_cases": [
+        "AI reflection app hero",
+        "dark dashboard preview"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "dark-cinematic",
+        "dashboard-preview",
+        "SaaS-hero",
+        "liquid-glass",
+        "floating-navbar",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference1 (6)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-7-65b75429-asset-summary",
+    "asset_id": "reference1-7-65b75429",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-7-65b75429 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (7).png\nStyle tags: editorial-layout, bento-grid, portfolio-inspiration\nUse cases: portfolio case grid, editorial media layout\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Light editorial portfolio screenshot with media grid, playful composition, and case-study style layout inspiration. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "editorial-layout",
+        "bento-grid",
+        "portfolio-inspiration"
+      ],
+      "use_cases": [
+        "portfolio case grid",
+        "editorial media layout"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "editorial-layout",
+        "bento-grid",
+        "portfolio-inspiration",
+        "dark-cinematic",
+        "liquid-glass",
+        "floating-navbar",
+        "giant-typography",
+        "dashboard-preview",
+        "SaaS-hero",
+        "reference1 (7)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-8-3d1d05f8-asset-summary",
+    "asset_id": "reference1-8-3d1d05f8",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-8-3d1d05f8 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (8).png\nStyle tags: dark-cinematic, editorial-layout, portfolio-inspiration\nUse cases: language product hero, cinematic editorial cover\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark cinematic language product hero with globe-like background, minimal nav, editorial headline, and atmospheric layout. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "dark-cinematic",
+        "editorial-layout",
+        "portfolio-inspiration"
+      ],
+      "use_cases": [
+        "language product hero",
+        "cinematic editorial cover"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "dark-cinematic",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "liquid-glass",
+        "floating-navbar",
+        "giant-typography",
+        "bento-grid",
+        "dashboard-preview",
+        "SaaS-hero",
+        "reference1 (8)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference1-9-6eaec3b6-asset-summary",
+    "asset_id": "reference1-9-6eaec3b6",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference1-9-6eaec3b6 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference1 (9).png\nStyle tags: dark-cinematic, dashboard-preview, portfolio-inspiration\nUse cases: performance dashboard hero, sports/analytics landing\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark teal performance dashboard hero with dynamic media, metric overlays, floating nav, and cinematic product preview. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "dark-cinematic",
+        "dashboard-preview",
+        "portfolio-inspiration"
+      ],
+      "use_cases": [
+        "performance dashboard hero",
+        "sports/analytics landing"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "dark-cinematic",
+        "dashboard-preview",
+        "portfolio-inspiration",
+        "liquid-glass",
+        "floating-navbar",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "SaaS-hero",
+        "reference1 (9)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-1-2dfdeb00-asset-summary",
+    "asset_id": "reference2-1-2dfdeb00",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-1-2dfdeb00 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (1).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (1)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-10-2dfdeb00-asset-summary",
+    "asset_id": "reference2-10-2dfdeb00",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-10-2dfdeb00 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (10).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (10)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-11-2cbfdeb9-asset-summary",
+    "asset_id": "reference2-11-2cbfdeb9",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-11-2cbfdeb9 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (11).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (11)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-12-c9a1332a-asset-summary",
+    "asset_id": "reference2-12-c9a1332a",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-12-c9a1332a asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (12).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (12)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-13-d0ad38de-asset-summary",
+    "asset_id": "reference2-13-d0ad38de",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-13-d0ad38de asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (13).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (13)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-14-873c00d4-asset-summary",
+    "asset_id": "reference2-14-873c00d4",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-14-873c00d4 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (14).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (14)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-15-f15b52cf-asset-summary",
+    "asset_id": "reference2-15-f15b52cf",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-15-f15b52cf asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (15).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (15)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-16-50ebb111-asset-summary",
+    "asset_id": "reference2-16-50ebb111",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-16-50ebb111 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (16).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (16)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-17-d38de186-asset-summary",
+    "asset_id": "reference2-17-d38de186",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-17-d38de186 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (17).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (17)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-18-2f77c856-asset-summary",
+    "asset_id": "reference2-18-2f77c856",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-18-2f77c856 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (18).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (18)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-19-2cbfdeb9-asset-summary",
+    "asset_id": "reference2-19-2cbfdeb9",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-19-2cbfdeb9 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (19).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (19)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-2-8a1d601c-asset-summary",
+    "asset_id": "reference2-2-8a1d601c",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-2-8a1d601c asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (2).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (2)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-3-50ebb111-asset-summary",
+    "asset_id": "reference2-3-50ebb111",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-3-50ebb111 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (3).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (3)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-4-372738ad-asset-summary",
+    "asset_id": "reference2-4-372738ad",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-4-372738ad asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (4).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (4)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-5-873c00d4-asset-summary",
+    "asset_id": "reference2-5-873c00d4",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-5-873c00d4 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (5).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (5)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-6-d0ad38de-asset-summary",
+    "asset_id": "reference2-6-d0ad38de",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-6-d0ad38de asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (6).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (6)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-7-f15b52cf-asset-summary",
+    "asset_id": "reference2-7-f15b52cf",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-7-f15b52cf asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (7).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (7)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-8-d38de186-asset-summary",
+    "asset_id": "reference2-8-d38de186",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-8-d38de186 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (8).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (8)"
+      ]
+    }
+  },
+  {
+    "chunk_id": "reference2-9-2f77c856-asset-summary",
+    "asset_id": "reference2-9-2f77c856",
+    "asset_type": "screenshot_reference",
+    "usage_policy": "inspiration_only",
+    "content": "# reference2-9-2f77c856 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (9).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+    "metadata": {
+      "style_tags": [
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview"
+      ],
+      "use_cases": [
+        "liquid glass component inspiration",
+        "button kit reference",
+        "glass card system"
+      ],
+      "prompt_tags": [
+        "screenshot-reference",
+        "liquid-glass",
+        "floating-navbar",
+        "SaaS-hero",
+        "dashboard-preview",
+        "dark-cinematic",
+        "giant-typography",
+        "bento-grid",
+        "editorial-layout",
+        "portfolio-inspiration",
+        "reference2 (9)"
+      ]
+    }
+  }
+]

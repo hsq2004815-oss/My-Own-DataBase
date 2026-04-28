@@ -1,0 +1,33 @@
+{
+  "chunk_id": "reference2-18-2f77c856-asset-summary",
+  "asset_id": "reference2-18-2f77c856",
+  "asset_type": "screenshot_reference",
+  "usage_policy": "inspiration_only",
+  "content": "# reference2-18-2f77c856 asset retrieval chunk\nAsset type: screenshot_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\screenshots\\reference2 (18).jpg\nStyle tags: liquid-glass, floating-navbar, SaaS-hero, dashboard-preview\nUse cases: liquid glass component inspiration, button kit reference, glass card system\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+  "metadata": {
+    "style_tags": [
+      "liquid-glass",
+      "floating-navbar",
+      "SaaS-hero",
+      "dashboard-preview"
+    ],
+    "use_cases": [
+      "liquid glass component inspiration",
+      "button kit reference",
+      "glass card system"
+    ],
+    "prompt_tags": [
+      "screenshot-reference",
+      "liquid-glass",
+      "floating-navbar",
+      "SaaS-hero",
+      "dashboard-preview",
+      "dark-cinematic",
+      "giant-typography",
+      "bento-grid",
+      "editorial-layout",
+      "portfolio-inspiration",
+      "reference2 (18)"
+    ]
+  }
+}

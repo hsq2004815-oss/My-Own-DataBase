@@ -411,9 +411,9 @@ def asset_to_result(record: dict[str, Any]) -> AssetResult:
 def preferred_asset_types(query: str) -> set[str]:
     lower = query.lower()
     preferred: set[str] = set()
-    if any(term in lower for term in ("dynamic", "motion", "video", "background", "scene", "ecology", "ambient", "动态", "视频", "背景", "生态")):
+    if any(term in lower for term in ("dynamic", "motion", "video", "background", "scene", "ecology", "ambient", "hero", "cinematic", "动态", "视频", "背景", "生态")):
         preferred.update({"motion_reference", "background_video", "background_image", "texture"})
-    if any(term in lower for term in ("screenshot", "reference", "inspiration", "interface", "screen", "参考", "截图", "界面", "审美")):
+    if any(term in lower for term in ("screenshot", "reference", "inspiration", "interface", "screen", "portfolio", "landing", "saas", "dark", "glass", "liquid", "参考", "截图", "界面", "审美", "高级", "高端", "简历", "作品集", "玻璃")):
         preferred.add("screenshot_reference")
     if any(term in lower for term in ("font", "typography", "typeface", "字体", "排版")):
         preferred.add("font")
@@ -424,6 +424,33 @@ def preferred_asset_types(query: str) -> set[str]:
     if any(term in lower for term in ("lottie", "animation", "micro interaction", "动效", "动画")):
         preferred.update({"asset_collection", "motion_reference"})
     return preferred
+
+
+def asset_query_terms(query: str) -> list[str]:
+    aliases = {
+        "高级": "premium high-end",
+        "高端": "premium high-end",
+        "简历": "portfolio resume",
+        "作品集": "portfolio",
+        "网站": "website landing page",
+        "动态背景": "dynamic background hero-background ambient-motion",
+        "背景": "background hero-background",
+        "动效": "motion motion-reference",
+        "动画": "motion motion-reference",
+        "玻璃": "liquid glass liquid-glass glassmorphism",
+        "按钮": "button kit control",
+        "截图": "screenshot inspiration",
+    }
+    expanded = query
+    for source, target in aliases.items():
+        if source in expanded:
+            expanded = f"{expanded} {target}"
+    terms = query_terms(expanded)
+    for raw in expanded.replace("-", " ").replace("_", " ").split():
+        term = raw.strip().lower()
+        if len(term) >= 2:
+            terms.append(term)
+    return dedupe_strings(terms)
 
 
 def asset_score(record: dict[str, Any], query: str, query_index: int = 0) -> int:
@@ -446,7 +473,7 @@ def asset_score(record: dict[str, Any], query: str, query_index: int = 0) -> int
             " ".join(prompt_tags),
         ]
     ).lower()
-    terms = query_terms(query)
+    terms = asset_query_terms(query)
     preferred = preferred_asset_types(query)
 
     score = max(0, 80 - query_index * 5)

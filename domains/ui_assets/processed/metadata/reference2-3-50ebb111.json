@@ -21,19 +21,51 @@
     "label": "reference only",
     "notes": "Screenshot reference only; do not copy brand or commercial UI assets."
   },
-  "style_tags": [],
-  "use_cases": [],
-  "avoid_when": [],
-  "implementation_notes": [],
+  "style_tags": [
+    "liquid-glass",
+    "floating-navbar",
+    "SaaS-hero",
+    "dashboard-preview"
+  ],
+  "use_cases": [
+    "liquid glass component inspiration",
+    "button kit reference",
+    "glass card system"
+  ],
+  "avoid_when": [
+    "Do not copy this reference asset into deliverables when usage_policy is inspiration_only.",
+    "Do not treat reference screenshots or videos as licensed product assets."
+  ],
+  "implementation_notes": [
+    "Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project.",
+    "When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets.",
+    "Use the tags as style retrieval hints, then build original UI/material/motion in the target project.",
+    "For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text.",
+    "For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media."
+  ],
   "quality": {
-    "curation_status": "new",
-    "notes": "Review usage_policy and license before direct project use."
+    "curation_status": "reviewed",
+    "notes": "Enriched for style retrieval. Asset remains governed by usage_policy."
   },
   "retrieval": {
-    "ai_summary": "screenshot reference asset for screenshot reference. Review usage policy before use.",
+    "ai_summary": "Liquid Glass screenshot reference for high-end buttons, floating navigation, translucent panels, soft refraction, and premium SaaS UI controls. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
     "prompt_tags": [
-      "screenshot-reference"
+      "screenshot-reference",
+      "liquid-glass",
+      "floating-navbar",
+      "SaaS-hero",
+      "dashboard-preview",
+      "dark-cinematic",
+      "giant-typography",
+      "bento-grid",
+      "editorial-layout",
+      "portfolio-inspiration",
+      "reference2 (3)"
     ],
-    "negative_prompt_tags": []
+    "negative_prompt_tags": [
+      "copy-asset-directly",
+      "unlicensed-direct-use",
+      "brand-copying"
+    ]
   }
 }

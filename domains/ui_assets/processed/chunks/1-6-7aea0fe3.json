@@ -1,0 +1,30 @@
+{
+  "chunk_id": "1-6-7aea0fe3-asset-summary",
+  "asset_id": "1-6-7aea0fe3",
+  "asset_type": "motion_reference",
+  "usage_policy": "inspiration_only",
+  "content": "# 1-6-7aea0fe3 asset retrieval chunk\nAsset type: motion_reference\nUsage policy: inspiration_only\nFile path: E:\\DataBase\\domains\\ui_assets\\raw\\inspiration_only\\videos\\1 (6).mp4\nStyle tags: motion-reference, hero-background, ambient-motion, cinematic-loop, particle-background\nUse cases: dark cinematic hero background, portfolio background motion\nImplementation notes: Usage policy: inspiration_only. Use this asset only as visual reference; do not copy the screenshot or video into a project. When no direct_use asset is available, recreate the style with original CSS, SVG, Canvas, WebGL, or generated implementation assets. Use the tags as style retrieval hints, then build original UI/material/motion in the target project. For Liquid Glass styles, recreate with backdrop-filter, translucent layers, gradient rim borders, and contrast-safe text. For video/background inspiration, recreate with original gradients, particles, Canvas/WebGL, or licensed/generated media.\nSummary: Dark vortex-like ambient loop reference for cinematic hero backgrounds and deep-space premium landing pages. This is inspiration_only: use it as reference only and recreate the style with original CSS/SVG/Canvas/media.",
+  "metadata": {
+    "style_tags": [
+      "motion-reference",
+      "hero-background",
+      "ambient-motion",
+      "cinematic-loop",
+      "particle-background"
+    ],
+    "use_cases": [
+      "dark cinematic hero background",
+      "portfolio background motion"
+    ],
+    "prompt_tags": [
+      "motion-reference",
+      "hero-background",
+      "ambient-motion",
+      "cinematic-loop",
+      "particle-background",
+      "glass-refraction",
+      "gradient-motion",
+      "1 (6)"
+    ]
+  }
+}

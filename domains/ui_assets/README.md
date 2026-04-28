@@ -53,3 +53,16 @@ python E:\DataBase\scripts\ui_assets\ingest_assets.py E:\IncomingAssets --usage-
 - `review_required`: 尚未确认，不能直接用于项目。
 - `unknown`: 来源或授权不清楚，不能直接用于项目。
 
+## 检索增强
+
+已导入的 `raw/inspiration_only/screenshots` 和 `raw/inspiration_only/videos` 可以用 metadata 增强脚本补充检索字段：
+
+```powershell
+python E:\DataBase\scripts\ui_assets\enrich_metadata.py
+```
+
+该脚本只更新 `processed/metadata` 和 `processed/chunks`，不会移动或复制 raw 素材。
+
+- Screenshots 会补充 `dark-cinematic`、`liquid-glass`、`floating-navbar`、`giant-typography`、`bento-grid`、`dashboard-preview`、`editorial-layout`、`portfolio-inspiration`、`SaaS-hero` 等标签。
+- Videos 会补充 `motion-reference`、`hero-background`、`ambient-motion`、`cinematic-loop`、`glass-refraction`、`particle-background`、`gradient-motion` 等标签。
+- `inspiration_only` 只能作为风格参考，不得复制到项目；没有 `direct_use` 授权时，agent 应用 CSS、SVG、Canvas、WebGL 或自有/生成素材复刻风格。
