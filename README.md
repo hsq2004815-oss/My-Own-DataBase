@@ -87,6 +87,8 @@ python E:\DataBase\scripts\brief.py "做一个玻璃生态 AI dashboard，带动
 
 普通 Web UI、landing page、SaaS 官网、portfolio 和产品页任务会优先检索 `ui_design` 的高级审美总规则层，包括 premium Web UI、Liquid Glass、cinematic video hero、typography/layout、motion reveal 和 landing page section patterns。品牌 `design-*.md` 文件只作为补充参考，不覆盖这些默认规则。
 
+如果 UI / frontend / portfolio / landing page 任务同时要求“高级、动效、动画、小动画、motion、Lottie、视觉效果、交互高级”，agent 不能只调用 `/brief`，还必须追加 `/assets/search` 检索小动画、微交互、loading animation、hover motion、button animation、animated icon、lottie animation、motion reference、hero background motion，并在最终输出里说明素材 id、usage_policy、是否直接使用和 CSS/SVG/Canvas/Lottie/video 实现方式。
+
 需要浏览器自动化、上传、CDP、截图或验证时再打开 automation：
 
 ```powershell

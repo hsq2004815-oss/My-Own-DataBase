@@ -81,6 +81,35 @@ Required behavior:
 - After the task, briefly state which database areas influenced the result.
 - Do not scan the whole repository unless API retrieval is unavailable and the user allows file reading.
 
+## Motion Asset Bootstrap Protocol
+
+For UI / frontend / portfolio / landing page tasks, if the user asks for "高级", "动效", "动画", "小动画", "motion", "Lottie", "视觉效果", or "交互高级", do not stop after `/brief`.
+
+After the required `/brief` call, also call `/assets/search` with each query below:
+
+```text
+小动画
+微交互
+loading animation
+hover motion
+button animation
+animated icon
+lottie animation
+motion reference
+hero background motion
+```
+
+In the final output, list:
+
+- retrieved `asset_id` / `chunk_id`
+- `usage_policy`
+- whether the asset was directly used or only used as inspiration
+- implementation method: CSS, SVG, Canvas, Lottie, or video
+
+If no suitable `direct_use` animation asset is found, explicitly say: "未检索到可用 direct_use 动画素材，因此使用 CSS/SVG/Canvas 复刻动效。"
+
+Do not imply that an inspiration-only or review-required asset was copied into the project.
+
 Default CLI:
 
 ```powershell

@@ -149,6 +149,64 @@ class BriefRequest(BaseModel):
     asset_limit: int = 6
 
 
+MOTION_ASSET_BOOTSTRAP_QUERIES = [
+    "小动画",
+    "微交互",
+    "loading animation",
+    "hover motion",
+    "button animation",
+    "animated icon",
+    "lottie animation",
+    "motion reference",
+    "hero background motion",
+]
+UI_BOOTSTRAP_TERMS = (
+    "ui",
+    "frontend",
+    "front-end",
+    "前端",
+    "界面",
+    "网站",
+    "网页",
+    "页面",
+    "portfolio",
+    "作品集",
+    "简历",
+    "landing page",
+    "落地页",
+    "homepage",
+    "官网",
+    "dashboard",
+    "saas",
+    "app ui",
+)
+PREMIUM_MOTION_BOOTSTRAP_TERMS = (
+    "高级",
+    "高端",
+    "动效",
+    "动画",
+    "小动画",
+    "motion",
+    "lottie",
+    "视觉效果",
+    "visual effect",
+    "visual effects",
+    "交互高级",
+    "微交互",
+    "loading animation",
+    "hover motion",
+    "button animation",
+    "animated icon",
+)
+
+
+def needs_motion_asset_bootstrap(task: str) -> bool:
+    normalized = task.casefold()
+    return any(term.casefold() in normalized for term in UI_BOOTSTRAP_TERMS) and any(
+        term.casefold() in normalized for term in PREMIUM_MOTION_BOOTSTRAP_TERMS
+    )
+
+
 
 
 UI_QUERY_RULES: list[tuple[tuple[str, ...], str]] = [
@@ -1311,6 +1369,12 @@ def build_brief_response(
         guidance.insert(
             2,
             "Use the returned automation chunks only for explicit browser automation, upload, CDP, selector, or verification tasks.",
+        )
+    if needs_motion_asset_bootstrap(task):
+        guidance.append(
+            "This high-end UI motion task requires additional /assets/search calls for: "
+            + ", ".join(MOTION_ASSET_BOOTSTRAP_QUERIES)
+            + ". Final output must report retrieved asset_id/chunk_id, usage_policy, direct-use versus inspiration-only status, and CSS/SVG/Canvas/Lottie/video implementation method. If no direct_use animation asset is found, state: 未检索到可用 direct_use 动画素材，因此使用 CSS/SVG/Canvas 复刻动效。"
         )
     return BriefResponse(
         brief=task,
