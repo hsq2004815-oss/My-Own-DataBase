@@ -32,10 +32,10 @@ python -m uvicorn app.main:app --host 127.0.0.1 --port 8765 --reload
 
 ## 通用
 
-- `GET /health`: 查看 UI、agent_workflow、automation 数据库和 ui_assets metadata 是否存在、reference/chunk/asset 数量。
+- `GET /health`: 查看 UI、agent_workflow、automation、backend 数据库和 ui_assets metadata 是否存在、reference/chunk/asset 数量。
 - `GET /docs`: FastAPI 自动生成的接口测试页面。
-- `GET /brief?task=...`: 输入短任务描述，自动返回相关 UI chunks、workflow chunks、asset suggestions；automation 默认关闭。
-- `POST /brief`: 推荐给智能体使用，支持较长任务描述和 JSON 参数。默认返回素材建议但不返回 automation chunks；只有明确需要浏览器自动化、上传、CDP、截图或验证时才设置 `automation_limit` 大于 0。
+- `GET /brief?task=...`: 输入短任务描述，自动返回相关 UI chunks、workflow chunks、asset suggestions；automation 默认关闭，backend 只在后端任务命中时返回。
+- `POST /brief`: 推荐给智能体使用，支持较长任务描述和 JSON 参数。默认返回素材建议但不返回 automation chunks；只有明确需要浏览器自动化、上传、CDP、截图或验证时才设置 `automation_limit` 大于 0。后端/API/数据库/鉴权/部署/RAG 任务设置 `backend_limit` 大于 0。
 - API 请求日志写入 `runtime/logs/api_requests.jsonl`，记录 endpoint、query/task、limit、派生 queries 和返回的 chunk/reference ids，不记录完整 chunk 正文。
 
 ## Brief 接口
@@ -48,6 +48,7 @@ $body = @{
   ui_limit = 8
   workflow_limit = 2
   automation_limit = 0
+  backend_limit = 0
   asset_limit = 10
 } | ConvertTo-Json
 
@@ -64,6 +65,7 @@ UI / frontend / portfolio / landing page / dashboard / app UI:
   "ui_limit": 8,
   "workflow_limit": 2,
   "automation_limit": 0,
+  "backend_limit": 0,
   "asset_limit": 10
 }
 ```
@@ -76,6 +78,20 @@ Browser automation / RPA / upload tool:
   "ui_limit": 2,
   "workflow_limit": 4,
   "automation_limit": 8,
+  "backend_limit": 0,
+  "asset_limit": 0
+}
+```
+
+Backend/API/database/auth/deployment/RAG:
+
+```json
+{
+  "task": "<user task>",
+  "ui_limit": 1,
+  "workflow_limit": 2,
+  "automation_limit": 0,
+  "backend_limit": 8,
   "asset_limit": 0
 }
 ```
@@ -88,6 +104,7 @@ General coding / agent workflow:
   "ui_limit": 2,
   "workflow_limit": 6,
   "automation_limit": 2,
+  "backend_limit": 0,
   "asset_limit": 0
 }
 ```
@@ -104,7 +121,14 @@ Invoke-RestMethod "http://127.0.0.1:8765/brief?task=做一个玻璃生态AI dash
 Invoke-RestMethod "http://127.0.0.1:8765/brief?task=Playwright上传文件并处理iframe弹窗&ui_limit=2&workflow_limit=4&automation_limit=8&asset_limit=0"
 ```
 
-返回内容：`brief`、`ui_queries`、`workflow_queries`、`automation_queries`、`asset_queries`、`ui_chunks`、`workflow_chunks`、`automation_chunks`、`asset_suggestions`、`guidance`。
+后端知识 GET 示例：
+
+```powershell
+Invoke-RestMethod "http://127.0.0.1:8765/brief?task=设计FastAPI PostgreSQL JWT RBAC后端&ui_limit=1&workflow_limit=2&automation_limit=0&backend_limit=8&asset_limit=0"
+Invoke-RestMethod "http://127.0.0.1:8765/backend/search?q=JWT%20RBAC%20auth%20permission&limit=5"
+```
+
+返回内容：`brief`、`ui_queries`、`workflow_queries`、`automation_queries`、`backend_queries`、`asset_queries`、`ui_chunks`、`workflow_chunks`、`automation_chunks`、`backend_chunks`、`asset_suggestions`、`guidance`。
 
 Ranking 规则：优先保留每个 query 的高分 chunk，再按分数补满；implementation/parameters、layout、interaction、accessibility、高证据等级、prompt_tags 命中会被加权。
 
@@ -161,9 +185,16 @@ hero background motion
 - `GET /automation/references`: 列出自动化 reference 摘要。
 - `GET /automation/reference/{record_id}`: 获取某条完整自动化 reference JSON。
 
+## Backend Engineering 接口
+
+- `GET /backend/search?q=api%20design&limit=5`: 检索 backend rules/wiki/references/GitHub analysis 汇总 chunks。
+- `GET /backend/search?q=JWT%20RBAC%20auth%20permission&limit=5`: 命中鉴权、授权、JWT refresh token、RBAC 规则。
+- `GET /backend/search?q=RAG%20SSE%20streaming&limit=5`: 命中 AI backend、RAG、SSE streaming 规则。
+- `/brief` 会在任务包含 backend/API/database/auth/deployment/RAG 等触发词时自动派生 `backend_queries` 并返回 `backend_chunks`。
+
 ## 给其他智能体的调用约定
 
-优先调用本机 `POST /brief` 获取任务相关 UI + workflow chunks 和 asset suggestions。普通前端设计任务保持 `automation_limit=0`；只有浏览器自动化、上传、CDP、截图或验证任务才提高 `automation_limit`。如果需要更精确，再补充调用 `/ui/search`、`/workflow/search`、`/assets/search` 或 `/automation/search`。不要一次性读取全部知识，也不要默认去 GitHub 读取仓库，否则上下文会被低相关内容污染。
+优先调用本机 `POST /brief` 获取任务相关 UI + workflow + backend chunks 和 asset suggestions。普通前端设计任务保持 `automation_limit=0` 且可设置 `backend_limit=0`；只有浏览器自动化、上传、CDP、截图或验证任务才提高 `automation_limit`；只有后端/API/数据库/鉴权/部署/RAG 任务才使用 backend chunks。如果需要更精确，再补充调用 `/ui/search`、`/workflow/search`、`/assets/search`、`/automation/search` 或 `/backend/search`。不要一次性读取全部知识，也不要默认去 GitHub 读取仓库，否则上下文会被低相关内容污染。
 
 使用示例：
 根据我的数据库，帮我做一个高级个人简历网站。

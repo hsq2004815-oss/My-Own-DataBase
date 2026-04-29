@@ -198,7 +198,7 @@ def print_chunk_summary(title: str, chunks: list[dict[str, Any]], show_content: 
     for chunk in chunks:
         chunk_id = chunk.get("chunk_id", "")
         section = chunk.get("section", "")
-        source_name = chunk.get("source_name", "")
+        source_name = chunk.get("source_name", "") or chunk.get("title", "")
         print(f"- {chunk_id} [{section}] ({source_name})")
         if show_content:
             content = str(chunk.get("content", ""))
@@ -254,6 +254,7 @@ def main() -> int:
     parser.add_argument("--ui", type=int, default=8, help="UI chunk limit. Default: 8")
     parser.add_argument("--workflow", type=int, default=2, help="Workflow chunk limit. Default: 2")
     parser.add_argument("--automation", type=int, default=0, help="Automation chunk limit. Default: 0")
+    parser.add_argument("--backend", type=int, default=6, help="Backend engineering chunk limit. Default: 6")
     parser.add_argument("--assets", type=int, default=10, help="UI asset suggestion limit. Default: 10")
     parser.add_argument("--json", action="store_true", help="Print raw JSON response.")
     parser.add_argument("--content", action="store_true", help="Also print compact chunk content excerpts.")
@@ -264,6 +265,7 @@ def main() -> int:
         "ui_limit": args.ui,
         "workflow_limit": args.workflow,
         "automation_limit": args.automation,
+        "backend_limit": args.backend,
         "asset_limit": args.assets,
     }
 
@@ -301,6 +303,8 @@ def main() -> int:
     print()
     print_list("Automation queries:", result.get("automation_queries", []))
     print()
+    print_list("Backend queries:", result.get("backend_queries", []))
+    print()
     print_list("Asset queries:", result.get("asset_queries", []))
     print()
     print_chunk_summary("UI chunks:", result.get("ui_chunks", []), args.content)
@@ -308,6 +312,8 @@ def main() -> int:
     print_chunk_summary("Workflow chunks:", result.get("workflow_chunks", []), args.content)
     print()
     print_chunk_summary("Automation chunks:", result.get("automation_chunks", []), args.content)
+    print()
+    print_chunk_summary("Backend chunks:", result.get("backend_chunks", []), args.content)
     print()
     print_asset_summary("Asset suggestions:", result.get("asset_suggestions", []), args.content)
     print()
@@ -321,6 +327,7 @@ def main() -> int:
         chunk_ids(result.get("ui_chunks", []))
         + chunk_ids(result.get("workflow_chunks", []))
         + chunk_ids(result.get("automation_chunks", []))
+        + chunk_ids(result.get("backend_chunks", []))
     )
     for item in all_ids:
         print(f"- {item}")

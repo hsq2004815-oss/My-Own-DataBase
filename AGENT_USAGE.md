@@ -24,27 +24,39 @@ POST http://127.0.0.1:8765/brief
 For ordinary frontend/design tasks, use UI and workflow context only:
 
 ```powershell
-python E:\DataBase\scripts\brief.py "<task>" --ui 8 --workflow 2 --automation 0 --assets 10
+python E:\DataBase\scripts\brief.py "<task>" --ui 8 --workflow 2 --automation 0 --backend 0 --assets 10
 ```
 
 Use automation context only when the user explicitly asks for browser automation, upload/download, CDP, selectors, screenshots, or verification:
 
 ```powershell
-python E:\DataBase\scripts\brief.py "<task>" --ui 2 --workflow 4 --automation 8 --assets 0
+python E:\DataBase\scripts\brief.py "<task>" --ui 2 --workflow 4 --automation 8 --backend 0 --assets 0
 ```
 
-For backend/API/database/auth/deployment/RAG tasks, backend is currently maintained as curated files, not as a `/brief` indexed runtime domain. Read:
+For backend/API/database/auth/deployment/RAG tasks, use backend runtime retrieval:
+
+```powershell
+python E:\DataBase\scripts\brief.py "<task>" --ui 1 --workflow 2 --automation 0 --backend 8 --assets 0
+```
+
+For backend-only lookup:
+
+```powershell
+Invoke-RestMethod "http://127.0.0.1:8765/backend/search?q=JWT%20RBAC%20auth%20permission&limit=5"
+```
+
+If the API is unavailable, read:
 
 ```text
 E:\DataBase\domains\backend\README.md
 ```
 
-Then follow that README to the relevant `rules/`, `wiki/`, `references/`, or processed GitHub project metadata/chunks. Do not read `domains/backend/raw/github_projects` for normal generation tasks, and do not run projects, install dependencies, start the API, build indexes, or modify `runtime/db/sqlite`.
+Then follow that README to the relevant `rules/`, `wiki/`, `references/`, processed retrieval chunks, or processed GitHub project metadata/chunks. Do not read `domains/backend/raw/github_projects` for normal generation tasks, and do not run projects, install dependencies, build indexes, or modify `runtime/db/sqlite`.
 
 For general coding or agent workflow tasks:
 
 ```powershell
-python E:\DataBase\scripts\brief.py "<task>" --ui 2 --workflow 6 --automation 2 --assets 0
+python E:\DataBase\scripts\brief.py "<task>" --ui 2 --workflow 6 --automation 2 --backend 0 --assets 0
 ```
 
 ## Motion Asset Bootstrap
@@ -106,7 +118,7 @@ Clearly tell the user the local database API is not running. Do not silently fal
 
 Include:
 
-- `ui_queries`, `workflow_queries`, `automation_queries`, and `asset_queries`
+- `ui_queries`, `workflow_queries`, `automation_queries`, `backend_queries`, and `asset_queries`
 - chunk ids actually used
 - asset ids actually used, if any
 - which returned guidance affected the implementation
@@ -127,6 +139,7 @@ UI / frontend / portfolio / landing page / dashboard / app UI:
   "ui_limit": 8,
   "workflow_limit": 2,
   "automation_limit": 0,
+  "backend_limit": 0,
   "asset_limit": 10
 }
 ```
@@ -139,6 +152,20 @@ Browser automation / RPA / upload tools:
   "ui_limit": 2,
   "workflow_limit": 4,
   "automation_limit": 8,
+  "backend_limit": 0,
+  "asset_limit": 0
+}
+```
+
+Backend/API/database/auth/deployment/RAG:
+
+```json
+{
+  "task": "<task>",
+  "ui_limit": 1,
+  "workflow_limit": 2,
+  "automation_limit": 0,
+  "backend_limit": 8,
   "asset_limit": 0
 }
 ```
@@ -151,6 +178,7 @@ General coding / agent workflow:
   "ui_limit": 2,
   "workflow_limit": 6,
   "automation_limit": 2,
+  "backend_limit": 0,
   "asset_limit": 0
 }
 ```

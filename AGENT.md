@@ -35,6 +35,7 @@ For UI / frontend / portfolio / landing page / dashboard / app UI tasks:
   "ui_limit": 8,
   "workflow_limit": 2,
   "automation_limit": 0,
+  "backend_limit": 0,
   "asset_limit": 10
 }
 ```
@@ -55,6 +56,20 @@ For browser automation / RPA / upload tool tasks:
   "ui_limit": 2,
   "workflow_limit": 4,
   "automation_limit": 8,
+  "backend_limit": 0,
+  "asset_limit": 0
+}
+```
+
+For backend/API/database/auth/deployment/RAG tasks:
+
+```json
+{
+  "task": "<user task>",
+  "ui_limit": 1,
+  "workflow_limit": 2,
+  "automation_limit": 0,
+  "backend_limit": 8,
   "asset_limit": 0
 }
 ```
@@ -67,6 +82,7 @@ For general coding / agent workflow tasks:
   "ui_limit": 2,
   "workflow_limit": 6,
   "automation_limit": 2,
+  "backend_limit": 0,
   "asset_limit": 0
 }
 ```
@@ -121,7 +137,7 @@ Do not imply that an inspiration-only or review-required asset was copied into t
 Default CLI:
 
 ```powershell
-python E:\DataBase\scripts\brief.py "<task>" --ui 8 --workflow 2 --automation 0 --assets 10
+python E:\DataBase\scripts\brief.py "<task>" --ui 8 --workflow 2 --automation 0 --backend 0 --assets 10
 ```
 
 Start the API if the CLI cannot connect:
@@ -137,7 +153,7 @@ python -m uvicorn app.main:app --host 127.0.0.1 --port 8765 --reload
 - For ordinary Web UI, landing page, SaaS homepage, product page, dashboard, and portfolio tasks, treat the `ui_design` premium rules as the default aesthetic layer before brand `design-*.md` topics.
 - Dynamic backgrounds, screenshots, fonts, icons, or UI kits: include `ui_assets` suggestions and follow `usage_policy`.
 - Browser automation, uploads, CDP, selectors, screenshots, iframe/modal handling, or verification: explicitly request automation chunks with `--automation > 0`.
-- Backend/API/database/auth/deployment/RAG work: backend is currently a curated document domain, not yet a `/brief` or SQLite-indexed runtime domain. Read `domains/backend/README.md` first, then only the relevant `rules/`, `wiki/`, `references/`, and processed GitHub project metadata/chunks it points to.
+- Backend/API/database/auth/deployment/RAG work: use `/brief` with `backend_limit > 0` or direct `/backend/search`; if the API is unavailable, read `domains/backend/README.md` first, then only the relevant curated docs it points to.
 - API or retrieval maintenance: inspect `backend_api/app/main.py`, `scripts/brief.py`, and the relevant domain scripts.
 - Schema/taxonomy changes: inspect `common/schemas`, `common/templates`, and `common/taxonomy` first.
 
@@ -145,15 +161,21 @@ python -m uvicorn app.main:app --host 127.0.0.1 --port 8765 --reload
 
 Use the backend domain when the task mentions API, 后端, 后台, 服务端, 数据库, 登录, 注册, 权限, JWT, Session, RBAC, Docker, 部署, 环境变量, RAG, Agent API, 大模型 API, SSE, Webhook, 队列, 日志, 监控, 错误码, 分页, 幂等, or GitHub 后端项目分析.
 
-Read order:
+Preferred runtime calls:
+
+1. `POST http://127.0.0.1:8765/brief` with `backend_limit` set to 6-10.
+2. `GET http://127.0.0.1:8765/backend/search?q=<query>&limit=<n>` for backend-only lookup.
+
+Fallback read order when API retrieval is unavailable:
 
 1. `domains/backend/README.md`
 2. Task-specific files listed there under `rules/`
 3. Supporting `wiki/topics`, `wiki/patterns`, `wiki/checklists`, or `wiki/templates`
 4. `references/**/*.json` only when source/reference metadata is needed
-5. `processed/metadata/github_projects/*.metadata.json` and `processed/chunks/github_projects/*.chunks.json` for GitHub project analysis
+5. `processed/retrieval/backend-retrieval-chunks.jsonl` for retrieval chunk inspection
+6. `processed/metadata/github_projects/*.metadata.json` and `processed/chunks/github_projects/*.chunks.json` for GitHub project analysis
 
-Do not use `domains/backend/raw/github_projects` as normal task context. Do not run those projects, install dependencies, copy source code, copy `.env.example` secrets, start `backend_api`, build indexes, or modify `runtime/db/sqlite` for a backend guidance lookup. Backend SQLite/API integration belongs to a later Phase 2C+ maintenance task.
+Do not use `domains/backend/raw/github_projects` as normal task context. Do not run those projects, install dependencies, copy source code, copy `.env.example` secrets, build indexes, or modify `runtime/db/sqlite` for a backend guidance lookup.
 
 ## Asset Safety
 
@@ -183,7 +205,7 @@ For Hero / Landing Page / SaaS Homepage / Portfolio First Screen tasks, prioriti
 
 - Keep Python caches, `.pyc`, runtime logs, and temporary brief artifacts out of git.
 - Keep useful SQLite indexes under `runtime/db/sqlite/*` because they are the runtime retrieval artifacts.
-- Do not modify `runtime/db/sqlite` during backend documentation, audit, or routing updates.
+- Do not modify `runtime/db/sqlite` during documentation-only, audit-only, or routing-only updates.
 - Root `runtime/db/*.db` files may be empty compatibility leftovers; usable DBs are under `runtime/db/sqlite/*`.
 - Use PowerShell carefully with Windows paths. In Bash/Git Bash, convert Windows paths to forward slashes.
 - Prefer targeted `rg`, file slices, and CLI/API retrieval over broad file dumps.
@@ -200,14 +222,14 @@ If the API is running:
 
 ```powershell
 Invoke-RestMethod "http://127.0.0.1:8765/health"
-python E:\DataBase\scripts\brief.py "做一个高级玻璃生态 AI dashboard，带动态背景和字体" --ui 8 --workflow 2 --automation 0 --assets 10
+python E:\DataBase\scripts\brief.py "做一个高级玻璃生态 AI dashboard，带动态背景和字体" --ui 8 --workflow 2 --automation 0 --backend 0 --assets 10
 ```
 
 ## Final Handoff
 
 When using this database for a task, report:
 
-- `ui_queries`, `workflow_queries`, `automation_queries`, and `asset_queries`
+- `ui_queries`, `workflow_queries`, `automation_queries`, `backend_queries`, and `asset_queries`
 - chunk ids actually used
 - asset ids actually used, if any
 - which returned guidance affected the implementation

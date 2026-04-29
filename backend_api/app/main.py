@@ -14,12 +14,13 @@ ROOT = Path(__file__).resolve().parents[2]
 UI_DB_PATH = ROOT / "runtime" / "db" / "sqlite" / "ui_design" / "ui_design_references.db"
 WORKFLOW_DB_PATH = ROOT / "runtime" / "db" / "sqlite" / "agent_workflow" / "agent_workflow_references.db"
 AUTOMATION_DB_PATH = ROOT / "runtime" / "db" / "sqlite" / "automation" / "automation_references.db"
+BACKEND_DB_PATH = ROOT / "runtime" / "db" / "sqlite" / "backend" / "backend_references.db"
 UI_ASSET_METADATA_DIR = ROOT / "domains" / "ui_assets" / "processed" / "metadata"
 API_REQUEST_LOG_PATH = ROOT / "runtime" / "logs" / "api_requests.jsonl"
 
 app = FastAPI(
     title="DataBase Knowledge API",
-    description="Local API for retrieving curated UI/design knowledge chunks.",
+    description="Local API for retrieving curated knowledge chunks.",
     version="0.1.0",
 )
 
@@ -113,6 +114,21 @@ class AutomationReferenceSummary(BaseModel):
     ai_summary: str
 
 
+class BackendChunkResult(BaseModel):
+    chunk_id: str
+    source_type: str
+    title: str
+    relative_path: str
+    section: str
+    content: str
+    summary: str
+    tags: list[str]
+    keywords: list[str]
+    priority: str
+    trust_level: str
+    metadata: dict[str, Any]
+
+
 class AssetResult(BaseModel):
     asset_id: str
     asset_type: str
@@ -133,10 +149,12 @@ class BriefResponse(BaseModel):
     ui_queries: list[str]
     workflow_queries: list[str]
     automation_queries: list[str]
+    backend_queries: list[str]
     asset_queries: list[str]
     ui_chunks: list[ChunkResult]
     workflow_chunks: list[WorkflowChunkResult]
     automation_chunks: list[AutomationChunkResult]
+    backend_chunks: list[BackendChunkResult]
     asset_suggestions: list[AssetResult]
     guidance: list[str]
 
@@ -146,6 +164,7 @@ class BriefRequest(BaseModel):
     ui_limit: int = 8
     workflow_limit: int = 5
     automation_limit: int = 0
+    backend_limit: int = 6
     asset_limit: int = 6
 
 
@@ -207,6 +226,11 @@ def needs_motion_asset_bootstrap(task: str) -> bool:
     )
 
 
+def needs_backend_context(task: str) -> bool:
+    normalized = task.casefold()
+    return any(term.casefold() in normalized for term in BACKEND_CONTEXT_TERMS)
+
+
 
 
 UI_QUERY_RULES: list[tuple[tuple[str, ...], str]] = [
@@ -256,6 +280,50 @@ AUTOMATION_QUERY_RULES: list[tuple[tuple[str, ...], str]] = [
     (("trace", "screenshot", "evidence", "debug", "fail", "error", "验证", "证据", "报错", "恢复"), "failure recovery"),
     (("security", "safe", "remote debugging", "安全"), "security boundary"),
 ]
+
+BACKEND_QUERY_RULES: list[tuple[tuple[str, ...], str]] = [
+    (("api", "接口", "后台接口", "openapi", "swagger", "pagination", "分页", "error code", "错误码", "idempotency", "幂等"), "backend api design error handling pagination idempotency"),
+    (("database", "数据库", "postgres", "postgresql", "mysql", "sqlite", "schema", "table", "表结构", "迁移", "索引"), "database modeling migration indexes constraints audit fields"),
+    (("auth", "login", "jwt", "session", "rbac", "permission", "权限", "登录", "注册", "管理员", "鉴权", "授权"), "auth permission jwt refresh token rbac security"),
+    (("security", "safe", "secret", "csrf", "cors", "rate limit", "安全", "密钥", "限流"), "backend security checklist secrets cors rate limit"),
+    (("deploy", "deployment", "docker", "compose", "env", "ci", "上线", "部署", "环境变量", "健康检查"), "deployment docker compose env health check logging"),
+    (("rag", "agent", "ai backend", "openai", "llm", "sse", "stream", "vector", "embedding", "大模型", "流式", "向量", "检索增强"), "ai backend rag agent sse streaming vector ingestion"),
+    (("queue", "task", "webhook", "worker", "celery", "background", "任务队列", "异步", "回调"), "backend task queue webhook background worker"),
+    (("github", "open source", "开源项目", "项目分析"), "github backend project analysis quality checklist"),
+]
+
+BACKEND_CONTEXT_TERMS = (
+    "backend",
+    "后端",
+    "后台",
+    "服务端",
+    "api",
+    "接口",
+    "database",
+    "数据库",
+    "postgres",
+    "postgresql",
+    "mysql",
+    "sqlite",
+    "auth",
+    "login",
+    "jwt",
+    "session",
+    "rbac",
+    "permission",
+    "权限",
+    "登录",
+    "注册",
+    "docker",
+    "deploy",
+    "部署",
+    "rag",
+    "大模型",
+    "sse",
+    "webhook",
+    "queue",
+    "任务队列",
+)
 
 
 ASSET_QUERY_RULES: list[tuple[tuple[str, ...], str]] = [
@@ -716,6 +784,33 @@ def chunk_score(chunk: ChunkResult | WorkflowChunkResult | AutomationChunkResult
     return score
 
 
+def backend_chunk_score(chunk: BackendChunkResult, query: str, query_index: int) -> int:
+    terms = query_terms(query)
+    haystack = (
+        f"{chunk.chunk_id} {chunk.source_type} {chunk.title} {chunk.relative_path} "
+        f"{chunk.section} {chunk.summary} {chunk.content} {' '.join(chunk.tags)} {' '.join(chunk.keywords)}"
+    ).lower()
+
+    score = max(0, 80 - query_index * 6)
+    score += SECTION_PRIORITY.get(chunk.section.lower(), 0)
+    if chunk.priority == "high":
+        score += 16
+    elif chunk.priority == "medium":
+        score += 8
+    if chunk.trust_level in {"high", "official"}:
+        score += 12
+    elif chunk.trust_level == "medium":
+        score += 6
+    if terms and all(term in haystack for term in terms):
+        score += 35
+    score += sum(12 for term in terms if term in chunk.chunk_id.lower() or term in chunk.title.lower())
+    score += sum(8 for term in terms if term in " ".join(chunk.keywords).lower())
+    score += sum(3 for term in terms if term in haystack)
+    if chunk.source_type in {"rule", "checklist", "pattern"}:
+        score += 12
+    return score
+
+
 def merge_ranked_ui_chunks(groups: list[tuple[str, list[ChunkResult]]], limit: int) -> list[ChunkResult]:
     best: dict[str, tuple[int, ChunkResult]] = {}
     selected: list[ChunkResult] = []
@@ -824,6 +919,42 @@ def merge_ranked_automation_chunks(groups: list[tuple[str, list[AutomationChunkR
     return selected[:limit]
 
 
+def merge_ranked_backend_chunks(groups: list[tuple[str, list[BackendChunkResult]]], limit: int) -> list[BackendChunkResult]:
+    best: dict[str, tuple[int, BackendChunkResult]] = {}
+    selected: list[BackendChunkResult] = []
+    seen: set[str] = set()
+    per_query_floor = 1
+
+    for query_index, (query, chunks) in enumerate(groups):
+        ranked = sorted(
+            ((backend_chunk_score(chunk, query, query_index), chunk) for chunk in chunks),
+            key=lambda item: item[0],
+            reverse=True,
+        )
+        added = 0
+        for _, chunk in ranked:
+            if chunk.chunk_id in seen:
+                continue
+            selected.append(chunk)
+            seen.add(chunk.chunk_id)
+            added += 1
+            if added >= per_query_floor or len(selected) >= limit:
+                break
+        for score, chunk in ranked:
+            current = best.get(chunk.chunk_id)
+            if current is None or score > current[0]:
+                best[chunk.chunk_id] = (score, chunk)
+
+    for _, chunk in sorted(best.values(), key=lambda item: item[0], reverse=True):
+        if len(selected) >= limit:
+            break
+        if chunk.chunk_id in seen:
+            continue
+        selected.append(chunk)
+        seen.add(chunk.chunk_id)
+    return selected[:limit]
+
+
 def connect_db(path: Path, missing_detail: str) -> sqlite3.Connection:
     if not path.exists():
         raise HTTPException(status_code=503, detail=missing_detail)
@@ -853,12 +984,27 @@ def connect_automation() -> sqlite3.Connection:
     )
 
 
+def connect_backend() -> sqlite3.Connection:
+    return connect_db(
+        BACKEND_DB_PATH,
+        f"Backend database not found: {BACKEND_DB_PATH}. Run scripts/backend/build_sqlite_index.py first.",
+    )
+
+
 def parse_metadata(raw: str) -> dict[str, Any]:
     try:
         data = json.loads(raw or "{}")
         return data if isinstance(data, dict) else {}
     except json.JSONDecodeError:
         return {}
+
+
+def parse_json_list(raw: str) -> list[str]:
+    try:
+        data = json.loads(raw or "[]")
+    except json.JSONDecodeError:
+        return []
+    return safe_list(data)
 
 
 def row_to_chunk(row: sqlite3.Row) -> ChunkResult:
@@ -899,6 +1045,23 @@ def row_to_automation_chunk(row: sqlite3.Row) -> AutomationChunkResult:
         section=row["section"],
         content=row["content"],
         tokens=int(row["tokens"]),
+        metadata=parse_metadata(row["metadata_json"]),
+    )
+
+
+def row_to_backend_chunk(row: sqlite3.Row) -> BackendChunkResult:
+    return BackendChunkResult(
+        chunk_id=row["chunk_id"],
+        source_type=row["source_type"],
+        title=row["title"],
+        relative_path=row["relative_path"],
+        section=row["section"],
+        content=row["content"],
+        summary=row["summary"],
+        tags=parse_json_list(row["tags_json"]),
+        keywords=parse_json_list(row["keywords_json"]),
+        priority=row["priority"],
+        trust_level=row["trust_level"],
         metadata=parse_metadata(row["metadata_json"]),
     )
 
@@ -987,6 +1150,8 @@ def health() -> dict[str, Any]:
         "workflow_db_exists": WORKFLOW_DB_PATH.exists(),
         "automation_db_path": str(AUTOMATION_DB_PATH),
         "automation_db_exists": AUTOMATION_DB_PATH.exists(),
+        "backend_db_path": str(BACKEND_DB_PATH),
+        "backend_db_exists": BACKEND_DB_PATH.exists(),
         "ui_asset_metadata_path": str(UI_ASSET_METADATA_DIR),
         "ui_asset_metadata_exists": UI_ASSET_METADATA_DIR.exists(),
         "ui_assets": len(load_asset_records()),
@@ -1003,6 +1168,9 @@ def health() -> dict[str, Any]:
         with connect_automation() as conn:
             payload["automation_references"] = conn.execute("SELECT COUNT(*) FROM references_meta").fetchone()[0]
             payload["automation_chunks"] = conn.execute("SELECT COUNT(*) FROM chunks").fetchone()[0]
+    if BACKEND_DB_PATH.exists():
+        with connect_backend() as conn:
+            payload["backend_chunks"] = conn.execute("SELECT COUNT(*) FROM backend_chunks").fetchone()[0]
     log_api_request(
         "GET",
         "/health",
@@ -1014,6 +1182,7 @@ def health() -> dict[str, Any]:
             "workflow_chunks": payload.get("workflow_chunks"),
             "automation_references": payload.get("automation_references"),
             "automation_chunks": payload.get("automation_chunks"),
+            "backend_chunks": payload.get("backend_chunks"),
             "ui_assets": payload.get("ui_assets"),
         },
     )
@@ -1358,20 +1527,112 @@ def get_automation_reference(record_id: str) -> dict[str, Any]:
     return data
 
 
+def search_backend_fts(conn: sqlite3.Connection, query: str, limit: int) -> list[sqlite3.Row]:
+    try:
+        return conn.execute(
+            """
+            SELECT c.chunk_id, c.source_type, c.title, c.relative_path, c.section,
+                   c.content, c.summary, c.tags_json, c.keywords_json, c.priority,
+                   c.trust_level, c.metadata_json
+            FROM backend_chunks_fts f
+            JOIN backend_chunks c ON c.chunk_id = f.chunk_id
+            WHERE backend_chunks_fts MATCH ?
+            LIMIT ?
+            """,
+            (query, limit),
+        ).fetchall()
+    except sqlite3.OperationalError:
+        return []
+
+
+def search_backend_like(conn: sqlite3.Connection, query: str, limit: int) -> list[sqlite3.Row]:
+    pattern = f"%{query}%"
+    return conn.execute(
+        """
+        SELECT chunk_id, source_type, title, relative_path, section, content, summary,
+               tags_json, keywords_json, priority, trust_level, metadata_json
+        FROM backend_chunks
+        WHERE content LIKE ? OR summary LIKE ? OR title LIKE ? OR section LIKE ?
+              OR source_type LIKE ? OR tags_json LIKE ? OR keywords_json LIKE ?
+        LIMIT ?
+        """,
+        (pattern, pattern, pattern, pattern, pattern, pattern, pattern, limit),
+    ).fetchall()
+
+
+def search_backend_like_terms(conn: sqlite3.Connection, query: str, limit: int) -> list[sqlite3.Row]:
+    terms = query_terms(query)
+    if not terms:
+        return []
+    clauses = []
+    params: list[str | int] = []
+    for term in terms:
+        clauses.append(
+            "(content LIKE ? OR summary LIKE ? OR title LIKE ? OR section LIKE ? "
+            "OR source_type LIKE ? OR tags_json LIKE ? OR keywords_json LIKE ?)"
+        )
+        pattern = f"%{term}%"
+        params.extend([pattern, pattern, pattern, pattern, pattern, pattern, pattern])
+    params.append(limit)
+    return conn.execute(
+        f"""
+        SELECT chunk_id, source_type, title, relative_path, section, content, summary,
+               tags_json, keywords_json, priority, trust_level, metadata_json
+        FROM backend_chunks
+        WHERE {" OR ".join(clauses)}
+        LIMIT ?
+        """,
+        params,
+    ).fetchall()
+
+
+def search_backend_chunks(q: str, limit: int) -> list[BackendChunkResult]:
+    normalized_q = normalize_query(q)
+    candidate_limit = max(10, min(80, limit * 5))
+    with connect_backend() as conn:
+        rows = (
+            search_backend_fts(conn, normalized_q, candidate_limit)
+            + search_backend_like(conn, normalized_q, candidate_limit)
+            + search_backend_like_terms(conn, normalized_q, candidate_limit)
+        )
+    chunks = [row_to_backend_chunk(row) for row in rows]
+    chunks = list({chunk.chunk_id: chunk for chunk in chunks}.values())
+    return sorted(chunks, key=lambda chunk: backend_chunk_score(chunk, normalized_q, 0), reverse=True)[:limit]
+
+
+@app.get("/backend/search", response_model=list[BackendChunkResult])
+def search_backend(
+    q: Annotated[str, Query(min_length=1, description="Search backend engineering chunks, for example: JWT RBAC")],
+    limit: Annotated[int, Query(ge=1, le=50)] = 5,
+) -> list[BackendChunkResult]:
+    normalized_q = normalize_query(q)
+    chunks = search_backend_chunks(q, limit)
+    log_api_request(
+        "GET",
+        "/backend/search",
+        params={"q": q, "normalized_q": normalized_q, "limit": limit},
+        result={"count": len(chunks), "chunk_ids": [chunk.chunk_id for chunk in chunks]},
+    )
+    return chunks
+
+
 def build_brief_response(
     task: str,
     ui_limit: int = 8,
     workflow_limit: int = 5,
     automation_limit: int = 0,
+    backend_limit: int = 6,
     asset_limit: int = 6,
 ) -> BriefResponse:
     ui_limit = max(1, min(ui_limit, 30))
     workflow_limit = max(1, min(workflow_limit, 20))
     automation_limit = max(0, min(automation_limit, 20))
+    backend_limit = max(0, min(backend_limit, 20))
     asset_limit = max(0, min(asset_limit, 30))
     ui_queries = derive_queries(task, UI_QUERY_RULES, ["dashboard", "form validation", "website reveal"])
     workflow_queries = dedupe_strings(["api first", "knowledge first frontend", "handoff report"] + derive_queries(task, WORKFLOW_QUERY_RULES, []))[:5]
     automation_queries = derive_queries(task, AUTOMATION_QUERY_RULES, []) if automation_limit else []
+    backend_queries = derive_queries(task, BACKEND_QUERY_RULES, ["backend api design"]) if backend_limit and needs_backend_context(task) else []
     asset_queries = derive_asset_queries(task) if asset_limit else []
 
     ui_groups = [(query, search_ui_chunks(q=query, limit=max(8, min(12, ui_limit * 2)))) for query in ui_queries]
@@ -1380,6 +1641,10 @@ def build_brief_response(
         (query, search_automation_chunks(q=query, limit=max(6, min(10, automation_limit * 2))))
         for query in automation_queries
     ] if automation_limit else []
+    backend_groups = [
+        (query, search_backend_chunks(q=query, limit=max(6, min(14, backend_limit * 2))))
+        for query in backend_queries
+    ] if backend_queries else []
     asset_groups = [
         (query, search_assets_records(q=query, limit=max(8, min(20, asset_limit * 2))))
         for query in asset_queries
@@ -1388,6 +1653,7 @@ def build_brief_response(
     ui_chunks = merge_ranked_ui_chunks(ui_groups, ui_limit)
     workflow_chunks = merge_ranked_workflow_chunks(workflow_groups, workflow_limit)
     automation_chunks = merge_ranked_automation_chunks(automation_groups, automation_limit) if automation_groups else []
+    backend_chunks = merge_ranked_backend_chunks(backend_groups, backend_limit) if backend_groups else []
     asset_suggestions = merge_ranked_assets(asset_groups, asset_limit) if asset_groups else []
 
     guidance = [
@@ -1403,6 +1669,11 @@ def build_brief_response(
             2,
             "Use the returned automation chunks only for explicit browser automation, upload, CDP, selector, or verification tasks.",
         )
+    if backend_chunks:
+        guidance.insert(
+            2,
+            "Use the returned backend chunks for API, database, auth, security, deployment, AI backend, and GitHub backend project constraints.",
+        )
     if needs_motion_asset_bootstrap(task):
         guidance.append(
             "This high-end UI motion task requires additional /assets/search calls for: "
@@ -1414,10 +1685,12 @@ def build_brief_response(
         ui_queries=ui_queries,
         workflow_queries=workflow_queries,
         automation_queries=automation_queries,
+        backend_queries=backend_queries,
         asset_queries=asset_queries,
         ui_chunks=ui_chunks,
         workflow_chunks=workflow_chunks,
         automation_chunks=automation_chunks,
+        backend_chunks=backend_chunks,
         asset_suggestions=asset_suggestions,
         guidance=guidance,
     )
@@ -1429,6 +1702,7 @@ def build_brief(
     ui_limit: Annotated[int, Query(ge=1, le=30)] = 8,
     workflow_limit: Annotated[int, Query(ge=1, le=20)] = 5,
     automation_limit: Annotated[int, Query(ge=0, le=20)] = 0,
+    backend_limit: Annotated[int, Query(ge=0, le=20)] = 6,
     asset_limit: Annotated[int, Query(ge=0, le=30)] = 6,
 ) -> BriefResponse:
     response = build_brief_response(
@@ -1436,6 +1710,7 @@ def build_brief(
         ui_limit=ui_limit,
         workflow_limit=workflow_limit,
         automation_limit=automation_limit,
+        backend_limit=backend_limit,
         asset_limit=asset_limit,
     )
     log_api_request(
@@ -1446,16 +1721,19 @@ def build_brief(
             "ui_limit": ui_limit,
             "workflow_limit": workflow_limit,
             "automation_limit": automation_limit,
+            "backend_limit": backend_limit,
             "asset_limit": asset_limit,
         },
         result={
             "ui_queries": response.ui_queries,
             "workflow_queries": response.workflow_queries,
             "automation_queries": response.automation_queries,
+            "backend_queries": response.backend_queries,
             "asset_queries": response.asset_queries,
             "ui_chunk_ids": [chunk.chunk_id for chunk in response.ui_chunks],
             "workflow_chunk_ids": [chunk.chunk_id for chunk in response.workflow_chunks],
             "automation_chunk_ids": [chunk.chunk_id for chunk in response.automation_chunks],
+            "backend_chunk_ids": [chunk.chunk_id for chunk in response.backend_chunks],
             "asset_ids": [asset.asset_id for asset in response.asset_suggestions],
         },
     )
@@ -1469,6 +1747,7 @@ def post_brief(request: Annotated[BriefRequest, Body()]) -> BriefResponse:
         ui_limit=request.ui_limit,
         workflow_limit=request.workflow_limit,
         automation_limit=request.automation_limit,
+        backend_limit=request.backend_limit,
         asset_limit=request.asset_limit,
     )
     log_api_request(
@@ -1479,16 +1758,19 @@ def post_brief(request: Annotated[BriefRequest, Body()]) -> BriefResponse:
             "ui_limit": request.ui_limit,
             "workflow_limit": request.workflow_limit,
             "automation_limit": request.automation_limit,
+            "backend_limit": request.backend_limit,
             "asset_limit": request.asset_limit,
         },
         result={
             "ui_queries": response.ui_queries,
             "workflow_queries": response.workflow_queries,
             "automation_queries": response.automation_queries,
+            "backend_queries": response.backend_queries,
             "asset_queries": response.asset_queries,
             "ui_chunk_ids": [chunk.chunk_id for chunk in response.ui_chunks],
             "workflow_chunk_ids": [chunk.chunk_id for chunk in response.workflow_chunks],
             "automation_chunk_ids": [chunk.chunk_id for chunk in response.automation_chunks],
+            "backend_chunk_ids": [chunk.chunk_id for chunk in response.backend_chunks],
             "asset_ids": [asset.asset_id for asset in response.asset_suggestions],
         },
     )
