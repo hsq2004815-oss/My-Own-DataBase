@@ -1,0 +1,469 @@
+{
+  "domain": "backend",
+  "generated_at": "2026-04-29 10:07:30 +08:00",
+  "routes": [
+    {
+      "task_type": "api_backend",
+      "trigger_keywords": [
+        "API",
+        "接口",
+        "REST",
+        "OpenAPI",
+        "Swagger",
+        "分页",
+        "error code"
+      ],
+      "priority_files": [
+        "domains/backend/rules/api-design-rules.md",
+        "domains/backend/wiki/topics/api-first-design.md"
+      ],
+      "priority_chunk_types": [
+        "rule",
+        "topic",
+        "pattern",
+        "reference"
+      ],
+      "expected_tags": [
+        "backend",
+        "后端",
+        "API design",
+        "接口设计",
+        "REST API",
+        "OpenAPI",
+        "Swagger",
+        "pagination",
+        "分页",
+        "error code",
+        "错误码",
+        "idempotency",
+        "幂等"
+      ],
+      "avoid_files": [
+        "domains/backend/raw/github_projects"
+      ]
+    },
+    {
+      "task_type": "database_design",
+      "trigger_keywords": [
+        "database",
+        "数据库",
+        "PostgreSQL",
+        "migration",
+        "索引"
+      ],
+      "priority_files": [
+        "domains/backend/rules/database-modeling-rules.md",
+        "domains/backend/wiki/checklists/database-design-checklist.md"
+      ],
+      "priority_chunk_types": [
+        "rule",
+        "checklist",
+        "pattern",
+        "reference"
+      ],
+      "expected_tags": [
+        "backend",
+        "后端",
+        "database design",
+        "数据库设计",
+        "PostgreSQL",
+        "SQLite",
+        "Redis",
+        "migration",
+        "数据库迁移",
+        "indexing",
+        "索引"
+      ],
+      "avoid_files": [
+        "domains/backend/raw/github_projects"
+      ]
+    },
+    {
+      "task_type": "auth_permission",
+      "trigger_keywords": [
+        "auth",
+        "登录",
+        "JWT",
+        "Session",
+        "RBAC",
+        "权限"
+      ],
+      "priority_files": [
+        "domains/backend/rules/auth-and-permission-rules.md",
+        "domains/backend/wiki/patterns/rbac-permission-pattern.md"
+      ],
+      "priority_chunk_types": [
+        "rule",
+        "pattern",
+        "checklist",
+        "reference"
+      ],
+      "expected_tags": [
+        "backend",
+        "后端",
+        "auth",
+        "认证",
+        "authorization",
+        "授权",
+        "JWT",
+        "Session",
+        "OAuth2",
+        "OIDC",
+        "RBAC",
+        "权限设计"
+      ],
+      "avoid_files": [
+        "domains/backend/raw/github_projects"
+      ]
+    },
+    {
+      "task_type": "backend_security",
+      "trigger_keywords": [
+        "security",
+        "后端安全",
+        "OWASP",
+        "越权",
+        "SQL注入",
+        "secret"
+      ],
+      "priority_files": [
+        "domains/backend/rules/backend-security-checklist.md",
+        "domains/backend/wiki/topics/backend-security-owasp-api.md"
+      ],
+      "priority_chunk_types": [
+        "rule",
+        "topic",
+        "checklist",
+        "reference"
+      ],
+      "expected_tags": [
+        "backend",
+        "后端",
+        "OWASP",
+        "后端安全",
+        "secret management",
+        "密钥管理",
+        "file upload",
+        "文件上传"
+      ],
+      "avoid_files": [
+        "domains/backend/raw/github_projects",
+        ".env.example secret originals"
+      ]
+    },
+    {
+      "task_type": "deployment_env",
+      "trigger_keywords": [
+        "Docker",
+        "Docker Compose",
+        "Nginx",
+        "deployment",
+        "部署",
+        "env",
+        "环境变量"
+      ],
+      "priority_files": [
+        "domains/backend/rules/deployment-and-env-rules.md",
+        "domains/backend/wiki/templates/docker-compose-backend-template.md"
+      ],
+      "priority_chunk_types": [
+        "rule",
+        "topic",
+        "template",
+        "reference"
+      ],
+      "expected_tags": [
+        "backend",
+        "后端",
+        "Docker",
+        "Docker Compose",
+        "Nginx",
+        "environment variables",
+        "环境变量",
+        "secret management",
+        "密钥管理"
+      ],
+      "avoid_files": [
+        "runtime/db/sqlite"
+      ]
+    },
+    {
+      "task_type": "observability_logging",
+      "trigger_keywords": [
+        "logging",
+        "日志",
+        "trace_id",
+        "request_id",
+        "异常处理",
+        "observability"
+      ],
+      "priority_files": [
+        "domains/backend/rules/error-handling-and-logging-rules.md",
+        "domains/backend/wiki/topics/logging-error-handling-observability.md"
+      ],
+      "priority_chunk_types": [
+        "rule",
+        "topic",
+        "reference"
+      ],
+      "expected_tags": [
+        "backend",
+        "后端",
+        "logging",
+        "日志",
+        "error handling",
+        "异常处理",
+        "trace_id",
+        "request_id",
+        "observability",
+        "可观测性"
+      ],
+      "avoid_files": [
+        "domains/backend/raw/github_projects"
+      ]
+    },
+    {
+      "task_type": "performance_cache_queue",
+      "trigger_keywords": [
+        "performance",
+        "性能",
+        "cache",
+        "缓存",
+        "queue",
+        "队列",
+        "后台任务",
+        "retry"
+      ],
+      "priority_files": [
+        "domains/backend/rules/performance-and-stability-rules.md",
+        "domains/backend/wiki/patterns/background-task-queue-pattern.md"
+      ],
+      "priority_chunk_types": [
+        "rule",
+        "topic",
+        "pattern",
+        "reference"
+      ],
+      "expected_tags": [
+        "backend",
+        "后端",
+        "performance",
+        "性能",
+        "cache",
+        "缓存",
+        "queue",
+        "队列",
+        "background jobs",
+        "后台任务"
+      ],
+      "avoid_files": [
+        "domains/backend/raw/github_projects"
+      ]
+    },
+    {
+      "task_type": "ai_backend_rag",
+      "trigger_keywords": [
+        "AI backend",
+        "AI 应用后端",
+        "RAG",
+        "SSE",
+        "WebSocket",
+        "向量数据库",
+        "流式输出"
+      ],
+      "priority_files": [
+        "domains/backend/rules/ai-backend-design-rules.md",
+        "domains/backend/wiki/topics/ai-application-backend-rag-agent.md"
+      ],
+      "priority_chunk_types": [
+        "rule",
+        "topic",
+        "pattern",
+        "reference"
+      ],
+      "expected_tags": [
+        "backend",
+        "后端",
+        "AI backend",
+        "AI 应用后端",
+        "RAG",
+        "vector database",
+        "向量数据库",
+        "SSE",
+        "WebSocket",
+        "streaming",
+        "流式输出"
+      ],
+      "avoid_files": [
+        "domains/backend/raw/github_projects"
+      ]
+    },
+    {
+      "task_type": "file_upload",
+      "trigger_keywords": [
+        "file upload",
+        "文件上传",
+        "signed url",
+        "签名 URL",
+        "路径穿越",
+        "安全"
+      ],
+      "priority_files": [
+        "domains/backend/wiki/patterns/file-upload-processing-pattern.md",
+        "domains/backend/wiki/templates/file-upload-backend-template.md"
+      ],
+      "priority_chunk_types": [
+        "pattern",
+        "template",
+        "rule",
+        "reference"
+      ],
+      "expected_tags": [
+        "backend",
+        "后端",
+        "file upload",
+        "文件上传",
+        "signed url",
+        "签名 URL",
+        "后端安全"
+      ],
+      "avoid_files": [
+        "domains/backend/raw/github_projects"
+      ]
+    },
+    {
+      "task_type": "webhook",
+      "trigger_keywords": [
+        "webhook",
+        "签名验证",
+        "signature",
+        "retry",
+        "重试",
+        "idempotency",
+        "幂等"
+      ],
+      "priority_files": [
+        "domains/backend/wiki/patterns/webhook-signature-retry-pattern.md",
+        "domains/backend/references/api/stripe-idempotency.json"
+      ],
+      "priority_chunk_types": [
+        "pattern",
+        "reference",
+        "rule"
+      ],
+      "expected_tags": [
+        "backend",
+        "后端",
+        "webhook",
+        "签名验证",
+        "retry",
+        "重试",
+        "idempotency",
+        "幂等"
+      ],
+      "avoid_files": [
+        "domains/backend/raw/github_projects"
+      ]
+    },
+    {
+      "task_type": "mini_program_backend",
+      "trigger_keywords": [
+        "mini program backend",
+        "小程序后端",
+        "登录",
+        "权限",
+        "文件上传",
+        "WeChat"
+      ],
+      "priority_files": [
+        "domains/backend/wiki/topics/backend-for-mini-program-and-admin-system.md",
+        "domains/backend/rules/auth-and-permission-rules.md"
+      ],
+      "priority_chunk_types": [
+        "topic",
+        "rule",
+        "pattern",
+        "checklist"
+      ],
+      "expected_tags": [
+        "backend",
+        "后端",
+        "mini program backend",
+        "小程序后端",
+        "登录",
+        "权限",
+        "文件上传"
+      ],
+      "avoid_files": [
+        "domains/backend/raw/github_projects"
+      ]
+    },
+    {
+      "task_type": "admin_system_backend",
+      "trigger_keywords": [
+        "admin backend",
+        "管理系统后端",
+        "RBAC",
+        "菜单权限",
+        "接口权限"
+      ],
+      "priority_files": [
+        "domains/backend/wiki/topics/backend-for-mini-program-and-admin-system.md",
+        "domains/backend/wiki/patterns/rbac-permission-pattern.md"
+      ],
+      "priority_chunk_types": [
+        "topic",
+        "pattern",
+        "checklist",
+        "rule"
+      ],
+      "expected_tags": [
+        "backend",
+        "后端",
+        "admin backend",
+        "管理系统后端",
+        "RBAC",
+        "菜单权限",
+        "接口权限"
+      ],
+      "avoid_files": [
+        "domains/backend/raw/github_projects"
+      ]
+    },
+    {
+      "task_type": "github_project_analysis",
+      "trigger_keywords": [
+        "GitHub",
+        "后端项目分析",
+        "FastAPI",
+        "NestJS",
+        "Express",
+        "trust_level",
+        "sample_only"
+      ],
+      "priority_files": [
+        "domains/backend/rules/github-backend-project-selection-rules.md",
+        "domains/backend/processed/metadata/github_projects"
+      ],
+      "priority_chunk_types": [
+        "rule",
+        "github_project_analysis",
+        "github_project_chunk"
+      ],
+      "expected_tags": [
+        "backend",
+        "后端",
+        "backend github project",
+        "后端项目分析",
+        "core_reference",
+        "good_reference",
+        "sample_only"
+      ],
+      "avoid_files": [
+        "domains/backend/raw/github_projects/.git",
+        "node_modules",
+        "venv"
+      ]
+    }
+  ]
+}

@@ -137,8 +137,23 @@ python -m uvicorn app.main:app --host 127.0.0.1 --port 8765 --reload
 - For ordinary Web UI, landing page, SaaS homepage, product page, dashboard, and portfolio tasks, treat the `ui_design` premium rules as the default aesthetic layer before brand `design-*.md` topics.
 - Dynamic backgrounds, screenshots, fonts, icons, or UI kits: include `ui_assets` suggestions and follow `usage_policy`.
 - Browser automation, uploads, CDP, selectors, screenshots, iframe/modal handling, or verification: explicitly request automation chunks with `--automation > 0`.
+- Backend/API/database/auth/deployment/RAG work: backend is currently a curated document domain, not yet a `/brief` or SQLite-indexed runtime domain. Read `domains/backend/README.md` first, then only the relevant `rules/`, `wiki/`, `references/`, and processed GitHub project metadata/chunks it points to.
 - API or retrieval maintenance: inspect `backend_api/app/main.py`, `scripts/brief.py`, and the relevant domain scripts.
 - Schema/taxonomy changes: inspect `common/schemas`, `common/templates`, and `common/taxonomy` first.
+
+## Backend Domain Entry
+
+Use the backend domain when the task mentions API, 后端, 后台, 服务端, 数据库, 登录, 注册, 权限, JWT, Session, RBAC, Docker, 部署, 环境变量, RAG, Agent API, 大模型 API, SSE, Webhook, 队列, 日志, 监控, 错误码, 分页, 幂等, or GitHub 后端项目分析.
+
+Read order:
+
+1. `domains/backend/README.md`
+2. Task-specific files listed there under `rules/`
+3. Supporting `wiki/topics`, `wiki/patterns`, `wiki/checklists`, or `wiki/templates`
+4. `references/**/*.json` only when source/reference metadata is needed
+5. `processed/metadata/github_projects/*.metadata.json` and `processed/chunks/github_projects/*.chunks.json` for GitHub project analysis
+
+Do not use `domains/backend/raw/github_projects` as normal task context. Do not run those projects, install dependencies, copy source code, copy `.env.example` secrets, start `backend_api`, build indexes, or modify `runtime/db/sqlite` for a backend guidance lookup. Backend SQLite/API integration belongs to a later Phase 2C+ maintenance task.
 
 ## Asset Safety
 
@@ -168,6 +183,7 @@ For Hero / Landing Page / SaaS Homepage / Portfolio First Screen tasks, prioriti
 
 - Keep Python caches, `.pyc`, runtime logs, and temporary brief artifacts out of git.
 - Keep useful SQLite indexes under `runtime/db/sqlite/*` because they are the runtime retrieval artifacts.
+- Do not modify `runtime/db/sqlite` during backend documentation, audit, or routing updates.
 - Root `runtime/db/*.db` files may be empty compatibility leftovers; usable DBs are under `runtime/db/sqlite/*`.
 - Use PowerShell carefully with Windows paths. In Bash/Git Bash, convert Windows paths to forward slashes.
 - Prefer targeted `rg`, file slices, and CLI/API retrieval over broad file dumps.

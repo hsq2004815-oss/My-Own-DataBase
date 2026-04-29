@@ -1,0 +1,405 @@
+{
+  "domain": "backend",
+  "generated_at": "2026-04-29 10:07:30 +08:00",
+  "tests": [
+    {
+      "query": "backend architecture API design JWT RBAC PostgreSQL Redis Docker",
+      "language": "en",
+      "intent": "backend retrieval recall target",
+      "expected_files": [
+        "domains/backend/rules/backend-engineering-map.md",
+        "domains/backend/wiki/topics/modern-backend-architecture.md",
+        "domains/backend/wiki/templates/fastapi-project-template.md",
+        "domains/backend/references/architecture/martin-fowler-monolith-first.json"
+      ],
+      "expected_chunk_tags": [
+        "backend",
+        "architecture",
+        "API",
+        "design",
+        "JWT",
+        "RBAC",
+        "PostgreSQL",
+        "Redis",
+        "Docker"
+      ],
+      "must_include_source_types": [
+        "rule",
+        "topic"
+      ],
+      "nice_to_have_source_types": [
+        "template",
+        "reference"
+      ]
+    },
+    {
+      "query": "REST API error code pagination idempotency OpenAPI",
+      "language": "en",
+      "intent": "backend retrieval recall target",
+      "expected_files": [
+        "domains/backend/rules/api-design-rules.md",
+        "domains/backend/wiki/patterns/error-code-system-pattern.md",
+        "domains/backend/wiki/templates/openapi-doc-template.md",
+        "domains/backend/references/api/openapi-specification.json"
+      ],
+      "expected_chunk_tags": [
+        "REST",
+        "API",
+        "error",
+        "code",
+        "pagination",
+        "idempotency",
+        "OpenAPI"
+      ],
+      "must_include_source_types": [
+        "rule",
+        "pattern"
+      ],
+      "nice_to_have_source_types": [
+        "template",
+        "reference"
+      ]
+    },
+    {
+      "query": "FastAPI project structure SQLAlchemy Alembic PostgreSQL",
+      "language": "en",
+      "intent": "backend retrieval recall target",
+      "expected_files": [
+        "domains/backend/wiki/templates/fastapi-project-template.md",
+        "domains/backend/rules/database-modeling-rules.md",
+        "domains/backend/references/api/fastapi-official-docs.json",
+        "domains/backend/references/github_projects/minimal-fastapi-postgres-template-analysis.json"
+      ],
+      "expected_chunk_tags": [
+        "FastAPI",
+        "project",
+        "structure",
+        "SQLAlchemy",
+        "Alembic",
+        "PostgreSQL"
+      ],
+      "must_include_source_types": [
+        "template",
+        "rule"
+      ],
+      "nice_to_have_source_types": [
+        "reference"
+      ]
+    },
+    {
+      "query": "NestJS clean architecture Prisma PostgreSQL auth",
+      "language": "en",
+      "intent": "backend retrieval recall target",
+      "expected_files": [
+        "domains/backend/wiki/templates/nestjs-project-template.md",
+        "domains/backend/rules/auth-and-permission-rules.md",
+        "domains/backend/wiki/patterns/rbac-permission-pattern.md"
+      ],
+      "expected_chunk_tags": [
+        "NestJS",
+        "clean",
+        "architecture",
+        "Prisma",
+        "PostgreSQL",
+        "auth"
+      ],
+      "must_include_source_types": [
+        "template",
+        "rule"
+      ],
+      "nice_to_have_source_types": [
+        "pattern"
+      ]
+    },
+    {
+      "query": "AI backend RAG SSE WebSocket vector database",
+      "language": "en",
+      "intent": "backend retrieval recall target",
+      "expected_files": [
+        "domains/backend/rules/ai-backend-design-rules.md",
+        "domains/backend/wiki/topics/ai-application-backend-rag-agent.md",
+        "domains/backend/wiki/patterns/rag-backend-pipeline-pattern.md",
+        "domains/backend/references/ai_backend/rag-backend-patterns.json"
+      ],
+      "expected_chunk_tags": [
+        "AI",
+        "backend",
+        "RAG",
+        "SSE",
+        "WebSocket",
+        "vector",
+        "database"
+      ],
+      "must_include_source_types": [
+        "rule",
+        "topic"
+      ],
+      "nice_to_have_source_types": [
+        "pattern",
+        "reference"
+      ]
+    },
+    {
+      "query": "file upload backend security signed url",
+      "language": "en",
+      "intent": "backend retrieval recall target",
+      "expected_files": [
+        "domains/backend/wiki/patterns/file-upload-processing-pattern.md",
+        "domains/backend/wiki/templates/file-upload-backend-template.md",
+        "domains/backend/rules/backend-security-checklist.md"
+      ],
+      "expected_chunk_tags": [
+        "file",
+        "upload",
+        "backend",
+        "security",
+        "signed",
+        "url"
+      ],
+      "must_include_source_types": [
+        "pattern",
+        "template"
+      ],
+      "nice_to_have_source_types": [
+        "rule"
+      ]
+    },
+    {
+      "query": "webhook signature retry idempotency",
+      "language": "en",
+      "intent": "backend retrieval recall target",
+      "expected_files": [
+        "domains/backend/wiki/patterns/webhook-signature-retry-pattern.md",
+        "domains/backend/references/api/stripe-idempotency.json",
+        "domains/backend/rules/api-design-rules.md"
+      ],
+      "expected_chunk_tags": [
+        "webhook",
+        "signature",
+        "retry",
+        "idempotency"
+      ],
+      "must_include_source_types": [
+        "pattern",
+        "reference"
+      ],
+      "nice_to_have_source_types": [
+        "rule"
+      ]
+    },
+    {
+      "query": "Docker env Nginx deployment backend",
+      "language": "en",
+      "intent": "backend retrieval recall target",
+      "expected_files": [
+        "domains/backend/rules/deployment-and-env-rules.md",
+        "domains/backend/wiki/templates/docker-compose-backend-template.md",
+        "domains/backend/references/deployment/nginx-reverse-proxy.json"
+      ],
+      "expected_chunk_tags": [
+        "Docker",
+        "env",
+        "Nginx",
+        "deployment",
+        "backend"
+      ],
+      "must_include_source_types": [
+        "rule",
+        "template"
+      ],
+      "nice_to_have_source_types": [
+        "reference"
+      ]
+    },
+    {
+      "query": "后端架构 接口设计 数据库设计 权限 日志 部署",
+      "language": "zh",
+      "intent": "backend retrieval recall target",
+      "expected_files": [
+        "domains/backend/rules/backend-engineering-map.md",
+        "domains/backend/wiki/topics/modern-backend-architecture.md",
+        "domains/backend/wiki/checklists/backend-project-start-checklist.md"
+      ],
+      "expected_chunk_tags": [
+        "后端架构",
+        "接口设计",
+        "数据库设计",
+        "权限",
+        "日志",
+        "部署"
+      ],
+      "must_include_source_types": [
+        "rule",
+        "topic"
+      ],
+      "nice_to_have_source_types": [
+        "checklist"
+      ]
+    },
+    {
+      "query": "小程序后端 登录 权限 文件上传 安全",
+      "language": "zh",
+      "intent": "backend retrieval recall target",
+      "expected_files": [
+        "domains/backend/wiki/topics/backend-for-mini-program-and-admin-system.md",
+        "domains/backend/rules/auth-and-permission-rules.md",
+        "domains/backend/wiki/patterns/file-upload-processing-pattern.md"
+      ],
+      "expected_chunk_tags": [
+        "小程序后端",
+        "登录",
+        "权限",
+        "文件上传",
+        "安全"
+      ],
+      "must_include_source_types": [
+        "topic",
+        "rule"
+      ],
+      "nice_to_have_source_types": [
+        "pattern"
+      ]
+    },
+    {
+      "query": "管理系统后端 RBAC 菜单权限 接口权限",
+      "language": "mixed",
+      "intent": "backend retrieval recall target",
+      "expected_files": [
+        "domains/backend/wiki/patterns/rbac-permission-pattern.md",
+        "domains/backend/wiki/checklists/auth-security-checklist.md",
+        "domains/backend/rules/auth-and-permission-rules.md"
+      ],
+      "expected_chunk_tags": [
+        "管理系统后端",
+        "RBAC",
+        "菜单权限",
+        "接口权限"
+      ],
+      "must_include_source_types": [
+        "pattern",
+        "checklist"
+      ],
+      "nice_to_have_source_types": [
+        "rule"
+      ]
+    },
+    {
+      "query": "AI 应用后端 RAG 流式输出 向量数据库",
+      "language": "mixed",
+      "intent": "backend retrieval recall target",
+      "expected_files": [
+        "domains/backend/wiki/topics/ai-application-backend-rag-agent.md",
+        "domains/backend/wiki/patterns/sse-streaming-response-pattern.md",
+        "domains/backend/references/ai_backend/sse-streaming-ai-response.json"
+      ],
+      "expected_chunk_tags": [
+        "AI",
+        "应用后端",
+        "RAG",
+        "流式输出",
+        "向量数据库"
+      ],
+      "must_include_source_types": [
+        "topic",
+        "pattern"
+      ],
+      "nice_to_have_source_types": [
+        "reference"
+      ]
+    },
+    {
+      "query": "Docker 环境变量 Nginx FastAPI PostgreSQL",
+      "language": "mixed",
+      "intent": "backend retrieval recall target",
+      "expected_files": [
+        "domains/backend/wiki/topics/docker-env-deployment.md",
+        "domains/backend/wiki/templates/docker-compose-backend-template.md",
+        "domains/backend/references/deployment/docker-compose-env-secrets.json"
+      ],
+      "expected_chunk_tags": [
+        "Docker",
+        "环境变量",
+        "Nginx",
+        "FastAPI",
+        "PostgreSQL"
+      ],
+      "must_include_source_types": [
+        "topic",
+        "template"
+      ],
+      "nice_to_have_source_types": [
+        "reference"
+      ]
+    },
+    {
+      "query": "接口错误码 分页 幂等 OpenAPI",
+      "language": "mixed",
+      "intent": "backend retrieval recall target",
+      "expected_files": [
+        "domains/backend/wiki/topics/rest-api-response-and-error-code.md",
+        "domains/backend/wiki/patterns/api-response-wrapper-pattern.md",
+        "domains/backend/references/api/openapi-specification.json"
+      ],
+      "expected_chunk_tags": [
+        "接口错误码",
+        "分页",
+        "幂等",
+        "OpenAPI"
+      ],
+      "must_include_source_types": [
+        "topic",
+        "pattern"
+      ],
+      "nice_to_have_source_types": [
+        "reference"
+      ]
+    },
+    {
+      "query": "后端安全 越权 SQL注入 文件上传",
+      "language": "mixed",
+      "intent": "backend retrieval recall target",
+      "expected_files": [
+        "domains/backend/rules/backend-security-checklist.md",
+        "domains/backend/wiki/topics/backend-security-owasp-api.md",
+        "domains/backend/references/security/owasp-api-security-top10-2023.json"
+      ],
+      "expected_chunk_tags": [
+        "后端安全",
+        "越权",
+        "SQL注入",
+        "文件上传"
+      ],
+      "must_include_source_types": [
+        "rule",
+        "topic"
+      ],
+      "nice_to_have_source_types": [
+        "reference"
+      ]
+    },
+    {
+      "query": "后台任务 队列 重试 超时 日志",
+      "language": "zh",
+      "intent": "backend retrieval recall target",
+      "expected_files": [
+        "domains/backend/wiki/patterns/background-task-queue-pattern.md",
+        "domains/backend/rules/performance-and-stability-rules.md",
+        "domains/backend/references/performance/celery-task-queue.json"
+      ],
+      "expected_chunk_tags": [
+        "后台任务",
+        "队列",
+        "重试",
+        "超时",
+        "日志"
+      ],
+      "must_include_source_types": [
+        "pattern",
+        "rule"
+      ],
+      "nice_to_have_source_types": [
+        "reference"
+      ]
+    }
+  ]
+}

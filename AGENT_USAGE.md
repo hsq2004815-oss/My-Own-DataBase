@@ -33,6 +33,14 @@ Use automation context only when the user explicitly asks for browser automation
 python E:\DataBase\scripts\brief.py "<task>" --ui 2 --workflow 4 --automation 8 --assets 0
 ```
 
+For backend/API/database/auth/deployment/RAG tasks, backend is currently maintained as curated files, not as a `/brief` indexed runtime domain. Read:
+
+```text
+E:\DataBase\domains\backend\README.md
+```
+
+Then follow that README to the relevant `rules/`, `wiki/`, `references/`, or processed GitHub project metadata/chunks. Do not read `domains/backend/raw/github_projects` for normal generation tasks, and do not run projects, install dependencies, start the API, build indexes, or modify `runtime/db/sqlite`.
+
 For general coding or agent workflow tasks:
 
 ```powershell

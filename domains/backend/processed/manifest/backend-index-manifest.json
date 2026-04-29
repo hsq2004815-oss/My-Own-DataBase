@@ -1,0 +1,36 @@
+{
+  "domain": "backend",
+  "phase": "phase_2d_index_build",
+  "generated_at": "2026-04-29 10:20:49 +08:00",
+  "input_chunk_file": "domains/backend/processed/chunks/retrieval_ready/backend-retrieval-chunks.jsonl",
+  "input_chunks": 338,
+  "target_db_path": "runtime/db/sqlite/backend/backend_references.db",
+  "runtime_written": true,
+  "backup_path": "",
+  "backup_note": "No pre-existing backend_references.db existed, so there was no original backend database to copy before creating the new domain database.",
+  "tables_used": [
+    "backend_chunks",
+    "backend_chunks_fts"
+  ],
+  "fts_enabled": true,
+  "bm25_available": true,
+  "write_report": "domains/backend/output/reports/backend-phase-2d-write-report.json",
+  "dry_run_report": "domains/backend/output/reports/backend-phase-2d-dry-run-report.json",
+  "search_test_results": "domains/backend/output/search_tests/backend-search-test-results.json",
+  "search_tests": {
+    "total": 16,
+    "pass": 3,
+    "partial": 13,
+    "fail": 0
+  },
+  "safety_checks": {
+    "backup_created": false,
+    "backup_not_applicable_new_database": true,
+    "no_raw_modified": true,
+    "no_other_domain_deleted": true,
+    "no_secret_like_content": true,
+    "no_embedding_called": true,
+    "api_not_started": true
+  },
+  "next_step": "phase_2e_api_brief_integration"
+}

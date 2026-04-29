@@ -1,0 +1,207 @@
+{
+  "domain": "backend",
+  "generated_at": "2026-04-29 10:07:30 +08:00",
+  "chunk_file": "domains/backend/processed/chunks/retrieval_ready/backend-retrieval-chunks.jsonl",
+  "total_chunks": 338,
+  "chunks_by_source_type": {
+    "checklist": 24,
+    "github_project_analysis": 26,
+    "github_project_chunk": 39,
+    "pattern": 28,
+    "reference": 28,
+    "rule": 76,
+    "template": 81,
+    "topic": 36
+  },
+  "chunks_by_priority": {
+    "high": 227,
+    "low": 17,
+    "medium": 94
+  },
+  "chunks_by_trust_level": {
+    "core_reference": 30,
+    "good_reference": 25,
+    "not_applicable": 266,
+    "sample_only": 17
+  },
+  "top_tags": [
+    {
+      "tag": "backend",
+      "count": 338
+    },
+    {
+      "tag": "后端",
+      "count": 338
+    },
+    {
+      "tag": "API design",
+      "count": 273
+    },
+    {
+      "tag": "接口设计",
+      "count": 273
+    },
+    {
+      "tag": "Swagger",
+      "count": 259
+    },
+    {
+      "tag": "OpenAPI",
+      "count": 250
+    },
+    {
+      "tag": "idempotency",
+      "count": 250
+    },
+    {
+      "tag": "REST API",
+      "count": 249
+    },
+    {
+      "tag": "pagination",
+      "count": 249
+    },
+    {
+      "tag": "分页",
+      "count": 249
+    },
+    {
+      "tag": "error code",
+      "count": 249
+    },
+    {
+      "tag": "错误码",
+      "count": 249
+    },
+    {
+      "tag": "幂等",
+      "count": 249
+    },
+    {
+      "tag": "backend github project",
+      "count": 72
+    },
+    {
+      "tag": "后端项目分析",
+      "count": 72
+    },
+    {
+      "tag": "core_reference",
+      "count": 72
+    },
+    {
+      "tag": "good_reference",
+      "count": 72
+    },
+    {
+      "tag": "sample_only",
+      "count": 72
+    },
+    {
+      "tag": "README",
+      "count": 44
+    },
+    {
+      "tag": "FastAPI",
+      "count": 41
+    },
+    {
+      "tag": "backend-analysis",
+      "count": 39
+    },
+    {
+      "tag": "Dockerfile",
+      "count": 35
+    },
+    {
+      "tag": "AI backend",
+      "count": 34
+    },
+    {
+      "tag": "PostgreSQL",
+      "count": 34
+    },
+    {
+      "tag": "AI 应用后端",
+      "count": 28
+    },
+    {
+      "tag": "backend architecture",
+      "count": 28
+    },
+    {
+      "tag": "后端架构",
+      "count": 28
+    },
+    {
+      "tag": "database design",
+      "count": 28
+    },
+    {
+      "tag": "数据库设计",
+      "count": 28
+    },
+    {
+      "tag": "后端安全",
+      "count": 28
+    },
+    {
+      "tag": "Docker deployment",
+      "count": 28
+    },
+    {
+      "tag": "Docker 部署",
+      "count": 28
+    },
+    {
+      "tag": "JWT",
+      "count": 24
+    },
+    {
+      "tag": "pytest",
+      "count": 23
+    },
+    {
+      "tag": "ai_backend",
+      "count": 22
+    },
+    {
+      "tag": "fastapi",
+      "count": 20
+    },
+    {
+      "tag": "rules",
+      "count": 17
+    },
+    {
+      "tag": "Docker",
+      "count": 16
+    },
+    {
+      "tag": "RBAC",
+      "count": 16
+    },
+    {
+      "tag": "Alembic",
+      "count": 16
+    }
+  ],
+  "coverage": {
+    "api": true,
+    "database": true,
+    "auth": true,
+    "security": true,
+    "deployment": true,
+    "observability": true,
+    "performance": true,
+    "ai_backend": true,
+    "github_project_analysis": true
+  },
+  "quality_checks": {
+    "jsonl_valid": true,
+    "no_empty_content": true,
+    "no_secret_like_content": true,
+    "no_raw_project_source_code": true,
+    "no_runtime_sqlite_modified": true
+  }
+}

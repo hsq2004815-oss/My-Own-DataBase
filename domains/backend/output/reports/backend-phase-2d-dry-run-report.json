@@ -1,0 +1,40 @@
+{
+  "domain": "backend",
+  "generated_at": "2026-04-29T02:19:13.095986+00:00",
+  "mode": "dry_run",
+  "chunk_file": "domains/backend/processed/chunks/retrieval_ready/backend-retrieval-chunks.jsonl",
+  "db_path": "",
+  "valid": true,
+  "errors": [],
+  "stats": {
+    "input_chunks": 338,
+    "duplicate_chunk_ids": [],
+    "source_type_distribution": {
+      "checklist": 24,
+      "github_project_analysis": 26,
+      "github_project_chunk": 39,
+      "pattern": 28,
+      "reference": 28,
+      "rule": 76,
+      "template": 81,
+      "topic": 36
+    },
+    "priority_distribution": {
+      "high": 227,
+      "low": 17,
+      "medium": 94
+    },
+    "trust_level_distribution": {
+      "core_reference": 30,
+      "good_reference": 25,
+      "not_applicable": 266,
+      "sample_only": 17
+    },
+    "expected_write_count": 338
+  },
+  "runtime_written": false,
+  "backup_path": "",
+  "fts_enabled": false,
+  "tables_used": [],
+  "write_result": {}
+}
