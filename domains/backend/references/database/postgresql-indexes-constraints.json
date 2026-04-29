@@ -1,0 +1,77 @@
+{
+  "id": "backend-ref-postgresql-indexes-constraints",
+  "title": "PostgreSQL Indexes And Constraints",
+  "domain": "backend",
+  "category": "database",
+  "source": {
+    "name": "PostgreSQL Docs",
+    "url": "https://www.postgresql.org/docs/current/indexes.html",
+    "source_type": "database_doc"
+  },
+  "captured_at": "2026-04-29",
+  "summary": "PostgreSQL 官方文档是索引、约束和查询性能的主要参考入口。",
+  "key_points": [
+    "索引应服务查询路径。",
+    "约束比应用层校验更可靠。"
+  ],
+  "applicable_scenarios": [
+    "PostgreSQL",
+    "数据库设计"
+  ],
+  "avoid_when": [
+    "无持久化项目"
+  ],
+  "implementation_notes": [
+    "需要具体语法时打开官方 docs。"
+  ],
+  "agent_usage": {
+    "when_to_use": [
+      "PostgreSQL",
+      "数据库设计"
+    ],
+    "how_to_apply": [
+      "把该 reference 当检索入口，结合本地 rules/templates 使用。",
+      "不要假装已经完整读取外部文档全文；需要精确条款时再打开官方来源。"
+    ],
+    "code_generation_rules": [
+      "生成代码时优先采用本地 rules 的保守默认。",
+      "不要复制 secret、源码或外部文档原文。"
+    ]
+  },
+  "retrieval": {
+    "prompt_tags": [
+      "PostgreSQL",
+      "indexes",
+      "constraints",
+      "数据库设计",
+      "索引",
+      "backend",
+      "后端",
+      "database"
+    ],
+    "keywords": [
+      "PostgreSQL",
+      "indexes",
+      "constraints",
+      "数据库设计",
+      "索引",
+      "backend architecture",
+      "后端架构",
+      "API design",
+      "接口设计",
+      "database design",
+      "数据库设计",
+      "后端安全",
+      "Docker deployment",
+      "Docker 部署",
+      "AI backend",
+      "AI 应用后端"
+    ]
+  },
+  "related_rules": [
+    "rules/database-modeling-rules.md"
+  ],
+  "related_topics": [
+    "wiki/topics/database-modeling-and-indexing.md"
+  ]
+}

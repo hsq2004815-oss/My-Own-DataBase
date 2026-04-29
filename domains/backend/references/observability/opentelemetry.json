@@ -1,0 +1,75 @@
+{
+  "id": "backend-ref-opentelemetry",
+  "title": "OpenTelemetry",
+  "domain": "backend",
+  "category": "observability",
+  "source": {
+    "name": "OpenTelemetry Docs",
+    "url": "https://opentelemetry.io/docs/",
+    "source_type": "observability_doc"
+  },
+  "captured_at": "2026-04-29",
+  "summary": "OpenTelemetry 是 traces、metrics、logs 的开放可观测性参考入口。",
+  "key_points": [
+    "中型项目可用 trace_id 串联请求。",
+    "小项目先做 request_id 和结构化日志。"
+  ],
+  "applicable_scenarios": [
+    "observability",
+    "可观测性"
+  ],
+  "avoid_when": [
+    "极简 demo"
+  ],
+  "implementation_notes": [
+    "不要默认引入复杂平台。"
+  ],
+  "agent_usage": {
+    "when_to_use": [
+      "observability",
+      "可观测性"
+    ],
+    "how_to_apply": [
+      "把该 reference 当检索入口，结合本地 rules/templates 使用。",
+      "不要假装已经完整读取外部文档全文；需要精确条款时再打开官方来源。"
+    ],
+    "code_generation_rules": [
+      "生成代码时优先采用本地 rules 的保守默认。",
+      "不要复制 secret、源码或外部文档原文。"
+    ]
+  },
+  "retrieval": {
+    "prompt_tags": [
+      "OpenTelemetry",
+      "observability",
+      "trace_id",
+      "可观测性",
+      "backend",
+      "后端",
+      "observability"
+    ],
+    "keywords": [
+      "OpenTelemetry",
+      "observability",
+      "trace_id",
+      "可观测性",
+      "backend architecture",
+      "后端架构",
+      "API design",
+      "接口设计",
+      "database design",
+      "数据库设计",
+      "后端安全",
+      "Docker deployment",
+      "Docker 部署",
+      "AI backend",
+      "AI 应用后端"
+    ]
+  },
+  "related_rules": [
+    "rules/error-handling-and-logging-rules.md"
+  ],
+  "related_topics": [
+    "wiki/topics/logging-error-handling-observability.md"
+  ]
+}

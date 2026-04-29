@@ -1,0 +1,75 @@
+{
+  "id": "backend-ref-rag-backend-patterns",
+  "title": "RAG Backend Patterns",
+  "domain": "backend",
+  "category": "ai_backend",
+  "source": {
+    "name": "Local backend analysis",
+    "url": "https://github.com/hsq2004815-oss/My-Own-DataBase",
+    "source_type": "ai_backend_case"
+  },
+  "captured_at": "2026-04-29",
+  "summary": "本地 RAG 项目分析显示，RAG 后端应分离 ingestion、vector store、metadata filter 和回答链路。",
+  "key_points": [
+    "file_id/document_id metadata。",
+    "pgvector/PostgreSQL 是本批次主要参考。"
+  ],
+  "applicable_scenarios": [
+    "RAG backend",
+    "AI 应用后端"
+  ],
+  "avoid_when": [
+    "普通 CRUD API"
+  ],
+  "implementation_notes": [
+    "基于本地 Phase 1/2A 分析，不是官方 RAG 标准全文。"
+  ],
+  "agent_usage": {
+    "when_to_use": [
+      "RAG backend",
+      "AI 应用后端"
+    ],
+    "how_to_apply": [
+      "把该 reference 当检索入口，结合本地 rules/templates 使用。",
+      "不要假装已经完整读取外部文档全文；需要精确条款时再打开官方来源。"
+    ],
+    "code_generation_rules": [
+      "生成代码时优先采用本地 rules 的保守默认。",
+      "不要复制 secret、源码或外部文档原文。"
+    ]
+  },
+  "retrieval": {
+    "prompt_tags": [
+      "RAG backend",
+      "RAG 后端",
+      "vector database",
+      "向量数据库",
+      "backend",
+      "后端",
+      "ai_backend"
+    ],
+    "keywords": [
+      "RAG backend",
+      "RAG 后端",
+      "vector database",
+      "向量数据库",
+      "backend architecture",
+      "后端架构",
+      "API design",
+      "接口设计",
+      "database design",
+      "数据库设计",
+      "后端安全",
+      "Docker deployment",
+      "Docker 部署",
+      "AI backend",
+      "AI 应用后端"
+    ]
+  },
+  "related_rules": [
+    "rules/ai-backend-design-rules.md"
+  ],
+  "related_topics": [
+    "wiki/patterns/rag-backend-pipeline-pattern.md"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "backend-ref-oauth2-oidc-security",
+  "title": "OAuth2 OIDC Security",
+  "domain": "backend",
+  "category": "auth",
+  "source": {
+    "name": "OpenID Connect",
+    "url": "https://openid.net/specs/openid-connect-core-1_0.html",
+    "source_type": "security_standard"
+  },
+  "captured_at": "2026-04-29",
+  "summary": "OAuth2/OIDC 是第三方登录、企业身份和授权委托的参考入口。",
+  "key_points": [
+    "认证和授权要分离。",
+    "OIDC 用于身份层。"
+  ],
+  "applicable_scenarios": [
+    "第三方登录",
+    "企业身份",
+    "OAuth2"
+  ],
+  "avoid_when": [
+    "简单内部账号系统"
+  ],
+  "implementation_notes": [
+    "需要精确流程时读取官方规范。"
+  ],
+  "agent_usage": {
+    "when_to_use": [
+      "第三方登录",
+      "企业身份",
+      "OAuth2"
+    ],
+    "how_to_apply": [
+      "把该 reference 当检索入口，结合本地 rules/templates 使用。",
+      "不要假装已经完整读取外部文档全文；需要精确条款时再打开官方来源。"
+    ],
+    "code_generation_rules": [
+      "生成代码时优先采用本地 rules 的保守默认。",
+      "不要复制 secret、源码或外部文档原文。"
+    ]
+  },
+  "retrieval": {
+    "prompt_tags": [
+      "OAuth2",
+      "OIDC",
+      "JWT",
+      "权限设计",
+      "backend",
+      "后端",
+      "auth"
+    ],
+    "keywords": [
+      "OAuth2",
+      "OIDC",
+      "JWT",
+      "权限设计",
+      "backend architecture",
+      "后端架构",
+      "API design",
+      "接口设计",
+      "database design",
+      "数据库设计",
+      "后端安全",
+      "Docker deployment",
+      "Docker 部署",
+      "AI backend",
+      "AI 应用后端"
+    ]
+  },
+  "related_rules": [
+    "rules/auth-and-permission-rules.md"
+  ],
+  "related_topics": [
+    "wiki/topics/auth-session-jwt-oauth-rbac.md"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "backend-ref-fastapi-official-docs",
+  "title": "FastAPI Official Docs",
+  "domain": "backend",
+  "category": "framework",
+  "source": {
+    "name": "FastAPI",
+    "url": "https://fastapi.tiangolo.com/",
+    "source_type": "framework_doc"
+  },
+  "captured_at": "2026-04-29",
+  "summary": "FastAPI 官方文档是 FastAPI 生成 API、依赖注入、Pydantic、OpenAPI 的主要参考入口。",
+  "key_points": [
+    "适合 FastAPI 项目结构和接口生成。",
+    "与本地 minimal FastAPI 分析共同使用。"
+  ],
+  "applicable_scenarios": [
+    "FastAPI API",
+    "小程序后端"
+  ],
+  "avoid_when": [
+    "非 Python 项目"
+  ],
+  "implementation_notes": [
+    "未复制官方文档章节；需要精确 API 时打开官方来源。"
+  ],
+  "agent_usage": {
+    "when_to_use": [
+      "FastAPI API",
+      "小程序后端"
+    ],
+    "how_to_apply": [
+      "把该 reference 当检索入口，结合本地 rules/templates 使用。",
+      "不要假装已经完整读取外部文档全文；需要精确条款时再打开官方来源。"
+    ],
+    "code_generation_rules": [
+      "生成代码时优先采用本地 rules 的保守默认。",
+      "不要复制 secret、源码或外部文档原文。"
+    ]
+  },
+  "retrieval": {
+    "prompt_tags": [
+      "FastAPI",
+      "OpenAPI",
+      "Pydantic",
+      "后端框架",
+      "backend",
+      "后端",
+      "framework"
+    ],
+    "keywords": [
+      "FastAPI",
+      "OpenAPI",
+      "Pydantic",
+      "后端框架",
+      "backend architecture",
+      "后端架构",
+      "API design",
+      "接口设计",
+      "database design",
+      "数据库设计",
+      "后端安全",
+      "Docker deployment",
+      "Docker 部署",
+      "AI backend",
+      "AI 应用后端"
+    ]
+  },
+  "related_rules": [
+    "rules/api-design-rules.md"
+  ],
+  "related_topics": [
+    "wiki/templates/fastapi-project-template.md"
+  ]
+}

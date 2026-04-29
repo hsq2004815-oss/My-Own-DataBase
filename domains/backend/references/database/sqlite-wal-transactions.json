@@ -1,0 +1,75 @@
+{
+  "id": "backend-ref-sqlite-wal-transactions",
+  "title": "SQLite WAL And Transactions",
+  "domain": "backend",
+  "category": "database",
+  "source": {
+    "name": "SQLite Docs",
+    "url": "https://www.sqlite.org/wal.html",
+    "source_type": "database_doc"
+  },
+  "captured_at": "2026-04-29",
+  "summary": "SQLite WAL 和事务文档适合个人项目和单机工具评估 SQLite 并发边界。",
+  "key_points": [
+    "SQLite 适合小项目。",
+    "WAL 可改善读写并发但不是分布式数据库。"
+  ],
+  "applicable_scenarios": [
+    "SQLite",
+    "个人项目"
+  ],
+  "avoid_when": [
+    "高并发多服务 RAG 生产"
+  ],
+  "implementation_notes": [
+    "保守总结 SQLite 使用边界。"
+  ],
+  "agent_usage": {
+    "when_to_use": [
+      "SQLite",
+      "个人项目"
+    ],
+    "how_to_apply": [
+      "把该 reference 当检索入口，结合本地 rules/templates 使用。",
+      "不要假装已经完整读取外部文档全文；需要精确条款时再打开官方来源。"
+    ],
+    "code_generation_rules": [
+      "生成代码时优先采用本地 rules 的保守默认。",
+      "不要复制 secret、源码或外部文档原文。"
+    ]
+  },
+  "retrieval": {
+    "prompt_tags": [
+      "SQLite",
+      "WAL",
+      "transactions",
+      "事务",
+      "backend",
+      "后端",
+      "database"
+    ],
+    "keywords": [
+      "SQLite",
+      "WAL",
+      "transactions",
+      "事务",
+      "backend architecture",
+      "后端架构",
+      "API design",
+      "接口设计",
+      "database design",
+      "数据库设计",
+      "后端安全",
+      "Docker deployment",
+      "Docker 部署",
+      "AI backend",
+      "AI 应用后端"
+    ]
+  },
+  "related_rules": [
+    "rules/database-modeling-rules.md"
+  ],
+  "related_topics": [
+    "wiki/topics/database-modeling-and-indexing.md"
+  ]
+}

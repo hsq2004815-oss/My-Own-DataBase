@@ -1,0 +1,75 @@
+{
+  "id": "backend-ref-express-ts-pg-prisma-boilerplate-analysis",
+  "title": "Express TS PG Prisma Boilerplate Analysis",
+  "domain": "backend",
+  "category": "github_projects",
+  "source": {
+    "name": "Express TS PG Prisma Boilerplate",
+    "url": "https://github.com/SamvedVaj/express-ts-pg-prisma-boilerplate",
+    "source_type": "github_project"
+  },
+  "captured_at": "2026-04-29",
+  "summary": "Express TypeScript + Prisma + auth/refresh token 核心模板参考。",
+  "key_points": [
+    "参考级别：core_reference",
+    "规则提取必须结合本地分析报告和多来源验证。"
+  ],
+  "applicable_scenarios": [
+    "GitHub 后端项目分析",
+    "规则候选提取"
+  ],
+  "avoid_when": [
+    "不要复制源码",
+    "sample_only 或未本地分析项目不要提升为核心规则"
+  ],
+  "implementation_notes": [
+    "implementation_notes 中的 trust_level=core_reference",
+    "本地依据来自 Phase 1 analysis/metadata/chunks；full-stack-fastapi-template 未本地分析。"
+  ],
+  "agent_usage": {
+    "when_to_use": [
+      "GitHub 后端项目分析",
+      "规则候选提取"
+    ],
+    "how_to_apply": [
+      "把该 reference 当检索入口，结合本地 rules/templates 使用。",
+      "不要假装已经完整读取外部文档全文；需要精确条款时再打开官方来源。"
+    ],
+    "code_generation_rules": [
+      "生成代码时优先采用本地 rules 的保守默认。",
+      "不要复制 secret、源码或外部文档原文。"
+    ]
+  },
+  "retrieval": {
+    "prompt_tags": [
+      "GitHub backend project",
+      "开源项目分析",
+      "core_reference",
+      "backend",
+      "后端",
+      "github_projects"
+    ],
+    "keywords": [
+      "GitHub backend project",
+      "开源项目分析",
+      "core_reference",
+      "backend architecture",
+      "后端架构",
+      "API design",
+      "接口设计",
+      "database design",
+      "数据库设计",
+      "后端安全",
+      "Docker deployment",
+      "Docker 部署",
+      "AI backend",
+      "AI 应用后端"
+    ]
+  },
+  "related_rules": [
+    "rules/github-backend-project-selection-rules.md"
+  ],
+  "related_topics": [
+    "wiki/topics/github-backend-project-analysis.md"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "backend-ref-sse-streaming-ai-response",
+  "title": "SSE Streaming AI Response",
+  "domain": "backend",
+  "category": "ai_backend",
+  "source": {
+    "name": "MDN Server-Sent Events",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events",
+    "source_type": "api_guideline"
+  },
+  "captured_at": "2026-04-29",
+  "summary": "SSE 是 AI token streaming 的常用传输方式，需结合超时、取消和错误事件。",
+  "key_points": [
+    "适合单向服务端流。",
+    "需要客户端兼容测试。"
+  ],
+  "applicable_scenarios": [
+    "SSE streaming",
+    "AI 后端"
+  ],
+  "avoid_when": [
+    "双向实时协作优先 WebSocket"
+  ],
+  "implementation_notes": [
+    "结合本地 fastapi-openai-compat 分析使用。"
+  ],
+  "agent_usage": {
+    "when_to_use": [
+      "SSE streaming",
+      "AI 后端"
+    ],
+    "how_to_apply": [
+      "把该 reference 当检索入口，结合本地 rules/templates 使用。",
+      "不要假装已经完整读取外部文档全文；需要精确条款时再打开官方来源。"
+    ],
+    "code_generation_rules": [
+      "生成代码时优先采用本地 rules 的保守默认。",
+      "不要复制 secret、源码或外部文档原文。"
+    ]
+  },
+  "retrieval": {
+    "prompt_tags": [
+      "SSE streaming",
+      "流式输出",
+      "AI backend",
+      "backend",
+      "后端",
+      "ai_backend"
+    ],
+    "keywords": [
+      "SSE streaming",
+      "流式输出",
+      "AI backend",
+      "backend architecture",
+      "后端架构",
+      "API design",
+      "接口设计",
+      "database design",
+      "数据库设计",
+      "后端安全",
+      "Docker deployment",
+      "Docker 部署",
+      "AI backend",
+      "AI 应用后端"
+    ]
+  },
+  "related_rules": [
+    "rules/ai-backend-design-rules.md"
+  ],
+  "related_topics": [
+    "wiki/patterns/sse-streaming-response-pattern.md"
+  ]
+}

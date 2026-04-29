@@ -1,0 +1,75 @@
+{
+  "id": "backend-ref-github-rest-api-practices",
+  "title": "GitHub REST API Practices",
+  "domain": "backend",
+  "category": "api",
+  "source": {
+    "name": "GitHub REST API Docs",
+    "url": "https://docs.github.com/en/rest",
+    "source_type": "api_guideline"
+  },
+  "captured_at": "2026-04-29",
+  "summary": "GitHub REST API 文档可作为分页、认证、错误和版本化 API 的公共参考入口。",
+  "key_points": [
+    "适合 REST API 设计参考。",
+    "适合 Agent 学习分页和资源路径风格。"
+  ],
+  "applicable_scenarios": [
+    "REST API",
+    "GitHub 集成"
+  ],
+  "avoid_when": [
+    "非 HTTP 项目"
+  ],
+  "implementation_notes": [
+    "保守引用公开文档入口。"
+  ],
+  "agent_usage": {
+    "when_to_use": [
+      "REST API",
+      "GitHub 集成"
+    ],
+    "how_to_apply": [
+      "把该 reference 当检索入口，结合本地 rules/templates 使用。",
+      "不要假装已经完整读取外部文档全文；需要精确条款时再打开官方来源。"
+    ],
+    "code_generation_rules": [
+      "生成代码时优先采用本地 rules 的保守默认。",
+      "不要复制 secret、源码或外部文档原文。"
+    ]
+  },
+  "retrieval": {
+    "prompt_tags": [
+      "GitHub REST API",
+      "pagination",
+      "分页",
+      "API design",
+      "backend",
+      "后端",
+      "api"
+    ],
+    "keywords": [
+      "GitHub REST API",
+      "pagination",
+      "分页",
+      "API design",
+      "backend architecture",
+      "后端架构",
+      "API design",
+      "接口设计",
+      "database design",
+      "数据库设计",
+      "后端安全",
+      "Docker deployment",
+      "Docker 部署",
+      "AI backend",
+      "AI 应用后端"
+    ]
+  },
+  "related_rules": [
+    "rules/api-design-rules.md"
+  ],
+  "related_topics": [
+    "wiki/topics/api-first-design.md"
+  ]
+}

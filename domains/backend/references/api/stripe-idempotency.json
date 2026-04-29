@@ -1,0 +1,77 @@
+{
+  "id": "backend-ref-stripe-idempotency",
+  "title": "Stripe Idempotency",
+  "domain": "backend",
+  "category": "api",
+  "source": {
+    "name": "Stripe Docs",
+    "url": "https://docs.stripe.com/api/idempotent_requests",
+    "source_type": "api_guideline"
+  },
+  "captured_at": "2026-04-29",
+  "summary": "Stripe 幂等请求文档适合作为写操作、支付、Webhook 去重的工程参考。",
+  "key_points": [
+    "写操作应有幂等键。",
+    "重试不应造成重复副作用。"
+  ],
+  "applicable_scenarios": [
+    "支付接口",
+    "Webhook",
+    "外部 API 重试"
+  ],
+  "avoid_when": [
+    "纯读接口"
+  ],
+  "implementation_notes": [
+    "仅总结幂等用途，不复制文档原文。"
+  ],
+  "agent_usage": {
+    "when_to_use": [
+      "支付接口",
+      "Webhook",
+      "外部 API 重试"
+    ],
+    "how_to_apply": [
+      "把该 reference 当检索入口，结合本地 rules/templates 使用。",
+      "不要假装已经完整读取外部文档全文；需要精确条款时再打开官方来源。"
+    ],
+    "code_generation_rules": [
+      "生成代码时优先采用本地 rules 的保守默认。",
+      "不要复制 secret、源码或外部文档原文。"
+    ]
+  },
+  "retrieval": {
+    "prompt_tags": [
+      "idempotency",
+      "幂等设计",
+      "Webhook",
+      "重试",
+      "backend",
+      "后端",
+      "api"
+    ],
+    "keywords": [
+      "idempotency",
+      "幂等设计",
+      "Webhook",
+      "重试",
+      "backend architecture",
+      "后端架构",
+      "API design",
+      "接口设计",
+      "database design",
+      "数据库设计",
+      "后端安全",
+      "Docker deployment",
+      "Docker 部署",
+      "AI backend",
+      "AI 应用后端"
+    ]
+  },
+  "related_rules": [
+    "rules/api-design-rules.md"
+  ],
+  "related_topics": [
+    "wiki/topics/performance-cache-queue-idempotency.md"
+  ]
+}

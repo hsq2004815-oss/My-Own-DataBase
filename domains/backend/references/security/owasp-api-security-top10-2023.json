@@ -1,0 +1,73 @@
+{
+  "id": "backend-ref-owasp-api-security-top10-2023",
+  "title": "OWASP API Security Top 10 2023",
+  "domain": "backend",
+  "category": "security",
+  "source": {
+    "name": "OWASP",
+    "url": "https://owasp.org/API-Security/editions/2023/en/0x00-header/",
+    "source_type": "security_standard"
+  },
+  "captured_at": "2026-04-29",
+  "summary": "OWASP API Security Top 10 是 API 安全风险检查的权威入口。",
+  "key_points": [
+    "关注越权、认证、授权、输入和暴露。",
+    "适合上线前安全 checklist。"
+  ],
+  "applicable_scenarios": [
+    "后端安全",
+    "API review"
+  ],
+  "avoid_when": [
+    "纯前端视觉任务"
+  ],
+  "implementation_notes": [
+    "不复制 OWASP 原文，只作为风险框架入口。"
+  ],
+  "agent_usage": {
+    "when_to_use": [
+      "后端安全",
+      "API review"
+    ],
+    "how_to_apply": [
+      "把该 reference 当检索入口，结合本地 rules/templates 使用。",
+      "不要假装已经完整读取外部文档全文；需要精确条款时再打开官方来源。"
+    ],
+    "code_generation_rules": [
+      "生成代码时优先采用本地 rules 的保守默认。",
+      "不要复制 secret、源码或外部文档原文。"
+    ]
+  },
+  "retrieval": {
+    "prompt_tags": [
+      "OWASP API Security",
+      "后端安全",
+      "越权",
+      "backend",
+      "后端",
+      "security"
+    ],
+    "keywords": [
+      "OWASP API Security",
+      "后端安全",
+      "越权",
+      "backend architecture",
+      "后端架构",
+      "API design",
+      "接口设计",
+      "database design",
+      "数据库设计",
+      "后端安全",
+      "Docker deployment",
+      "Docker 部署",
+      "AI backend",
+      "AI 应用后端"
+    ]
+  },
+  "related_rules": [
+    "rules/backend-security-checklist.md"
+  ],
+  "related_topics": [
+    "wiki/topics/backend-security-owasp-api.md"
+  ]
+}

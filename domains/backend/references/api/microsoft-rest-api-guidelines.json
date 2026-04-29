@@ -1,0 +1,73 @@
+{
+  "id": "backend-ref-microsoft-rest-api-guidelines",
+  "title": "Microsoft REST API Guidelines",
+  "domain": "backend",
+  "category": "api",
+  "source": {
+    "name": "Microsoft API Guidelines",
+    "url": "https://github.com/microsoft/api-guidelines",
+    "source_type": "api_guideline"
+  },
+  "captured_at": "2026-04-29",
+  "summary": "Microsoft REST API Guidelines 是 REST 风格、错误、版本和一致性设计的公开工程指南入口。",
+  "key_points": [
+    "强调 API 一致性。",
+    "适合中型项目制定接口规范。"
+  ],
+  "applicable_scenarios": [
+    "REST API",
+    "中型后端"
+  ],
+  "avoid_when": [
+    "快速 demo"
+  ],
+  "implementation_notes": [
+    "未假装完整读取全部指南。"
+  ],
+  "agent_usage": {
+    "when_to_use": [
+      "REST API",
+      "中型后端"
+    ],
+    "how_to_apply": [
+      "把该 reference 当检索入口，结合本地 rules/templates 使用。",
+      "不要假装已经完整读取外部文档全文；需要精确条款时再打开官方来源。"
+    ],
+    "code_generation_rules": [
+      "生成代码时优先采用本地 rules 的保守默认。",
+      "不要复制 secret、源码或外部文档原文。"
+    ]
+  },
+  "retrieval": {
+    "prompt_tags": [
+      "Microsoft REST API Guidelines",
+      "REST API",
+      "接口规范",
+      "backend",
+      "后端",
+      "api"
+    ],
+    "keywords": [
+      "Microsoft REST API Guidelines",
+      "REST API",
+      "接口规范",
+      "backend architecture",
+      "后端架构",
+      "API design",
+      "接口设计",
+      "database design",
+      "数据库设计",
+      "后端安全",
+      "Docker deployment",
+      "Docker 部署",
+      "AI backend",
+      "AI 应用后端"
+    ]
+  },
+  "related_rules": [
+    "rules/api-design-rules.md"
+  ],
+  "related_topics": [
+    "wiki/topics/api-first-design.md"
+  ]
+}

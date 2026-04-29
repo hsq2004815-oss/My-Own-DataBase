@@ -1,0 +1,77 @@
+{
+  "id": "backend-ref-celery-task-queue",
+  "title": "Celery Task Queue",
+  "domain": "backend",
+  "category": "queue",
+  "source": {
+    "name": "Celery Docs",
+    "url": "https://docs.celeryq.dev/",
+    "source_type": "production_pattern"
+  },
+  "captured_at": "2026-04-29",
+  "summary": "Celery 是 Python 后台任务队列参考入口，适合长任务、重试和异步处理。",
+  "key_points": [
+    "任务必须幂等。",
+    "失败状态要可追踪。"
+  ],
+  "applicable_scenarios": [
+    "Python 后台任务",
+    "文件处理",
+    "RAG ingestion"
+  ],
+  "avoid_when": [
+    "无长任务的小项目"
+  ],
+  "implementation_notes": [
+    "不要默认引入，按需求启用。"
+  ],
+  "agent_usage": {
+    "when_to_use": [
+      "Python 后台任务",
+      "文件处理",
+      "RAG ingestion"
+    ],
+    "how_to_apply": [
+      "把该 reference 当检索入口，结合本地 rules/templates 使用。",
+      "不要假装已经完整读取外部文档全文；需要精确条款时再打开官方来源。"
+    ],
+    "code_generation_rules": [
+      "生成代码时优先采用本地 rules 的保守默认。",
+      "不要复制 secret、源码或外部文档原文。"
+    ]
+  },
+  "retrieval": {
+    "prompt_tags": [
+      "Celery",
+      "message queue",
+      "消息队列",
+      "重试",
+      "backend",
+      "后端",
+      "queue"
+    ],
+    "keywords": [
+      "Celery",
+      "message queue",
+      "消息队列",
+      "重试",
+      "backend architecture",
+      "后端架构",
+      "API design",
+      "接口设计",
+      "database design",
+      "数据库设计",
+      "后端安全",
+      "Docker deployment",
+      "Docker 部署",
+      "AI backend",
+      "AI 应用后端"
+    ]
+  },
+  "related_rules": [
+    "rules/performance-and-stability-rules.md"
+  ],
+  "related_topics": [
+    "wiki/patterns/background-task-queue-pattern.md"
+  ]
+}

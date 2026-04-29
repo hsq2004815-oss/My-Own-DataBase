@@ -1,0 +1,77 @@
+{
+  "id": "backend-ref-openapi-specification",
+  "title": "OpenAPI Specification",
+  "domain": "backend",
+  "category": "api",
+  "source": {
+    "name": "OpenAPI Initiative",
+    "url": "https://spec.openapis.org/oas/latest.html",
+    "source_type": "api_guideline"
+  },
+  "captured_at": "2026-04-29",
+  "summary": "OpenAPI 是描述 REST API 契约的标准入口，适合指导 Agent 生成可文档化、可测试的接口。",
+  "key_points": [
+    "定义路径、请求、响应、schema 和错误。",
+    "适合和 FastAPI/NestJS/Express Swagger 工具结合。"
+  ],
+  "applicable_scenarios": [
+    "REST API",
+    "OpenAPI",
+    "Swagger"
+  ],
+  "avoid_when": [
+    "一次性内部脚本"
+  ],
+  "implementation_notes": [
+    "基于通用公开规范用途总结，未复制规范全文。"
+  ],
+  "agent_usage": {
+    "when_to_use": [
+      "REST API",
+      "OpenAPI",
+      "Swagger"
+    ],
+    "how_to_apply": [
+      "把该 reference 当检索入口，结合本地 rules/templates 使用。",
+      "不要假装已经完整读取外部文档全文；需要精确条款时再打开官方来源。"
+    ],
+    "code_generation_rules": [
+      "生成代码时优先采用本地 rules 的保守默认。",
+      "不要复制 secret、源码或外部文档原文。"
+    ]
+  },
+  "retrieval": {
+    "prompt_tags": [
+      "OpenAPI",
+      "Swagger",
+      "REST API",
+      "接口设计",
+      "backend",
+      "后端",
+      "api"
+    ],
+    "keywords": [
+      "OpenAPI",
+      "Swagger",
+      "REST API",
+      "接口设计",
+      "backend architecture",
+      "后端架构",
+      "API design",
+      "接口设计",
+      "database design",
+      "数据库设计",
+      "后端安全",
+      "Docker deployment",
+      "Docker 部署",
+      "AI backend",
+      "AI 应用后端"
+    ]
+  },
+  "related_rules": [
+    "rules/api-design-rules.md"
+  ],
+  "related_topics": [
+    "wiki/topics/api-first-design.md"
+  ]
+}
