@@ -1,0 +1,87 @@
+{
+  "record_id": "automation-browser-qa-persistent-session",
+  "source": {
+    "name": "gstack by Garry Tan — GStack Browser QA flow",
+    "url": "https://github.com/garrytan/gstack",
+    "source_type": "case_study",
+    "license_notes": "MIT — QA workflow pattern generalized",
+    "captured_at": "2026-04-30"
+  },
+  "domain": "automation",
+  "automation_type": "browser_qa_session",
+  "tooling": ["Playwright", "Puppeteer", "Chromium"],
+  "goal": "Define a browser QA workflow using persistent Chromium sessions for testing web applications — form testing, login-state verification, screenshot-based regression, and automated bug-fix loops without cold-start overhead.",
+  "when_to_use": [
+    "Web application functional regression testing",
+    "Admin dashboard operation flow verification",
+    "File upload/download end-to-end testing",
+    "Multi-step user journey testing with login state"
+  ],
+  "inputs_required": [
+    "Running browser daemon with persistent session",
+    "Test scenario descriptions or checklist",
+    "Expected outcomes for each step"
+  ],
+  "steps": [
+    "Connect to persistent browser daemon",
+    "Load target URL in a tab",
+    "For each test scenario: execute actions, screenshot key states, check expected results",
+    "On failure: atomic commit fix, re-run regression test",
+    "Generate QA report: pass/fail/skip with evidence screenshots",
+    "Classify issues as P0 (blocker), P1 (important), P2 (cosmetic)"
+  ],
+  "commands_or_apis": [
+    "Browser daemon HTTP POST /command",
+    "snapshot — interactive page snapshot with natural language element identification",
+    "type — enter text into form fields",
+    "click — click buttons/links/menus",
+    "screenshot — capture visual state",
+    "console — retrieve browser console logs",
+    "network — inspect network requests"
+  ],
+  "verification": [
+    "All test scenarios executed",
+    "Screenshots captured for each step",
+    "Pass/fail/skip classification complete",
+    "P0 issues resolved before Ship gate"
+  ],
+  "failure_modes": [
+    "Element selectors break after UI change (use multiple fallback selectors)",
+    "Timing issues with async content loading (use wait-for patterns)",
+    "Cookie/session expires during long QA session",
+    "CAPTCHA appears during automated flow (use handoff mechanism)"
+  ],
+  "safety_notes": [
+    "Do not run QA against production with real user data",
+    "Do not screenshot pages containing PII/passwords",
+    "Use test accounts, not real user accounts",
+    "QA browser environment should be isolated from personal browsing"
+  ],
+  "handoff_report": [
+    "QA report file path",
+    "Number of test scenarios: passed/failed/skipped",
+    "P0/P1/P2 issue counts",
+    "Screenshot evidence locations"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "documented",
+    "notes": "QA workflow pattern extracted from gstack's /qa and /qa-only skills. The persistent session approach eliminates the 3-5s cold-start penalty per command and enables login-state-dependent testing."
+  },
+  "retrieval": {
+    "ai_summary": "Browser QA workflow with persistent Chromium sessions for web application testing. Execute test scenarios with screenshots, classify issues as P0/P1/P2, auto-fix bugs atomically with regression re-testing, handle CAPTCHA via handoff mechanism, and generate structured QA reports.",
+    "prompt_tags": [
+      "browser QA session",
+      "persistent session testing",
+      "浏览器自动化测试",
+      "Playwright QA",
+      "web application testing",
+      "login state testing",
+      "screenshot regression",
+      "QA report agent",
+      "浏览器登录态测试",
+      "agent QA workflow",
+      "end-to-end browser testing"
+    ]
+  }
+}

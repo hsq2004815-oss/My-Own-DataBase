@@ -1,5 +1,682 @@
 [
   {
+    "chunk_id": "pattern-agent-retro-learning-loop-overview",
+    "record_id": "pattern-agent-retro-learning-loop",
+    "workflow_type": "retro_learning_loop",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "overview",
+    "content": "# pattern-agent-retro-learning-loop - Overview\n\nWorkflow type: retro_learning_loop\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from starting from zero every session by establishing a post-project retro loop that captures failures, constraints, and learnings into the database for future agents to retrieve.\nEvidence: documented / medium\nSource: https://github.com/garrytan/gstack\n\nWhen to use:\n- After every Ship/Release\n- After a major failure or unexpected issue\n- Weekly team retro for cross-project patterns\n- When adding new rules, checklists, or templates\n\nInputs required:\n- Completed project with ship/deployment record\n- Access to project logs, error traces, review gate results\n- Write access to database rules/wiki/checklists/templates\n\nAI summary: Post-project retrospective learning loop for AI agents. After every Ship, the agent collects successes and failures, distills them into rules/checklists/patterns/templates, writes to the database, rebuilds indexes, and verifies future agents can retrieve the learnings. Prevents agents from starting from zero every session.",
+    "tokens": 149,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "retro loop",
+        "agent learning loop",
+        "复盘机制",
+        "agent retro",
+        "cross-session learning",
+        "agent knowledge accumulation",
+        "failure pattern capture",
+        "continuous improvement agent",
+        "learn from mistakes",
+        "AI agent memory",
+        "agent retrospective"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-agent-retro-learning-loop-steps",
+    "record_id": "pattern-agent-retro-learning-loop",
+    "workflow_type": "retro_learning_loop",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "steps",
+    "content": "# pattern-agent-retro-learning-loop - Execution Steps\n\nWorkflow type: retro_learning_loop\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from starting from zero every session by establishing a post-project retro loop that captures failures, constraints, and learnings into the database for future agents to retrieve.\nEvidence: documented / medium\nSource: https://github.com/garrytan/gstack\n\n- Collect: gather what happened during the project (successes, failures, surprises)\n- Analyze: identify patterns — what worked, what didn't, what constraints emerged\n- Distill: decide what knowledge belongs in rules vs checklists vs patterns vs templates\n- Write: update the appropriate database files with new learnings\n- Index: rebuild processed chunks so retrieval finds the new knowledge\n- Verify: confirm next agent session can retrieve the learnings\n\nAI summary: Post-project retrospective learning loop for AI agents. After every Ship, the agent collects successes and failures, distills them into rules/checklists/patterns/templates, writes to the database, rebuilds indexes, and verifies future agents can retrieve the learnings. Prevents agents from starting from zero every session.",
+    "tokens": 164,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "retro loop",
+        "agent learning loop",
+        "复盘机制",
+        "agent retro",
+        "cross-session learning",
+        "agent knowledge accumulation",
+        "failure pattern capture",
+        "continuous improvement agent",
+        "learn from mistakes",
+        "AI agent memory",
+        "agent retrospective"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-agent-retro-learning-loop-api",
+    "record_id": "pattern-agent-retro-learning-loop",
+    "workflow_type": "retro_learning_loop",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "api",
+    "content": "# pattern-agent-retro-learning-loop - API Calls\n\nWorkflow type: retro_learning_loop\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from starting from zero every session by establishing a post-project retro loop that captures failures, constraints, and learnings into the database for future agents to retrieve.\nEvidence: documented / medium\nSource: https://github.com/garrytan/gstack\n\n- POST /brief or search scripts to verify knowledge retrieval\n\nAI summary: Post-project retrospective learning loop for AI agents. After every Ship, the agent collects successes and failures, distills them into rules/checklists/patterns/templates, writes to the database, rebuilds indexes, and verifies future agents can retrieve the learnings. Prevents agents from starting from zero every session.",
+    "tokens": 106,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "retro loop",
+        "agent learning loop",
+        "复盘机制",
+        "agent retro",
+        "cross-session learning",
+        "agent knowledge accumulation",
+        "failure pattern capture",
+        "continuous improvement agent",
+        "learn from mistakes",
+        "AI agent memory",
+        "agent retrospective"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-agent-retro-learning-loop-prompt_contract",
+    "record_id": "pattern-agent-retro-learning-loop",
+    "workflow_type": "retro_learning_loop",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "prompt_contract",
+    "content": "# pattern-agent-retro-learning-loop - Prompt Contract\n\nWorkflow type: retro_learning_loop\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from starting from zero every session by establishing a post-project retro loop that captures failures, constraints, and learnings into the database for future agents to retrieve.\nEvidence: documented / medium\nSource: https://github.com/garrytan/gstack\n\n- Retro is mandatory after every Ship — not optional\n- Learnings must be written to database, not just thought about\n- Failure patterns are more valuable than success patterns for future agents\n- Cross-project retros identify systemic issues\n\nAI summary: Post-project retrospective learning loop for AI agents. After every Ship, the agent collects successes and failures, distills them into rules/checklists/patterns/templates, writes to the database, rebuilds indexes, and verifies future agents can retrieve the learnings. Prevents agents from starting from zero every session.",
+    "tokens": 135,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "retro loop",
+        "agent learning loop",
+        "复盘机制",
+        "agent retro",
+        "cross-session learning",
+        "agent knowledge accumulation",
+        "failure pattern capture",
+        "continuous improvement agent",
+        "learn from mistakes",
+        "AI agent memory",
+        "agent retrospective"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-agent-retro-learning-loop-verification",
+    "record_id": "pattern-agent-retro-learning-loop",
+    "workflow_type": "retro_learning_loop",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "verification",
+    "content": "# pattern-agent-retro-learning-loop - Verification\n\nWorkflow type: retro_learning_loop\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from starting from zero every session by establishing a post-project retro loop that captures failures, constraints, and learnings into the database for future agents to retrieve.\nEvidence: documented / medium\nSource: https://github.com/garrytan/gstack\n\n- Retro entry exists in database\n- Search can retrieve recent learnings\n- Updated rules/checklists are syntactically valid\n\nAI summary: Post-project retrospective learning loop for AI agents. After every Ship, the agent collects successes and failures, distills them into rules/checklists/patterns/templates, writes to the database, rebuilds indexes, and verifies future agents can retrieve the learnings. Prevents agents from starting from zero every session.",
+    "tokens": 113,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "retro loop",
+        "agent learning loop",
+        "复盘机制",
+        "agent retro",
+        "cross-session learning",
+        "agent knowledge accumulation",
+        "failure pattern capture",
+        "continuous improvement agent",
+        "learn from mistakes",
+        "AI agent memory",
+        "agent retrospective"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-agent-retro-learning-loop-failure_modes",
+    "record_id": "pattern-agent-retro-learning-loop",
+    "workflow_type": "retro_learning_loop",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "failure_modes",
+    "content": "# pattern-agent-retro-learning-loop - Failure Modes\n\nWorkflow type: retro_learning_loop\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from starting from zero every session by establishing a post-project retro loop that captures failures, constraints, and learnings into the database for future agents to retrieve.\nEvidence: documented / medium\nSource: https://github.com/garrytan/gstack\n\n- Skipping retro because project is done\n- Writing retro but not rebuilding indexes (knowledge invisible)\n- Recording only successes, not failures\n- Writing retro in a format agents cannot retrieve\n\nAI summary: Post-project retrospective learning loop for AI agents. After every Ship, the agent collects successes and failures, distills them into rules/checklists/patterns/templates, writes to the database, rebuilds indexes, and verifies future agents can retrieve the learnings. Prevents agents from starting from zero every session.",
+    "tokens": 127,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "retro loop",
+        "agent learning loop",
+        "复盘机制",
+        "agent retro",
+        "cross-session learning",
+        "agent knowledge accumulation",
+        "failure pattern capture",
+        "continuous improvement agent",
+        "learn from mistakes",
+        "AI agent memory",
+        "agent retrospective"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-agent-retro-learning-loop-handoff",
+    "record_id": "pattern-agent-retro-learning-loop",
+    "workflow_type": "retro_learning_loop",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "handoff",
+    "content": "# pattern-agent-retro-learning-loop - Handoff Report\n\nWorkflow type: retro_learning_loop\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from starting from zero every session by establishing a post-project retro loop that captures failures, constraints, and learnings into the database for future agents to retrieve.\nEvidence: documented / medium\nSource: https://github.com/garrytan/gstack\n\n- List of learnings added to database\n- Files modified (rules, checklists, templates)\n- Index rebuild status\n\nAI summary: Post-project retrospective learning loop for AI agents. After every Ship, the agent collects successes and failures, distills them into rules/checklists/patterns/templates, writes to the database, rebuilds indexes, and verifies future agents can retrieve the learnings. Prevents agents from starting from zero every session.",
+    "tokens": 113,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "retro loop",
+        "agent learning loop",
+        "复盘机制",
+        "agent retro",
+        "cross-session learning",
+        "agent knowledge accumulation",
+        "failure pattern capture",
+        "continuous improvement agent",
+        "learn from mistakes",
+        "AI agent memory",
+        "agent retrospective"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-role-based-agent-review-gates-overview",
+    "record_id": "pattern-role-based-agent-review-gates",
+    "workflow_type": "review_gate",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "overview",
+    "content": "# pattern-role-based-agent-review-gates - Overview\n\nWorkflow type: review_gate\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from skipping design and jumping directly to code by inserting role-based review gates at Plan, Review, Test, and Ship stages with defined checklists, stop conditions, and escalation paths.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\nWhen to use:\n- Before any Build phase starts (Plan gates)\n- After code is written and before merging (Review gates)\n- Before deployment (Test gates)\n- Before release (Ship gates)\n\nInputs required:\n- Project type classification (web/backend/automation/desktop)\n- Risk level assessment (authentication? payments? user data?)\n- Available review resources (single model or cross-model)\n\nAI summary: Role-based review gates for AI agent development: Plan gates (CEO/Eng/Design/DX) prevent skipping design, Review gates (Code/Design/DX/Security) catch bugs, Test gates (QA/Security/Performance) verify quality, Ship gates ensure safe deployment. Failed gates send work back to earlier stages.",
+    "tokens": 145,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "review gate",
+        "quality gate",
+        "agent code review",
+        "设计审查",
+        "代码审查",
+        "安全审查",
+        "plan review",
+        "design review gate",
+        "security audit agent",
+        "Claude Code review",
+        "Codex review",
+        "AI code review pattern",
+        "agent quality checkpoint"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-role-based-agent-review-gates-steps",
+    "record_id": "pattern-role-based-agent-review-gates",
+    "workflow_type": "review_gate",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "steps",
+    "content": "# pattern-role-based-agent-review-gates - Execution Steps\n\nWorkflow type: review_gate\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from skipping design and jumping directly to code by inserting role-based review gates at Plan, Review, Test, and Ship stages with defined checklists, stop conditions, and escalation paths.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Plan Gates: CEO (scope) → Eng (architecture) → Design (UI projects) → DX (API projects)\n- Review Gates: Code Review → Design Review (UI changes) → DX Review (API changes) → Security Review (high-risk)\n- Test Gates: QA (browser for web) → Security Scan (high-risk) → Performance Benchmark (as needed)\n- Ship Gates: Ship checklist → Canary Monitor (production) → Document Release\n- Failed gates → back to appropriate earlier stage for remediation\n\nAI summary: Role-based review gates for AI agent development: Plan gates (CEO/Eng/Design/DX) prevent skipping design, Review gates (Code/Design/DX/Security) catch bugs, Test gates (QA/Security/Performance) verify quality, Ship gates ensure safe deployment. Failed gates send work back to earlier stages.",
+    "tokens": 166,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "review gate",
+        "quality gate",
+        "agent code review",
+        "设计审查",
+        "代码审查",
+        "安全审查",
+        "plan review",
+        "design review gate",
+        "security audit agent",
+        "Claude Code review",
+        "Codex review",
+        "AI code review pattern",
+        "agent quality checkpoint"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-role-based-agent-review-gates-prompt_contract",
+    "record_id": "pattern-role-based-agent-review-gates",
+    "workflow_type": "review_gate",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "prompt_contract",
+    "content": "# pattern-role-based-agent-review-gates - Prompt Contract\n\nWorkflow type: review_gate\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from skipping design and jumping directly to code by inserting role-based review gates at Plan, Review, Test, and Ship stages with defined checklists, stop conditions, and escalation paths.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Agent must not enter Build without passing required Plan gates\n- Cross-model agreement is signal, not proof — user has final say\n- Gates are sequential within each stage; all required gates must pass\n- Skipping gates requires explicit user override\n\nAI summary: Role-based review gates for AI agent development: Plan gates (CEO/Eng/Design/DX) prevent skipping design, Review gates (Code/Design/DX/Security) catch bugs, Test gates (QA/Security/Performance) verify quality, Ship gates ensure safe deployment. Failed gates send work back to earlier stages.",
+    "tokens": 134,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "review gate",
+        "quality gate",
+        "agent code review",
+        "设计审查",
+        "代码审查",
+        "安全审查",
+        "plan review",
+        "design review gate",
+        "security audit agent",
+        "Claude Code review",
+        "Codex review",
+        "AI code review pattern",
+        "agent quality checkpoint"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-role-based-agent-review-gates-verification",
+    "record_id": "pattern-role-based-agent-review-gates",
+    "workflow_type": "review_gate",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "verification",
+    "content": "# pattern-role-based-agent-review-gates - Verification\n\nWorkflow type: review_gate\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from skipping design and jumping directly to code by inserting role-based review gates at Plan, Review, Test, and Ship stages with defined checklists, stop conditions, and escalation paths.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Count of required gates equals count of executed gates\n- No P0 issues remain from any gate\n- Gate results documented with evidence\n\nAI summary: Role-based review gates for AI agent development: Plan gates (CEO/Eng/Design/DX) prevent skipping design, Review gates (Code/Design/DX/Security) catch bugs, Test gates (QA/Security/Performance) verify quality, Ship gates ensure safe deployment. Failed gates send work back to earlier stages.",
+    "tokens": 115,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "review gate",
+        "quality gate",
+        "agent code review",
+        "设计审查",
+        "代码审查",
+        "安全审查",
+        "plan review",
+        "design review gate",
+        "security audit agent",
+        "Claude Code review",
+        "Codex review",
+        "AI code review pattern",
+        "agent quality checkpoint"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-role-based-agent-review-gates-failure_modes",
+    "record_id": "pattern-role-based-agent-review-gates",
+    "workflow_type": "review_gate",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "failure_modes",
+    "content": "# pattern-role-based-agent-review-gates - Failure Modes\n\nWorkflow type: review_gate\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from skipping design and jumping directly to code by inserting role-based review gates at Plan, Review, Test, and Ship stages with defined checklists, stop conditions, and escalation paths.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Agent ignores gate failure and proceeds anyway\n- Applying all gates to trivial changes (overhead)\n- Skipping Security Gate for projects with auth/payment/user data\n\nAI summary: Role-based review gates for AI agent development: Plan gates (CEO/Eng/Design/DX) prevent skipping design, Review gates (Code/Design/DX/Security) catch bugs, Test gates (QA/Security/Performance) verify quality, Ship gates ensure safe deployment. Failed gates send work back to earlier stages.",
+    "tokens": 117,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "review gate",
+        "quality gate",
+        "agent code review",
+        "设计审查",
+        "代码审查",
+        "安全审查",
+        "plan review",
+        "design review gate",
+        "security audit agent",
+        "Claude Code review",
+        "Codex review",
+        "AI code review pattern",
+        "agent quality checkpoint"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-role-based-agent-review-gates-handoff",
+    "record_id": "pattern-role-based-agent-review-gates",
+    "workflow_type": "review_gate",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "handoff",
+    "content": "# pattern-role-based-agent-review-gates - Handoff Report\n\nWorkflow type: review_gate\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from skipping design and jumping directly to code by inserting role-based review gates at Plan, Review, Test, and Ship stages with defined checklists, stop conditions, and escalation paths.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- List of executed gates with pass/fail status\n- Remaining P0/P1 issues from each gate\n- Which gates were skipped and why\n\nAI summary: Role-based review gates for AI agent development: Plan gates (CEO/Eng/Design/DX) prevent skipping design, Review gates (Code/Design/DX/Security) catch bugs, Test gates (QA/Security/Performance) verify quality, Ship gates ensure safe deployment. Failed gates send work back to earlier stages.",
+    "tokens": 114,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "review gate",
+        "quality gate",
+        "agent code review",
+        "设计审查",
+        "代码审查",
+        "安全审查",
+        "plan review",
+        "design review gate",
+        "security audit agent",
+        "Claude Code review",
+        "Codex review",
+        "AI code review pattern",
+        "agent quality checkpoint"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-think-plan-build-review-test-ship-reflect-overview",
+    "record_id": "pattern-think-plan-build-review-test-ship-reflect",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "overview",
+    "content": "# pattern-think-plan-build-review-test-ship-reflect - Overview\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Provide a reusable 7-stage development workflow pattern that any AI agent can follow: Think (redefine problem) → Plan (design + review) → Build (implement) → Review (audit) → Test (QA) → Ship (deploy) → Reflect (learn).\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\nWhen to use:\n- New feature development\n- Major refactoring with architecture changes\n- Web projects with UI and browser testing needs\n- Any project where code quality matters more than speed\n\nInputs required:\n- Clear problem statement from Think stage\n- Architecture design from Plan stage\n- Test strategy defined before Build\n\nAI summary: Seven-stage software development pattern for AI agents: Think (redefine problem), Plan (design with review gates), Build (implement with tests), Review (multi-layer audit), Test (browser QA + security), Ship (deploy + canary), Reflect (retro + learn). Each stage has defined inputs, outputs, and stop conditions.",
+    "tokens": 157,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "Think Plan Build Review Test Ship Reflect",
+        "7 stage workflow",
+        "agentic development pattern",
+        "AI software delivery lifecycle",
+        "development pipeline",
+        "software engineering workflow",
+        "AI coding pattern",
+        "agent workflow pattern",
+        "review gate workflow",
+        "ship gate",
+        "retro loop"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-think-plan-build-review-test-ship-reflect-steps",
+    "record_id": "pattern-think-plan-build-review-test-ship-reflect",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "steps",
+    "content": "# pattern-think-plan-build-review-test-ship-reflect - Execution Steps\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Provide a reusable 7-stage development workflow pattern that any AI agent can follow: Think (redefine problem) → Plan (design + review) → Build (implement) → Review (audit) → Test (QA) → Ship (deploy) → Reflect (learn).\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Think: Redefine the real problem; answer 6 mandatory questions; get user confirmation\n- Plan: Design architecture with data flow, test matrix, tech choices; pass required review gates (CEO/Eng/Design/DX as applicable)\n- Build: Implement per plan with tests; use WIP checkpoints; boil the lake (do the complete thing)\n- Review: Multi-layer code review, design audit, DX audit, security audit (as risk requires)\n- Test: Browser QA for UI projects, regression tests, security scan for high-risk projects\n- Ship: Sync main→test→push→PR→merge→deploy→health check→canary→document\n- Reflect: Write retro entry; distill learnings into rules/checklists/templates; update database\n\nAI summary: Seven-stage software development pattern for AI agents: Think (redefine problem), Plan (design with review gates), Build (implement with tests), Review (multi-layer audit), Test (browser QA + security), Ship (deploy + canary), Reflect (retro + learn). Each stage has defined inputs, outputs, and stop conditions.",
+    "tokens": 197,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "Think Plan Build Review Test Ship Reflect",
+        "7 stage workflow",
+        "agentic development pattern",
+        "AI software delivery lifecycle",
+        "development pipeline",
+        "software engineering workflow",
+        "AI coding pattern",
+        "agent workflow pattern",
+        "review gate workflow",
+        "ship gate",
+        "retro loop"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-think-plan-build-review-test-ship-reflect-prompt_contract",
+    "record_id": "pattern-think-plan-build-review-test-ship-reflect",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "prompt_contract",
+    "content": "# pattern-think-plan-build-review-test-ship-reflect - Prompt Contract\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Provide a reusable 7-stage development workflow pattern that any AI agent can follow: Think (redefine problem) → Plan (design + review) → Build (implement) → Review (audit) → Test (QA) → Ship (deploy) → Reflect (learn).\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Never skip from user request directly to code (Think→Plan first)\n- Each stage output feeds the next\n- Stop conditions must be met before proceeding\n- User confirms direction at Think and Plan before Build begins\n\nAI summary: Seven-stage software development pattern for AI agents: Think (redefine problem), Plan (design with review gates), Build (implement with tests), Review (multi-layer audit), Test (browser QA + security), Ship (deploy + canary), Reflect (retro + learn). Each stage has defined inputs, outputs, and stop conditions.",
+    "tokens": 142,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "Think Plan Build Review Test Ship Reflect",
+        "7 stage workflow",
+        "agentic development pattern",
+        "AI software delivery lifecycle",
+        "development pipeline",
+        "software engineering workflow",
+        "AI coding pattern",
+        "agent workflow pattern",
+        "review gate workflow",
+        "ship gate",
+        "retro loop"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-think-plan-build-review-test-ship-reflect-verification",
+    "record_id": "pattern-think-plan-build-review-test-ship-reflect",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "verification",
+    "content": "# pattern-think-plan-build-review-test-ship-reflect - Verification\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Provide a reusable 7-stage development workflow pattern that any AI agent can follow: Think (redefine problem) → Plan (design + review) → Build (implement) → Review (audit) → Test (QA) → Ship (deploy) → Reflect (learn).\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- All review gates passed\n- All tests green\n- Ship gate checklist complete\n- Retro entry written\n\nAI summary: Seven-stage software development pattern for AI agents: Think (redefine problem), Plan (design with review gates), Build (implement with tests), Review (multi-layer audit), Test (browser QA + security), Ship (deploy + canary), Reflect (retro + learn). Each stage has defined inputs, outputs, and stop conditions.",
+    "tokens": 122,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "Think Plan Build Review Test Ship Reflect",
+        "7 stage workflow",
+        "agentic development pattern",
+        "AI software delivery lifecycle",
+        "development pipeline",
+        "software engineering workflow",
+        "AI coding pattern",
+        "agent workflow pattern",
+        "review gate workflow",
+        "ship gate",
+        "retro loop"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-think-plan-build-review-test-ship-reflect-failure_modes",
+    "record_id": "pattern-think-plan-build-review-test-ship-reflect",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "failure_modes",
+    "content": "# pattern-think-plan-build-review-test-ship-reflect - Failure Modes\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Provide a reusable 7-stage development workflow pattern that any AI agent can follow: Think (redefine problem) → Plan (design + review) → Build (implement) → Review (audit) → Test (QA) → Ship (deploy) → Reflect (learn).\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Jumping to Build before Think/Plan complete\n- Skipping stages because of time pressure\n- Not recording retro (knowledge lost for future agents)\n\nAI summary: Seven-stage software development pattern for AI agents: Think (redefine problem), Plan (design with review gates), Build (implement with tests), Review (multi-layer audit), Test (browser QA + security), Ship (deploy + canary), Reflect (retro + learn). Each stage has defined inputs, outputs, and stop conditions.",
+    "tokens": 128,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "Think Plan Build Review Test Ship Reflect",
+        "7 stage workflow",
+        "agentic development pattern",
+        "AI software delivery lifecycle",
+        "development pipeline",
+        "software engineering workflow",
+        "AI coding pattern",
+        "agent workflow pattern",
+        "review gate workflow",
+        "ship gate",
+        "retro loop"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-think-plan-build-review-test-ship-reflect-handoff",
+    "record_id": "pattern-think-plan-build-review-test-ship-reflect",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "handoff",
+    "content": "# pattern-think-plan-build-review-test-ship-reflect - Handoff Report\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Provide a reusable 7-stage development workflow pattern that any AI agent can follow: Think (redefine problem) → Plan (design + review) → Build (implement) → Review (audit) → Test (QA) → Ship (deploy) → Reflect (learn).\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Stage completion status for each of the 7 stages\n- Failed gates with remediation status\n- Retro learnings for database\n\nAI summary: Seven-stage software development pattern for AI agents: Think (redefine problem), Plan (design with review gates), Build (implement with tests), Review (multi-layer audit), Test (browser QA + security), Ship (deploy + canary), Reflect (retro + learn). Each stage has defined inputs, outputs, and stop conditions.",
+    "tokens": 126,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "Think Plan Build Review Test Ship Reflect",
+        "7 stage workflow",
+        "agentic development pattern",
+        "AI software delivery lifecycle",
+        "development pipeline",
+        "software engineering workflow",
+        "AI coding pattern",
+        "agent workflow pattern",
+        "review gate workflow",
+        "ship gate",
+        "retro loop"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
     "chunk_id": "workflow-agent-handoff-report-template-overview",
     "record_id": "workflow-agent-handoff-report-template",
     "workflow_type": "handoff_report",
@@ -426,6 +1103,258 @@
         "memory-only",
         "no-evidence"
       ]
+    }
+  },
+  {
+    "chunk_id": "workflow-gstack-agentic-development-workflow-overview",
+    "record_id": "workflow-gstack-agentic-development-workflow",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "overview",
+    "content": "# workflow-gstack-agentic-development-workflow - Overview\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Establish a Think→Plan→Build→Review→Test→Ship→Reflect 7-stage software delivery pipeline for AI-assisted development, replacing single-prompt code generation with disciplined engineering workflow.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\nWhen to use:\n- Starting a new feature or project\n- Large refactoring requiring architecture review\n- Web projects needing browser QA\n- Multi-agent collaboration projects\n\nInputs required:\n- User task description\n- Project constraints and platform\n- Domain knowledge from /brief or rules\n\nAI summary: Think-Plan-Build-Review-Test-Ship-Reflect 7-stage agentic software delivery pipeline for AI-assisted development. Agent must go through all stages instead of jumping directly to code. Each stage has stop conditions and review gates.",
+    "tokens": 115,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "agentic software delivery",
+        "gstack",
+        "Think Plan Build Review Test Ship Reflect",
+        "AI development workflow",
+        "AI 工程工作流",
+        "AI 辅助开发流程",
+        "agent 软件交付",
+        "7 stage development pipeline",
+        "Claude Code workflow",
+        "Codex workflow",
+        "software delivery lifecycle",
+        "AI coding workflow"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-gstack-agentic-development-workflow-steps",
+    "record_id": "workflow-gstack-agentic-development-workflow",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "steps",
+    "content": "# workflow-gstack-agentic-development-workflow - Execution Steps\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Establish a Think→Plan→Build→Review→Test→Ship→Reflect 7-stage software delivery pipeline for AI-assisted development, replacing single-prompt code generation with disciplined engineering workflow.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Think: redefine the problem, answer 6 mandatory questions\n- Plan: design architecture, data flow, test matrix; pass required review gates\n- Build: implement per plan, write tests, checkpoint commits\n- Review: code review, design audit, DX audit, security audit (as applicable)\n- Test: browser QA, regression tests, security scan\n- Ship: sync main→test→push→PR→merge→deploy→canary\n- Reflect: write retro, update rules/checklists/templates in database\n\nAI summary: Think-Plan-Build-Review-Test-Ship-Reflect 7-stage agentic software delivery pipeline for AI-assisted development. Agent must go through all stages instead of jumping directly to code. Each stage has stop conditions and review gates.",
+    "tokens": 134,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "agentic software delivery",
+        "gstack",
+        "Think Plan Build Review Test Ship Reflect",
+        "AI development workflow",
+        "AI 工程工作流",
+        "AI 辅助开发流程",
+        "agent 软件交付",
+        "7 stage development pipeline",
+        "Claude Code workflow",
+        "Codex workflow",
+        "software delivery lifecycle",
+        "AI coding workflow"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-gstack-agentic-development-workflow-api",
+    "record_id": "workflow-gstack-agentic-development-workflow",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "api",
+    "content": "# workflow-gstack-agentic-development-workflow - API Calls\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Establish a Think→Plan→Build→Review→Test→Ship→Reflect 7-stage software delivery pipeline for AI-assisted development, replacing single-prompt code generation with disciplined engineering workflow.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- POST /brief with workflow_limit > 0\n- GET /health to check API availability\n\nAI summary: Think-Plan-Build-Review-Test-Ship-Reflect 7-stage agentic software delivery pipeline for AI-assisted development. Agent must go through all stages instead of jumping directly to code. Each stage has stop conditions and review gates.",
+    "tokens": 86,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "agentic software delivery",
+        "gstack",
+        "Think Plan Build Review Test Ship Reflect",
+        "AI development workflow",
+        "AI 工程工作流",
+        "AI 辅助开发流程",
+        "agent 软件交付",
+        "7 stage development pipeline",
+        "Claude Code workflow",
+        "Codex workflow",
+        "software delivery lifecycle",
+        "AI coding workflow"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-gstack-agentic-development-workflow-prompt_contract",
+    "record_id": "workflow-gstack-agentic-development-workflow",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "prompt_contract",
+    "content": "# workflow-gstack-agentic-development-workflow - Prompt Contract\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Establish a Think→Plan→Build→Review→Test→Ship→Reflect 7-stage software delivery pipeline for AI-assisted development, replacing single-prompt code generation with disciplined engineering workflow.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Agent must not skip from Think to Build without Plan\n- Each stage has a stop condition that must be met\n- Output of each stage feeds the next stage\n- User has final say over AI recommendations (User Sovereignty)\n\nAI summary: Think-Plan-Build-Review-Test-Ship-Reflect 7-stage agentic software delivery pipeline for AI-assisted development. Agent must go through all stages instead of jumping directly to code. Each stage has stop conditions and review gates.",
+    "tokens": 113,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "agentic software delivery",
+        "gstack",
+        "Think Plan Build Review Test Ship Reflect",
+        "AI development workflow",
+        "AI 工程工作流",
+        "AI 辅助开发流程",
+        "agent 软件交付",
+        "7 stage development pipeline",
+        "Claude Code workflow",
+        "Codex workflow",
+        "software delivery lifecycle",
+        "AI coding workflow"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-gstack-agentic-development-workflow-verification",
+    "record_id": "workflow-gstack-agentic-development-workflow",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "verification",
+    "content": "# workflow-gstack-agentic-development-workflow - Verification\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Establish a Think→Plan→Build→Review→Test→Ship→Reflect 7-stage software delivery pipeline for AI-assisted development, replacing single-prompt code generation with disciplined engineering workflow.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- All review gates passed before proceeding\n- Tests passing before Ship\n- Retro entry written to database\n\nAI summary: Think-Plan-Build-Review-Test-Ship-Reflect 7-stage agentic software delivery pipeline for AI-assisted development. Agent must go through all stages instead of jumping directly to code. Each stage has stop conditions and review gates.",
+    "tokens": 89,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "agentic software delivery",
+        "gstack",
+        "Think Plan Build Review Test Ship Reflect",
+        "AI development workflow",
+        "AI 工程工作流",
+        "AI 辅助开发流程",
+        "agent 软件交付",
+        "7 stage development pipeline",
+        "Claude Code workflow",
+        "Codex workflow",
+        "software delivery lifecycle",
+        "AI coding workflow"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-gstack-agentic-development-workflow-failure_modes",
+    "record_id": "workflow-gstack-agentic-development-workflow",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "failure_modes",
+    "content": "# workflow-gstack-agentic-development-workflow - Failure Modes\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Establish a Think→Plan→Build→Review→Test→Ship→Reflect 7-stage software delivery pipeline for AI-assisted development, replacing single-prompt code generation with disciplined engineering workflow.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Agent jumps directly to Build without Think/Plan\n- Skipping tests because it seems to work\n- Ignoring review gate failures to proceed faster\n- Not writing retro after completion\n\nAI summary: Think-Plan-Build-Review-Test-Ship-Reflect 7-stage agentic software delivery pipeline for AI-assisted development. Agent must go through all stages instead of jumping directly to code. Each stage has stop conditions and review gates.",
+    "tokens": 102,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "agentic software delivery",
+        "gstack",
+        "Think Plan Build Review Test Ship Reflect",
+        "AI development workflow",
+        "AI 工程工作流",
+        "AI 辅助开发流程",
+        "agent 软件交付",
+        "7 stage development pipeline",
+        "Claude Code workflow",
+        "Codex workflow",
+        "software delivery lifecycle",
+        "AI coding workflow"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-gstack-agentic-development-workflow-handoff",
+    "record_id": "workflow-gstack-agentic-development-workflow",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "handoff",
+    "content": "# workflow-gstack-agentic-development-workflow - Handoff Report\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Establish a Think→Plan→Build→Review→Test→Ship→Reflect 7-stage software delivery pipeline for AI-assisted development, replacing single-prompt code generation with disciplined engineering workflow.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Report current stage and completion status\n- List any failed review gates and remaining issues\n- Provide retro entry for database\n\nAI summary: Think-Plan-Build-Review-Test-Ship-Reflect 7-stage agentic software delivery pipeline for AI-assisted development. Agent must go through all stages instead of jumping directly to code. Each stage has stop conditions and review gates.",
+    "tokens": 94,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "agentic software delivery",
+        "gstack",
+        "Think Plan Build Review Test Ship Reflect",
+        "AI development workflow",
+        "AI 工程工作流",
+        "AI 辅助开发流程",
+        "agent 软件交付",
+        "7 stage development pipeline",
+        "Claude Code workflow",
+        "Codex workflow",
+        "software delivery lifecycle",
+        "AI coding workflow"
+      ],
+      "negative_prompt_tags": []
     }
   },
   {
@@ -881,6 +1810,258 @@
         "stop-after-one-failure",
         "silent-memory-fallback"
       ]
+    }
+  },
+  {
+    "chunk_id": "workflow-virtual-engineering-team-skills-overview",
+    "record_id": "workflow-virtual-engineering-team-skills",
+    "workflow_type": "virtual_engineering_team",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "overview",
+    "content": "# workflow-virtual-engineering-team-skills - Overview\n\nWorkflow type: virtual_engineering_team\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Design multi-role AI agent teams where each role represents a quality checkpoint with defined responsibility boundaries, structured checklists, and deliverable standards — not simulating humans but embedding engineering discipline.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\nWhen to use:\n- Complex projects requiring multiple review perspectives\n- Projects with UI (design review needed)\n- Projects with API (DX review needed)\n- Security-sensitive projects (security review needed)\n- Team collaboration across multiple agents\n\nInputs required:\n- Project type (web/backend/automation/desktop)\n- Risk profile (authentication? payments? user data?)\n- Available AI models for cross-model review\n\nAI summary: Multi-role AI agent team design pattern where each role (CEO/Eng/Design/DX/QA/Security/Release) represents a quality checkpoint with defined checklists. Roles are quality gates, not personality simulations. Select roles based on project needs.",
+    "tokens": 139,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "virtual engineering team",
+        "multi-role agent",
+        "多角色 agent",
+        "虚拟工程团队",
+        "agent role design",
+        "quality gate",
+        "review gate",
+        "agent 角色分工",
+        "cross-model review",
+        "Claude Code skills",
+        "AI team collaboration",
+        "agentic engineering team"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-virtual-engineering-team-skills-steps",
+    "record_id": "workflow-virtual-engineering-team-skills",
+    "workflow_type": "virtual_engineering_team",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "steps",
+    "content": "# workflow-virtual-engineering-team-skills - Execution Steps\n\nWorkflow type: virtual_engineering_team\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Design multi-role AI agent teams where each role represents a quality checkpoint with defined responsibility boundaries, structured checklists, and deliverable standards — not simulating humans but embedding engineering discipline.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Identify required quality gates for the project type\n- Define each gate's checklist and stop condition\n- Set the gate execution order (sequential, not parallel)\n- Execute gates at the correct stage (Plan/Review/Test/Ship)\n- Record gate results for retro\n\nAI summary: Multi-role AI agent team design pattern where each role (CEO/Eng/Design/DX/QA/Security/Release) represents a quality checkpoint with defined checklists. Roles are quality gates, not personality simulations. Select roles based on project needs.",
+    "tokens": 124,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "virtual engineering team",
+        "multi-role agent",
+        "多角色 agent",
+        "虚拟工程团队",
+        "agent role design",
+        "quality gate",
+        "review gate",
+        "agent 角色分工",
+        "cross-model review",
+        "Claude Code skills",
+        "AI team collaboration",
+        "agentic engineering team"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-virtual-engineering-team-skills-api",
+    "record_id": "workflow-virtual-engineering-team-skills",
+    "workflow_type": "virtual_engineering_team",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "api",
+    "content": "# workflow-virtual-engineering-team-skills - API Calls\n\nWorkflow type: virtual_engineering_team\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Design multi-role AI agent teams where each role represents a quality checkpoint with defined responsibility boundaries, structured checklists, and deliverable standards — not simulating humans but embedding engineering discipline.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- POST /brief to retrieve domain rules for gate criteria\n\nAI summary: Multi-role AI agent team design pattern where each role (CEO/Eng/Design/DX/QA/Security/Release) represents a quality checkpoint with defined checklists. Roles are quality gates, not personality simulations. Select roles based on project needs.",
+    "tokens": 94,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "virtual engineering team",
+        "multi-role agent",
+        "多角色 agent",
+        "虚拟工程团队",
+        "agent role design",
+        "quality gate",
+        "review gate",
+        "agent 角色分工",
+        "cross-model review",
+        "Claude Code skills",
+        "AI team collaboration",
+        "agentic engineering team"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-virtual-engineering-team-skills-prompt_contract",
+    "record_id": "workflow-virtual-engineering-team-skills",
+    "workflow_type": "virtual_engineering_team",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "prompt_contract",
+    "content": "# workflow-virtual-engineering-team-skills - Prompt Contract\n\nWorkflow type: virtual_engineering_team\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Design multi-role AI agent teams where each role represents a quality checkpoint with defined responsibility boundaries, structured checklists, and deliverable standards — not simulating humans but embedding engineering discipline.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Roles are quality gates, not personality simulations\n- Each role has a defined boundary and checklist\n- Cross-model agreement is signal, not proof — user has final say\n- Not all 23 roles apply to every project — select based on project needs\n\nAI summary: Multi-role AI agent team design pattern where each role (CEO/Eng/Design/DX/QA/Security/Release) represents a quality checkpoint with defined checklists. Roles are quality gates, not personality simulations. Select roles based on project needs.",
+    "tokens": 128,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "virtual engineering team",
+        "multi-role agent",
+        "多角色 agent",
+        "虚拟工程团队",
+        "agent role design",
+        "quality gate",
+        "review gate",
+        "agent 角色分工",
+        "cross-model review",
+        "Claude Code skills",
+        "AI team collaboration",
+        "agentic engineering team"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-virtual-engineering-team-skills-verification",
+    "record_id": "workflow-virtual-engineering-team-skills",
+    "workflow_type": "virtual_engineering_team",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "verification",
+    "content": "# workflow-virtual-engineering-team-skills - Verification\n\nWorkflow type: virtual_engineering_team\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Design multi-role AI agent teams where each role represents a quality checkpoint with defined responsibility boundaries, structured checklists, and deliverable standards — not simulating humans but embedding engineering discipline.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Each required gate has been executed\n- Gate results documented with pass/fail and evidence\n- Failed gates have been resolved or escalated\n\nAI summary: Multi-role AI agent team design pattern where each role (CEO/Eng/Design/DX/QA/Security/Release) represents a quality checkpoint with defined checklists. Roles are quality gates, not personality simulations. Select roles based on project needs.",
+    "tokens": 106,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "virtual engineering team",
+        "multi-role agent",
+        "多角色 agent",
+        "虚拟工程团队",
+        "agent role design",
+        "quality gate",
+        "review gate",
+        "agent 角色分工",
+        "cross-model review",
+        "Claude Code skills",
+        "AI team collaboration",
+        "agentic engineering team"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-virtual-engineering-team-skills-failure_modes",
+    "record_id": "workflow-virtual-engineering-team-skills",
+    "workflow_type": "virtual_engineering_team",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "failure_modes",
+    "content": "# workflow-virtual-engineering-team-skills - Failure Modes\n\nWorkflow type: virtual_engineering_team\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Design multi-role AI agent teams where each role represents a quality checkpoint with defined responsibility boundaries, structured checklists, and deliverable standards — not simulating humans but embedding engineering discipline.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Applying all 23 roles to a simple script (overhead)\n- Using role names without defining actual checklists\n- Assuming two-model agreement equals correctness\n- Skipping required gates for speed\n\nAI summary: Multi-role AI agent team design pattern where each role (CEO/Eng/Design/DX/QA/Security/Release) represents a quality checkpoint with defined checklists. Roles are quality gates, not personality simulations. Select roles based on project needs.",
+    "tokens": 114,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "virtual engineering team",
+        "multi-role agent",
+        "多角色 agent",
+        "虚拟工程团队",
+        "agent role design",
+        "quality gate",
+        "review gate",
+        "agent 角色分工",
+        "cross-model review",
+        "Claude Code skills",
+        "AI team collaboration",
+        "agentic engineering team"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-virtual-engineering-team-skills-handoff",
+    "record_id": "workflow-virtual-engineering-team-skills",
+    "workflow_type": "virtual_engineering_team",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "handoff",
+    "content": "# workflow-virtual-engineering-team-skills - Handoff Report\n\nWorkflow type: virtual_engineering_team\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Design multi-role AI agent teams where each role represents a quality checkpoint with defined responsibility boundaries, structured checklists, and deliverable standards — not simulating humans but embedding engineering discipline.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- List which gates were used and results\n- Note any new constraints discovered\n\nAI summary: Multi-role AI agent team design pattern where each role (CEO/Eng/Design/DX/QA/Security/Release) represents a quality checkpoint with defined checklists. Roles are quality gates, not personality simulations. Select roles based on project needs.",
+    "tokens": 98,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "virtual engineering team",
+        "multi-role agent",
+        "多角色 agent",
+        "虚拟工程团队",
+        "agent role design",
+        "quality gate",
+        "review gate",
+        "agent 角色分工",
+        "cross-model review",
+        "Claude Code skills",
+        "AI team collaboration",
+        "agentic engineering team"
+      ],
+      "negative_prompt_tags": []
     }
   },
   {

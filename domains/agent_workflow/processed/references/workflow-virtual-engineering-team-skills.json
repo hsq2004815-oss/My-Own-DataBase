@@ -1,0 +1,86 @@
+{
+  "record_id": "workflow-virtual-engineering-team-skills",
+  "source": {
+    "name": "gstack by Garry Tan",
+    "url": "https://github.com/garrytan/gstack",
+    "source_type": "case_study",
+    "license_notes": "MIT — role abstractions generalized, not copied verbatim",
+    "captured_at": "2026-04-30"
+  },
+  "domain": "agent_workflow",
+  "workflow_type": "virtual_engineering_team",
+  "agent_targets": [
+    "Claude Code",
+    "Codex",
+    "opencode",
+    "Cursor",
+    "OpenClaw"
+  ],
+  "goal": "Design multi-role AI agent teams where each role represents a quality checkpoint with defined responsibility boundaries, structured checklists, and deliverable standards — not simulating humans but embedding engineering discipline.",
+  "when_to_use": [
+    "Complex projects requiring multiple review perspectives",
+    "Projects with UI (design review needed)",
+    "Projects with API (DX review needed)",
+    "Security-sensitive projects (security review needed)",
+    "Team collaboration across multiple agents"
+  ],
+  "inputs_required": [
+    "Project type (web/backend/automation/desktop)",
+    "Risk profile (authentication? payments? user data?)",
+    "Available AI models for cross-model review"
+  ],
+  "steps": [
+    "Identify required quality gates for the project type",
+    "Define each gate's checklist and stop condition",
+    "Set the gate execution order (sequential, not parallel)",
+    "Execute gates at the correct stage (Plan/Review/Test/Ship)",
+    "Record gate results for retro"
+  ],
+  "api_calls": [
+    "POST /brief to retrieve domain rules for gate criteria"
+  ],
+  "prompt_contract": [
+    "Roles are quality gates, not personality simulations",
+    "Each role has a defined boundary and checklist",
+    "Cross-model agreement is signal, not proof — user has final say",
+    "Not all 23 roles apply to every project — select based on project needs"
+  ],
+  "verification": [
+    "Each required gate has been executed",
+    "Gate results documented with pass/fail and evidence",
+    "Failed gates have been resolved or escalated"
+  ],
+  "failure_modes": [
+    "Applying all 23 roles to a simple script (overhead)",
+    "Using role names without defining actual checklists",
+    "Assuming two-model agreement equals correctness",
+    "Skipping required gates for speed"
+  ],
+  "handoff_report": [
+    "List which gates were used and results",
+    "Note any new constraints discovered"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "documented",
+    "notes": "Abstracted from gstack's 23-role team design. The key insight: roles are quality gates, not people. Adapted to be platform-agnostic."
+  },
+  "retrieval": {
+    "ai_summary": "Multi-role AI agent team design pattern where each role (CEO/Eng/Design/DX/QA/Security/Release) represents a quality checkpoint with defined checklists. Roles are quality gates, not personality simulations. Select roles based on project needs.",
+    "prompt_tags": [
+      "virtual engineering team",
+      "multi-role agent",
+      "多角色 agent",
+      "虚拟工程团队",
+      "agent role design",
+      "quality gate",
+      "review gate",
+      "agent 角色分工",
+      "cross-model review",
+      "Claude Code skills",
+      "AI team collaboration",
+      "agentic engineering team"
+    ],
+    "negative_prompt_tags": []
+  }
+}

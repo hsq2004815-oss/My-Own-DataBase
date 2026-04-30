@@ -1,0 +1,212 @@
+[
+  {
+    "chunk_id": "pattern-think-plan-build-review-test-ship-reflect-overview",
+    "record_id": "pattern-think-plan-build-review-test-ship-reflect",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "overview",
+    "content": "# pattern-think-plan-build-review-test-ship-reflect - Overview\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Provide a reusable 7-stage development workflow pattern that any AI agent can follow: Think (redefine problem) → Plan (design + review) → Build (implement) → Review (audit) → Test (QA) → Ship (deploy) → Reflect (learn).\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\nWhen to use:\n- New feature development\n- Major refactoring with architecture changes\n- Web projects with UI and browser testing needs\n- Any project where code quality matters more than speed\n\nInputs required:\n- Clear problem statement from Think stage\n- Architecture design from Plan stage\n- Test strategy defined before Build\n\nAI summary: Seven-stage software development pattern for AI agents: Think (redefine problem), Plan (design with review gates), Build (implement with tests), Review (multi-layer audit), Test (browser QA + security), Ship (deploy + canary), Reflect (retro + learn). Each stage has defined inputs, outputs, and stop conditions.",
+    "tokens": 157,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "Think Plan Build Review Test Ship Reflect",
+        "7 stage workflow",
+        "agentic development pattern",
+        "AI software delivery lifecycle",
+        "development pipeline",
+        "software engineering workflow",
+        "AI coding pattern",
+        "agent workflow pattern",
+        "review gate workflow",
+        "ship gate",
+        "retro loop"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-think-plan-build-review-test-ship-reflect-steps",
+    "record_id": "pattern-think-plan-build-review-test-ship-reflect",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "steps",
+    "content": "# pattern-think-plan-build-review-test-ship-reflect - Execution Steps\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Provide a reusable 7-stage development workflow pattern that any AI agent can follow: Think (redefine problem) → Plan (design + review) → Build (implement) → Review (audit) → Test (QA) → Ship (deploy) → Reflect (learn).\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Think: Redefine the real problem; answer 6 mandatory questions; get user confirmation\n- Plan: Design architecture with data flow, test matrix, tech choices; pass required review gates (CEO/Eng/Design/DX as applicable)\n- Build: Implement per plan with tests; use WIP checkpoints; boil the lake (do the complete thing)\n- Review: Multi-layer code review, design audit, DX audit, security audit (as risk requires)\n- Test: Browser QA for UI projects, regression tests, security scan for high-risk projects\n- Ship: Sync main→test→push→PR→merge→deploy→health check→canary→document\n- Reflect: Write retro entry; distill learnings into rules/checklists/templates; update database\n\nAI summary: Seven-stage software development pattern for AI agents: Think (redefine problem), Plan (design with review gates), Build (implement with tests), Review (multi-layer audit), Test (browser QA + security), Ship (deploy + canary), Reflect (retro + learn). Each stage has defined inputs, outputs, and stop conditions.",
+    "tokens": 197,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "Think Plan Build Review Test Ship Reflect",
+        "7 stage workflow",
+        "agentic development pattern",
+        "AI software delivery lifecycle",
+        "development pipeline",
+        "software engineering workflow",
+        "AI coding pattern",
+        "agent workflow pattern",
+        "review gate workflow",
+        "ship gate",
+        "retro loop"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-think-plan-build-review-test-ship-reflect-prompt_contract",
+    "record_id": "pattern-think-plan-build-review-test-ship-reflect",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "prompt_contract",
+    "content": "# pattern-think-plan-build-review-test-ship-reflect - Prompt Contract\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Provide a reusable 7-stage development workflow pattern that any AI agent can follow: Think (redefine problem) → Plan (design + review) → Build (implement) → Review (audit) → Test (QA) → Ship (deploy) → Reflect (learn).\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Never skip from user request directly to code (Think→Plan first)\n- Each stage output feeds the next\n- Stop conditions must be met before proceeding\n- User confirms direction at Think and Plan before Build begins\n\nAI summary: Seven-stage software development pattern for AI agents: Think (redefine problem), Plan (design with review gates), Build (implement with tests), Review (multi-layer audit), Test (browser QA + security), Ship (deploy + canary), Reflect (retro + learn). Each stage has defined inputs, outputs, and stop conditions.",
+    "tokens": 142,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "Think Plan Build Review Test Ship Reflect",
+        "7 stage workflow",
+        "agentic development pattern",
+        "AI software delivery lifecycle",
+        "development pipeline",
+        "software engineering workflow",
+        "AI coding pattern",
+        "agent workflow pattern",
+        "review gate workflow",
+        "ship gate",
+        "retro loop"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-think-plan-build-review-test-ship-reflect-verification",
+    "record_id": "pattern-think-plan-build-review-test-ship-reflect",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "verification",
+    "content": "# pattern-think-plan-build-review-test-ship-reflect - Verification\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Provide a reusable 7-stage development workflow pattern that any AI agent can follow: Think (redefine problem) → Plan (design + review) → Build (implement) → Review (audit) → Test (QA) → Ship (deploy) → Reflect (learn).\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- All review gates passed\n- All tests green\n- Ship gate checklist complete\n- Retro entry written\n\nAI summary: Seven-stage software development pattern for AI agents: Think (redefine problem), Plan (design with review gates), Build (implement with tests), Review (multi-layer audit), Test (browser QA + security), Ship (deploy + canary), Reflect (retro + learn). Each stage has defined inputs, outputs, and stop conditions.",
+    "tokens": 122,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "Think Plan Build Review Test Ship Reflect",
+        "7 stage workflow",
+        "agentic development pattern",
+        "AI software delivery lifecycle",
+        "development pipeline",
+        "software engineering workflow",
+        "AI coding pattern",
+        "agent workflow pattern",
+        "review gate workflow",
+        "ship gate",
+        "retro loop"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-think-plan-build-review-test-ship-reflect-failure_modes",
+    "record_id": "pattern-think-plan-build-review-test-ship-reflect",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "failure_modes",
+    "content": "# pattern-think-plan-build-review-test-ship-reflect - Failure Modes\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Provide a reusable 7-stage development workflow pattern that any AI agent can follow: Think (redefine problem) → Plan (design + review) → Build (implement) → Review (audit) → Test (QA) → Ship (deploy) → Reflect (learn).\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Jumping to Build before Think/Plan complete\n- Skipping stages because of time pressure\n- Not recording retro (knowledge lost for future agents)\n\nAI summary: Seven-stage software development pattern for AI agents: Think (redefine problem), Plan (design with review gates), Build (implement with tests), Review (multi-layer audit), Test (browser QA + security), Ship (deploy + canary), Reflect (retro + learn). Each stage has defined inputs, outputs, and stop conditions.",
+    "tokens": 128,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "Think Plan Build Review Test Ship Reflect",
+        "7 stage workflow",
+        "agentic development pattern",
+        "AI software delivery lifecycle",
+        "development pipeline",
+        "software engineering workflow",
+        "AI coding pattern",
+        "agent workflow pattern",
+        "review gate workflow",
+        "ship gate",
+        "retro loop"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-think-plan-build-review-test-ship-reflect-handoff",
+    "record_id": "pattern-think-plan-build-review-test-ship-reflect",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "handoff",
+    "content": "# pattern-think-plan-build-review-test-ship-reflect - Handoff Report\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Provide a reusable 7-stage development workflow pattern that any AI agent can follow: Think (redefine problem) → Plan (design + review) → Build (implement) → Review (audit) → Test (QA) → Ship (deploy) → Reflect (learn).\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Stage completion status for each of the 7 stages\n- Failed gates with remediation status\n- Retro learnings for database\n\nAI summary: Seven-stage software development pattern for AI agents: Think (redefine problem), Plan (design with review gates), Build (implement with tests), Review (multi-layer audit), Test (browser QA + security), Ship (deploy + canary), Reflect (retro + learn). Each stage has defined inputs, outputs, and stop conditions.",
+    "tokens": 126,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "Think Plan Build Review Test Ship Reflect",
+        "7 stage workflow",
+        "agentic development pattern",
+        "AI software delivery lifecycle",
+        "development pipeline",
+        "software engineering workflow",
+        "AI coding pattern",
+        "agent workflow pattern",
+        "review gate workflow",
+        "ship gate",
+        "retro loop"
+      ],
+      "negative_prompt_tags": []
+    }
+  }
+]

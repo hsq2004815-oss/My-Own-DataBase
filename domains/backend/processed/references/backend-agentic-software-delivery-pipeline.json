@@ -1,0 +1,85 @@
+{
+  "record_id": "backend-agentic-software-delivery-pipeline",
+  "source": {
+    "name": "gstack by Garry Tan",
+    "url": "https://github.com/garrytan/gstack",
+    "source_type": "case_study",
+    "license_notes": "MIT — backend delivery pipeline generalized from gstack's ship/land-and-deploy/canary/document-release",
+    "captured_at": "2026-04-30"
+  },
+  "domain": "backend",
+  "workflow_type": "agentic_software_delivery",
+  "agent_targets": ["Claude Code", "Codex", "opencode", "Cursor"],
+  "goal": "Adapt the Think→Plan→Build→Review→Test→Ship→Reflect agentic delivery pipeline for backend/API projects with backend-specific review gates (API design, database, security, DX) and release pipeline (migration→deploy→health check→canary→document).",
+  "when_to_use": [
+    "New backend API endpoint or service development",
+    "Database schema changes requiring migration",
+    "API refactoring with breaking changes",
+    "Security-sensitive backend features (auth/payment/user data)"
+  ],
+  "inputs_required": [
+    "API specification or endpoint requirements",
+    "Database schema (existing or planned)",
+    "Authentication/authorization requirements",
+    "Deployment environment and CI/CD configuration"
+  ],
+  "steps": [
+    "Think: redefine the backend problem — what API endpoints are needed? Can existing services handle this?",
+    "Plan: design API contract, database migration, data flow, test strategy; pass Eng/DX/Security gates as applicable",
+    "Build: write migration first → model → repository → service → controller; tests in parallel",
+    "Review: PR review against backend rules; security scan for SQL injection/XSS/CSRF; DX audit for API consistency",
+    "Test: unit tests (service/repository), integration tests (API endpoint + DB), performance test if needed",
+    "Ship: sync main→tests→push→PR→merge→run migration→deploy→health check→canary monitor→update docs",
+    "Reflect: record API design decisions, performance findings, security lessons; update backend rules"
+  ],
+  "api_calls": [
+    "POST /brief with backend_limit > 0",
+    "GET /backend/search for backend-specific rules"
+  ],
+  "prompt_contract": [
+    "Migration must be written and reviewed before controller code",
+    "All external input must be validated (backend-security-checklist)",
+    "API responses must follow unified format (api-design-rules)",
+    "Database queries must use parameterized queries",
+    "Ship gate includes migration execution and rollback plan"
+  ],
+  "verification": [
+    "All tests passing before merge",
+    "Migration applied successfully in target environment",
+    "Health check returns 200 after deploy",
+    "Canary monitor shows no new errors for 5-30 minutes"
+  ],
+  "failure_modes": [
+    "Skipping migration review — irreversible schema changes",
+    "Deploying without rollback plan for migration",
+    "Not updating API documentation after changes",
+    "Skipping security review for endpoints handling user data"
+  ],
+  "handoff_report": [
+    "API endpoints created/modified",
+    "Migration status and rollback procedure",
+    "Deployment status and health check result",
+    "Retro learnings for backend rules"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "documented",
+    "notes": "Backend-specific adaptation of gstack's delivery pipeline. Use this alongside backend rules (api-design, database-modeling, auth, security, deployment) for complete backend project guidance."
+  },
+  "retrieval": {
+    "ai_summary": "Backend-adapted agentic software delivery pipeline: Think→Plan (API design + DB migration + security review)→Build (migration→model→repo→service→controller)→Review (backend rules compliance)→Test (unit+integration+security)→Ship (migration→deploy→health check→canary)→Reflect. Use with backend/api-design, database-modeling, auth, security, deployment rules.",
+    "prompt_tags": [
+      "agentic software delivery backend",
+      "backend release pipeline",
+      "API deployment workflow",
+      "database migration pipeline",
+      "后端发布流程",
+      "API review gate",
+      "backend ship gate",
+      "agentic deployment",
+      "backend CI/CD agent",
+      "release automation",
+      "canary deploy backend"
+    ]
+  }
+}

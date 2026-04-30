@@ -1,0 +1,89 @@
+{
+  "record_id": "workflow-gstack-agentic-development-workflow",
+  "source": {
+    "name": "gstack by Garry Tan",
+    "url": "https://github.com/garrytan/gstack",
+    "source_type": "case_study",
+    "license_notes": "MIT — patterns extracted and generalized, not copied verbatim",
+    "captured_at": "2026-04-30"
+  },
+  "domain": "agent_workflow",
+  "workflow_type": "agentic_software_delivery",
+  "agent_targets": [
+    "Claude Code",
+    "Codex",
+    "opencode",
+    "Cursor",
+    "OpenClaw"
+  ],
+  "goal": "Establish a Think→Plan→Build→Review→Test→Ship→Reflect 7-stage software delivery pipeline for AI-assisted development, replacing single-prompt code generation with disciplined engineering workflow.",
+  "when_to_use": [
+    "Starting a new feature or project",
+    "Large refactoring requiring architecture review",
+    "Web projects needing browser QA",
+    "Multi-agent collaboration projects"
+  ],
+  "inputs_required": [
+    "User task description",
+    "Project constraints and platform",
+    "Domain knowledge from /brief or rules"
+  ],
+  "steps": [
+    "Think: redefine the problem, answer 6 mandatory questions",
+    "Plan: design architecture, data flow, test matrix; pass required review gates",
+    "Build: implement per plan, write tests, checkpoint commits",
+    "Review: code review, design audit, DX audit, security audit (as applicable)",
+    "Test: browser QA, regression tests, security scan",
+    "Ship: sync main→test→push→PR→merge→deploy→canary",
+    "Reflect: write retro, update rules/checklists/templates in database"
+  ],
+  "api_calls": [
+    "POST /brief with workflow_limit > 0",
+    "GET /health to check API availability"
+  ],
+  "prompt_contract": [
+    "Agent must not skip from Think to Build without Plan",
+    "Each stage has a stop condition that must be met",
+    "Output of each stage feeds the next stage",
+    "User has final say over AI recommendations (User Sovereignty)"
+  ],
+  "verification": [
+    "All review gates passed before proceeding",
+    "Tests passing before Ship",
+    "Retro entry written to database"
+  ],
+  "failure_modes": [
+    "Agent jumps directly to Build without Think/Plan",
+    "Skipping tests because it seems to work",
+    "Ignoring review gate failures to proceed faster",
+    "Not writing retro after completion"
+  ],
+  "handoff_report": [
+    "Report current stage and completion status",
+    "List any failed review gates and remaining issues",
+    "Provide retro entry for database"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "documented",
+    "notes": "Pattern extracted from gstack v1.21.1.0, generalized for any AI agent platform. The 7-stage flow is battle-tested in gstack's own development and applicable to any software project."
+  },
+  "retrieval": {
+    "ai_summary": "Think-Plan-Build-Review-Test-Ship-Reflect 7-stage agentic software delivery pipeline for AI-assisted development. Agent must go through all stages instead of jumping directly to code. Each stage has stop conditions and review gates.",
+    "prompt_tags": [
+      "agentic software delivery",
+      "gstack",
+      "Think Plan Build Review Test Ship Reflect",
+      "AI development workflow",
+      "AI 工程工作流",
+      "AI 辅助开发流程",
+      "agent 软件交付",
+      "7 stage development pipeline",
+      "Claude Code workflow",
+      "Codex workflow",
+      "software delivery lifecycle",
+      "AI coding workflow"
+    ],
+    "negative_prompt_tags": []
+  }
+}

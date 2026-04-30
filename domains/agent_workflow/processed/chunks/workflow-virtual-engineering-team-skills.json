@@ -1,0 +1,254 @@
+[
+  {
+    "chunk_id": "workflow-virtual-engineering-team-skills-overview",
+    "record_id": "workflow-virtual-engineering-team-skills",
+    "workflow_type": "virtual_engineering_team",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "overview",
+    "content": "# workflow-virtual-engineering-team-skills - Overview\n\nWorkflow type: virtual_engineering_team\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Design multi-role AI agent teams where each role represents a quality checkpoint with defined responsibility boundaries, structured checklists, and deliverable standards — not simulating humans but embedding engineering discipline.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\nWhen to use:\n- Complex projects requiring multiple review perspectives\n- Projects with UI (design review needed)\n- Projects with API (DX review needed)\n- Security-sensitive projects (security review needed)\n- Team collaboration across multiple agents\n\nInputs required:\n- Project type (web/backend/automation/desktop)\n- Risk profile (authentication? payments? user data?)\n- Available AI models for cross-model review\n\nAI summary: Multi-role AI agent team design pattern where each role (CEO/Eng/Design/DX/QA/Security/Release) represents a quality checkpoint with defined checklists. Roles are quality gates, not personality simulations. Select roles based on project needs.",
+    "tokens": 139,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "virtual engineering team",
+        "multi-role agent",
+        "多角色 agent",
+        "虚拟工程团队",
+        "agent role design",
+        "quality gate",
+        "review gate",
+        "agent 角色分工",
+        "cross-model review",
+        "Claude Code skills",
+        "AI team collaboration",
+        "agentic engineering team"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-virtual-engineering-team-skills-steps",
+    "record_id": "workflow-virtual-engineering-team-skills",
+    "workflow_type": "virtual_engineering_team",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "steps",
+    "content": "# workflow-virtual-engineering-team-skills - Execution Steps\n\nWorkflow type: virtual_engineering_team\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Design multi-role AI agent teams where each role represents a quality checkpoint with defined responsibility boundaries, structured checklists, and deliverable standards — not simulating humans but embedding engineering discipline.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Identify required quality gates for the project type\n- Define each gate's checklist and stop condition\n- Set the gate execution order (sequential, not parallel)\n- Execute gates at the correct stage (Plan/Review/Test/Ship)\n- Record gate results for retro\n\nAI summary: Multi-role AI agent team design pattern where each role (CEO/Eng/Design/DX/QA/Security/Release) represents a quality checkpoint with defined checklists. Roles are quality gates, not personality simulations. Select roles based on project needs.",
+    "tokens": 124,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "virtual engineering team",
+        "multi-role agent",
+        "多角色 agent",
+        "虚拟工程团队",
+        "agent role design",
+        "quality gate",
+        "review gate",
+        "agent 角色分工",
+        "cross-model review",
+        "Claude Code skills",
+        "AI team collaboration",
+        "agentic engineering team"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-virtual-engineering-team-skills-api",
+    "record_id": "workflow-virtual-engineering-team-skills",
+    "workflow_type": "virtual_engineering_team",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "api",
+    "content": "# workflow-virtual-engineering-team-skills - API Calls\n\nWorkflow type: virtual_engineering_team\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Design multi-role AI agent teams where each role represents a quality checkpoint with defined responsibility boundaries, structured checklists, and deliverable standards — not simulating humans but embedding engineering discipline.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- POST /brief to retrieve domain rules for gate criteria\n\nAI summary: Multi-role AI agent team design pattern where each role (CEO/Eng/Design/DX/QA/Security/Release) represents a quality checkpoint with defined checklists. Roles are quality gates, not personality simulations. Select roles based on project needs.",
+    "tokens": 94,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "virtual engineering team",
+        "multi-role agent",
+        "多角色 agent",
+        "虚拟工程团队",
+        "agent role design",
+        "quality gate",
+        "review gate",
+        "agent 角色分工",
+        "cross-model review",
+        "Claude Code skills",
+        "AI team collaboration",
+        "agentic engineering team"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-virtual-engineering-team-skills-prompt_contract",
+    "record_id": "workflow-virtual-engineering-team-skills",
+    "workflow_type": "virtual_engineering_team",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "prompt_contract",
+    "content": "# workflow-virtual-engineering-team-skills - Prompt Contract\n\nWorkflow type: virtual_engineering_team\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Design multi-role AI agent teams where each role represents a quality checkpoint with defined responsibility boundaries, structured checklists, and deliverable standards — not simulating humans but embedding engineering discipline.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Roles are quality gates, not personality simulations\n- Each role has a defined boundary and checklist\n- Cross-model agreement is signal, not proof — user has final say\n- Not all 23 roles apply to every project — select based on project needs\n\nAI summary: Multi-role AI agent team design pattern where each role (CEO/Eng/Design/DX/QA/Security/Release) represents a quality checkpoint with defined checklists. Roles are quality gates, not personality simulations. Select roles based on project needs.",
+    "tokens": 128,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "virtual engineering team",
+        "multi-role agent",
+        "多角色 agent",
+        "虚拟工程团队",
+        "agent role design",
+        "quality gate",
+        "review gate",
+        "agent 角色分工",
+        "cross-model review",
+        "Claude Code skills",
+        "AI team collaboration",
+        "agentic engineering team"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-virtual-engineering-team-skills-verification",
+    "record_id": "workflow-virtual-engineering-team-skills",
+    "workflow_type": "virtual_engineering_team",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "verification",
+    "content": "# workflow-virtual-engineering-team-skills - Verification\n\nWorkflow type: virtual_engineering_team\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Design multi-role AI agent teams where each role represents a quality checkpoint with defined responsibility boundaries, structured checklists, and deliverable standards — not simulating humans but embedding engineering discipline.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Each required gate has been executed\n- Gate results documented with pass/fail and evidence\n- Failed gates have been resolved or escalated\n\nAI summary: Multi-role AI agent team design pattern where each role (CEO/Eng/Design/DX/QA/Security/Release) represents a quality checkpoint with defined checklists. Roles are quality gates, not personality simulations. Select roles based on project needs.",
+    "tokens": 106,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "virtual engineering team",
+        "multi-role agent",
+        "多角色 agent",
+        "虚拟工程团队",
+        "agent role design",
+        "quality gate",
+        "review gate",
+        "agent 角色分工",
+        "cross-model review",
+        "Claude Code skills",
+        "AI team collaboration",
+        "agentic engineering team"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-virtual-engineering-team-skills-failure_modes",
+    "record_id": "workflow-virtual-engineering-team-skills",
+    "workflow_type": "virtual_engineering_team",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "failure_modes",
+    "content": "# workflow-virtual-engineering-team-skills - Failure Modes\n\nWorkflow type: virtual_engineering_team\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Design multi-role AI agent teams where each role represents a quality checkpoint with defined responsibility boundaries, structured checklists, and deliverable standards — not simulating humans but embedding engineering discipline.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Applying all 23 roles to a simple script (overhead)\n- Using role names without defining actual checklists\n- Assuming two-model agreement equals correctness\n- Skipping required gates for speed\n\nAI summary: Multi-role AI agent team design pattern where each role (CEO/Eng/Design/DX/QA/Security/Release) represents a quality checkpoint with defined checklists. Roles are quality gates, not personality simulations. Select roles based on project needs.",
+    "tokens": 114,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "virtual engineering team",
+        "multi-role agent",
+        "多角色 agent",
+        "虚拟工程团队",
+        "agent role design",
+        "quality gate",
+        "review gate",
+        "agent 角色分工",
+        "cross-model review",
+        "Claude Code skills",
+        "AI team collaboration",
+        "agentic engineering team"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-virtual-engineering-team-skills-handoff",
+    "record_id": "workflow-virtual-engineering-team-skills",
+    "workflow_type": "virtual_engineering_team",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "handoff",
+    "content": "# workflow-virtual-engineering-team-skills - Handoff Report\n\nWorkflow type: virtual_engineering_team\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Design multi-role AI agent teams where each role represents a quality checkpoint with defined responsibility boundaries, structured checklists, and deliverable standards — not simulating humans but embedding engineering discipline.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- List which gates were used and results\n- Note any new constraints discovered\n\nAI summary: Multi-role AI agent team design pattern where each role (CEO/Eng/Design/DX/QA/Security/Release) represents a quality checkpoint with defined checklists. Roles are quality gates, not personality simulations. Select roles based on project needs.",
+    "tokens": 98,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "virtual engineering team",
+        "multi-role agent",
+        "多角色 agent",
+        "虚拟工程团队",
+        "agent role design",
+        "quality gate",
+        "review gate",
+        "agent 角色分工",
+        "cross-model review",
+        "Claude Code skills",
+        "AI team collaboration",
+        "agentic engineering team"
+      ],
+      "negative_prompt_tags": []
+    }
+  }
+]

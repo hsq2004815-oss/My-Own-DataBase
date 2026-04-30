@@ -1,0 +1,84 @@
+{
+  "record_id": "pattern-role-based-agent-review-gates",
+  "source": {
+    "name": "gstack by Garry Tan",
+    "url": "https://github.com/garrytan/gstack",
+    "source_type": "case_study",
+    "license_notes": "MIT — gate patterns generalized",
+    "captured_at": "2026-04-30"
+  },
+  "domain": "agent_workflow",
+  "workflow_type": "review_gate",
+  "agent_targets": [
+    "Claude Code",
+    "Codex",
+    "opencode",
+    "Cursor",
+    "OpenClaw"
+  ],
+  "goal": "Prevent AI agents from skipping design and jumping directly to code by inserting role-based review gates at Plan, Review, Test, and Ship stages with defined checklists, stop conditions, and escalation paths.",
+  "when_to_use": [
+    "Before any Build phase starts (Plan gates)",
+    "After code is written and before merging (Review gates)",
+    "Before deployment (Test gates)",
+    "Before release (Ship gates)"
+  ],
+  "inputs_required": [
+    "Project type classification (web/backend/automation/desktop)",
+    "Risk level assessment (authentication? payments? user data?)",
+    "Available review resources (single model or cross-model)"
+  ],
+  "steps": [
+    "Plan Gates: CEO (scope) → Eng (architecture) → Design (UI projects) → DX (API projects)",
+    "Review Gates: Code Review → Design Review (UI changes) → DX Review (API changes) → Security Review (high-risk)",
+    "Test Gates: QA (browser for web) → Security Scan (high-risk) → Performance Benchmark (as needed)",
+    "Ship Gates: Ship checklist → Canary Monitor (production) → Document Release",
+    "Failed gates → back to appropriate earlier stage for remediation"
+  ],
+  "api_calls": [],
+  "prompt_contract": [
+    "Agent must not enter Build without passing required Plan gates",
+    "Cross-model agreement is signal, not proof — user has final say",
+    "Gates are sequential within each stage; all required gates must pass",
+    "Skipping gates requires explicit user override"
+  ],
+  "verification": [
+    "Count of required gates equals count of executed gates",
+    "No P0 issues remain from any gate",
+    "Gate results documented with evidence"
+  ],
+  "failure_modes": [
+    "Agent ignores gate failure and proceeds anyway",
+    "Applying all gates to trivial changes (overhead)",
+    "Skipping Security Gate for projects with auth/payment/user data"
+  ],
+  "handoff_report": [
+    "List of executed gates with pass/fail status",
+    "Remaining P0/P1 issues from each gate",
+    "Which gates were skipped and why"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "documented",
+    "notes": "Abstracted from gstack's multi-gate review system. The key principle: gates force the agent to stop and verify before proceeding. Applicable to any AI agent platform."
+  },
+  "retrieval": {
+    "ai_summary": "Role-based review gates for AI agent development: Plan gates (CEO/Eng/Design/DX) prevent skipping design, Review gates (Code/Design/DX/Security) catch bugs, Test gates (QA/Security/Performance) verify quality, Ship gates ensure safe deployment. Failed gates send work back to earlier stages.",
+    "prompt_tags": [
+      "review gate",
+      "quality gate",
+      "agent code review",
+      "设计审查",
+      "代码审查",
+      "安全审查",
+      "plan review",
+      "design review gate",
+      "security audit agent",
+      "Claude Code review",
+      "Codex review",
+      "AI code review pattern",
+      "agent quality checkpoint"
+    ],
+    "negative_prompt_tags": []
+  }
+}

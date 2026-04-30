@@ -1,0 +1,86 @@
+{
+  "record_id": "pattern-agent-retro-learning-loop",
+  "source": {
+    "name": "gstack by Garry Tan",
+    "url": "https://github.com/garrytan/gstack",
+    "source_type": "case_study",
+    "license_notes": "MIT — retro pattern generalized",
+    "captured_at": "2026-04-30"
+  },
+  "domain": "agent_workflow",
+  "workflow_type": "retro_learning_loop",
+  "agent_targets": [
+    "Claude Code",
+    "Codex",
+    "opencode",
+    "Cursor",
+    "OpenClaw"
+  ],
+  "goal": "Prevent AI agents from starting from zero every session by establishing a post-project retro loop that captures failures, constraints, and learnings into the database for future agents to retrieve.",
+  "when_to_use": [
+    "After every Ship/Release",
+    "After a major failure or unexpected issue",
+    "Weekly team retro for cross-project patterns",
+    "When adding new rules, checklists, or templates"
+  ],
+  "inputs_required": [
+    "Completed project with ship/deployment record",
+    "Access to project logs, error traces, review gate results",
+    "Write access to database rules/wiki/checklists/templates"
+  ],
+  "steps": [
+    "Collect: gather what happened during the project (successes, failures, surprises)",
+    "Analyze: identify patterns — what worked, what didn't, what constraints emerged",
+    "Distill: decide what knowledge belongs in rules vs checklists vs patterns vs templates",
+    "Write: update the appropriate database files with new learnings",
+    "Index: rebuild processed chunks so retrieval finds the new knowledge",
+    "Verify: confirm next agent session can retrieve the learnings"
+  ],
+  "api_calls": [
+    "POST /brief or search scripts to verify knowledge retrieval"
+  ],
+  "prompt_contract": [
+    "Retro is mandatory after every Ship — not optional",
+    "Learnings must be written to database, not just thought about",
+    "Failure patterns are more valuable than success patterns for future agents",
+    "Cross-project retros identify systemic issues"
+  ],
+  "verification": [
+    "Retro entry exists in database",
+    "Search can retrieve recent learnings",
+    "Updated rules/checklists are syntactically valid"
+  ],
+  "failure_modes": [
+    "Skipping retro because project is done",
+    "Writing retro but not rebuilding indexes (knowledge invisible)",
+    "Recording only successes, not failures",
+    "Writing retro in a format agents cannot retrieve"
+  ],
+  "handoff_report": [
+    "List of learnings added to database",
+    "Files modified (rules, checklists, templates)",
+    "Index rebuild status"
+  ],
+  "quality": {
+    "signal_strength": "medium",
+    "evidence_level": "documented",
+    "notes": "Pattern extracted from gstack's retro+learn mechanism. Evidence level is documented rather than tested because retro effectiveness can only be validated over multiple projects."
+  },
+  "retrieval": {
+    "ai_summary": "Post-project retrospective learning loop for AI agents. After every Ship, the agent collects successes and failures, distills them into rules/checklists/patterns/templates, writes to the database, rebuilds indexes, and verifies future agents can retrieve the learnings. Prevents agents from starting from zero every session.",
+    "prompt_tags": [
+      "retro loop",
+      "agent learning loop",
+      "复盘机制",
+      "agent retro",
+      "cross-session learning",
+      "agent knowledge accumulation",
+      "failure pattern capture",
+      "continuous improvement agent",
+      "learn from mistakes",
+      "AI agent memory",
+      "agent retrospective"
+    ],
+    "negative_prompt_tags": []
+  }
+}

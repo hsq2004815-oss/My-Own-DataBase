@@ -1,0 +1,85 @@
+{
+  "record_id": "pattern-think-plan-build-review-test-ship-reflect",
+  "source": {
+    "name": "gstack by Garry Tan",
+    "url": "https://github.com/garrytan/gstack",
+    "source_type": "case_study",
+    "license_notes": "MIT — pattern extracted and generalized",
+    "captured_at": "2026-04-30"
+  },
+  "domain": "agent_workflow",
+  "workflow_type": "agentic_software_delivery",
+  "agent_targets": [
+    "Claude Code",
+    "Codex",
+    "opencode",
+    "Cursor",
+    "OpenClaw"
+  ],
+  "goal": "Provide a reusable 7-stage development workflow pattern that any AI agent can follow: Think (redefine problem) → Plan (design + review) → Build (implement) → Review (audit) → Test (QA) → Ship (deploy) → Reflect (learn).",
+  "when_to_use": [
+    "New feature development",
+    "Major refactoring with architecture changes",
+    "Web projects with UI and browser testing needs",
+    "Any project where code quality matters more than speed"
+  ],
+  "inputs_required": [
+    "Clear problem statement from Think stage",
+    "Architecture design from Plan stage",
+    "Test strategy defined before Build"
+  ],
+  "steps": [
+    "Think: Redefine the real problem; answer 6 mandatory questions; get user confirmation",
+    "Plan: Design architecture with data flow, test matrix, tech choices; pass required review gates (CEO/Eng/Design/DX as applicable)",
+    "Build: Implement per plan with tests; use WIP checkpoints; boil the lake (do the complete thing)",
+    "Review: Multi-layer code review, design audit, DX audit, security audit (as risk requires)",
+    "Test: Browser QA for UI projects, regression tests, security scan for high-risk projects",
+    "Ship: Sync main→test→push→PR→merge→deploy→health check→canary→document",
+    "Reflect: Write retro entry; distill learnings into rules/checklists/templates; update database"
+  ],
+  "api_calls": [],
+  "prompt_contract": [
+    "Never skip from user request directly to code (Think→Plan first)",
+    "Each stage output feeds the next",
+    "Stop conditions must be met before proceeding",
+    "User confirms direction at Think and Plan before Build begins"
+  ],
+  "verification": [
+    "All review gates passed",
+    "All tests green",
+    "Ship gate checklist complete",
+    "Retro entry written"
+  ],
+  "failure_modes": [
+    "Jumping to Build before Think/Plan complete",
+    "Skipping stages because of time pressure",
+    "Not recording retro (knowledge lost for future agents)"
+  ],
+  "handoff_report": [
+    "Stage completion status for each of the 7 stages",
+    "Failed gates with remediation status",
+    "Retro learnings for database"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "documented",
+    "notes": "Core pattern extracted from gstack. The 7-stage flow is the backbone of the entire system. Applicable to any software project regardless of AI agent platform."
+  },
+  "retrieval": {
+    "ai_summary": "Seven-stage software development pattern for AI agents: Think (redefine problem), Plan (design with review gates), Build (implement with tests), Review (multi-layer audit), Test (browser QA + security), Ship (deploy + canary), Reflect (retro + learn). Each stage has defined inputs, outputs, and stop conditions.",
+    "prompt_tags": [
+      "Think Plan Build Review Test Ship Reflect",
+      "7 stage workflow",
+      "agentic development pattern",
+      "AI software delivery lifecycle",
+      "development pipeline",
+      "software engineering workflow",
+      "AI coding pattern",
+      "agent workflow pattern",
+      "review gate workflow",
+      "ship gate",
+      "retro loop"
+    ],
+    "negative_prompt_tags": []
+  }
+}

@@ -1,0 +1,254 @@
+[
+  {
+    "chunk_id": "workflow-gstack-agentic-development-workflow-overview",
+    "record_id": "workflow-gstack-agentic-development-workflow",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "overview",
+    "content": "# workflow-gstack-agentic-development-workflow - Overview\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Establish a Think→Plan→Build→Review→Test→Ship→Reflect 7-stage software delivery pipeline for AI-assisted development, replacing single-prompt code generation with disciplined engineering workflow.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\nWhen to use:\n- Starting a new feature or project\n- Large refactoring requiring architecture review\n- Web projects needing browser QA\n- Multi-agent collaboration projects\n\nInputs required:\n- User task description\n- Project constraints and platform\n- Domain knowledge from /brief or rules\n\nAI summary: Think-Plan-Build-Review-Test-Ship-Reflect 7-stage agentic software delivery pipeline for AI-assisted development. Agent must go through all stages instead of jumping directly to code. Each stage has stop conditions and review gates.",
+    "tokens": 115,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "agentic software delivery",
+        "gstack",
+        "Think Plan Build Review Test Ship Reflect",
+        "AI development workflow",
+        "AI 工程工作流",
+        "AI 辅助开发流程",
+        "agent 软件交付",
+        "7 stage development pipeline",
+        "Claude Code workflow",
+        "Codex workflow",
+        "software delivery lifecycle",
+        "AI coding workflow"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-gstack-agentic-development-workflow-steps",
+    "record_id": "workflow-gstack-agentic-development-workflow",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "steps",
+    "content": "# workflow-gstack-agentic-development-workflow - Execution Steps\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Establish a Think→Plan→Build→Review→Test→Ship→Reflect 7-stage software delivery pipeline for AI-assisted development, replacing single-prompt code generation with disciplined engineering workflow.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Think: redefine the problem, answer 6 mandatory questions\n- Plan: design architecture, data flow, test matrix; pass required review gates\n- Build: implement per plan, write tests, checkpoint commits\n- Review: code review, design audit, DX audit, security audit (as applicable)\n- Test: browser QA, regression tests, security scan\n- Ship: sync main→test→push→PR→merge→deploy→canary\n- Reflect: write retro, update rules/checklists/templates in database\n\nAI summary: Think-Plan-Build-Review-Test-Ship-Reflect 7-stage agentic software delivery pipeline for AI-assisted development. Agent must go through all stages instead of jumping directly to code. Each stage has stop conditions and review gates.",
+    "tokens": 134,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "agentic software delivery",
+        "gstack",
+        "Think Plan Build Review Test Ship Reflect",
+        "AI development workflow",
+        "AI 工程工作流",
+        "AI 辅助开发流程",
+        "agent 软件交付",
+        "7 stage development pipeline",
+        "Claude Code workflow",
+        "Codex workflow",
+        "software delivery lifecycle",
+        "AI coding workflow"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-gstack-agentic-development-workflow-api",
+    "record_id": "workflow-gstack-agentic-development-workflow",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "api",
+    "content": "# workflow-gstack-agentic-development-workflow - API Calls\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Establish a Think→Plan→Build→Review→Test→Ship→Reflect 7-stage software delivery pipeline for AI-assisted development, replacing single-prompt code generation with disciplined engineering workflow.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- POST /brief with workflow_limit > 0\n- GET /health to check API availability\n\nAI summary: Think-Plan-Build-Review-Test-Ship-Reflect 7-stage agentic software delivery pipeline for AI-assisted development. Agent must go through all stages instead of jumping directly to code. Each stage has stop conditions and review gates.",
+    "tokens": 86,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "agentic software delivery",
+        "gstack",
+        "Think Plan Build Review Test Ship Reflect",
+        "AI development workflow",
+        "AI 工程工作流",
+        "AI 辅助开发流程",
+        "agent 软件交付",
+        "7 stage development pipeline",
+        "Claude Code workflow",
+        "Codex workflow",
+        "software delivery lifecycle",
+        "AI coding workflow"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-gstack-agentic-development-workflow-prompt_contract",
+    "record_id": "workflow-gstack-agentic-development-workflow",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "prompt_contract",
+    "content": "# workflow-gstack-agentic-development-workflow - Prompt Contract\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Establish a Think→Plan→Build→Review→Test→Ship→Reflect 7-stage software delivery pipeline for AI-assisted development, replacing single-prompt code generation with disciplined engineering workflow.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Agent must not skip from Think to Build without Plan\n- Each stage has a stop condition that must be met\n- Output of each stage feeds the next stage\n- User has final say over AI recommendations (User Sovereignty)\n\nAI summary: Think-Plan-Build-Review-Test-Ship-Reflect 7-stage agentic software delivery pipeline for AI-assisted development. Agent must go through all stages instead of jumping directly to code. Each stage has stop conditions and review gates.",
+    "tokens": 113,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "agentic software delivery",
+        "gstack",
+        "Think Plan Build Review Test Ship Reflect",
+        "AI development workflow",
+        "AI 工程工作流",
+        "AI 辅助开发流程",
+        "agent 软件交付",
+        "7 stage development pipeline",
+        "Claude Code workflow",
+        "Codex workflow",
+        "software delivery lifecycle",
+        "AI coding workflow"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-gstack-agentic-development-workflow-verification",
+    "record_id": "workflow-gstack-agentic-development-workflow",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "verification",
+    "content": "# workflow-gstack-agentic-development-workflow - Verification\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Establish a Think→Plan→Build→Review→Test→Ship→Reflect 7-stage software delivery pipeline for AI-assisted development, replacing single-prompt code generation with disciplined engineering workflow.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- All review gates passed before proceeding\n- Tests passing before Ship\n- Retro entry written to database\n\nAI summary: Think-Plan-Build-Review-Test-Ship-Reflect 7-stage agentic software delivery pipeline for AI-assisted development. Agent must go through all stages instead of jumping directly to code. Each stage has stop conditions and review gates.",
+    "tokens": 89,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "agentic software delivery",
+        "gstack",
+        "Think Plan Build Review Test Ship Reflect",
+        "AI development workflow",
+        "AI 工程工作流",
+        "AI 辅助开发流程",
+        "agent 软件交付",
+        "7 stage development pipeline",
+        "Claude Code workflow",
+        "Codex workflow",
+        "software delivery lifecycle",
+        "AI coding workflow"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-gstack-agentic-development-workflow-failure_modes",
+    "record_id": "workflow-gstack-agentic-development-workflow",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "failure_modes",
+    "content": "# workflow-gstack-agentic-development-workflow - Failure Modes\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Establish a Think→Plan→Build→Review→Test→Ship→Reflect 7-stage software delivery pipeline for AI-assisted development, replacing single-prompt code generation with disciplined engineering workflow.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Agent jumps directly to Build without Think/Plan\n- Skipping tests because it seems to work\n- Ignoring review gate failures to proceed faster\n- Not writing retro after completion\n\nAI summary: Think-Plan-Build-Review-Test-Ship-Reflect 7-stage agentic software delivery pipeline for AI-assisted development. Agent must go through all stages instead of jumping directly to code. Each stage has stop conditions and review gates.",
+    "tokens": 102,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "agentic software delivery",
+        "gstack",
+        "Think Plan Build Review Test Ship Reflect",
+        "AI development workflow",
+        "AI 工程工作流",
+        "AI 辅助开发流程",
+        "agent 软件交付",
+        "7 stage development pipeline",
+        "Claude Code workflow",
+        "Codex workflow",
+        "software delivery lifecycle",
+        "AI coding workflow"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "workflow-gstack-agentic-development-workflow-handoff",
+    "record_id": "workflow-gstack-agentic-development-workflow",
+    "workflow_type": "agentic_software_delivery",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "handoff",
+    "content": "# workflow-gstack-agentic-development-workflow - Handoff Report\n\nWorkflow type: agentic_software_delivery\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Establish a Think→Plan→Build→Review→Test→Ship→Reflect 7-stage software delivery pipeline for AI-assisted development, replacing single-prompt code generation with disciplined engineering workflow.\nEvidence: documented / high\nSource: https://github.com/garrytan/gstack\n\n- Report current stage and completion status\n- List any failed review gates and remaining issues\n- Provide retro entry for database\n\nAI summary: Think-Plan-Build-Review-Test-Ship-Reflect 7-stage agentic software delivery pipeline for AI-assisted development. Agent must go through all stages instead of jumping directly to code. Each stage has stop conditions and review gates.",
+    "tokens": 94,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "high",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "agentic software delivery",
+        "gstack",
+        "Think Plan Build Review Test Ship Reflect",
+        "AI development workflow",
+        "AI 工程工作流",
+        "AI 辅助开发流程",
+        "agent 软件交付",
+        "7 stage development pipeline",
+        "Claude Code workflow",
+        "Codex workflow",
+        "software delivery lifecycle",
+        "AI coding workflow"
+      ],
+      "negative_prompt_tags": []
+    }
+  }
+]

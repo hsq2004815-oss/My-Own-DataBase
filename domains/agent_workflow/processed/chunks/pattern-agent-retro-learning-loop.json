@@ -1,0 +1,247 @@
+[
+  {
+    "chunk_id": "pattern-agent-retro-learning-loop-overview",
+    "record_id": "pattern-agent-retro-learning-loop",
+    "workflow_type": "retro_learning_loop",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "overview",
+    "content": "# pattern-agent-retro-learning-loop - Overview\n\nWorkflow type: retro_learning_loop\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from starting from zero every session by establishing a post-project retro loop that captures failures, constraints, and learnings into the database for future agents to retrieve.\nEvidence: documented / medium\nSource: https://github.com/garrytan/gstack\n\nWhen to use:\n- After every Ship/Release\n- After a major failure or unexpected issue\n- Weekly team retro for cross-project patterns\n- When adding new rules, checklists, or templates\n\nInputs required:\n- Completed project with ship/deployment record\n- Access to project logs, error traces, review gate results\n- Write access to database rules/wiki/checklists/templates\n\nAI summary: Post-project retrospective learning loop for AI agents. After every Ship, the agent collects successes and failures, distills them into rules/checklists/patterns/templates, writes to the database, rebuilds indexes, and verifies future agents can retrieve the learnings. Prevents agents from starting from zero every session.",
+    "tokens": 149,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "retro loop",
+        "agent learning loop",
+        "复盘机制",
+        "agent retro",
+        "cross-session learning",
+        "agent knowledge accumulation",
+        "failure pattern capture",
+        "continuous improvement agent",
+        "learn from mistakes",
+        "AI agent memory",
+        "agent retrospective"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-agent-retro-learning-loop-steps",
+    "record_id": "pattern-agent-retro-learning-loop",
+    "workflow_type": "retro_learning_loop",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "steps",
+    "content": "# pattern-agent-retro-learning-loop - Execution Steps\n\nWorkflow type: retro_learning_loop\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from starting from zero every session by establishing a post-project retro loop that captures failures, constraints, and learnings into the database for future agents to retrieve.\nEvidence: documented / medium\nSource: https://github.com/garrytan/gstack\n\n- Collect: gather what happened during the project (successes, failures, surprises)\n- Analyze: identify patterns — what worked, what didn't, what constraints emerged\n- Distill: decide what knowledge belongs in rules vs checklists vs patterns vs templates\n- Write: update the appropriate database files with new learnings\n- Index: rebuild processed chunks so retrieval finds the new knowledge\n- Verify: confirm next agent session can retrieve the learnings\n\nAI summary: Post-project retrospective learning loop for AI agents. After every Ship, the agent collects successes and failures, distills them into rules/checklists/patterns/templates, writes to the database, rebuilds indexes, and verifies future agents can retrieve the learnings. Prevents agents from starting from zero every session.",
+    "tokens": 164,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "retro loop",
+        "agent learning loop",
+        "复盘机制",
+        "agent retro",
+        "cross-session learning",
+        "agent knowledge accumulation",
+        "failure pattern capture",
+        "continuous improvement agent",
+        "learn from mistakes",
+        "AI agent memory",
+        "agent retrospective"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-agent-retro-learning-loop-api",
+    "record_id": "pattern-agent-retro-learning-loop",
+    "workflow_type": "retro_learning_loop",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "api",
+    "content": "# pattern-agent-retro-learning-loop - API Calls\n\nWorkflow type: retro_learning_loop\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from starting from zero every session by establishing a post-project retro loop that captures failures, constraints, and learnings into the database for future agents to retrieve.\nEvidence: documented / medium\nSource: https://github.com/garrytan/gstack\n\n- POST /brief or search scripts to verify knowledge retrieval\n\nAI summary: Post-project retrospective learning loop for AI agents. After every Ship, the agent collects successes and failures, distills them into rules/checklists/patterns/templates, writes to the database, rebuilds indexes, and verifies future agents can retrieve the learnings. Prevents agents from starting from zero every session.",
+    "tokens": 106,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "retro loop",
+        "agent learning loop",
+        "复盘机制",
+        "agent retro",
+        "cross-session learning",
+        "agent knowledge accumulation",
+        "failure pattern capture",
+        "continuous improvement agent",
+        "learn from mistakes",
+        "AI agent memory",
+        "agent retrospective"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-agent-retro-learning-loop-prompt_contract",
+    "record_id": "pattern-agent-retro-learning-loop",
+    "workflow_type": "retro_learning_loop",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "prompt_contract",
+    "content": "# pattern-agent-retro-learning-loop - Prompt Contract\n\nWorkflow type: retro_learning_loop\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from starting from zero every session by establishing a post-project retro loop that captures failures, constraints, and learnings into the database for future agents to retrieve.\nEvidence: documented / medium\nSource: https://github.com/garrytan/gstack\n\n- Retro is mandatory after every Ship — not optional\n- Learnings must be written to database, not just thought about\n- Failure patterns are more valuable than success patterns for future agents\n- Cross-project retros identify systemic issues\n\nAI summary: Post-project retrospective learning loop for AI agents. After every Ship, the agent collects successes and failures, distills them into rules/checklists/patterns/templates, writes to the database, rebuilds indexes, and verifies future agents can retrieve the learnings. Prevents agents from starting from zero every session.",
+    "tokens": 135,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "retro loop",
+        "agent learning loop",
+        "复盘机制",
+        "agent retro",
+        "cross-session learning",
+        "agent knowledge accumulation",
+        "failure pattern capture",
+        "continuous improvement agent",
+        "learn from mistakes",
+        "AI agent memory",
+        "agent retrospective"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-agent-retro-learning-loop-verification",
+    "record_id": "pattern-agent-retro-learning-loop",
+    "workflow_type": "retro_learning_loop",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "verification",
+    "content": "# pattern-agent-retro-learning-loop - Verification\n\nWorkflow type: retro_learning_loop\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from starting from zero every session by establishing a post-project retro loop that captures failures, constraints, and learnings into the database for future agents to retrieve.\nEvidence: documented / medium\nSource: https://github.com/garrytan/gstack\n\n- Retro entry exists in database\n- Search can retrieve recent learnings\n- Updated rules/checklists are syntactically valid\n\nAI summary: Post-project retrospective learning loop for AI agents. After every Ship, the agent collects successes and failures, distills them into rules/checklists/patterns/templates, writes to the database, rebuilds indexes, and verifies future agents can retrieve the learnings. Prevents agents from starting from zero every session.",
+    "tokens": 113,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "retro loop",
+        "agent learning loop",
+        "复盘机制",
+        "agent retro",
+        "cross-session learning",
+        "agent knowledge accumulation",
+        "failure pattern capture",
+        "continuous improvement agent",
+        "learn from mistakes",
+        "AI agent memory",
+        "agent retrospective"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-agent-retro-learning-loop-failure_modes",
+    "record_id": "pattern-agent-retro-learning-loop",
+    "workflow_type": "retro_learning_loop",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "failure_modes",
+    "content": "# pattern-agent-retro-learning-loop - Failure Modes\n\nWorkflow type: retro_learning_loop\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from starting from zero every session by establishing a post-project retro loop that captures failures, constraints, and learnings into the database for future agents to retrieve.\nEvidence: documented / medium\nSource: https://github.com/garrytan/gstack\n\n- Skipping retro because project is done\n- Writing retro but not rebuilding indexes (knowledge invisible)\n- Recording only successes, not failures\n- Writing retro in a format agents cannot retrieve\n\nAI summary: Post-project retrospective learning loop for AI agents. After every Ship, the agent collects successes and failures, distills them into rules/checklists/patterns/templates, writes to the database, rebuilds indexes, and verifies future agents can retrieve the learnings. Prevents agents from starting from zero every session.",
+    "tokens": 127,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "retro loop",
+        "agent learning loop",
+        "复盘机制",
+        "agent retro",
+        "cross-session learning",
+        "agent knowledge accumulation",
+        "failure pattern capture",
+        "continuous improvement agent",
+        "learn from mistakes",
+        "AI agent memory",
+        "agent retrospective"
+      ],
+      "negative_prompt_tags": []
+    }
+  },
+  {
+    "chunk_id": "pattern-agent-retro-learning-loop-handoff",
+    "record_id": "pattern-agent-retro-learning-loop",
+    "workflow_type": "retro_learning_loop",
+    "source_name": "gstack by Garry Tan",
+    "source_url": "https://github.com/garrytan/gstack",
+    "section": "handoff",
+    "content": "# pattern-agent-retro-learning-loop - Handoff Report\n\nWorkflow type: retro_learning_loop\nAgent targets: Claude Code, Codex, opencode, Cursor, OpenClaw\nGoal: Prevent AI agents from starting from zero every session by establishing a post-project retro loop that captures failures, constraints, and learnings into the database for future agents to retrieve.\nEvidence: documented / medium\nSource: https://github.com/garrytan/gstack\n\n- List of learnings added to database\n- Files modified (rules, checklists, templates)\n- Index rebuild status\n\nAI summary: Post-project retrospective learning loop for AI agents. After every Ship, the agent collects successes and failures, distills them into rules/checklists/patterns/templates, writes to the database, rebuilds indexes, and verifies future agents can retrieve the learnings. Prevents agents from starting from zero every session.",
+    "tokens": 113,
+    "metadata": {
+      "agent_targets": [
+        "Claude Code",
+        "Codex",
+        "opencode",
+        "Cursor",
+        "OpenClaw"
+      ],
+      "signal_strength": "medium",
+      "evidence_level": "documented",
+      "prompt_tags": [
+        "retro loop",
+        "agent learning loop",
+        "复盘机制",
+        "agent retro",
+        "cross-session learning",
+        "agent knowledge accumulation",
+        "failure pattern capture",
+        "continuous improvement agent",
+        "learn from mistakes",
+        "AI agent memory",
+        "agent retrospective"
+      ],
+      "negative_prompt_tags": []
+    }
+  }
+]

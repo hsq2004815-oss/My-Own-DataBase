@@ -1,0 +1,86 @@
+{
+  "record_id": "automation-persistent-browser-daemon-agent-qa",
+  "source": {
+    "name": "gstack by Garry Tan — GStack Browser",
+    "url": "https://github.com/garrytan/gstack",
+    "source_type": "case_study",
+    "license_notes": "MIT — architecture patterns extracted and generalized",
+    "captured_at": "2026-04-30"
+  },
+  "domain": "automation",
+  "automation_type": "persistent_browser_daemon",
+  "tooling": ["Playwright", "Puppeteer", "Chromium", "CDP", "ngrok"],
+  "goal": "Enable AI agents to perform real browser QA with sub-second latency by running a long-lived Chromium daemon with persistent sessions, cookie import, and security-isolated remote access.",
+  "when_to_use": [
+    "Web UI functional testing with agent-driven browser commands",
+    "Login-state-dependent application testing",
+    "Multi-page end-to-end flow verification",
+    "Projects where cold-starting a browser per command is too slow"
+  ],
+  "inputs_required": [
+    "Chromium browser installed",
+    "Target URL and test scenarios",
+    "Cookie import configuration (optional, for login-state testing)"
+  ],
+  "steps": [
+    "Start persistent browser daemon (auto-spawn on first use)",
+    "Import cookies from real browser if login state needed",
+    "Navigate to target page",
+    "Execute QA commands via HTTP POST to localhost daemon",
+    "Screenshot key states for evidence",
+    "Handle CAPTCHA via handoff→manual solve→resume",
+    "Generate QA report with pass/fail/skip and P0/P1/P2 issues"
+  ],
+  "commands_or_apis": [
+    "POST /command (localhost) — browser driving commands",
+    "GET /health — daemon liveness check",
+    "POST /tunnel/start — enable remote pair-agent access (scoped token only)",
+    "snapshot, type, click, screenshot, console, network commands"
+  ],
+  "verification": [
+    "Browser daemon responds to health check",
+    "Cookie import successful (check login state)",
+    "QA commands execute within 200ms after first call",
+    "Screenshots captured for all test scenarios"
+  ],
+  "failure_modes": [
+    "Daemon idle timeout kills session mid-QA",
+    "Cookie import fails for browser with encrypted storage",
+    "ngrok tunnel exposes sensitive paths if misconfigured",
+    "Windows Bun Playwright pipe transport incompatibility"
+  ],
+  "safety_notes": [
+    "Bind daemon to 127.0.0.1 only — never 0.0.0.0",
+    "Use dual-listener architecture for remote access: separate local port (full access) from tunnel port (allowlisted commands only)",
+    "Never place root token on tunnel-accessible endpoints",
+    "Cookie import only from local browser — never shared environments",
+    "Prompt injection defense: ML classifier + LLM voting + canary tokens"
+  ],
+  "handoff_report": [
+    "QA report path and summary",
+    "Browser daemon state (running/stopped)",
+    "Any CAPTCHA encountered and resolution status"
+  ],
+  "quality": {
+    "signal_strength": "high",
+    "evidence_level": "documented",
+    "notes": "Architecture pattern extracted from GStack Browser v1.21.1.0. The daemon model, dual-listener tunnel architecture, and domain skills mechanism are directly applicable to any agent-driven browser QA system."
+  },
+  "retrieval": {
+    "ai_summary": "Persistent Chromium daemon architecture for agent-driven browser QA: long-lived browser with HTTP API, persistent cookies/sessions, sub-second commands, cookie import from real browsers, CAPTCHA handoff mechanism, dual-listener security isolation for remote access, and prompt injection defense (ML+LLV+canary).",
+    "prompt_tags": [
+      "persistent browser daemon",
+      "agent browser QA",
+      "浏览器 QA",
+      "Chromium daemon",
+      "Playwright persistent session",
+      "browser automation testing",
+      "持久化浏览器",
+      "cookie import",
+      "CAPTCHA handoff",
+      "agent QA browser",
+      "headless browser testing",
+      "browser session persistence"
+    ]
+  }
+}

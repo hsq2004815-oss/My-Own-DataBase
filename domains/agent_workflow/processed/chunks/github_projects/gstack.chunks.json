@@ -1,0 +1,82 @@
+[
+  {
+    "chunk_id": "gstack-overview",
+    "source_project": "gstack",
+    "domain": "agent_workflow",
+    "section": "overview",
+    "title": "gstack 项目概览",
+    "content": "gstack 是 YC CEO Garry Tan 开源的 AI 工程工作流工具集（MIT 许可证），将 Claude Code 变成一支虚拟工程团队。23 个专家角色覆盖 Think→Plan→Build→Review→Test→Ship→Reflect 完整软件交付流程。核心思想：一个 builder + AI agent 团队 = 传统 20 人团队的产出。810 倍生产率提升（与 2013 年同期相比）。支持 Claude Code/Codex/OpenCode/Cursor/Factory 等 10 种 AI agent 平台。",
+    "keywords": ["gstack", "agentic software delivery", "virtual engineering team", "AI 工程工作流", "多角色 agent"],
+    "target_use_cases": ["AI agent 工作流设计", "软件开发流程标准化", "agent 角色分工参考"]
+  },
+  {
+    "chunk_id": "gstack-role-based-agent-team",
+    "source_project": "gstack",
+    "domain": "agent_workflow",
+    "section": "virtual-team",
+    "title": "角色化虚拟工程团队",
+    "content": "gstack 定义了 23 个专业角色：CEO（产品方向）、Eng Manager（架构决策）、Senior Designer（视觉设计）、DX Lead（开发者体验）、Staff Engineer（代码审查）、QA Lead（浏览器测试）、CSO（安全审计）、Release Engineer（发布流程）、SRE（部署监控）、Technical Writer（文档同步）、Debugger（根因分析）。每个角色有独立的 SKILL.md 定义其在开发流程中的职责和审查标准。角色之间通过产出文件传递上下文。",
+    "keywords": ["role-based agent", "virtual team", "engineer manager", "QA agent", "security officer agent", "agent 角色分工"],
+    "target_use_cases": ["多 agent 协作系统设计", "软件开发质量闸门设计", "AI agent 专业化分工"]
+  },
+  {
+    "chunk_id": "gstack-review-gate-pattern",
+    "source_project": "gstack",
+    "domain": "agent_workflow",
+    "section": "review-gates",
+    "title": "多重审查闸门模式",
+    "content": "gstack 实施 4 层代码审查闸门：(1) CEO Review (/plan-ceo-review) — 产品方向审查，4 种范围模式；(2) Engineering Review (/plan-eng-review + /review) — 架构锁定的计划审查 + 实现后的代码审查；(3) Design Review (/plan-design-review + /design-review) — 设计维度评分 0-10 的计划审查 + 审计修复 loop；(4) Security Review (/cso) — OWASP Top 10 + STRIDE 威胁建模。另外 /autoplan 可一键运行 CEO→Design→Eng→DX 全部计划阶段审查。这种多闸门设计确保质量不依赖个人自觉。",
+    "keywords": ["review gate", "code review agent", "security audit agent", "design review", "quality gate", "多重审查闸门"],
+    "target_use_cases": ["代码审查流程设计", "CI/CD 质量闸门", "安全审计自动化"]
+  },
+  {
+    "chunk_id": "gstack-browser-qa-pattern",
+    "source_project": "gstack",
+    "domain": "automation",
+    "section": "browser-qa",
+    "title": "真实浏览器 QA 模式",
+    "content": "gstack 的 QA 系统基于持久化 Chromium 浏览器 daemon：(1) /open-gstack-browser 启动带反 bot 隐身的 GStack Browser；(2) /qa 在真实浏览器中点击交互、截图验证、发现 bug→原子提交修复→生成回归测试→重新验证；(3) /qa-only 纯报告模式不修改代码；(4) /browse 提供 ~100ms/命令的快速浏览器操作；(5) Sidebar Agent 支持自然语言浏览器操作，自动路由 Sonnet（快速操作）和 Opus（读取分析）；(6) Domain Skills 允许 agent 保存每个站点的交互知识；(7) Handoff 机制在遇到 CAPTCHA 时打开可见浏览器让人工介入。",
+    "keywords": ["browser QA", "persistent browser", "automated testing", "visual regression", "browser daemon", "浏览器自动化测试"],
+    "target_use_cases": ["Web 应用 UI 测试", "浏览器自动化", "可视回归测试", "端到端测试"]
+  },
+  {
+    "chunk_id": "gstack-ship-retro-loop",
+    "source_project": "gstack",
+    "domain": "agent_workflow",
+    "section": "ship-retro",
+    "title": "发布与复盘循环",
+    "content": "gstack 的发布流程：(1) /ship — 同步 main→运行测试→审查覆盖率→push→打开 PR（自动初始化测试框架如果不存在）；(2) /land-and-deploy — merge PR→等待 CI→部署→验证生产环境健康；(3) /canary — 部署后监控 console 错误、性能退化和页面故障；(4) /document-release — 自动读取所有文档、交叉对比 diff、更新过时内容；(5) /retro — 团队感知的周回顾，支持个人和全局两种模式（/retro global 跨所有项目和 AI 工具）；(6) /learn — 管理跨会话学到的项目知识（模式、陷阱、偏好）。",
+    "keywords": ["ship gate", "deploy verification", "canary monitoring", "retrospective", "document sync", "发布检查", "复盘机制"],
+    "target_use_cases": ["发布流水线设计", "部署验证", "文档自动化", "项目回顾机制"]
+  },
+  {
+    "chunk_id": "gstack-codex-claude-cross-review",
+    "source_project": "gstack",
+    "domain": "agent_workflow",
+    "section": "cross-model",
+    "title": "跨模型交叉审查",
+    "content": "gstack 的 /codex 技能调用 OpenAI Codex CLI 做独立代码审查，实现跨模型验证：(1) Review 模式 — pass/fail gate；(2) Adversarial 模式 — 主动尝试破坏代码；(3) Consultation 模式 — 开放咨询保持会话连续性。当 /review (Claude) 和 /codex (OpenAI) 都审查过同一分支时，生成交叉分析报告显示重叠发现和各自独有发现。两个不同 AI 模型一致同意的变更是强信号但不是绝对命令——用户始终有最终决定权（User Sovereignty 原则）。",
+    "keywords": ["cross-model review", "Codex", "second opinion", "adversarial testing", "multi-model validation", "跨模型验证"],
+    "target_use_cases": ["AI agent 质量验证", "多模型交叉检查", "代码审查增强"]
+  },
+  {
+    "chunk_id": "gstack-persistent-browser-daemon",
+    "source_project": "gstack",
+    "domain": "automation",
+    "section": "browser-daemon",
+    "title": "持久化浏览器 Daemon",
+    "content": "GStack Browser 是一个完整的持久化浏览器系统：(1) 基于 Chromium，窗口打开期间无空闲超时；(2) 反 bot 隐身（Google/NYTimes 无验证码）；(3) Sidebar Agent 使用自然语言驱动浏览器；(4) 一键 Cookie 导入（Chrome/Arc/Brave/Edge）；(5) 自动模型路由（Sonnet 做操作，Opus 做分析）；(6) 3 层 Prompt Injection 防御（22MB ML 分类器 + Claude Haiku 投票 + canary token）；(7) Domain Skills 缓存站点知识；(8) 原始 CDP 白名单逃生舱；(9) Handoff 机制在遇到人机验证时转人工。",
+    "keywords": ["persistent browser", "browser daemon", "CDP", "prompt injection defense", "sidebar agent", "cookie import"],
+    "target_use_cases": ["浏览器自动化", "Web 测试", "数据采集", "认证页面测试"]
+  },
+  {
+    "chunk_id": "gstack-general-project-workflow-value",
+    "source_project": "gstack",
+    "domain": "agent_workflow",
+    "section": "general-value",
+    "title": "通用项目开发流程价值",
+    "content": "gstack 的 7 阶段流程（Think→Plan→Build→Review→Test→Ship→Reflect）是语言/框架无关的通用开发流程模板，可适配任何软件项目。关键通用价值：(1) 角色化团队降低对个人全栈能力的依赖；(2) 多重审查闸门将质量控制系统化；(3) 设计管线（consultation→shotgun→HTML）标准化了视觉开发流程；(4) 浏览器 QA 填补了 agent 无法感知 UI 的空白；(5) 跨模型验证提高了审查置信度；(6) retro + learn 机制实现了 agent 在项目中的持续进化。gstack 还展示了如何用 Markdown 模板驱动跨 10 种 agent 平台的 skill 生成。",
+    "keywords": ["software development workflow", "quality automation", "agent pipeline", "development methodology", "AI coding best practices", "软件开发流程标准化"],
+    "target_use_cases": ["项目启动模板", "开发流程设计", "团队协作规范", "AI 辅助开发方法论"]
+  }
+]

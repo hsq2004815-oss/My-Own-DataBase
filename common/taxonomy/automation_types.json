@@ -34,6 +34,16 @@
       "id": "safety_protocol",
       "label": "Automation safety protocol",
       "description": "Guardrails for irreversible actions, credentials, publishing, deletion and payments."
+    },
+    {
+      "id": "persistent_browser_daemon",
+      "label": "Persistent browser daemon for agent QA",
+      "description": "Long-lived Chromium daemon architecture with persistent sessions, cookie import, CAPTCHA handoff, and security isolation for agent-driven browser testing."
+    },
+    {
+      "id": "browser_qa_session",
+      "label": "Browser QA with persistent session",
+      "description": "Real browser QA workflows using persistent Chromium sessions — form testing, login-state testing, screenshot verification, and regression testing without cold-start overhead."
     }
   ]
 }

@@ -29,6 +29,26 @@
       "id": "quality_gate",
       "label": "Quality gate",
       "description": "Verification and acceptance criteria before claiming completion."
+    },
+    {
+      "id": "agentic_software_delivery",
+      "label": "Agentic software delivery workflow",
+      "description": "Think-Plan-Build-Review-Test-Ship-Reflect 7-stage pipeline for AI-assisted development."
+    },
+    {
+      "id": "virtual_engineering_team",
+      "label": "Virtual engineering team skills",
+      "description": "Multi-role agent collaboration patterns with defined responsibilities and review gates."
+    },
+    {
+      "id": "review_gate",
+      "label": "Review gate and quality checkpoint",
+      "description": "Multi-phase review gates (plan/design/engineering/DX/security/QA/ship) for agentic development."
+    },
+    {
+      "id": "retro_learning_loop",
+      "label": "Retrospective learning loop",
+      "description": "Cross-session knowledge accumulation, failure pattern capture, and continuous improvement for AI agents."
     }
   ]
 }
