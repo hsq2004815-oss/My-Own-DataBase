@@ -34,19 +34,8 @@
    - fgit 可临时配置 Git mirror/proxy，完成后应恢复配置；如果异常中断，需要检查 `.gitconfig` 或 `.git/config`。
 
 3. **fgit 不可用时尝试 fastgit**
-   - 使用：
-
-     ```bash
-     fgit clone <owner>/<repo>
-     ```
-
-     或：
-
-     ```bash
-     fgit clone https://github.com/<owner>/<repo>.git
-     ```
-
-   - fastgit 是 Python 工具，支持镜像源测速、缓存和代理配置。
+   - 按 fastgit README 使用对应命令，不在规则中编造具体命令。
+   - fastgit 是 Python 工具，README 描述其支持镜像源测速、缓存和代理配置。
    - 可作为 fgit 的备选。
 
 4. **clone 不行时使用 gh-proxy archive zip**

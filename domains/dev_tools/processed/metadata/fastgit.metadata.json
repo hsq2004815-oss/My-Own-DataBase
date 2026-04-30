@@ -14,7 +14,7 @@
   "recommended_agent_usage": [
     "Use after normal git clone --depth=1 fails or is too slow.",
     "Prefer fgit first when available, then try fastgit as a secondary local accelerator.",
-    "Use fastgit download only for public repository archives.",
+    "For repository archives, follow the exact command documented in the fastgit README; do not invent a command if the local tool version is unclear.",
     "Do not send private repository URLs or credentials through public mirrors."
   ],
   "capabilities": [

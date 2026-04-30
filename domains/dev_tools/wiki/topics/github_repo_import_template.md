@@ -46,11 +46,7 @@ fgit clone https://github.com/<owner>/<repo>.git --depth=1
 
 ### 4. fgit 不可用时尝试 fastgit
 
-```bash
-fgit clone <owner>/<repo>
-```
-
-或按 fastgit README 使用对应命令。
+按 fastgit README 使用对应命令。如果当前环境无法确认 fastgit 的实际命令格式，不要编造命令，记录为“fastgit 未确认/未使用”，再进入 archive 下载 fallback。
 
 记录：
 

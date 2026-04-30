@@ -34,9 +34,8 @@
 
 3. fgit 不可用时 fastgit：
 
-   ```bash
-   fgit clone <owner>/<repo>
-   ```
+   - 按 fastgit README 使用对应命令。
+   - 如果当前环境没有 fastgit 或无法确认命令格式，不要编造命令，改用下一步 archive/raw/release 下载策略。
 
 4. clone 不行时 archive zip：
 

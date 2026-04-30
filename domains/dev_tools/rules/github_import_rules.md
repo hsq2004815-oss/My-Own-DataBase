@@ -20,7 +20,7 @@
 
 3. **fgit 不可用或失败时尝试 fastgit**
 
-   - 按 fastgit README 使用 clone 或 download。
+   - 按 fastgit README 使用对应命令；如果无法确认命令格式，不要编造命令。
    - fastgit 作为 fgit 备选，不作为默认第一选择。
 
 4. **clone 不行时使用 gh-proxy archive zip**
