@@ -1,0 +1,86 @@
+{
+  "project_name": "faster-whisper",
+  "github_url": "https://github.com/SYSTRAN/faster-whisper",
+  "local_raw_path": "E:\\DataBase\\domains\\voice_assistant\\raw\\github\\repos\\faster-whisper",
+  "capability_layer": "speech_to_text",
+  "main_purpose": "使用 CTranslate2 推理引擎重新实现 OpenAI Whisper 模型，实现最高 4 倍加速、更低内存占用，支持 CPU/GPU 的 8 位量化推理",
+  "tech_stack": {
+    "language": "Python",
+    "version": ">=3.9",
+    "core_libs": ["ctranslate2", "PyAV (内嵌 FFmpeg)", "numpy", "huggingface_hub"],
+    "inference_engine": "CTranslate2 (OpenNMT 开发的 Transformer 快速推理引擎)",
+    "gpu_support": {
+      "cuda": "CUDA 12 + cuBLAS + cuDNN 9",
+      "note": "最新 ctranslate2 仅支持 CUDA 12 + cuDNN 9，旧版本可降至 CUDA 11"
+    },
+    "cpu_support": "支持，支持 int8 量化",
+    "models": {
+      "whisper-large-v3": { "params": "1550M", "languages": "multilingual (99 languages)", "feature": "state-of-the-art accuracy" },
+      "whisper-large-v3-turbo": { "params": "809M", "languages": "multilingual", "feature": "faster variant" },
+      "distil-large-v3": { "params": "未确认", "languages": "multilingual (English optimized)", "feature": "distilled, faster" }
+    },
+    "features": {
+      "builtin_vad": "Silero VAD (可选开启 vad_filter=True)",
+      "word_timestamps": "支持词级时间戳",
+      "batched_transcription": "支持 (BatchedInferencePipeline)",
+      "quantization": "int8 (CPU/GPU), fp16 (GPU)"
+    }
+  },
+  "windows_feasibility": {
+    "supported": true,
+    "details": "Windows 支持通过 Purfview/whisper-standalone-win 提供的 NVIDIA 库 (cuBLAS + cuDNN) 实现 GPU 推理。CPU 推理无需额外库。pip install faster-whisper 即可安装。PyAV 内嵌 FFmpeg 无需系统安装。",
+    "limitations": [
+      "GPU 推理需要 NVIDIA GPU + CUDA 12 + cuBLAS + cuDNN 9 (Windows 安装比 Linux 复杂)",
+      "whisper-large-v3 模型 1.5B 参数，对硬件要求较高 (GPU: 4.5GB+ VRAM, CPU: 需要较多 RAM)",
+      "Windows 上 cuBLAS/cuDNN 库需手动从 Purfview/whisper-standalone-win 下载或通过 pip 安装",
+      "不支持实时流式识别 (需要社区项目 WhisperLive 或 Whisper-Streaming 提供实时能力)",
+      "中文识别精度低于 SenseVoice (Whisper 为多语言通用模型，非中文专项优化)"
+    ]
+  },
+  "license": {
+    "code": "MIT",
+    "whisper_models": "OpenAI Whisper 模型 (MIT 许可)",
+    "note": "代码和模型均为 MIT 许可，商业友好。CTranslate2 为 MIT 许可。"
+  },
+  "suitable_for_xiaohuang": {
+    "judgement": "viable_alternative",
+    "reason": "faster-whisper 是第一阶段 MVP 的可行备选 STT 引擎。优势在于 MIT 许可商业友好、模型生态丰富 (多种大小可选)、内置 Silero VAD、支持词级时间戳。劣势在于非流式设计 (需社区项目补充实时能力)、中文识别精度不如 SenseVoice (Whisper 不是中文专项优化)、大模型对硬件要求较高。"
+  },
+  "mvp_relevance": {
+    "direct_use": true,
+    "adapted_use": true,
+    "reference_value": false,
+    "notes": "MVP 阶段可使用 faster-whisper 作为 STT 备选方案。如果用 CPU int8 量化的 whisper-large-v3-turbo 或 distil-large-v3，可在 8GB RAM 机器上运行单句离线识别 (MVP 场景)。内置 VAD 可简化集成。如果中文识别精度不满足要求，应切换到 SenseVoice (FunASR)。"
+  },
+  "risks": [
+    "Whisper 模型多语言通用，中文识别精度低于 SenseVoice (SenseVoice 专门用大量中文数据训练)",
+    "不支持原生流式识别，需要额外集成 WhisperLive 或 Whisper-Streaming 社区项目",
+    "large-v3 模型在 CPU 上推理较慢 (13min 音频约需 1m42s int8 CPU)，不适合实时场景",
+    "Windows GPU 推理环境搭建相对复杂 (CUDA + cuBLAS + cuDNN 版本匹配)",
+    "distil-large-v3 偏向英文优化，中文性能未确认"
+  ],
+  "recommended_usage": "作为 MVP 阶段的备选 STT 引擎。适合以下场景：(1) 不希望依赖 ModelScope/阿里巴巴生态 (相对于 FunASR)；(2) 需要 MIT 纯粹许可；(3) 硬件较好的 Windows 机器 (有 NVIDIA GPU)。如果选择 FunASR/SenseVoice 作为主引擎 (推荐)，faster-whisper 可作为对标比较和后备方案。",
+  "downloaded_by": "git clone --depth=1 https://github.com/SYSTRAN/faster-whisper",
+  "download_method": "git clone depth=1",
+  "raw_source_modified": false,
+  "extra_metadata": {
+    "author": "Guillaume Klein / SYSTRAN",
+    "based_on": "OpenAI Whisper + CTranslate2 (OpenNMT)",
+    "performance_claim": "up to 4x faster than openai/whisper",
+    "gpu_benchmark": {
+      "model": "large-v2 on RTX 3070 Ti 8GB",
+      "fp16_bs5": "1m03s / 4525MB VRAM",
+      "int8_bs5": "59s / 2926MB VRAM",
+      "fp16_bs8": "17s / 6090MB VRAM"
+    },
+    "cpu_benchmark": {
+      "model": "small on i7-12700K 8 threads",
+      "fp32_bs5": "2m37s / 2257MB RAM",
+      "int8_bs5": "1m42s / 1477MB RAM",
+      "int8_bs8": "51s / 3608MB RAM"
+    },
+    "ffmpeg_required": false,
+    "language_support": "99 languages (inherited from Whisper)",
+    "chinese_quality": "未确认 (Whisper 多语言通用模型，非中文专项优化)"
+  }
+}

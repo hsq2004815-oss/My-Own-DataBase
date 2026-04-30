@@ -1,0 +1,88 @@
+{
+  "project_name": "FunASR",
+  "github_url": "https://github.com/modelscope/FunASR",
+  "local_raw_path": "E:\\DataBase\\domains\\voice_assistant\\raw\\github\\repos\\FunASR",
+  "capability_layer": "speech_to_text",
+  "main_purpose": "阿里巴巴 DAMO Academy 开源的基础端到端语音识别工具包，支持 ASR、VAD、标点恢复、说话人验证/分离、关键词检出(KWS)、情感识别等，提供预训练模型推理与微调能力",
+  "tech_stack": {
+    "language": "Python",
+    "version": ">=3.8",
+    "core_deps": ["torch>=1.13", "torchaudio", "scipy", "librosa", "soundfile", "kaldiio"],
+    "model_repo": "ModelScope / HuggingFace",
+    "cli_entry": "funasr, funasr-train, funasr-export",
+    "inference_engines": {
+      "python": "PyTorch (原生)",
+      "onnx": "ONNX Runtime (支持导出和推理)",
+      "service": "Docker 部署服务 (CPU/GPU)"
+    },
+    "key_models": {
+      "asr": {
+        "Fun-ASR-Nano-2512": { "params": "800M", "languages": "31 languages including Chinese, English, Japanese", "feature": "low-latency real-time transcription" },
+        "SenseVoiceSmall": { "params": "234M", "languages": "zh, yue, en, ja, ko", "feature": "ASR + LID + SER + AED + ITN" },
+        "paraformer-zh": { "params": "220M", "languages": "Chinese", "feature": "non-streaming, with timestamps" },
+        "paraformer-zh-streaming": { "params": "220M", "languages": "Chinese", "feature": "streaming (real-time)" }
+      },
+      "vad": {
+        "fsmn-vad": { "params": "0.4M", "languages": "Chinese, English", "feature": "real-time voice activity detection" }
+      },
+      "kws": {
+        "fsmn-kws": { "params": "0.7M", "languages": "Chinese", "feature": "keyword spotting, streaming" }
+      },
+      "punc": {
+        "ct-punc": { "params": "290M", "languages": "Chinese, English", "feature": "punctuation restoration" }
+      },
+      "speaker": {
+        "cam++": { "params": "7.2M", "feature": "speaker verification/diarization" }
+      }
+    }
+  },
+  "windows_feasibility": {
+    "supported": true,
+    "details": "FunASR SDK for Windows 已发布 (v1.0 于 2023/12, v2.0 于 2024/01)，支持中文离线文件转写、英文离线文件转写和中文实时听写。ONNX 模型可在 Windows 上通过 ONNX Runtime 推理。Python 包通过 PyTorch (Windows 官方支持) 运行。",
+    "limitations": [
+      "Windows SDK 为独立发布包 (funasr-runtime-win-cpu-x64 on ModelScope)，与 pip 安装的 Python 包不同",
+      "部分依赖 (如 pytorch_wpe) 在 Windows 上可能需要特殊处理",
+      "SenseVoiceSmall 等大型模型推理需要较好的硬件 (推荐 8GB+ RAM)",
+      "GPU 加速在 Windows 上可能需要额外配置 CUDA"
+    ]
+  },
+  "license": {
+    "code": "MIT",
+    "models": "FunASR Model Open Source License Agreement v1.1 (需注明出处和作者信息，保留模型名称)",
+    "note": "代码 MIT 宽松许可。模型可自由使用/修改/分享，但需遵守模型协议中的署名要求和社区行为准则。商业使用需注意模型协议条款。"
+  },
+  "suitable_for_xiaohuang": {
+    "judgement": "highly_suitable",
+    "reason": "FunASR 是第一阶段 MVP 最推荐的 STT 引擎。SenseVoiceSmall 支持中文 ASR 且精度高 (400000 小时中文训练数据)；Paraformer-zh-streaming 支持实时流式识别；fsmn-kws 提供关键词检出 (可用于唤醒词检测)；fsmn-vad 提供语音活动检测。所有组件来自同一生态，集成成本低。Windows 上有官方 SDK 支持。"
+  },
+  "mvp_relevance": {
+    "direct_use": true,
+    "adapted_use": false,
+    "reference_value": false,
+    "notes": "MVP 阶段可直接使用：(1) SenseVoiceSmall 作为 STT 引擎，中文识别精度高；(2) fsmn-vad 作为 VAD 模块，与 STT 无缝集成；(3) fsmn-kws 作为关键词检出方案 (替代专用唤醒词模型)；(4) ct-punc 做标点恢复提升展示效果。也可考虑 Fun-ASR-Nano-2512 作为更先进的替代。"
+  },
+  "risks": [
+    "模型下载依赖 ModelScope/HuggingFace (国内网络可能需要镜像)",
+    "SenseVoiceSmall 模型 234M 参数在低配 Windows 机器上推理延迟需实际测试",
+    "streaming 模型 (paraformer-zh-streaming) 和 offline 模型 (SenseVoiceSmall) 是不同模型，需根据场景选择",
+    "fsmn-kws 关键词检出精度对中文唤醒词'小黄'未确认",
+    "MODEL_LICENSE 对商业使用的边界需仔细评估"
+  ],
+  "recommended_usage": "第一阶段 MVP 首选 STT 引擎。建议路线：(1) 使用 SenseVoiceSmall 作为离线一句话识别引擎 (从 VAD 截取的单句音频输入)；(2) 使用 fsmn-vad 实现语音活动检测自动截断；(3) 使用 ct-punc 对识别结果做标点恢复；(4) 可选使用 fsmn-kws 作为唤醒词检测方案 (与专用唤醒词模型做对比评估)。Windows 部署建议使用官方 funasr-runtime-win SDK 或 ONNX 导出方案。",
+  "downloaded_by": "git clone --depth=1 https://github.com/modelscope/FunASR",
+  "download_method": "git clone depth=1",
+  "raw_source_modified": false,
+  "extra_metadata": {
+    "organization": "Alibaba DAMO Academy (Speech Lab)",
+    "first_release": "2022",
+    "paper": "FunASR: A Fundamental End-to-End Speech Recognition Toolkit (INTERSPEECH 2023)",
+    "model_distribution": "ModelScope (primary) + HuggingFace",
+    "deployment_options": ["pip package", "Docker", "Windows SDK", "ONNX export"],
+    "sample_rate": "16kHz (standard)",
+    "keywords_supported_since": "2024/09/25",
+    "streaming_supported": true,
+    "timestamp_output": true,
+    "hotword_support": true,
+    "language_support": "primarily Chinese, also English, Japanese, Korean, Cantonese, and more"
+  }
+}

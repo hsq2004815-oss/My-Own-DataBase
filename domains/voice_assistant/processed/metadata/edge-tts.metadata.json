@@ -1,0 +1,84 @@
+{
+  "project_name": "edge-tts",
+  "github_url": "https://github.com/rany2/edge-tts",
+  "local_raw_path": "E:\\DataBase\\domains\\voice_assistant\\raw\\github\\repos\\edge-tts",
+  "capability_layer": "text_to_speech",
+  "main_purpose": "利用 Microsoft Edge 在线 TTS 服务的 Python 模块，提供命令行和 Python API 接口，免费使用微软云端神经网络语音合成",
+  "tech_stack": {
+    "language": "Python",
+    "version": ">=3.7",
+    "core_libs": ["aiohttp>=3.8.0", "certifi", "tabulate"],
+    "cli_tools": ["edge-tts", "edge-playback"],
+    "protocol": "Microsoft Edge TTS WebSocket API (在线服务)",
+    "audio_format": "mp3 输出",
+    "subtitle_format": "SRT 字幕"
+  },
+  "windows_feasibility": {
+    "supported": true,
+    "details": "纯 Python 项目，通过 aiohttp 调用 Microsoft Edge 云端 TTS API。Windows 完全支持，pip install edge-tts 即可。edge-playback 在 Windows 上不需要 mpv (使用系统播放器)。无本地模型，无需 GPU。",
+    "limitations": [
+      "必须联网使用 (调用 Microsoft 云端 API)",
+      "无离线能力 (不内置语音合成模型)",
+      "微软 API 可能随时变更或限制访问 (非官方公开 API)",
+      "API 有速率限制 (未公开具体限额)",
+      "自定义 SSML 已被微软限制 (仅允许 <voice> + <prosody> 标签)"
+    ]
+  },
+  "license": {
+    "code_main": "LGPLv3 (除 src/edge_tts/srt_composer.py 外所有文件)",
+    "code_srt_composer": "MIT",
+    "note": "主体代码为 LGPLv3 许可，srt_composer.py 为 MIT 许可。LGPLv3 要求：使用库时需允许用户替换库文件 (动态链接即可满足)，衍生作品在 LGPLv3 下发布。对小黄项目：如果通过 pip 安装 edge-tts (动态链接)，不修改 edge-tts 源码，对小黄自身的许可无影响。"
+  },
+  "suitable_for_xiaohuang": {
+    "judgement": "suitable_for_temporary",
+    "reason": "edge-tts 适合第一阶段 MVP 快速集成 TTS (版本 2 语音回复)，但不是长期方案。优势：免费、中文声音自然、无需本地模型、安装简单。劣势：必须联网、依赖微软非官方 API (稳定性风险)、LGPLv3 许可需注意合规。第一阶段 MVP 不包含 TTS，但 edge-tts 可作为后续语音回复阶段的临时方案。"
+  },
+  "mvp_relevance": {
+    "direct_use": false,
+    "adapted_use": false,
+    "reference_value": true,
+    "notes": "第一阶段 MVP 不包含 TTS (只有唤醒 → 听一句话 → 转文字显示)，因此 edge-tts 在当前阶段不直接使用。但应记录为第二阶段 (单轮语音回复) 的首选 TTS 引擎候选。"
+  },
+  "risks": [
+    "依赖微软非官方 API，未来可能被限制或关闭",
+    "必须联网使用，无法离线运行 (网络不稳定时影响可用性)",
+    "API 速率限制可能导致频繁调用时被限流",
+    "LGPLv3 许可在商业闭源场景需仔细评估合规性",
+    "无流式音频输出能力 (需等待完整 mp3 生成)"
+  ],
+  "recommended_usage": "作为第二阶段 (语音回复) 的 TTS 候选引擎。第一阶段不需要 TTS。如需在第二阶段使用，建议：(1) 通过 pip 安装 edge-tts (保持 LGPL 动态链接合规)；(2) 使用 zh-CN 中文声音 (如 zh-CN-XiaoxiaoNeural)；(3) 考虑作为临时方案，长期探索离线替代 (如 Piper 或 CosyVoice)。",
+  "downloaded_by": "git clone --depth=1 https://github.com/rany2/edge-tts",
+  "download_method": "git clone depth=1",
+  "raw_source_modified": false,
+  "extra_metadata": {
+    "author": "rany (rany@riseup.net)",
+    "based_on_service": "Microsoft Edge Read Aloud TTS API",
+    "chinese_voices": [
+      "zh-CN-XiaoxiaoNeural (Female)",
+      "zh-CN-YunxiNeural (Male)",
+      "zh-CN-YunjianNeural (Male)",
+      "zh-CN-XiaoyiNeural (Female)",
+      "zh-CN-YunyangNeural (Male)",
+      "zh-CN-XiaochenNeural (Female)",
+      "zh-CN-XiaohanNeural (Female)",
+      "zh-CN-XiaomengNeural (Female)",
+      "zh-CN-XiaomoNeural (Female)",
+      "zh-CN-XiaoqiuNeural (Female)",
+      "zh-CN-XiaoruiNeural (Female)",
+      "zh-CN-XiaoshuangNeural (Female)",
+      "zh-CN-XiaoxuanNeural (Female)",
+      "zh-CN-XiaoyanNeural (Female)",
+      "zh-CN-XiaozhenNeural (Female)",
+      "zh-HK-HiuGaaiNeural (Female, Cantonese)",
+      "zh-HK-HiuMaanNeural (Female, Cantonese)",
+      "zh-HK-WanLungNeural (Male, Cantonese)",
+      "zh-TW-HsiaoChenNeural (Female, Taiwanese Mandarin)",
+      "zh-TW-HsiaoYuNeural (Female, Taiwanese Mandarin)",
+      "zh-TW-YunJheNeural (Male, Taiwanese Mandarin)"
+    ],
+    "voice_count": "300+ (all languages)",
+    "customizable_params": ["rate", "volume", "pitch"],
+    "python_api": "支持同步和异步 API",
+    "streaming": "支持异步音频流"
+  }
+}

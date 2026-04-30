@@ -1,0 +1,73 @@
+{
+  "project_name": "openWakeWord",
+  "github_url": "https://github.com/dscripka/openWakeWord",
+  "local_raw_path": "E:\\DataBase\\domains\\voice_assistant\\raw\\github\\repos\\openWakeWord",
+  "capability_layer": "wake_word_detection",
+  "main_purpose": "开源的唤醒词检测库，提供预训练模型用于常见唤醒词/短语的实时检测",
+  "tech_stack": {
+    "language": "Python",
+    "version": ">=3.10",
+    "core_libs": ["onnxruntime", "tflite-runtime (Linux/Mac)", "numpy", "scipy", "scikit-learn"],
+    "inference": {
+      "primary": "ONNX Runtime (跨平台, Windows 默认)",
+      "secondary": "TFLite (Linux/Mac, 更高效率)"
+    },
+    "model_architecture": {
+      "preprocessing": "ONNX melspectrogram",
+      "feature_extractor": "Google speech_embedding (pre-trained, frozen, Apache-2.0)",
+      "classifier": "fully-connected or 2-layer RNN"
+    },
+    "optional_deps": {
+      "speex": "Linux only, 噪声抑制",
+      "silero_vad": "内嵌, 语音活动检测减少误触发"
+    }
+  },
+  "windows_feasibility": {
+    "supported": true,
+    "details": "Windows 上默认使用 ONNX Runtime，不支持 TFLite (无预编译 WHL)，不支持 Speex 噪声抑制。PyAudioWPatch 替代 PyAudio 用于麦克风采集。",
+    "limitations": [
+      "无 Speex 噪声抑制 (仅 Linux)",
+      "无 TFLite 推理引擎 (仅 ONNX)",
+      "依赖 PyAudioWPatch 处理麦克风输入"
+    ]
+  },
+  "license": {
+    "code": "Apache 2.0",
+    "pretrained_models": "CC BY-NC-SA 4.0 (训练数据包含受限许可数据集)"
+  },
+  "suitable_for_xiaohuang": {
+    "judgement": "partially_suitable",
+    "reason": "唤醒词检测核心能力非常适合，但预训练模型仅支持英文，需要训练中文唤醒词模型（如'小黄'）。模型训练需 TTS 生成中文数据 + Google Colab 或本地训练流程。预训练模型的 CC BY-NC-SA 许可也需注意商用限制。"
+  },
+  "mvp_relevance": {
+    "direct_use": false,
+    "adapted_use": true,
+    "reference_value": true,
+    "notes": "MVP 阶段可直接借鉴其架构设计和推理流程；但需要自行训练中文唤醒词模型（如'小黄'）。不建议直接使用现有英文预训练模型，因为目标语言是中文。"
+  },
+  "risks": [
+    "预训练模型仅英文，需额外投入训练中文模型",
+    "预训练模型许可为 CC BY-NC-SA 4.0，商用需注意合规",
+    "Windows 上缺少 Speex 噪声抑制，在有噪声环境中误触发率可能较高",
+    "模型架构依赖于 Google 的 speech_embedding (虽是 Apache-2.0，但基于大量英文语音预训练，对中文的适应性未经测试)",
+    "项目更新活跃度一般 (最新 v0.6.0 发布于 2024/02)"
+  ],
+  "recommended_usage": "作为唤醒词检测的参考架构和训练方法论来源。第一阶段 MVP 建议：(1) 借鉴其 melspectrogram + embedding + classifier 三段式架构；(2) 使用其自动训练管线训练中文'小黄'唤醒模型；(3) 如果有英文唤醒词需求，可以直接使用其预训练模型。",
+  "downloaded_by": "git clone --depth=1 https://github.com/dscripka/openWakeWord.git",
+  "download_method": "git clone depth=1",
+  "raw_source_modified": false,
+  "extra_metadata": {
+    "current_version": "0.6.0",
+    "pre_trained_models": ["alexa", "hey mycroft", "hey jarvis", "hey rhasspy", "weather", "timers"],
+    "sample_rate": "16kHz",
+    "frame_size": "80ms (1280 samples)",
+    "performance": {
+      "pi_zero": "15-20 models simultaneously on a single core of Raspberry Pi 3",
+      "false_reject_rate": "<5% (target)",
+      "false_accept_rate": "<0.5/hour (target)"
+    },
+    "can_train_custom_verifier": true,
+    "training_data_source": "100% synthetic (TTS-generated)",
+    "language_support": "English only"
+  }
+}

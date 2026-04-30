@@ -1,0 +1,85 @@
+{
+  "project_name": "Wake-Word",
+  "github_url": "https://github.com/Traves-Theberge/Wakeword",
+  "local_raw_path": "E:\\DataBase\\domains\\voice_assistant\\raw\\github\\repos\\Wake-Word",
+  "capability_layer": "wake_word_detection",
+  "main_purpose": "基于 Electron 的 Windows 桌面应用，使用 Picovoice Porcupine 引擎实现 'Hey Claude' 唤醒词检测，检测后自动启动 Cursor IDE 和 Claude CLI",
+  "tech_stack": {
+    "language": "TypeScript",
+    "runtime": "Node.js >=18.0.0",
+    "framework": "Electron 27.3.11",
+    "ui": "React 18 + Tailwind CSS 4.1 + Framer Motion",
+    "build": "Vite 7 + TypeScript 5.3",
+    "installer": "NSIS",
+    "core_libs": [
+      "@picovoice/porcupine-node ^4.0.1",
+      "@picovoice/pvrecorder-node ^1.2.8",
+      "react ^19.2.3",
+      "react-dom ^19.2.3",
+      "framer-motion ^11.2.12"
+    ],
+    "dev_deps": {
+      "electron": "27.3.11",
+      "electron-packager": "17.1.2",
+      "typescript": "5.3",
+      "tailwindcss": "4.1.11",
+      "vite": "7.0.3"
+    },
+    "wake_word_engine": {
+      "name": "Picovoice Porcupine",
+      "type": "proprietary, on-device",
+      "model_format": ".ppn (Picovoice proprietary)",
+      "builtin_wake_word": "Hey Claude",
+      "api_key_required": true,
+      "free_tier": true
+    }
+  },
+  "windows_feasibility": {
+    "supported": true,
+    "details": "本项目专为 Windows 10/11 64-bit 设计。提供 NSIS 安装程序 (.exe)，支持系统托盘、开机自启、系统注册表集成。预编译 Electron 应用，无需 Python。",
+    "limitations": [
+      "Picovoice API key 必需 (免费 tier 可用)",
+      "仅支持 Windows 64-bit (Electron 理论上跨平台但实际仅 Windows 构建)",
+      "依赖 Picovoice 云端训练唤醒词 (非本地训练)",
+      "无 VAD 模块 (持续监听可能引入环境噪声误触发)"
+    ]
+  },
+  "license": {
+    "code": "MIT",
+    "picovoice_models": "Picovoice 专有许可 (见 keywords/LICENSE.txt, https://picovoice.ai/docs/terms-of-use/)",
+    "note": "代码 MIT 许可宽松，但唤醒词模型 (.ppn) 受 Picovoice 服务条款约束，免费 tier 仅限非商业用途"
+  },
+  "suitable_for_xiaohuang": {
+    "judgement": "architecture_reference_only",
+    "reason": "本项目的唤醒词检测依赖 Picovoice Porcupine 商业 SDK，唤醒词模型 (.ppn) 为 Picovoice 专有格式，不可自行训练。第一阶段 MVP 要求训练中文唤醒词'小黄'，而 Picovoice 免费 tier 不支持商业用途，且模型不可定制/导出。适合参考其 Electron 桌面应用架构（系统托盘、设置面板、React UI），不适合直接使用其唤醒词引擎。"
+  },
+  "mvp_relevance": {
+    "direct_use": false,
+    "adapted_use": false,
+    "reference_value": true,
+    "notes": "MVP 阶段可参考：(1) Electron + React + TypeScript 桌面应用架构；(2) 系统托盘状态指示 (绿/红图标切换)；(3) NSIS Windows 安装器方案；(4) 设置面板 UI 设计。但 Picovoice 唤醒词引擎不适合第一阶段，因为无法自由训练中文唤醒词且许可受限。"
+  },
+  "risks": [
+    "Picovoice Porcupine 为商业 SDK，唤醒词模型不可自行训练或定制",
+    "Picovoice 免费 API key 仅限非商业用途，商用需付费",
+    "项目耦合于 'Hey Claude' 场景，硬编码了 Cursor IDE 和 Claude CLI 启动逻辑",
+    "无 VAD 模块，缺少噪声抑制，在嘈杂环境中误触发率高",
+    "代码中 repository/url 指向模板占位符 (yourusername/wake-word-detector)，项目成熟度一般"
+  ],
+  "recommended_usage": "作为 Electron 桌面语音应用的架构参考。重点关注：(1) 系统托盘 + 设置面板的 UX 模式；(2) Electron 主进程/渲染进程 IPC 通信；(3) NSIS Windows 安装器配置。不建议直接使用其唤醒词方案，MVP 阶段应使用 openWakeWord 训练管线或 FunASR keyword spotting 替代。",
+  "downloaded_by": "git clone --depth=1 https://github.com/Traves-Theberge/Wake-Word",
+  "download_method": "git clone depth=1",
+  "raw_source_modified": false,
+  "extra_metadata": {
+    "current_version": "1.0.0",
+    "author": "Traves Theberge",
+    "default_wake_word": "Hey Claude",
+    "wake_word_model": "keywords/hey-claude.ppn (Picovoice)",
+    "os_target": "Windows 10/11 64-bit",
+    "memory_requirement": "4GB RAM (8GB recommended)",
+    "storage_requirement": "200MB",
+    "features": ["voice activation", "system tray", "auto-startup", "launch Cursor IDE", "launch Claude CLI in WSL"],
+    "ui_framework": "React 18 + Tailwind CSS 4.1 + Framer Motion",
+    "installer_type": "NSIS (.exe)"
+  }
+}

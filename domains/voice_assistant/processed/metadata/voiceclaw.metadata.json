@@ -1,0 +1,66 @@
+{
+  "project_name": "VoiceClaw",
+  "github_url": "https://github.com/muin-company/voiceclaw",
+  "local_raw_path": "E:\\DataBase\\domains\\voice_assistant\\raw\\github\\repos\\voiceclaw",
+  "capability_layer": "voice_plugin_integration",
+  "main_purpose": "OpenClaw 语音助手插件，集成唤醒词检测、语音识别(STT)、语音合成(TTS)为一体，通过标准 OpenClaw 插件接口提供语音交互能力",
+  "tech_stack": {
+    "primary_runtime": "Node.js (TypeScript)",
+    "audio_ml_runtime": "Python 3.9+ (子进程)",
+    "ipc": "JSON-RPC over stdio",
+    "node_deps": ["TypeScript 5.x", "Node.js 20+"],
+    "python_deps": {
+      "audio": "PyAudio",
+      "ml": "PyTorch 2.0+",
+      "stt": "FunASR (SenseVoice primary), faster-whisper, OpenAI Whisper",
+      "tts": "Edge TTS, Piper, macOS say"
+    },
+    "vad": "Silero VAD (PyTorch)",
+    "wake_word": "基于 STT 的文本匹配方案 (非独立唤醒词模型)"
+  },
+  "windows_feasibility": {
+    "supported": true,
+    "details": "Node.js 部分完全跨平台。Python 部分依赖 PyAudio (Windows 需 PyAudioWPatch)、PyTorch (Windows 有官方支持)、Edge TTS (纯 Python, 跨平台)。SenseVoice 基于 FunASR 有 Windows 支持。",
+    "limitations": [
+      "PyAudio 在 Windows 上安装可能需要额外处理 (PyAudioWPatch)",
+      "macOS say 命令不可用 (TTS fallback 到 Edge TTS)",
+      "Piper TTS 在 Windows 上的二进制可用性需验证",
+      "Python 子进程管理在 Windows 上可能略有差异"
+    ]
+  },
+  "license": "MIT",
+  "suitable_for_xiaohuang": {
+    "judgement": "architecturally_inspiring",
+    "reason": "VoiceClaw 的整体架构（Node.js 插件 + Python 音频/ML 子进程）和事件流设计非常有参考价值，但它深度耦合 OpenClaw 平台。小黄如果也采用 OpenClaw 架构，可以直接复用；如果独立实现，则需参考其设计理念重构。默认唤醒词为韩语'미르야'，需替换。"
+  },
+  "mvp_relevance": {
+    "direct_use": false,
+    "adapted_use": true,
+    "reference_value": true,
+    "notes": "MVP 阶段可重点参考：(1) Node.js+Python 双进程 JSON-RPC 通信模式；(2) VAD → Wake Word → STT → Agent → TTS 完整事件流；(3) 插件化配置管理模式。不建议直接 Fork 使用，因为与 OpenClaw 平台紧耦合。"
+  },
+  "risks": [
+    "强依赖 OpenClaw 平台生态，独立使用需要大量解耦改造",
+    "唤醒词检测基于 STT 文本匹配而非专用唤醒词模型，延迟和资源开销较大（不适合持续监听场景）",
+    "SenseVoice 模型较大，对本地资源要求高",
+    "项目目前为 v0.1.0 早期版本，稳定性待验证",
+    "默认语言配置为韩语(ko)，需要替换为中文配置"
+  ],
+  "recommended_usage": "作为小黄语音交互插件的架构参考。重点关注其：(1) JSON-RPC stdio 双进程通信方案；(2) background service 生命周期管理；(3) VAD→唤醒→STT→Agent→TTS 事件管道设计；(4) 插件配置 schema。不建议直接集成，而是吸取其设计理念后独立实现或适配。",
+  "downloaded_by": "git clone --depth=1 https://github.com/muin-company/voiceclaw.git",
+  "download_method": "git clone depth=1",
+  "raw_source_modified": false,
+  "extra_metadata": {
+    "current_version": "0.1.0",
+    "author": "MUIN Company (muin.company)",
+    "default_wake_word": "미르야 (韩语)",
+    "stt_engines": ["sensevoice", "faster-whisper", "whisper"],
+    "tts_engines": ["edge-tts", "piper", "say"],
+    "plugin_id": "voiceclaw",
+    "plugin_type": "OpenClaw standard plugin",
+    "commands": ["/voiceclaw start", "/voiceclaw stop", "/voiceclaw status"],
+    "agent_tool": "voice_speak",
+    "gateway_methods": ["voiceclaw.status", "voiceclaw.config"],
+    "edge_tts_voice_default": "ko-KR-SunHiNeural (韩语)"
+  }
+}
