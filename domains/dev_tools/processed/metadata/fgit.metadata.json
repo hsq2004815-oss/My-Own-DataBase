@@ -1,0 +1,62 @@
+{
+  "id": "dev_tools_github_acceleration_fgit",
+  "project_name": "fgit",
+  "domain": "dev_tools",
+  "source_type": "github_download_acceleration_tool",
+  "local_path": "E:\\DataBase\\domains\\dev_tools\\raw\\github\\repos\\fgit",
+  "upstream_repository": "fastgh/fgit",
+  "summary": "Go-based GitHub git command accelerator that can act as a near drop-in replacement for git for clone, pull, push, fetch, and related GitHub operations.",
+  "primary_use": [
+    "Accelerate public GitHub clone / pull / fetch",
+    "Fallback accelerator when normal git clone is slow or fails",
+    "Transparent git command wrapper for GitHub HTTPS workflows"
+  ],
+  "recommended_agent_usage": [
+    "First try normal git clone --depth=1 for public repositories.",
+    "If normal clone is slow or fails, try fgit clone <repo-url> --depth=1.",
+    "Use fgit only for GitHub repository operations, not arbitrary file downloads.",
+    "Avoid using public acceleration services for private repositories or token-bearing URLs."
+  ],
+  "capabilities": [
+    "Supports clone, pull, push, fetch, update-style git operations",
+    "Automatically switches between mirror mode and HTTPS proxy mode",
+    "Restores temporary git mirror/proxy settings after command completion",
+    "Cross-platform binary approach"
+  ],
+  "limitations": [
+    "Does not support SSH protocol",
+    "Does not support submodules",
+    "May temporarily modify global or local git configuration",
+    "Public mirror/proxy availability can change"
+  ],
+  "security_notes": [
+    "Mirror mode is not suitable for private repositories or push operations.",
+    "Do not route tokens, private repository URLs, or credentials through public proxies.",
+    "If config remains modified after interruption, manually inspect .gitconfig or .git/config."
+  ],
+  "trust_level": "good_reference",
+  "quality_score": {
+    "readme": 5,
+    "usage_examples": 5,
+    "security_notes": 4,
+    "maintenance_freshness": 2,
+    "agent_workflow_value": 5
+  },
+  "retrieval": {
+    "prompt_tags": [
+      "GitHub download acceleration",
+      "fgit",
+      "git clone accelerator",
+      "github clone fallback",
+      "dev tools"
+    ],
+    "keywords": [
+      "fgit",
+      "git clone",
+      "GitHub mirror",
+      "GitHub proxy",
+      "download acceleration",
+      "depth=1"
+    ]
+  }
+}

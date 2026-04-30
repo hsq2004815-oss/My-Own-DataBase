@@ -1,0 +1,62 @@
+{
+  "id": "dev_tools_github_acceleration_github_proxy",
+  "project_name": "github-proxy",
+  "domain": "dev_tools",
+  "source_type": "github_url_proxy_converter",
+  "local_path": "E:\\DataBase\\domains\\dev_tools\\raw\\github\\repos\\github-proxy",
+  "upstream_repository": "ahaoboy/github-proxy",
+  "summary": "Rust CLI/library that converts GitHub raw file and release asset URLs into supported proxy/CDN URL formats such as gh-proxy, xget, jsdelivr, statically, or native GitHub.",
+  "primary_use": [
+    "Convert raw file URLs for accelerated download",
+    "Convert release asset URLs for accelerated download",
+    "Generate proxy URLs without manually rewriting GitHub paths"
+  ],
+  "recommended_agent_usage": [
+    "Use for release assets and raw/single-file downloads after normal GitHub URL is slow or blocked.",
+    "Use jsdelivr or statically only for file resources; they do not support release assets.",
+    "Use gh-proxy or xget style URLs for release assets when appropriate.",
+    "Do not convert private repository or token-bearing URLs for public proxy services."
+  ],
+  "capabilities": [
+    "Supports file resources",
+    "Supports release asset resources",
+    "Can parse GitHub raw, blob, and release URLs",
+    "Usable as CLI or Rust library",
+    "Supports multiple proxy services"
+  ],
+  "limitations": [
+    "Only GitHub URLs are supported for parsing",
+    "jsdelivr and statically do not support release assets",
+    "It converts URLs; it is not itself a downloading proxy service"
+  ],
+  "security_notes": [
+    "Treat generated public proxy URLs as public.",
+    "Do not include tokens, signed URLs, private repo paths, or credentials in converted URLs.",
+    "Prefer native GitHub for sensitive resources."
+  ],
+  "trust_level": "good_reference",
+  "quality_score": {
+    "readme": 5,
+    "usage_examples": 5,
+    "security_notes": 3,
+    "maintenance_freshness": 4,
+    "agent_workflow_value": 4
+  },
+  "retrieval": {
+    "prompt_tags": [
+      "GitHub proxy URL",
+      "github-proxy",
+      "raw file download",
+      "release asset download",
+      "dev tools"
+    ],
+    "keywords": [
+      "github-proxy",
+      "raw.githubusercontent.com",
+      "release asset",
+      "jsdelivr",
+      "gh-proxy",
+      "xget"
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "dev_tools_github_acceleration_fastgit",
+  "project_name": "fastgit",
+  "domain": "dev_tools",
+  "source_type": "github_download_acceleration_tool",
+  "local_path": "E:\\DataBase\\domains\\dev_tools\\raw\\github\\repos\\fastgit",
+  "upstream_repository": "NaivG/fastgit",
+  "summary": "Python-based Git accelerator that wraps normal git usage, auto-selects mirror sources, supports proxy configuration, and includes a repository archive download command.",
+  "primary_use": [
+    "Alternative to fgit when normal git clone is slow",
+    "Mirror-source accelerated clone / pull / push / fetch",
+    "Repository archive download fallback"
+  ],
+  "recommended_agent_usage": [
+    "Use after normal git clone --depth=1 fails or is too slow.",
+    "Prefer fgit first when available, then try fastgit as a secondary local accelerator.",
+    "Use fastgit download only for public repository archives.",
+    "Do not send private repository URLs or credentials through public mirrors."
+  ],
+  "capabilities": [
+    "Git command wrapper with clone / pull / push / fetch support",
+    "Automatic mirror latency testing and caching",
+    "Repository archive download command",
+    "Proxy configuration support",
+    "SSH/HTTPS URL conversion support"
+  ],
+  "limitations": [
+    "Release asset download support is listed as TODO in README",
+    "Requires Python 3.9+ or a prebuilt executable",
+    "Depends on external mirror availability",
+    "License is AGPL-3.0"
+  ],
+  "security_notes": [
+    "Public mirrors should be treated as public infrastructure only.",
+    "Do not route GitHub tokens, private repositories, or credentialed clone URLs through public proxies.",
+    "Prefer shallow clones for Agent imports to reduce bandwidth and filesystem noise."
+  ],
+  "trust_level": "good_reference",
+  "quality_score": {
+    "readme": 5,
+    "usage_examples": 4,
+    "security_notes": 3,
+    "maintenance_freshness": 4,
+    "agent_workflow_value": 4
+  },
+  "retrieval": {
+    "prompt_tags": [
+      "GitHub download acceleration",
+      "fastgit",
+      "Python Git accelerator",
+      "mirror selection",
+      "dev tools"
+    ],
+    "keywords": [
+      "fastgit",
+      "fgit alternative",
+      "git clone",
+      "GitHub mirror",
+      "archive download",
+      "proxy"
+    ]
+  }
+}

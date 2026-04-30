@@ -1,0 +1,67 @@
+{
+  "id": "dev_tools_github_acceleration_gh_proxy",
+  "project_name": "gh-proxy",
+  "domain": "dev_tools",
+  "source_type": "self_hosted_github_reverse_proxy",
+  "local_path": "E:\\DataBase\\domains\\dev_tools\\raw\\github\\repos\\gh-proxy",
+  "upstream_repository": "kexi/github-reverse-proxy",
+  "summary": "Go-based GitHub reverse proxy service for HTTP/SSH GitHub access, releases, raw files, archives, gists, and API requests, with caching, rate limiting, authentication, metrics, and SSRF protection.",
+  "primary_use": [
+    "Self-hosted GitHub reverse proxy for stable internal download acceleration",
+    "Archive zip/tar.gz fallback when git clone is not practical",
+    "Release/raw file proxying in controlled environments",
+    "Optional local/controlled proxy for teams or CI"
+  ],
+  "recommended_agent_usage": [
+    "Use gh-proxy archive URLs when clone is not possible and a public repository archive is acceptable.",
+    "Use for release/raw file downloads when a controlled self-hosted proxy is available.",
+    "Prefer localhost-only or authenticated deployments for sensitive usage.",
+    "Do not use public proxy instances for private repositories or token-bearing URLs."
+  ],
+  "capabilities": [
+    "HTTP proxy for releases, raw files, archives, gists, and API endpoints",
+    "Full GitHub URL support and path-based URL support",
+    "Git HTTP and SSH proxy examples",
+    "Hybrid memory/disk caching",
+    "Rate limiting, authentication, metrics, and security headers",
+    "SSRF protection and GitHub domain validation"
+  ],
+  "limitations": [
+    "Requires running a service and managing configuration",
+    "Exposing all interfaces without authentication can be risky",
+    "Private repository examples require token handling and should not be routed through public infrastructure",
+    "More operationally heavy than one-shot CLI helpers"
+  ],
+  "security_notes": [
+    "Bind to 127.0.0.1 or deploy behind a trusted reverse proxy when possible.",
+    "Enable authentication for shared or non-local deployments.",
+    "Never place GitHub PATs in public proxy URLs.",
+    "Use public proxies only for public open-source resources."
+  ],
+  "trust_level": "good_reference",
+  "quality_score": {
+    "readme": 5,
+    "usage_examples": 5,
+    "security_notes": 5,
+    "maintenance_freshness": 4,
+    "agent_workflow_value": 5
+  },
+  "retrieval": {
+    "prompt_tags": [
+      "GitHub reverse proxy",
+      "gh-proxy",
+      "self-hosted proxy",
+      "GitHub archive download",
+      "dev tools"
+    ],
+    "keywords": [
+      "gh-proxy",
+      "GitHub reverse proxy",
+      "archive zip",
+      "raw file",
+      "release asset",
+      "SSRF protection",
+      "rate limiting"
+    ]
+  }
+}
