@@ -4,7 +4,19 @@
 
 GitHub 项目源码只是 `raw/github_projects` 原始资料；真正给 Agent 使用的是 `rules/`、`wiki/`、`references/` 和 `processed/` chunks。不要让 Agent 为普通任务直接读取或照搬 raw 源码。
 
-当前阶段：Backend Engineering 已完成 Phase 2A-2E。知识层包含 schema、README、13 个 rules、12 个 topics、12 个 patterns、10 个 checklists、12 个 templates、28 个 references JSON 和 338 个 retrieval chunks；运行时索引已写入 `runtime/db/sqlite/backend/backend_references.db`，并已接入 `/backend/search` 与 `/brief`。
+当前阶段：Backend Engineering 已完成 Phase 2A-2E。知识层包含 schema、README、13 个 rules、16 个 topics、12 个 patterns、10 个 checklists、12 个 templates、28 个 references JSON 和 338 个 retrieval chunks；运行时索引已写入 `runtime/db/sqlite/backend/backend_references.db`，并已接入 `/backend/search` 与 `/brief`。
+
+### 新增：互联网架构案例集 (2026-04-30)
+
+已入库 `davideuler/architecture.of.internet-product`（318 份互联网公司架构文档 + 55+ 篇经典论文）：
+
+- `wiki/topics/internet_company_architecture_cases.md` — 资料分类与导航（按公司/主题索引）
+- `wiki/topics/backend_system_design_patterns.md` — 10 个通用后端设计模式（分层/缓存/MQ/文件等）
+- `wiki/topics/backend_architecture_learning_map.md` — 5 层学习地图（入门→架构师）
+- `wiki/topics/backend_project_application_reference.md` — 6 类项目的架构应用参考 + Agent 开发默认原则
+- `processed/metadata/architecture.of.internet-product.metadata.json` — 结构化元数据
+
+注意：该仓库 LICENSE 未确认，所有资料仅供学习参考。
 
 ## Agent 入口规则
 
