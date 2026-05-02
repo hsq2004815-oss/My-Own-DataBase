@@ -1,0 +1,52 @@
+{
+  "asset_id": "backend-healthcheck-error-envelope-pattern",
+  "title": "Backend Healthcheck & Error Envelope Pattern",
+  "domain": "backend",
+  "capability": "readiness_healthcheck",
+  "source_project": "backend (curated knowledge)",
+  "source_url": "E:/DataBase/domains/backend",
+  "source_path": "rules/error-handling-and-logging-rules.md",
+  "license": "MIT (curated rules, not copied source)",
+  "reuse_level": "extractable_module",
+  "reuse_policy": "direct_use_allowed",
+  "summary": "Standardized healthcheck endpoint pattern (GET /health returning JSON with status, version, uptime, and dependency checks) combined with a structured error envelope (code, message, request_id, timestamp) for all API error responses. These are small, self-contained modules with clear boundaries that can be directly adapted into any backend service.",
+  "why_reusable": "Every backend service needs healthcheck and error envelopes. The patterns are small (~30 lines each), have no unusual dependencies, are framework-agnostic (works with FastAPI, Flask, Express, etc.), and follow standard conventions that operations teams and monitoring tools expect.",
+  "adapter_target": "Any backend service (FastAPI, Express, Flask, etc.) — copy the pattern, not the code, and adapt to the target framework's response format.",
+  "implementation_notes": [
+    "Healthcheck: return JSON with status (ok/degraded/down), version, uptime_seconds, and optional checks dict for DB/redis/queue connectivity",
+    "Error envelope: always include error.code (machine-readable), error.message (human-readable), error.request_id (for log correlation), and error.timestamp",
+    "Error codes should follow a taxonomy: VALIDATION_ERROR, NOT_FOUND, UNAUTHORIZED, INTERNAL_ERROR, etc.",
+    "Never expose stack traces or internal details in error responses — log them server-side, return sanitized envelope to client",
+    "Healthcheck should be fast (<100ms) and not trigger heavy dependency checks on every call; use a cached status with background refresh for expensive checks"
+  ],
+  "tests_required": [
+    "Unit test: healthcheck returns 200 with expected JSON shape",
+    "Unit test: healthcheck returns 503 when a critical dependency is down",
+    "Unit test: error envelope builder includes all required fields",
+    "Unit test: error envelope sanitizes stack traces",
+    "Integration test: healthcheck reflects real DB/redis status"
+  ],
+  "risks": [
+    "Healthcheck must not leak version info that aids attackers (consider a /health/auth variant)",
+    "Error envelope must be consistent across all endpoints — enforce via middleware, not per-endpoint",
+    "Request ID propagation requires middleware at the entry point; missing it means lost correlation",
+    "Healthcheck dependency checks can DDOS your own database if called frequently by orchestration"
+  ],
+  "do_not_do": [
+    "Do not expose stack traces in error responses",
+    "Do not make healthcheck endpoints do heavy work",
+    "Do not use different error shapes for different endpoints",
+    "Do not skip request ID generation — untraceable errors are undebuggable"
+  ],
+  "language": "python",
+  "dependencies": ["none (stdlib only for basic healthcheck; FastAPI/Express for framework integration)"],
+  "windows_compatibility": "full",
+  "packaging_impact": "None — pure application code, no additional packages",
+  "prompt_tags": [
+    "healthcheck", "error envelope", "error handling", "structured errors",
+    "request ID", "readiness", "liveness", "API error response",
+    "健康检查", "错误信封", "结构化错误", "请求ID", "就绪检测"
+  ],
+  "created_at": "2026-05-02",
+  "notes": "Derived from backend domain curated rules on error handling and logging. This is a universally applicable pattern — the asset describes the interface shape and conventions, not copied source code."
+}

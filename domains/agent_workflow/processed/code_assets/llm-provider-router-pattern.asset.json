@@ -1,0 +1,55 @@
+{
+  "asset_id": "llm-provider-router-pattern",
+  "title": "LLM Provider Router with API Key Resolution Pattern",
+  "domain": "agent_workflow",
+  "capability": "llm_provider_router",
+  "source_project": "xiaohuang",
+  "source_url": "E:/Projects/xiaohuang",
+  "source_path": "src/xiaohuang/llm_reply_service.py",
+  "license": "MIT",
+  "reuse_level": "implementation_pattern",
+  "reuse_policy": "adapter_required",
+  "summary": "Pattern for routing LLM requests across multiple OpenAI-compatible providers with layered API key resolution. The router loads provider configurations, selects the active provider based on availability and priority, resolves API keys from env vars with fallback chains, handles no-key scenarios gracefully, and provides a uniform chat completion interface regardless of which backend provider is selected.",
+  "why_reusable": "Any application that calls LLM APIs benefits from provider abstraction. The layered key resolution pattern (env var → config file → prompt user) and the uniform interface across providers (OpenAI, Anthropic, local LLM) generalize to chatbots, coding agents, RAG pipelines, and any AI-powered tool.",
+  "adapter_target": "Generic LLM provider service — adapter should be a standalone `LlmProviderService` class that can be dropped into any Python project needing multi-provider LLM access.",
+  "implementation_notes": [
+    "Define a provider config schema with: provider name, base_url, api_key_env var name, model list, priority",
+    "API key resolution order: env var → config file fallback → no-key mode (for local LLMs)",
+    "Uniform chat completion interface hides provider differences behind a single async method",
+    "Provider health: track last error timestamp per provider; skip providers with recent failures",
+    "No-key fallback: if no API key is available, return a clear error or fall back to a local/built-in model",
+    "Provider config should be hot-reloadable without restarting the application"
+  ],
+  "tests_required": [
+    "Unit test: provider config parsing and validation",
+    "Unit test: API key resolution with env var present",
+    "Unit test: API key resolution with env var missing → falls back to config",
+    "Unit test: no-key fallback returns graceful error",
+    "Unit test: provider selection skips recently-failed providers",
+    "Integration test: real API call succeeds with valid key",
+    "Integration test: real API call fails gracefully with invalid key"
+  ],
+  "risks": [
+    "API keys in env vars may leak via subprocess inheritance or error logs",
+    "Provider base_url may point to untrusted endpoints; validate or whitelist",
+    "No-key fallback on a local LLM may silently produce lower-quality responses",
+    "Provider config file may contain keys if users ignore env var guidance"
+  ],
+  "do_not_do": [
+    "Do not log API keys or include them in error messages",
+    "Do not hardcode provider URLs or model names in the router",
+    "Do not block the main thread on provider health checks",
+    "Do not silently fall back to a different provider without logging the switch"
+  ],
+  "language": "python",
+  "dependencies": ["openai (or httpx for raw API calls)"],
+  "windows_compatibility": "full",
+  "packaging_impact": "openai SDK adds ~2MB; can be replaced with httpx for smaller footprint",
+  "prompt_tags": [
+    "LLM provider", "API router", "OpenAI compatible", "API key management",
+    "provider abstraction", "no-key fallback", "multi-model", "chat completion",
+    "大模型路由", "API密钥管理", "提供商抽象", "多模型"
+  ],
+  "created_at": "2026-05-02",
+  "notes": "Derived from xiaohuang llm_reply_service.py provider loading and routing patterns. The reusable artifact is the provider abstraction and key resolution chain, not the specific providers or models."
+}

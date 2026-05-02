@@ -1,0 +1,54 @@
+{
+  "asset_id": "launch-control-readiness-pattern",
+  "title": "Desktop App Launch Control & Readiness Pattern",
+  "domain": "desktop_app",
+  "capability": "launch_control",
+  "source_project": "xiaohuang",
+  "source_url": "E:/Projects/xiaohuang",
+  "source_path": "scripts/voice_overlay.py",
+  "license": "MIT",
+  "reuse_level": "implementation_pattern",
+  "reuse_policy": "adapter_required",
+  "summary": "Pattern for managing desktop application launch lifecycle: startup guard (single-instance lock), subprocess health monitoring with readiness polling, graceful shutdown sequencing, and crash recovery via lock file cleanup. The pattern separates launch orchestration from business logic, with a main overlay script that coordinates service initialization, health checks, and teardown in a defined order.",
+  "why_reusable": "Any long-running Windows desktop tool or assistant needs reliable startup guard, process health monitoring, and clean shutdown. The pattern of readiness polling with timeout, combined with operation lock files, generalizes to tray apps, automation agents, voice assistants, and system utilities.",
+  "adapter_target": "Generic desktop assistant / Windows tool / agent app — adapter should be a single-file launch controller that can be imported by any desktop entry point.",
+  "implementation_notes": [
+    "Use a lock file (e.g. %TEMP%\\app.lock) with PID to detect stale instances",
+    "Poll readiness via health endpoint or internal flag with configurable timeout and interval",
+    "Shutdown sequence: stop accepting new work → drain queues → close subprocess → release lock",
+    "Separate launch orchestration from service logic — the overlay script should only coordinate",
+    "On Windows, handle both graceful close (WM_CLOSE) and forceful termination"
+  ],
+  "tests_required": [
+    "Unit test: lock file acquisition and release",
+    "Unit test: stale lock detection and cleanup",
+    "Integration test: subprocess launch with readiness polling timeout",
+    "Integration test: graceful shutdown with active subprocess",
+    "Integration test: crash recovery on next launch"
+  ],
+  "risks": [
+    "Lock file must be cleaned up on crash — stale locks block relaunch",
+    "PowerShell subprocess may hang on exit; always set a timeout",
+    "Readiness polling can race with service initialization; use a flag, not just process alive check",
+    "Multiple instances detection must work with both normal and elevated processes"
+  ],
+  "do_not_do": [
+    "Do not block the main thread during readiness polling",
+    "Do not hardcode paths in the launch controller",
+    "Do not skip the stale lock detection — crashed previous instance is common on Windows",
+    "Do not assume subprocess exit means clean shutdown; check exit code"
+  ],
+  "language": "python",
+  "dependencies": ["psutil (optional, for PID check)"],
+  "windows_compatibility": "full",
+  "packaging_impact": "Lock file and subprocess management add no packaging weight; psutil optional",
+  "related_snippets": ["launch-control-readiness-operation-lock"],
+  "related_adapters": ["adapt-launch-control-to-desktop-assistant"],
+  "prompt_tags": [
+    "launch control", "readiness polling", "operation lock", "single instance",
+    "subprocess health", "graceful shutdown", "crash recovery", "desktop tray startup",
+    "启动控制", "就绪检测", "操作锁", "单实例", "子进程健康", "优雅关闭"
+  ],
+  "created_at": "2026-05-02",
+  "notes": "Derived from xiaohuang voice_overlay.py orchestration patterns. This is an internal project asset — the pattern is the reusable artifact, not the source code."
+}

@@ -177,6 +177,17 @@ Fallback read order when API retrieval is unavailable:
 
 Do not use `domains/backend/raw/github_projects` as normal task context. Do not run those projects, install dependencies, copy source code, copy `.env.example` secrets, build indexes, or modify `runtime/db/sqlite` for a backend guidance lookup.
 
+## Code Asset Lookup
+
+When the task involves reusing code capabilities (launch control, settings UI, LLM routing, healthcheck, subprocess management, etc.), check the code asset layer before scanning raw source projects:
+
+1. Start with `domains/agent_workflow/wiki/indexes/code-assets-global-index.md` for capability-based lookup.
+2. Read matching `processed/code_assets/*.asset.json` records for reuse level, license, risks, and adapter guidance.
+3. Read `wiki/snippets/` and `wiki/adapters/` for implementation details and integration plans.
+4. Cross-reference with domain `rules/` and `wiki/` for additional constraints.
+
+Code assets are a `processed/wiki` layer supplement. They do not replace existing `rules/`, `wiki/`, or `references/`. `raw/` is still not default task context. Before reusing any code asset, verify license, dependencies, Windows compatibility, adapter needs, and test requirements. Do not copy GPL/AGPL or unlicensed code.
+
 ## Asset Safety
 
 `asset_suggestions` are not automatically safe to copy.

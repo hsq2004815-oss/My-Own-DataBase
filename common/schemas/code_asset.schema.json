@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "code_asset.schema.json",
+  "title": "Code Asset Record",
+  "description": "Schema for reusable code asset records in the code asset layer. Each record describes a reusable code capability — a pattern, module, library, or implementation approach — with reuse level, licensing, adapter targets, and test requirements.",
+  "type": "object",
+  "required": [
+    "asset_id",
+    "title",
+    "domain",
+    "capability",
+    "source_project",
+    "source_url",
+    "source_path",
+    "license",
+    "reuse_level",
+    "reuse_policy",
+    "summary",
+    "adapter_target",
+    "tests_required",
+    "risks"
+  ],
+  "properties": {
+    "asset_id": {
+      "type": "string",
+      "description": "Stable unique asset identifier, e.g. 'launch-control-readiness-pattern'."
+    },
+    "title": {
+      "type": "string",
+      "description": "Human-readable title for the asset."
+    },
+    "domain": {
+      "type": "string",
+      "enum": [
+        "agent_workflow",
+        "automation",
+        "backend",
+        "dev_tools",
+        "voice_assistant",
+        "ui_design",
+        "ui_assets",
+        "desktop_app",
+        "data_processing"
+      ]
+    },
+    "capability": {
+      "type": "string",
+      "enum": [
+        "desktop_tray",
+        "settings_ui",
+        "launch_control",
+        "subprocess",
+        "powershell",
+        "readiness_healthcheck",
+        "operation_lock",
+        "config_schema",
+        "config_validation",
+        "llm_provider_router",
+        "wake_word",
+        "stt",
+        "tts",
+        "conversation_session",
+        "browser_automation",
+        "crawler",
+        "backend_api",
+        "logging",
+        "error_handling",
+        "deployment",
+        "ui_pattern"
+      ]
+    },
+    "source_project": {
+      "type": "string",
+      "description": "Project name the capability originates from."
+    },
+    "source_url": {
+      "type": "string",
+      "description": "URL or local path to the source project."
+    },
+    "source_path": {
+      "type": "string",
+      "description": "Relative path within the source project for the relevant code."
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX license identifier or license description."
+    },
+    "reuse_level": {
+      "type": "string",
+      "enum": [
+        "direct_dependency",
+        "implementation_pattern",
+        "extractable_module",
+        "research_only"
+      ]
+    },
+    "reuse_policy": {
+      "type": "string",
+      "enum": [
+        "direct_use_allowed",
+        "adapter_required",
+        "inspiration_only",
+        "license_review_required",
+        "do_not_copy_code"
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "description": "One-paragraph summary of what this asset provides."
+    },
+    "why_reusable": {
+      "type": "string",
+      "description": "Why this capability is reusable across projects."
+    },
+    "adapter_target": {
+      "type": "string",
+      "description": "Suggested target service, adapter layer, or project for integration."
+    },
+    "implementation_notes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Key implementation notes and constraints."
+    },
+    "tests_required": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Tests that should be written when reusing this asset."
+    },
+    "risks": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Risks and caveats for reuse."
+    },
+    "do_not_do": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Common mistakes to avoid when reusing."
+    },
+    "language": {
+      "type": "string",
+      "description": "Primary programming language."
+    },
+    "dependencies": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Required dependencies."
+    },
+    "windows_compatibility": {
+      "type": "string",
+      "enum": ["full", "partial", "none", "unknown"]
+    },
+    "packaging_impact": {
+      "type": "string",
+      "description": "Impact on packaging (e.g. PyInstaller, MSIX)."
+    },
+    "related_files": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "related_patterns": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "related_snippets": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "related_adapters": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "prompt_tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Tags for agent retrieval."
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

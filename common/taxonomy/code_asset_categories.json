@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Code Asset Categories Taxonomy",
+  "description": "Taxonomy of code asset capabilities organized by domain. Used to classify and index reusable code assets across projects.",
+  "domains": {
+    "desktop_app": {
+      "label": "Desktop Application",
+      "capabilities": [
+        "desktop_tray",
+        "settings_ui",
+        "launch_control",
+        "subprocess",
+        "powershell",
+        "operation_lock"
+      ]
+    },
+    "voice_assistant": {
+      "label": "Voice Assistant",
+      "capabilities": [
+        "wake_word",
+        "stt",
+        "tts",
+        "conversation_session"
+      ]
+    },
+    "backend": {
+      "label": "Backend Services",
+      "capabilities": [
+        "backend_api",
+        "logging",
+        "error_handling",
+        "deployment",
+        "readiness_healthcheck",
+        "config_schema",
+        "config_validation"
+      ]
+    },
+    "agent_workflow": {
+      "label": "Agent Workflow",
+      "capabilities": [
+        "llm_provider_router"
+      ]
+    },
+    "automation": {
+      "label": "Browser Automation",
+      "capabilities": [
+        "browser_automation",
+        "crawler"
+      ]
+    },
+    "ui_design": {
+      "label": "UI Design",
+      "capabilities": [
+        "ui_pattern"
+      ]
+    }
+  },
+  "reuse_levels": {
+    "direct_dependency": {
+      "label": "Direct Dependency",
+      "description": "Mature library that can be used as a direct dependency without copying source code.",
+      "examples": ["pystray", "Pillow", "edge-tts", "requests", "FastAPI", "SQLite", "Playwright"]
+    },
+    "implementation_pattern": {
+      "label": "Implementation Pattern",
+      "description": "Design or implementation approach to learn from without copying source code.",
+      "examples": ["tray menu structure", "operation lock", "readiness polling", "config schema", "provider router"]
+    },
+    "extractable_module": {
+      "label": "Extractable Module",
+      "description": "Small module or adapter that can be extracted and adapted, provided license allows, dependencies are controlled, boundaries are clear, and tests can be written.",
+      "examples": ["healthcheck endpoint", "error envelope builder", "API key env loader"]
+    },
+    "research_only": {
+      "label": "Research Only",
+      "description": "For research and reference only. Project too large, license risk too high, dependencies too heavy, or architecture conflicts with current stage.",
+      "examples": ["large monorepo frameworks", "GPL/AGPL codebases", "cloud-specific SDKs"]
+    }
+  },
+  "reuse_policies": {
+    "direct_use_allowed": {
+      "label": "Direct Use Allowed",
+      "description": "Can be used directly as a dependency or copied with attribution."
+    },
+    "adapter_required": {
+      "label": "Adapter Required",
+      "description": "Needs an adapter layer before integration into target project."
+    },
+    "inspiration_only": {
+      "label": "Inspiration Only",
+      "description": "Only use the design approach or pattern, do not copy code."
+    },
+    "license_review_required": {
+      "label": "License Review Required",
+      "description": "License must be reviewed by a human before any reuse."
+    },
+    "do_not_copy_code": {
+      "label": "Do Not Copy Code",
+      "description": "Do not copy source code under any circumstances (e.g. GPL/AGPL, no license, proprietary)."
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "asset_id": "settings-ui-config-validation-pattern",
+  "title": "Settings UI with Config Validation & Save-Reload Pattern",
+  "domain": "desktop_app",
+  "capability": "settings_ui",
+  "source_project": "xiaohuang",
+  "source_url": "E:/Projects/xiaohuang",
+  "source_path": "scripts/settings_ui.py",
+  "license": "MIT",
+  "reuse_level": "implementation_pattern",
+  "reuse_policy": "adapter_required",
+  "summary": "Pattern for building a local settings UI for desktop apps: TOML config file reading and writing with unknown field preservation, in-process validation before save, atomic file writes to prevent corruption, and hot reload notification so running services pick up changes without restart. The UI layer is separated from the config service layer, allowing the same config backend to serve both a GUI editor and CLI/API consumers.",
+  "why_reusable": "Every desktop tool, agent, or assistant eventually needs a settings panel. The pattern of TOML schema + validation + atomic save + hot reload generalizes to any config-driven desktop or server application. The separation of UI from config service means the same backend can power a settings window, a CLI `config set` command, or an API endpoint.",
+  "adapter_target": "Generic settings config service — adapter extracts the config read/validate/write/reload logic into a reusable `ConfigService` class that any UI or CLI can consume.",
+  "implementation_notes": [
+    "Use TOML for human-editable config; JSON schema for validation",
+    "Atomic write: write to .tmp file, validate, then rename over original",
+    "Preserve unknown/comment fields on read→modify→write cycle",
+    "Hot reload: watch file mtime or use a reload signal (e.g. internal event bus)",
+    "Separate config schema definition from UI layout definition",
+    "Validation errors should return field-level messages, not raw exceptions"
+  ],
+  "tests_required": [
+    "Unit test: config read with missing optional fields (defaults applied)",
+    "Unit test: config write preserves unknown fields",
+    "Unit test: atomic write does not corrupt on mid-write crash",
+    "Unit test: validation rejects invalid values with field-level errors",
+    "Integration test: save via UI → verify file content → trigger reload → verify service picks up change"
+  ],
+  "risks": [
+    "TOML has subtle type coercion rules; validate types explicitly after parse",
+    "Atomic rename may fail across filesystem boundaries; test on target OS",
+    "Hot reload can race with in-flight operations using old config; version the config or use a generation counter",
+    "Unknown field preservation adds complexity — decide whether it's worth it for the use case"
+  ],
+  "do_not_do": [
+    "Do not write config directly from UI without validation pass",
+    "Do not overwrite the config file in-place (use atomic tmp+rename)",
+    "Do not couple UI widget layout to config schema structure",
+    "Do not reload config mid-operation; defer to operation boundary"
+  ],
+  "language": "python",
+  "dependencies": ["tomli/tomllib (stdlib in 3.11+)", "jsonschema (optional, for schema validation)"],
+  "windows_compatibility": "full",
+  "packaging_impact": "Minimal — TOML parsing is stdlib in Python 3.11+. jsonschema adds ~200KB if used.",
+  "prompt_tags": [
+    "settings UI", "config editor", "config validation", "TOML config",
+    "atomic save", "hot reload", "field preservation", "desktop settings",
+    "设置界面", "配置编辑器", "配置校验", "热重载", "原子保存"
+  ],
+  "created_at": "2026-05-02",
+  "notes": "Derived from xiaohuang settings_ui.py and settings_config_file_service.py patterns. The reusable artifact is the config service pattern, not the specific UI layout."
+}
