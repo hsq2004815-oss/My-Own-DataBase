@@ -1,0 +1,52 @@
+{
+  "asset_id": "search-validation-test-harness",
+  "title": "Search Quality Validation Test Harness Pattern",
+  "domain": "agent_workflow",
+  "capability": "backend_api",
+  "source_project": "My-Own-DataBase",
+  "source_url": "E:/DataBase",
+  "source_path": "scripts/backend/validate_backend_search.py",
+  "license": "MIT",
+  "reuse_level": "extractable_module",
+  "reuse_policy": "adapter_required",
+  "summary": "A systematic search quality validation harness that runs test queries against a search index and scores results as pass/partial/fail based on expected file matches and source type coverage. Each test case defines a query, expected files, and must-include source types. The harness runs FTS5 first, falls back to multi-term LIKE for missing results, and reports per-query status with matched files and tags. Aggregate summary shows total/pass/partial/fail counts.",
+  "why_reusable": "Any search system needs quality regression testing. This harness pattern can be adapted to any search backend (Elasticsearch, PostgreSQL FTS, Meilisearch, etc.) by swapping the search function. The pass/partial/fail classification and expected-files validation logic is backend-agnostic.",
+  "adapter_target": "Generic search quality test suite — extract the validate_one + summary logic into a test framework that accepts a search function and test cases as input.",
+  "implementation_notes": [
+    "Test case format: query, language, intent, expected_files, must_include_source_types",
+    "Three-tier result: pass (files+types hit), partial (some hit or results exist), fail (no results)",
+    "FTS5 with bm25 ordering first; multi-term LIKE fallback fills missing results",
+    "Tokenization: regex word extraction, min length 2, stopword filtering (and/with/the/for)",
+    "Report includes per-query matched files, matched tags (top 40), and hit counts",
+    "Exit code reflects test result: 0 if no failures, 1 if any fail"
+  ],
+  "tests_required": [
+    "Unit test: pass classification when expected files and types are found",
+    "Unit test: partial classification when some but not all criteria met",
+    "Unit test: fail classification when no results returned",
+    "Integration test: run against known-good index, verify all queries pass",
+    "Integration test: run against empty index, verify all queries fail"
+  ],
+  "risks": [
+    "Test cases must be manually maintained and updated when content changes",
+    "Expected files are fragile — renames break tests",
+    "FTS5 tokenization differences between SQLite versions may affect results",
+    "Stopword list is English-only; CJK queries need different tokenization"
+  ],
+  "do_not_do": [
+    "Do not run validation against production index without a backup",
+    "Do not hardcode expected file paths without a maintenance plan",
+    "Do not skip the LIKE fallback — FTS5 alone may miss valid results"
+  ],
+  "language": "python",
+  "dependencies": ["sqlite3 (stdlib)", "json (stdlib)"],
+  "windows_compatibility": "full",
+  "packaging_impact": "Zero — pure Python stdlib",
+  "prompt_tags": [
+    "search validation", "test harness", "quality regression",
+    "FTS5", "search testing", "pass/fail classification",
+    "搜索验证", "测试工具", "质量回归"
+  ],
+  "created_at": "2026-05-02",
+  "notes": "Extracted from DataBase scripts/backend/validate_backend_search.py (188 lines). The pass/partial/fail classification and expected-files matching logic is backend-agnostic."
+}

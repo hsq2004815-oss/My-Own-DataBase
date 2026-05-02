@@ -1,0 +1,54 @@
+{
+  "asset_id": "unified-error-envelope-request-id",
+  "title": "Unified Error Envelope with Request ID Propagation Pattern",
+  "domain": "backend",
+  "capability": "error_handling",
+  "source_project": "My-Own-DataBase (backend curated rules)",
+  "source_url": "E:/DataBase/domains/backend",
+  "source_path": "rules/error-handling-and-logging-rules.md",
+  "license": "MIT",
+  "reuse_level": "extractable_module",
+  "reuse_policy": "direct_use_allowed",
+  "summary": "A standardized error handling pattern for HTTP APIs: every response (success or error) includes a request_id for log correlation. Error responses use a unified envelope with code (machine-readable), message (human-readable), and request_id fields. Business exceptions and system exceptions are handled separately — business errors return structured codes, system errors are caught by a global exception handler that logs the full traceback but returns a sanitized envelope. Sensitive fields (Authorization, Cookie, API key, database password, private key) are stripped from logs. Critical write operations record audit log entries with request_id.",
+  "why_reusable": "Every API service needs error handling. This pattern defines the minimum viable error infrastructure: unified envelope shape, request ID propagation, sanitized logging, and audit trail — applicable to FastAPI, Express, NestJS, Flask, or any HTTP framework.",
+  "adapter_target": "Any backend service — implement as middleware (FastAPI) or interceptor (Express/NestJS) that wraps all endpoints.",
+  "implementation_notes": [
+    "Error envelope shape: { error: { code, message, request_id, timestamp } }",
+    "Request ID: generate at entry point (UUID4), attach to request context, include in all logs and responses",
+    "Global exception handler: catch unhandled exceptions → log full traceback with request_id → return sanitized envelope",
+    "Business errors: raise typed exceptions (NotFoundError, ValidationError) that map to HTTP status codes and error codes",
+    "Log sanitization: strip Authorization header, Cookie header, API keys, passwords, private keys before writing",
+    "Audit log: record who, what, when, request_id for all write operations (POST/PUT/DELETE)"
+  ],
+  "tests_required": [
+    "Unit test: error envelope contains all required fields",
+    "Unit test: business error maps to correct HTTP status and error code",
+    "Unit test: global handler returns sanitized envelope, not stack trace",
+    "Unit test: log sanitization removes Authorization header",
+    "Integration test: request_id is consistent across logs and error response",
+    "Integration test: audit log records write operations with request_id"
+  ],
+  "risks": [
+    "Request ID middleware must be the first middleware in the chain — if it fails, no correlation is possible",
+    "Sanitization is pattern-based and may miss novel secret formats",
+    "Audit logging adds latency to write operations; use async logging or a queue for high-throughput services",
+    "Error code taxonomy must be stable — changing codes breaks client error handling"
+  ],
+  "do_not_do": [
+    "Do not return stack traces or internal error details to clients",
+    "Do not log Authorization headers, cookies, API keys, or passwords",
+    "Do not use different error shapes for different endpoints",
+    "Do not swallow exceptions and return HTTP 200 with an error field in the body"
+  ],
+  "language": "python",
+  "dependencies": ["none (uuid + logging, both stdlib)"],
+  "windows_compatibility": "full",
+  "packaging_impact": "Zero — pure Python stdlib",
+  "prompt_tags": [
+    "error handling", "error envelope", "request ID", "structured errors",
+    "exception handler", "log sanitization", "audit log",
+    "错误处理", "错误信封", "请求ID", "统一异常"
+  ],
+  "created_at": "2026-05-02",
+  "notes": "Derived from backend domain rules/error-handling-and-logging-rules.md. The pattern is framework-agnostic — describes the interface shape and conventions, not specific implementations."
+}

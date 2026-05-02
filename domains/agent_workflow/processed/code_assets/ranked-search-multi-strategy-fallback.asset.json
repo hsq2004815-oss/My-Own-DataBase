@@ -1,0 +1,56 @@
+{
+  "asset_id": "ranked-search-multi-strategy-fallback",
+  "title": "Ranked Search with Multi-Strategy Fallback Pattern (FTS5 → LIKE → Terms)",
+  "domain": "backend",
+  "capability": "backend_api",
+  "source_project": "My-Own-DataBase",
+  "source_url": "E:/DataBase",
+  "source_path": "backend_api/app/main.py",
+  "license": "MIT",
+  "reuse_level": "extractable_module",
+  "reuse_policy": "adapter_required",
+  "summary": "A robust search pattern that chains three strategies: FTS5 full-text search (fast, relevance-ranked) → single-pattern LIKE (for exact phrase match) → multi-term LIKE with OR clauses (for individual term matching). Results are deduplicated by chunk_id, scored using a configurable scoring function (section priority + evidence level + signal strength + term coverage + exact match bonuses), then ranked and truncated. The pattern includes a ranked merge algorithm that guarantees at least N results per query before filling remaining slots with best-scoring results across all queries, enforcing result diversity.",
+  "why_reusable": "Single-strategy search (FTS5-only or LIKE-only) fails on edge cases. The three-strategy chain with fallbacks handles special characters FTS5 can't parse, multi-word queries, and Chinese/English mixed content. The ranked merge with per-query floor is directly applicable to any multi-query search system.",
+  "adapter_target": "Generic search service — extract search_fts + search_like + search_like_terms + chunk_score + ranked_merge into a reusable SearchEngine class.",
+  "implementation_notes": [
+    "FTS5 first: MATCH query, catches well-formed terms; falls through on OperationalError",
+    "LIKE second: single %pattern% for the full normalized query",
+    "Multi-term LIKE third: one LIKE clause per term, OR-connected, for partial matches",
+    "Deduplication: dict keyed by chunk_id removes duplicates from combined FTS5+LIKE+terms results",
+    "Scoring: base score from query_index + section priority + evidence level + signal strength + term coverage",
+    "Exact match bonuses: record_id/chunk_id match (12pts), prompt_tags match (8pts), haystack term match (3pts)",
+    "Ranked merge: for each query, take floor N results → then fill remaining with best global scores"
+  ],
+  "tests_required": [
+    "Unit test: FTS5 returns results for valid query",
+    "Unit test: LIKE fallback works when FTS5 fails on special characters",
+    "Unit test: multi-term LIKE handles CJK characters",
+    "Unit test: deduplication removes repeated chunk_ids",
+    "Unit test: scoring reflects section priority and evidence level",
+    "Unit test: ranked merge preserves per-query floor",
+    "Integration test: combined strategies return results even when FTS5 is unavailable"
+  ],
+  "risks": [
+    "LIKE with %pattern% on large tables without FTS index can be very slow — must cap candidate limits",
+    "FTS5 MATCH syntax requires careful query construction to avoid syntax errors",
+    "Multi-term LIKE with many terms generates many OR clauses — SQLite has a 1000-parameter limit",
+    "Scoring weights are hand-tuned and may not generalize to other domains"
+  ],
+  "do_not_do": [
+    "Do not run LIKE without a LIMIT clause — it will scan the entire table",
+    "Do not pass raw user input to FTS5 MATCH without sanitization",
+    "Do not assume FTS5 is always available — always have a LIKE fallback",
+    "Do not skip deduplication when combining results from multiple strategies"
+  ],
+  "language": "python",
+  "dependencies": ["sqlite3 (stdlib)"],
+  "windows_compatibility": "full",
+  "packaging_impact": "Zero — pure Python stdlib",
+  "prompt_tags": [
+    "FTS5", "full-text search", "LIKE fallback", "search ranking",
+    "multi-strategy", "query expansion", "result diversity",
+    "全文搜索", "搜索排序", "多策略", "结果多样性"
+  ],
+  "created_at": "2026-05-02",
+  "notes": "Extracted from DataBase backend_api/app/main.py search functions and scoring logic. The pattern of FTS5→LIKE→terms with ranked merge is the core retrieval engine powering all domain searches."
+}

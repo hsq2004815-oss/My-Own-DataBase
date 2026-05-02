@@ -1,0 +1,52 @@
+{
+  "asset_id": "reference-to-chunk-pipeline",
+  "title": "Structured Reference to Retrieval Chunk Pipeline Pattern",
+  "domain": "agent_workflow",
+  "capability": "backend_api",
+  "source_project": "My-Own-DataBase",
+  "source_url": "E:/DataBase",
+  "source_path": "scripts/agent_workflow/make_chunks.py",
+  "license": "MIT",
+  "reuse_level": "extractable_module",
+  "reuse_policy": "adapter_required",
+  "summary": "A pipeline pattern for converting structured reference records (JSON) into retrieval-ready chunks for full-text search indexing. Each reference record is split into sections (overview, steps, API, prompt_contract, verification, failure_modes, handoff), each section becomes a chunk with a stable chunk_id (record_id-section), and the chunk content includes header metadata (record_id, type, agent targets, goal, evidence level, source URL) prepended to the section body for search context. A rough token estimator provides lightweight size metadata. All chunks are written both per-record and as a combined manifest.",
+  "why_reusable": "Any knowledge base or RAG system that ingests structured reference documents needs a chunking pipeline. The section-based splitting with metadata headers and token estimation is directly applicable to documentation sites, internal wikis, API reference docs, and curated knowledge bases.",
+  "adapter_target": "Generic content chunking pipeline — parameterize the section definitions, metadata header format, and output paths.",
+  "implementation_notes": [
+    "Each reference record is a JSON file with defined sections",
+    "Sections are defined as (section_key, title, body_parts) tuples — extensible per domain",
+    "Chunk content prepends metadata header (record_id, type, goal, evidence, source) for search context",
+    "Stable chunk_id format: {record_id}-{section} ensures predictable IDs across rebuilds",
+    "Rough token estimator: word count based on whitespace splitting — fast, not precise",
+    "Output: per-record chunk JSON + combined all_chunks manifest for index building"
+  ],
+  "tests_required": [
+    "Unit test: single record produces expected number of chunks",
+    "Unit test: chunk_id format is stable across rebuilds",
+    "Unit test: metadata header is included in chunk content",
+    "Unit test: empty sections are skipped (no empty chunks)",
+    "Integration test: all chunks from all records parse as valid JSON"
+  ],
+  "risks": [
+    "Section definitions are domain-specific and need adjustment for different content types",
+    "Token estimation is rough (word count) — not suitable for strict token budgets",
+    "Chunk content size is unbounded — very long sections produce very large chunks",
+    "Metadata header duplication across chunks adds search noise for common terms"
+  ],
+  "do_not_do": [
+    "Do not create chunks for empty sections — they waste index space",
+    "Do not rely on word-count tokens for LLM context budgeting — use a real tokenizer",
+    "Do not change chunk_id format after deploying the search system — it breaks references"
+  ],
+  "language": "python",
+  "dependencies": ["json (stdlib)", "pathlib (stdlib)"],
+  "windows_compatibility": "full",
+  "packaging_impact": "Zero — pure Python stdlib",
+  "prompt_tags": [
+    "chunking", "reference pipeline", "content processing",
+    "knowledge base", "RAG ingestion", "search index preparation",
+    "文档分块", "知识库", "内容管道"
+  ],
+  "created_at": "2026-05-02",
+  "notes": "Extracted from DataBase scripts/agent_workflow/make_chunks.py (97 lines). The pattern generalizes to any structured-document-to-chunks pipeline."
+}

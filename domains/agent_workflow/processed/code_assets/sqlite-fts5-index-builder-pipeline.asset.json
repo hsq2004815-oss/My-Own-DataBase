@@ -1,0 +1,56 @@
+{
+  "asset_id": "sqlite-fts5-index-builder-pipeline",
+  "title": "SQLite/FTS5 Index Builder with Validation Pipeline Pattern",
+  "domain": "backend",
+  "capability": "backend_api",
+  "source_project": "My-Own-DataBase",
+  "source_url": "E:/DataBase",
+  "source_path": "scripts/backend/build_backend_index.py",
+  "license": "MIT",
+  "reuse_level": "extractable_module",
+  "reuse_policy": "adapter_required",
+  "summary": "A complete SQLite/FTS5 index builder pipeline: load JSONL chunks → validate (required fields, enums, secret detection, source-code density check, duplicate IDs) → optionally backup existing DB → create schema with FTS5 virtual table → upsert chunks in transaction → write structured report. The pipeline separates validation (--dry-run) from writing (--write), enforcing a two-phase workflow that catches errors before touching the production database. Secret detection uses regex patterns with an allow-list for placeholder/example context.",
+  "why_reusable": "Any project that builds searchable knowledge bases from structured content needs a reliable index builder. The validation-first, dry-run-before-write pattern prevents corrupt indexes. The secret/source-code detection is directly reusable for any content ingestion pipeline.",
+  "adapter_target": "Generic content indexing pipeline — extract the load→validate→backup→write→report pattern into a reusable pipeline class with configurable validators.",
+  "implementation_notes": [
+    "Two-phase workflow: --dry-run validates and reports without touching the DB; --write requires --db and --backup flags",
+    "Validation checks: required fields, enum values, empty content, secret-like patterns, source-code density > 12 lines as content",
+    "Secret detection uses regex for common patterns (AWS keys, OpenAI keys, GitHub tokens, private keys) with an allow-list for placeholder text",
+    "Backup is mandatory before write — creates timestamped .bak file",
+    "Upsert uses INSERT ON CONFLICT DO UPDATE for idempotent rebuilds",
+    "FTS5 content table is cleaned and re-populated per chunk on upsert",
+    "Schema creation is idempotent (CREATE TABLE IF NOT EXISTS)"
+  ],
+  "tests_required": [
+    "Unit test: chunk validation catches missing required fields",
+    "Unit test: secret detection flags real secrets but allows placeholders",
+    "Unit test: source-code density check rejects code-heavy chunks",
+    "Unit test: duplicate chunk_id detection",
+    "Integration test: --dry-run produces valid report without writing",
+    "Integration test: --write with --backup creates DB and backup file",
+    "Integration test: --write without --backup fails with error"
+  ],
+  "risks": [
+    "Secret detection regex is pattern-based and may miss novel secret formats",
+    "Source-code density threshold (12 lines) may need tuning per domain",
+    "FTS5 may not be available on all SQLite builds; fallback to LIKE-only must be handled",
+    "Backup file naming uses timestamp — concurrent writes within same second may collide"
+  ],
+  "do_not_do": [
+    "Do not skip --dry-run before --write on production data",
+    "Do not write without backup — the --write flag enforces this",
+    "Do not rely solely on regex for secret detection in security-critical pipelines",
+    "Do not embed the index builder in the API server — it's a build-time tool, not runtime"
+  ],
+  "language": "python",
+  "dependencies": ["sqlite3 (stdlib)", "json (stdlib)"],
+  "windows_compatibility": "full",
+  "packaging_impact": "Zero — pure Python stdlib. FTS5 is included in standard Python SQLite builds on Windows.",
+  "prompt_tags": [
+    "SQLite", "FTS5", "index builder", "search index", "validation pipeline",
+    "secret detection", "dry run", "content ingestion", "knowledge base",
+    "索引构建", "全文索引", "校验管道", "秘密检测"
+  ],
+  "created_at": "2026-05-02",
+  "notes": "Extracted from DataBase scripts/backend/build_backend_index.py (356 lines). The secret detection regex and source-code density check are directly reusable in any content ingestion pipeline."
+}

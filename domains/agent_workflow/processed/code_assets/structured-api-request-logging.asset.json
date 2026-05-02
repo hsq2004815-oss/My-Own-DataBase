@@ -1,0 +1,53 @@
+{
+  "asset_id": "structured-api-request-logging",
+  "title": "Structured JSONL API Request Logging Middleware Pattern",
+  "domain": "backend",
+  "capability": "logging",
+  "source_project": "My-Own-DataBase",
+  "source_url": "E:/DataBase",
+  "source_path": "backend_api/app/main.py",
+  "license": "MIT",
+  "reuse_level": "extractable_module",
+  "reuse_policy": "direct_use_allowed",
+  "summary": "A minimal, zero-dependency structured logging pattern for API services. Each API endpoint call writes a JSONL record with timestamp, method, endpoint, status, params, and result summary (not full response body). The logger creates its directory on first write, tolerates OS errors (disk full, permission denied), and uses compact JSON separators to minimize log size. The pattern avoids logging secrets by design — it only logs params (query strings) and result IDs/counts, never full chunk content or request bodies.",
+  "why_reusable": "Every API service needs request logging. This pattern is ~15 lines of Python with no dependencies, uses the standard library only, handles errors gracefully, and produces machine-parseable JSONL that can be analyzed with jq, grep, or any log tool.",
+  "adapter_target": "Any FastAPI or Python web service — copy the log_api_request function and call it at each endpoint's return point.",
+  "implementation_notes": [
+    "JSONL format: one JSON object per line, compact separators (no spaces, no newlines in values)",
+    "Automatic directory creation on first write (mkdir parents=True, exist_ok=True)",
+    "OSError-tolerant: if disk is full or permission denied, the API continues serving (log is best-effort)",
+    "Params and result are summarized — chunk_ids, counts, query strings — not full content",
+    "Timestamp in ISO 8601 UTC for cross-timezone consistency",
+    "Can be extended with request duration, client IP, user agent by adding fields to the event dict"
+  ],
+  "tests_required": [
+    "Unit test: log entry has all required fields",
+    "Unit test: log directory is created on first write",
+    "Unit test: OSError does not propagate (log is best-effort)",
+    "Unit test: JSONL output is valid JSON-per-line",
+    "Integration test: multiple concurrent writes do not corrupt the log file"
+  ],
+  "risks": [
+    "JSONL append is not atomic — concurrent writes from multiple workers may interleave lines",
+    "No log rotation — file grows indefinitely; need external rotation or periodic cleanup",
+    "No sensitive data filtering beyond what the caller chooses not to pass",
+    "OSError pass means silent log loss — monitor for missing log entries in production"
+  ],
+  "do_not_do": [
+    "Do not log full request bodies — they may contain secrets, PII, or large binary data",
+    "Do not log Authorization headers, cookies, or API keys",
+    "Do not let log failure block API response — log is always best-effort",
+    "Do not use without log rotation in production"
+  ],
+  "language": "python",
+  "dependencies": ["none (json + pathlib + datetime, all stdlib)"],
+  "windows_compatibility": "full",
+  "packaging_impact": "Zero — pure Python stdlib",
+  "prompt_tags": [
+    "API logging", "JSONL", "structured logging", "request logging",
+    "middleware", "audit log", "best-effort logging",
+    "API日志", "结构化日志", "请求日志", "JSON行"
+  ],
+  "created_at": "2026-05-02",
+  "notes": "Extracted from DataBase backend_api/app/main.py log_api_request(). ~15 lines, zero dependencies, directly copyable."
+}

@@ -1,0 +1,55 @@
+{
+  "asset_id": "multi-domain-knowledge-retrieval-api",
+  "title": "Multi-Domain Knowledge Retrieval API with SQLite FTS5 Pattern",
+  "domain": "backend",
+  "capability": "backend_api",
+  "source_project": "My-Own-DataBase",
+  "source_url": "E:/DataBase",
+  "source_path": "backend_api/app/main.py",
+  "license": "MIT",
+  "reuse_level": "extractable_module",
+  "reuse_policy": "adapter_required",
+  "summary": "A FastAPI-based multi-domain knowledge retrieval service pattern that unifies SQLite FTS5 full-text search across multiple knowledge domains (UI design, agent workflow, automation, backend engineering, UI assets). Core pattern: each domain has its own SQLite DB with FTS5 index, chunk result models, ranked merge logic, and a unified /brief endpoint that derives queries from natural language task descriptions using rule-based keyword matching. The architecture cleanly separates domain-specific models, search strategies, and merge/ranking logic while sharing a common request logging middleware and health check endpoint.",
+  "why_reusable": "Any project that needs to serve multiple knowledge domains through a single API can reuse this architecture. The pattern of domain-per-DB with FTS5, shared ranking infrastructure, and rule-based query derivation generalizes to documentation search, internal knowledge bases, RAG backends, and AI agent tool APIs.",
+  "adapter_target": "Generic knowledge retrieval service — extract the core infrastructure (connect_db, search FTS/LIKE/terms, ranked merge, query derivation) into a reusable library or service template.",
+  "implementation_notes": [
+    "Each domain gets its own SQLite DB path, connect function, and Pydantic chunk model",
+    "FTS5 with content table JOIN is the primary search method; LIKE and multi-term LIKE are fallbacks",
+    "Ranked merge: per-query floor guarantees at least N results from each derived query before best-score fill",
+    "Query derivation: tuple[triggers] → query string rules with defaults when no triggers match",
+    "API request logging: structured JSONL logging to file with error tolerance (OSError pass)",
+    "Health endpoint reports DB existence, reference counts, chunk counts per domain",
+    "POST /brief accepts typed request body; GET /brief uses query params — both share build_brief_response()"
+  ],
+  "tests_required": [
+    "Unit test: query derivation from task text with various trigger combinations",
+    "Unit test: ranked merge preserves per-query floor and diversity",
+    "Unit test: chunk score calculation with different section/evidence/priority weights",
+    "Integration test: FTS5 search returns expected chunks for known queries",
+    "Integration test: /health reports correct counts when DBs exist and when they don't",
+    "Integration test: /brief returns balanced results across domains"
+  ],
+  "risks": [
+    "SQLite FTS5 has limited CJK (Chinese/Japanese/Korean) tokenization — may need ICU tokenizer or external segmentation",
+    "Multiple LIKE searches on large DBs can be slow; candidate limit must be capped",
+    "Query derivation rules are hand-maintained and may miss new task types",
+    "Domain DB paths are hardcoded at module level; multi-tenant deployments need path injection"
+  ],
+  "do_not_do": [
+    "Do not use FTS5 without a LIKE fallback — FTS5 can fail on special characters",
+    "Do not run searches without candidate limits — unbounded LIKE on large DBs will timeout",
+    "Do not hardcode ROOT path resolution; use config or env vars for production deployment",
+    "Do not skip the per-query floor in ranked merge — it prevents one query from dominating results"
+  ],
+  "language": "python",
+  "dependencies": ["fastapi", "pydantic", "sqlite3 (stdlib)"],
+  "windows_compatibility": "full",
+  "packaging_impact": "FastAPI + uvicorn for deployment; SQLite is embedded, no external DB server needed",
+  "prompt_tags": [
+    "FastAPI", "SQLite FTS5", "knowledge retrieval", "multi-domain",
+    "ranked search", "query derivation", "RAG backend", "agent API",
+    "知识检索", "全文搜索", "多领域", "排序搜索"
+  ],
+  "created_at": "2026-05-02",
+  "notes": "Extracted from DataBase backend_api/app/main.py (1778 lines). The reusable pattern is the architecture — domain-per-DB, shared ranking, query derivation — not the specific domains or queries."
+}

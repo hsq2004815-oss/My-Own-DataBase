@@ -1,0 +1,52 @@
+{
+  "asset_id": "agent-friendly-cli-bridge",
+  "title": "Agent-Friendly CLI Bridge Pattern",
+  "domain": "agent_workflow",
+  "capability": "backend_api",
+  "source_project": "My-Own-DataBase",
+  "source_url": "E:/DataBase",
+  "source_path": "scripts/brief.py",
+  "license": "MIT",
+  "reuse_level": "implementation_pattern",
+  "reuse_policy": "adapter_required",
+  "summary": "A pattern for building CLI tools designed to be called by AI agents rather than humans. Key design decisions: (1) use stdlib only (urllib, json, argparse) for zero-install portability, (2) call /health before /brief to validate API availability with a clear error message including the exact startup command, (3) output structured text with labeled sections that agents can parse, (4) provide --json flag for machine-readable output, (5) include motion asset bootstrap as an automatic secondary search for high-end UI tasks, (6) handle encoding for Windows consoles (reconfigure stdout/stderr to UTF-8).",
+  "why_reusable": "AI agents need CLI tools that are reliable, self-diagnosing, and produce parseable output. This pattern of health-check-first, clear error messages with fix instructions, dual human/JSON output, and stdlib-only portability generalizes to any API-backed CLI tool meant for agent consumption.",
+  "adapter_target": "Generic agent CLI template — extract the health-check-first pattern, error message format, and output structure into a reusable CLI builder.",
+  "implementation_notes": [
+    "Health-check-first: call /health before the main endpoint; if unreachable, print startup command and exit 2",
+    "Stdlib-only: urllib.request, json, argparse — no pip install needed for agents to use",
+    "Dual output: human-readable by default (labeled sections, bullet points), --json for machine parsing",
+    "Encoding: reconfigure stdout/stderr to UTF-8 on Windows to handle CJK characters",
+    "Motion asset bootstrap: automatically run additional /assets/search queries for high-end UI tasks",
+    "Error message tells the agent exactly how to start the API — actionable, not just error description"
+  ],
+  "tests_required": [
+    "Unit test: health check failure returns exit code 2 with startup command",
+    "Unit test: --json flag outputs valid JSON",
+    "Unit test: motion asset bootstrap triggers on matching task terms",
+    "Integration test: successful brief call prints all expected sections",
+    "Integration test: API unreachable → clear error, no silent fallback"
+  ],
+  "risks": [
+    "Stdlib urllib is less ergonomic than requests/httpx — error handling is more verbose",
+    "Windows console encoding (GBK) may still cause issues despite UTF-8 reconfiguration",
+    "Argument defaults may drift from API defaults if not kept in sync",
+    "Motion asset bootstrap adds latency (9 extra API calls) — should be opt-in for non-UI tasks"
+  ],
+  "do_not_do": [
+    "Do not silently fall back to GitHub or file reading when the API is unreachable",
+    "Do not require pip install for the CLI — agents may not have permission",
+    "Do not print raw stack traces to agents — format errors as actionable messages"
+  ],
+  "language": "python",
+  "dependencies": ["none (stdlib only: urllib, json, argparse, textwrap, sys)"],
+  "windows_compatibility": "full",
+  "packaging_impact": "Zero — single-file script, no dependencies",
+  "prompt_tags": [
+    "CLI", "agent tool", "API bridge", "health check",
+    "agent-friendly", "zero-dependency", "stdin/stdout",
+    "命令行", "智能体工具", "API桥接"
+  ],
+  "created_at": "2026-05-02",
+  "notes": "Extracted from DataBase scripts/brief.py (343 lines). The health-check-first, dual output, error-with-fix-instructions pattern is the reusable part."
+}

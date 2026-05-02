@@ -1,0 +1,52 @@
+{
+  "asset_id": "query-derivation-engine",
+  "title": "Rule-Based Query Derivation Engine Pattern",
+  "domain": "agent_workflow",
+  "capability": "llm_provider_router",
+  "source_project": "My-Own-DataBase",
+  "source_url": "E:/DataBase",
+  "source_path": "backend_api/app/main.py",
+  "license": "MIT",
+  "reuse_level": "extractable_module",
+  "reuse_policy": "adapter_required",
+  "summary": "A lightweight, rule-based natural language task → search query derivation engine. Uses trigger term tuples mapped to query strings, with a synonym dictionary for Chinese/English term normalization. When no triggers match, falls back to configurable defaults. Supports multi-domain routing: different rule sets for UI, workflow, automation, backend, and asset queries, each independently derived from the same task text. The engine is pure string matching (no ML dependency), making it fast, deterministic, and easy to debug.",
+  "why_reusable": "Any search or routing system that needs to derive structured queries from free-text task descriptions can use this pattern. It's particularly useful for AI agent tools, RAG systems, internal search engines, and CLI tools that accept natural language input.",
+  "adapter_target": "Standalone QueryDerivationEngine class — takes a rule set and task text, returns derived queries. Can be dropped into any Python project needing NL→query routing.",
+  "implementation_notes": [
+    "Rule format: list of (tuple_of_trigger_terms, query_string) pairs",
+    "Trigger matching is case-insensitive substring match on normalized task text",
+    "Synonym dictionary maps Chinese terms to English query terms before rule matching",
+    "Deduplication preserves insertion order; output is capped (default 5 queries)",
+    "Each domain has independent rules and defaults — domain routing is based on task keyword presence",
+    "Query normalization: strip → lowercase → synonym lookup → return"
+  ],
+  "tests_required": [
+    "Unit test: single trigger match returns expected query",
+    "Unit test: multiple triggers produce multiple queries without duplicates",
+    "Unit test: synonym normalization before rule matching",
+    "Unit test: defaults applied when no triggers match",
+    "Unit test: query cap enforcement"
+  ],
+  "risks": [
+    "Hand-maintained trigger lists drift over time and miss new terminology",
+    "Synonym dictionary must be kept in sync with both Chinese and English vocabularies",
+    "Case-insensitive substring matching can produce false positives on short terms",
+    "Not suitable for ambiguous queries that need semantic understanding"
+  ],
+  "do_not_do": [
+    "Do not use for tasks requiring semantic similarity — this is keyword-based, not embedding-based",
+    "Do not let trigger lists grow unbounded — they become unmaintainable",
+    "Do not skip synonym normalization — Chinese/English mismatches are the most common failure mode"
+  ],
+  "language": "python",
+  "dependencies": ["none (stdlib only)"],
+  "windows_compatibility": "full",
+  "packaging_impact": "Zero — pure Python, no dependencies",
+  "prompt_tags": [
+    "query derivation", "natural language", "rule engine", "keyword matching",
+    "search routing", "synonym normalization", "task routing",
+    "查询推导", "自然语言", "规则引擎", "关键词匹配"
+  ],
+  "created_at": "2026-05-02",
+  "notes": "Extracted from DataBase backend_api/app/main.py derive_queries() and related functions. The engine is ~40 lines of pure Python with no dependencies."
+}

@@ -1,0 +1,54 @@
+{
+  "asset_id": "sse-streaming-response-pattern",
+  "title": "SSE Streaming Response Pattern for LLM/AI Backends",
+  "domain": "backend",
+  "capability": "backend_api",
+  "source_project": "My-Own-DataBase (backend curated rules)",
+  "source_url": "E:/DataBase/domains/backend",
+  "source_path": "wiki/patterns/sse-streaming-response-pattern.md",
+  "license": "MIT",
+  "reuse_level": "implementation_pattern",
+  "reuse_policy": "adapter_required",
+  "summary": "A pattern for reliably streaming LLM/AI responses to clients using Server-Sent Events (SSE). The data flow is: client connects to SSE endpoint → server creates an async generator that yields event chunks → client receives typed events (data, error, done) → server handles disconnection by cancelling the generator. Key requirements: heartbeat or timeout to detect dead connections, cancellation handling to stop resource consumption on disconnect, error events with structured error data, and client compatibility testing across browsers and HTTP clients.",
+  "why_reusable": "Every AI/LLM backend that streams responses needs this pattern. The async generator + typed events + heartbeat + cancellation handling pattern works across FastAPI, Express, NestJS, and any framework with async/streaming support.",
+  "adapter_target": "Any AI backend service — implement as an async generator endpoint with SSE event typing.",
+  "implementation_notes": [
+    "Use async generator (Python) or ReadableStream (Node) as the data source",
+    "Event types: 'data' for content chunks, 'error' for structured errors, 'done' for stream completion",
+    "Heartbeat: send a comment line (': heartbeat') or empty event every N seconds to keep the connection alive",
+    "Cancellation: catch client disconnect (asyncio.CancelledError / req.on('close')) and stop the generator",
+    "Error events should include error code and message, matching the API's unified error envelope",
+    "Client compatibility: test with EventSource (browser), fetch with ReadableStream, and curl"
+  ],
+  "tests_required": [
+    "Unit test: async generator yields correctly typed events",
+    "Unit test: error event format matches unified error envelope",
+    "Unit test: generator stops on cancellation signal",
+    "Integration test: EventSource client receives all events",
+    "Integration test: client disconnect stops server-side generation",
+    "Integration test: heartbeat prevents proxy timeout"
+  ],
+  "risks": [
+    "SSE is unidirectional — client cannot send data mid-stream; use WebSocket if bidirectional is needed",
+    "Proxy servers (nginx, Cloudflare) may buffer responses unless properly configured",
+    "Connection leaks: if cancellation is not handled, generators continue consuming memory/GPU",
+    "EventSource API has no custom headers — authentication must use cookies or query params"
+  ],
+  "do_not_do": [
+    "Do not concatenate strings to build SSE — use a structured event builder",
+    "Do not leave generators running after client disconnect",
+    "Do not send error details that expose internal state",
+    "Do not forget to test with real proxy configurations (nginx, CDN)"
+  ],
+  "language": "python",
+  "dependencies": ["none (asyncio + Starlette/FastAPI streaming, or native fetch/ReadableStream in Node)"],
+  "windows_compatibility": "full",
+  "packaging_impact": "Minimal — async generator support is built into FastAPI/Starlette",
+  "prompt_tags": [
+    "SSE", "streaming", "server-sent events", "async generator",
+    "LLM streaming", "AI backend", "real-time", "cancellation",
+    "流式输出", "服务端推送", "异步生成器", "大模型流式"
+  ],
+  "created_at": "2026-05-02",
+  "notes": "Derived from backend domain wiki/patterns/sse-streaming-response-pattern.md. The pattern describes the interface and control flow, not a specific implementation."
+}
