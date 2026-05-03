@@ -51,7 +51,16 @@ If the API is unavailable, read:
 E:\DataBase\domains\backend\README.md
 ```
 
-Then follow that README to the relevant `rules/`, `wiki/`, `references/`, processed retrieval chunks, or processed GitHub project metadata/chunks. Do not read `domains/backend/raw/github_projects` for normal generation tasks, and do not run projects, install dependencies, build indexes, or modify `runtime/db/sqlite`.
+Then follow that README to the relevant curated files:
+
+- `rules/`
+- `wiki/`
+- `references/`
+- processed retrieval chunks
+- processed GitHub project metadata/chunks
+
+Do not read `domains/backend/raw/github_projects` for normal generation tasks.
+Do not run projects, install dependencies, build indexes, or modify `runtime/db/sqlite`.
 
 For general coding or agent workflow tasks:
 
@@ -77,7 +86,12 @@ motion reference
 hero background motion
 ```
 
-Final output must list retrieved `asset_id` / `chunk_id`, `usage_policy`, whether each asset was directly used or only used as inspiration, and the implementation method: CSS, SVG, Canvas, Lottie, or video.
+Final output must list:
+
+- retrieved `asset_id` / `chunk_id`
+- `usage_policy`
+- whether each asset was directly used or only used as inspiration
+- implementation method: CSS, SVG, Canvas, Lottie, or video
 
 If no suitable `direct_use` animation asset is found, say: "未检索到可用 direct_use 动画素材，因此使用 CSS/SVG/Canvas 复刻动效。"
 
@@ -124,6 +138,12 @@ Include:
 - which returned guidance affected the implementation
 
 Do not modify `E:\DataBase` unless the user explicitly asks you to maintain the database.
+
+## Task Playbooks
+
+- [Premium Frontend Page Playbook](domains/ui_design/playbooks/premium-frontend-page-playbook.md)
+- [Backend API Design Playbook](domains/backend/playbooks/backend-api-design-playbook.md)
+- [Raw-to-Rules Distillation Playbook](domains/agent_workflow/playbooks/raw-to-rules-distillation-playbook.md)
 
 ## Direct HTTP Form
 
@@ -183,6 +203,11 @@ General coding / agent workflow:
 }
 ```
 
-`asset_suggestions` are not automatically direct-use assets. Follow `usage_policy`: `inspiration_only` means borrow the visual idea only; `review_required` means inspect the license before using files directly.
+`asset_suggestions` are not automatically direct-use assets.
+
+Follow `usage_policy`:
+
+- `inspiration_only`: borrow the visual idea only
+- `review_required`: inspect the license before using files directly
 
 Before doing the task, briefly state that local database context was retrieved. After the task, briefly state which database areas influenced the result.

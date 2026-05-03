@@ -1,8 +1,17 @@
 # Voice Assistant AGENT_USAGE
 
+## Purpose
+
 Use this domain for XiaoHuang voice assistant context, wake word detection, STT/TTS engine selection, desktop voice pipeline design, and Windows voice assistant planning.
 
-## Agent Read Order
+## When to Use
+
+- XiaoHuang voice assistant planning
+- Wake word, KWS, STT, TTS, VAD, or command trigger design
+- Windows desktop voice assistant architecture
+- Voice pipeline tradeoff review
+
+## Read First
 
 1. [Voice Assistant README](README.md)
 2. [Voice Assistant wiki index](wiki/index.md)
@@ -21,6 +30,13 @@ Raw repos are only reference material. Prefer the distilled wiki notes before re
 - TTS quick validation: TTS engine notes
 - Windows desktop voice assistant: XiaoHuang project context and pipeline notes
 
-## Output Requirement
+## Do Not Use by Default
 
-Report which voice pipeline notes, engine comparisons, and raw-project constraints affected the result.
+- raw repo source before distilled wiki notes
+- model files or licenses as reusable assets without review
+
+## Output Requirements
+
+- Report which voice pipeline notes affected the result.
+- Report engine comparisons and raw-project constraints.
+- State uncertainty around license, model availability, and Windows integration.

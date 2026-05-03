@@ -25,3 +25,7 @@ Design rules, component patterns, visual style. 45 references / 270 chunks.
 
 - [UI Design AGENT_USAGE](../AGENT_USAGE.md)
 - [UI Assets AGENT_USAGE](../../ui_assets/AGENT_USAGE.md)
+
+## Task Playbooks
+
+- [Premium Frontend Page Playbook](../playbooks/premium-frontend-page-playbook.md)

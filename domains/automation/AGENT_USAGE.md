@@ -1,8 +1,17 @@
 # Automation AGENT_USAGE
 
+## Purpose
+
 Use this domain for browser automation, Playwright, Chrome CDP, persistent browser sessions, upload flows, screenshots, iframe/modal handling, selector strategy, and browser QA.
 
-## Agent Read Order
+## When to Use
+
+- Browser automation or RPA tasks
+- Upload, iframe, modal, selector, or CDP debugging
+- Persistent logged-in browser sessions
+- Screenshot or browser QA verification
+
+## Read First
 
 1. [Automation wiki index](wiki/index.md)
 2. [Persistent Browser Daemon for Agent QA](wiki/topics/persistent-browser-daemon-for-agent-qa.md)
@@ -15,6 +24,13 @@ Use this domain for browser automation, Playwright, Chrome CDP, persistent brows
 - Need visual or interaction verification: browser QA pattern
 - Need upload/iframe/modal troubleshooting: automation domain first, then task-specific code
 
-## Output Requirement
+## Do Not Use by Default
 
-Report selectors, browser/session assumptions, verification performed, and any remaining manual steps.
+- automation context for ordinary UI design tasks
+- raw browser state assumptions without verification
+
+## Output Requirements
+
+- Report selectors.
+- Report browser/session assumptions.
+- Report verification performed and any remaining manual steps.

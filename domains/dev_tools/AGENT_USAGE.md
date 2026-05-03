@@ -1,8 +1,17 @@
 # Dev Tools AGENT_USAGE
 
+## Purpose
+
 Use this domain for GitHub repository import, download acceleration, proxy fallback decisions, and agent-safe project intake.
 
-## Agent Read Order
+## When to Use
+
+- Importing a GitHub repository into the database
+- Choosing download acceleration or fallback methods
+- Recording project intake provenance
+- Evaluating whether raw material should be distilled later
+
+## Read First
 
 1. [GitHub Import Rules](rules/github_import_rules.md)
 2. [Dev Tools wiki index](wiki/index.md)
@@ -16,6 +25,14 @@ Use this domain for GitHub repository import, download acceleration, proxy fallb
 - Release/raw file download: use proxy fallbacks only after official source fails
 - Private repo: use official GitHub/VPN/self-hosted route, not public proxies
 
-## Output Requirement
+## Do Not Use by Default
 
-Record URL, method used, fallback sequence, local path, files read, and `raw source modified: false`.
+- public proxies for private or signed URLs
+- full history clone unless needed
+- raw source as reusable rules without distillation
+
+## Output Requirements
+
+- Record URL, method used, fallback sequence, local path, and files read.
+- State `raw source modified: false`.
+- Record security or license concerns.

@@ -25,3 +25,7 @@ AI Agent 软件工程方法论 — 从 `garrytan/gstack` (MIT) 提炼。
 - [[snippets/query-derivation-engine-interface|Query Derivation Engine]]
 - [[adapters/adapt-knowledge-retrieval-to-new-domain|Adapt Knowledge Retrieval to New Domain]]
 - [[adapters/adapt-launch-control-to-desktop-assistant|Adapt Launch Control to Desktop Assistant]]
+
+## Task Playbooks
+
+- [Raw-to-Rules Distillation Playbook](../playbooks/raw-to-rules-distillation-playbook.md)

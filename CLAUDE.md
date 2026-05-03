@@ -8,13 +8,14 @@ This repository is a local AI second-brain knowledge base for engineering tasks.
 
 Do not read the whole repository for ordinary tasks. Use the local API and documented domain entry files first.
 
-Start here:
+Raw third-party repositories are source material only. Do not use `raw/` as default task context.
+
+## Start Here
+
 - [Repository README](README.md)
 - [Root AGENT_USAGE](AGENT_USAGE.md)
 - [Root AGENT rules](AGENT.md)
 - [Global wiki index](wiki/index.md)
-
-Raw third-party repositories are source material only. Do not use `raw/` as default task context.
 
 ## Task Routing
 
@@ -25,8 +26,15 @@ Read:
 - [UI Design wiki index](domains/ui_design/wiki/index.md)
 - [UI Design topic index](domains/ui_design/wiki/topics/index.md)
 - [UI Assets AGENT_USAGE](domains/ui_assets/AGENT_USAGE.md)
+- [Premium Frontend Page Playbook](domains/ui_design/playbooks/premium-frontend-page-playbook.md)
 
-Use assets only according to metadata `usage_policy`.
+Use:
+- Premium UI rules before brand flavor references
+- UI asset metadata only according to `usage_policy`
+
+Avoid:
+- Reading `domains/ui_design/raw/` by default
+- Treating unknown assets as direct-use files
 
 ### Backend / API / Database / Auth / Deployment
 
@@ -37,8 +45,15 @@ Read:
 - [Backend patterns index](domains/backend/wiki/patterns/index.md)
 - [Backend checklists index](domains/backend/wiki/checklists/index.md)
 - [Backend templates index](domains/backend/wiki/templates/index.md)
+- [Backend API Design Playbook](domains/backend/playbooks/backend-api-design-playbook.md)
 
-Prefer `/brief` or `/backend/search` before opening individual files.
+Use:
+- `/brief` or `/backend/search` before opening individual files
+- Rules, patterns, checklists, and templates as separate layers
+
+Avoid:
+- Reading backend raw project source as default guidance
+- Designing APIs without auth, error, validation, and test assumptions
 
 ### Browser Automation / RPA / Upload / QA
 
@@ -55,6 +70,7 @@ Read:
 - [Agent Workflow wiki index](domains/agent_workflow/wiki/index.md)
 - [Code Assets Global Index](domains/agent_workflow/wiki/indexes/code-assets-global-index.md)
 - [Code Asset Reuse Rules](domains/agent_workflow/rules/code-asset-reuse-rules.md)
+- [Raw-to-Rules Distillation Playbook](domains/agent_workflow/playbooks/raw-to-rules-distillation-playbook.md)
 
 ### Dev Tools / GitHub Import
 

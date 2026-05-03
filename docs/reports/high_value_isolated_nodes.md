@@ -26,7 +26,7 @@ This report lists high-value isolated or weak Markdown nodes that should be conn
 | `domains/backend/rules/backend-security-checklist.md` | 0 | 0 | backend | Security gate | backend rules/checklists indexes | Yes via index |
 | `domains/backend/rules/github-backend-project-selection-rules.md` | 0 | 0 | backend | Raw project evaluation without copying | backend rules/topics indexes | Yes via index |
 | `domains/ui_design/wiki/topics/premium-ui-execution-quality-rules.md` | 0 | 0 | ui_design | Premium UI execution self-check | UI AGENT_USAGE, topics index | Yes |
-| `domains/ui_design/wiki/topics/premium-web-ui-initial-aesthetic-rules.md` | 0 | 0 | ui_design | Default premium web aesthetic layer | UI AGENT_USAGE, topics index | Yes via index |
+| `domains/ui_design/wiki/topics/premium-web-ui-initial-aesthetic-rules.md` | 0 | 0 | ui_design | Default premium web aesthetic layer | UI topics index | Yes via index |
 | `domains/ui_design/wiki/topics/premium-typography-and-layout-rules.md` | 0 | 0 | ui_design | Typography/layout quality rules | UI AGENT_USAGE, topics index | Yes via index |
 | `domains/ui_design/wiki/topics/motion-interaction-premium-rules.md` | 0 | 0 | ui_design | Motion/interaction rules | UI AGENT_USAGE, UI assets entry | Yes via index |
 | `domains/ui_design/wiki/topics/liquid-glass-design-system.md` | 0 | 0 | ui_design | Material system rule | UI AGENT_USAGE, topics index | Yes via index |
@@ -37,8 +37,8 @@ This report lists high-value isolated or weak Markdown nodes that should be conn
 | `domains/ui_design/wiki/topics/ui-agent-starter-prompt.md` | 0 | 0 | ui_design | Agent-facing UI starter prompt | UI AGENT_USAGE, topics index | Yes via index |
 | `domains/agent_workflow/README.md` | 0 | 0 | agent_workflow | Domain entry | agent workflow AGENT_USAGE | Yes |
 | `domains/agent_workflow/rules/code-asset-reuse-rules.md` | 0 | 0 | agent_workflow | Code reuse safety and lookup order | agent workflow AGENT_USAGE, code asset index | Yes |
-| `domains/agent_workflow/wiki/topics/gstack-agentic-development-workflow.md` | 1 | 0 | agent_workflow | Agent software delivery topic | agent workflow AGENT_USAGE | Yes via entry |
-| `domains/agent_workflow/wiki/patterns/think-plan-build-review-test-ship-reflect.md` | 1 | 0 | agent_workflow | Reusable delivery loop pattern | agent workflow AGENT_USAGE | Yes via entry |
+| `domains/agent_workflow/wiki/topics/gstack-agentic-development-workflow.md` | 1 | 0 | agent_workflow | Agent software delivery topic | Agent Workflow entry | Yes via entry |
+| `domains/agent_workflow/wiki/patterns/think-plan-build-review-test-ship-reflect.md` | 1 | 0 | agent_workflow | Delivery loop pattern | Agent Workflow entry | Yes via entry |
 | `domains/agent_workflow/wiki/patterns/role-based-agent-review-gates.md` | 1 | 0 | agent_workflow | Review-gate pattern | agent workflow AGENT_USAGE | Yes via entry |
 | `domains/agent_workflow/wiki/patterns/agent-retro-learning-loop.md` | 1 | 0 | agent_workflow | Retrospective learning loop | agent workflow AGENT_USAGE | Yes via entry |
 | `domains/automation/README.md` | 0 | 0 | automation | Automation domain entry | automation AGENT_USAGE | Yes |
@@ -65,11 +65,16 @@ The following backend sets were high-value but disconnected enough that they nee
 - Checklists: `domains/backend/wiki/checklists/*.md`
 - Templates: `domains/backend/wiki/templates/*.md`
 
-Action taken: create indexes under each folder and link them from [Backend AGENT_USAGE](../../domains/backend/AGENT_USAGE.md) and [Backend wiki index](../../domains/backend/wiki/index.md).
+Action taken:
+create indexes under each folder and link them from
+[Backend AGENT_USAGE](../../domains/backend/AGENT_USAGE.md)
+and [Backend wiki index](../../domains/backend/wiki/index.md).
 
 ## UI Brand Topics and Summaries
 
-Brand analysis files under `domains/ui_design/wiki/topics/design-*.md` and `domains/ui_design/wiki/summaries/design-*.md` are useful as flavor references, but they should not override the premium UI rule layer.
+Brand analysis files under `domains/ui_design/wiki/topics/design-*.md`
+and `domains/ui_design/wiki/summaries/design-*.md` are useful as flavor references.
+They should not override the premium UI rule layer.
 
 Action taken: create [UI topics index](../../domains/ui_design/wiki/topics/index.md) and [UI summaries index](../../domains/ui_design/wiki/summaries/index.md).
 

@@ -68,3 +68,10 @@
 - Last completed: Read all database source code (backend_api/app/main.py 1778 lines, all domain scripts, key backend rules/wiki) and classified 10 more reusable code assets. New assets from DataBase source code: `multi-domain-knowledge-retrieval-api`, `query-derivation-engine`, `sqlite-fts5-index-builder-pipeline`, `ranked-search-multi-strategy-fallback`, `structured-api-request-logging`, `search-validation-test-harness`, `reference-to-chunk-pipeline`, `agent-friendly-cli-bridge`, `unified-error-envelope-request-id`, `sse-streaming-response-pattern`. New snippet: `query-derivation-engine-interface`. New adapter: `adapt-knowledge-retrieval-to-new-domain`. Global index updated with 14 total code assets. Total: 14 code asset records, 2 snippets, 2 adapters.
 - Last completed: Obsidian graph/second-brain structure upgrade on 2026-05-03. Added root `CLAUDE.md`, domain `AGENT_USAGE.md` files for backend/ui_design/ui_assets/agent_workflow/automation/dev_tools/voice_assistant, backend rules/topics/patterns/checklists/templates indexes, UI topics/summaries indexes, and graph audit reports under `docs/reports/`. No `raw/`, processed JSON/chunks, runtime SQLite, or raw GitHub projects were modified by this pass.
 - Verification: Baseline scan before upgrade counted 1309 Markdown files, 568 isolated nodes, and 1078 weak nodes with raw/vendor paths excluded from editing. Final post-upgrade scan counted 1328 Markdown files, 357 isolated nodes, 1027 weak nodes, and 32 unresolved links; unresolved links are in raw upstream docs, with 0 unresolved links from changed files. `git diff --check` passed.
+
+## 2026-05-03 - Markdown format cleanup and first playbooks
+
+- Reformatted second-brain entry files and playbook gap report for normal Markdown readability.
+- Added first high-priority task playbooks for premium frontend pages, backend API design, and raw-to-rules distillation.
+- Preserved raw sources and runtime indexes; pre-existing local raw changes were left untouched.
+- See `docs/reports/markdown_format_and_playbook_fix_report.md`.

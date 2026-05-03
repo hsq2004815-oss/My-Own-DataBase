@@ -19,3 +19,7 @@ API, database, auth, security, deployment, AI backend patterns.
 
 - [Backend AGENT_USAGE](../AGENT_USAGE.md)
 - [Rules Index](../rules/index.md)
+
+## Task Playbooks
+
+- [Backend API Design Playbook](../playbooks/backend-api-design-playbook.md)

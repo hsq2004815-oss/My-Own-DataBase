@@ -1,8 +1,16 @@
 # UI Assets AGENT_USAGE
 
+## Purpose
+
 Use this domain when a UI/frontend task needs screenshots, motion references, fonts, icons, backgrounds, UI kits, Lottie collections, or visual asset policy.
 
-## Agent Read Order
+## When to Use
+
+- UI task needs motion references, fonts, screenshots, icons, backgrounds, or Lottie
+- The user asks for high-end animation or visual effects
+- A generated UI needs asset license or usage policy decisions
+
+## Read First
 
 1. [UI Assets README](README.md)
 2. [UI Assets wiki index](wiki/index.md)
@@ -18,6 +26,12 @@ Use this domain when a UI/frontend task needs screenshots, motion references, fo
 - `internal_reference`: internal analysis only.
 - `unknown`: do not use directly.
 
+## Do Not Use by Default
+
+- raw asset files without checking `usage_policy`
+- `review_required` assets as direct production assets
+- `inspiration_only` assets as copied deliverables
+
 ## Motion Tasks
 
 For high-end UI tasks with animation or motion, search for:
@@ -31,4 +45,9 @@ For high-end UI tasks with animation or motion, search for:
 - `motion reference`
 - `hero background motion`
 
-Report asset ids, usage policy, direct-use status, and implementation method.
+## Output Requirements
+
+- Report asset ids.
+- Report usage policy.
+- Report direct-use versus inspiration-only status.
+- Report implementation method.

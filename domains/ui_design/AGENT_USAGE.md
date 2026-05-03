@@ -1,16 +1,26 @@
 # UI Design AGENT_USAGE
 
+## Purpose
+
 Use this domain for UI, frontend, landing page, SaaS homepage, dashboard, portfolio, visual direction, typography, layout, motion, and component quality tasks.
+
+## When to Use
+
+- High-end page or product site generation
+- Portfolio, resume site, or SaaS homepage
+- Web app, dashboard, or workspace UI
+- Visual direction, typography, layout, motion, or component quality review
 
 ## Default Retrieval
 
 Prefer the local API before file reading:
+
 - `POST http://127.0.0.1:8765/brief`
 - use `ui_limit=8`, `workflow_limit=2`, `automation_limit=0`, `backend_limit=0`, `asset_limit=10`
 
 If the task mentions motion, animation, Lottie, dynamic background, or advanced visual effects, also use [UI Assets AGENT_USAGE](../ui_assets/AGENT_USAGE.md).
 
-## Agent Read Order
+## Read First
 
 1. [UI Design wiki index](wiki/index.md)
 2. [UI Design topic index](wiki/topics/index.md)
@@ -18,6 +28,10 @@ If the task mentions motion, animation, Lottie, dynamic background, or advanced 
 4. Brand design topics only as secondary flavor references
 5. `processed/cleaned_text` only for maintenance or provenance checks
 6. `raw/` only for curation maintenance, not default generation
+
+## Task Playbooks
+
+- [Premium Frontend Page Playbook](playbooks/premium-frontend-page-playbook.md)
 
 ## Core Premium Rules
 
@@ -32,6 +46,15 @@ If the task mentions motion, animation, Lottie, dynamic background, or advanced 
 - [Landing Page Section Patterns](wiki/topics/landing-page-section-patterns.md)
 - [UI Agent Starter Prompt](wiki/topics/ui-agent-starter-prompt.md)
 
-## Output Requirement
+## Do Not Use by Default
 
-Report the selected visual direction, pattern, material system, visual anchor, component system, and record/topic files that shaped the result.
+- `raw/`
+- unknown-license assets
+- brand flavor files as primary rules
+- automation context unless browser control or QA is explicitly needed
+
+## Output Requirements
+
+- Report selected visual direction, pattern, material system, visual anchor, and component system.
+- Report record/topic files that shaped the result.
+- Report asset usage policy when assets or motion references were used.
