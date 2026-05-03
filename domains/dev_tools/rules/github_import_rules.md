@@ -84,3 +84,16 @@
 - `processed/metadata/fastgit.metadata.json`
 - `processed/metadata/github-proxy.metadata.json`
 - `processed/metadata/gh-proxy.metadata.json`
+
+---
+
+## Related Knowledge
+
+### Belongs To
+- [Dev Tools AGENT_USAGE](../AGENT_USAGE.md)
+- [Dev Tools Wiki Index](../wiki/index.md)
+
+### Related Topics
+- [Agent Download Workflow](../wiki/topics/agent_download_workflow.md)
+- [GitHub Download Acceleration](../wiki/topics/github_download_acceleration.md)
+- [GitHub Repo Import Template](../wiki/topics/github_repo_import_template.md)

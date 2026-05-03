@@ -90,3 +90,15 @@
 - rules/auth-and-permission-rules.md
 - rules/backend-project-template-rules.md
 - domains/backend/output/reports/github-projects-analysis-report.md
+
+---
+
+## Related Knowledge
+
+### Belongs To
+- [Backend AGENT_USAGE](../AGENT_USAGE.md)
+- [Backend Rules Index](index.md)
+
+### Related MOCs
+- [Backend Topics Index](../wiki/topics/index.md)
+- [Backend Patterns Index](../wiki/patterns/index.md)

@@ -73,3 +73,16 @@ Is license permissive (MIT, Apache-2.0, BSD)?
 - `references/` → domain-level reference JSON (unchanged).
 
 This layer adds code reuse guidance without modifying or replacing any existing layer.
+
+---
+
+## Related Knowledge
+
+### Belongs To
+- [Agent Workflow AGENT_USAGE](../AGENT_USAGE.md)
+- [Agent Workflow Wiki Index](../wiki/index.md)
+
+### Related Rules
+- [Code Assets Global Index](../wiki/indexes/code-assets-global-index.md)
+- [Code Asset Intake Checklist](../wiki/checklists/code-asset-intake-checklist.md)
+- [Code Asset Record Template](../wiki/templates/code-asset-record-template.md)

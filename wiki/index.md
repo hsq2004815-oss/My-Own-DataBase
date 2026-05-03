@@ -15,11 +15,23 @@ API: `http://127.0.0.1:8765`
 | [[domains/automation/wiki/index\|Automation]] | Playwright, CDP, browser automation |
 | [[domains/ui_assets/wiki/index\|UI Assets]] | Fonts, screenshots, motion references (255 records) |
 
+## Agent Entry Files
+
+- [CLAUDE](../CLAUDE.md) — Claude Code / agent routing entry
+- [Root AGENT_USAGE](../AGENT_USAGE.md) — short local API usage guide
+- [Backend AGENT_USAGE](../domains/backend/AGENT_USAGE.md)
+- [UI Design AGENT_USAGE](../domains/ui_design/AGENT_USAGE.md)
+- [UI Assets AGENT_USAGE](../domains/ui_assets/AGENT_USAGE.md)
+- [Agent Workflow AGENT_USAGE](../domains/agent_workflow/AGENT_USAGE.md)
+- [Automation AGENT_USAGE](../domains/automation/AGENT_USAGE.md)
+- [Dev Tools AGENT_USAGE](../domains/dev_tools/AGENT_USAGE.md)
+- [Voice Assistant AGENT_USAGE](../domains/voice_assistant/AGENT_USAGE.md)
+
 ## Shared Resources
 
-- [[common/schemas\|Schemas]] — JSON schemas
-- [[common/taxonomy\|Taxonomy]] — Category taxonomies
-- [[common/templates\|Templates]] — Reusable templates
+- `common/schemas/` — JSON schemas
+- `common/taxonomy/` — Category taxonomies
+- `common/templates/` — Reusable templates
 
 ## Runtime
 

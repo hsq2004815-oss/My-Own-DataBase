@@ -3,19 +3,25 @@
 Design rules, component patterns, visual style. 45 references / 270 chunks.
 
 ## Premium Rules (topics/)
-- premium-web-ui-initial-aesthetic-rules
-- premium-ui-execution-quality-rules
-- premium-typography-and-layout-rules
-- motion-interaction-premium-rules
-- liquid-glass-design-system
-- liquid-glass-web-app-ui-kit
-- cinematic-video-hero-rules
-- video-hero-layout-patterns
-- landing-page-section-patterns
+- [Premium Web UI Initial Aesthetic Rules](topics/premium-web-ui-initial-aesthetic-rules.md)
+- [Premium UI Execution Quality Rules](topics/premium-ui-execution-quality-rules.md)
+- [Premium Typography and Layout Rules](topics/premium-typography-and-layout-rules.md)
+- [Motion Interaction Premium Rules](topics/motion-interaction-premium-rules.md)
+- [Liquid Glass Design System](topics/liquid-glass-design-system.md)
+- [Liquid Glass Web App UI Kit](topics/liquid-glass-web-app-ui-kit.md)
+- [Cinematic Video Hero Rules](topics/cinematic-video-hero-rules.md)
+- [Video Hero Layout Patterns](topics/video-hero-layout-patterns.md)
+- [Landing Page Section Patterns](topics/landing-page-section-patterns.md)
+- [UI Agent Starter Prompt](topics/ui-agent-starter-prompt.md)
 
 ## Brand Design References
-- [[topics/|66 brand design analyses]] (Airbnb, Apple, Stripe, Vercel, etc.)
-- [[summaries/|66 brand design summaries]]
+- [All UI design topics](topics/index.md) (premium rules plus brand analyses)
+- [66 brand design summaries](summaries/index.md)
 
 ## Asset Integration
 - [[domains/ui_assets/wiki/index|UI Assets]] — 255 asset records for fonts, screenshots, motion
+
+## Agent Entry
+
+- [UI Design AGENT_USAGE](../AGENT_USAGE.md)
+- [UI Assets AGENT_USAGE](../../ui_assets/AGENT_USAGE.md)

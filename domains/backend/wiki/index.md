@@ -4,13 +4,18 @@ API, database, auth, security, deployment, AI backend patterns.
 338 chunks indexed. SQLite: `runtime/db/sqlite/backend/backend_references.db`
 
 ## Topics
-- [[topics/|Browse all 17 topics]] — API design, auth, database, deployment, AI backend
+- [Browse all 17 topics](topics/index.md) — API design, auth, database, deployment, AI backend
 
 ## Patterns
-- [[patterns/|Browse all 12 patterns]] — API response wrapper, queue, JWT, RBAC, SSE, webhook
+- [Browse all 12 patterns](patterns/index.md) — API response wrapper, queue, JWT, RBAC, SSE, webhook
 
 ## Checklists
-- [[checklists/|Browse all 10 checklists]] — API design, auth, security, database, deployment
+- [Browse all 10 checklists](checklists/index.md) — API design, auth, security, database, deployment
 
 ## Templates
-- [[templates/|Browse all 12 templates]] — FastAPI, Django, Express, NestJS project scaffolds
+- [Browse all 12 templates](templates/index.md) — FastAPI, Django, Express, NestJS project scaffolds
+
+## Agent Entry
+
+- [Backend AGENT_USAGE](../AGENT_USAGE.md)
+- [Rules Index](../rules/index.md)

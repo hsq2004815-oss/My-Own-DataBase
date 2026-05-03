@@ -394,3 +394,16 @@ Before finalizing code, the agent should check:
 10. Did the agent use ui_assets when motion or visual references were relevant?
 
 If the answer is no, revise before final output.
+
+---
+
+## Related Knowledge
+
+### Belongs To
+- [UI Design AGENT_USAGE](../../AGENT_USAGE.md)
+- [UI Design Topics Index](index.md)
+
+### Related Rules
+- [Premium Web UI Initial Aesthetic Rules](premium-web-ui-initial-aesthetic-rules.md)
+- [Premium Typography and Layout Rules](premium-typography-and-layout-rules.md)
+- [Motion Interaction Premium Rules](motion-interaction-premium-rules.md)
