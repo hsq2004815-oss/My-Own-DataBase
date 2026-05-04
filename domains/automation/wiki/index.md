@@ -7,3 +7,6 @@ Playwright, CDP, browser automation patterns.
 
 ## Patterns
 - [[patterns/browser-qa-with-persistent-session|Browser QA with Persistent Session]]
+
+## Playbooks
+- [[../playbooks/browser-automation-rpa-playbook|Browser Automation RPA Playbook]]

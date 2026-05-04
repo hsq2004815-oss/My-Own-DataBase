@@ -141,9 +141,17 @@ Do not modify `E:\DataBase` unless the user explicitly asks you to maintain the 
 
 ## Task Playbooks
 
+- [Use Local Database for Task Playbook](domains/agent_workflow/playbooks/use-local-database-for-task-playbook.md) — when and how to use this database for a task
 - [Premium Frontend Page Playbook](domains/ui_design/playbooks/premium-frontend-page-playbook.md)
 - [Backend API Design Playbook](domains/backend/playbooks/backend-api-design-playbook.md)
+- [Database Schema Design Playbook](domains/backend/playbooks/database-schema-design-playbook.md)
+- [Browser Automation RPA Playbook](domains/automation/playbooks/browser-automation-rpa-playbook.md)
+- [Windows Desktop Tool Playbook](domains/agent_workflow/playbooks/windows-desktop-tool-playbook.md)
 - [Raw-to-Rules Distillation Playbook](domains/agent_workflow/playbooks/raw-to-rules-distillation-playbook.md)
+
+## API Capability Boundaries
+
+See [API Domain Capability Boundary](docs/reports/api_domain_capability_boundary.md) for exact `/brief` parameter support. Do NOT assume `voice_limit` or `dev_tools_limit` exist.
 
 ## Direct HTTP Form
 

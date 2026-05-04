@@ -42,6 +42,7 @@ If the API is unavailable, read [README](README.md), then route through the inde
 ## Task Playbooks
 
 - [Backend API Design Playbook](playbooks/backend-api-design-playbook.md)
+- [Database Schema Design Playbook](playbooks/database-schema-design-playbook.md)
 
 ## Task Routing
 

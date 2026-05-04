@@ -21,7 +21,15 @@ Use this domain for agentic coding workflows, review gates, handoffs, task decom
 
 ## Task Playbooks
 
+- [Use Local Database for Task Playbook](playbooks/use-local-database-for-task-playbook.md)
+- [Windows Desktop Tool Playbook](playbooks/windows-desktop-tool-playbook.md)
 - [Raw-to-Rules Distillation Playbook](playbooks/raw-to-rules-distillation-playbook.md)
+
+## Prompt and Curation Index
+
+For reusable prompts, curation guides, ingestion prompts, and database maintenance workflows, read:
+
+- [Prompt and Curation Index](wiki/prompt-and-curation-index.md)
 
 ## Task Routing
 

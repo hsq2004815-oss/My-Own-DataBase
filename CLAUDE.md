@@ -16,6 +16,7 @@ Raw third-party repositories are source material only. Do not use `raw/` as defa
 - [Root AGENT_USAGE](AGENT_USAGE.md)
 - [Root AGENT rules](AGENT.md)
 - [Global wiki index](wiki/index.md)
+- [API Capability Boundary](docs/reports/api_domain_capability_boundary.md) — exact `/brief` limit support
 
 ## Task Routing
 
@@ -46,6 +47,7 @@ Read:
 - [Backend checklists index](domains/backend/wiki/checklists/index.md)
 - [Backend templates index](domains/backend/wiki/templates/index.md)
 - [Backend API Design Playbook](domains/backend/playbooks/backend-api-design-playbook.md)
+- [Database Schema Design Playbook](domains/backend/playbooks/database-schema-design-playbook.md)
 
 Use:
 - `/brief` or `/backend/search` before opening individual files
@@ -60,6 +62,7 @@ Avoid:
 Read:
 - [Automation AGENT_USAGE](domains/automation/AGENT_USAGE.md)
 - [Automation wiki index](domains/automation/wiki/index.md)
+- [Browser Automation RPA Playbook](domains/automation/playbooks/browser-automation-rpa-playbook.md)
 
 Only request automation context when the task involves browser control, CDP, selectors, upload, screenshots, or verification.
 
@@ -71,6 +74,8 @@ Read:
 - [Code Assets Global Index](domains/agent_workflow/wiki/indexes/code-assets-global-index.md)
 - [Code Asset Reuse Rules](domains/agent_workflow/rules/code-asset-reuse-rules.md)
 - [Raw-to-Rules Distillation Playbook](domains/agent_workflow/playbooks/raw-to-rules-distillation-playbook.md)
+- [Windows Desktop Tool Playbook](domains/agent_workflow/playbooks/windows-desktop-tool-playbook.md)
+- [Use Local Database for Task Playbook](domains/agent_workflow/playbooks/use-local-database-for-task-playbook.md)
 
 ### Dev Tools / GitHub Import
 

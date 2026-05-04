@@ -17,6 +17,7 @@ Design rules, component patterns, visual style. 45 references / 270 chunks.
 ## Brand Design References
 - [All UI design topics](topics/index.md) (premium rules plus brand analyses)
 - [66 brand design summaries](summaries/index.md)
+- [Design Reference Index](references/design-reference-index.md)
 
 ## Asset Integration
 - [[domains/ui_assets/wiki/index|UI Assets]] — 255 asset records for fonts, screenshots, motion

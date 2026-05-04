@@ -15,6 +15,10 @@ API, database, auth, security, deployment, AI backend patterns.
 ## Templates
 - [Browse all 12 templates](templates/index.md) — FastAPI, Django, Express, NestJS project scaffolds
 
+## Project Analysis References
+
+- [Backend Project Analysis Index](references/backend-project-analysis-index.md)
+
 ## Agent Entry
 
 - [Backend AGENT_USAGE](../AGENT_USAGE.md)

@@ -37,3 +37,13 @@ API: `http://127.0.0.1:8765`
 
 - SQLite indexes under `runtime/db/sqlite/`
 - Local FastAPI at `http://127.0.0.1:8765`
+- [API Domain Capability Boundary](../docs/reports/api_domain_capability_boundary.md)
+
+## Key Playbooks
+
+- [Use Local Database for Task](../domains/agent_workflow/playbooks/use-local-database-for-task-playbook.md)
+- [Premium Frontend Page](../domains/ui_design/playbooks/premium-frontend-page-playbook.md)
+- [Backend API Design](../domains/backend/playbooks/backend-api-design-playbook.md)
+- [Database Schema Design](../domains/backend/playbooks/database-schema-design-playbook.md)
+- [Browser Automation RPA](../domains/automation/playbooks/browser-automation-rpa-playbook.md)
+- [Windows Desktop Tool](../domains/agent_workflow/playbooks/windows-desktop-tool-playbook.md)
